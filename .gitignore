@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+env_3.9/
 .Python
 build/
 develop-eggs/
