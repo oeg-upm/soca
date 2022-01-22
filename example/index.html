@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('img/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+/* Cards css */
+
+.item{
+    text-size-adjust: 100%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 0.2rem;
+    min-width: 28rem;
+    max-width: 28rem;
+    min-height: 15rem;
+    max-height: 15rem;
+    background-color: #eeeeee;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #0077bb;
+    text-align: left;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.title {
+    vertical-align: top;
+    font-size: large;
+    font-weight: 500;
+    color: #0077bb;
+    text-align: center;
+}
+
+.description {
+    width: 100%;
+    margin: 0 auto;
+    font-size: small;
+    line-height: 120%;
+    padding: 0.5rem;
+    padding-left: 7.2rem;
+}
+
+kbd {
+    text-size-adjust: 100%;
+    line-height: 1.42857143;
+    text-align: left;
+    box-sizing: border-box;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.ico {
+    text-size-adjust: 100%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    text-align: left;
+    box-sizing: border-box;
+    border: 0;
+    vertical-align: middle;
+    min-width: 6.2rem;
+    max-width: 6.2rem;
+    float: left;
+}
+
+</style>
+</head>
+<body>
+<h2>Software Catalog Creator</h2>
+<input id="myInput" onkeyup="myFunction()" placeholder="Search for repositories.." title="Type in a repository" type="text"/>
+<div id="myCards">
+<article class="item">
+<h4 class="title">Meta</h4>
+<img class="ico" src="img/summico.png"/>
+<div class="description">
+<p><b>EL</b> matches domain-specific entities in the given text and then disambiguates the matches.</p>
+</div>
+<div class="bottom">
+<a href="lynx-swagger-ui.html?openapi-server-url=https://apis.lynx-project.eu/doc/open-api-3/entity-linking"><img alt="API description" src="img/openapi.png" width="24"/></a>
+<a href="https://www.poolparty.biz/"><img alt="Webpage" src="img/home.png" width="24"/></a>
+<a href="https://zenodo.org/record/3558282#"><img alt="Deliverable" src="img/pdf24.png" width="24"/></a>
+<a href="https://www.youtube.com/watch?v=hDgk65GuORc"><img alt="Video" src="img/youtube.png" width="24"/></a>
+</div>
+<div class="bottom" style="right:0px; float:right;">
+<small>
+<kbd title="English">EN</kbd><kbd title="Spanish">ES</kbd><br/>
+<kbd title="German">DE</kbd><kbd title="Dutch">NL</kbd>
+</small>
+</div>
+</article>
+<article class="item">
+<h4 class="title">Amazon</h4>
+<img class="ico" src="img/summico.png"/>
+<div class="description">
+<p><b>EL</b> matches domain-specific entities in the given text and then disambiguates the matches.</p>
+</div>
+<div class="bottom">
+<a href="lynx-swagger-ui.html?openapi-server-url=https://apis.lynx-project.eu/doc/open-api-3/entity-linking"><img alt="API description" src="img/openapi.png" width="24"/></a>
+<a href="https://www.poolparty.biz/"><img alt="Webpage" src="img/home.png" width="24"/></a>
+<a href="https://zenodo.org/record/3558282#"><img alt="Deliverable" src="img/pdf24.png" width="24"/></a>
+<a href="https://www.youtube.com/watch?v=hDgk65GuORc"><img alt="Video" src="img/youtube.png" width="24"/></a>
+</div>
+<div class="bottom" style="right:0px; float:right;">
+<small>
+<kbd title="English">EN</kbd><kbd title="Spanish">ES</kbd><br/>
+<kbd title="German">DE</kbd><kbd title="Dutch">NL</kbd>
+</small>
+</div>
+</article>
+<article class="item">
+<h4 class="title">Netflix</h4>
+<img class="ico" src="img/summico.png"/>
+<div class="description">
+<p><b>EL</b> matches domain-specific entities in the given text and then disambiguates the matches.</p>
+</div>
+<div class="bottom">
+<a href="lynx-swagger-ui.html?openapi-server-url=https://apis.lynx-project.eu/doc/open-api-3/entity-linking"><img alt="API description" src="img/openapi.png" width="24"/></a>
+<a href="https://www.poolparty.biz/"><img alt="Webpage" src="img/home.png" width="24"/></a>
+<a href="https://zenodo.org/record/3558282#"><img alt="Deliverable" src="img/pdf24.png" width="24"/></a>
+<a href="https://www.youtube.com/watch?v=hDgk65GuORc"><img alt="Video" src="img/youtube.png" width="24"/></a>
+</div>
+<div class="bottom" style="right:0px; float:right;">
+<small>
+<kbd title="English">EN</kbd><kbd title="Spanish">ES</kbd><br/>
+<kbd title="German">DE</kbd><kbd title="Dutch">NL</kbd>
+</small>
+</div>
+</article>
+<article class="item">
+<h4 class="title">Google</h4>
+<img class="ico" src="img/summico.png"/>
+<div class="description">
+<p><b>EL</b> matches domain-specific entities in the given text and then disambiguates the matches.</p>
+</div>
+<div class="bottom">
+<a href="lynx-swagger-ui.html?openapi-server-url=https://apis.lynx-project.eu/doc/open-api-3/entity-linking"><img alt="API description" src="img/openapi.png" width="24"/></a>
+<a href="https://www.poolparty.biz/"><img alt="Webpage" src="img/home.png" width="24"/></a>
+<a href="https://zenodo.org/record/3558282#"><img alt="Deliverable" src="img/pdf24.png" width="24"/></a>
+<a href="https://www.youtube.com/watch?v=hDgk65GuORc"><img alt="Video" src="img/youtube.png" width="24"/></a>
+</div>
+<div class="bottom" style="right:0px; float:right;">
+<small>
+<kbd title="English">EN</kbd><kbd title="Spanish">ES</kbd><br/>
+<kbd title="German">DE</kbd><kbd title="Dutch">NL</kbd>
+</small>
+</div>
+</article>
+<article class="item">
+<h4 class="title">Microsoft</h4>
+<img class="ico" src="img/summico.png"/>
+<div class="description">
+<p><b>EL</b> matches domain-specific entities in the given text and then disambiguates the matches.</p>
+</div>
+<div class="bottom">
+<a href="lynx-swagger-ui.html?openapi-server-url=https://apis.lynx-project.eu/doc/open-api-3/entity-linking"><img alt="API description" src="img/openapi.png" width="24"/></a>
+<a href="https://www.poolparty.biz/"><img alt="Webpage" src="img/home.png" width="24"/></a>
+<a href="https://zenodo.org/record/3558282#"><img alt="Deliverable" src="img/pdf24.png" width="24"/></a>
+<a href="https://www.youtube.com/watch?v=hDgk65GuORc"><img alt="Video" src="img/youtube.png" width="24"/></a>
+</div>
+<div class="bottom" style="right:0px; float:right;">
+<small>
+<kbd title="English">EN</kbd><kbd title="Spanish">ES</kbd><br/>
+<kbd title="German">DE</kbd><kbd title="Dutch">NL</kbd>
+</small>
+</div>
+</article></div>
+<script>
+function myFunction() {
+
+    var input, filter, cards, article, title, i, titleValue;
+    
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+
+    cards = document.getElementById("myCards");
+    article = cards.getElementsByTagName("article");
+
+    for (i = 0; i < article.length; i++) 
+    {
+        title = article[i].getElementsByClassName("title")[0];
+        titleValue = title.textContent || title.innerText;
+        
+        if (titleValue.toUpperCase().indexOf(filter) > -1) 
+        {
+          article[i].style.display = "";
+        } 
+        else 
+        {
+          article[i].style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+</html>
