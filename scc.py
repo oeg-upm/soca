@@ -9,8 +9,8 @@ def cli():
 
     Steps:
 
-    1. (Command repos) Fetch all the repos from the desired organization/s.\n
-    2. (Command extract) Extract all the metadata for every repo.\n
+    1. (Command repos) Fetch all repos from the desired organization/s.\n
+    2. (Command extract) Extract all metadata for every repo.\n
     3. (Command portal) Generate a searchable portal for all the retreived data.\n
     """
     pass 
