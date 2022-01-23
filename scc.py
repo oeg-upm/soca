@@ -24,7 +24,7 @@ def repos(input, output):
 
 @cli.command()
 @click.option('--input','-i', required=True, help="All the pointers to the repositories of the organization/s in csv format.")
-@click.option('--output','-o', default="repos-metadata.json", help="Output data will be stored in a new json file.")
+@click.option('--output','-o', default="repos-metadata", help="Output dir where repositories metadata will be saved.")
 def extract(input, output):
     """Execute  SOMEF for  every  repo introduced."""
     repositories_metadata.fetch(input, output)

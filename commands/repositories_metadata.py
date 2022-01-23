@@ -1,20 +1,33 @@
 import csv
 import json
+import os
 
 from somef.cli import cli_get_data
 
 def fetch(repos_csv, output):
 
-    r_metadata = {}
+    # Make output dir
+    if not os.path.exists(output):
+        os.makedirs(output)
 
-    with open(output, 'w') as repos_metadata:
+    with open(repos_csv) as repos:
 
-        with open(repos_csv) as repos:
-            csv_reader = csv.reader(repos, delimiter=',')
-            for repo_url in csv_reader:
+        csv_reader = csv.reader(repos, delimiter=',')
+
+        for repo_url in csv_reader:
+            try:
+
                 print(f"Extracting metadata from {repo_url[0]}")
-                r_metadata[repo_url[0]] = cli_get_data(0.9, False, repo_url[0])
+                metadata = cli_get_data(0.9, False, repo_url[0])
+                repo_full_name = (repo_url[0][19:]).replace("/", "_").replace(".","-")
 
-        json.dump(r_metadata, repos_metadata, indent = 4)
+                with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
+                    json.dump(metadata, repo_metadata, indent = 4)
+
+            except KeyboardInterrupt:
+                exit()      
+                  
+            except:
+                print(f"ERROR: Could not extract metadata from {repo_url[0]}")
         
 

@@ -2,8 +2,11 @@ import os
 from distutils.dir_util import copy_tree
 import pathlib
 from bs4 import BeautifulSoup
+import json
 
 def generate(input, output):
+
+    global base
 
     # Project base path
     base = str(pathlib.Path(__file__).parent.parent.resolve())
@@ -15,35 +18,60 @@ def generate(input, output):
     # Copy all img to destination folder
     copy_tree(f"{base}/assets/img", f"{output}/img")
 
-    # load the file
+    # load the template
     with open(f"{base}/assets/template.html") as template:
         soup = BeautifulSoup(template.read(), features="html.parser")
 
-    insert_repos_cards(soup)
+    insert_repo_cards(input, soup)
 
-    # save the file again
+    # save index.html
     with open(f"{output}/index.html", "w") as index:
         index.write(str(soup))
 
 
-def insert_repos_cards(soup):
+def insert_repo_cards(input, soup):
 
     loc = soup.find(id="myCards")
+    meta_dir = os.fsencode(input)
+    
+    for file in os.listdir(meta_dir):
 
-    titles = ["Meta","Amazon","Netflix","Google","Microsoft"]
+        filename = os.fsdecode(file)
+        if filename.endswith(".json"): 
 
-    for t in titles:
-        html_component = BeautifulSoup(card_view(t), 'html.parser')
-        loc.append(html_component)
+            with open(f"{input}/{filename}") as json_metadata:
+                print(f"Creating card for {filename}")
+                repo_metadata = json.load(json_metadata)
+                html_component = BeautifulSoup(card_view(repo_metadata), 'html.parser')
+                loc.append(html_component)
 
 
-def card_view(title):
+
+def card_view(metadata):
+
+    def safe_dic(dic, key):
+        try:
+            return dic[key]
+        except:
+            return None
+
+    def safe_list(list, i):
+        try:
+            return list[i]
+        except:
+            return None
+
+    title = safe_dic(safe_dic(metadata,'name'),'excerpt')
+    description = safe_dic(safe_list(safe_dic(metadata,'description'),0),'excerpt')
+    description = description if description is not None else ''
+    description =description[:200]+'...' if len(description[:200]) == 200 else description
+
     html_card = f"""
       <article class="item">
 	  <h4 class="title">{title}</h4>
 	  <img src="img/summico.png" class="ico">
 	  <div class="description">
-	  	<p><b>EL</b> matches domain-specific entities in the given text and then disambiguates the matches.</p>
+	  	<p>{description}</p>
 	  </div>
    	<div class="bottom">      
       <a href="lynx-swagger-ui.html?openapi-server-url=https://apis.lynx-project.eu/doc/open-api-3/entity-linking"><img src="img/openapi.png" width="24" alt="API description"></a>
