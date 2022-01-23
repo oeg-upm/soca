@@ -51,7 +51,7 @@ def card_view(title):
       <a href="https://zenodo.org/record/3558282#"><img src="img/pdf24.png" width="24" alt="Deliverable"></a>
 		  <a href="https://www.youtube.com/watch?v=hDgk65GuORc"><img src="img/youtube.png" width="24" alt="Video"></a>        
     </div>
-    <div class="bottom" style="right:0px; float:right;">
+    <div class="bottom" style="right:10px; float:right;">
       <small>
         <kbd title="English">EN</kbd><kbd title="Spanish">ES</kbd><br>
         <kbd title="German">DE</kbd><kbd title="Dutch">NL</kbd>
