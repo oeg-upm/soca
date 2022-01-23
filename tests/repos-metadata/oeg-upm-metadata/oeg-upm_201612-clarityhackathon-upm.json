@@ -1,0 +1,155 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository puts together all the work done during the CLARITY project (http://clarity-csa.eu/) Sprint Week in December 2016 on the work proposed by the Zaragoza city council on the usage of their open dataset (and API) about public services. Our aim has been to generate the artifacts that will be required in the future to start working on the homogeneisation of the lists of public services that are provided by municipalities in Spain. \nWe have started with the open material that is made available by the Zaragoza city council in relation to the public services that they offer, namely: \n",
+            "confidence": [
+                0.9939016286266477,
+                0.9788773176126817
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Such a call does not give access to all the data, but only to 50 rows. In order to page them, you can use something like https://www.zaragoza.es/sede/servicio/tramite.json?start=120&rows=10, or specify directly that the number of rows should be equal to 800 (since they have less than 800 services available) \nJSON-LD data about their public services (this work will be improving in the future, thanks to the work done over this sprint): https://www.zaragoza.es/sede/servicio/tramite.jsonld \n",
+            "confidence": [
+                0.9263487174310165,
+                0.911062879271736
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "* Codelists, including a list of Local Government public services, in the United Kingdom: http://standards.esd.org.uk/?uri=list%2FenglishAndWelshServices&tab=details \nCPSV-AP Ontology formalised in OWL and translated into Spanish:  \n",
+            "confidence": [
+                0.9025286029150408,
+                0.9356529591838836
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Work done by the UPM-Zaragoza team on public services during the CLARITY project sprint week",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "long_title": {
+        "excerpt": "README #",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/201612-clarityhackathon-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2016-12-05T17:54:03Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2016-12-09T14:33:12Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "201612-clarityhackathon-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/201612-clarityhackathon-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/201612-clarityhackathon-upm/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/201612-clarityhackathon-upm/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 23 Jan 2022 14:09:44 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 23 Jan 2022 14:09:44 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/201612-clarityhackathon-upm/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "HTML"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/201612-clarityhackathon-upm/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

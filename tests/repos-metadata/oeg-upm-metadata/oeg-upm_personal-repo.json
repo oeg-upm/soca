@@ -1,0 +1,169 @@
+{
+    "description": [
+        {
+            "excerpt": "    <repository> \n",
+            "confidence": [
+                0.9250672542407598
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "    </repository> \n",
+            "confidence": [
+                0.9250672542407598
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Personal Maven Repository",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "```xml\n<repositories>\n    <repository>\n        <id>PROJECT-NAME-mvn-repo</id>\n        <url>https://raw.github.com/USERNAME/PROJECT-NAME/mvn-repo/</url>\n        <snapshots>\n            <enabled>true</enabled>\n            <updatePolicy>always</updatePolicy>\n        </snapshots>\n    </repository>\n</repositories>\n```\nThat's all!!\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "        <version>2.8.1</version> \n",
+            "confidence": [
+                0.9717106327039013
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "long_title": {
+        "excerpt": "#### 1) Add deployment information to your `pom.xml`:",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "usage": [
+        {
+            "excerpt": "Enter in Github: `Settings/Applications/Personal access tokens` and click on `Generate New Token`.  \n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "```xml\n<repositories>\n    <repository>\n        <id>PROJECT-NAME-mvn-repo</id>\n        <url>https://raw.github.com/USERNAME/PROJECT-NAME/mvn-repo/</url>\n        <snapshots>\n            <enabled>true</enabled>\n            <updatePolicy>always</updatePolicy>\n        </snapshots>\n    </repository>\n</repositories>\n```\nThat's all!!\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/personal-repo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2015-02-24T15:25:00Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2015-02-24T14:30:44Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "personal-repo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/personal-repo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/personal-repo/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/personal-repo/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 23 Jan 2022 13:53:28 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 23 Jan 2022 13:53:28 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/personal-repo/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/personal-repo/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

@@ -1,0 +1,194 @@
+{
+    "description": [
+        {
+            "excerpt": "Map4RDF allows visualising and interacting with Linked Geospatial Data available in any SPARQL endpoint",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "long_title": {
+        "excerpt": "version)",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/map4rdf",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2014-02-28T21:44:12Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-01-19T20:05:01Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Other"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "map4rdf",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/map4rdf",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/map4rdf/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/map4rdf/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 10,
+            "date": "Sun, 23 Jan 2022 13:51:59 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 2,
+            "date": "Sun, 23 Jan 2022 13:51:59 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/map4rdf/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "map4rdf",
+            "geo",
+            "geosparql",
+            "geolinkeddata"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "CSS",
+            "JavaScript"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/map4rdf/blob/master/README.MD",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tag_name": "0.0.5",
+                "name": "Map4RDF-0.0.5",
+                "author_name": "Fransiro",
+                "authorType": "User",
+                "body": "Map4RDF-0.0.5\n- Multiple instances of Map4RDF on one with Multiple-configurations-files feature.\n- WKT support\n- GeoJSON support\n- GeoSPARQL support for Strabon and Virtuoso\n- Draw resources by label or by facet\n- Better visualization of Facets view\n- More default configurations to choose\n- More default maps to choose\n- More EPSG tranformations with Proj4JS\n- More Additional Information configurations (by default added)\n- Service for parse wikipedia pages\n",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/map4rdf/tarball/0.0.5",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/map4rdf/zipball/0.0.5",
+                "html_url": "https://github.com/oeg-upm/map4rdf/releases/tag/0.0.5",
+                "url": "https://api.github.com/repos/oeg-upm/map4rdf/releases/3769593",
+                "dateCreated": "2016-07-29T12:31:50Z",
+                "datePublished": "2016-07-29T12:32:09Z"
+            },
+            {
+                "tag_name": "0.0.4a",
+                "name": "Map4RDF-0.0.4a",
+                "author_name": "Fransiro",
+                "authorType": "User",
+                "body": "This is Map4RDF-0.0.4a version.\n",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/map4rdf/tarball/0.0.4a",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/map4rdf/zipball/0.0.4a",
+                "html_url": "https://github.com/oeg-upm/map4rdf/releases/tag/0.0.4a",
+                "url": "https://api.github.com/repos/oeg-upm/map4rdf/releases/2412446",
+                "dateCreated": "2016-01-12T13:50:47Z",
+                "datePublished": "2016-01-12T13:52:12Z"
+            },
+            {
+                "tag_name": "0.0.4",
+                "name": "Map4RDF-0.0.4",
+                "author_name": "Fransiro",
+                "authorType": "User",
+                "body": "Map4RDF-0.0.4 Beta versi\u00f3n.\n",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/map4rdf/tarball/0.0.4",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/map4rdf/zipball/0.0.4",
+                "html_url": "https://github.com/oeg-upm/map4rdf/releases/tag/0.0.4",
+                "url": "https://api.github.com/repos/oeg-upm/map4rdf/releases/223680",
+                "dateCreated": "2014-03-14T09:06:49Z",
+                "datePublished": "2014-03-14T10:22:34Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}
