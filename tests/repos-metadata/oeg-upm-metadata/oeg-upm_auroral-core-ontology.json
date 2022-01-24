@@ -1,0 +1,112 @@
+{
+    "long_title": {
+        "excerpt": "Auroral Core Ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/auroral-core-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-07-19T08:40:21Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-09-03T13:58:42Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "auroral-core-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/auroral-core-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/auroral-core-ontology/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/auroral-core-ontology/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 24 Jan 2022 00:42:32 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 3,
+            "date": "Mon, 24 Jan 2022 00:42:32 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/auroral-core-ontology/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/auroral-core-ontology/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

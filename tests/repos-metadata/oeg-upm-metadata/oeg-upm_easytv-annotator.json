@@ -1,0 +1,204 @@
+{
+    "description": [
+        {
+            "excerpt": "Sign language annotator library for the EASYTV european project \nTRANSLATOR PROJECT \n",
+            "confidence": [
+                0.9451610890645442,
+                0.9629962971611608
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "The compiled jar of the project is copied to the /dist folder, with all the necessary libraries. \n",
+            "confidence": [
+                0.9908447008799062
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Sign language annotator library for the EASYTV european project",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "This project is compiled with maven and there are four libraries that are not available at maven central repo.\nThese jar are in the /lib folder and must be added to your local maven repo. \n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "Using maven through the command install. The pom file contains all the instructions to install the dependencies \n$ mvn install \n",
+            "confidence": [
+                0.9848554933144023,
+                0.999833231880651
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "$ mvn install:install-file -Dfile=${jarfile} -DgroupId=${group.id} -DartifactId=${lib.id} -Dversion=${version} -Dpackaging=jar \n",
+            "confidence": [
+                0.9105725130944586
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "$ cd lib \n",
+            "confidence": [
+                0.953691433472028
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "- InstallDependencies.sh \n",
+            "confidence": [
+                0.9023697225149864
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "long_title": {
+        "excerpt": "easytv-annotator",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "requirement": [
+        {
+            "excerpt": "Project is linked to the easytv project resources: https://github.com/oeg-upm/easytv-resources\n\nIt uses Perl for TreeTagger. Install utf8\n> perl -MCPAN -e shell\n> install utf8::all\n\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/easytv-annotator",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2018-08-29T15:25:11Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-08-17T17:49:15Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "easytv-annotator",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/easytv-annotator",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-annotator/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-annotator/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 23 Jan 2022 21:50:44 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 23 Jan 2022 21:50:44 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/easytv-annotator/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "Perl",
+            "Shell",
+            "Batchfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/easytv-annotator/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/easytv-annotator/master/InstallDependencies.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

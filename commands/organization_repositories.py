@@ -1,7 +1,6 @@
 import os
 import requests
 import csv
-import traceback
 
 def fetch(input, output):
 

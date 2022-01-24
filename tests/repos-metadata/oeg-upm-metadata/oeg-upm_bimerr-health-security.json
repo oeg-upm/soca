@@ -1,0 +1,128 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the code and documentation generated for the health and security issues ontology which is available at: http://bimerr.iot.linkeddata.es/def/health-security-issues \n",
+            "confidence": [
+                0.9807385083698514
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "BIMERR ontology for the health and security domain",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "long_title": {
+        "excerpt": "BIMERR Health and Security Issues Ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-health-security",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-04-22T07:06:30Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-04-22T08:43:45Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "bimerr-health-security",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/bimerr-health-security",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-health-security/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-health-security/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 23 Jan 2022 23:04:05 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 23 Jan 2022 23:04:05 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-health-security/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-health-security/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

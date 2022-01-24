@@ -1,0 +1,128 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the code and documentation generated for the Renovation Process ontology which is available at: \n",
+            "confidence": [
+                0.99023142124453
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Repository for the renovation process ontology.",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "long_title": {
+        "excerpt": "Renovation Process Ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-renovation-process",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-01-26T14:36:51Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-12-22T17:27:13Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "bimerr-renovation-process",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/bimerr-renovation-process",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-renovation-process/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-renovation-process/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 24 Jan 2022 00:36:02 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 24 Jan 2022 00:36:02 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-renovation-process/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-renovation-process/blob/main/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

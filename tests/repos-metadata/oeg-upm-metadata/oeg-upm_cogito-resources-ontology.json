@@ -1,0 +1,133 @@
+{
+    "long_title": {
+        "excerpt": "COGITO Resources ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/cogito-resources-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-07-14T14:40:18Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-09-17T10:26:22Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "cogito-resources-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/cogito-resources-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 24 Jan 2022 00:42:23 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 24 Jan 2022 00:42:23 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/cogito-resources-ontology/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/cogito-resources-ontology/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tag_name": "release",
+                "name": "COGITO Resources Ontology 0.0.1",
+                "author_name": "Salva5297",
+                "authorType": "User",
+                "body": "",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/tarball/release",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/zipball/release",
+                "html_url": "https://github.com/oeg-upm/cogito-resources-ontology/releases/tag/release",
+                "url": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/releases/50481826",
+                "dateCreated": "2021-09-17T10:26:19Z",
+                "datePublished": "2021-09-29T15:01:54Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

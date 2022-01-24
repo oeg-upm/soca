@@ -1,0 +1,216 @@
+{
+    "description": [
+        {
+            "excerpt": "Mapeathor is a simple spreadsheet parser able to generate mapping rules in three mapping languages: R2RML, RML (with extension to functions from FnO) and YARRRML. It takes the mapping rules expressed in a spreadsheet and transforms them into the desired language. The spreadsheet template is designed to facilitate the mapping rules' writting, with the aim of being language independent, and thus, lowering the barrier of generating mappings for non-expert users.  \n",
+            "confidence": [
+                0.9967629643513142
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Translator of Excel mappings into R2RML, RML or YARRRML",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "long_title": {
+        "excerpt": "Mapeathor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "contact": [
+        {
+            "excerpt": "- [Ana Iglesias-Molina](https://github.com/anaigmo) (ana.iglesiasm@upm.es)\n- [Luis Pozo](https://github.com/w0xter) (luis.pozo@upm.es)\n- [Daniel Do\u00f1a](https://github.com/daniel-dona) (daniel.dona@xnor.ga)\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "run": [
+        {
+            "excerpt": "The easiest way of running Mapeathor is using the [web service](https://morph.oeg.fi.upm.es/demo/mapeathor) and the [Swagger](https://morph.oeg.fi.upm.es/tool/mapeathor/swagger/) instance. For CLI lovers, the service is available as a [PyPi package](https://pypi.org/project/mapeathor/) and Docker image. The instructions of the latest can be found in the [wiki](https://github.com/oeg-upm/Mapeathor/wiki).\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "excerpt": "A more detailed explanation is provided in the [wiki](https://github.com/oeg-upm/Mapeathor/wiki).\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/Mapeathor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2019-06-09T19:45:24Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-01-13T20:57:35Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "Mapeathor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/Mapeathor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Mapeathor/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Mapeathor/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 18,
+            "date": "Sun, 23 Jan 2022 22:26:00 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 6,
+            "date": "Sun, 23 Jan 2022 22:26:00 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/Mapeathor/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python",
+            "Dockerfile",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/Mapeathor/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'../../LICENSE'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/Mapeathor/master/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/Mapeathor/master/run.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tag_name": "v1.0",
+                "name": "First template",
+                "author_name": "anaigmo",
+                "authorType": "User",
+                "body": "",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/Mapeathor/tarball/v1.0",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/Mapeathor/zipball/v1.0",
+                "html_url": "https://github.com/oeg-upm/Mapeathor/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/oeg-upm/Mapeathor/releases/21580066",
+                "dateCreated": "2019-11-08T15:24:55Z",
+                "datePublished": "2019-11-19T10:26:47Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}
