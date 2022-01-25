@@ -4,105 +4,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+/* Global style */
+
 * {
   margin: 0;
   box-sizing: border-box;
-  color: rgb(0, 31, 63);
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #3e3e3e;
+  font-family: "Helvetica Neue", Helvetica;
 }
 
-body{
+body {
   background-color: #e0e0e0;
+}
+
+.navbar {
+  display: flex; 
+  list-style: none; 
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  background: #e9e9e9;
+  box-shadow:  5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
 }
 
 #myInput {
   font-size: 16px;
   padding: 12px 20px 12px 40px;
-  border: 0px solid #ddd;
+  border: 0px;
   margin-left: 20px;
   flex: auto;
   border-radius: 50px;
-  background: #e0e0e0;
+  background: #e9e9e9;
   box-shadow: inset 5px 5px 10px #bebebe,
               inset -5px -5px 10px #ffffff;
 }
-
-/* Cards css */
-
-.item{
-    text-size-adjust: 100%;
-    font-size: 14px;
-    line-height: 1.42857143;
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    margin: 0.2rem;
-    min-width: 28rem;
-    max-width: 28rem;
-    min-height: 15rem;
-    max-height: 15rem;
-    background: #e9e9e9;
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
-    text-align: left;
-    border-radius: 19px;
-    background: #e0e0e0;
-    box-shadow: inset 5px 5px 10px #bebebe,
-                inset -5px -5px 10px #ffffff;
-}
-
-.bottom {
-    position: absolute;
-    bottom: 5px;
-    margin-bottom: 5px;
-}
-
-.title {
-    vertical-align: top;
-    font-size: large;
-    font-weight: 500;
-    text-align: center;
-}
-
-.description {
-    width: 100%;
-    margin: 0 auto;
-    font-size: small;
-    line-height: 120%;
-    padding: 0.5rem;
-    padding-left: 7.2rem;
-}
-
-kbd {
-    text-size-adjust: 100%;
-    line-height: 1.42857143;
-    text-align: left;
-    box-sizing: border-box;
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #fff;
-    background-color: #333;
-    border-radius: 3px;
-    box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
-    margin-left: 1px;
-    margin-right: 1px;
-}
-
-.ico {
-    text-size-adjust: 100%;
-    font-size: 14px;
-    line-height: 1.42857143;
-    text-align: left;
-    box-sizing: border-box;
-    border: 0;
-    vertical-align: middle;
-    min-width: 6.2rem;
-    max-width: 6.2rem;
-    float: left;
-}
-
-/* Global style */
 
 #myCards {
   display: flex;
@@ -111,17 +48,69 @@ kbd {
   justify-content: center;
 }
 
-.navbar{
-  display: flex; 
-  list-style: none; 
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-  padding: 10px 20px;
-  box-shadow:  5px 5px 10px #bebebe,
-              -5px -5px 10px #ffffff;
-  background: #e9e9e9;
+/* Cards css */
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.42857143;
+    margin: 0.2rem;
+    min-width: 28rem;
+    max-width: 28rem;
+    min-height: 15rem;
+    max-height: 15rem;
+    padding: 1.3rem;
+    border-radius: 19px;
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+}
+
+.repo-logo {
+    width: 5.5rem;
+}
+
+.description {
+    text-align: justify;
+}
+
+.recently-updated{
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 0.1rem;
+    background-color: #6da862;
+}
+
+.repo-icon{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-col1 {
+    width: 72%;
+}
+
+.flex-horizontal{
+    display: flex;
+    flex-direction: row;
+}
+
+.float-right{
+    justify-content: flex-end;
+}
+
+.grey-color-svg {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);
 }
 
 </style>
@@ -129,14 +118,14 @@ kbd {
 <body>
 
 <nav class="navbar">
-		<h2 style="color: rgb(62, 62, 62);">Software Catalog</h2>
+    <h2>Software Catalog</h2>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for repositories..." title="Type in a repository">
 </nav>
 
-<div id="myCards">
-</div>
+<div id="myCards"></div>
 
 <script>
+
 function myFunction() {
 
     var input, filter, cards, article, title, i, titleValue;
@@ -162,6 +151,7 @@ function myFunction() {
         }
     }
 }
+
 </script>
 
 </body>
