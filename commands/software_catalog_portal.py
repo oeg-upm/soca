@@ -62,9 +62,10 @@ def card_view(metadata):
             return None
 
     title = safe_dic(safe_dic(metadata,'name'),'excerpt')
+
     description = safe_dic(safe_list(safe_dic(metadata,'description'),0),'excerpt')
     description = description if description is not None else ''
-    description =description[:200]+'...' if len(description[:200]) == 200 else description
+    description = description[:200]+'...' if len(description[:200]) == 200 else description
 
     html_card = f"""
       <article class="item">
