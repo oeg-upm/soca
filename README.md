@@ -3,6 +3,14 @@
 
 A repository that given an organization URL, it will create a software catalog for browsing all repositories.
 
-# Example
+## Example
 
 Click [here](https://dakixr.github.io/scc/example/index.html) to see an interactive example.
+
+## Install from GitHub
+
+```text
+git clone https://github.com/dakixr/scc
+cd scc
+pip install -e .
+```
