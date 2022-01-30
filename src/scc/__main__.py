@@ -19,7 +19,7 @@ def cli():
 @click.option('--output','-o', default="repos.csv", help="Output data will be stored in a new csv file.")
 def repos(input, output):
     """Retreive all organization/s repositories."""
-    from .commands import organization_repositories
+    from scc.commands import organization_repositories
     organization_repositories.fetch(input, output)
 
 @cli.command()
@@ -27,7 +27,7 @@ def repos(input, output):
 @click.option('--output','-o', default="repos-metadata", help="Output dir where repositories metadata will be saved.")
 def extract(input, output):
     """Execute  SOMEF for  every  repo introduced."""
-    from .commands import repositories_metadata
+    from scc.commands import repositories_metadata
     repositories_metadata.fetch(input, output)
 
 @cli.command()
@@ -35,8 +35,8 @@ def extract(input, output):
 @click.option('--output','-o', default="portal", help="Outout dir where the Software Catalog Portal will be saved.")
 def portal(input, output):
     """Build  a  portal  with a  minimalistic desing."""
-    from .commands import software_catalog_portal
-    software_catalog_portal.generate(input, output)
+    from scc.commands.software_catalog_portal import portal
+    portal.generate(input, output)
 
 #if __name__ == "__main__":
 #    cli()
