@@ -70,7 +70,7 @@ class metadata(object):
         citation = None
         if citations:
             for c in citations:
-                if c['technique'] is 'Regular expression':
+                if c['technique'] == 'Regular expression':
                     citation = c['excerpt']
         if citation:
             html += f"""<img src="repo_icons/citation.png" alt="citation" class="repo-icon" title="{citation}">"""
