@@ -1,6 +1,7 @@
 import os
 from distutils.dir_util import copy_tree
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 from . import card
 from scc import base_dir
@@ -30,10 +31,16 @@ def generate(repo_metadata_dir, output):
     # Insert cards for each repo
     card.insert_cards(repo_metadata_dir, soup)
 
+    # Insert last updated date
+    add_last_updated_date(soup)
+
     # Save index.html
     with open(f"{output}/index.html", "w") as index:
         index.write(str(soup))
 
-
+def add_last_updated_date(soup: BeautifulSoup):
+    loc = soup.find(id="portal-last-updated")
+    text = f"Last updated on {datetime.today().strftime('%d/%m/%Y')}"
+    loc.string = text
 
 
