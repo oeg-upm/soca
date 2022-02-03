@@ -23,9 +23,12 @@ class metadata(object):
     def stars(self):
         return safe_dic(safe_dic(safe_dic(self.md,'stargazers_count'),'excerpt'),'count')
     
-    def releases(self):
+    def n_releases(self):
         rel = safe_dic(safe_dic(self.md,'releases'),'excerpt')
         return len(rel) if rel is not None else 0
+    
+    def url_releases(self):
+        return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
 
     def html_languages(self):
 
@@ -66,6 +69,7 @@ class metadata(object):
         if download_url:
             html += f"""<a href="{download_url}" target="_blank" class="repo-icon"><img src="repo_icons/download.png" alt="download" class="repo-icon" title="Download"></a>"""
 
+        # TODO: Could be more than one citation
         citations = safe_dic(self.md,'citation')
         citation = None
         if citations:
@@ -90,6 +94,8 @@ class metadata(object):
             html += f"""<img src="repo_icons/requirements.png" alt="requirements" class="repo-icon" title="Requirements:\n{requirements}">"""
 
         paper = None
+        # resolve DOI add https://www.doi.org/
+        # TODO: extract from citation from regular expresion -> url
         if paper:
             html += f"""<img src="repo_icons/paper.png" alt="paper" class="repo-icon" title="Paper">"""
 
