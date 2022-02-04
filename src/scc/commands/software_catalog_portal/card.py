@@ -1,7 +1,7 @@
 import os
 import json
 from bs4 import BeautifulSoup
-from click import style
+import htmlmin
 
 from . import metadata
 from . import styles
@@ -31,24 +31,35 @@ def html_view(repo_metadata, embedded):
     s = styles.styles(embedded)
     md = metadata.metadata(repo_metadata, s)
 
+    # Instert embedded html data to be able to copy it
+    if not embedded:
+        html_copy_embedded = f"""<div class="copy_card_html" style="display: none;" id="{md.repo_url()}"> {html_view(repo_metadata, embedded=True)} </div>"""
+        copy_btn = f"""<button {s.get('copy-btn')} value="{md.repo_url()}">Copy</button>"""
+    else:
+        html_copy_embedded = ''
+        copy_btn = ''
+
     html_card = f"""
     <article {s.get('card')}>
         <div {s.get('card-row')}>
             <div {s.get('card-col1')}>
-                <h4 style="{s.get_global_css()}">{md.title()}</h4>
+                <a href="{md.repo_url()}" target="_blank" style="text-decoration: none;"><h4 style="{s.get_global_css()}">{md.title()}</h4></a>
                 <p {s.get('description')}>{md.description()}</p>
             </div>
             <div>
                 <img src="{md.logo()}" alt="repo-logo" {s.get('repo-logo')}>
-                <div {s.get('recently-updated')} title={md.last_update()}></div>
+                <div {s.get(['flex-horizontal','float-right'])}>
+                    {copy_btn}
+                    <div {s.get('recently-updated')} title={md.last_update()}></div>
+                </div>
                 <div {s.get(['flex-horizontal','float-right'], custom_css='margin-top: 0.3rem;')} title="Stars">
                     <b>{md.stars()}</b>
-                    <img src="repo_icons/star.png" alt="stars" {s.get('repo-icon')}>
+                    <img src="{md.icon_star()}" alt="stars" {s.get('repo-icon')}>
                 </div>
                 <div title="Releases">
                     <a href="{md.url_releases()}" target="_blank" {s.get(['flex-horizontal','float-right'], custom_css='text-decoration: none;')}>
                         <b>{md.n_releases()}</b>
-                        <img src="repo_icons/releases.png" alt="releases" {s.get('repo-icon')}>
+                        <img src="{md.icon_releases()}" alt="releases" {s.get('repo-icon')}>
                     </a>
                 </div>
             </div>
@@ -66,7 +77,8 @@ def html_view(repo_metadata, embedded):
                 </div>
             </div>
         </div>
+        {html_copy_embedded}
     </article>
     """
 
-    return html_card
+    return html_card if not embedded else htmlmin.minify(html_card, remove_empty_space=True)

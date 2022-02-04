@@ -1,7 +1,7 @@
 class styles(object):
 
 	css_cards = {
-		'card': """ 
+		'card': """
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
@@ -13,6 +13,7 @@ class styles(object):
 			max-height: 15rem;
 			padding: 1.3rem;
 			border-radius: 19px;
+  			background-color: #e0e0e0;
 			box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;""",
 
 		'repo-logo': """
@@ -57,7 +58,12 @@ class styles(object):
 			justify-content: flex-end;""",
 
 		'grey-color-svg': """
-			filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);"""
+			filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);""",
+		
+		'copy-btn': """
+			background-color: #e0e0e0;
+			width: 3rem; 
+			border-radius: 1rem;"""
 	}
 
 	css_global = """
@@ -66,8 +72,6 @@ class styles(object):
 			color: #3e3e3e;
 			font-family: 'Helvetica Neue', Helvetica;
 	"""
-
-	  
 
 	def __init__(self, embedded):
 		self.embedded =  embedded

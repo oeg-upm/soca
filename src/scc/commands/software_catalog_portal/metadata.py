@@ -10,33 +10,18 @@ class metadata(object):
     def __init__(self, repo_metadata, s: styles.styles):
         self.md = repo_metadata
         self.s = s
-        self.base = 'https://github.com/Dakixr/scc/raw/main/src/scc/assets/' if s.embedded else ''
+        self.base = 'https://github.com/dakixr/scc/raw/main/src/scc/assets/' if s.embedded else ''
 
+    # Assets ####################################################
     def logo(self):
         return f"{self.base}img/github-default.svg"
-    
-    def title(self):
-        return safe_dic(safe_dic(self.md,'name'),'excerpt')
-        
-    def description(self):
-        description = safe_dic(safe_list(safe_dic(self.md,'description'),0),'excerpt')
-        description = description if description is not None else 'No description available yet.'
-        return description
 
-    def last_update(self):
-        date_modified = safe_dic(safe_dic(self.md,'dateModified'),'excerpt')
-        return date_modified
+    def icon_star(self):
+        return f"{self.base}repo_icons/star.png"
 
-    def stars(self):
-        return safe_dic(safe_dic(safe_dic(self.md,'stargazers_count'),'excerpt'),'count')
+    def icon_releases(self):
+        return f"{self.base}repo_icons/releases.png"
     
-    def n_releases(self):
-        rel = safe_dic(safe_dic(self.md,'releases'),'excerpt')
-        return len(rel) if rel is not None else 0
-    
-    def url_releases(self):
-        return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
-
     def html_languages(self):
 
         languages = safe_dic(safe_dic(self.md,'languages'),'excerpt')
@@ -55,7 +40,7 @@ class metadata(object):
                 html += f"""<img src="{self.base}language_icons/{lang}.svg" alt="{lang}" {self.s.get('repo-icon')} title={lang.capitalize()}>\n"""
         
         return html
-        
+
     def html_repo_icons(self):
 
         html = ''
@@ -108,6 +93,34 @@ class metadata(object):
 
         return html
 
+    # Metadata ##################################################
+    def repo_url(self):
+        return safe_dic(safe_dic(self.md,'codeRepository'),'excerpt')
+            
+    def title(self):
+        return safe_dic(safe_dic(self.md,'name'),'excerpt')
+        
+    def description(self):
+        description = safe_dic(safe_list(safe_dic(self.md,'description'),0),'excerpt')
+        description = description if description is not None else 'No description available yet.'
+        return description
+
+    def last_update(self):
+        date_modified = safe_dic(safe_dic(self.md,'dateModified'),'excerpt')
+        return date_modified
+
+    def stars(self):
+        return safe_dic(safe_dic(safe_dic(self.md,'stargazers_count'),'excerpt'),'count')
+    
+    def n_releases(self):
+        rel = safe_dic(safe_dic(self.md,'releases'),'excerpt')
+        return len(rel) if rel is not None else 0
+    
+    def url_releases(self):
+        return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
+        
+    
+# Aux ##########################################################
 def safe_dic(dic, key):
     try:
         return dic[key]
