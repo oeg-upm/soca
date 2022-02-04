@@ -1,1 +1,1 @@
-recursive-include assets *
+recursive-include src/scc/assets *
