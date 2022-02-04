@@ -10,6 +10,10 @@ class metadata(object):
     def __init__(self, repo_metadata, s: styles.styles):
         self.md = repo_metadata
         self.s = s
+        self.base = 'https://github.com/Dakixr/scc/raw/main/src/scc/assets/' if s.embedded else ''
+
+    def logo(self):
+        return f"{self.base}img/github-default.svg"
     
     def title(self):
         return safe_dic(safe_dic(self.md,'name'),'excerpt')
@@ -48,7 +52,7 @@ class metadata(object):
         for lang in languages:
             lang = str(lang).lower()
             if lang in supported_languages:
-                html += f"""<img src="language_icons/{lang}.svg" alt="{lang}" {self.s.get('repo-icon')} title={lang.capitalize()}>\n"""
+                html += f"""<img src="{self.base}language_icons/{lang}.svg" alt="{lang}" {self.s.get('repo-icon')} title={lang.capitalize()}>\n"""
         
         return html
         
@@ -58,19 +62,19 @@ class metadata(object):
     
         license = safe_dic(safe_dic(self.md,'license'),'excerpt')
         if license:
-            html += f"""<a href="{safe_dic(license,'url')}" target="_blank" {self.s.get('repo-icon')}><img src="repo_icons/license.png" alt="license" {self.s.get('repo-icon')} title="License: {license['name']}"></a>"""
+            html += f"""<a href="{safe_dic(license,'url')}" target="_blank" {self.s.get('repo-icon')}><img src="{self.base}repo_icons/license.png" alt="license" {self.s.get('repo-icon')} title="License: {license['name']}"></a>"""
         
         readme_url = safe_dic(safe_dic(self.md,'readme_url'),'excerpt')
         if readme_url:
-            html += f"""<a href="{readme_url}" target="_blank" {self.s.get('repo-icon')}><img src="repo_icons/readme.png" alt="readme" {self.s.get('repo-icon')} title="Readme"></a>"""
+            html += f"""<a href="{readme_url}" target="_blank" {self.s.get('repo-icon')}><img src="{self.base}repo_icons/readme.png" alt="readme" {self.s.get('repo-icon')} title="Readme"></a>"""
         
         notebook = safe_dic(safe_dic(self.md,'hasExecutableNotebook'),'excerpt')
         if notebook:
-            html += f"""<img src="repo_icons/notebook.png" alt="notebook" {self.s.get('repo-icon')} title="Notebook">"""
+            html += f"""<img src="{self.base}repo_icons/notebook.png" alt="notebook" {self.s.get('repo-icon')} title="Notebook">"""
 
         download_url = safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
         if download_url:
-            html += f"""<a href="{download_url}" target="_blank" {self.s.get('repo-icon')}><img src="repo_icons/download.png" alt="download" {self.s.get('repo-icon')} title="Download"></a>"""
+            html += f"""<a href="{download_url}" target="_blank" {self.s.get('repo-icon')}><img src="{self.base}repo_icons/download.png" alt="download" {self.s.get('repo-icon')} title="Download"></a>"""
 
         # TODO: Could be more than one citation
         citations = safe_dic(self.md,'citation')
@@ -80,27 +84,27 @@ class metadata(object):
                 if c['technique'] == 'Regular expression':
                     citation = c['excerpt']
         if citation:
-            html += f"""<img src="repo_icons/citation.png" alt="citation" {self.s.get('repo-icon')} title="{citation}">"""
+            html += f"""<img src="{self.base}repo_icons/citation.png" alt="citation" {self.s.get('repo-icon')} title="{citation}">"""
         
         docker = safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
         if docker:
-            html += f"""<img src="repo_icons/docker.png" alt="docker" {self.s.get('repo-icon')} title="{[str(d) for d in docker]}">"""
+            html += f"""<img src="{self.base}repo_icons/docker.png" alt="docker" {self.s.get('repo-icon')} title="{[str(d) for d in docker]}">"""
         
         installation = safe_dic(self.md,'installation')
         if installation:
             installation = safe_dic(installation[0],'excerpt')
-            html += f"""<img src="repo_icons/installation.png" alt="installation" {self.s.get('repo-icon')} title="Installation:\n{installation}">"""
+            html += f"""<img src="{self.base}repo_icons/installation.png" alt="installation" {self.s.get('repo-icon')} title="Installation:\n{installation}">"""
         
         requirements = safe_dic(self.md,'requirement')
         if requirements:
             requirements = safe_dic(requirements[0],'excerpt')
-            html += f"""<img src="repo_icons/requirements.png" alt="requirements" {self.s.get('repo-icon')} title="Requirements:\n{requirements}">"""
+            html += f"""<img src="{self.base}repo_icons/requirements.png" alt="requirements" {self.s.get('repo-icon')} title="Requirements:\n{requirements}">"""
 
         paper = None
         # resolve DOI add https://www.doi.org/
         # TODO: extract from citation from regular expresion -> url
         if paper:
-            html += f"""<img src="repo_icons/paper.png" alt="paper" {self.s.get('repo-icon')} title="Paper">"""
+            html += f"""<img src="{self.base}repo_icons/paper.png" alt="paper" {self.s.get('repo-icon')} title="Paper">"""
 
         return html
 

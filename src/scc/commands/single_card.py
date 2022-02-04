@@ -10,9 +10,7 @@ def create(repo_url, output):
         print(f"ERROR: Could not extract metadata from {repo_url[0]}")
         exit()
 
-    portal.copy_assets(output)
+    #portal.copy_assets(output)
     card_view = card.html_view(metadata, embedded=True)
-    with open(f"{output}/card.html", "w") as index:
+    with open(f"{output}.html", "w") as index:
         index.write(card_view)
-    
-    return card_view

@@ -41,7 +41,7 @@ def portal(input, output):
 
 @cli.command()
 @click.option('--input','-i', required=True, help="Respository URL")
-@click.option('--output','-o', default="card", help="Outout dir where the card will be saved.")
+@click.option('--output','-o', default="card", help="Outout file where the card will be saved.")
 def card(input, output):
     """Create a single ready to use card with the css embedded."""
     from scc.commands import single_card

@@ -39,7 +39,7 @@ def html_view(repo_metadata, embedded):
                 <p {s.get('description')}>{md.description()}</p>
             </div>
             <div>
-                <img src="img/github-default.svg" alt="repo-logo" {s.get('repo-logo')}>
+                <img src="{md.logo()}" alt="repo-logo" {s.get('repo-logo')}>
                 <div {s.get('recently-updated')} title={md.last_update()}></div>
                 <div {s.get(['flex-horizontal','float-right'], custom_css='margin-top: 0.3rem;')} title="Stars">
                     <b>{md.stars()}</b>
