@@ -17,7 +17,7 @@ def fetch(repos_csv, output):
         for repo_url in csv_reader:
             try:
 
-                print(f"Extracting metadata from {repo_url[0]}")
+                print(f"Extracting metadata from {repo_url[0]}. It may take a while... (depends on repository size).")
                 metadata = cli_get_data(0.9, False, repo_url[0])
                 repo_full_name = (repo_url[0][19:]).replace("/", "_").replace(".","-")
 

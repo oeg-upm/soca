@@ -6,10 +6,10 @@ from click import style
 from . import metadata
 from . import styles
 
-def insert_cards(repo_metadata_dir, soup: BeautifulSoup, embeded = False):
+def insert_cards(repo_metadata_dir, soup: BeautifulSoup, embedded = False):
 
     # Insert CSS rules
-    s = styles.styles(embeded)
+    s = styles.styles(embedded)
     soup.style.string += s.get_rules()
 
     loc = soup.find(id="myCards")
@@ -23,12 +23,12 @@ def insert_cards(repo_metadata_dir, soup: BeautifulSoup, embeded = False):
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 print(f"Creating card for {filename}")
                 repo_metadata = json.load(json_metadata)
-                html_component = BeautifulSoup(html_view(repo_metadata, embeded), 'html.parser')
+                html_component = BeautifulSoup(html_view(repo_metadata, embedded), 'html.parser')
                 loc.append(html_component)
 
-def html_view(repo_metadata, embeded):
+def html_view(repo_metadata, embedded):
 
-    s = styles.styles(embeded)
+    s = styles.styles(embedded)
     md = metadata.metadata(repo_metadata, s)
 
     html_card = f"""

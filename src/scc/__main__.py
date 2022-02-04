@@ -11,6 +11,7 @@ def cli():
     1. (Command repos) Fetch all repos from the desired organization/s.\n
     2. (Command extract) Extract all metadata for every repo.\n
     3. (Command portal) Generate a searchable portal for all the retreived data.\n
+
     """
     pass 
 
@@ -37,6 +38,14 @@ def portal(input, output):
     """Build  a  portal  with a  minimalistic desing."""
     from scc.commands.software_catalog_portal import portal
     portal.generate(input, output)
+
+@cli.command()
+@click.option('--input','-i', required=True, help="Respository URL")
+@click.option('--output','-o', default="card", help="Outout dir where the card will be saved.")
+def card(input, output):
+    """Create a single ready to use card with the css embedded."""
+    from scc.commands import single_card
+    single_card.create(input, output)
 
 #if __name__ == "__main__":
 #    cli()

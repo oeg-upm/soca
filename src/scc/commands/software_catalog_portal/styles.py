@@ -70,15 +70,15 @@ class styles(object):
 
       
 
-    def __init__(self, embeded):
-        self.embeded =  embeded
+    def __init__(self, embedded):
+        self.embedded =  embedded
 
     def get_rules(self):
 
         rules = ''
         
         # CSS rules will be inside the html tags
-        if self.embeded:
+        if self.embedded:
             return rules
         
         for css_class in self.css_cards.keys():
@@ -88,7 +88,7 @@ class styles(object):
 
     def get_global_css(self):
 
-        if not self.embeded:
+        if not self.embedded:
             return ''
         
         return self.css_global
@@ -98,7 +98,7 @@ class styles(object):
         styles = ''
 
         # Return normal css class names        
-        if not self.embeded:
+        if not self.embedded:
 
             if isinstance(class_selector, list):
                 styles += f'''class="{' '.join(class_selector )}"'''
