@@ -34,10 +34,11 @@ def html_view(repo_metadata, embedded):
     # Instert embedded html data to be able to copy it
     if not embedded:
         html_copy_embedded = f"""<div class="copy_card_html" style="display: none;" id="{md.repo_url()}"> {html_view(repo_metadata, embedded=True)} </div>"""
-        copy_btn = f"""<button {s.get('copy-btn')} value="{md.repo_url()}">Copy</button>"""
+        copy_btn = f"""<button class="copy-btn" value="{md.repo_url()}">Copy</button>"""
     else:
         html_copy_embedded = ''
         copy_btn = ''
+
 
     html_card = f"""
     <article {s.get('card')}>

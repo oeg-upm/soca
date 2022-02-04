@@ -58,12 +58,8 @@ class styles(object):
 			justify-content: flex-end;""",
 
 		'grey-color-svg': """
-			filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);""",
+			filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);"""
 		
-		'copy-btn': """
-			background-color: #e0e0e0;
-			width: 3rem; 
-			border-radius: 1rem;"""
 	}
 
 	css_global = """
