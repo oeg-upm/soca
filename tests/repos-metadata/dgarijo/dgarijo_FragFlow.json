@@ -1,0 +1,175 @@
+{
+    "description": [
+        {
+            "excerpt": "Project designed for finding internal macro and composite workflow motifs in scientific workflow, defined according to  \n",
+            "confidence": [
+                0.9395994114028998
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "the results to the corpus. The results are linked according to the Workflow Fragment Description Ontology: http://purl.org/net/wf-fd \nIn order to achieve the results, this project defines diverse operations for graph manipulation and formatting. In particular: \n",
+            "confidence": [
+                0.9424499720533349,
+                0.9656461199433343
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Inference and abstraction of a workfow collection or individual workflows. \nRemote querying and adaptation to process RDF workflows exposed as Linked Data. \n",
+            "confidence": [
+                0.9209357691463277,
+                0.9420725324178859
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Capability of saving the results as RDF. \nComputation of statistics on the results obtained, and binding the fragments proposed by the tools to the results. \nThe project is configured as a Netbeans project right now. All the libraries and dependencies are jar files contained in the /lib folder. \n",
+            "confidence": [
+                0.9303081039306399,
+                0.9800596403111141,
+                0.9533824349250475
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Project desinged for detecting common fragments in scientific workflows by reusing several existing graph mining techniques",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "http://purl.org/net/wf-motifs#InternalMacro and http://purl.org/net/wf-motifs#CompositeWorkflow. \n",
+            "confidence": [
+                0.9940374757496615
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "long_title": {
+        "excerpt": "FragFlow",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/dgarijo/FragFlow",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "dgarijo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "User",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2013-10-30T17:11:07Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2015-03-09T18:50:15Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "FragFlow",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "dgarijo/FragFlow",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/dgarijo/FragFlow/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/dgarijo/FragFlow/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 2,
+            "date": "Fri, 04 Feb 2022 10:02:45 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 1,
+            "date": "Fri, 04 Feb 2022 10:02:45 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/dgarijo/FragFlow/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "GLSL",
+            "Java",
+            "Batchfile",
+            "Web Ontology Language",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/dgarijo/FragFlow/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

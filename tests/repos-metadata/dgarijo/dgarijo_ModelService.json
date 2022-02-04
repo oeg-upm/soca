@@ -1,0 +1,253 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the Models as a Service (MaaS) API for World Modelers. \n",
+            "confidence": [
+                0.9456939958201909
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Project Goals \n",
+            "confidence": [
+                0.9350270730088542
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "The goal of this project is to provide an easy to use, descriptive middleware layer API to facilitate model search and discovery, exploration, configuration, and execution. \n",
+            "confidence": [
+                0.9927803636122418
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "This is further enabled through the Concepts Controller which maps concepts to models, model outputs, and model parameters. A client may request a list of all concepts that are mapped to models in MaaS and may submit a single concept to learn which related models, outputs and parameters are tied to it in MaaS. \nModel execution is managed by the Execution Controller. Models consist of pre-built Docker images that are hosted on an arbitrary server. Running a model requires the creation of a specific model controller, such as this one for Kimetrica's malnutrition model. The model controller is responsible for obtaining a model configuration and tasking Docker to run the model image inside a container with the given configuration. The model controller specifies a Docker container entrypoint, such as this one. The model controller is then responsible for storing the output results file(s) to S3 and ingesting the normalized results into the MaaS database. \nModels may be run using the /run_model endpoint. For more information on model execution, refer to docs/model-execution.md. Currently, MaaS supports the following models: \n",
+            "confidence": [
+                0.9861158131310038,
+                0.9937050267353054,
+                0.9486781158090815
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Models as a Service (MaaS) API",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "Open API Code Generation \n",
+            "confidence": [
+                0.9600732982240069
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "long_title": {
+        "excerpt": "ModelService",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "run": [
+        {
+            "excerpt": "After [installation and setup](docs/installation.md), you can run MaaS from the `REST-Server` directory with:\n\n```\npython -m openapi_server\n```\n\nYou can access the UI at [http://0.0.0.0:8080/ui](http://0.0.0.0:8080/ui).",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/dgarijo/ModelService",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "dgarijo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "User",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2019-08-07T04:06:57Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-01-30T20:02:51Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "ModelService",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "dgarijo/ModelService",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/dgarijo/ModelService/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/dgarijo/ModelService/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:04:23 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:04:23 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/dgarijo/ModelService/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Jupyter Notebook",
+            "Python",
+            "Shell",
+            "PLpgSQL",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/dgarijo/ModelService/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasExecutableNotebook": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/maas_train_and_cache.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/FSC_TC.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Model-Service-Example.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/registration/example-data-generator.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/LPJmL-Integration/data_processing.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/LPJmL-Integration/parse_crop_mask.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/LPJmL-Integration/parse_lpjml_output.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Atlas-Integration/GeoTif-Viz.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Atlas-Integration/Atlas-Mosaic-Builder.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Atlas-Integration/Atlas-MINT.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Kimetrica-Integration/Kimetrica-MINT.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Kimetrica-Integration/Docker-Kiluigi.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/CHIRPS-Integration/CHIRPS-MINT.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/CHIRPS-Integration/CHIRPS-Viz.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/CHIRPS-Integration/CHIRPS_browse.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Yield-Anomalies-Integration/DB-Integration.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/notebooks/Emulation-Queries.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/notebooks/model-execution.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/notebooks/model-parameterization.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Model-Outputs/DSSAT-Sensitivity.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Model-Outputs/APSIM-Preparation.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Model-Outputs/FSC-Preparation.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Model-Outputs/CHIRPS-Preparation.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Model-Outputs/geojson-formatting.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Model-Outputs/raster-to-csv.ipynb"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/REST-Server/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasDocumentation": {
+        "excerpt": [
+            "https://github.com/dgarijo/ModelService/tree/master/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/TWIST-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Flood-Index-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/CSIRO-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/UAZ-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Atlas-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/DSSAT-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Kimetrica-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/PIHM-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/World-Population-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/REST-Server/git_push.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/FSC-Integration/maas_install.sh",
+            "https://raw.githubusercontent.com/dgarijo/ModelService/master/Yield-Anomalies-Integration/maas_install.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

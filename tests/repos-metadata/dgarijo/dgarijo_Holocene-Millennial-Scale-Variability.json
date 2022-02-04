@@ -1,0 +1,129 @@
+{
+    "description": [
+        {
+            "excerpt": "The goal of this research is to quantify the role of solar variability in Holocene millennial-scale variability observed in marine proxy records of sea surface temperature (SST). The solar forcing hypothesis is often put forward in the literature because of similarities between the spectral peaks at 1000 and 2500-year periodicities within time series of Holocene climate proxy records and reconstructions of solar variability. The problem of attributing Holocene millennial-scale variability to solar forcing has stemmed from the lack of a mechanism by which small changes in total solar irradiance can influence a global climate response. One possible amplifier within the climate system is the ocean. If this is the case, then we need to know more about where and how this may be occurring. On the other hand, the similarity in spectral peaks could be merely coincidental, and this should be made apparent by a lack of coherence in how that power and phasing is distributed in space and time. \nThe plausibility of the solar forcing hypothesis will be assessed through a model of the uncertainties affecting different proxies including an account for how marine proxy records are calibrated, analyzed, dated, and interpreted. Bayesian inference and Monte Carlo sampling will be used to propagate these uncertainties through spectral analyses and decomposition of the climate and forcing signals at particular frequencies. \n",
+            "confidence": [
+                0.9965781443520315,
+                0.9770221685429209
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Repository with all publications and codes related to understanding the solar-climate connection over millennial timescales during the Holocene",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "long_title": {
+        "excerpt": "Testing the solar-climate connection on millennial timescale during the Holocene",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/dgarijo/Holocene-Millennial-Scale-Variability",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "dgarijo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "User",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2017-08-18T20:56:46Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2017-02-24T19:07:07Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "Holocene-Millennial-Scale-Variability",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "dgarijo/Holocene-Millennial-Scale-Variability",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/dgarijo/Holocene-Millennial-Scale-Variability/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/dgarijo/Holocene-Millennial-Scale-Variability/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:03:01 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:03:01 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/dgarijo/Holocene-Millennial-Scale-Variability/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/dgarijo/Holocene-Millennial-Scale-Variability/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

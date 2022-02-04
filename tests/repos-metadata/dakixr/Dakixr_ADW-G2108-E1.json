@@ -1,0 +1,158 @@
+{
+    "citation": [
+        {
+            "excerpt": "Se ha de ejecutar uno de los siguientes comandos, en funci\u00f3n del volumen de pruebas que se deseen realiar, desde la ra\u00edz del proyecto y los resultados de los test se almacenar\u00e1n dentro del directorio Resultados en formato json. \n",
+            "confidence": [
+                0.9912148993197553
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Los tiempos (s) se muestran en el siguiente formato: separando InnoDb de MyISAM, agrupando los tiempos con el mismo n\u00famero de entradas y especificando el n\u00famero de clientes ejecutando queries de manera simultanea.  \n",
+            "confidence": [
+                0.9964189199332645
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "Tener jq: sudo apt install jq. \n",
+            "confidence": [
+                0.9896960115058692
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "long_title": {
+        "excerpt": "ADW - E1 - Desarrollo pr\u00e1ctico",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/Dakixr/ADW-G2108-E1",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "Dakixr",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "User",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-05-17T12:27:37Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-05-20T14:59:08Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "ADW-G2108-E1",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "Dakixr/ADW-G2108-E1",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/Dakixr/ADW-G2108-E1/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/Dakixr/ADW-G2108-E1/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 09:48:01 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 09:48:01 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/Dakixr/ADW-G2108-E1/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Shell",
+            "Python"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/Dakixr/ADW-G2108-E1/blob/main/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/Dakixr/ADW-G2108-E1/main/run-all-tests-json.sh",
+            "https://raw.githubusercontent.com/Dakixr/ADW-G2108-E1/main/run-queries.sh",
+            "https://raw.githubusercontent.com/Dakixr/ADW-G2108-E1/main/run-demo-tests-json.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

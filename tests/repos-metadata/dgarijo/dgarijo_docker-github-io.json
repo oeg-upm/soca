@@ -1,0 +1,409 @@
+{
+    "description": [
+        {
+            "excerpt": "Welcome to the repo for our documentation. This is the source for the URL \n",
+            "confidence": [
+                0.9808827351055711
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Feel free to send us pull requests and file issues. Our docs are completely \n",
+            "confidence": [
+                0.9190995865051846
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "or confusing in the docs. \n",
+            "confidence": [
+                0.9066543765743861
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "  of Docker, or have found a bug in part of Docker, please file that issue in \n  the project's code repository. \n",
+            "confidence": [
+                0.9652284304202977,
+                0.9864178766076738
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "as possible to work in this repository. One of the first things to decide is \n",
+            "confidence": [
+                0.9586444111062447
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Note: To contribute code to Docker projects, see the \n",
+            "confidence": [
+                0.9481426981169225
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Conceptual and task-based information not specific to new features \n",
+            "confidence": [
+                0.9651741319024957
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "One quirk of this project is that the master branch is where the live docs are \n",
+            "confidence": [
+                0.9950669896477295
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Specific new features for a project \nfor how to document upcoming features. These feature branches will be periodically \n",
+            "confidence": [
+                0.9868061789228834,
+                0.9000775076717301
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "your pull request relates to a currently unreleased feature of a project, base \nyour work on that project's vnext branch. These branches were created by \ncloning master and then importing a project's master branch's docs into it \n(at the time of the migration), in a way that preserved the commit history. When \n",
+            "confidence": [
+                0.9929428897095299,
+                0.9774958672205647,
+                0.947971843360797,
+                0.986038939376461
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "  docs for upcoming features in the docker/docker \n  project \n",
+            "confidence": [
+                0.9580485664906561,
+                0.9629962971611608
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "  docs for upcoming features in the docker/compose \n  project \n",
+            "confidence": [
+                0.9608071496811407,
+                0.9629962971611608
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "  docs for upcoming features in the docker/distribution \n  project \n",
+            "confidence": [
+                0.9552383901435874,
+                0.9629962971611608
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "  docs for upcoming features in the docker/opensource \n  project \n",
+            "confidence": [
+                0.9828637142924326,
+                0.9629962971611608
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "  docs for upcoming features in the docker/swarm \n  project \n",
+            "confidence": [
+                0.9828637142924326,
+                0.9629962971611608
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "  docs for upcoming features in the docker/toolbox \n  project \n",
+            "confidence": [
+                0.9828637142924326,
+                0.9629962971611608
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "  docs for upcoming features in the docker/kitematic \n  project \n",
+            "confidence": [
+                0.9828637142924326,
+                0.9629962971611608
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Click Details to review the staged site or the errors that prevented it from \n",
+            "confidence": [
+                0.9251341823616284
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "and refresh to see your changes. The container runs in the foreground, but \n",
+            "confidence": [
+                0.9514916748344562
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "The jekyll serve process runs in the foreground, and starts a web server \n",
+            "confidence": [
+                0.9313704603174053
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "/_layouts/docs.html is the HTML template file, which defines the header and footer, and includes all the JS/CSS that serves the docs content \nFeel free to link to ../foo.md so that the docs are readable in GitHub, but keep in mind that Jekyll templating notation \n",
+            "confidence": [
+                0.9293090146007817,
+                0.9632067009849091
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "For information on generating man pages (short for manual page), see the README.md \n",
+            "confidence": [
+                0.9328762078672068
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Source repo for Docker's Documentation",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "If you have questions about how to write for Docker's documentation, please see\nthe [style guide](https://docs.docker.com/opensource/doc-style/). The style guide provides\nguidance about grammar, syntax, formatting, styling, language, or tone. If\nsomething isn't clear in the guide, please submit an issue to let us know or\nsubmit a pull request to help us improve it.\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "follow these installation instructions. \n",
+            "confidence": [
+                0.9738741046469691
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "issue the following command: \n",
+            "confidence": [
+                0.9245254193960951
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "b. Install Ruby 2.3 or later as described in [Installing Ruby] \n",
+            "confidence": [
+                0.9364328511535077
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "c. Install Bundler: \n",
+            "confidence": [
+                0.9788289010132205
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "   gem install bundler \nd. If you use Ubuntu, install packages required for the Nokogiri HTML \n",
+            "confidence": [
+                0.9788289010132205,
+                0.9917035278894997
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "   sudo apt-get install ruby-dev zlib1g-dev liblzma-dev \ne. Install Jekyll and other required dependencies: \n",
+            "confidence": [
+                0.9508601464373813,
+                0.9748318666414542
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "   bundle install \nNote: You may have to install some packages manually.    \n",
+            "confidence": [
+                0.9334981194695299,
+                0.9826809019498307
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "long_title": {
+        "excerpt": "Docs @ Docker",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/dgarijo/docker.github.io",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "dgarijo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "User",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2017-02-14T23:26:58Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2017-02-14T23:27:07Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "docker.github.io",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "dgarijo/docker.github.io",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/dgarijo/docker.github.io/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/dgarijo/docker.github.io/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:02:02 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:02:02 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/dgarijo/docker.github.io/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "JavaScript",
+            "CSS",
+            "HTML",
+            "Go",
+            "Makefile",
+            "Shell",
+            "Ruby"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/dgarijo/docker.github.io/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'Copyright 2008-2013 Concur Technologies, Inc.\\n\\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may\\nnot use this file except in compliance with the License. You may obtain\\na copy of the License at\\n\\n   http://www.apache.org/licenses/LICENSE-2.0\\n\\nUnless required by applicable law or agreed to in writing, software\\ndistributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\\nWARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the\\nLicense for the specific language governing permissions and limitations\\nunder the License.'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "contributingGuidelines": {
+        "excerpt": "Contributing\nWe value your documentation contributions, and we want to make it as easy\nas possible to work in this repository. One of the first things to decide is\nwhich branch to base your work on. If you get confused, just ask and we will\nhelp. If a reviewer realizes you have based your work on the wrong branch, we'll\nlet you know so that you can rebase it.\n\nNote: To contribute code to Docker projects, see the\nContribution guidelines.\n\nFiles not edited here\nFiles and directories listed in the path: keys in\n.NOT_EDITED_HERE.yaml are maintained in other\nrepositories and should not be edited in this one. Pull requests against these\nfiles will be rejected. Make your edits to the files in the repository and path\nin the source: key in the YAML file.\nQuickstart\nIf you spot a problem while reading the documentation and want to try to fix it\nyourself, click the Edit this page link at the bottom of that page. The\npage will open in the Github editor, which means you don't need to know a lot\nabout Git, or even about Markdown.\nWhen you save, you will be prompted to create a fork if you don't already have\none, and to create a branch in your fork and submit the pull request. We hope\nyou give it a try!\nOverall doc improvements\nMost commits will be made against the master branch. This include:\n\nConceptual and task-based information not specific to new features\nRestructuring / rewriting\nDoc bug fixing\nTypos and grammar errors\n\nOne quirk of this project is that the master branch is where the live docs are\npublished from, so upcoming features can't be documented there. See\nSpecific new features for a project\nfor how to document upcoming features. These feature branches will be periodically\nmerged with master, so don't worry about fixing typos and documentation bugs\nthere.\n\nDo you enjoy creating graphics? Good graphics are key to great documentation,\nand we especially value contributions in this area.\n\nSpecific new features for a project\nOur docs cover many projects which release at different times. If, and only if,\nyour pull request relates to a currently unreleased feature of a project, base\nyour work on that project's vnext branch. These branches were created by\ncloning master and then importing a project's master branch's docs into it\n(at the time of the migration), in a way that preserved the commit history. When\na project has a release, its vnext branch will be merged into master and your\nwork will be visible on docs.docker.com.\nThe following vnext branches currently exist:\n\n\nvnext-engine:\n  docs for upcoming features in the docker/docker\n  project\n\n\nvnext-compose:\n  docs for upcoming features in the docker/compose\n  project\n\n\nvnext-distribution:\n  docs for upcoming features in the docker/distribution\n  project\n\n\nvnext-opensource:\n  docs for upcoming features in the docker/opensource\n  project\n\n\nvnext-swarm:\n  docs for upcoming features in the docker/swarm\n  project\n\n\nvnext-toolbox:\n  docs for upcoming features in the docker/toolbox\n  project\n\n\nvnext-kitematic:\n  docs for upcoming features in the docker/kitematic\n  project\n\n\nCollaborate on a pull request\nUnless the PR author specifically disables it, you can push commits into another\ncontributor's PR. You can do it from the command line by adding and fetching\ntheir remote, checking out their branch, and adding commits to it. Even easier,\nyou can add commits from the Github web UI, by clicking the pencil icon for a\ngiven file in the Files view.\nIf a PR consists of multiple small addendum commits on top of a more significant\none, the commit will usually be \"squash-merged\", so that only one commit is\nmerged in. On occasion this is not appropriate and all commits will be kept\nseparate when merging.\nPull request guidelines\nHelp us review your PRs more quickly by following these guidelines.\n\n\nTry not to touch a large number of files in a single PR if possible.\n\n\nDon't change whitespace or line wrapping in parts of a file you are not\n  editing for other reasons. Make sure your text editor is not configured to\n  automatically reformat the whole file when saving.\n\n\nA Netlify test runs for each PR that is against one of our long-lived\n  branches like master and the vnext branches, and deploys the result of\n  your PR to a staging site. The URL will be available at the bottom of the PR\n  in the Conversation view. Check the staging site for problems and fix them\n  if necessary. Reviewers will check the staging site too.\n\n\nIf you can think of other ways we could streamline the review process, let us\nknow.\nStyle guide\nIf you have questions about how to write for Docker's documentation, have a look\nat the style guide. The style\nguide provides guidance about grammar, syntax, formatting, styling, language, or\ntone. If something isn't clear in the guide, please submit an issue to let us\nknow or submit a pull request to help us improve it.",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/Dockerfile",
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/tests/Dockerfile",
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/_data/staging-container/Dockerfile",
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/apidocs/cloud-api-source/Dockerfile",
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/engine/security/https/Dockerfile",
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/engine/examples/mongodb/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/favicons/get.sh",
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/notary/resources/opensslCertGen.sh",
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/apidocs/cloud-api-source/publish.sh",
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/engine/security/https/parsedocs.sh",
+            "https://raw.githubusercontent.com/dgarijo/docker.github.io/master/engine/security/https/make_certs.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}
