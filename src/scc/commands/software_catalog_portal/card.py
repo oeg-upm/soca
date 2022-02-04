@@ -1,10 +1,16 @@
 import os
 import json
 from bs4 import BeautifulSoup
+from click import style
 
 from . import metadata
+from . import styles
 
-def insert_cards(repo_metadata_dir, soup):
+def insert_cards(repo_metadata_dir, soup: BeautifulSoup, embeded = False):
+
+    # Insert CSS rules
+    s = styles.styles(embeded)
+    soup.style.string += s.get_rules()
 
     loc = soup.find(id="myCards")
     meta_dir = os.fsencode(repo_metadata_dir)
@@ -17,49 +23,50 @@ def insert_cards(repo_metadata_dir, soup):
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 print(f"Creating card for {filename}")
                 repo_metadata = json.load(json_metadata)
-                html_component = BeautifulSoup(html_view(repo_metadata), 'html.parser')
+                html_component = BeautifulSoup(html_view(repo_metadata, embeded), 'html.parser')
                 loc.append(html_component)
 
-def html_view(repo_metadata):
+def html_view(repo_metadata, embeded):
 
-    md = metadata.metadata(repo_metadata)
+    s = styles.styles(embeded)
+    md = metadata.metadata(repo_metadata, s)
 
     html_card = f"""
-    <article class="card">
-
-        <div class="card-row">
-            <div class="card-col1">
-                <h4 class="title">{md.title()}</h4>
-                <p class="description">{md.description()}</p>
+    <article {s.get('card')}>
+        <div {s.get('card-row')}>
+            <div {s.get('card-col1')}>
+                <h4 style="{s.get_global_css()}">{md.title()}</h4>
+                <p {s.get('description')}>{md.description()}</p>
             </div>
-            <div class="card-col2">
-                <img src="img/github-default.svg" alt="repo-logo" class="repo-logo">
-                <div class="recently-updated" title={md.last_update()}></div>
-                <div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
-                    <p><b>{md.stars()}</b></p>
-                    <img src="repo_icons/star.png" alt="stars" class="repo-icon">
+            <div>
+                <img src="img/github-default.svg" alt="repo-logo" {s.get('repo-logo')}>
+                <div {s.get('recently-updated')} title={md.last_update()}></div>
+                <div {s.get(['flex-horizontal','float-right'], custom_css='margin-top: 0.3rem;')} title="Stars">
+                    <b>{md.stars()}</b>
+                    <img src="repo_icons/star.png" alt="stars" {s.get('repo-icon')}>
                 </div>
-                <div class="flex-horizontal float-right" title="Releases">
-                    <p><b>{md.releases()}</b></p>
-                    <img src="repo_icons/releases.png" alt="releases" class="repo-icon">
+                <div title="Releases">
+                    <a href="{md.url_releases()}" target="_blank" {s.get(['flex-horizontal','float-right'], custom_css='text-decoration: none;')}>
+                        <b>{md.n_releases()}</b>
+                        <img src="repo_icons/releases.png" alt="releases" {s.get('repo-icon')}>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="card-row">
-            <div class="card-col1">
-                <div class="flex-horizontal">
+        <div {s.get('card-row')}>
+            <div {s.get('card-col1')}>
+                <div {s.get('flex-horizontal')}>
                     {md.html_repo_icons()}
                 </div>
             </div>
-            <div class="card-col2">
-                <div class="flex-horizontal float-right grey-color-svg">
+            <div>
+                <div {s.get(['flex-horizontal','float-right','grey-color-svg'])}>
                     {md.html_languages()}
                 </div>
             </div>
         </div>
-    
     </article>
-"""
+    """
 
     return html_card

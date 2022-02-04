@@ -9,20 +9,7 @@ from scc import base_dir
 
 def generate(repo_metadata_dir, output):
 
-    global base
-    
-    # Make output dir
-    if not os.path.exists(output):
-        os.makedirs(output)
-
-    # Copy all img to destination folder
-    copy_tree(f"{base_dir}/assets/img", f"{output}/img")
-
-    # Copy all languague_icons
-    copy_tree(f"{base_dir}/assets/language_icons", f"{output}/language_icons")
-
-    # Copy all repo_icons
-    copy_tree(f"{base_dir}/assets/repo_icons", f"{output}/repo_icons")
+    copy_assets(output)
 
     # Load the template
     with open(f"{base_dir}/assets/template.html") as template:
@@ -38,7 +25,22 @@ def generate(repo_metadata_dir, output):
     with open(f"{output}/index.html", "w") as index:
         index.write(str(soup))
 
-def add_last_updated_date(soup: BeautifulSoup):
+def copy_assets(output):
+
+    # Make output dir
+    if not os.path.exists(output):
+        os.makedirs(output)
+
+    # Copy all img to destination folder
+    copy_tree(f"{base_dir}/assets/img", f"{output}/img")
+
+    # Copy all languague_icons
+    copy_tree(f"{base_dir}/assets/language_icons", f"{output}/language_icons")
+
+    # Copy all repo_icons
+    copy_tree(f"{base_dir}/assets/repo_icons", f"{output}/repo_icons")
+
+def add_last_updated_date(soup):
     loc = soup.find(id="portal-last-updated")
     text = f"Last updated on {datetime.today().strftime('%d/%m/%Y')}"
     loc.string = text
