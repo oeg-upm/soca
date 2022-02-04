@@ -1,6 +1,8 @@
 from scc.commands.software_catalog_portal import card, portal
 from somef.cli import cli_get_data
 
+import htmlmin
+
 def create(repo_url, output):
 
     try:
@@ -12,5 +14,6 @@ def create(repo_url, output):
 
     #portal.copy_assets(output)
     card_view = card.html_view(metadata, embedded=True)
+    minified = htmlmin.minify(card_view, remove_empty_space=True)
     with open(f"{output}.html", "w") as index:
-        index.write(card_view)
+        index.write(minified)

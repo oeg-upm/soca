@@ -91,7 +91,7 @@ class styles(object):
         if not self.embedded:
             return ''
         
-        return self.css_global
+        return self.css_global.replace("\n", "").replace("\t", "").replace(" ", "")
 
     def get(self, class_selector, custom_css = None):
 
@@ -125,7 +125,7 @@ class styles(object):
 
         styles += '"'
 
-        return styles
+        return styles.replace("\n", "").replace("\t", "").replace(" ", "")
 
 
 
