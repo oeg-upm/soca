@@ -4,6 +4,7 @@
 <head>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>SCC</title>
+
 <style>
 
 /* Global style */
@@ -43,88 +44,6 @@ body {
               inset -5px -5px 10px #ffffff;
 }
 
-/* Cards css */
-
-#myCards {
-  min-height: 76.5vh;
-  max-width: 1600px;
-  display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  margin: 2rem auto;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    line-height: 1.42857143;
-    margin: 0.2rem;
-    min-width: 28rem;
-    max-width: 28rem;
-    min-height: 15rem;
-    max-height: 15rem;
-    padding: 1.3rem;
-    border-radius: 19px;
-    box-shadow: inset 5px 5px 10px #bebebe,
-                inset -5px -5px 10px #ffffff;
-}
-
-.repo-logo {
-    width: 5.5rem;
-}
-
-.description {
-    text-align: justify;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 6; /* number of lines to show */
-    line-clamp: 6; 
-    -webkit-box-orient: vertical;
-}
-
-.recently-updated{
-    width: 1.4rem;
-    height: 1.4rem;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: 0.1rem;
-    background-color: #6da862;
-}
-
-.repo-icon{
-    height: 1.1rem;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-}
-
-.card-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.card-col1 {
-    width: 72%;
-}
-
-.flex-horizontal{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-.float-right{
-    justify-content: flex-end;
-}
-
-.grey-color-svg {
-    filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);
-}
-
 /* Footer */
 footer {  
     width: 100%;
@@ -145,7 +64,20 @@ footer {
     display: flex;
 }
 
+/* Cards css */
+#myCards {
+  min-height: 76.5vh;
+  max-width: 1600px;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
 </style>
+
 </head>
 <body>
 <nav class="navbar">
@@ -167,6 +99,7 @@ footer {
 <a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
 </div>
 </footer>
+
 <script>
 
 function myFunction() {
