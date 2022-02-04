@@ -43,7 +43,7 @@ def html_view(repo_metadata, embedded):
     <article {s.get('card')}>
         <div {s.get('card-row')}>
             <div {s.get('card-col1')}>
-                <a href="{md.repo_url()}" target="_blank" style="text-decoration: none;"><h4 style="{s.get_global_css()}">{md.title()}</h4></a>
+                <a href="{md.repo_url()}" target="_blank" style="text-decoration: none;"><h4 class="title" style="{s.get_global_css()}">{md.title()}</h4></a>
                 <p {s.get('description')}>{md.description()}</p>
             </div>
             <div>
