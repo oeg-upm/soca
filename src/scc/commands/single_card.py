@@ -1,7 +1,5 @@
-from scc.commands.software_catalog_portal import card, portal
+from scc.commands.software_catalog_portal import card
 from somef.cli import cli_get_data
-
-import htmlmin
 
 def create(repo_url, output):
 
@@ -11,9 +9,7 @@ def create(repo_url, output):
     except:
         print(f"ERROR: Could not extract metadata from {repo_url[0]}")
         exit()
-
-    #portal.copy_assets(output)
+        
     card_view = card.html_view(metadata, embedded=True)
-    minified = htmlmin.minify(card_view, remove_empty_space=True)
     with open(f"{output}.html", "w") as index:
-        index.write(minified)
+        index.write(card_view)
