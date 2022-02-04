@@ -76,6 +76,21 @@ footer {
   margin: 2rem auto;
 }
 
+.copy-btn:active {
+    position: relative;
+    top: 1px;
+    background-color: #3e3e3e;
+    color: #e0e0e0;
+}
+
+.copy-btn {
+			background-color: #e0e0e0;
+			width: 3rem; 
+			border-radius: 1rem;
+      border: 2px solid #3e3e3e;
+      cursor: pointer;
+}
+
 .card{
 			display: flex;
 			flex-direction: column;
@@ -134,11 +149,6 @@ footer {
 }
 .grey-color-svg{
 			filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);
-}
-.copy-btn{
-			background-color: #e0e0e0;
-			width: 3rem; 
-			border-radius: 1rem;
 }
 </style>
 </head>
@@ -8153,7 +8163,7 @@ $("button").click(function() {
 
     var copy_card = document.getElementById($(this).val());
     navigator.clipboard.writeText(copy_card.innerHTML)
-    alert("Card copied ✅")
+    //alert("Card copied successfully")
 
 });
 
