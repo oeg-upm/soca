@@ -3,6 +3,7 @@
 <html>
 <head>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <title>SCC</title>
 
 <style>
@@ -82,7 +83,7 @@ footer {
 <body>
 <nav class="navbar">
 <h2 id="nav-title">Software Catalog</h2>
-<input id="myInput" onkeyup="myFunction()" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
+<input id="myInput" onkeyup="search()" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
 </nav>
 <div id="myCards">
 
@@ -102,7 +103,7 @@ footer {
 
 <script>
 
-function myFunction() {
+function search() {
 
     var input, filter, cards, article, title, i, titleValue;
     
@@ -127,6 +128,14 @@ function myFunction() {
         }
     }
 }
+
+$("button").click(function() {
+
+    var copy_card = document.getElementById($(this).val());
+    navigator.clipboard.writeText(copy_card.innerHTML)
+    alert("Card copied ✅")
+
+});
 
 </script>
 </body>
