@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SCC</title>
+<style>
+
+/* Global style */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #3e3e3e;
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex; 
+  list-style: none; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #e9e9e9;
+  box-shadow:  5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
+}
+
+#myInput {
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 0px;
+  margin-left: 20px;
+  flex: auto;
+  border-radius: 50px;
+  background: #e9e9e9;
+  box-shadow: inset 5px 5px 10px #bebebe,
+              inset -5px -5px 10px #ffffff;
+}
+
+/* Footer */
+footer {  
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    background: #e9e9e9;
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+}
+
+.footer-img {
+    height: 4rem;
+}
+
+.flex-center {
+    display: flex;
+}
+
+/* Cards css */
+#myCards {
+  min-height: 76.5vh;
+  max-width: 1600px;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.card{ 
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			line-height: 1.42857143;
+			margin: 0.2rem;
+			min-width: 28rem;
+			max-width: 28rem;
+			min-height: 15rem;
+			max-height: 15rem;
+			padding: 1.3rem;
+			border-radius: 19px;
+			box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+.repo-logo{
+			width: 5.5rem;
+}
+.description{
+			text-align: justify;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 6;
+			line-clamp: 6; 
+			-webkit-box-orient: vertical;
+}
+.recently-updated{
+			width: 1.4rem;
+			height: 1.4rem;
+			border-radius: 50%;
+			margin-left: auto;
+			margin-right: 0.1rem;
+			background-color: #6da862;
+}
+.repo-icon{
+			height: 1.1rem;
+			margin-left: 0.2rem;
+			margin-right: 0.2rem;
+}
+.card-row{    
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+}
+.card-col1{
+			width: 72%;
+}
+.flex-horizontal{
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+}
+.float-right{
+			justify-content: flex-end;
+}
+.grey-color-svg{
+			filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+<h2 id="nav-title">Software Catalog</h2>
+<input id="myInput" onkeyup="myFunction()" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
+</nav>
+<div id="myCards">
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">Holocene-Millennial-Scale-Variability</h4>
+<p class="description">The goal of this research is to quantify the role of solar variability in Holocene millennial-scale variability observed in marine proxy records of sea surface temperature (SST). The solar forcing hypothesis is often put forward in the literature because of similarities between the spectral peaks at 1000 and 2500-year periodicities within time series of Holocene climate proxy records and reconstructions of solar variability. The problem of attributing Holocene millennial-scale variability to solar forcing has stemmed from the lack of a mechanism by which small changes in total solar irradiance can influence a global climate response. One possible amplifier within the climate system is the ocean. If this is the case, then we need to know more about where and how this may be occurring. On the other hand, the similarity in spectral peaks could be merely coincidental, and this should be made apparent by a lack of coherence in how that power and phasing is distributed in space and time. 
+The plausibility of the solar forcing hypothesis will be assessed through a model of the uncertainties affecting different proxies including an account for how marine proxy records are calibrated, analyzed, dated, and interpreted. Bayesian inference and Monte Carlo sampling will be used to propagate these uncertainties through spectral analyses and decomposition of the climate and forcing signals at particular frequencies. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2017-02-24T19:07:07Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/Holocene-Millennial-Scale-Variability/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/Holocene-Millennial-Scale-Variability/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/Holocene-Millennial-Scale-Variability/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">ModelService</h4>
+<p class="description">This repository contains the Models as a Service (MaaS) API for World Modelers. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-01-30T20:02:51Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/ModelService/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/ModelService/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><img alt="notebook" class="repo-icon" src="repo_icons/notebook.png" title="Notebook"/><a class="repo-icon" href="https://github.com/dgarijo/ModelService/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="docker" class="repo-icon" src="repo_icons/docker.png" title="['https://raw.githubusercontent.com/dgarijo/ModelService/master/REST-Server/Dockerfile']"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+<img alt="shell" class="repo-icon" src="language_icons/shell.svg" title="Shell"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">LONI2OPMW</h4>
+<p class="description">Project designed to convert the LONI Pipeline Templates to OPMW</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2016-05-23T10:14:00Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/LONI2OPMW/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/LONI2OPMW/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/LONI2OPMW/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="java" class="repo-icon" src="language_icons/java.svg" title="Java"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">Otalex</h4>
+<p class="description">Repository for storing all the construct queries needed to enhance the Otalex RDF, along with the website. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2016-01-21T19:03:33Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/Otalex/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/Otalex/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/Otalex/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="java" class="repo-icon" src="language_icons/java.svg" title="Java"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="shell" class="repo-icon" src="language_icons/shell.svg" title="Shell"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">Ontology</h4>
+<p class="description">Repository for storing the different versions and implementation of the Linked Earth ontology 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2018-07-18T19:35:44Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/Ontology/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/Ontology/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/Ontology/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">kgtk-delta-wikidata</h4>
+<p class="description">This repository contains the code for calculating  deltas from two sorted kgtk files. The effort is targeted towards capturing the differences between different Wikidata endpoints 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-11-13T00:13:28Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/kgtk-delta-wikidata/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/kgtk-delta-wikidata/blob/main/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/kgtk-delta-wikidata/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">jatawareAPI</h4>
+<p class="description">A small repository for supporting search over Jataware space</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2019-08-20T04:24:47Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/jatawareAPI/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/jatawareAPI/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/jatawareAPI/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">handson-ml</h4>
+<p class="description">A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2017-04-20T02:32:30Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/handson-ml/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/handson-ml/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><img alt="notebook" class="repo-icon" src="repo_icons/notebook.png" title="Notebook"/><a class="repo-icon" href="https://github.com/dgarijo/handson-ml/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="installation" class="repo-icon" src="repo_icons/installation.png" title="Installation:
+Obviously, you will need [git](https://git-scm.com/) and [python](https://www.python.org/downloads/) (python 3 is recommended, but python 2 should work as well).
+
+First, clone this repository:
+
+    $ cd {your development directory}
+    $ git clone https://github.com/ageron/handson-ml.git
+    $ cd handson-ml
+
+If you want an isolated environment (recommended), you can use [virtualenv](https://virtualenv.readthedocs.org/en/latest/):
+
+    $ virtualenv env
+    $ source ./env/bin/activate
+
+If you want to go through chapter 16 on Reinforcement Learning, you will need to [install OpenAI gym](https://gym.openai.com/docs) and its dependencies for Atari simulations.
+
+Then make sure pip is up to date, and use it to install the required python packages:
+
+    $ pip install --upgrade pip
+    $ pip install --upgrade -r requirements.txt
+
+If you prefer to use [Anaconda](https://www.continuum.io/), you can run the following commands instead:
+
+    $ conda install -c conda-forge tensorflow=1.0.0
+    $ conda install -c conda-forge jupyter_contrib_nbextensions
+
+If you want to install the Jupyter extensions, run the following command:
+
+    $ jupyter contrib nbextension install --user
+
+Then you can activate an extension, such as the Table of Contents (2) extension:
+
+    $ jupyter nbextension enable toc2/main
+
+Finally, launch Jupyter:
+
+    $ jupyter notebook
+
+This should start the Jupyter server locally, and open your browser. If your browser does not open automatically, visit [localhost:8888](http://localhost:8888/tree). Click on `index.ipynb` to get started. You can visit [http://localhost:8888/nbextensions](http://localhost:8888/nbextensions) to activate and configure Jupyter extensions.
+
+That's it! Have fun learning ML.
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">FragFlow</h4>
+<p class="description">Project designed for finding internal macro and composite workflow motifs in scientific workflow, defined according to  
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2015-03-09T18:50:15Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>2</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/FragFlow/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/FragFlow/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/FragFlow/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="java" class="repo-icon" src="language_icons/java.svg" title="Java"/>
+<img alt="shell" class="repo-icon" src="language_icons/shell.svg" title="Shell"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">ExoTETHyS</h4>
+<p class="description">**sail\_example1**: This example is to compute the limb-darkening coefficients for a single stellar target and photometric passband. It creates a file named "teff6065.0_logg4.36_MH0.0_ldc.pickle".
+
+**sail\_example2**: This example is to test the complete output, including the stellar intensity profile and coefficients for the neighbour models. It creates three files named "teff28300.0_logg4.35_MH-0.23_ldc.pickle", "teff28300.0_logg4.35_MH-0.23_neighbour_ldc.pickle" and "teff28300.0_logg4.35_MH-0.23_neighbour_intensities.pickle".
+
+**sail\_example3**: This example contains stellar parameters just outside the covered parameter space. If running this example, the code will exit with 2 warnings (one for each neighbour not found) and one error:
+```
+WARNING: teff28300.0_logg2.6_MH-0.23 cannot be calculated. Neighbour 3 not found for the stellar_models_grid Atlas_2000 .
+WARNING: teff28300.0_logg2.6_MH-0.23 cannot be calculated. Neighbour 4 not found for the stellar_models_grid Atlas_2000 .
+ERROR: No legal targets to calculate.
+```
+In particular, the code searches for the 8 nearest neighbours that defines a volume containing the requested point (28000, 2.6, -0.23 ) in the following order:  
+neighbour 1: (+, +, +)  
+neighbour 2: (+, +, -)  
+neighbour 3: (+, -, +)  
+neighbour 4: (+, -, -)  
+neighbour 5: (-, +, +)  
+neighbour 6: (-, +, -)  
+neighbour 7: (-, -, +)  
+neighbour 8: (-, -, -)  
+where "+" and "-" denote a parameter value higher or lower than in the requested point. In this case the code fails to find neighbours with higher effective temperature and lower surface gravity, as they do not exist in the Atlas\_2000 database. If more targets were requested, the code would just skip this target and move to the next one. Given there are no other requested targets, the code prints the error message and exits without producing any output.  
+The user can extract the information about all the available models in the grids by typing the following commands:  
+```
+&gt;&gt;&gt; from exotethys import sail  
+&gt;&gt;&gt; [files_Atlas_2000, params_Atlas_2000] = sail.get_grid_parameters('Atlas_2000') 
+&gt;&gt;&gt; [files_Phoenix_2012_13, params_Phoenix_2012_13] = sail.get_grid_parameters('Phoenix_2012_13') 
+&gt;&gt;&gt; [files_Phoenix_2018, params_Phoenix_2018] = sail.get_grid_parameters('Phoenix_2018') 
+```
+The first variable is the list of file names in the database, the second variable is the 3-column numpy array with the corresponding stellar parameters.
+
+**sail\_example4**: This example computes the limb-darkening coefficients for a grid of models. It creates a file named "grid_ldc.pickle".
+
+**sail\_example5**: This example computes the limb-darkening coefficients for a single stellar target over multiple spectroscopic bins within an instrument passband. It creates a file named "teff6065.0_logg4.36_MH0.0_ldc.pickle".
+
+**sail\_example6**: This example computes the limb-darkening coefficients for a single stellar target over multiple spectroscopic bins within an instrument passband and for another photometric passband. It creates a file named "teff6065.0_logg4.36_MH0.0_ldc.pickle".
+
+**sail\_example7**: This example computes the limb-darkening coefficients for two targets with names over multiple spectroscopic bins within an instrument passband. It creates two files named "HD209458b_ldc.pickle" and "WASP43b_ldc.pickle".
+
+**sail\_example8**: This example computes the limb-darkening coefficients for three targets read from file over multiple spectroscopic bins within an uniform passband. It creates three files named "HD209458b_ldc.pickle", "Sun_ldc.pickle" and "Cool_ldc.pickle".
+
+**trip\_example**: This example computes an "exact" transit light-curve based on some auxiliary input files. It creates two files named "trip_ld_Teff6100.0_logg4.5_MH0.0_TESS.pickle" and "trip_ld_Teff6100.0_logg4.5_MH0.0_TESS.txt".  
+
+
+
+
+
+
+
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-03-20T18:36:47Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/ExoTETHyS/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/gpl-3.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: GNU General Public License v3.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/ExoTETHyS/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/ExoTETHyS/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="installation" class="repo-icon" src="repo_icons/installation.png" title="Installation:
+Version 1.0.2   
+"/><img alt="requirements" class="repo-icon" src="repo_icons/requirements.png" title="Requirements:
+The code is consistent with python2/3. It makes use of
+- numpy, scipy
+
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">docker.github.io</h4>
+<p class="description">Welcome to the repo for our documentation. This is the source for the URL 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2017-02-14T23:27:07Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/docker.github.io/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/docker.github.io/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/docker.github.io/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="docker" class="repo-icon" src="repo_icons/docker.png" title="['https://raw.githubusercontent.com/dgarijo/docker.github.io/master/Dockerfile', 'https://raw.githubusercontent.com/dgarijo/docker.github.io/master/tests/Dockerfile', 'https://raw.githubusercontent.com/dgarijo/docker.github.io/master/_data/staging-container/Dockerfile', 'https://raw.githubusercontent.com/dgarijo/docker.github.io/master/apidocs/cloud-api-source/Dockerfile', 'https://raw.githubusercontent.com/dgarijo/docker.github.io/master/engine/security/https/Dockerfile', 'https://raw.githubusercontent.com/dgarijo/docker.github.io/master/engine/examples/mongodb/Dockerfile']"/><img alt="installation" class="repo-icon" src="repo_icons/installation.png" title="Installation:
+If you have questions about how to write for Docker's documentation, please see
+the [style guide](https://docs.docker.com/opensource/doc-style/). The style guide provides
+guidance about grammar, syntax, formatting, styling, language, or tone. If
+something isn't clear in the guide, please submit an issue to let us know or
+submit a pull request to help us improve it.
+
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="go" class="repo-icon" src="language_icons/go.svg" title="Go"/>
+<img alt="shell" class="repo-icon" src="language_icons/shell.svg" title="Shell"/>
+<img alt="ruby" class="repo-icon" src="language_icons/ruby.svg" title="Ruby"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">ontosoftPortal</h4>
+<p class="description">Software repository portal built on semantic technologies</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2017-08-22T16:48:12Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/ontosoftPortal/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/ontosoftPortal/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/ontosoftPortal/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img "="" "changeme!".="" :)="" admin"="" alt="installation" change="" class="repo-icon" it="" password="" remember="" src="repo_icons/installation.png" title="Installation:
+1. $ mvn clean &amp;&amp; mvn install
+	- This will create a ontosoft-server-[version].war file in server/target
+	- It will also create a ontosoft-client-[version].war file in client/target
+
+2. Move the war files to a Servlet container (Tomcat)
+	- $ mv /path/to/ontosoft-server-&lt;version&gt;.war /path/to/tomcat/webapps/ontosoft-server.war
+	- $ mv /path/to/ontosoft-client-&lt;version&gt;.war /path/to/tomcat/webapps/ontosoft-client.war
+
+3. Start tomcat
+	- $ /path/to/tomcat/bin/startup.sh
+
+4. Open http://[your-server-name]:8080/ontosoft-server/vocabulary to check that the local repository server is working fine. It might take a little while to open it for the first time as it downloads vocabularies from the internet.
+
+5. Check $HOME/.ontosoft/server.properties file to see that server name is correctly identified
+
+6. Open http://[your-server-name]:8080/ontosoft-client to access the OntoSoft UI that connects with the local repository
+
+7. Customize the client by changing /path/to/tomcat/webapps/ontosoft-client/customise/config.js
+
+8. The default userid is " to="" with=""/><img alt="requirements" class="repo-icon" src="repo_icons/requirements.png" title="Requirements:
+1. Java JDK 1.7+ (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+2. Maven 2/3 (http://maven.apache.org/)
+3. Tomcat 7+ (http://tomcat.apache.org/)
+
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="java" class="repo-icon" src="language_icons/java.svg" title="Java"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">SDToCodemeta</h4>
+<p class="description">Simple repository to transform entries from the software description ontology to Codemeta</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2019-12-13T00:47:52Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/SDToCodemeta/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/SDToCodemeta/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/SDToCodemeta/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">DataNarratives</h4>
+<p class="description">DANA is a project to create different narratives for workflow results. The aim of data narratives is to be able to encapsulate and exploit the provenance of a resource to provide better explanations to others. 
+Incoming updates: a list of data narratives for genomics, water quality and text analytics workflows! 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2018-01-18T18:59:12Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/DataNarratives/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/DataNarratives/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/DataNarratives/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="java" class="repo-icon" src="language_icons/java.svg" title="Java"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">cvmfs-singularity-sync</h4>
+<p class="description">To add images to the repository for use on OSG, follow the instructions on the OSG 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-03-20T19:54:07Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/cvmfs-singularity-sync/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/cvmfs-singularity-sync/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/cvmfs-singularity-sync/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="docker" class="repo-icon" src="repo_icons/docker.png" title="['https://raw.githubusercontent.com/dgarijo/cvmfs-singularity-sync/master/.github/actions/docker-images-verification/Dockerfile']"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+<img alt="shell" class="repo-icon" src="language_icons/shell.svg" title="Shell"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">ar2dtool</h4>
+<p class="description">The syntax of the simple parameters is: 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2015-03-25T15:19:26Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/ar2dtool/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://raw.githubusercontent.com/dgarijo/ar2dtool/master/LICENSE" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Other"/></a><a class="repo-icon" href="https://github.com/dgarijo/ar2dtool/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/ar2dtool/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="java" class="repo-icon" src="language_icons/java.svg" title="Java"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">sparql-jsonld</h4>
+<p class="description">No description available yet.</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2019-05-07T18:56:37Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/sparql-jsonld/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/mit" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: MIT License"/></a><a class="repo-icon" href="https://github.com/dgarijo/sparql-jsonld/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/sparql-jsonld/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="installation" class="repo-icon" src="repo_icons/installation.png" title="Installation:
+* `git clone` the repo
+* run `cd sparql-jsonld`
+* run `pip install -r requirements.txt` to install dependencies
+
+
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">teleprision</h4>
+<p class="description">Sitio web para teleprision</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2021-05-05T19:50:36Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/teleprision/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/teleprision/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/teleprision/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">ro-crate</h4>
+<p class="description">This is the GitHub repository for contributing to the Research Object Crate specification. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-09-30T23:13:53Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/ro-crate/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/ro-crate/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/ro-crate/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="docker" class="repo-icon" src="repo_icons/docker.png" title="['https://raw.githubusercontent.com/dgarijo/ro-crate/master/examples/workflow-0.1.0/Dockerfile', 'https://raw.githubusercontent.com/dgarijo/ro-crate/master/examples/workflow-0.2.0/Dockerfile']"/><img alt="installation" class="repo-icon" src="repo_icons/installation.png" title="Installation:
+Source you may appreciate the GitHub guides like 
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">enigma_index_creator</h4>
+<p class="description">Repository to create an html dictionary of all the terms used in the ontologies</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2021-05-31T07:28:15Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/enigma_index_creator/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/enigma_index_creator/blob/main/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/enigma_index_creator/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="java" class="repo-icon" src="language_icons/java.svg" title="Java"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">test</h4>
+<p class="description">Repository to do some testing</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2022-01-19T12:01:07Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/test/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/test/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/test/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">example</h4>
+<p class="description">A repository for examples</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2021-10-27T11:09:57Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/example/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/example/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/example/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">provBenchQueries</h4>
+<p class="description">A repository for provenance queries from provBench</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2019-07-06T22:18:32Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/provBenchQueries/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/provBenchQueries/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/provBenchQueries/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">bubastis</h4>
+<p class="description">Bubastis is available as a web application at http://www.ebi.ac.uk/efo/bubastis/. There is documentation on how to use the Bubasists web 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2016-11-26T07:51:47Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/bubastis/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/bubastis/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/bubastis/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="java" class="repo-icon" src="language_icons/java.svg" title="Java"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="perl" class="repo-icon" src="language_icons/perl.svg" title="Perl"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">me</h4>
+<p class="description">A repository for my personal web page and description</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2021-11-17T18:32:05Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>2</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/me/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/me/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/me/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">Earth-Data-Provenance-Workshop</h4>
+<p class="description">7:00am - 8:00am : Breakfast for out-of-towners at the Pineapple Cafe inside the Watertown Hotel 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2018-03-26T05:51:03Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/Earth-Data-Provenance-Workshop/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/Earth-Data-Provenance-Workshop/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/Earth-Data-Provenance-Workshop/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">Materials</h4>
+<p class="description">A repository to store my talks and tutorials</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-06-03T15:37:43Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>1</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/Materials/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/Materials/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/Materials/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="docker" class="repo-icon" src="repo_icons/docker.png" title="['https://raw.githubusercontent.com/dgarijo/Materials/master/Tutorials/wings-docker/resources/Dockerfile']"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="shell" class="repo-icon" src="language_icons/shell.svg" title="Shell"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">codemeta</h4>
+<p class="description">CodeMeta contributors are creating a minimal metadata schema for science software and code, in JSON and XML. The goal of CodeMeta is to create a concept vocabulary that can be used to standardize the exchange of software metadata across repositories and organizations. CodeMeta started by comparing the software metadata used across multiple repositories, which resulted in the CodeMeta Metadata Crosswalk.  That crosswalk was then used to generate a set of software metadata concepts, which were arranged into a JSON-LD context for serialization. 
+See https://codemeta.github.io for a visualization of the crosswalk table and guides for users and developers. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2019-12-17T03:31:03Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/codemeta/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/codemeta/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/codemeta/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+<img alt="r" class="repo-icon" src="language_icons/r.svg" title="R"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">Curso2021-2022</h4>
+<p class="description">This is the repository that we will use for our collaborative work and for uploading all the assignments for our course. 
+This is the normal process that you will have to follow in order to interact with the repository: 
+Fork the main repository into your own account (this will generate a new repository in your GitHub account). This is done only once during the course.  
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2021-11-10T11:44:32Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/Curso2021-2022/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/Curso2021-2022/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><img alt="notebook" class="repo-icon" src="repo_icons/notebook.png" title="Notebook"/><a class="repo-icon" href="https://github.com/dgarijo/Curso2021-2022/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="installation" class="repo-icon" src="repo_icons/installation.png" title="Installation:
+git remote add upstream https://github.com/FacultadInformatica-LinkedData/Curso2021-2022 
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">PrimitiveProfiler</h4>
+<p class="description">The purpose of this script is to detect the requirements for D3M primitives, in order to construct machine learning pipelines appropriately. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2017-07-14T06:41:16Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/PrimitiveProfiler/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/PrimitiveProfiler/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><img alt="notebook" class="repo-icon" src="repo_icons/notebook.png" title="Notebook"/><a class="repo-icon" href="https://github.com/dgarijo/PrimitiveProfiler/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">dgarijo</h4>
+<p class="description">💬 Check out our projects publishing documented ontologies on the Web (WIDOCO, OnToology), Knowledge Graph Manipulation (KGTK), Software metadata extraction (SOMEF) and Semantic workflows (WINGS) 
+📫 How to reach me: send me an email! See my personal website for more details. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2021-10-11T20:59:37Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>1</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/dgarijo/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/dgarijo/blob/main/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/dgarijo/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">DockerPedia-RO</h4>
+<p class="description">Research Object for the additional materials of the DockerPedia journal article</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2021-06-02T17:01:32Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/DockerPedia-RO/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/DockerPedia-RO/blob/main/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/DockerPedia-RO/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">covid19</h4>
+<p class="description">Contributions to analyze the COVID-19 Open Research Dataset (CORD-19)</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-03-29T04:08:39Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/covid19/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://raw.githubusercontent.com/dgarijo/covid19/master/LICENSE" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Other"/></a><a class="repo-icon" href="https://github.com/dgarijo/covid19/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/covid19/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="docker" class="repo-icon" src="repo_icons/docker.png" title="['https://raw.githubusercontent.com/dgarijo/covid19/master/Dockerfile']"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="ruby" class="repo-icon" src="language_icons/ruby.svg" title="Ruby"/>
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">kgtk</h4>
+<p class="description">KGTK is a Python library for easy manipulation with knowledge graphs. It provides a flexible framework that allows chaining of common graph operations, such as: extraction of subgraphs, filtering, computation of graph metrics, validation, cleaning, generating embeddings, and so on. Its principal format is TSV, though we do support a number of other inputs. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-06-26T19:18:01Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/kgtk/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/mit" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: MIT License"/></a><a class="repo-icon" href="https://github.com/dgarijo/kgtk/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><img alt="notebook" class="repo-icon" src="repo_icons/notebook.png" title="Notebook"/><a class="repo-icon" href="https://github.com/dgarijo/kgtk/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="citation" class="repo-icon" src="repo_icons/citation.png" title="@article{ilievski2020kgtk,
+  title={KGTK: A Toolkit for Large Knowledge Graph Manipulation and Analysis},
+  author={Ilievski, Filip and Garijo, Daniel and Chalupsky, Hans and Divvala, Naren Teja and Yao, Yixiang and Rogers, Craig and Li, Ronpeng and Liu, Jun and Singh, Amandeep and Schwabe, Daniel and Szekely, Pedro},
+  journal={arXiv preprint arXiv:2006.00088},
+  year={2020},
+  url={https://arxiv.org/abs/2006.00088}
+}"/><img alt="docker" class="repo-icon" src="repo_icons/docker.png" title="['https://raw.githubusercontent.com/dgarijo/kgtk/master/Dockerfile', 'https://raw.githubusercontent.com/dgarijo/kgtk/master/docker/Dockerfile']"/><img alt="installation" class="repo-icon" src="repo_icons/installation.png" title="Installation:
+0. Our installations will be in a conda environment. If you don't have a conda installed, follow [link](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) to install it.
+1. Set up your own conda environment:
+```
+conda create -n kgtk-env python=3.7
+conda activate kgtk-env
+```
+ **Note:** Installing Graph-tool is problematic on python 3.8 and out of a virtual environment. Thus: **the advised installation path is by using a virtual environment.**
+
+2. Install (the dev branch at this point): `pip install kgtk`
+
+You can test if `kgtk` is installed properly now with: `kgtk -h`.
+
+3. Install `graph-tool`: `conda install -c conda-forge graph-tool`. If you don't use conda or run into problems, see these [instructions](https://git.skewed.de/count0/graph-tool/-/wikis/installation-instructions). 
+
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+<img alt="shell" class="repo-icon" src="language_icons/shell.svg" title="Shell"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">MINT-ModelCatalogQueries</h4>
+<p class="description">This document separates a set of interesting queries that are useful to explore the model catalog. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-02-27T19:28:39Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/MINT-ModelCatalogQueries/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/apache-2.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Apache License 2.0"/></a><a class="repo-icon" href="https://github.com/dgarijo/MINT-ModelCatalogQueries/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/MINT-ModelCatalogQueries/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">elisa</h4>
+<p class="description">Repository for Elisa's personal page</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-12-01T03:20:02Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/elisa/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="None" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Other"/></a><a class="repo-icon" href="https://github.com/dgarijo/elisa/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/elisa/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">aemet</h4>
+<p class="description">This repository contains the scripts, data samples and converted data samples for transforming the AEMET weather data into RDF. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2017-01-26T18:31:41Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/aemet/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/aemet/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/aemet/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">Publications</h4>
+<p class="description">Directory of World Modelers Performers' Publications </p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-06-19T19:52:58Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/Publications/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/Publications/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/Publications/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">awesome-semantic-web</h4>
+<p class="description">- [The Smart Data Analytics (SDA)](http://sda.tech/) - Research group, Institute for Computer Science at the University of Bonn, the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS) and the Institute for Applied Computer Science Leipzig.
+- [Agile Knowledge Engineering and Semantic Web (AKSW)](http://aksw.org) - The Research Group Agile Knowledge Engineering and Semantic Web (AKSW) is hosted by the Chair of Business Information Systems (BIS) of the Institute of Computer Science (IfI) / University of Leipzig as well as the Institute for Applied Informatics (InfAI).
+- [University of Zurich Dynamic and Distributed Information Systems Group](http://www.ifi.uzh.ch/en/ddis.html)
+- [WESO](http://www.weso.es/) - WESO is a research group at the University of Oviedo founded in 2004.
+- [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/) - Department D5 of the Max Planck Institute for Informatics.
+- [DICE: Data Science Group](http://dice.cs.uni-paderborn.de/about/) - Universität Paderborn.
+- [Ontology Engineering Group (OEG)](http://www.oeg-upm.net/) - The Ontology Engineering Group (OEG) is based at the Computer Science School at Universidad Politécnica de Madrid (UPM).
+- [Knowledge Representation and Reasoning Group (KRR)](https://krr.cs.vu.nl/) - Research group is based at the Vrije Universiteit Amsterdam (VU).
+- [eXascale Infolab](https://exascale.info/) - eXascale Infolab, University of Fribourg, Switzerland.
+- [Wimmics](http://wimmics.inria.fr/corese) - Wimmics stands for Web-Instrumented Man-Machine Interactions, Communities, and Semantics, a joint research team between INRIA Sophia Antipolis - Méditerranée and I3S (CNRS and Université Côte d'Azur).
+- [Data Semantics Lab](https://dase.cs.wright.edu/) - Data Semantics Lab, Wright State University
+- [Stanford BMIR](https://bmir.stanford.edu) - Stanford University Center for Biomedical Informatics Research
+
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2020-05-11T19:21:02Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/awesome-semantic-web/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://api.github.com/licenses/cc0-1.0" target="_blank"><img alt="license" class="repo-icon" src="repo_icons/license.png" title="License: Creative Commons Zero v1.0 Universal"/></a><a class="repo-icon" href="https://github.com/dgarijo/awesome-semantic-web/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/awesome-semantic-web/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="installation" class="repo-icon" src="repo_icons/installation.png" title="Installation:
+tawny-owl - Build OWL Ontologies in a Programmatic Environment. 
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">ColectivoDeCine</h4>
+<p class="description">Web page of colectivo de cine de Madrid</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2021-03-07T12:43:05Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/ColectivoDeCine/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/ColectivoDeCine/blob/main/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/ColectivoDeCine/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="php" class="repo-icon" src="language_icons/php.svg" title="Php"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">saref-ext</h4>
+<p class="description">This repository contains the code and documentation generated for the SAREF extensions developed by OEG. 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2017-11-24T19:03:03Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/saref-ext/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/saref-ext/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/saref-ext/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="installation" class="repo-icon" src="repo_icons/installation.png" title="Installation:
+The SAREF extension for environment is published at https://w3id.org/def/saref4envi 
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">Latex2RO</h4>
+<p class="description">Simple app to create Research Objects as annotated web pages from LaTeX files</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2022-01-08T22:27:49Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>4</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/Latex2RO/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/Latex2RO/blob/master/readme.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/Latex2RO/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a><img alt="requirements" class="repo-icon" src="repo_icons/requirements.png" title="Requirements:
+In order to use this tool, you should know the basic notions of RDF-a and HTML (if you want to further complete the initial annotations).
+
+"/>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="java" class="repo-icon" src="language_icons/java.svg" title="Java"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">ResearchObjects</h4>
+<p class="description">In order to see an overview, go to: http://dgarijo.github.io/ResearchObjects/ 
+</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2022-01-12T19:38:32Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>1</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/ResearchObjects/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/ResearchObjects/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/ResearchObjects/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="python" class="repo-icon" src="language_icons/python.svg" title="Python"/>
+<img alt="shell" class="repo-icon" src="language_icons/shell.svg" title="Shell"/>
+<img alt="r" class="repo-icon" src="language_icons/r.svg" title="R"/>
+</div>
+</div>
+</div>
+</article>
+
+<article class="card">
+<div class="card-row">
+<div class="card-col1">
+<h4 style="">dockerpedia-ontology</h4>
+<p class="description">No description available yet.</p>
+</div>
+<div>
+<img alt="repo-logo" class="repo-logo" src="img/github-default.svg"/>
+<div class="recently-updated" title="2021-06-13T12:44:27Z"></div>
+<div class="flex-horizontal float-right" style="margin-top: 0.3rem;" title="Stars">
+<b>0</b>
+<img alt="stars" class="repo-icon" src="repo_icons/star.png"/>
+</div>
+<div title="Releases">
+<a class="flex-horizontal float-right" href="https://github.com/dgarijo/dockerpedia-ontology/releases" style="text-decoration: none;" target="_blank">
+<b>0</b>
+<img alt="releases" class="repo-icon" src="repo_icons/releases.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="card-row">
+<div class="card-col1">
+<div class="flex-horizontal">
+<a class="repo-icon" href="https://github.com/dgarijo/dockerpedia-ontology/blob/master/README.md" target="_blank"><img alt="readme" class="repo-icon" src="repo_icons/readme.png" title="Readme"/></a><a class="repo-icon" href="https://github.com/dgarijo/dockerpedia-ontology/releases" target="_blank"><img alt="download" class="repo-icon" src="repo_icons/download.png" title="Download"/></a>
+</div>
+</div>
+<div>
+<div class="flex-horizontal float-right grey-color-svg">
+<img alt="javascript" class="repo-icon" src="language_icons/javascript.svg" title="Javascript"/>
+<img alt="html" class="repo-icon" src="language_icons/html.svg" title="Html"/>
+<img alt="css" class="repo-icon" src="language_icons/css.svg" title="Css"/>
+</div>
+</div>
+</div>
+</article>
+</div>
+<footer>
+<div style="height: 4rem; display: flex; flex-direction: column; justify-content: center">
+<p id="portal-last-updated">Last updated on 04/02/2022</p>
+<p>Built with <a href="https://github.com/dakixr/scc" target="_blank">scc</a></p>
+</div>
+<div style="height: 4rem; flex-direction: row;">
+<a class="footer-img" href="http://fi.upm.es/" target="_blank"><img alt="FI logo" class="footer-img" src="img/fi_logo.png"/></a>
+<a class="footer-img" href="https://www.upm.es/" target="_blank"><img alt="UPM logo" class="footer-img" src="img/upm_logo.png"/></a>
+<a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
+</div>
+</footer>
+<script>
+
+function myFunction() {
+
+    var input, filter, cards, article, title, i, titleValue;
+    
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+
+    cards = document.getElementById("myCards");
+    article = cards.getElementsByTagName("article");
+
+    for (i = 0; i < article.length; i++) 
+    {
+        title = article[i].getElementsByClassName("title")[0];
+        titleValue = title.textContent || title.innerText;
+        
+        if (titleValue.toUpperCase().indexOf(filter) > -1) 
+        {
+          article[i].style.display = "";
+        } 
+        else 
+        {
+          article[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+</body>
+</html>
