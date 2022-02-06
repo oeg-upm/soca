@@ -61,15 +61,15 @@ class metadata(object):
         if download_url:
             html += f"""<a href="{download_url}" target="_blank" {self.s.get('repo-icon')}><img src="{self.base}repo_icons/download.png" alt="download" {self.s.get('repo-icon')} title="Download"></a>"""
 
-        # TODO: Could be more than one citation
-        citations = safe_dic(self.md,'citation')
-        citation = None
-        if citations:
-            for c in citations:
+        all_citations = safe_dic(self.md,'citation')
+        if all_citations:
+            citations = []
+            for c in all_citations:
                 if c['technique'] == 'Regular expression':
-                    citation = c['excerpt']
-        if citation:
-            html += f"""<img src="{self.base}repo_icons/citation.png" alt="citation" {self.s.get('repo-icon')} title="{citation}">"""
+                    citations.append(c['excerpt'])
+            if len(citations) > 0:
+                for citation in citations:
+                    html += f"""<img src="{self.base}repo_icons/citation.png" alt="citation" {self.s.get('repo-icon')} title="{citation}">"""
         
         docker = safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
         if docker:
