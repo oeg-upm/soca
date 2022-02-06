@@ -1,0 +1,174 @@
+{
+    "description": [
+        {
+            "excerpt": "Repository for experiments and corpora for named entity recognition (NER) for software repositories, code  and readme files. \nThis repository contains a software-centric NER approach based (initially) in rules and gazetteers. The idea is to use this system from other applications to obtain better context of software documentation.  \n",
+            "confidence": [
+                0.9544886415651872,
+                0.9863712322240712
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Repository for expriments and corpora for NER for code repositories and readme files",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "- Qualifiers on installation instructions (e.g., platform (Docker, Conda, etc.), OS (Unix, Windows, etc.), and others) \n",
+            "confidence": [
+                0.925165681022401
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "long_title": {
+        "excerpt": "ner4soft",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "run": [
+        {
+            "excerpt": "(THIS IS WORK IN PROGRESS)\n\n```\ncd src && python App.py\n```\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "**Building the image:**\n\n1. Clone this repository\n2. `cd` into the main folder (ner4soft)\n3. Build the image:\n```\ndocker build -t ner4soft .\n```\n\n**Running the image:**\nOnce the image has been built, you can run it with the following command:\n\n```\ndocker run --rm -p 8080:8080 ner4soft:latest\n```\nBy default, ner4soft is exposed on port 8080.\n\nNow you are ready to do requests. Sample request:\n\n```\ncurl -X POST \"http://localhost:8080/processText\" -H \"accept: application/json;charset=UTF-8\" -H \"Content-Type: application/json;charset=UTF-8\" -d \"{ \\\"text\\\": \\\"You need Python 3.6 or higher.\\\"}\"\n```\n\nNote that changes to gazetteers or rules will require rebuilding the image.\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/ner4soft",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-03-26T14:10:14Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-10-20T09:22:33Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "ner4soft",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/ner4soft",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ner4soft/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ner4soft/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 1,
+            "date": "Sun, 06 Feb 2022 18:29:08 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 2,
+            "date": "Sun, 06 Feb 2022 18:29:08 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/ner4soft/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "Python",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/ner4soft/blob/main/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/ner4soft/main/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

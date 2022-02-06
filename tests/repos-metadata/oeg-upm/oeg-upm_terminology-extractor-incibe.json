@@ -1,0 +1,194 @@
+{
+    "description": [
+        {
+            "excerpt": "Terminology extractor based on JATE 2.0 for Cibersecurity corpora \n",
+            "confidence": [
+                0.9699151018707276
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "and put /cvalue or /ttfidf in the Request-Handler \nThis work contains the library JATE 2.0  and an extension to work with Spanish documents \n",
+            "confidence": [
+                0.9596016138082215,
+                0.989277261664985
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Terminology extractor based on JATE 2.0 for Cibersecurity corpora",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "Zhang, Z., Gao, J., Ciravegna, F. 2016. JATE 2.0: Java Automatic Term Extraction with Apache Solr. In The Proceedings of the 10th Language Resources and Evaluation Conference, May 2016, Portoro\u017e, Slovenia \n",
+            "confidence": [
+                0.9998594870927775
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "Clone or download JATE: https://github.com/ziqizhang/jate\n\nCompile\n\n> mvn clean\n\n> mvn install\n\nCopy jate/target/jate-2.0-beta.11-jar-with-dependencies.jar to  terminology-extractor/solr-5.3.0/contrib/jate/lib/jate-2.0-beta.11-jar-with-dependencies.jar\n\n\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "long_title": {
+        "excerpt": "Terminology Extractor Incibe",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/terminology-extractor-incibe",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2018-11-30T12:27:31Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-12-24T10:20:04Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "terminology-extractor-incibe",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/terminology-extractor-incibe",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/terminology-extractor-incibe/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/terminology-extractor-incibe/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 06 Feb 2022 16:57:53 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Sun, 06 Feb 2022 16:57:53 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/terminology-extractor-incibe/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "HTML",
+            "JavaScript",
+            "CSS",
+            "XSLT",
+            "Shell",
+            "Batchfile",
+            "Java",
+            "Python",
+            "AMPL"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/oeg-upm/terminology-extractor-incibe/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasDocumentation": {
+        "excerpt": [
+            "https://github.com/oeg-upm/terminology-extractor-incibe/tree/master/solr-5.3.0/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor-incibe/master/solr-5.3.0/bin/install_solr_service.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor-incibe/master/solr-5.3.0/bin/oom_solr.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor-incibe/master/solr-5.3.0/bin/solr.in.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor-incibe/master/solr-5.3.0/example/exampledocs/test_utf8.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor-incibe/master/solr-5.3.0/server/scripts/map-reduce/set-map-reduce-classpath.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor-incibe/master/solr-5.3.0/server/scripts/cloud-scripts/zkcli.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}
