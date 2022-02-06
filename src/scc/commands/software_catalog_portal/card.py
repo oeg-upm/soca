@@ -29,7 +29,7 @@ def insert_cards(repo_metadata_dir, soup: BeautifulSoup, embedded = False):
 def html_view(repo_metadata, embedded):
 
     s = styles.styles(embedded)
-    md = metadata.metadata(repo_metadata, s)
+    md = metadata.metadata(repo_metadata, embedded)
 
     # Instert embedded html data to be able to copy it
     if not embedded:
@@ -51,7 +51,7 @@ def html_view(repo_metadata, embedded):
                 <img src="{md.logo()}" alt="repo-logo" {s.get('repo-logo')}>
                 <div {s.get(['flex-horizontal','float-right'])}>
                     {copy_btn}
-                    <div {s.get('recently-updated')} title={md.last_update()}></div>
+                    {md.recently_updated()}
                 </div>
                 <div {s.get(['flex-horizontal','float-right'], custom_css='margin-top: 0.3rem;')} title="Stars">
                     <b>{md.stars()}</b>

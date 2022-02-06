@@ -2,15 +2,15 @@ from scc import base_dir
 from pathlib import Path
 from os import listdir
 from os.path import isfile, join
-
 from . import styles
+from . import bibtext
 
 class metadata(object):
 
-    def __init__(self, repo_metadata, s: styles.styles = styles.styles(False)):
+    def __init__(self, repo_metadata, embedded = False):
         self.md = repo_metadata
-        self.s = s
-        self.base = 'https://github.com/dakixr/scc/raw/main/src/scc/assets/' if s.embedded else ''
+        self.s = styles.styles(embedded)
+        self.base = 'https://github.com/dakixr/scc/raw/main/src/scc/assets/' if embedded else ''
 
     # Assets ####################################################
     def logo(self):
@@ -70,7 +70,25 @@ class metadata(object):
             if len(citations) > 0:
                 for citation in citations:
                     html += f"""<img src="{self.base}repo_icons/citation.png" alt="citation" {self.s.get('repo-icon')} title="{citation}">"""
-        
+
+                    # Paper repo-icon 
+                    # TODO: Consider if separating paper and citation logic makes sense
+                    p_citation = bibtext.bibtext.parse(citation)[0]
+                    p_citation_fields_keys = p_citation.fields.keys()
+
+                    if 'doi' in p_citation_fields_keys and not 'url' in p_citation_fields_keys:
+                        link_paper = p_citation.fields['doi'][1:-1]
+
+                    if 'url' in p_citation_fields_keys:
+                        link_paper = p_citation.fields['url'][1:-1]
+                    
+                    title_paper = p_citation.fields['title'][1:-1] # remove '{' and '}'
+                    html += f"""<a href="{link_paper}" target="_blank" {self.s.get('repo-icon')}>
+                                    <img src="{self.base}repo_icons/paper.png" 
+                                         alt="{title_paper}" {self.s.get('repo-icon')} 
+                                         title="Paper: {title_paper}">
+                                </a>"""
+
         docker = safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
         if docker:
             html += f"""<img src="{self.base}repo_icons/docker.png" alt="docker" {self.s.get('repo-icon')} title="{[str(d) for d in docker]}">"""
@@ -85,13 +103,10 @@ class metadata(object):
             requirements = safe_dic(requirements[0],'excerpt')
             html += f"""<img src="{self.base}repo_icons/requirements.png" alt="requirements" {self.s.get('repo-icon')} title="Requirements:\n{requirements}">"""
 
-        paper = None
-        # resolve DOI add https://www.doi.org/
-        # TODO: extract from citation from regular expresion -> url
-        if paper:
-            html += f"""<img src="{self.base}repo_icons/paper.png" alt="paper" {self.s.get('repo-icon')} title="Paper">"""
-
         return html
+    
+    def recently_updated(self):
+        return f"""<div {self.s.get('recently-updated')} title={self.last_update()}></div>"""
 
     # Metadata ##################################################
     def repo_url(self):
@@ -104,10 +119,12 @@ class metadata(object):
 
         all_descriptions = safe_dic(self.md,'description')
 
-        for d in all_descriptions:
-            if safe_dic(d,'technique') == 'GitHub API':
-                description = safe_dic(d,'excerpt')
-                break
+        description = None
+        if all_descriptions:
+            for d in all_descriptions:
+                if safe_dic(d,'technique') == 'GitHub API':
+                    description = safe_dic(d,'excerpt')
+                    break
 
         if not description:
             description = safe_dic(safe_list(all_descriptions,0),'excerpt')
