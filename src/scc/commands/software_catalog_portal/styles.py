@@ -1,6 +1,7 @@
 class styles(object):
 
 	css_cards = {
+		
 		'card': """
 			display: flex;
 			flex-direction: column;

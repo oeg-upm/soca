@@ -40,6 +40,7 @@ def copy_assets(output):
     # Copy all repo_icons
     copy_tree(f"{base_dir}/assets/repo_icons", f"{output}/repo_icons")
 
+
 def add_last_updated_date(soup):
     loc = soup.find(id="portal-last-updated")
     loc.string = f"Last updated on {datetime.today().strftime('%d/%m/%Y')}"

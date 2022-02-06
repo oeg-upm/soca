@@ -39,12 +39,13 @@ def html_view(repo_metadata, embedded):
         html_copy_embedded = ''
         copy_btn = ''
 
-
     html_card = f"""
     <article {s.get('card')}>
         <div {s.get('card-row')}>
             <div {s.get('card-col1')}>
-                <a href="{md.repo_url()}" target="_blank" style="text-decoration: none;"><h4 class="title" style="{s.get_global_css()}">{md.title()}</h4></a>
+                <a href="{md.repo_url()}" target="_blank" style="text-decoration: none;">
+                    <h4 class="title" style="{s.get_global_css()}">{md.title()}</h4>
+                </a>
                 <p {s.get('description')}>{md.description()}</p>
             </div>
             <div>
@@ -53,11 +54,11 @@ def html_view(repo_metadata, embedded):
                     {copy_btn}
                     {md.recently_updated()}
                 </div>
-                <div {s.get(['flex-horizontal','float-right'], custom_css='margin-top: 0.3rem;')} title="Stars">
+                <div {s.get(['flex-horizontal','float-right'], custom_css='margin-top: 0.3rem;')} data-toggle="tooltip" data-placement="right" title="Stars">
                     <b>{md.stars()}</b>
                     <img src="{md.icon_star()}" alt="stars" {s.get('repo-icon')}>
                 </div>
-                <div title="Releases">
+                <div data-toggle="tooltip" data-placement="right" title="Releases">
                     <a href="{md.url_releases()}" target="_blank" {s.get(['flex-horizontal','float-right'], custom_css='text-decoration: none;')}>
                         <b>{md.n_releases()}</b>
                         <img src="{md.icon_releases()}" alt="releases" {s.get('repo-icon')}>
@@ -73,7 +74,7 @@ def html_view(repo_metadata, embedded):
                 </div>
             </div>
             <div>
-                <div {s.get(['flex-horizontal','float-right','grey-color-svg'])}>
+                <div {s.get(['flex-horizontal','float-right'])}>
                     {md.html_languages()}
                 </div>
             </div>

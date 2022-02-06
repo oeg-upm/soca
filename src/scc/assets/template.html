@@ -3,7 +3,10 @@
 <html>
 <head>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+<link href='tooltip.css' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <title>SCC</title>
 
 <style>
@@ -96,6 +99,171 @@ footer {
       cursor: pointer;
 }
 
+/*Tooltip*/
+
+.tooltip {
+	position: absolute;
+	z-index: 1070;
+	display: block;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.42857143;
+	line-break: auto;
+	text-align: left;
+	text-align: start;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	letter-spacing: normal;
+	word-break: normal;
+	word-spacing: normal;
+	word-wrap: normal;
+	white-space: normal;
+	font-size: 12px;
+	filter: alpha(opacity=0);
+	opacity: 0
+}
+
+.tooltip.in {
+	filter: alpha(opacity=90);
+	opacity: .9
+}
+
+.tooltip.top {
+	padding: 5px 0;
+	margin-top: -3px
+}
+
+.tooltip.right {
+	padding: 0 5px;
+	margin-left: 3px
+}
+
+.tooltip.bottom {
+	padding: 5px 0;
+	margin-top: 3px
+}
+
+.tooltip.left {
+	padding: 0 5px;
+	margin-left: -3px
+}
+
+.tooltip.top .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px 5px 0;
+	border-top-color: #000
+}
+
+.tooltip.top-left .tooltip-arrow {
+	right: 5px;
+	bottom: 0;
+	margin-bottom: -5px;
+	border-width: 5px 5px 0;
+	border-top-color: #000
+}
+
+.tooltip.top-right .tooltip-arrow {
+	bottom: 0;
+	left: 5px;
+	margin-bottom: -5px;
+	border-width: 5px 5px 0;
+	border-top-color: #000
+}
+
+.tooltip.right .tooltip-arrow {
+	top: 50%;
+	left: 0;
+	margin-top: -5px;
+	border-width: 5px 5px 5px 0;
+	border-right-color: #000
+}
+
+.tooltip.left .tooltip-arrow {
+	top: 50%;
+	right: 0;
+	margin-top: -5px;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #000
+}
+
+.tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #000
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+	top: 0;
+	right: 5px;
+	margin-top: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #000
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+	top: 0;
+	left: 5px;
+	margin-top: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #000
+}
+
+.tooltip-inner {
+	max-width: 200px;
+	padding: 3px 8px;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+	border-radius: 4px
+}
+
+.tooltip-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid
+}
+
+.popover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1060;
+	display: none;
+	max-width: 276px;
+	padding: 1px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.42857143;
+	line-break: auto;
+	text-align: left;
+	text-align: start;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	letter-spacing: normal;
+	word-break: normal;
+	word-spacing: normal;
+	word-wrap: normal;
+	white-space: normal;
+	font-size: 14px;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2)
+}
+
 </style>
 
 </head>
@@ -104,6 +272,7 @@ footer {
 <h2 id="nav-title">Software Catalog</h2>
 <input id="myInput" onkeyup="search()" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
 </nav>
+
 <div id="myCards">
 
 </div>
@@ -152,8 +321,11 @@ $("button").click(function() {
 
     var copy_card = document.getElementById($(this).val());
     navigator.clipboard.writeText(copy_card.innerHTML)
-    //alert("Card copied successfully")
 
+});
+
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
 });
 
 </script>
