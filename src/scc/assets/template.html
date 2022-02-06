@@ -4,271 +4,42 @@
 <head>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href='https://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
-<link href='tooltip.css' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <title>SCC</title>
-
 <style>
-
-/* Global style */
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  color: #3e3e3e;
-  font-family: "Helvetica Neue", Helvetica;
-}
-
-body {
-  background-color: #e0e0e0;
-}
-
-/* Navbar */
-.navbar {
-  display: flex; 
-  list-style: none; 
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background: #e9e9e9;
-  box-shadow:  5px 5px 10px #bebebe,
-              -5px -5px 10px #ffffff;
-}
-
-#myInput {
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 0px;
-  margin-left: 20px;
-  flex: auto;
-  border-radius: 50px;
-  background: #e9e9e9;
-  box-shadow: inset 5px 5px 10px #bebebe,
-              inset -5px -5px 10px #ffffff;
-}
-
-/* Footer */
-footer {  
-    width: 100%;
-    padding: 1rem 2rem;
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    background: #e9e9e9;
-    box-shadow:  5px 5px 10px #bebebe,
-                -5px -5px 10px #ffffff;
-}
-
-.footer-img {
-    height: 4rem;
-}
-
-.flex-center {
-    display: flex;
-}
-
-/* Cards css */
-#myCards {
-  min-height: 76.5vh;
-  max-width: 1600px;
-  display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  margin: 2rem auto;
-}
-
-.copy-btn:active {
-    position: relative;
-    top: 1px;
-    background-color: #3e3e3e;
-    color: #e0e0e0;
-}
-
-.copy-btn:hover {
-    background-color: #e9e9e9;
-}
-
-.copy-btn {
-			background-color: #e0e0e0;
-			width: 3rem; 
-			border-radius: 1rem;
-      border: 2px solid #3e3e3e;
-      cursor: pointer;
-}
-
-/*Tooltip*/
-
-.tooltip {
-	position: absolute;
-	z-index: 1070;
-	display: block;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.42857143;
-	line-break: auto;
-	text-align: left;
-	text-align: start;
-	text-decoration: none;
-	text-shadow: none;
-	text-transform: none;
-	letter-spacing: normal;
-	word-break: normal;
-	word-spacing: normal;
-	word-wrap: normal;
-	white-space: normal;
-	font-size: 12px;
-	filter: alpha(opacity=0);
-	opacity: 0
-}
-
-.tooltip.in {
-	filter: alpha(opacity=90);
-	opacity: .9
-}
-
-.tooltip.top {
-	padding: 5px 0;
-	margin-top: -3px
-}
-
-.tooltip.right {
-	padding: 0 5px;
-	margin-left: 3px
-}
-
-.tooltip.bottom {
-	padding: 5px 0;
-	margin-top: 3px
-}
-
-.tooltip.left {
-	padding: 0 5px;
-	margin-left: -3px
-}
-
-.tooltip.top .tooltip-arrow {
-	bottom: 0;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px 5px 0;
-	border-top-color: #3e3e3e
-}
-
-.tooltip.top-left .tooltip-arrow {
-	right: 5px;
-	bottom: 0;
-	margin-bottom: -5px;
-	border-width: 5px 5px 0;
-	border-top-color: #3e3e3e
-}
-
-.tooltip.top-right .tooltip-arrow {
-	bottom: 0;
-	left: 5px;
-	margin-bottom: -5px;
-	border-width: 5px 5px 0;
-	border-top-color: #3e3e3e
-}
-
-.tooltip.right .tooltip-arrow {
-	top: 50%;
-	left: 0;
-	margin-top: -5px;
-	border-width: 5px 5px 5px 0;
-	border-right-color: #3e3e3e
-}
-
-.tooltip.left .tooltip-arrow {
-	top: 50%;
-	right: 0;
-	margin-top: -5px;
-	border-width: 5px 0 5px 5px;
-	border-left-color: #3e3e3e
-}
-
-.tooltip.bottom .tooltip-arrow {
-	top: 0;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 0 5px 5px;
-	border-bottom-color: #3e3e3e
-}
-
-.tooltip.bottom-left .tooltip-arrow {
-	top: 0;
-	right: 5px;
-	margin-top: -5px;
-	border-width: 0 5px 5px;
-	border-bottom-color: #3e3e3e
-}
-
-.tooltip.bottom-right .tooltip-arrow {
-	top: 0;
-	left: 5px;
-	margin-top: -5px;
-	border-width: 0 5px 5px;
-	border-bottom-color: #3e3e3e
-}
-
-.tooltip-inner {
-	max-width: 200px;
-	padding: 3px 8px;
-	color: #e0e0e0;
-	text-align: center;
-	background-color: #3e3e3e;
-	border-radius: 4px
-}
-
-.tooltip-arrow {
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-color: transparent;
-	border-style: solid
-}
-
-.popover {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1060;
-	display: none;
-	max-width: 276px;
-	padding: 1px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.42857143;
-	line-break: auto;
-	text-align: left;
-	text-align: start;
-	text-decoration: none;
-	text-shadow: none;
-	text-transform: none;
-	letter-spacing: normal;
-	word-break: normal;
-	word-spacing: normal;
-	word-wrap: normal;
-	white-space: normal;
-	font-size: 14px;
-	background-color: #e0e0e0;
-	background-clip: padding-box;
-	border: 1px solid #ccc;
-	border: 1px solid #3e3e3e;
-	border-radius: 6px;
-	-webkit-box-shadow: 0 5px 10px #3e3e3e;
-	box-shadow: 0 5px 10px #3e3e3e;
-}
-
+*{margin:0;box-sizing:border-box;color:#3e3e3e;font-family:"Helvetica Neue",Helvetica}
+body{background-color:#e0e0e0}
+.navbar{display:flex;list-style:none;justify-content:space-between;align-items:center;padding:10px 20px;background:#e9e9e9;box-shadow:5px 5px 10px #bebebe,-5px -5px 10px #fff}
+#myInput{font-size:16px;padding:12px 20px 12px 40px;border:0;margin-left:20px;flex:auto;border-radius:50px;background:#e9e9e9;box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff}
+footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content:space-between;background:#e9e9e9;box-shadow:5px 5px 10px #bebebe,-5px -5px 10px #fff}
+.footer-img{height:4rem}.flex-center{display:flex}
+#myCards{min-height:76.5vh;max-width:1600px;display:flex;align-content:flex-start;flex-wrap:wrap;flex-direction:row;justify-content:center;margin:2rem auto}
+.copy-btn:active{position:relative;top:1px;background-color:#3e3e3e;color:#e0e0e0}
+.copy-btn:hover{background-color:#e9e9e9}.copy-btn{background-color:#e0e0e0;width:3rem;border-radius:1rem;border:2px solid #3e3e3e;cursor:pointer}
+.tooltip{position:absolute;z-index:1070;display:block;font-style:normal;font-weight:400;line-height:1.42857143;line-break:auto;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;font-size:12px;opacity:0}
+.tooltip.in{opacity:.9}
+.tooltip.top{padding:5px 0;margin-top:-3px}
+.tooltip.right{padding:0 5px;margin-left:3px}
+.tooltip.bottom{padding:5px 0;margin-top:3px}
+.tooltip.left{padding:0 5px;margin-left:-3px}
+.tooltip.top .tooltip-arrow{bottom:0;left:50%;margin-left:-5px;border-width:5px 5px 0;border-top-color:#3e3e3e}
+.tooltip.top-left .tooltip-arrow{right:5px;bottom:0;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#3e3e3e}
+.tooltip.top-right .tooltip-arrow{bottom:0;left:5px;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#3e3e3e}
+.tooltip.right .tooltip-arrow{top:50%;left:0;margin-top:-5px;border-width:5px 5px 5px 0;border-right-color:#3e3e3e}
+.tooltip.left .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-width:5px 0 5px 5px;border-left-color:#3e3e3e}
+.tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}
+.tooltip.bottom-left .tooltip-arrow{top:0;right:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}
+.tooltip.bottom-right .tooltip-arrow{top:0;left:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}
+.tooltip-inner{max-width:200px;padding:3px 8px;color:#e0e0e0;text-align:center;background-color:#3e3e3e;border-radius:4px}
+.tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}
 </style>
-
 </head>
 <body>
+
 <nav class="navbar">
-<h2 id="nav-title">Software Catalog</h2>
-<input id="myInput" onkeyup="search()" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
+	<h2 id="nav-title">Software Catalog</h2>
+	<input id="myInput" onkeyup="search()" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
 </nav>
 
 <div id="myCards">
@@ -276,15 +47,15 @@ footer {
 </div>
 
 <footer>
-<div style="height: 4rem; display: flex; flex-direction: column; justify-content: center">
-<p id="portal-last-updated">Last updated at 1 February 2022</p>
-<p>Built with <a href="https://github.com/dakixr/scc" target="_blank">scc</a></p>
-</div>
-<div style="height: 4rem; flex-direction: row;">
-<a class="footer-img" href="http://fi.upm.es/" target="_blank"><img alt="FI logo" class="footer-img" src="img/fi_logo.png"/></a>
-<a class="footer-img" href="https://www.upm.es/" target="_blank"><img alt="UPM logo" class="footer-img" src="img/upm_logo.png"/></a>
-<a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
-</div>
+	<div style="height: 4rem; display: flex; flex-direction: column; justify-content: center">
+		<p id="portal-last-updated">Last updated at 1 February 2022</p>
+		<p>Built with <a href="https://github.com/dakixr/scc" target="_blank">scc</a></p>
+	</div>
+	<div style="height: 4rem; flex-direction: row;">
+		<a class="footer-img" href="http://fi.upm.es/" target="_blank"><img alt="FI logo" class="footer-img" src="img/fi_logo.png"/></a>
+		<a class="footer-img" href="https://www.upm.es/" target="_blank"><img alt="UPM logo" class="footer-img" src="img/upm_logo.png"/></a>
+		<a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
+	</div>
 </footer>
 
 <script>
@@ -292,10 +63,8 @@ footer {
 function search() {
 
     var input, filter, cards, article, title, i, titleValue;
-    
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
-
     cards = document.getElementById("myCards");
     article = cards.getElementsByTagName("article");
 
@@ -303,25 +72,18 @@ function search() {
     {
         title = article[i].getElementsByClassName("title")[0];
         titleValue = title.textContent || title.innerText;
-        
-        if (titleValue.toUpperCase().indexOf(filter) > -1) 
-        {
-          article[i].style.display = "";
-        } 
-        else 
-        {
-          article[i].style.display = "none";
-        }
+        if (titleValue.toUpperCase().indexOf(filter) > -1) { article[i].style.display = ""; } 
+        else { article[i].style.display = "none"; }
     }
 }
 
+// Copy card
 $("button").click(function() {
-
     var copy_card = document.getElementById($(this).val());
     navigator.clipboard.writeText(copy_card.innerHTML)
-
 });
 
+// Tooltip
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
