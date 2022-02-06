@@ -7,7 +7,7 @@ from . import styles
 
 class metadata(object):
 
-    def __init__(self, repo_metadata, s: styles.styles):
+    def __init__(self, repo_metadata, s: styles.styles = styles.styles(False)):
         self.md = repo_metadata
         self.s = s
         self.base = 'https://github.com/dakixr/scc/raw/main/src/scc/assets/' if s.embedded else ''
@@ -45,7 +45,7 @@ class metadata(object):
 
         html = ''
     
-        license = safe_dic(safe_dic(self.md,'license'),'excerpt')
+        license = self.license()
         if license:
             html += f"""<a href="{safe_dic(license,'url')}" target="_blank" {self.s.get('repo-icon')}><img src="{self.base}repo_icons/license.png" alt="license" {self.s.get('repo-icon')} title="License: {license['name']}"></a>"""
         
@@ -101,9 +101,23 @@ class metadata(object):
         return safe_dic(safe_dic(self.md,'name'),'excerpt')
         
     def description(self):
-        description = safe_dic(safe_list(safe_dic(self.md,'description'),0),'excerpt')
-        description = description if description is not None else 'No description available yet.'
+
+        all_descriptions = safe_dic(self.md,'description')
+
+        for d in all_descriptions:
+            if safe_dic(d,'technique') == 'GitHub API':
+                description = d
+                break
+            
+        if not description:
+            description = safe_dic(safe_list(all_descriptions,0),'excerpt')
+            if not description:
+                description = 'No description available yet.'
+            
         return description
+
+    def license(self):
+        return safe_dic(safe_dic(self.md,'license'),'excerpt')
 
     def last_update(self):
         date_modified = safe_dic(safe_dic(self.md,'dateModified'),'excerpt')
