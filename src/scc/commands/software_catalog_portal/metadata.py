@@ -106,9 +106,9 @@ class metadata(object):
 
         for d in all_descriptions:
             if safe_dic(d,'technique') == 'GitHub API':
-                description = d
+                description = safe_dic(d,'excerpt')
                 break
-            
+
         if not description:
             description = safe_dic(safe_list(all_descriptions,0),'excerpt')
             if not description:
