@@ -34,7 +34,7 @@ class styles(object):
 			border-radius: 50%;
 			margin-left: auto;
 			margin-right: 0.1rem;
-			background-color: #6da862;""",
+			background-color: #3e3e3e;""",
 
 		'repo-icon':"""
 			height: 1.1rem;

@@ -2,6 +2,8 @@ from scc import base_dir
 from pathlib import Path
 from os import listdir
 from os.path import isfile, join
+from datetime import datetime
+import sys
 from . import styles
 from . import bibtext
 
@@ -106,7 +108,24 @@ class metadata(object):
         return html
     
     def recently_updated(self):
-        return f"""<div {self.s.get('recently-updated')} title={self.last_update()}></div>"""
+
+        hex_states = [
+            {'hex': '#6da862', 'days_threshold': 30},
+            {'hex': '#a88d62', 'days_threshold': 90},
+            {'hex': '#a86262', 'days_threshold': sys.maxsize}
+        ]
+        
+        date_of_extraction_str = safe_dic(safe_dic(safe_dic(self.md,'stargazers_count'),'excerpt'),'date')[:-4]
+        date_of_extraction = datetime.strptime(date_of_extraction_str, '%a, %d %b %Y %H:%M:%S') 
+        delta = (date_of_extraction - self.last_update()).days
+
+        state_updated = ''
+        for state in hex_states:
+            if delta < state['days_threshold']:
+                state_updated = state['hex']
+                break
+
+        return f"""<div {self.s.get('recently-updated',custom_css=f'background-color: {state_updated};')} title="Last updated on: {self.last_update()}"></div>"""
 
     # Metadata ##################################################
     def repo_url(self):
@@ -137,7 +156,9 @@ class metadata(object):
         return safe_dic(safe_dic(self.md,'license'),'excerpt')
 
     def last_update(self):
-        date_modified = safe_dic(safe_dic(self.md,'dateModified'),'excerpt')
+        date_modified_str = safe_dic(safe_dic(self.md,'dateModified'),'excerpt')[:-1]
+        date_modified = datetime.strptime(date_modified_str, '%Y-%m-%dT%H:%M:%S')
+
         return date_modified
 
     def stars(self):

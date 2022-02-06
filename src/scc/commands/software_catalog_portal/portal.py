@@ -42,7 +42,6 @@ def copy_assets(output):
 
 def add_last_updated_date(soup):
     loc = soup.find(id="portal-last-updated")
-    text = f"Last updated on {datetime.today().strftime('%d/%m/%Y')}"
-    loc.string = text
+    loc.string = f"Last updated on {datetime.today().strftime('%d/%m/%Y')}"
 
 
