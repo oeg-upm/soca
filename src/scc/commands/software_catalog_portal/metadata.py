@@ -152,7 +152,7 @@ class metadata(object):
 
         return f"""<div {self.s.get('recently-updated',custom_css=f'background-color: {state_updated};')} 
                    data-toggle="tooltip" data-placement="right" 
-                   title="Updated on: {self.last_update()}">
+                   title="Last updated on: {self.last_update().strftime('%d-%m-%Y')}">
                    </div>"""
 
     # Metadata ##################################################
