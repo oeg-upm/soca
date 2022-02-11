@@ -27,3 +27,4 @@
 .scc-card .flex-horizontal{display: flex; align-items: center; flex-direction: row;}
 .scc-card .float-right{justify-content: flex-end;}
 .scc-card .grey-color-svg{filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);}
+.scc-card .title:hover{text-decoration: underline;}
