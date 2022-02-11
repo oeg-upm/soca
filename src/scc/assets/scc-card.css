@@ -1,0 +1,29 @@
+.scc-card *{margin:0;box-sizing:border-box;color:#3e3e3e;font-family:Helvetica}
+.scc-card .copy-btn:active{position:relative;top:1px;background-color:#3e3e3e;color:#e0e0e0}
+.scc-card .copy-btn{margin-left: 0.3rem;border:none;height:1.1rem;width:1rem;cursor:pointer;}
+.scc-card .tooltip{position:absolute;z-index:1070;display:block;font-style:normal;font-weight:400;line-height:1.42857143;line-break:auto;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;font-size:12px;opacity:0}
+.scc-card .tooltip.in{opacity:.9}
+.scc-card .tooltip.top{padding:5px 0;margin-top:-3px}
+.scc-card .tooltip.right{padding:0 5px;margin-left:3px}
+.scc-card .tooltip.bottom{padding:5px 0;margin-top:3px}
+.scc-card .tooltip.left{padding:0 5px;margin-left:-3px}
+.scc-card .tooltip.top .tooltip-arrow{bottom:0;left:50%;margin-left:-5px;border-width:5px 5px 0;border-top-color:#3e3e3e}
+.scc-card .tooltip.top-left .tooltip-arrow{right:5px;bottom:0;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#3e3e3e}
+.scc-card .tooltip.top-right .tooltip-arrow{bottom:0;left:5px;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#3e3e3e}
+.scc-card .tooltip.right .tooltip-arrow{top:50%;left:0;margin-top:-5px;border-width:5px 5px 5px 0;border-right-color:#3e3e3e}
+.scc-card .tooltip.left .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-width:5px 0 5px 5px;border-left-color:#3e3e3e}
+.scc-card .tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}
+.scc-card .tooltip.bottom-left .tooltip-arrow{top:0;right:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}
+.scc-card .tooltip.bottom-right .tooltip-arrow{top:0;left:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}
+.scc-card .tooltip-inner{max-width:200px;padding:3px 8px;color:#e0e0e0;text-align:center;background-color:#3e3e3e;border-radius:4px}
+.scc-card .tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}
+.scc-card {display: flex; flex-direction: column; justify-content: space-between; line-height: 1.42857143; margin: 0.2rem; min-width: 28rem; max-width: 28rem; min-height: 15rem; max-height: 15rem; padding: 1.3rem; border-radius: 19px; background-color: #e0e0e0; box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;}
+.scc-card .repo-logo{width: 5.5rem;}
+.scc-card .description{text-align: justify; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 6; line-clamp: 6; -webkit-box-orient: vertical;}
+.scc-card .recently-updated{width: 1.4rem; height: 1.4rem; border-radius: 50%; margin-left: auto; margin-right: 0.1rem; background-color: #3e3e3e;}
+.scc-card .repo-icon{height: 1.1rem; margin-left: 0.2rem; margin-right: 0.2rem;}
+.scc-card .card-row{display: flex; flex-direction: row; justify-content: space-between;}
+.scc-card .card-col{width: 72%;}
+.scc-card .flex-horizontal{display: flex; align-items: center; flex-direction: row;}
+.scc-card .float-right{justify-content: flex-end;}
+.scc-card .grey-color-svg{filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);}
