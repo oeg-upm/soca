@@ -58,7 +58,9 @@ def html_view(repo_metadata, embedded):
                 <p class="description">{md.description()}</p>
             </div>
             <div>
-                <img src="{md.logo()}" alt="repo-logo" class="repo-logo">
+                <a href="{md.repo_url()}" target="_blank" style="text-decoration: none;">
+                    <img src="{md.logo()}" alt="repo-logo" class="repo-logo">
+                </a>
                 <div class="flex-horizontal float-right">
                     {md.recently_updated()}
                 </div>
