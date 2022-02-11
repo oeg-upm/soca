@@ -82,7 +82,8 @@ class styles(object):
 			return rules
 		
 		for css_class in self.css_cards.keys():
-			rules += f".{css_class}{{{self.css_cards[css_class]}\n}}\n"
+			r = ' '.join(self.css_cards[css_class].split()) # Minify css rules
+			rules += f".{css_class}{{{r}}}\n"
 
 		return rules
 
@@ -101,7 +102,7 @@ class styles(object):
 		if not self.embedded:
 
 			if isinstance(class_selector, list):
-				styles += f'''class="{' '.join(class_selector )}"'''
+				styles += f'''class="{' '.join(class_selector)}"'''
 			else:
 				styles += f'''class="{class_selector}"'''
 
