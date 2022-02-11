@@ -14,5 +14,5 @@ def create(repo_url, output):
         exit()
         
     card_view = card.html_view(metadata, embedded=True)
-    with open(f"{output}.html", "w") as index:
+    with open(f"{output}", "w+") as index:
         index.write(card_view)

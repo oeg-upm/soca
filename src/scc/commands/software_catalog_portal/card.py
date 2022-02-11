@@ -31,7 +31,6 @@ def html_view(repo_metadata, embedded):
     s = styles.styles(embedded)
     md = metadata.metadata(repo_metadata, embedded)
 
-    
     if not embedded:
         # Instert embedded html data to be able to copy it
         html_copy_embedded = f"""<div class="copy_card_html" style="display: none;" id="{md.repo_url()}"> {html_view(repo_metadata, embedded=True)} </div>"""
@@ -40,9 +39,34 @@ def html_view(repo_metadata, embedded):
     else:
         html_copy_embedded = ''
         copy_btn = ''
-        tooltip_script = """$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});"""
+        tooltip_script = """<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                            <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>"""
 
     html_card = f"""
+<style>
+*{{margin:0;box-sizing:border-box;color:#3e3e3e;font-family:"Helvetica Neue",Helvetica}}
+{s.get_rules()}
+.copy-btn:active{{position:relative;top:1px;background-color:#3e3e3e;color:#e0e0e0}}
+.copy-btn:hover{{background-color:#e9e9e9}}
+.copy-btn{{margin-left: 0.3rem;border:none;height:1.1rem;width:1rem;cursor:pointer;background:url("repo_icons/copy.svg")transparent;background-repeat:no-repeat;background-size: auto;}}
+.tooltip{{position:absolute;z-index:1070;display:block;font-style:normal;font-weight:400;line-height:1.42857143;line-break:auto;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;font-size:12px;opacity:0}}
+.tooltip.in{{opacity:.9}}
+.tooltip.top{{padding:5px 0;margin-top:-3px}}
+.tooltip.right{{padding:0 5px;margin-left:3px}}
+.tooltip.bottom{{padding:5px 0;margin-top:3px}}
+.tooltip.left{{padding:0 5px;margin-left:-3px}}
+.tooltip.top .tooltip-arrow{{bottom:0;left:50%;margin-left:-5px;border-width:5px 5px 0;border-top-color:#3e3e3e}}
+.tooltip.top-left .tooltip-arrow{{right:5px;bottom:0;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#3e3e3e}}
+.tooltip.top-right .tooltip-arrow{{bottom:0;left:5px;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#3e3e3e}}
+.tooltip.right .tooltip-arrow{{top:50%;left:0;margin-top:-5px;border-width:5px 5px 5px 0;border-right-color:#3e3e3e}}
+.tooltip.left .tooltip-arrow{{top:50%;right:0;margin-top:-5px;border-width:5px 0 5px 5px;border-left-color:#3e3e3e}}
+.tooltip.bottom .tooltip-arrow{{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}}
+.tooltip.bottom-left .tooltip-arrow{{top:0;right:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}}
+.tooltip.bottom-right .tooltip-arrow{{top:0;left:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}}
+.tooltip-inner{{max-width:200px;padding:3px 8px;color:#e0e0e0;text-align:center;background-color:#3e3e3e;border-radius:4px}}
+.tooltip-arrow{{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}}
+</style>
     <article {s.get('card')}>
         <div {s.get('card-row')}>
             <div {s.get('card-col1')}>
@@ -85,8 +109,9 @@ def html_view(repo_metadata, embedded):
             </div>
         </div>
         {html_copy_embedded}
-        {tooltip_script}
     </article>
+    {tooltip_script}
     """
 
+    return html_card
     return html_card if not embedded else htmlmin.minify(html_card, remove_empty_space=True)

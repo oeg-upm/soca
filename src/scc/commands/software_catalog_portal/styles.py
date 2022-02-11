@@ -78,7 +78,7 @@ class styles(object):
 		rules = ''
 		
 		# CSS rules will be inside the html tags
-		if self.embedded:
+		if self.embedded and False:
 			return rules
 		
 		for css_class in self.css_cards.keys():
@@ -99,7 +99,7 @@ class styles(object):
 		styles = ''
 
 		# Return normal css class names        
-		if not self.embedded:
+		if not self.embedded or True:
 
 			if isinstance(class_selector, list):
 				styles += f'''class="{' '.join(class_selector)}"'''
