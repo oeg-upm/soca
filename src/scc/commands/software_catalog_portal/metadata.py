@@ -4,14 +4,12 @@ from os import listdir
 from os.path import isfile, join
 from datetime import datetime
 import sys
-from . import styles
 from . import bibtext
 
 class metadata(object):
 
     def __init__(self, repo_metadata, embedded = False):
         self.md = repo_metadata
-        self.s = styles.styles(embedded)
         self.base = 'https://github.com/dakixr/scc/raw/main/src/scc/assets/' if embedded else ''
 
     # Assets ####################################################
@@ -40,10 +38,15 @@ class metadata(object):
             lang = str(lang).lower()
             if lang in supported_languages:
                 html += f"""<img src="{self.base}language_icons/{lang}.svg" 
-                                alt="{lang}" {self.s.get(['repo-icon','grey-color-svg'])}
-                                data-toggle="tooltip" data-placement="bottom" title="{lang.capitalize()}">
-                            """
+                                alt="{lang}" class="repo-icon grey-color-svg"
+                                data-toggle="tooltip" data-placement="bottom" title="{lang.capitalize()}">"""
         return html
+
+    def copy_btn(self):
+        return f"""<button class="copy-btn" 
+                   value="{self.repo_url()}" 
+                   style="background:url('{self.base}repo_icons/copy.svg')transparent;background-repeat:no-repeat;background-size:auto;">
+                   </button>"""
 
     def html_repo_icons(self):
 
@@ -51,31 +54,31 @@ class metadata(object):
     
         license = self.license()
         if license:
-            html += f"""<a href="{safe_dic(license,'url')}" target="_blank" {self.s.get('repo-icon')}>
+            html += f"""<a href="{safe_dic(license,'url')}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/license.png" 
-                            alt="license" {self.s.get('repo-icon')} 
+                            alt="license" class="repo-icon" 
                             data-toggle="tooltip" data-placement="bottom" title="License: {license['name']}">
                         </a>"""
         
         readme_url = safe_dic(safe_dic(self.md,'readme_url'),'excerpt')
         if readme_url:
-            html += f"""<a href="{readme_url}" target="_blank" {self.s.get('repo-icon')}>
+            html += f"""<a href="{readme_url}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/readme.png" 
-                            alt="readme" {self.s.get('repo-icon')} 
+                            alt="readme" class="repo-icon" 
                             data-toggle="tooltip" data-placement="bottom" title="Readme">
                         </a>"""
         
         notebook = safe_dic(safe_dic(self.md,'hasExecutableNotebook'),'excerpt')
         if notebook:
             html += f"""<img src="{self.base}repo_icons/notebook.png" 
-                        alt="notebook" {self.s.get('repo-icon')} 
+                        alt="notebook" class="repo-icon" 
                         data-toggle="tooltip" data-placement="bottom" title="Notebook">"""
 
         download_url = safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
         if download_url:
-            html += f"""<a href="{download_url}" target="_blank" {self.s.get('repo-icon')}>
+            html += f"""<a href="{download_url}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/download.png" 
-                            alt="download" {self.s.get('repo-icon')} 
+                            alt="download" class="repo-icon" 
                             data-toggle="tooltip" data-placement="bottom" title="Download">
                         </a>"""
 
@@ -88,38 +91,41 @@ class metadata(object):
             if len(citations) > 0:
                 for citation in citations:
                     html += f"""<img src="{self.base}repo_icons/citation.png" 
-                                alt="citation" {self.s.get('repo-icon')} 
+                                alt="citation" class="repo-icon" 
                                 data-toggle="tooltip" data-placement="bottom" title="{citation}">"""
 
                     # Paper repo-icon 
                     # TODO: Consider if separating paper and citation logic makes sense
-                    p_citation = bibtext.bibtext.parse(citation)[0]
-                    p_citation_fields_keys = p_citation.fields.keys()
+                    try:
+                        p_citation = bibtext.bibtext.parse(citation)[0]
+                        p_citation_fields_keys = p_citation.fields.keys()
 
-                    if 'doi' in p_citation_fields_keys and not 'url' in p_citation_fields_keys:
-                        link_paper = p_citation.fields['doi'][1:-1]
+                        if 'doi' in p_citation_fields_keys and not 'url' in p_citation_fields_keys:
+                            link_paper = p_citation.fields['doi'][1:-1]
 
-                    if 'url' in p_citation_fields_keys:
-                        link_paper = p_citation.fields['url'][1:-1]
-                    
-                    title_paper = p_citation.fields['title'][1:-1] # remove '{' and '}'
-                    html += f"""<a href="{link_paper}" target="_blank" {self.s.get('repo-icon')}>
-                                    <img src="{self.base}repo_icons/paper.png" 
-                                    alt="{title_paper}" {self.s.get('repo-icon')} 
-                                    data-toggle="tooltip" data-placement="bottom" title="Paper: {title_paper}">
-                                </a>"""
+                        if 'url' in p_citation_fields_keys:
+                            link_paper = p_citation.fields['url'][1:-1]
+                        
+                        title_paper = p_citation.fields['title'][1:-1] # remove '{' and '}'
+                        html += f"""<a href="{link_paper}" target="_blank" class="repo-icon">
+                                        <img src="{self.base}repo_icons/paper.png" 
+                                        alt="{title_paper}" class="repo-icon" 
+                                        data-toggle="tooltip" data-placement="bottom" title="Paper: {title_paper}">
+                                    </a>"""
+                    except: 
+                        pass
 
         docker = safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
         if docker:
             html += f"""<img src="{self.base}repo_icons/docker.png" 
-                        alt="docker" {self.s.get('repo-icon')} 
+                        alt="docker" class="repo-icon" 
                         data-toggle="tooltip" data-placement="bottom" title="{[str(d) for d in docker]}">"""
         
         installation = safe_dic(self.md,'installation')
         if installation:
             installation = safe_dic(installation[0],'excerpt')
             html += f"""<img src="{self.base}repo_icons/installation.png" 
-                        alt="installation" {self.s.get('repo-icon')} 
+                        alt="installation" class="repo-icon" 
                         data-toggle="tooltip" data-placement="bottom" title="Installation:\n{installation}">"""
         
         requirements = safe_dic(self.md,'requirement')
@@ -127,7 +133,7 @@ class metadata(object):
             requirements = safe_dic(requirements[0],'excerpt')
             html += f"""<img src="{self.base}repo_icons/requirements.png" 
                         alt="requirements" 
-                        {self.s.get('repo-icon')} 
+                        class="repo-icon" 
                         data-toggle="tooltip" data-placement="bottom" title="Requirements:\n{requirements}">"""
 
         return html
@@ -150,7 +156,7 @@ class metadata(object):
                 state_updated = state['hex']
                 break
 
-        return f"""<div {self.s.get('recently-updated',custom_css=f'background-color: {state_updated};')} 
+        return f"""<div class="recently-updated" style="background-color: {state_updated};"
                    data-toggle="tooltip" data-placement="right" 
                    title="Last updated on: {self.last_update().strftime('%d-%m-%Y')}">
                    </div>"""
