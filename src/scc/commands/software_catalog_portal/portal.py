@@ -27,10 +27,10 @@ def generate(repo_metadata_dir, output):
     # Insert scripts
     sc = scripts.scripts()
     sc.set_card_data(cards_data)
-    #soup.body.script.string += sc.copy_card
-    #soup.body.script.string += sc.tooltip
     soup.body.script.string += sc.card_data # let with all cards data
     soup.body.script.string += sc.filtering
+    soup.body.script.string += sc.tooltip
+    soup.body.script.string += sc.copy_card
 
     # Insert cards for each repo
     #card.insert_cards(repo_metadata_dir, soup)
