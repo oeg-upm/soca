@@ -2,6 +2,7 @@ import os
 import json
 from bs4 import BeautifulSoup
 import htmlmin
+from progressbar import progressbar
 
 from . import metadata
 from . import styles
@@ -27,7 +28,7 @@ def cards_data_dump(repo_metadata_dir):
     cards_data = []
 
     meta_dir = os.fsencode(repo_metadata_dir)
-    for file in os.listdir(meta_dir):
+    for file in progressbar(os.listdir(meta_dir), redirect_stdout=True):
         filename = os.fsdecode(file)
         if filename.endswith(".json"): 
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
@@ -48,6 +49,7 @@ def cards_data_dump(repo_metadata_dir):
                     'readme': md.readme(),
                     'notebook': md.notebook(),
                     'citation': md.citations(),
+                    'paper': md.paper(),
                     'docker': md.docker(),
                     'installation': md.installation(),
                     'requirements': md.requirements()

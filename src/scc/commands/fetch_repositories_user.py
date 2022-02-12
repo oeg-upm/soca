@@ -16,9 +16,9 @@ def fetch(input, output):
 
 def fetch_org(user, out_path):
 
-    print(f"Fetching organizations from {user}:")
+    print(f"Fetching repositories from {user}:")
 
-    URL = " https://api.github.com/users/" + user + "/repos"
+    URL = "https://api.github.com/users/" + user + "/repos"
     page_size = 50
     page = 1
     PARAMS = {'per_page':page_size,'page':page}

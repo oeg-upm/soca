@@ -1,10 +1,11 @@
+from xml.dom import NoDataAllowedErr
 from scc import base_dir
 from pathlib import Path
 from os import listdir
 from os.path import isfile, join
 from datetime import datetime
+import bibtexparser
 import sys
-from . import bibtext
 
 class metadata(object):
 
@@ -88,28 +89,32 @@ class metadata(object):
                 html += f"""<img src="{self.base}repo_icons/citation.png" 
                             alt="citation" class="repo-icon" 
                             data-toggle="tooltip" data-placement="bottom" title="{citation}">"""
+                            
+        papers = self.citations()
+        if papers:
+            for paper in papers:
+                p_paper = bibtexparser.loads(paper).entries
+                p_paper = safe_list(p_paper,0)
 
-                # Paper repo-icon 
-                # TODO: Consider if separating paper and citation logic makes sense
-                try:
-                    p_citation = bibtext.bibtext.parse(citation)[0]
-                    p_citation_fields_keys = p_citation.fields.keys()
+                if p_paper:
 
-                    if 'doi' in p_citation_fields_keys and not 'url' in p_citation_fields_keys:
-                        link_paper = p_citation.fields['doi'][1:-1]
+                    p_paper_keys = p_paper.keys()
+                    link_paper = ''
 
-                    if 'url' in p_citation_fields_keys:
-                        link_paper = p_citation.fields['url'][1:-1]
-                    
-                    title_paper = p_citation.fields['title'][1:-1] # remove '{' and '}'
-                    html += f"""<a href="{link_paper}" target="_blank" class="repo-icon">
-                                    <img src="{self.base}repo_icons/paper.png" 
-                                    alt="{title_paper}" class="repo-icon" 
-                                    data-toggle="tooltip" data-placement="bottom" title="Paper: {title_paper}">
+                    if 'doi' in p_paper_keys and not 'url' in p_paper_keys:
+                        link_paper = 'https://www.doi.org/' + p_paper['doi']
+
+                    if 'url' in p_paper_keys:
+                        link_paper = p_paper['url']
+
+                    if link_paper != '' and 'zenodo' not in link_paper:
+                        title_paper = p_paper['title']
+                        html += f"""<a href="{link_paper}" target="_blank" class="repo-icon">
+                                        <img src="{self.base}repo_icons/paper.png" 
+                                        alt="{title_paper}" class="repo-icon" 
+                                        data-toggle="tooltip" data-placement="bottom" title="Paper: {title_paper}">
                                 </a>"""
-                except: 
-                    pass
-
+            
         docker = self.docker()
         if docker:
             html += f"""<img src="{self.base}repo_icons/docker.png" 
@@ -163,6 +168,9 @@ class metadata(object):
 
     def docker(self):
         return safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
+
+    def paper(self):
+        return None
 
     def citations(self):
         all_citations = safe_dic(self.md,'citation')

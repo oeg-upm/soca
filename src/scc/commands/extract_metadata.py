@@ -1,33 +1,50 @@
 import csv
 import json
 import os
-
+from progressbar import progressbar
 from somef.cli import cli_get_data
+import os, sys
+
+class HiddenPrints:
+    def __enter__(self):
+        self._original_stdout = sys.stdout
+        self._original_stderr = sys.stderr
+        sys.stdout = open(os.devnull, 'w')
+        sys.stderr = open(os.devnull, 'w')
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        sys.stdout.close()
+        sys.stderr.close()
+        sys.stdout = self._original_stdout
+        sys.stderr = self._original_stderr
+
 
 def fetch(repos_csv, output):
 
     # Make output dir
     if not os.path.exists(output):
         os.makedirs(output)
+    
+    if os.path.isfile(repos_csv):
+        with open(repos_csv) as repos:
+            repos_url = [c[0] for c in csv.reader(repos, delimiter=',')]
+    else:
+        repos_url = str(repos_csv).split(",")
 
-    with open(repos_csv) as repos:
+    print("It may take a while... Depends on repository size and Github API limitations.")
+    for repo_url in progressbar(repos_url, redirect_stdout=True):
+        try:
+            print(f"Extracting metadata from {repo_url}")
+            with HiddenPrints():
+                metadata = cli_get_data(0.9, False, repo_url)
+            repo_full_name = (repo_url[19:]).replace("/", "_").replace(".","-")
+            with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
+                json.dump(metadata, repo_metadata, indent = 4)
 
-        csv_reader = csv.reader(repos, delimiter=',')
-
-        for repo_url in csv_reader:
-            try:
-
-                print(f"Extracting metadata from {repo_url[0]}. It may take a while... (depends on repository size).")
-                metadata = cli_get_data(0.9, False, repo_url[0])
-                repo_full_name = (repo_url[0][19:]).replace("/", "_").replace(".","-")
-
-                with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
-                    json.dump(metadata, repo_metadata, indent = 4)
-
-            except KeyboardInterrupt:
-                exit()      
-                  
-            except:
-                print(f"ERROR: Could not extract metadata from {repo_url[0]}")
-        
+        except KeyboardInterrupt:
+            exit()      
+              
+        except:
+            print(f"ERROR: Could not extract metadata from {repo_url}")
+    
 

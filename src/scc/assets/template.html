@@ -39,24 +39,6 @@ footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content
 </footer>
 
 <script>
-
-function search() {
-    var input, filter, cards, article, title, i, titleValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    cards = document.getElementById("myCards");
-    article = cards.getElementsByTagName("article");
-
-    for (i = 0; i < article.length; i++) 
-    {
-        title = article[i].getElementsByClassName("title")[0];
-        titleValue = title.textContent || title.innerText;
-        if (titleValue.toUpperCase().indexOf(filter) > -1) { article[i].style.display = ""; } 
-        else { article[i].style.display = "none"; }
-    }
-}
-
-
 </script>
 </body>
 </html>
