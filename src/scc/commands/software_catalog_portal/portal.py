@@ -4,6 +4,8 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 from . import card
+from . import styles
+from . import scripts
 from scc import base_dir
 
 
@@ -11,12 +13,27 @@ def generate(repo_metadata_dir, output):
 
     copy_assets(output)
 
-    # Load the template
+    # Load html template
     with open(f"{base_dir}/assets/template.html") as template:
         soup = BeautifulSoup(template.read(), features="html.parser")
+        
+    # Insert CSS rules
+    s = styles.styles()
+    soup.style.string += s.rules
+
+    # Create object with cards data and metadata
+    cards_data = card.cards_data_dump(repo_metadata_dir)
+
+    # Insert scripts
+    sc = scripts.scripts()
+    sc.set_card_data(cards_data)
+    #soup.body.script.string += sc.copy_card
+    #soup.body.script.string += sc.tooltip
+    soup.body.script.string += sc.card_data # let with all cards data
+    soup.body.script.string += sc.filtering
 
     # Insert cards for each repo
-    card.insert_cards(repo_metadata_dir, soup)
+    #card.insert_cards(repo_metadata_dir, soup)
 
     # Insert last updated date
     add_last_updated_date(soup)

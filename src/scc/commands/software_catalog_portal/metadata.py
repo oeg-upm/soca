@@ -24,7 +24,7 @@ class metadata(object):
     
     def html_languages(self):
 
-        languages = safe_dic(safe_dic(self.md,'languages'),'excerpt')
+        languages = self.languagues()
 
         if not languages:
             return ''
@@ -35,7 +35,6 @@ class metadata(object):
         html = ''
 
         for lang in languages:
-            lang = str(lang).lower()
             if lang in supported_languages:
                 html += f"""<img src="{self.base}language_icons/{lang}.svg" 
                                 alt="{lang}" class="repo-icon grey-color-svg"
@@ -60,7 +59,7 @@ class metadata(object):
                             data-toggle="tooltip" data-placement="bottom" title="License: {license['name']}">
                         </a>"""
         
-        readme_url = safe_dic(safe_dic(self.md,'readme_url'),'excerpt')
+        readme_url = self.readme()
         if readme_url:
             html += f"""<a href="{readme_url}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/readme.png" 
@@ -68,13 +67,13 @@ class metadata(object):
                             data-toggle="tooltip" data-placement="bottom" title="Readme">
                         </a>"""
         
-        notebook = safe_dic(safe_dic(self.md,'hasExecutableNotebook'),'excerpt')
+        notebook = self.notebook()
         if notebook:
             html += f"""<img src="{self.base}repo_icons/notebook.png" 
                         alt="notebook" class="repo-icon" 
                         data-toggle="tooltip" data-placement="bottom" title="Notebook">"""
 
-        download_url = safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
+        download_url = self.download_url()
         if download_url:
             html += f"""<a href="{download_url}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/download.png" 
@@ -82,53 +81,48 @@ class metadata(object):
                             data-toggle="tooltip" data-placement="bottom" title="Download">
                         </a>"""
 
-        all_citations = safe_dic(self.md,'citation')
-        if all_citations:
-            citations = []
-            for c in all_citations:
-                if c['technique'] == 'Regular expression':
-                    citations.append(c['excerpt'])
-            if len(citations) > 0:
-                for citation in citations:
-                    html += f"""<img src="{self.base}repo_icons/citation.png" 
-                                alt="citation" class="repo-icon" 
-                                data-toggle="tooltip" data-placement="bottom" title="{citation}">"""
 
-                    # Paper repo-icon 
-                    # TODO: Consider if separating paper and citation logic makes sense
-                    try:
-                        p_citation = bibtext.bibtext.parse(citation)[0]
-                        p_citation_fields_keys = p_citation.fields.keys()
+        citations = self.citations()
+        if citations:
+            for citation in citations:
+                html += f"""<img src="{self.base}repo_icons/citation.png" 
+                            alt="citation" class="repo-icon" 
+                            data-toggle="tooltip" data-placement="bottom" title="{citation}">"""
 
-                        if 'doi' in p_citation_fields_keys and not 'url' in p_citation_fields_keys:
-                            link_paper = p_citation.fields['doi'][1:-1]
+                # Paper repo-icon 
+                # TODO: Consider if separating paper and citation logic makes sense
+                try:
+                    p_citation = bibtext.bibtext.parse(citation)[0]
+                    p_citation_fields_keys = p_citation.fields.keys()
 
-                        if 'url' in p_citation_fields_keys:
-                            link_paper = p_citation.fields['url'][1:-1]
-                        
-                        title_paper = p_citation.fields['title'][1:-1] # remove '{' and '}'
-                        html += f"""<a href="{link_paper}" target="_blank" class="repo-icon">
-                                        <img src="{self.base}repo_icons/paper.png" 
-                                        alt="{title_paper}" class="repo-icon" 
-                                        data-toggle="tooltip" data-placement="bottom" title="Paper: {title_paper}">
-                                    </a>"""
-                    except: 
-                        pass
+                    if 'doi' in p_citation_fields_keys and not 'url' in p_citation_fields_keys:
+                        link_paper = p_citation.fields['doi'][1:-1]
 
-        docker = safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
+                    if 'url' in p_citation_fields_keys:
+                        link_paper = p_citation.fields['url'][1:-1]
+                    
+                    title_paper = p_citation.fields['title'][1:-1] # remove '{' and '}'
+                    html += f"""<a href="{link_paper}" target="_blank" class="repo-icon">
+                                    <img src="{self.base}repo_icons/paper.png" 
+                                    alt="{title_paper}" class="repo-icon" 
+                                    data-toggle="tooltip" data-placement="bottom" title="Paper: {title_paper}">
+                                </a>"""
+                except: 
+                    pass
+
+        docker = self.docker()
         if docker:
             html += f"""<img src="{self.base}repo_icons/docker.png" 
                         alt="docker" class="repo-icon" 
                         data-toggle="tooltip" data-placement="bottom" title="{[str(d) for d in docker]}">"""
         
-        installation = safe_dic(self.md,'installation')
+        installation = self.installation()
         if installation:
-            installation = safe_dic(installation[0],'excerpt')
             html += f"""<img src="{self.base}repo_icons/installation.png" 
                         alt="installation" class="repo-icon" 
                         data-toggle="tooltip" data-placement="bottom" title="Installation:\n{installation}">"""
         
-        requirements = safe_dic(self.md,'requirement')
+        requirements = self.requirements()
         if requirements:
             requirements = safe_dic(requirements[0],'excerpt')
             html += f"""<img src="{self.base}repo_icons/requirements.png" 
@@ -140,16 +134,15 @@ class metadata(object):
     
     def recently_updated(self):
 
+        #TODO: Retreive days_theshold from properties file
         hex_states = [
             {'hex': '#6da862', 'days_threshold': 30},
             {'hex': '#a88d62', 'days_threshold': 90},
             {'hex': '#a86262', 'days_threshold': sys.maxsize}
         ]
-        
-        date_of_extraction_str = safe_dic(safe_dic(safe_dic(self.md,'stargazers_count'),'excerpt'),'date')[:-4]
-        date_of_extraction = datetime.strptime(date_of_extraction_str, '%a, %d %b %Y %H:%M:%S') 
-        last_update = self.last_update()
-        delta = (date_of_extraction - last_update).days
+
+        delta = self.last_update_days()
+
         state_updated = ''
         for state in hex_states:
             if delta < state['days_threshold']:
@@ -162,6 +155,42 @@ class metadata(object):
                    </div>"""
 
     # Metadata ##################################################
+    def requirements(self):
+        return safe_dic(self.md,'requirement')
+
+    def installation(self):
+        return safe_dic(safe_list(safe_dic(self.md,'installation'),0),'excerpt')
+
+    def docker(self):
+        return safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
+
+    def citations(self):
+        all_citations = safe_dic(self.md,'citation')
+
+        if not all_citations:
+            return None
+
+        citations = []
+        for c in all_citations:
+            if c['technique'] == 'Regular expression':
+                citations.append(c['excerpt'])
+        return citations if len(citations) > 0 else None
+        
+    def download_url(self):
+        return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
+
+    def notebook(self):
+        return safe_dic(safe_dic(self.md,'hasExecutableNotebook'),'excerpt')
+
+    def readme(self):
+        return safe_dic(safe_dic(self.md,'readme_url'),'excerpt')
+
+    def languagues(self):
+        langs = safe_dic(safe_dic(self.md,'languages'),'excerpt')
+        if not langs:
+            return None
+        return [str(lang).lower() for lang in langs]
+
     def repo_url(self):
         return safe_dic(safe_dic(self.md,'codeRepository'),'excerpt')
             
@@ -194,6 +223,12 @@ class metadata(object):
         date_modified = datetime.strptime(date_modified_str, '%Y-%m-%dT%H:%M:%S')
 
         return date_modified
+    
+    def last_update_days(self):
+        date_of_extraction_str = safe_dic(safe_dic(safe_dic(self.md,'stargazers_count'),'excerpt'),'date')[:-4]
+        date_of_extraction = datetime.strptime(date_of_extraction_str, '%a, %d %b %Y %H:%M:%S') 
+        last_update = self.last_update()
+        return (date_of_extraction - last_update).days
 
     def stars(self):
         return safe_dic(safe_dic(safe_dic(self.md,'stargazers_count'),'excerpt'),'count')

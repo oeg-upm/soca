@@ -5,48 +5,64 @@ import htmlmin
 
 from . import metadata
 from . import styles
+from . import scripts
 
 def insert_cards(repo_metadata_dir, soup: BeautifulSoup, embedded = False):
 
-    # Insert CSS rules
-    s = styles.styles()
-    soup.style.string += s.get_rules()
-
+    # Insert cards
     loc = soup.find(id="myCards")
     meta_dir = os.fsencode(repo_metadata_dir)
     
     for file in os.listdir(meta_dir):
-
         filename = os.fsdecode(file)
         if filename.endswith(".json"): 
-
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 print(f"Creating card for {filename}")
                 repo_metadata = json.load(json_metadata)
-                html_component = BeautifulSoup(html_view(repo_metadata, embedded), 'html.parser')
+                html_component = BeautifulSoup(html_view(repo_metadata, embedded, False), 'html.parser')
                 loc.append(html_component)
 
-def html_view(repo_metadata, embedded):
+def cards_data_dump(repo_metadata_dir):
+
+    cards_data = []
+
+    meta_dir = os.fsencode(repo_metadata_dir)
+    for file in os.listdir(meta_dir):
+        filename = os.fsdecode(file)
+        if filename.endswith(".json"): 
+            with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
+                print(f"Creating card for {filename}")
+                repo_metadata = json.load(json_metadata)
+                md = metadata.metadata(repo_metadata)
+                cards_data.append({
+                    'id': md.repo_url(),
+                    'html_card': html_view(repo_metadata, False),
+                    'html_card_embedded': html_view(repo_metadata, True),
+                    'title': md.title(),
+                    'recently_updated': md.last_update_days(),
+                    'stars': md.stars(),
+                    'releases': md.n_releases(),
+                    'languagues': md.languagues(),
+                    'description': md.description(),
+                    'license': md.license(),
+                    'readme': md.readme(),
+                    'notebook': md.notebook(),
+                    'citation': md.citations(),
+                    'docker': md.docker(),
+                    'installation': md.installation(),
+                    'requirements': md.requirements()
+                })
+
+    return cards_data
+
+def html_view(repo_metadata, embedded, minify=True):
 
     s = styles.styles()
     md = metadata.metadata(repo_metadata, embedded)
-    
-    tooltip_script = """
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>"""
-
-    copy_card_script = """
-    <script>
-    $("button").click(function() {
-        var copy_card = document.getElementById($(this).val());
-        navigator.clipboard.writeText(copy_card.outerHTML)    
-    });
-    </script>"""
+    sc = scripts.scripts()
 
     html_card = f"""
     <article class="scc-card" id="{md.repo_url()}">
-    {f'<style>{s.get_rules()}</style>'+tooltip_script+copy_card_script if embedded else ''}
         <div class="card-row">
             <div class="card-col">
                 <div class="flex-horizontal">
@@ -89,7 +105,11 @@ def html_view(repo_metadata, embedded):
                 </div>
             </div>
         </div>
+    {sc.js_dependencies if embedded else ''}
+    {f'<script>{sc.tooltip}</script>' if embedded else ''}
+    {f'<script>{sc.copy_card}</script>' if embedded else ''}
+    {f'<style>{s.rules}</style>' if embedded else ''}
     </article>
     """
-
-    return html_card if not embedded else htmlmin.minify(html_card, remove_empty_space=True)
+    #return html_card
+    return htmlmin.minify(html_card, remove_empty_space=True) if minify else html_card

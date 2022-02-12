@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -57,16 +56,6 @@ function search() {
     }
 }
 
-// Copy card
-$("button").click(function() {
-    var copy_card = document.getElementById($(this).val());
-    navigator.clipboard.writeText(copy_card.outerHTML)
-});
-
-// Tooltip
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
-});
 
 </script>
 </body>

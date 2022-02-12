@@ -15,8 +15,6 @@ class styles(object):
 		with open(f"{base_dir}/assets/scc-card.css") as f_rules:
 			self.rules = ''.join(f_rules.readlines())
 
-	def get_rules(self):
-		return self.rules
 
 
 
