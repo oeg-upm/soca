@@ -26,6 +26,15 @@
             "technique": "Header extraction"
         }
     ],
+    "requirement": [
+        {
+            "excerpt": "The repository includes a template for generating an ORSD for an ontology in the following formats: \n* Microsoft word\n* LaTex file\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
     "long_title": {
         "excerpt": "Complete example",
         "confidence": [
