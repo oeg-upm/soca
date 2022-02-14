@@ -1,34 +1,16 @@
 import os
 import json
-from bs4 import BeautifulSoup
 import htmlmin
-from progressbar import progressbar
 
 from . import metadata
 from . import styles
 from . import scripts
 
-def insert_cards(repo_metadata_dir, soup: BeautifulSoup, embedded = False):
-
-    # Insert cards
-    loc = soup.find(id="myCards")
-    meta_dir = os.fsencode(repo_metadata_dir)
-    
-    for file in os.listdir(meta_dir):
-        filename = os.fsdecode(file)
-        if filename.endswith(".json"): 
-            with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
-                print(f"Creating card for {filename}")
-                repo_metadata = json.load(json_metadata)
-                html_component = BeautifulSoup(html_view(repo_metadata, embedded, False), 'html.parser')
-                loc.append(html_component)
-
 def cards_data_dump(repo_metadata_dir):
 
     cards_data = []
 
-    meta_dir = os.fsencode(repo_metadata_dir)
-    for file in progressbar(os.listdir(meta_dir), redirect_stdout=True):
+    for file in os.listdir(os.fsencode(repo_metadata_dir)):
         filename = os.fsdecode(file)
         if filename.endswith(".json"): 
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
