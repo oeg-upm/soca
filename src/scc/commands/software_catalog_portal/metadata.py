@@ -1,10 +1,10 @@
-from xml.dom import NoDataAllowedErr
+from matplotlib.pyplot import title
 from scc import base_dir
 from pathlib import Path
 from os import listdir
 from os.path import isfile, join
 from datetime import datetime
-import bibtexparser
+import re
 import sys
 
 class metadata(object):
@@ -93,27 +93,28 @@ class metadata(object):
         papers = self.citations()
         if papers:
             for paper in papers:
-                p_paper = bibtexparser.loads(paper).entries
-                p_paper = safe_list(p_paper,0)
 
-                if p_paper:
+                link_paper = re.search('url={.*}', paper)
+                if link_paper:
+                    link_paper = link_paper.group(0)[5:-1]
 
-                    p_paper_keys = p_paper.keys()
-                    link_paper = ''
+                doi_paper = re.search('doi={.*}', paper)
+                if doi_paper:
+                    doi_paper = doi_paper.group(0)[5:-1]
+                
+                title_paper = re.search('title={.*}', paper)
+                if title_paper:
+                    title_paper = title_paper.group(0)[7:-2]
 
-                    if 'doi' in p_paper_keys and not 'url' in p_paper_keys:
-                        link_paper = 'https://www.doi.org/' + p_paper['doi']
+                if doi_paper and not link_paper:
+                    link_paper = 'https://www.doi.org/' + doi_paper
 
-                    if 'url' in p_paper_keys:
-                        link_paper = p_paper['url']
-
-                    if link_paper != '' and 'zenodo' not in link_paper:
-                        title_paper = p_paper['title']
-                        html += f"""<a href="{link_paper}" target="_blank" class="repo-icon">
-                                        <img src="{self.base}repo_icons/paper.png" 
-                                        alt="{title_paper}" class="repo-icon" 
-                                        data-toggle="tooltip" data-placement="bottom" title="Paper: {title_paper}">
-                                </a>"""
+                if link_paper and 'zenodo' not in link_paper:
+                    html += f"""<a href="{link_paper}" target="_blank" class="repo-icon">
+                                    <img src="{self.base}repo_icons/paper.png" 
+                                    alt="{title_paper}" class="repo-icon" 
+                                    data-toggle="tooltip" data-placement="bottom" title="Paper: {title_paper}">
+                            </a>"""
             
         docker = self.docker()
         if docker:

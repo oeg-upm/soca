@@ -21,6 +21,9 @@ def generate(repo_metadata_dir, output):
     s = styles.styles()
     soup.style.string += s.rules
 
+    # Insert last updated date
+    add_last_updated_date(soup)
+
     # Create object with cards data and metadata
     cards_data = card.cards_data_dump(repo_metadata_dir)
 
@@ -32,15 +35,10 @@ def generate(repo_metadata_dir, output):
     soup.body.script.string += sc.tooltip
     soup.body.script.string += sc.copy_card
 
-    # Insert cards for each repo
-    #card.insert_cards(repo_metadata_dir, soup)
-
-    # Insert last updated date
-    add_last_updated_date(soup)
-
     # Save index.html
     with open(f"{output}/index.html", "w") as index:
         index.write(str(soup))
+        print(f"Portal saved at {output}/index.html")
 
 def copy_assets(output):
 
@@ -56,6 +54,9 @@ def copy_assets(output):
 
     # Copy all repo_icons
     copy_tree(f"{base_dir}/assets/repo_icons", f"{output}/repo_icons")
+    
+    # Log
+
 
 
 def add_last_updated_date(soup):
