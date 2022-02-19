@@ -22,14 +22,6 @@ class scripts(object):
 
         with open(f"{base_dir}/assets/scripts/tooltip.js") as tt:
             self.tooltip = ''.join(tt.readlines())
-        
-        with open(f"{base_dir}/assets/scripts/filtering.js") as flt:
-            self.filtering = ''.join(flt.readlines())
-
-    def set_card_data(self,card_data):
-        self.card_data = "let cards = "+json.dumps(card_data, indent=4, sort_keys=True).replace('</script>','<\\/script>')+";\n"
-
-
 
 
 

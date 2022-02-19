@@ -1,7 +1,9 @@
 import os
 from distutils.dir_util import copy_tree
+import shutil
 from bs4 import BeautifulSoup
 from datetime import datetime
+import json
 
 from . import card
 from . import styles
@@ -24,15 +26,18 @@ def generate(repo_metadata_dir, output):
     # Insert last updated date
     add_last_updated_date(soup)
 
-    # Create object with cards data and metadata
+    # Create json with cards data and metadata
     cards_data = card.cards_data_dump(repo_metadata_dir)
+    with open(f"{output}/cards_data.json", "w") as cards_data_json:
+        json.dump(cards_data ,fp=cards_data_json, indent=4)
+        print(f"Cards data saved at {output}/cards_data.json")
 
-    # Insert scripts
+    # Copy app.js
+    shutil.copy(f"{base_dir}/assets/app.js", f"{output}")
+
+    # Insert extra scripts
     sc = scripts.scripts()
-    sc.set_card_data(cards_data)
-    soup.body.script.string += sc.card_data # let with all cards data
-    soup.body.script.string += sc.filtering
-    soup.body.script.string += sc.tooltip
+    soup.body.script.string = sc.tooltip
     soup.body.script.string += sc.copy_card
 
     # Save index.html
@@ -55,8 +60,6 @@ def copy_assets(output):
     # Copy all repo_icons
     copy_tree(f"{base_dir}/assets/repo_icons", f"{output}/repo_icons")
     
-    # Log
-
 
 
 def add_last_updated_date(soup):

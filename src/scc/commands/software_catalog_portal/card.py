@@ -39,6 +39,7 @@ def cards_data_dump(repo_metadata_dir):
 
     return cards_data
 
+
 def html_view(repo_metadata, embedded, minify=True):
 
     s = styles.styles()

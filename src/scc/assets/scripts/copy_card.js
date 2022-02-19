@@ -13,4 +13,3 @@ for (let index = 0; index < btns.length; index++) {
         }
     });
 }
-
