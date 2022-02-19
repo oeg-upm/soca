@@ -1,8 +1,3 @@
-/*var xhReq = new XMLHttpRequest();
-xhReq.open("GET", "cards_data.json", false);
-xhReq.send(null);
-var cards = JSON.parse(xhReq.responseText);
-*/
 // Load cards data
 let cards = [];
 const loadCardsData = async () => {
@@ -19,19 +14,21 @@ const loadCardsData = async () => {
 const searchBar = document.getElementById('searchBar');
 
 // Listeners
-searchBar.addEventListener('keyup', (e) =>{
+searchBar.addEventListener('keyup', () =>{
     search()
 })
 
 function search() {
-    // searchBar.value gets query text
+
+    const usr_query = searchBar.value.toLowerCase();
     const fileredCards = cards.filter(card => {
-        return card.title.includes(searchBar.value) || card.description.includes(searchBar.value);
+        return card.title.toLowerCase().includes(usr_query) 
+            || card.description.toLowerCase().includes(usr_query);
     });
+
     // Order by title
     //ordered_cards = cards.sort((a,b) => (a.title > b.title)? 1 : -1);
 
-    console.log(fileredCards);
     displayCards(fileredCards);
 }
 
@@ -42,6 +39,9 @@ const displayCards = (cards) => {
         })
         .join('');
     document.getElementById('myCards').innerHTML = htmlString
+
+    add_tooltip();
+    add_copy_card();
 }
 
 loadCardsData();

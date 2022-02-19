@@ -55,7 +55,7 @@ footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content
 </div>
 <footer>
 <div style="height: 4rem; display: flex; flex-direction: column; justify-content: center">
-<p id="portal-last-updated">Last updated on 19/02/2022</p>
+<p id="portal-last-updated">Last updated on 20/02/2022</p>
 <p>Built with <a href="https://github.com/dakixr/scc" target="_blank">scc</a></p>
 </div>
 <div style="height: 4rem; flex-direction: row;">
@@ -64,11 +64,7 @@ footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content
 <a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
 </div>
 </footer>
-<script src="app.js">
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-
+<script>function add_copy_card(){
 btns = document.getElementsByClassName('copy-btn')
 for (let index = 0; index < btns.length; index++) {
     const element = btns[index];
@@ -83,8 +79,11 @@ for (let index = 0; index < btns.length; index++) {
         }
     });
 }
-</script>
-<script>
-</script>
+};function add_tooltip(){
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+};</script>
+<script src="app.js"></script>
 </body>
 </html>
