@@ -8,6 +8,15 @@
             "technique": "GitHub API"
         }
     ],
+    "identifier": [
+        {
+            "excerpt": "https://zenodo.org/badge/latestdoi/325636796",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "citation": [
         {
             "excerpt": "@inproceedings{ilievski2020kgtk,\n  title={{KGTK}: A Toolkit for Large Knowledge Graph Manipulation and Analysis}},\n  author={Ilievski, Filip and Garijo, Daniel and Chalupsky, Hans and Divvala, Naren Teja and Yao, Yixiang and Rogers, Craig and Li, Ronpeng and Liu, Jun and Singh, Amandeep and Schwabe, Daniel and Szekely, Pedro},\n  booktitle={International Semantic Web Conference},\n  pages={278--293},\n  year={2020},\n  organization={Springer}\n  url={https://arxiv.org/pdf/2006.00088.pdf}\n}",
@@ -29,6 +38,15 @@
     "requirement": [
         {
             "excerpt": "The repository includes a template for generating an ORSD for an ontology in the following formats: \n* Microsoft word\n* LaTex file\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "excerpt": "- In this work we use the GraphViz Java API developed by Laszlo Szathmary (https://github.com/jabbalaci) for generating the diagramas from DOT files https://github.com/jabbalaci/graphviz-java-api\n",
             "confidence": [
                 1
             ],
