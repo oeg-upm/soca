@@ -29,7 +29,6 @@ function search() {
     // Order by title
     //ordered_cards = cards.sort((a,b) => (a.title > b.title)? 1 : -1);
 
-    console.log(fileredCards);
     displayCards(fileredCards);
 }
 
@@ -40,6 +39,9 @@ const displayCards = (cards) => {
         })
         .join('');
     document.getElementById('myCards').innerHTML = htmlString
+
+    add_tooltip();
+    add_copy_card();
 }
 
 loadCardsData();

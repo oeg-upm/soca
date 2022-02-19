@@ -22,6 +22,12 @@ class scripts(object):
 
         with open(f"{base_dir}/assets/scripts/tooltip.js") as tt:
             self.tooltip = ''.join(tt.readlines())
+    
+    def function_copy_card(self):
+        return f"function add_copy_card(){{{self.copy_card}}};"    
+    
+    def function_tooltip(self):
+        return f"function add_tooltip(){{{self.tooltip}}};"
 
 
 

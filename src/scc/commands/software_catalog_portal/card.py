@@ -27,14 +27,16 @@ def cards_data_dump(repo_metadata_dir):
                     'releases': md.n_releases(),
                     'languagues': md.languagues(),
                     'description': md.description(),
-                    'license': md.license(),
-                    'readme': md.readme(),
-                    'notebook': md.notebook(),
-                    'citation': md.citations(),
-                    'paper': md.paper(),
-                    'docker': md.docker(),
-                    'installation': md.installation(),
-                    'requirements': md.requirements()
+                    'license': md.license() is not None,
+                    'readme': md.readme() is not None,
+                    'notebook': md.notebook() is not None,
+                    'citation': md.citations() is not None,
+                    'paper': md.paper() is not None,
+                    'docker': md.docker() is not None,
+                    'installation': md.installation() is not None,
+                    'requirements': md.requirements() is not None,
+                    'hasDocumentation': md.hasDocumentation() is not None,
+                    'identifier': md.identifier() is not None
                 })
 
     return cards_data

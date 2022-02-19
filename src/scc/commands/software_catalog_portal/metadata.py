@@ -45,7 +45,8 @@ class metadata(object):
     def copy_btn(self):
         return f"""<button class="copy-btn" 
                    value="{self.repo_url()}" 
-                   style="background:url('{self.base}repo_icons/copy.svg')transparent;background-repeat:no-repeat;background-size:auto;">
+                   style="background:url('{self.base}repo_icons/copy.svg')transparent;background-repeat:no-repeat;background-size:auto;"
+                   data-toggle="tooltip" data-placement="right" title="Copy card as embbeded HTML">
                    </button>"""
 
     def html_repo_icons(self):
@@ -82,39 +83,29 @@ class metadata(object):
                             data-toggle="tooltip" data-placement="bottom" title="Download">
                         </a>"""
 
-
         citations = self.citations()
         if citations:
             for citation in citations:
                 html += f"""<img src="{self.base}repo_icons/citation.png" 
                             alt="citation" class="repo-icon" 
                             data-toggle="tooltip" data-placement="bottom" title="{citation}">"""
+
+        identifier = self.identifier()
+        if identifier:
+            html += f"""<a href="{identifier}" target="_blank" class="repo-icon">
+                            <img src="{self.base}repo_icons/doi.png" 
+                            alt="DOI" class="repo-icon" 
+                            data-toggle="tooltip" data-placement="bottom" title="DOI: {identifier}">
+                    </a>"""
                             
-        papers = self.citations()
+        papers = self.paper()
         if papers:
             for paper in papers:
-
-                link_paper = re.search('url={.*}', paper)
-                if link_paper:
-                    link_paper = link_paper.group(0)[5:-1]
-
-                doi_paper = re.search('doi={.*}', paper)
-                if doi_paper:
-                    doi_paper = doi_paper.group(0)[5:-1]
-                
-                title_paper = re.search('title={.*}', paper)
-                if title_paper:
-                    title_paper = title_paper.group(0)[7:-2]
-
-                if doi_paper and not link_paper:
-                    link_paper = 'https://www.doi.org/' + doi_paper
-
-                if link_paper and 'zenodo' not in link_paper:
-                    html += f"""<a href="{link_paper}" target="_blank" class="repo-icon">
-                                    <img src="{self.base}repo_icons/paper.png" 
-                                    alt="{title_paper}" class="repo-icon" 
-                                    data-toggle="tooltip" data-placement="bottom" title="Paper: {title_paper}">
-                            </a>"""
+                html += f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
+                                <img src="{self.base}repo_icons/paper.png" 
+                                alt="Paper: {paper.title_paper}" class="repo-icon" 
+                                data-toggle="tooltip" data-placement="bottom" title="Paper: {paper.title_paper}">
+                        </a>"""
             
         docker = self.docker()
         if docker:
@@ -130,11 +121,24 @@ class metadata(object):
         
         requirements = self.requirements()
         if requirements:
-            requirements = safe_dic(requirements[0],'excerpt')
             html += f"""<img src="{self.base}repo_icons/requirements.png" 
                         alt="requirements" 
                         class="repo-icon" 
                         data-toggle="tooltip" data-placement="bottom" title="Requirements:\n{requirements}">"""
+
+        hasDocumentation = self.hasDocumentation()
+        if hasDocumentation:
+            html += f"""<a href="{hasDocumentation}" target="_blank" class="repo-icon">
+                            <img src="{self.base}repo_icons/documentation.png" 
+                            alt="Documentation" class="repo-icon" 
+                            data-toggle="tooltip" data-placement="bottom" title="Documentation">
+                        </a>"""
+
+        acknowledgement =  self.acknowledgement()
+        if acknowledgement:
+            html += f"""<img src="{self.base}repo_icons/acknowledgement.png" 
+                        alt="acknowledgement" class="repo-icon" 
+                        data-toggle="tooltip" data-placement="bottom" title="Acknowledgement:\n{acknowledgement}">"""
 
         return html
     
@@ -161,17 +165,37 @@ class metadata(object):
                    </div>"""
 
     # Metadata ##################################################
+    def paper(self):
+        citations = self.citations()
+        p = []
+        if citations:
+            
+            for cita in citations:
+
+                c = citation_parser(cita)
+                
+                if c.link_paper and 'zenodo' not in c.link_paper:
+                    p.append(c)
+
+        return p if len(p) > 0 else None
+        
+    def identifier(self):
+        return safe_dic(safe_list(safe_dic(self.md,'identifier'),0),'excerpt')
+
+    def acknowledgement(self):
+        return safe_dic(safe_list(safe_dic(self.md,'acknowledgement'),0),'excerpt')
+
+    def hasDocumentation(self):
+        return safe_list(safe_dic(safe_dic(self.md,'hasDocumentation'),'excerpt'),0)
+
     def requirements(self):
-        return safe_dic(self.md,'requirement')
+        return safe_list(safe_dic(safe_dic(self.md,'requirement'),'excerpt'),0)
 
     def installation(self):
         return safe_dic(safe_list(safe_dic(self.md,'installation'),0),'excerpt')
 
     def docker(self):
         return safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
-
-    def paper(self):
-        return None
 
     def citations(self):
         all_citations = safe_dic(self.md,'citation')
@@ -262,3 +286,21 @@ def safe_list(list, i):
         return list[i]
     except:
         return None
+
+class citation_parser(object):
+
+    def __init__(self, citation) -> None:
+        self.link_paper = re.search('url[ ]*=[ ]*{(.*)}', citation)
+        if self.link_paper:
+            self.link_paper = self.link_paper.group(1)
+
+        self.doi_paper = re.search('doi[ ]*=[ ]*{(.*)}', citation)
+        if self.doi_paper:
+            self.doi_paper = self.doi_paper.group(1)
+        
+        self.title_paper = re.search('title[ ]*=[ ]*{(.*)}', citation)
+        if self.title_paper:
+            self.title_paper = self.title_paper.group(1)
+
+        if self.doi_paper and not self.link_paper:
+            self.link_paper = 'https://www.doi.org/' + self.doi_paper
