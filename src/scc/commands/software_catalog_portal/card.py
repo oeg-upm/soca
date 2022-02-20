@@ -36,7 +36,8 @@ def cards_data_dump(repo_metadata_dir):
                     'installation': md.installation() is not None,
                     'requirements': md.requirements() is not None,
                     'hasDocumentation': md.hasDocumentation() is not None,
-                    'identifier': md.identifier() is not None
+                    'identifier': md.identifier() is not None,
+                    'acknowledgement': md.acknowledgement() is not None
                 })
 
     return cards_data
