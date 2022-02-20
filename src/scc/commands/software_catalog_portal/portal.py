@@ -6,7 +6,6 @@ from datetime import datetime
 import json
 
 from . import card
-from . import styles
 from . import scripts
 from scc import base_dir
 
@@ -18,10 +17,6 @@ def generate(repo_metadata_dir, output):
     # Load html template
     with open(f"{base_dir}/assets/template.html") as template:
         soup = BeautifulSoup(template.read(), features="html.parser")
-        
-    # Insert CSS rules
-    s = styles.styles()
-    soup.style.string += s.rules
 
     # Insert last updated date
     add_last_updated_date(soup)
@@ -31,9 +26,6 @@ def generate(repo_metadata_dir, output):
     with open(f"{output}/cards_data.json", "w") as cards_data_json:
         json.dump(cards_data ,fp=cards_data_json, indent=4)
         print(f"Cards data saved at {output}/cards_data.json")
-
-    # Copy app.js
-    shutil.copy(f"{base_dir}/assets/app.js", f"{output}")
 
     # Insert extra scripts
     sc = scripts.scripts()
@@ -58,6 +50,13 @@ def copy_assets(output):
 
     # Copy all repo_icons
     copy_tree(f"{base_dir}/assets/repo_icons", f"{output}/repo_icons")
+
+    # Copy app.js
+    shutil.copy(f"{base_dir}/assets/app.js", f"{output}")
+
+    # Copy css files
+    shutil.copy(f"{base_dir}/assets/scc-card.css", f"{output}")
+    shutil.copy(f"{base_dir}/assets/styles.css", f"{output}")
     
 
 

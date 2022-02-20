@@ -6,44 +6,30 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="cards_data.json" type="text/javascript"></script>
 <title>SCC</title>
-<style>
-*{margin:0;box-sizing:border-box;color:#3e3e3e;font-family:Helvetica}
-body{background-color:#e0e0e0}
-.navbar{display:flex;list-style:none;justify-content:space-between;align-items:center;padding:10px 20px;background:#e9e9e9;box-shadow:5px 5px 10px #bebebe,-5px -5px 10px #fff}
-#searchBar{max-width: 30rem;font-size:16px;padding:12px 20px;border:0;margin-left:20px;flex:auto;border-radius:50px;background:#e9e9e9;box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff}
-footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content:space-between;background:#e9e9e9;box-shadow:5px 5px 10px #bebebe,-5px -5px 10px #fff}
-.footer-img{height:4rem}.flex-center{display:flex}
-#myCards{min-height:76.5vh;max-width:1600px;display:flex;align-content:flex-start;flex-wrap:wrap;flex-direction:row;justify-content:center;margin:2rem auto}
-.repo-icon-filter{height: 1.3rem;padding: 0.2rem;}
-.sort{display: flex; margin-left: 1rem;}
-.sort > div{height: 1.8rem;margin:0.2rem;display: flex;align-items: center;justify-content: center;padding: 0 0.4rem;}
-.filters{display: flex;align-items: center}
-.filter-selected{background:#e9e9e9;box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff; border-radius:5px;}
-.filter-includes{display: flex;}
-.filter-includes > div{width: 1.8rem;height: 1.8rem;margin:0.2rem;display: flex;align-items: center;justify-content: center;}
-</style>
+<link rel="stylesheet" href="styles.css"></styles>
+<link rel="stylesheet" href="scc-card.css"></styles>
 </head>
 <body>
 <nav class="navbar">
 	<h2 id="nav-title">Software Catalog</h2>
 	<div class="filters">
 		<div class="filter-includes">
-			<div id="acknowledgement" data-toggle="tooltip" data-placement="bottom" title="Acknowledgement"><img class="repo-icon-filter" src="repo_icons/acknowledgement.png"/></div>
-			<div id="citation" data-toggle="tooltip" data-placement="bottom" title="Citation"><img class="repo-icon-filter" src="repo_icons/citation.png"/></div>
-			<div id="docker" data-toggle="tooltip" data-placement="bottom" title="Docker"><img class="repo-icon-filter" src="repo_icons/docker.png"/></div>
-			<div id="documentation" data-toggle="tooltip" data-placement="bottom" title="Documentation"><img class="repo-icon-filter" src="repo_icons/documentation.png"/></div>
-			<div id="identifier" data-toggle="tooltip" data-placement="bottom" title="Identifier"><img class="repo-icon-filter" src="repo_icons/doi.png"/></div>
-			<div id="download" data-toggle="tooltip" data-placement="bottom" title="Download"><img class="repo-icon-filter" src="repo_icons/download.png"/></div>
-			<div id="installation" data-toggle="tooltip" data-placement="bottom" title="Installation"><img class="repo-icon-filter" src="repo_icons/installation.png"/></div>
-			<div id="license" data-toggle="tooltip" data-placement="bottom" title="License"><img class="repo-icon-filter" src="repo_icons/license.png"/></div>
-			<div id="notebook" data-toggle="tooltip" data-placement="bottom" title="Notebook"><img class="repo-icon-filter" src="repo_icons/notebook.png"/></div>
-			<div id="paper" data-toggle="tooltip" data-placement="bottom" title="Paper"><img class="repo-icon-filter" src="repo_icons/paper.png"/></div>
+			<div class="filter-includes-box" id="acknowledgement" data-toggle="tooltip" data-placement="bottom" title="Only with acknowledgement"><img class="repo-icon-filter" src="repo_icons/acknowledgement.png"/></div>
+			<div class="filter-includes-box" id="citation" data-toggle="tooltip" data-placement="bottom" title="Only with citation"><img class="repo-icon-filter" src="repo_icons/citation.png"/></div>
+			<div class="filter-includes-box" id="docker" data-toggle="tooltip" data-placement="bottom" title="Only with docker"><img class="repo-icon-filter" src="repo_icons/docker.png"/></div>
+			<div class="filter-includes-box" id="documentation" data-toggle="tooltip" data-placement="bottom" title="Only with documentation"><img class="repo-icon-filter" src="repo_icons/documentation.png"/></div>
+			<div class="filter-includes-box" id="identifier" data-toggle="tooltip" data-placement="bottom" title="Only with identifier"><img class="repo-icon-filter" src="repo_icons/doi.png"/></div>
+			<div class="filter-includes-box" id="download" data-toggle="tooltip" data-placement="bottom" title="Only with download"><img class="repo-icon-filter" src="repo_icons/download.png"/></div>
+			<div class="filter-includes-box" id="installation" data-toggle="tooltip" data-placement="bottom" title="Only with installation"><img class="repo-icon-filter" src="repo_icons/installation.png"/></div>
+			<div class="filter-includes-box" id="license" data-toggle="tooltip" data-placement="bottom" title="Only with license"><img class="repo-icon-filter" src="repo_icons/license.png"/></div>
+			<div class="filter-includes-box" id="notebook" data-toggle="tooltip" data-placement="bottom" title="Only with notebook"><img class="repo-icon-filter" src="repo_icons/notebook.png"/></div>
+			<div class="filter-includes-box" id="paper" data-toggle="tooltip" data-placement="bottom" title="Only with paper"><img class="repo-icon-filter" src="repo_icons/paper.png"/></div>
 		</div>
 		<div class="sort">
-			<div id="title"><p>Title</p></div>
-			<div id="stars"><p>Stars</p></div>
-			<div id="releases"><p>Releases</p></div>
-			<div id="last_updated"><p>Last updated</p></div>
+			<div data-toggle="tooltip" data-placement="bottom" title="Sort by title" class="sort-box" id="title"><p>Title</p></div>
+			<div data-toggle="tooltip" data-placement="bottom" title="Sort by number of stars" class="sort-box" id="stars"><p>Stars</p></div>
+			<div data-toggle="tooltip" data-placement="bottom" title="Sort by number of releases" class="sort-box" id="releases"><p>Releases</p></div>
+			<div data-toggle="tooltip" data-placement="bottom" title="Sort by last updated" class="sort-box" id="last_updated"><p>Last updated</p></div>
 		</div>
 		<input id="searchBar" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
 	</div>
