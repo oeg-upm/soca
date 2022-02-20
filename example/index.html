@@ -17,9 +17,11 @@ footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content
 #myCards{min-height:76.5vh;max-width:1600px;display:flex;align-content:flex-start;flex-wrap:wrap;flex-direction:row;justify-content:center;margin:2rem auto}
 .repo-icon-filter{height: 1.3rem;padding: 0.2rem;}
 .sort{display: flex; margin-left: 1rem;}
-.sort > p {margin: 0 0.3rem;}
+.sort > div{height: 1.8rem;margin:0.2rem;display: flex;align-items: center;justify-content: center;padding: 0 0.4rem;}
 .filters{display: flex;align-items: center}
 .filter-selected{background:#e9e9e9;box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff; border-radius:5px;}
+.filter-includes{display: flex;}
+.filter-includes > div{width: 1.8rem;height: 1.8rem;margin:0.2rem;display: flex;align-items: center;justify-content: center;}
 .scc-card *{margin:0;box-sizing:border-box;color:#3e3e3e;font-family:Helvetica}
 .scc-card .copy-btn:active{position:relative;top:1px;background-color:#3e3e3e;color:#e0e0e0}
 .scc-card .copy-btn{margin-left: 0.3rem;border:none;height:1.1rem;width:1rem;cursor:pointer;}
@@ -55,23 +57,23 @@ footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content
 <nav class="navbar">
 <h2 id="nav-title">Software Catalog</h2>
 <div class="filters">
-<div>
-<img class="repo-icon-filter" id="acknowledgement" src="repo_icons/acknowledgement.png"/>
-<img class="repo-icon-filter" id="citation" src="repo_icons/citation.png"/>
-<img class="repo-icon-filter" id="docker" src="repo_icons/docker.png"/>
-<img class="repo-icon-filter" id="documentation" src="repo_icons/documentation.png"/>
-<img class="repo-icon-filter" id="identifier" src="repo_icons/doi.png"/>
-<img class="repo-icon-filter" id="download" src="repo_icons/download.png"/>
-<img class="repo-icon-filter" id="installation" src="repo_icons/installation.png"/>
-<img class="repo-icon-filter" id="license" src="repo_icons/license.png"/>
-<img class="repo-icon-filter" id="notebook" src="repo_icons/notebook.png"/>
-<img class="repo-icon-filter" id="paper" src="repo_icons/paper.png"/>
+<div class="filter-includes">
+<div data-toggle="tooltip" data-placement="bottom" id="acknowledgement" title="Acknowledgement"><img class="repo-icon-filter" src="repo_icons/acknowledgement.png"/></div>
+<div data-toggle="tooltip" data-placement="bottom" id="citation" title="Citation"><img class="repo-icon-filter" src="repo_icons/citation.png"/></div>
+<div data-toggle="tooltip" data-placement="bottom" id="docker" title="Docker"><img class="repo-icon-filter" src="repo_icons/docker.png"/></div>
+<div data-toggle="tooltip" data-placement="bottom" id="documentation" title="Documentation"><img class="repo-icon-filter" src="repo_icons/documentation.png"/></div>
+<div data-toggle="tooltip" data-placement="bottom" id="identifier" title="Identifier"><img class="repo-icon-filter" src="repo_icons/doi.png"/></div>
+<div data-toggle="tooltip" data-placement="bottom" id="download" title="Download"><img class="repo-icon-filter" src="repo_icons/download.png"/></div>
+<div data-toggle="tooltip" data-placement="bottom" id="installation" title="Installation"><img class="repo-icon-filter" src="repo_icons/installation.png"/></div>
+<div data-toggle="tooltip" data-placement="bottom" id="license" title="License"><img class="repo-icon-filter" src="repo_icons/license.png"/></div>
+<div data-toggle="tooltip" data-placement="bottom" id="notebook" title="Notebook"><img class="repo-icon-filter" src="repo_icons/notebook.png"/></div>
+<div data-toggle="tooltip" data-placement="bottom" id="paper" title="Paper"><img class="repo-icon-filter" src="repo_icons/paper.png"/></div>
 </div>
 <div class="sort">
-<p id="title">Title</p>
-<p id="stars">Stars</p>
-<p id="releases">Releases</p>
-<p id="last_updated">Last updated</p>
+<div id="title"><p>Title</p></div>
+<div id="stars"><p>Stars</p></div>
+<div id="releases"><p>Releases</p></div>
+<div id="last_updated"><p>Last updated</p></div>
 </div>
 <input id="searchBar" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
 </div>
@@ -89,7 +91,8 @@ footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content
 <a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
 </div>
 </footer>
-<script>function add_copy_card(){
+<script>
+function add_copy_card(){
 btns = document.getElementsByClassName('copy-btn')
 for (let index = 0; index < btns.length; index++) {
     const element = btns[index];
@@ -104,11 +107,11 @@ for (let index = 0; index < btns.length; index++) {
         }
     });
 }
-};function add_tooltip(){
-$(document).ready(function(){
+}
+function add_tooltip(){
+
     $('[data-toggle="tooltip"]').tooltip();
-});
-};</script>
+}</script>
 <script src="app.js"></script>
 </body>
 </html>
