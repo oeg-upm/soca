@@ -10,16 +10,42 @@
 *{margin:0;box-sizing:border-box;color:#3e3e3e;font-family:Helvetica}
 body{background-color:#e0e0e0}
 .navbar{display:flex;list-style:none;justify-content:space-between;align-items:center;padding:10px 20px;background:#e9e9e9;box-shadow:5px 5px 10px #bebebe,-5px -5px 10px #fff}
-#searchBar{font-size:16px;padding:12px 20px 12px 40px;border:0;margin-left:20px;flex:auto;border-radius:50px;background:#e9e9e9;box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff}
+#searchBar{max-width: 30rem;font-size:16px;padding:12px 20px;border:0;margin-left:20px;flex:auto;border-radius:50px;background:#e9e9e9;box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff}
 footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content:space-between;background:#e9e9e9;box-shadow:5px 5px 10px #bebebe,-5px -5px 10px #fff}
 .footer-img{height:4rem}.flex-center{display:flex}
 #myCards{min-height:76.5vh;max-width:1600px;display:flex;align-content:flex-start;flex-wrap:wrap;flex-direction:row;justify-content:center;margin:2rem auto}
+.repo-icon-filter{height: 1.1rem;margin-left: 0.2rem;margin-right: 0.2rem;}
+.sort{display: flex; margin-left: 1rem;}
+.sort > p {margin: 0 0.3rem;}
+.filters{display: flex;align-items: center}
 </style>
 </head>
 <body>
 <nav class="navbar">
 	<h2 id="nav-title">Software Catalog</h2>
-	<input id="searchBar" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
+	<div class="filters">
+		<div>
+			<img id="acknowledgement" class="repo-icon-filter" src="repo_icons/acknowledgement.png"/>
+			<img id="citation" class="repo-icon-filter" src="repo_icons/citation.png"/>
+			<img id="docker" class="repo-icon-filter" src="repo_icons/docker.png"/>
+			<img id="documentation" class="repo-icon-filter" src="repo_icons/documentation.png"/>
+			<img id="identifier" class="repo-icon-filter" src="repo_icons/doi.png"/>
+			<img id="download" class="repo-icon-filter" src="repo_icons/download.png"/>
+			<img id="installation" class="repo-icon-filter" src="repo_icons/installation.png"/>
+			<img id="license" class="repo-icon-filter" src="repo_icons/license.png"/>
+			<img id="notebook" class="repo-icon-filter" src="repo_icons/notebook.png"/>
+			<img id="paper" class="repo-icon-filter" src="repo_icons/paper.png"/>
+			<img id="readme" class="repo-icon-filter" src="repo_icons/readme.png"/>
+		</div>
+		<div class="sort">
+			<p id="title">Title</p>
+			<p id="stars">Stars</p>
+			<p id="releases">Releases</p>
+			<p id="last_updated">Last updated</p>
+
+		</div>
+		<input id="searchBar" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
+	</div>
 </nav>
 <div id="myCards">
 </div>
