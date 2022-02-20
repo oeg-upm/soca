@@ -112,7 +112,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2021-12-09T22:27:45Z",
+        "excerpt": "2022-02-14T10:03:03Z",
         "confidence": [
             1.0
         ],
@@ -158,8 +158,8 @@
     },
     "stargazers_count": {
         "excerpt": {
-            "count": 1,
-            "date": "Sun, 06 Feb 2022 18:20:38 GMT"
+            "count": 2,
+            "date": "Sun, 20 Feb 2022 11:59:54 GMT"
         },
         "confidence": [
             1.0
@@ -169,7 +169,7 @@
     "forks_count": {
         "excerpt": {
             "count": 0,
-            "date": "Sun, 06 Feb 2022 18:20:38 GMT"
+            "date": "Sun, 20 Feb 2022 11:59:54 GMT"
         },
         "confidence": [
             1.0

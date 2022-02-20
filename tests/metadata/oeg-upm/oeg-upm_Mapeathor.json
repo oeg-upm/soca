@@ -24,7 +24,7 @@
     },
     "identifier": [
         {
-            "excerpt": "https://zenodo.org/badge/latestdoi/191048535",
+            "excerpt": "https://doi.org/10.5281/zenodo.6025390",
             "confidence": [
                 1.0
             ],
@@ -134,7 +134,7 @@
     "stargazers_count": {
         "excerpt": {
             "count": 19,
-            "date": "Sun, 06 Feb 2022 17:01:10 GMT"
+            "date": "Sun, 20 Feb 2022 11:31:19 GMT"
         },
         "confidence": [
             1.0
@@ -144,7 +144,7 @@
     "forks_count": {
         "excerpt": {
             "count": 6,
-            "date": "Sun, 06 Feb 2022 17:01:10 GMT"
+            "date": "Sun, 20 Feb 2022 11:31:19 GMT"
         },
         "confidence": [
             1.0
@@ -205,6 +205,19 @@
     },
     "releases": {
         "excerpt": [
+            {
+                "tag_name": "v1.5.3",
+                "name": "v1.5.3",
+                "author_name": "anaigmo",
+                "authorType": "User",
+                "body": "Quotes in constant predicates are fixed",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.3",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.3",
+                "html_url": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.3",
+                "url": "https://api.github.com/repos/oeg-upm/mapeathor/releases/59133274",
+                "dateCreated": "2022-02-09T15:01:28Z",
+                "datePublished": "2022-02-09T15:02:57Z"
+            },
             {
                 "tag_name": "v1.5.2",
                 "name": "v1.5.2",
