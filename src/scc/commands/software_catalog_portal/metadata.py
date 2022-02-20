@@ -210,7 +210,7 @@ class metadata(object):
         return citations if len(citations) > 0 else None
         
     def download_url(self):
-        return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
+        return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt') if self.n_releases() > 0 else None
 
     def notebook(self):
         return safe_dic(safe_dic(self.md,'hasExecutableNotebook'),'excerpt')

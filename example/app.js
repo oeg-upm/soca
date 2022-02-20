@@ -23,7 +23,6 @@ const installation = document.getElementById('installation');
 const license = document.getElementById('license');
 const notebook = document.getElementById('notebook');
 const paper = document.getElementById('paper');
-const readme = document.getElementById('readme');
 
 const title = document.getElementById('title');
 const stars = document.getElementById('stars');
@@ -32,24 +31,126 @@ const last_updated = document.getElementById('last_updated');
 
 
 // Listeners
-searchBar.addEventListener('keyup', () =>{ search(); })
+searchBar.addEventListener('keyup', () => { search(); })
 
-acknowledgement.addEventListener('click', () =>{ state_acknowledgement = !state_acknowledgement; search(); })
-citation.addEventListener('click', () =>{ state_citation = !state_citation; search(); })
-docker.addEventListener('click', () =>{ state_docker = !state_docker; search(); })
-documentation.addEventListener('click', () =>{state_documentation = !state_documentation; search(); })
-identifier.addEventListener('click', () =>{ state_identifier = !state_identifier; search(); })
-download.addEventListener('click', () =>{ state_download = !state_download; search(); })
-installation.addEventListener('click', () =>{ state_installation = !state_installation; search(); })
-license.addEventListener('click', () =>{ state_license = !state_license; search(); })
-notebook.addEventListener('click', () =>{ state_notebook = !state_notebook; search(); })
-paper.addEventListener('click', () =>{ state_paper = !state_paper; search(); })
-readme.addEventListener('click', () =>{state_readme = !state_readme; search(); })
+acknowledgement.addEventListener('click', () => { 
+    state_acknowledgement = !state_acknowledgement;  
+    if (state_acknowledgement)
+        acknowledgement.classList.add("filter-selected");
+    else acknowledgement.classList.remove("filter-selected");
+    search(); 
+});
 
-title.addEventListener('click', () =>{ state_title = true; state_stars = false; state_releases = false; state_last_updated = false; search(); })
-stars.addEventListener('click', () =>{ state_title = false; state_stars = true; state_releases = false; state_last_updated = false; search(); })
-releases.addEventListener('click', () =>{ state_title = false; state_stars = false; state_releases = true; state_last_updated = false; search(); })
-last_updated.addEventListener('click', () =>{ state_title = false; state_stars = false; state_releases = false; state_last_updated = true; search(); })
+citation.addEventListener('click', () => { 
+    state_citation = !state_citation; 
+    if (state_citation)
+        citation.classList.add("filter-selected");
+    else citation.classList.remove("filter-selected");
+    search(); 
+});
+
+docker.addEventListener('click', () => { 
+    state_docker = !state_docker; 
+    if (state_docker)
+        docker.classList.add("filter-selected");
+    else docker.classList.remove("filter-selected");
+    search(); 
+});
+
+documentation.addEventListener('click', () => {
+    state_documentation = !state_documentation;
+    if (state_documentation)
+        documentation.classList.add("filter-selected");
+    else documentation.classList.remove("filter-selected");
+    search(); 
+});
+
+identifier.addEventListener('click', () => { 
+    state_identifier = !state_identifier;
+    if (state_identifier)
+        identifier.classList.add("filter-selected");
+    else identifier.classList.remove("filter-selected");
+    search(); 
+});
+
+download.addEventListener('click', () => { 
+    state_download = !state_download;
+    if (state_download)
+        download.classList.add("filter-selected");
+    else download.classList.remove("filter-selected");
+    search(); 
+});
+
+installation.addEventListener('click', () => { 
+    state_installation = !state_installation;
+    if (state_installation)
+        installation.classList.add("filter-selected");
+    else installation.classList.remove("filter-selected");
+    search(); 
+});
+
+license.addEventListener('click', () =>{ 
+    state_license = !state_license; 
+    if (state_license)
+        license.classList.add("filter-selected");
+    else license.classList.remove("filter-selected");
+    search(); 
+});
+
+notebook.addEventListener('click', () => { 
+    state_notebook = !state_notebook;
+    if (state_notebook)
+        notebook.classList.add("filter-selected");
+    else notebook.classList.remove("filter-selected");
+    search(); 
+});
+
+paper.addEventListener('click', () => { 
+    state_paper = !state_paper; 
+    if (state_paper)
+        paper.classList.add("filter-selected");
+    else paper.classList.remove("filter-selected");
+    search(); 
+});
+
+title.addEventListener('click', () => { 
+    state_title = !state_title; state_stars = false; state_releases = false; state_last_updated = false; 
+    if (state_title){ title.classList.add("filter-selected"); }
+    else { title.classList.remove("filter-selected"); }
+    stars.classList.remove("filter-selected");
+    releases.classList.remove("filter-selected");
+    last_updated.classList.remove("filter-selected");
+    search(); 
+}); 
+
+stars.addEventListener('click', () => { 
+    state_title = false; state_stars = !state_stars; state_releases = false; state_last_updated = false; 
+    if (state_stars){ stars.classList.add("filter-selected"); }
+    else { stars.classList.remove("filter-selected"); }
+    title.classList.remove("filter-selected");
+    releases.classList.remove("filter-selected");
+    last_updated.classList.remove("filter-selected");
+    search(); 
+}); 
+releases.addEventListener('click', () => { 
+    state_title = false; state_stars = false; state_releases = !state_releases; state_last_updated = false; 
+    if (state_releases){ releases.classList.add("filter-selected"); }
+    else { releases.classList.remove("filter-selected"); }
+    title.classList.remove("filter-selected");
+    stars.classList.remove("filter-selected");
+    last_updated.classList.remove("filter-selected");
+    search(); 
+});
+
+last_updated.addEventListener('click', () => { 
+     state_title = false; state_stars = false; state_releases = false; state_last_updated = !state_last_updated; 
+    if (state_last_updated){ last_updated.classList.add("filter-selected"); }
+    else { last_updated.classList.remove("filter-selected"); }
+    title.classList.remove("filter-selected");
+    stars.classList.remove("filter-selected");
+    releases.classList.remove("filter-selected");
+    search(); 
+}); 
 
 // States
 let state_acknowledgement = false;
@@ -62,7 +163,6 @@ let state_installation = false;
 let state_license = false;
 let state_notebook = false;
 let state_paper = false;
-let state_readme = false;
 
 let state_title = false;
 let state_stars = false;
@@ -79,13 +179,12 @@ function search() {
                    ((state_acknowledgement)? card.acknowledgement : true) 
                 && ((state_citation)? card.citation : true)
                 && ((state_docker)? card.docker : true)
-                && ((state_documentation)? card.documentation : true)
+                && ((state_documentation)? card.hasDocumentation : true)
                 && ((state_identifier)? card.identifier : true) 
                 && ((state_download)? card.download : true)
                 && ((state_license)? card.license : true)
                 && ((state_notebook)? card.notebook : true)
                 && ((state_paper)? card.paper : true)
-                && ((state_readme)? card.readme : true)
                 && ((state_installation)? card.installation : true));
     });
 
