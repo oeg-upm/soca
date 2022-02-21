@@ -35,8 +35,8 @@ def fetch(repos_csv, output):
     for repo_url in progressbar(repos_url, redirect_stdout=True):
         try:
             print(f"Extracting metadata from {repo_url}")
-            with HiddenPrints():
-                metadata = cli_get_data(0.9, False, repo_url)
+            #with HiddenPrints():
+            metadata = cli_get_data(0.9, False, repo_url)
             repo_full_name = (repo_url[19:]).replace("/", "_").replace(".","-")
             with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
                 json.dump(metadata, repo_metadata, indent = 4)
