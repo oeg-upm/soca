@@ -1,19 +1,15 @@
 {
     "description": [
         {
-            "excerpt": "Astrea is a software capable of generate SHACL shapes from one or more given ontologies. It relies on a set of equivalences between the OWL2 constructs and the SHACL constructs, which are exploit by means of a set of SPARQL queries. The idea behind Astrea is to rely on a set of mappings between such specifications, and a list of queries so by just applying the queries over one or more owl files the associated shapes can be generated. \nIn this repository the software provided imports all the ontologies associated to the construct owl:imports for an input ontology, in addition in its methods counts with the option of importing more than one ontology URL to generate their shapes. Consider that the shapes generated are associated only to the types and properties specified in the ontology, therefore providing more than one URL can be useful if one ontology references elements from another but it does not import it. \n",
+            "excerpt": "Astrea is a software capable of generate SHACL shapes from one or more given ontologies. It relies on a set of equivalences between the [OWL2](https://www.w3.org/TR/owl2-overview/) constructs and the [SHACL](https://www.w3.org/TR/shacl/) constructs, which are exploit by means of a set of [SPARQL queries](https://www.w3.org/TR/sparql11-query/). The idea behind Astrea is to rely on a set of mappings between such specifications, and a list of queries so by just applying the queries over one or more owl files the associated shapes can be generated. \nIn this repository the software provided imports all the ontologies associated to the construct owl:imports for an input ontology, in addition in its methods counts with the option of importing more than one ontology URL to generate their shapes. Consider that the shapes generated are associated only to the types and properties specified in the ontology, therefore providing more than one URL can be useful if one ontology references elements from another but it does not import it. \n",
             "confidence": [
-                0.994715073740772,
-                0.9656023945834137
+                [
+                    0.9783640926248232,
+                    0.9656023945834137
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "* Queries.csv: the queries to generate the SHACL shapes, this file contains also all the statements that are required from the OWL, RDFS, and XSD to generate a shapes, as well as, all the constructs belonging to SHACL that the output shape contains. \n",
-            "confidence": [
-                0.9646736409930506
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Astrea"
         },
         {
             "excerpt": "Astrea is a software that generates SHACL shapes for one or more OWL ontologies using a set of SPARQL queries that hold the equivalence between those two specifications",
@@ -25,28 +21,25 @@
     ],
     "installation": [
         {
-            "excerpt": "Astrea can be installed as a local dependency. For this purpose download the code from this repository:\n`````\ngit clone https://github.com/oeg-upm/Astrea.git\n`````\nThen, install the project as a local maven dependency, for which you can run the script that we provide\n`````\nbash mvn-install.sh\n`````\nFinally, import in a project the Astrea maven dependency using the following code in your *pom.xml*:\n````\n<dependency>\n\t<groupId>oeg.validation</groupId>\n\t<artifactId>astrea</artifactId>\n\t<version>1.2.1</version>\n</dependency>\n````\nAlternatively, Astrea can be installed as a local dependency following these steps:\n 1.  Compile the project:\n````\nmvn clean package -Dskiptests\n````\n 2.  Compile the project:\n````\nmvn install:install-file -Dfile=./target/astrea-1.2.1.jar -DgroupId=oeg.validation -DartifactId=astrea -Dversion=1.2.1 -Dpackaging=jar\n````\n 3.  Import the dependency in your project using the pom file relying on the previous snipped\n\n",
+            "originalHeader": "1.2 Instaling as local maven dependency",
+            "excerpt": "Astrea can be installed as a local dependency. For this purpose download the code from this repository:\n`````\ngit clone https://github.com/oeg-upm/Astrea.git\n`````\nThen, install the project as a local maven dependency, for which you can run the script that we provide\n`````\nbash mvn-install.sh\n`````\nFinally, import in a project the Astrea maven dependency using the following code in your *pom.xml*:\n````\n<dependency>\n\t<groupId>oeg.validation</groupId>\n\t<artifactId>astrea</artifactId>\n\t<version>1.2.1</version>\n</dependency>\n````\nAlternatively, Astrea can be installed as a local dependency following these steps:\n 1.  Compile the project:\n````\nmvn clean package -Dskiptests\n````\n 2.  Compile the project:\n````\nmvn install:install-file -Dfile=./target/astrea-1.2.1.jar -DgroupId=oeg.validation -DartifactId=astrea -Dversion=1.2.1 -Dpackaging=jar\n````\n 3.  Import the dependency in your project using the pom file relying on the previous snipped\n",
+            "parentHeader": "Astrea --- 1 - Install Astrea",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "excerpt": "In order to use the Astrea as java library for third-party components there are two approaches: import the library as a *jar* or install Astrea as a local maven dependency and then use your *pom.xml* to import it. Following we provide a guide for both options.\n\n",
+            "originalHeader": "1 - Install Astrea",
+            "excerpt": "In order to use the Astrea as java library for third-party components there are two approaches: import the library as a *jar* or install Astrea as a local maven dependency and then use your *pom.xml* to import it. Following we provide a guide for both options.\n",
+            "parentHeader": "Astrea",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
-        },
-        {
-            "excerpt": "The Astrea resources, besides the java library which latest version can be downloaded from the releases tab, include the following elements: \n",
-            "confidence": [
-                0.9140159062100148
-            ],
-            "technique": "Supervised classification"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Astrea",
         "confidence": [
             1.0
@@ -55,7 +48,9 @@
     },
     "requirement": [
         {
-            "excerpt": "Astrea can be installed as a local dependency. For this purpose download the code from this repository:\n`````\ngit clone https://github.com/oeg-upm/Astrea.git\n`````\nThen, install the project as a local maven dependency, for which you can run the script that we provide\n`````\nbash mvn-install.sh\n`````\nFinally, import in a project the Astrea maven dependency using the following code in your *pom.xml*:\n````\n<dependency>\n\t<groupId>oeg.validation</groupId>\n\t<artifactId>astrea</artifactId>\n\t<version>1.2.1</version>\n</dependency>\n````\nAlternatively, Astrea can be installed as a local dependency following these steps:\n 1.  Compile the project:\n````\nmvn clean package -Dskiptests\n````\n 2.  Compile the project:\n````\nmvn install:install-file -Dfile=./target/astrea-1.2.1.jar -DgroupId=oeg.validation -DartifactId=astrea -Dversion=1.2.1 -Dpackaging=jar\n````\n 3.  Import the dependency in your project using the pom file relying on the previous snipped\n\n",
+            "originalHeader": "1.2 Instaling as local maven dependency",
+            "excerpt": "Astrea can be installed as a local dependency. For this purpose download the code from this repository:\n`````\ngit clone https://github.com/oeg-upm/Astrea.git\n`````\nThen, install the project as a local maven dependency, for which you can run the script that we provide\n`````\nbash mvn-install.sh\n`````\nFinally, import in a project the Astrea maven dependency using the following code in your *pom.xml*:\n````\n<dependency>\n\t<groupId>oeg.validation</groupId>\n\t<artifactId>astrea</artifactId>\n\t<version>1.2.1</version>\n</dependency>\n````\nAlternatively, Astrea can be installed as a local dependency following these steps:\n 1.  Compile the project:\n````\nmvn clean package -Dskiptests\n````\n 2.  Compile the project:\n````\nmvn install:install-file -Dfile=./target/astrea-1.2.1.jar -DgroupId=oeg.validation -DartifactId=astrea -Dversion=1.2.1 -Dpackaging=jar\n````\n 3.  Import the dependency in your project using the pom file relying on the previous snipped\n",
+            "parentHeader": "Astrea --- 1 - Install Astrea",
             "confidence": [
                 1
             ],
@@ -64,7 +59,9 @@
     ],
     "usage": [
         {
+            "originalHeader": "2 - Quick start",
             "excerpt": "Astrea can be used as a java library for third-party java projects, in you code create an instance of our Astrea object as follows:\n````\nShaclFromOwl sharper = new OwlGenerator();\n````\nHaving this object the shapes, which will be provided as [jena]([https://jena.apache.org/documentation/javadoc/jena/org/apache/jena/rdf/model/Model.html](https://jena.apache.org/documentation/javadoc/jena/org/apache/jena/rdf/model/Model.html)) Models, can be generated using different methods:\n\n - Using the URL of an ontology\n ````\n Model shapes = sharper.fromURL(\"http://iot.linkeddata.es/def/core/ontology.ttl\");\n````\n - Using a list containing the URLs of several ontologies\n ````\n List<String> ontologies = new ArrayList<>();\n ontologies.add(\"http://iot.linkeddata.es/def/core/ontology.ttl\");\n ...\n Model shapes = sharper.fromURLs(ontologies);\n````\n- Using an ontology in memory, consider that the [formats supported are the ones specified in jena]([https://jena.apache.org/documentation/io/](https://jena.apache.org/documentation/io/))\n`````\n Model shapes = sharper.fromOwl(String owlContent, String format);\n`````\n- Using an jena model\n`````\nModel ontologyModel = ModelFactory.createDefaultModel();\n// insert content in the variable ontologyModel\nModel shapes = sharper.fromModel(ontologyModel);\n`````\n\n**Keep in mind that Astrea will automatically include all the ontologies that are specified under the owl:imports statement, and therefore, it will generate their shapes as well.**\n\n**To check other constructors of the OwlGenerator class read our [java doc](https://oeg-upm.github.io/Astrea/)**\n",
+            "parentHeader": "Astrea",
             "confidence": [
                 1
             ],
@@ -137,28 +134,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/astrea/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 5,
-            "date": "Sun, 20 Feb 2022 11:41:21 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 11:41:21 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -166,6 +143,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/astrea/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Mon, 21 Feb 2022 05:54:25 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 05:54:25 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -181,7 +178,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/astrea/blob/master/README.md",
         "confidence": [
             1.0
@@ -216,53 +213,53 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "#1.2.1",
+                "tagName": "#1.2.1",
                 "name": "Astrea 1.2.1",
-                "author_name": "AndreaCimminoArriaga",
+                "authorName": "AndreaCimminoArriaga",
                 "authorType": "User",
                 "body": "\r\n",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/astrea/tarball/#1.2.1",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/astrea/zipball/#1.2.1",
-                "html_url": "https://github.com/oeg-upm/astrea/releases/tag/%231.2.1",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/astrea/tarball/#1.2.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/astrea/zipball/#1.2.1",
+                "htmlUrl": "https://github.com/oeg-upm/astrea/releases/tag/%231.2.1",
                 "url": "https://api.github.com/repos/oeg-upm/astrea/releases/24215786",
                 "dateCreated": "2020-03-04T15:40:31Z",
                 "datePublished": "2020-03-04T15:42:54Z"
             },
             {
-                "tag_name": "1.2.0",
+                "tagName": "1.2.0",
                 "name": "Astrea 1.2.0",
-                "author_name": "AndreaCimminoArriaga",
+                "authorName": "AndreaCimminoArriaga",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/astrea/tarball/1.2.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/astrea/zipball/1.2.0",
-                "html_url": "https://github.com/oeg-upm/astrea/releases/tag/1.2.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/astrea/tarball/1.2.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/astrea/zipball/1.2.0",
+                "htmlUrl": "https://github.com/oeg-upm/astrea/releases/tag/1.2.0",
                 "url": "https://api.github.com/repos/oeg-upm/astrea/releases/22141044",
                 "dateCreated": "2019-12-11T11:36:19Z",
                 "datePublished": "2019-12-11T11:38:07Z"
             },
             {
-                "tag_name": "1.1.0",
+                "tagName": "1.1.0",
                 "name": "Astrea 1.1.0",
-                "author_name": "AndreaCimminoArriaga",
+                "authorName": "AndreaCimminoArriaga",
                 "authorType": "User",
                 "body": "\r\nThis release includes the Astrea jar 1.1.0 and the RDF dataset required to generate the SHACL shapes",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/astrea/tarball/1.1.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/astrea/zipball/1.1.0",
-                "html_url": "https://github.com/oeg-upm/astrea/releases/tag/1.1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/astrea/tarball/1.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/astrea/zipball/1.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/astrea/releases/tag/1.1.0",
                 "url": "https://api.github.com/repos/oeg-upm/astrea/releases/21552802",
                 "dateCreated": "2019-11-18T13:07:30Z",
                 "datePublished": "2019-11-18T13:08:57Z"
             },
             {
-                "tag_name": "v1.0.0",
+                "tagName": "v1.0.0",
                 "name": "Astrea SHACL shapes generator",
-                "author_name": "AndreaCimminoArriaga",
+                "authorName": "AndreaCimminoArriaga",
                 "authorType": "User",
                 "body": "#\u00a0Release v1.0.0\r\n",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/astrea/tarball/v1.0.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/astrea/zipball/v1.0.0",
-                "html_url": "https://github.com/oeg-upm/astrea/releases/tag/v1.0.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/astrea/tarball/v1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/astrea/zipball/v1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/astrea/releases/tag/v1.0.0",
                 "url": "https://api.github.com/repos/oeg-upm/astrea/releases/21417498",
                 "dateCreated": "2019-11-12T18:53:37Z",
                 "datePublished": "2019-11-12T19:03:38Z"

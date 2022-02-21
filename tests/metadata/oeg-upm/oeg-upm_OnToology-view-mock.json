@@ -3,9 +3,12 @@
         {
             "excerpt": "This is a mock used for the development of the new OnToology view. \n",
             "confidence": [
-                0.9786509699976332
+                [
+                    0.9786509699976332
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "OnToology-view-mock"
         },
         {
             "excerpt": "This is a mock used for the development of the new OnToology view.",
@@ -17,21 +20,25 @@
     ],
     "installation": [
         {
+            "originalHeader": "To install dependencies",
             "excerpt": "```\npip install -r requirements.txt\n```\n",
+            "parentHeader": "OnToology-view-mock",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "excerpt": "For mac and linux\n1. `virtualenv -p /usr/bin/python2.7 .venv`\n1. `source .venv/bin/activate`\n1. `pip install -r requirements.txt`\n\n\n",
+            "originalHeader": "Setup with Virtualenv",
+            "excerpt": "For mac and linux\n1. `virtualenv -p /usr/bin/python2.7 .venv`\n1. `source .venv/bin/activate`\n1. `pip install -r requirements.txt`\n\n",
+            "parentHeader": "OnToology-view-mock",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "OnToology-view-mock",
         "confidence": [
             1.0
@@ -40,7 +47,9 @@
     },
     "requirement": [
         {
+            "originalHeader": "To install dependencies",
             "excerpt": "```\npip install -r requirements.txt\n```\n",
+            "parentHeader": "OnToology-view-mock",
             "confidence": [
                 1
             ],
@@ -49,7 +58,9 @@
     ],
     "run": [
         {
-            "excerpt": "1. `source .venv/bin/activate`\n1.`python app.py`\n1. visit `127.0.0.1:5000` in your web browser\n\n",
+            "originalHeader": "To run",
+            "excerpt": "1. `source .venv/bin/activate`\n1.`python app.py`\n1. visit `127.0.0.1:5000` in your web browser\n",
+            "parentHeader": "OnToology-view-mock",
             "confidence": [
                 1
             ],
@@ -122,28 +133,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/OnToology-view-mock/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 12:01:13 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 12:01:13 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -151,6 +142,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/OnToology-view-mock/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:57:17 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:57:17 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -168,7 +179,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/OnToology-view-mock/blob/master/README.md",
         "confidence": [
             1.0

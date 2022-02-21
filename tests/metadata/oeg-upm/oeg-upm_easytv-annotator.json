@@ -1,19 +1,14 @@
 {
     "description": [
         {
-            "excerpt": "Sign language annotator library for the EASYTV european project \nTRANSLATOR PROJECT \n",
+            "excerpt": "First build the project with maven.\nThe compiled jar of the project is copied to the /dist folder, with all the necessary libraries.\n \n",
             "confidence": [
-                0.9451610890645442,
-                0.9629962971611608
+                [
+                    0.9802196193906215
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "The compiled jar of the project is copied to the /dist folder, with all the necessary libraries. \n",
-            "confidence": [
-                0.9908447008799062
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Build"
         },
         {
             "excerpt": "Sign language annotator library for the EASYTV european project",
@@ -25,52 +20,31 @@
     ],
     "installation": [
         {
-            "excerpt": "This project is compiled with maven and there are four libraries that are not available at maven central repo.\nThese jar are in the /lib folder and must be added to your local maven repo. \n\n",
+            "originalHeader": "Installation",
+            "excerpt": "This project is compiled with maven and there are four libraries that are not available at maven central repo.\nThese jar are in the /lib folder and must be added to your local maven repo. \n",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "excerpt": "Using maven through the command install. The pom file contains all the instructions to install the dependencies \n$ mvn install \n",
+            "excerpt": "Using maven through the command install. The pom file contains all the instructions to install the dependencies\n```sh\n$ mvn install\n```\n \nThrough commands: The basic comand is \n```sh\n$ mvn install:install-file -Dfile=${jarfile} -DgroupId=${group.id} -DartifactId=${lib.id} -Dversion=${version} -Dpackaging=jar\n``` \nExample: \n```sh\n$ cd lib\n$ mvn install:install-file -Dfile=lib/babelnet-api-3.7.1.jar -DgroupId=it.uniroma1.lcl.babelnet -DartifactId=babelnet-api -Dversion=3.7.1 -Dpackaging=jar\n``` \n",
             "confidence": [
-                0.9848554933144023,
-                0.999833231880651
+                [
+                    0.9967352554082161,
+                    0.9283289495555906,
+                    0.9673437614425766
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "$ mvn install:install-file -Dfile=${jarfile} -DgroupId=${group.id} -DartifactId=${lib.id} -Dversion=${version} -Dpackaging=jar \n",
-            "confidence": [
-                0.9105725130944586
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "$ cd lib \n",
-            "confidence": [
-                0.953691433472028
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "- InstallDependencies.sh \n",
-            "confidence": [
-                0.9023697225149864
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Hard way",
+            "parentHeader": "Installation"
         }
     ],
-    "long_title": {
-        "excerpt": "easytv-annotator",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "requirement": [
         {
-            "excerpt": "Project is linked to the easytv project resources: https://github.com/oeg-upm/easytv-resources\n\nIt uses Perl for TreeTagger. Install utf8\n> perl -MCPAN -e shell\n> install utf8::all\n\n\n",
+            "originalHeader": "Prerequisites",
+            "excerpt": "Project is linked to the easytv project resources: https://github.com/oeg-upm/easytv-resources\n\nIt uses Perl for TreeTagger. Install utf8\n> perl -MCPAN -e shell\n> install utf8::all\n\n",
             "confidence": [
                 1
             ],
@@ -133,28 +107,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/easytv-annotator/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:12:20 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:12:20 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -167,7 +121,21 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:42:45 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:42:45 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -185,7 +153,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/easytv-annotator/blob/master/README.md",
         "confidence": [
             1.0

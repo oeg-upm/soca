@@ -8,7 +8,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "DBpedia-downloader",
         "confidence": [
             1.0
@@ -81,28 +81,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/DBpedia-downloader/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 12:02:51 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 12:02:51 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -110,6 +90,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/DBpedia-downloader/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:57:27 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:57:27 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -124,7 +124,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/DBpedia-downloader/blob/master/README.md",
         "confidence": [
             1.0

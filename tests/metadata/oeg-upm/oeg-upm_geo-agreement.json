@@ -8,7 +8,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "geo-agreement",
         "confidence": [
             1.0
@@ -81,28 +81,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/geo-agreement/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:46:36 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:46:36 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -115,7 +95,27 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:56:08 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:56:08 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/geo-agreement/blob/master/README.md",
         "confidence": [
             1.0

@@ -1,18 +1,23 @@
 {
     "description": [
         {
-            "excerpt": "In order to include a new IoT device in the ecosystem, making it interoperable, a user must register in the SPARQL endpoint that eWoT relies on a Thing Description (TD). The thing description must be stored in a named graph which name is the subject that has the type **core:Thing**. The TD must contain a specification of where ther IoT device data is, by means of the Web of Things Thing Description ontology, and also, specify how such data is translated by means of a WoT-Mapping. Find below an example of TD with the WoT-Mappings.\n\n##\u00a0Issuing a SPARQL query in the ecosystem\n\nIn order to transparently query the ecosystem a SPARQL query must be issued to the endpoint *http://localhost:9000/sparql*. Alternativelly, if an user navigates with the browser to the very same address a GUI will be displayed where the SPARQL query could be written and its results displayed.\n",
+            "originalHeader": "Registering a Thing Description",
+            "excerpt": "In order to include a new IoT device in the ecosystem, making it interoperable, a user must register in the SPARQL endpoint that eWoT relies on a Thing Description (TD). The thing description must be stored in a named graph which name is the subject that has the type **core:Thing**. The TD must contain a specification of where ther IoT device data is, by means of the Web of Things Thing Description ontology, and also, specify how such data is translated by means of a WoT-Mapping. Find below an example of TD with the WoT-Mappings.\n",
+            "parentHeader": "eWoT",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "excerpt": "eWoT is an implementation that enables semantic interoperability for an IoT ecosystem. It relies on Thing Descriptions (TD) to profile the different IoT devices, and WoT-Mappings to translate their heterogeneus data into a normalised RDF modelled with a specific ontology. The ontologies endow for this purpose are the Thing Description and the WoT-Mapping; nevertheless they can be extended with any other to enhance contextual information of the IoT device. \n",
+            "excerpt": "eWoT is an implementation that enables semantic interoperability for an IoT ecosystem. It relies on Thing Descriptions (TD) to profile the different IoT devices, and WoT-Mappings to translate their heterogeneus data into a normalised RDF modelled with a specific ontology. The ontologies endow for this purpose are the [Thing Description](http://iot.linkeddata.es/def/wot/index-en.html) and the [WoT-Mapping](http://iot.linkeddata.es/def/wot-mappings/index-en.html); nevertheless they can be extended with any other to enhance contextual information of the IoT device. \n",
             "confidence": [
-                0.9974520914071258
+                [
+                    0.9885513232333563
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "eWoT"
         },
         {
             "excerpt": "eWoT enables semantic interoperable IoT ecosystems",
@@ -22,16 +27,7 @@
             "technique": "GitHub API"
         }
     ],
-    "installation": [
-        {
-            "excerpt": "Run the client jar with the following command \n",
-            "confidence": [
-                0.9626035040043931
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "eWoT",
         "confidence": [
             1.0
@@ -104,28 +100,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/eWoT/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:40:36 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:40:36 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -152,6 +128,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:54:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:54:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "Java",
@@ -162,7 +158,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/eWoT/blob/master/README.md",
         "confidence": [
             1.0
@@ -179,14 +175,14 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v.0.1.0",
+                "tagName": "v.0.1.0",
                 "name": "eWoT 0.1.0 release",
-                "author_name": "AndreaCimminoArriaga",
+                "authorName": "AndreaCimminoArriaga",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/eWoT/tarball/v.0.1.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/eWoT/zipball/v.0.1.0",
-                "html_url": "https://github.com/oeg-upm/eWoT/releases/tag/v.0.1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/eWoT/tarball/v.0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/eWoT/zipball/v.0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/eWoT/releases/tag/v.0.1.0",
                 "url": "https://api.github.com/repos/oeg-upm/eWoT/releases/21923914",
                 "dateCreated": "2019-12-03T10:38:29Z",
                 "datePublished": "2019-12-03T10:40:50Z"

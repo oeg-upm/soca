@@ -1,22 +1,6 @@
 {
-    "description": [
-        {
-            "excerpt": "Tools to extract knowledge from scientific publications on COVID-19",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
-    "longTitle": {
-        "excerpt": "drugs4covid19",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/drugs4covid19",
+        "excerpt": "https://github.com/oeg-upm/r2rml-editor",
         "confidence": [
             1.0
         ],
@@ -37,14 +21,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2020-05-18T08:09:29Z",
+        "excerpt": "2019-03-04T04:13:08Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2020-05-23T00:58:53Z",
+        "excerpt": "2019-03-06T13:24:13Z",
         "confidence": [
             1.0
         ],
@@ -60,36 +44,45 @@
         ],
         "technique": "GitHub API"
     },
+    "description": [
+        {
+            "excerpt": "A repository related to the creation of an R2RML editor",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
     "name": {
-        "excerpt": "drugs4covid19",
+        "excerpt": "r2rml-editor",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/drugs4covid19",
+        "excerpt": "oeg-upm/r2rml-editor",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/r2rml-editor/issues{/number}",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/r2rml-editor/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/drugs4covid19/releases",
+        "excerpt": "https://github.com/oeg-upm/r2rml-editor/releases",
         "confidence": [
             1.0
         ],
@@ -97,8 +90,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 0,
-            "date": "Mon, 21 Feb 2022 05:57:03 GMT"
+            "count": 3,
+            "date": "Mon, 21 Feb 2022 05:48:37 GMT"
         },
         "confidence": [
             1.0
@@ -107,16 +100,9 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 0,
-            "date": "Mon, 21 Feb 2022 05:57:03 GMT"
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:48:37 GMT"
         },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/drugs4covid19/blob/master/README.md",
         "confidence": [
             1.0
         ],

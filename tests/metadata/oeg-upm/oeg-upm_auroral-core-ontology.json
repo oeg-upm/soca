@@ -1,5 +1,17 @@
 {
-    "long_title": {
+    "description": [
+        {
+            "excerpt": "This repository contains the code and documentation generated for the the AURORAL Core ontology.\n \n",
+            "confidence": [
+                [
+                    0.988983192287632
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Auroral Core Ontology"
+        }
+    ],
+    "longTitle": {
         "excerpt": "Auroral Core Ontology",
         "confidence": [
             1.0
@@ -62,28 +74,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/auroral-core-ontology/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 06 Feb 2022 19:40:31 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 3,
-            "date": "Sun, 06 Feb 2022 19:40:31 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -96,13 +88,27 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 07:16:44 GMT"
+        },
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "forksCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Mon, 21 Feb 2022 07:16:44 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/auroral-core-ontology/blob/master/README.md",
         "confidence": [
             1.0

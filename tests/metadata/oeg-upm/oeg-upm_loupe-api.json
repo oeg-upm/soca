@@ -3,9 +3,12 @@
         {
             "excerpt": "The Loupe API is a web service for proifiling Linked Data and currently three operations are available as illustrated in following figure. \n",
             "confidence": [
-                0.9735615598051199
+                [
+                    0.9735615598051199
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "loupe-api"
         },
         {
             "excerpt": "Source code of the Loupe API implementation. ",
@@ -15,7 +18,19 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "citation": [
+        {
+            "excerpt": "[![Build Status](https://travis-ci.org/ldp4j/ldp4j.svg?branch=master)](https://travis-ci.org/ldp4j/ldp4j)\n[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/nandana/ld-sniffer/master/LICENSE)\n[![Java version](https://img.shields.io/badge/java-1.8-green.svg)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)\n[![GitHub issues](https://img.shields.io/github/issues/nandana/loupe-api.svg)](https://github.com/nandana/ld-sniffer/issues)\n[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?maxAge=2592000?style=plastic)](https://twitter.com/nandanamihindu) \n",
+            "confidence": [
+                [
+                    0.9999956473656452
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "loupe-api"
+        }
+    ],
+    "longTitle": {
         "excerpt": "loupe-api",
         "confidence": [
             1.0
@@ -88,28 +103,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/loupe-api/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:40:18 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:40:18 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -117,6 +112,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/loupe-api/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:53:54 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:53:54 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -133,7 +148,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/loupe-api/blob/master/README.md",
         "confidence": [
             1.0

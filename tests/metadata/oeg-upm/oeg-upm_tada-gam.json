@@ -1,18 +1,14 @@
 {
     "description": [
         {
-            "excerpt": "A scalable version of tada entity using the MapReduce framework \n",
+            "excerpt": "A scalable version of tada entity using the MapReduce framework\n \n",
             "confidence": [
-                0.9007604474039165
+                [
+                    0.9007604474039165
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "                        option) \"single\": To show the results for a single \n",
-            "confidence": [
-                0.9078982438330018
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "tada-gam"
         },
         {
             "excerpt": "A scalable version of tada entity",
@@ -22,69 +18,39 @@
             "technique": "GitHub API"
         }
     ],
+    "citation": [
+        {
+            "excerpt": "[![Build Status](https://semaphoreci.com/api/v1/ahmad88me/tada-gam/branches/master/badge.svg)](https://semaphoreci.com/ahmad88me/tada-gam)\n[![codecov](https://codecov.io/gh/oeg-upm/tada-gam/branch/master/graph/badge.svg)](https://codecov.io/gh/oeg-upm/tada-gam)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3545624.svg)](https://doi.org/10.5281/zenodo.3545624) \n",
+            "confidence": [
+                [
+                    0.9999999999876081
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "tada-gam"
+        }
+    ],
     "installation": [
         {
-            "excerpt": "1. Download the application via `git` or the web interface of github (make sure to include the submodules as well e.g., `git clone --recursive https://github.com/oeg-upm/tada-gam.git`)\n1. using the terminal, go to project directory `cd /home/ubuntu/tada-gam` (if `/home/ubuntu/` was your download location)\n1. Create virtual environment`virtualenv -p /usr/bin/python2.7 .venv` (you need to have virtualenv installed)\n1. Activate the virtual environment `source .venv/bin/activate`\n1. Install dependencies via pip `pip install -r requirements.txt ` \n\n",
+            "originalHeader": "Install (Mac and Ubuntu)",
+            "excerpt": "1. Download the application via `git` or the web interface of github (make sure to include the submodules as well e.g., `git clone --recursive https://github.com/oeg-upm/tada-gam.git`)\n1. using the terminal, go to project directory `cd /home/ubuntu/tada-gam` (if `/home/ubuntu/` was your download location)\n1. Create virtual environment`virtualenv -p /usr/bin/python2.7 .venv` (you need to have virtualenv installed)\n1. Activate the virtual environment `source .venv/bin/activate`\n1. Install dependencies via pip `pip install -r requirements.txt ` \n",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "excerpt": "git submodule foreach git pull origin master \n",
+            "excerpt": "```\ngit submodule foreach git pull origin master\n```\n[source](https://stackoverflow.com/questions/5828324/update-git-submodule-to-latest-commit-on-origin) \n",
             "confidence": [
-                0.9177454271676186
+                [
+                    0.9635741876217658
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Activate the virtual environment source .venv/bin/activate \nGo to the experiment directory cd experiments/t2dv2 \n",
-            "confidence": [
-                0.961163291275756,
-                0.965199979731277
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Activate the virtual environment source .venv/bin/activate \n",
-            "confidence": [
-                0.961163291275756
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Go to the experiment folder (from the app folder) cd experiments/t2dv2 \n",
-            "confidence": [
-                0.9215398158706382
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "1. Activate the virtual environment source .venv/bin/activate \n1. Go to Taipan experiment directory cd experiments/taipan \n",
-            "confidence": [
-                0.961163291275756,
-                0.9624152570455483
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "To update submodules"
         }
     ],
-    "invocation": [
-        {
-            "excerpt": "python captain.py label --files local_data/data.csv --sample all \n",
-            "confidence": [
-                0.9326267200194734
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Run docker images python col_detect_experiment.py start  \n",
-            "confidence": [
-                0.9350873297368408
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "tada-gam",
         "confidence": [
             1.0
@@ -102,7 +68,8 @@
     ],
     "download": [
         {
-            "excerpt": "*This follows the install step* it is only needed if you want to run the experiments \n1. Go to the experiment url using the terminal `cd experiments/t2dv2/data`\n1. Download T2Dv2 data via wget `wget http://webdatacommons.org/webtables/extended_instance_goldstandard.tar.gz`\n1. Extract the downloaded file `tar -xvzf extended_instance_goldstandard.tar.gz`\n1. Delete the archive (optional) `rm extended_instance_goldstandard.tar.gz`\n1. Overwrite the gold standard with the fixed one`cp ../classes_GS.fixed classes_GS.csv`\n1. Generate CSV copy from the JSON\n    1. In the terminal, go to the directory of the application `cd ../../..`\n    1. Activate the virtual environment `source .venv/bin/activate`\n    1. Go to t2dv2 directory `cd experiments/t2dv2/`\n    1. Generate CSV copy `python preprocessing.py`\n\n\n",
+            "originalHeader": "Download T2Dv2 experimental data via command line",
+            "excerpt": "*This follows the install step* it is only needed if you want to run the experiments \n1. Go to the experiment url using the terminal `cd experiments/t2dv2/data`\n1. Download T2Dv2 data via wget `wget http://webdatacommons.org/webtables/extended_instance_goldstandard.tar.gz`\n1. Extract the downloaded file `tar -xvzf extended_instance_goldstandard.tar.gz`\n1. Delete the archive (optional) `rm extended_instance_goldstandard.tar.gz`\n1. Overwrite the gold standard with the fixed one`cp ../classes_GS.fixed classes_GS.csv`\n1. Generate CSV copy from the JSON\n    1. In the terminal, go to the directory of the application `cd ../../..`\n    1. Activate the virtual environment `source .venv/bin/activate`\n    1. Go to t2dv2 directory `cd experiments/t2dv2/`\n    1. Generate CSV copy `python preprocessing.py`\n\n",
             "confidence": [
                 1
             ],
@@ -111,7 +78,8 @@
     ],
     "requirement": [
         {
-            "excerpt": "* `docker`\n* `docker-compose`\n* `python 2.7`\n\n\n",
+            "originalHeader": "requirements",
+            "excerpt": "* `docker`\n* `docker-compose`\n* `python 2.7`\n\n",
             "confidence": [
                 1
             ],
@@ -120,7 +88,8 @@
     ],
     "usage": [
         {
-            "excerpt": "To use this tool, we need to talk with the `captain.py`. It manages the \nother resources and assign tasks and data. Although it can be done\ndirectly, but you need to understand how the flow works.\n\n",
+            "originalHeader": "Usage",
+            "excerpt": "To use this tool, we need to talk with the `captain.py`. It manages the \nother resources and assign tasks and data. Although it can be done\ndirectly, but you need to understand how the flow works.\n",
             "confidence": [
                 1
             ],
@@ -193,28 +162,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/tada-gam/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:30:54 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:30:54 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -222,6 +171,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/tada-gam/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:49:14 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:49:14 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -238,7 +207,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/tada-gam/blob/master/README.md",
         "confidence": [
             1.0
@@ -265,14 +234,14 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v1.0",
+                "tagName": "v1.0",
                 "name": "v1.0",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/tada-gam/tarball/v1.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/tada-gam/zipball/v1.0",
-                "html_url": "https://github.com/oeg-upm/tada-gam/releases/tag/v1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/tada-gam/tarball/v1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/tada-gam/zipball/v1.0",
+                "htmlUrl": "https://github.com/oeg-upm/tada-gam/releases/tag/v1.0",
                 "url": "https://api.github.com/repos/oeg-upm/tada-gam/releases/21545996",
                 "dateCreated": "2019-10-09T22:40:04Z",
                 "datePublished": "2019-11-18T08:58:39Z"

@@ -10,14 +10,15 @@
     ],
     "installation": [
         {
-            "excerpt": "1. Download `cpulimit` (`brew install cpulimit` for Mac)\n2. Download this application (https://github.com/oeg-upm/pycpulimit/releases/tag/v1.0)\n3. Go to the extracted folder of this app using the terminal (e.g., `cd /Users/YOUR-USERNAME/pycpulimit`)\n4. Make the application executable `chmod 666 pycpulimit.*`\n5. Add the application to the PATH variable. You can append it to (in Mac it is`/Users/YOUR-USERNAME/.bash_profile`)\n\n*Substitute `YOUR-USERNAME` with your actual username*\n\n\n",
+            "originalHeader": "How to Install it",
+            "excerpt": "1. Download `cpulimit` (`brew install cpulimit` for Mac)\n2. Download this application (https://github.com/oeg-upm/pycpulimit/releases/tag/v1.0)\n3. Go to the extracted folder of this app using the terminal (e.g., `cd /Users/YOUR-USERNAME/pycpulimit`)\n4. Make the application executable `chmod 666 pycpulimit.*`\n5. Add the application to the PATH variable. You can append it to (in Mac it is`/Users/YOUR-USERNAME/.bash_profile`)\n\n*Substitute `YOUR-USERNAME` with your actual username*\n\n",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "pycpulimit",
         "confidence": [
             1.0
@@ -26,6 +27,7 @@
     },
     "usage": [
         {
+            "originalHeader": "How to use it",
             "excerpt": "Go to the terminal and write this `pycpulimit.sh YOUR-APP 40`. \nWe are restricting the app to have by max 40% of the CPU.\n\n*Substitute `YOUR-APP` with the application name you like to restrict the cpu access to*\n\n",
             "confidence": [
                 1
@@ -99,28 +101,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/pycpulimit/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:41:16 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:41:16 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -128,6 +110,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/pycpulimit/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:54:21 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:54:21 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -143,7 +145,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/pycpulimit/blob/master/README.md",
         "confidence": [
             1.0
@@ -169,14 +171,14 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v1.0",
+                "tagName": "v1.0",
                 "name": "v1.0",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "Initial release. It is only tested with MacOS, but it should work with other linux based systems. ",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/pycpulimit/tarball/v1.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/pycpulimit/zipball/v1.0",
-                "html_url": "https://github.com/oeg-upm/pycpulimit/releases/tag/v1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/pycpulimit/tarball/v1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/pycpulimit/zipball/v1.0",
+                "htmlUrl": "https://github.com/oeg-upm/pycpulimit/releases/tag/v1.0",
                 "url": "https://api.github.com/repos/oeg-upm/pycpulimit/releases/19674752",
                 "dateCreated": "2019-08-31T20:02:13Z",
                 "datePublished": "2019-08-31T20:03:59Z"

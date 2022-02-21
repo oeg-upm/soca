@@ -1,18 +1,16 @@
 {
     "description": [
         {
-            "excerpt": "|/spot| POST| To spot the subject column of a given table (see the parameters below)| \n",
+            "excerpt": "\n|endpoint|method|description|\n|---------|---------|------------|\n|`/spot`| `GET`|a view that allow uploading a table and the system will spot the subject column|\n|`/spot`| `POST`| To spot the subject column of a given table (see the parameters below)| \n* `table`: the file\n* `technique`: the technique to be use to identify the subject column (see below).\n* `callback`: a `POST` callback url to be called by the system when the subject column is identified. \n",
             "confidence": [
-                0.9684262356248281
+                [
+                    0.9710640453420268,
+                    0.9514769139128878
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "callback: a POST callback url to be called by the system when the subject column is identified. \n",
-            "confidence": [
-                0.9502573728927985
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Parameters:",
+            "parentHeader": "ssspotter"
         },
         {
             "excerpt": "Simple Subject Column Spotter",
@@ -22,7 +20,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "ssspotter",
         "confidence": [
             1.0
@@ -95,28 +93,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/ssspotter/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 17:07:26 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 17:07:26 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -124,6 +102,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/ssspotter/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:53:48 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:53:48 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -141,7 +139,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/ssspotter/blob/master/README.md",
         "confidence": [
             1.0

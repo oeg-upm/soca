@@ -10,14 +10,16 @@
     ],
     "installation": [
         {
-            "excerpt": "With Node:\n1. ```git clone https://github.com/oeg-upm/morph-graphql```\n2. ```cd morph-graphql```\n3. ```cd javascript```\n4. ```cd rdb```\n5. ```npm install```\n6. ```node app.js```\n\nWith docker:\n1. ```docker run -d -p 8082:8082 --name mapping-translator oegdataintegration/mapping-translator:1.0```\n\n\n",
+            "originalHeader": "Installation Instructions",
+            "excerpt": "With Node:\n1. ```git clone https://github.com/oeg-upm/morph-graphql```\n2. ```cd morph-graphql```\n3. ```cd javascript```\n4. ```cd rdb```\n5. ```npm install```\n6. ```node app.js```\n\nWith docker:\n1. ```docker run -d -p 8082:8082 --name mapping-translator oegdataintegration/mapping-translator:1.0```\n\n",
+            "parentHeader": "morph-GraphQL (DEPRECATED)",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "morph-GraphQL (DEPRECATED)",
         "confidence": [
             1.0
@@ -26,7 +28,9 @@
     },
     "run": [
         {
-            "excerpt": "visit ```http://127.0.0.1:8082/```\n\n\n",
+            "originalHeader": "Running",
+            "excerpt": "visit ```http://127.0.0.1:8082/```\n\n",
+            "parentHeader": "morph-GraphQL (DEPRECATED)",
             "confidence": [
                 1
             ],
@@ -35,14 +39,18 @@
     ],
     "usage": [
         {
-            "excerpt": "Translating mappings online for Javascript and a set of CSV files (assuming that you have npm and node or docker installed)\n- https://github.com/oeg-upm/morph-graphql/tree/master/examples/starwars\n\n",
+            "originalHeader": "Example Starwars:",
+            "excerpt": "Translating mappings online for Javascript and a set of CSV files (assuming that you have npm and node or docker installed)\n- https://github.com/oeg-upm/morph-graphql/tree/master/examples/starwars\n",
+            "parentHeader": "morph-GraphQL (DEPRECATED) --- Examples",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
+            "originalHeader": "EXAMPLE LinGBM Benchmark:",
             "excerpt": "Translating mappings online for Javascript and LinGBM benchmark dataset (assuming that you have npm and node or docker installed)\n- https://github.com/oeg-upm/morph-graphql/tree/master/examples/LinGBM\n",
+            "parentHeader": "morph-GraphQL (DEPRECATED) --- Examples",
             "confidence": [
                 1
             ],
@@ -115,28 +123,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/morph-graphql/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 7,
-            "date": "Sun, 20 Feb 2022 11:11:56 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 11:11:56 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -160,6 +148,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 7,
+            "date": "Mon, 21 Feb 2022 05:42:33 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 05:42:33 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "JavaScript",
@@ -176,7 +184,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/morph-graphql/blob/master/README.md",
         "confidence": [
             1.0
@@ -218,14 +226,14 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v1.0.0",
+                "tagName": "v1.0.0",
                 "name": "v1.0.0",
-                "author_name": "dachafra",
+                "authorName": "dachafra",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/morph-graphql/tarball/v1.0.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/morph-graphql/zipball/v1.0.0",
-                "html_url": "https://github.com/oeg-upm/morph-graphql/releases/tag/v1.0.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-graphql/tarball/v1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-graphql/zipball/v1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/morph-graphql/releases/tag/v1.0.0",
                 "url": "https://api.github.com/repos/oeg-upm/morph-graphql/releases/22349724",
                 "dateCreated": "2019-12-18T12:28:31Z",
                 "datePublished": "2019-12-19T10:10:01Z"

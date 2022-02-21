@@ -3,9 +3,12 @@
         {
             "excerpt": "Project to transform doccano outputs to different formats for research purposes \n",
             "confidence": [
-                0.9619431671352988
+                [
+                    0.9619431671352988
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "doccano_formatter"
         },
         {
             "excerpt": "Project to transform doccano outputs to different formats for research purposes",
@@ -15,7 +18,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "doccano_formatter",
         "confidence": [
             1.0
@@ -88,28 +91,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/doccano_formatter/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 19:40:43 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 19:40:43 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -117,6 +100,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/doccano_formatter/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:16:50 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:16:50 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -131,7 +134,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/doccano_formatter/blob/main/README.md",
         "confidence": [
             1.0

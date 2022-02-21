@@ -1,25 +1,14 @@
 {
     "description": [
         {
-            "excerpt": "This repository stores the code of Themis, which is a web application that provides an interface to execute tests on one or more ontologies, and also a REST API to be used by third-party services. \n",
+            "excerpt": "This repository stores the code of Themis, which is a web application that provides an interface to execute tests on one or more ontologies, and also a REST API to be used by third-party services.\n \n",
             "confidence": [
-                0.9966317717221527
+                [
+                    0.9966317717221527
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "In order to use our REST API, check our online documentation \n",
-            "confidence": [
-                0.9164760614744203
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "* Glossary of terms [optional]: the user can add a glossary of terms of the ontology to be analysed as a JSON array. If there is not glossary of terms, Themis creates one automatically with the format [Term, URI] where the fragment of the URI of each term represents the Term field. These glossary of terms is used to map each term in the test with each term in the ontology. An example of glossary of terms is the following:  \n",
-            "confidence": [
-                0.9806998632239213
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Themis"
         },
         {
             "excerpt": "Verification tool for executing test cases on one or more ontologies",
@@ -29,23 +18,7 @@
             "technique": "GitHub API"
         }
     ],
-    "installation": [
-        {
-            "excerpt": "The command can receive the following inputs: \n",
-            "confidence": [
-                0.9233620335274836
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "RDFa following the  VTC ontology \n",
-            "confidence": [
-                0.9249132962004118
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Themis",
         "confidence": [
             1.0
@@ -54,7 +27,9 @@
     },
     "usage": [
         {
-            "excerpt": " `java -jar themis.jar -t testsuite.ttl -o ontology.ttl -r junit`\n\n\n",
+            "originalHeader": "Example",
+            "excerpt": " `java -jar themis.jar -t testsuite.ttl -o ontology.ttl -r junit`\n\n\n## Inputs\nThe command can receive the following inputs:\n* *Ontology file*: the user can add one ontology in a file, which will be loaded and its glossary of terms automatically generated\n* *Test file*: the user can add one or more tests in a file ([check here the supported tests](http://themis.linkeddata.es/tests-info.html))  written in RDF or [RDFa](https://www.w3.org/TR/rdfa-primer/) following the [VTC ontology](https://w3id.org/def/vtc#).  Moreover, Themis accepts as input a text file with a list of tests that uses the following  [Themis syntax](http://themis.linkeddata.es/tests-info.html) and that are separated by \";\" (for example, a text file that includes: \"Sensor type Class;Sensor subclassOf Device\"). The supported file formats are the following:\n  * RDFa: HTML and XML files\n  * RDF: TTL, OWL and RDF files\n  * List of tests: TXT files\n* *Glossary of terms [optional]*: the user can add a glossary of terms of the ontology to be analysed as a JSON array. If there is not glossary of terms, Themis creates one automatically with the format [Term, URI] where the fragment of the URI of each term represents the Term field. These glossary of terms is used to map each term in the test with each term in the ontology. An example of glossary of terms is the following: \n\n```\n{\n   \"OntologyNameOrKey\":[\n      {\n         \"Term\":\"Sensor\",\n         \"URI\":\"http://iot.linkeddata.es/def/core#Sensor\"\n      }\n   ]\n}\n```\n\n* *Format [optional]*: Themis will provide the result for each test. Three possible formats for the results are provided:\n  * JSON (output by default)\n  * RDFa following the  [VTC ontology](https://w3id.org/def/vtc#)\n  * JUnit (see [JUnit website](https://junit.org/junit4/) for more information about the stucture of the test report)\n",
+            "parentHeader": "Using the JAR",
             "confidence": [
                 1
             ],
@@ -127,28 +102,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/Themis/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 4,
-            "date": "Sun, 20 Feb 2022 11:43:32 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:43:32 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -172,6 +127,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 4,
+            "date": "Mon, 21 Feb 2022 05:55:09 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:55:09 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "HTML",
@@ -184,7 +159,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/Themis/blob/master/README.md",
         "confidence": [
             1.0
@@ -201,53 +176,53 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v2.0",
+                "tagName": "v2.0",
                 "name": "",
-                "author_name": "albaizq",
+                "authorName": "albaizq",
                 "authorType": "User",
                 "body": "- JAR distribution\r\n- Support as input RDFa\r\n- Add new tests",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/Themis/tarball/v2.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/Themis/zipball/v2.0",
-                "html_url": "https://github.com/oeg-upm/Themis/releases/tag/v2.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/Themis/tarball/v2.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/Themis/zipball/v2.0",
+                "htmlUrl": "https://github.com/oeg-upm/Themis/releases/tag/v2.0",
                 "url": "https://api.github.com/repos/oeg-upm/Themis/releases/25492912",
                 "dateCreated": "2020-04-14T14:05:46Z",
                 "datePublished": "2020-04-14T15:41:13Z"
             },
             {
-                "tag_name": "v1.2",
+                "tagName": "v1.2",
                 "name": "",
-                "author_name": "albaizq",
+                "authorName": "albaizq",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/Themis/tarball/v1.2",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/Themis/zipball/v1.2",
-                "html_url": "https://github.com/oeg-upm/Themis/releases/tag/v1.2",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/Themis/tarball/v1.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/Themis/zipball/v1.2",
+                "htmlUrl": "https://github.com/oeg-upm/Themis/releases/tag/v1.2",
                 "url": "https://api.github.com/repos/oeg-upm/Themis/releases/23538537",
                 "dateCreated": "2020-02-10T16:06:20Z",
                 "datePublished": "2020-02-10T16:01:54Z"
             },
             {
-                "tag_name": "1.1.0",
+                "tagName": "1.1.0",
                 "name": "New version of Themis",
-                "author_name": "albaizq",
+                "authorName": "albaizq",
                 "authorType": "User",
                 "body": "New APIs ",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/Themis/tarball/1.1.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/Themis/zipball/1.1.0",
-                "html_url": "https://github.com/oeg-upm/Themis/releases/tag/1.1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/Themis/tarball/1.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/Themis/zipball/1.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/Themis/releases/tag/1.1.0",
                 "url": "https://api.github.com/repos/oeg-upm/Themis/releases/23477238",
                 "dateCreated": "2020-02-07T11:52:03Z",
                 "datePublished": "2020-02-07T11:48:00Z"
             },
             {
-                "tag_name": "1.0.0",
+                "tagName": "1.0.0",
                 "name": "",
-                "author_name": "albaizq",
+                "authorName": "albaizq",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/Themis/tarball/1.0.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/Themis/zipball/1.0.0",
-                "html_url": "https://github.com/oeg-upm/Themis/releases/tag/1.0.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/Themis/tarball/1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/Themis/zipball/1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/Themis/releases/tag/1.0.0",
                 "url": "https://api.github.com/repos/oeg-upm/Themis/releases/23098372",
                 "dateCreated": "2020-01-24T10:14:34Z",
                 "datePublished": "2020-01-24T10:11:02Z"

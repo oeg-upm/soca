@@ -1,32 +1,27 @@
 {
     "description": [
         {
-            "excerpt": "This repository contains the resources associated to LOT methodology. \n",
+            "excerpt": "This repository contains the resources associated to LOT methodology.\n \nIf you want to use these figures, please follow the guidelines:\n* If you want to use the figures without modifications:\n    * Use the figure with the current license and authors (Ontology Engineering Group).\n    * Let us know in which project you are using them so that we can keep track of their adoption. We will appreacite it.\n* If you need to adapt the figures and methodology to your particular use case:\n    1. Fork the LOT repository (https://github.com/oeg-upm/LOT-resources) \n    2.  Keep the CC-BY-NC-SA licence with the statement \"Derived from LOT Methodology http://lot.linkeddata.es @Ontology Engineering Group\".\n    3. Upload the figure to a new folder in the forked repository with the name of the project and generate a pull request to the LOT repository so that we can keep track up adoption and variations to keep evolving the methodology. \n",
             "confidence": [
-                0.9663490442244242
+                [
+                    0.9663490442244242,
+                    0.9503894026391104
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Methodology figures",
+            "parentHeader": "LOT-resources"
         },
         {
-            "excerpt": "    * Let us know in which project you are using them so that we can keep track of their adoption. We will appreacite it. \n",
+            "excerpt": "\nThis work is licensed under a\n[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa]. \n",
             "confidence": [
-                0.9281220832028466
+                [
+                    0.9399107771584055
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "    3. Upload the figure to a new folder in the forked repository with the name of the project and generate a pull request to the LOT repository so that we can keep track up adoption and variations to keep evolving the methodology. \n",
-            "confidence": [
-                0.9884384407531592
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "This work is licensed under a \n",
-            "confidence": [
-                0.9427651018829905
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Methodology figures",
+            "parentHeader": "LOT-resources"
         },
         {
             "excerpt": "This repository contains the resources associated to LOT methodology that are not available online somewhere else.",
@@ -36,7 +31,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "LOT-resources",
         "confidence": [
             1.0
@@ -45,14 +40,18 @@
     },
     "requirement": [
         {
-            "excerpt": "The repository includes a template for generating an ORSD for an ontology in the following formats: \n* Microsoft word\n* LaTex file\n\n",
+            "originalHeader": "Ontology requirements specification document (ORSD)",
+            "excerpt": "The repository includes a template for generating an ORSD for an ontology in the following formats: \n* Microsoft word\n* LaTex file\n",
+            "parentHeader": "LOT-resources",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "excerpt": "The repository includes a template for the list of functional requirements for an ontology in the following formats: \n* Excel file\n \n",
+            "originalHeader": "Ontology requirements list",
+            "excerpt": "The repository includes a template for the list of functional requirements for an ontology in the following formats: \n* Excel file\n ",
+            "parentHeader": "LOT-resources",
             "confidence": [
                 1
             ],
@@ -125,28 +124,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/LOT-resources/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 3,
-            "date": "Sun, 20 Feb 2022 12:04:38 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 12:04:38 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -154,6 +133,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/LOT-resources/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Mon, 21 Feb 2022 07:06:10 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 07:06:10 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -168,7 +167,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/LOT-resources/blob/master/README.md",
         "confidence": [
             1.0

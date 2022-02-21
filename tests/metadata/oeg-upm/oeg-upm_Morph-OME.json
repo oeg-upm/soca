@@ -1,20 +1,6 @@
 {
     "description": [
         {
-            "excerpt": "URL of the tada-web host url. \n",
-            "confidence": [
-                0.9797686381446626
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "To show/hide an ontology upload page (in the main page) for the autocomplete functionality \n",
-            "confidence": [
-                0.9091691359863313
-            ],
-            "technique": "Supervised classification"
-        },
-        {
             "excerpt": "Online Mapping Editor",
             "confidence": [
                 1.0
@@ -24,6 +10,7 @@
     ],
     "citation": [
         {
+            "originalHeader": "To cite",
             "excerpt": "```\n@software{alobaid_ahmad_2020_3764202,\n  author       = {Alobaid, Ahmad and\n                  Corcho, Oscar},\n  title        = {OME},\n  month        = apr,\n  year         = 2020,\n  publisher    = {Zenodo},\n  doi          = {10.5281/zenodo.3764202},\n  url          = {https://doi.org/10.5281/zenodo.3764202}\n}\n```\n\n",
             "confidence": [
                 1
@@ -38,24 +25,8 @@
             "technique": "Regular expression"
         }
     ],
-    "installation": [
-        {
-            "excerpt": "1. Create virtual environment [here](https://docs.python-guide.org/dev/virtualenvs/) (recommended by not required) e.g. ```virtualenv -p /usr/bin/python2.7 .venv```\n1. Access the virtual environment using `source .venv/bin/activate`\n1. Install pip [here](https://pip.pypa.io/en/stable/installing/)\n1. Install requirements ``` pip install -r requirements.txt ```\n1. Set `TADA_HOST` to the url of the pytada_hdt_entity host. For example (`export TADA_HOST=\"http://127.0.0.1:5001/`)\n1. Run the application ``` python app.py ```\n1. Open the browser to the url [http://127.0.0.1:5000/](http://127.0.0.1:5000/)\n\n-->\n\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        },
-        {
-            "excerpt": "For example, you can set it like that \n",
-            "confidence": [
-                0.9038690123353511
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
-    "long_title": {
-        "excerpt": "Run with Docker",
+    "longTitle": {
+        "excerpt": "Automatic Suggestions",
         "confidence": [
             1.0
         ],
@@ -68,15 +39,6 @@
                 1.0
             ],
             "technique": "Regular expression"
-        }
-    ],
-    "run": [
-        {
-            "excerpt": "1. `sh run_docker.sh`\n2. In the browser visit `http://127.0.0.1:5000`\n\n\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
         }
     ],
     "codeRepository": {
@@ -145,28 +107,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/Morph-OME/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 6,
-            "date": "Sun, 20 Feb 2022 11:11:52 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 11:11:52 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -193,6 +135,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 6,
+            "date": "Mon, 21 Feb 2022 05:42:30 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 05:42:30 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "Python",
@@ -205,7 +167,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/Morph-OME/blob/master/README.md",
         "confidence": [
             1.0
@@ -243,40 +205,40 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v.2.1",
+                "tagName": "v.2.1",
                 "name": "v.2.1",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "Bug fixes (e.g., encoding). \r\n",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/Morph-OME/tarball/v.2.1",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/Morph-OME/zipball/v.2.1",
-                "html_url": "https://github.com/oeg-upm/Morph-OME/releases/tag/v.2.1",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/Morph-OME/tarball/v.2.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/Morph-OME/zipball/v.2.1",
+                "htmlUrl": "https://github.com/oeg-upm/Morph-OME/releases/tag/v.2.1",
                 "url": "https://api.github.com/repos/oeg-upm/Morph-OME/releases/40790214",
                 "dateCreated": "2021-03-24T22:34:52Z",
                 "datePublished": "2021-03-31T23:07:36Z"
             },
             {
-                "tag_name": "v2.0",
+                "tagName": "v2.0",
                 "name": "v2.0",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "This version calls tada-web APIs to annotate entity columns using HDT. It also uses auto complete of use ontologies (should be enabled via environment variable).",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/Morph-OME/tarball/v2.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/Morph-OME/zipball/v2.0",
-                "html_url": "https://github.com/oeg-upm/Morph-OME/releases/tag/v2.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/Morph-OME/tarball/v2.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/Morph-OME/zipball/v2.0",
+                "htmlUrl": "https://github.com/oeg-upm/Morph-OME/releases/tag/v2.0",
                 "url": "https://api.github.com/repos/oeg-upm/Morph-OME/releases/25830023",
                 "dateCreated": "2020-04-23T12:21:57Z",
                 "datePublished": "2020-04-23T22:41:53Z"
             },
             {
-                "tag_name": "v1.0",
+                "tagName": "v1.0",
                 "name": "v1.0",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "Initial version with schema.org ontology",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/Morph-OME/tarball/v1.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/Morph-OME/zipball/v1.0",
-                "html_url": "https://github.com/oeg-upm/Morph-OME/releases/tag/v1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/Morph-OME/tarball/v1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/Morph-OME/zipball/v1.0",
+                "htmlUrl": "https://github.com/oeg-upm/Morph-OME/releases/tag/v1.0",
                 "url": "https://api.github.com/repos/oeg-upm/Morph-OME/releases/25203430",
                 "dateCreated": "2019-10-24T14:56:24Z",
                 "datePublished": "2020-04-04T21:15:07Z"

@@ -1,111 +1,65 @@
 {
     "description": [
         {
-            "excerpt": "Kehio allows to explicitly annotate an attribute from a  Java class using the annotation '@RdfId' to store the resource URI within, i.e., the subject from a set of triples with that very same URI. This attribute can be either a String or java.net.URI, any other attribute annotated with '@RdfId' will end up throwing an exception. Notice that a subject can also be a blank node and not a URI, in this case Kehio would handle it in the same way as shown in the following examples. \nDuring the example the caption of the classes are linked to the full classes present in the code, in addition all the code displayed in this section can be found in this test class. \n",
+            "excerpt": "Kehio allows to explicitly annotate an attribute from a  Java class using the annotation '@RdfId' to store the resource URI within, i.e., the subject from a set of triples with that very same URI. This attribute can be either a *String* or *java.net.URI*, any other attribute annotated with '@RdfId' will end up throwing an exception. Notice that a subject can also be a blank node and not a URI, in this case Kehio would handle it in the same way as shown in the following examples. \nDuring the example the caption of the classes are linked to the full classes present in the code, in addition all the code displayed in this section can be found in this [test class.]()\n \n",
             "confidence": [
-                0.9624093781398451,
-                0.9340445505756133
+                [
+                    0.9624093781398451,
+                    0.9340445505756133
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "1. Defining  subjects",
+            "parentHeader": "KEHIO: a library for blending RDF in Java Objects"
         },
         {
-            "excerpt": "Kehio does not need a user to implicitly annotate an attribute in order to store the subjects. Instead, if no attribute is specified with the annotation '@RdfId' Kehio asumes that the subject is always a blank node and handles it transparently. \n",
+            "excerpt": "Kehio does not need a user to implicitly annotate an attribute in order to store the subjects. Instead, if no attribute is specified with the annotation *'@RdfId'* Kehio asumes that the subject is always a blank node and handles it transparently. \n",
             "confidence": [
-                0.9547353947817496
+                [
+                    0.9547353947817496
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "1.2 Omitting the attribute",
+            "parentHeader": "KEHIO: a library for blending RDF in Java Objects --- 1. Defining  subjects"
         },
         {
-            "excerpt": "The previous example class, i.e., Person, could be enriched specifying the language of some of its attributes' values. For the sake of this example, let's asume that the tile is the attribute to be enriched with language. \n",
+            "excerpt": "Kehio allows to explicitly annotate an attribute from a  Java class using the annotation '@RdfId' to store the resource URI within, i.e., the subject from a set of triples with that very same URI. This attribute can be either a *String* or *java.net.URI*, any other attribute annotated with '@RdfId' will end up throwing an exception. Notice that a subject can also be a blank node and not a URI, in this case Kehio would handle it in the same way as shown in the following examples. \nDuring the example the caption of the classes are linked to the full classes present in the code, in addition all the code displayed in this section can be found in this [test class.]() \n",
             "confidence": [
-                0.9737491349585929
+                [
+                    0.9624093781398451,
+                    0.9340445505756133
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "1.1  Datatype property (code sample)",
+            "parentHeader": "KEHIO: a library for blending RDF in Java Objects --- Datatype properties"
         },
         {
-            "excerpt": "As shown in the previous example,  sometimes the language can not be known beforehand or different objects could rely on different languages. For this cases, Kehio offers the possibility of sinking the language tag into the attribute value. \nsinking language: it consist in storing the value of the RDF literal in the attribute along with the language tag, separated by the character '@' \n",
+            "excerpt": "Kehio does not need a user to implicitly annotate an attribute in order to store the subjects. Instead, if no attribute is specified with the annotation *'@RdfId'* Kehio asumes that the subject is always a blank node and handles it transparently. \n",
             "confidence": [
-                0.9435252928391643,
-                0.946554387211692
+                [
+                    0.9547353947817496
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "1.2 Omitting the attribute",
+            "parentHeader": "KEHIO: a library for blending RDF in Java Objects --- 1. Defining  subjects"
+        },
+        {
+            "excerpt": "As shown in the previous example,  sometimes the language can not be known beforehand or different objects could rely on different languages. For this cases, Kehio offers the possibility of sinking the language tag into the attribute value. \n* *sinking language: it consist in storing the value of the RDF literal in the attribute along with the language tag, separated by the character '@'* \n",
+            "confidence": [
+                [
+                    0.9435252928391643,
+                    0.946554387211692
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "1.1  Datatype property (code sample)",
+            "parentHeader": "KEHIO: a library for blending RDF in Java Objects --- Datatype properties"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "private String title; \n",
-            "confidence": [
-                0.9813161029725735
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "[]  dc:date \"Fri Jun 25 11:20:35 CEST 2021\" ; \n",
-            "confidence": [
-                0.9321597499656605
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "      dc11:title \"El Kej\u00edo\" . \n",
-            "confidence": [
-                0.9813161029725735
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "@RdfDatatype(value=\"http://purl.org/dc/elements/1.1/title\", lang=\"en\") \nprivate String title; \n",
-            "confidence": [
-                0.9742976135565607,
-                0.9813161029725735
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "[]  dc:date \"Fri Jun 25 11:20:35 CEST 2021\" ; \n",
-            "confidence": [
-                0.9321597499656605
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "      dc11:title \"El Kej\u00edo\"@en . #: Notice here the language \n",
-            "confidence": [
-                0.9635736746194005
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "                    dc11:title \"Ciudad de las ideas\"@es . \n",
-            "confidence": [
-                0.9979175358605822
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "      dc11:title \"El Kej\u00edo\"@en . \n",
-            "confidence": [
-                0.9813161029725735
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "                    dc11:title \"Ciudad de las ideas\"@es . \n",
-            "confidence": [
-                0.9979175358605822
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "@RdfDatatype(value=\"http://purl.org/dc/elements/1.1/title\", lang=\"en\") \nprivate String title; \n",
-            "confidence": [
-                0.9742976135565607,
-                0.9813161029725735
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "KEHIO: a library for blending RDF in Java Objects",
         "confidence": [
             1.0
@@ -168,28 +122,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/kehio/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 06 Feb 2022 18:29:04 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 18:29:04 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -202,7 +136,21 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 07:13:57 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:13:57 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -217,7 +165,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/kehio/blob/main/README.md",
         "confidence": [
             1.0

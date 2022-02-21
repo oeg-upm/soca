@@ -3,23 +3,12 @@
         {
             "excerpt": "The XXX ontology describes the domain of XXX \n",
             "confidence": [
-                0.9354044375383516
+                [
+                    0.9354044375383516
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "The material generated in the different activities carried out during the development of the vocabulary, use \n",
-            "confidence": [
-                0.9121769149523146
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "To manage those incidents or suggested improvements with respect to the vocabulary, we recommend you to follow \n",
-            "confidence": [
-                0.9473242392505198
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "XXX Ontology"
         },
         {
             "excerpt": "Repositorio de las ontolog\u00edas a desarrollar para el Instituto de Estudios Fiscales",
@@ -29,7 +18,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "XXX Ontology",
         "confidence": [
             1.0
@@ -38,6 +27,7 @@
     },
     "usage": [
         {
+            "originalHeader": "Examples",
             "excerpt": "Some [queries](https://github.com/repository-name/blob/master/examples/queries.md) will be performed in a\nSPARQL endpoint to test and exemplify its operability.\n\n",
             "confidence": [
                 1
@@ -101,28 +91,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/Instituto-Estudios-Fiscales-ontologias/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 18:28:52 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 3,
-            "date": "Sun, 06 Feb 2022 18:28:52 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -135,7 +105,21 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:13:47 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Mon, 21 Feb 2022 07:13:47 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -152,7 +136,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/Instituto-Estudios-Fiscales-ontologias/blob/master/README.md",
         "confidence": [
             1.0

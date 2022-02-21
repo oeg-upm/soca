@@ -1,11 +1,25 @@
 {
     "description": [
         {
-            "excerpt": "A single page that contains a list of conferences and journals relevant to the domain of the semantic web. It is updated regularly, your contribution is highly valiable. \n",
+            "excerpt": "A single page that contains a list of conferences and journals relevant to the domain of the semantic web. It is updated regularly, *your contribution is highly valiable*. \n",
             "confidence": [
-                0.9966334590295497
+                [
+                    0.9966334590295497
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Conferences dates"
+        },
+        {
+            "excerpt": "Update the data in `confs.js`, or you can create an issue and someone \nfrom the group will update it. \n",
+            "confidence": [
+                [
+                    0.9044285962275377
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "How to contribute",
+            "parentHeader": "Conferences dates"
         },
         {
             "excerpt": "List of submission dates for conferences and journals special issues relevant to the domain of semantic web",
@@ -15,7 +29,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Conferences dates",
         "confidence": [
             1.0
@@ -78,28 +92,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/confs-info/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:11:50 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 11:11:50 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -107,12 +101,6 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/confs-info/releases",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "license": {
         "confidence": [
             1.0
         ],
@@ -131,6 +119,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:42:27 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 05:42:27 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "HTML",
@@ -142,7 +150,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/confs-info/blob/master/README.md",
         "confidence": [
             1.0

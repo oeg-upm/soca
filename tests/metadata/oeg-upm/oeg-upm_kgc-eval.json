@@ -3,31 +3,34 @@
         {
             "excerpt": "We conduct an evaluation of KGC engines considering several R2RML and RML processors to identify their strengths and weaknesses. We (i) perform a qualitative analysis of the distinctive features of each engine, (ii) examine their conformance with the mapping language specification they support, and (iii) assess their performance and scalability using the GTFS-Madrid-Bench benchmark. \n",
             "confidence": [
-                0.989896388379069
+                [
+                    0.989896388379069
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Knowledge Graph Construction with R2RML and RML"
         },
         {
             "excerpt": "We test the performance and scalability of a set of KG construction engines: \n",
             "confidence": [
-                0.9552542341739365
+                [
+                    0.9552542341739365
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Engines",
+            "parentHeader": "Knowledge Graph Construction with R2RML and RML"
         },
         {
-            "excerpt": "Using the GTFS-Madrid-Bench and based on the input dataset we create the following distributions to test the engines: \n",
+            "excerpt": "We created a comparative framework to gather and compare the information about the engines' features, availabe [here](https://github.com/oeg-upm/kgc-eval/tree/master/results/table); and tested the engines with the mentioned benchmark in terms of time and memory used. The raw data resulting from the evaluation is stored [here](https://github.com/oeg-upm/kgc-eval/tree/master/results/raw-data), and the resulting figures can be seen [here](https://github.com/oeg-upm/kgc-eval/tree/master/results/figures).\n \n",
             "confidence": [
-                0.9037643106827218
+                [
+                    0.9129068273106372
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "We created a comparative framework to gather and compare the information about the engines' features, availabe here; and tested the engines with the mentioned benchmark in terms of time and memory used. The raw data resulting from the evaluation is stored here, and the resulting figures can be seen here. \nJuli\u00e1n Arenas-Guerrero - julian.arenas.guerrero@upm.es (Ontology Engineering Group - UPM) \n",
-            "confidence": [
-                0.9756596750811484,
-                0.9009614607129621
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Results",
+            "parentHeader": "Knowledge Graph Construction with R2RML and RML"
         },
         {
             "excerpt": "Evaluation of Knowledge Graph Construction Engines",
@@ -44,9 +47,18 @@
                 1.0
             ],
             "technique": "Regular expression"
+        },
+        {
+            "excerpt": "**Citing**: \n",
+            "confidence": [
+                [
+                    0.9565696357172301
+                ]
+            ],
+            "technique": "Supervised classification"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Knowledge Graph Construction with R2RML and RML",
         "confidence": [
             1.0
@@ -119,28 +131,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/kgc-eval/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 11:38:31 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 3,
-            "date": "Sun, 20 Feb 2022 11:38:31 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -148,6 +140,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/kgc-eval/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 05:53:34 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Mon, 21 Feb 2022 05:53:34 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -164,7 +176,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/kgc-eval/blob/master/README.md",
         "confidence": [
             1.0

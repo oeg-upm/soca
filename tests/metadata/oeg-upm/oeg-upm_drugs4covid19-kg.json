@@ -1,20 +1,27 @@
 {
     "description": [
         {
-            "excerpt": "Resources for the constructing and exploitation of the KG - Drugs4Covid. The construction of the KG followed a systematic and maintainable approach creating a set of RML and CSVW annotations and using SDM-RDFizer RML engine for transforming the original input data (from SOLR databases) in RDF. \nWe provide a docker-compose with two docker-images (Virtuoso and SDM-RDFizer) and a script to generate a local copy of the KG. \n",
+            "excerpt": "Resources for the constructing and exploitation of the KG - Drugs4Covid. The construction of the KG followed a systematic and maintainable approach creating a set of RML and CSVW annotations and using SDM-RDFizer RML engine for transforming the original input data (from SOLR databases) in RDF.\n \nWe provide a docker-compose with two docker-images (Virtuoso and SDM-RDFizer) and a script to generate a local copy of the KG. \n",
             "confidence": [
-                0.9949884727439524,
-                0.9532036712587245
+                [
+                    0.9949884727439524,
+                    0.9532036712587245
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Docker",
+            "parentHeader": "Drugs4Covid KG"
         },
         {
-            "excerpt": "General website of the project: https://drugs4covid.oeg-upm.net/ \nWe include links to other existing Covid19 Knowledge Graphs in other to federated over them and enhance the completeness of our queries. The endpoints of the KGs currently included are: \n",
+            "excerpt": "We include links to other existing Covid19 Knowledge Graphs in other to federated over them and enhance the completeness of our queries. The endpoints of the KGs currently included are: \n",
             "confidence": [
-                0.9499932779635332,
-                0.9919483734746313
+                [
+                    0.9919483734746313
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Links to other KGs:",
+            "parentHeader": "Drugs4Covid KG"
         },
         {
             "excerpt": "Resources for the generation and exploitation of the KG - Drugs4Covid ",
@@ -24,16 +31,7 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "SPARQL Endpoint: https://kg.drugs4covid.oeg-upm.net/sparql \n",
-            "confidence": [
-                0.9278824608274014
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Drugs4Covid KG",
         "confidence": [
             1.0
@@ -106,28 +104,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19-kg/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:59:44 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:59:44 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -135,6 +113,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/drugs4covid19-kg/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:56:37 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:56:37 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -153,7 +151,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/drugs4covid19-kg/blob/master/README.md",
         "confidence": [
             1.0

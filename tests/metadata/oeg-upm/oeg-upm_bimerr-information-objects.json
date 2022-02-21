@@ -8,7 +8,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "bimerr-information-objects",
         "confidence": [
             1.0
@@ -81,28 +81,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-information-objects/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 18:28:30 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 18:28:30 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -115,7 +95,27 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:13:31 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:13:31 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/bimerr-information-objects/blob/main/README.md",
         "confidence": [
             1.0

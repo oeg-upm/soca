@@ -1,11 +1,14 @@
 {
     "description": [
         {
-            "excerpt": "This repository contains the code and documentation generated for the KPI ontology which is available at: \n",
+            "excerpt": "This repository contains the code and documentation generated for the KPI ontology which is available at:\r\nhttp://bimerr.iot.linkeddata.es/def/key-performance-indicator\r\n\r \n",
             "confidence": [
-                0.9919265837625736
+                [
+                    0.9902144348764089
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Key Performance Indicator Ontology"
         },
         {
             "excerpt": "BIMERR ontology for KPI data",
@@ -15,7 +18,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Key Performance Indicator Ontology",
         "confidence": [
             1.0
@@ -78,28 +81,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-kpi/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:44:53 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 11:44:53 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -112,13 +95,27 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:55:46 GMT"
+        },
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 05:55:46 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/bimerr-kpi/blob/master/README.md",
         "confidence": [
             1.0
@@ -128,27 +125,27 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v0.1.0",
+                "tagName": "v0.1.0",
                 "name": "v0.1.0",
-                "author_name": "Serge3006",
+                "authorName": "Serge3006",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/bimerr-kpi/tarball/v0.1.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/bimerr-kpi/zipball/v0.1.0",
-                "html_url": "https://github.com/oeg-upm/bimerr-kpi/releases/tag/v0.1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-kpi/tarball/v0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-kpi/zipball/v0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-kpi/releases/tag/v0.1.0",
                 "url": "https://api.github.com/repos/oeg-upm/bimerr-kpi/releases/32911367",
                 "dateCreated": "2020-10-22T10:53:57Z",
                 "datePublished": "2020-10-22T10:55:01Z"
             },
             {
-                "tag_name": "0.0.3",
+                "tagName": "0.0.3",
                 "name": "",
-                "author_name": "Serge3006",
+                "authorName": "Serge3006",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/bimerr-kpi/tarball/0.0.3",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/bimerr-kpi/zipball/0.0.3",
-                "html_url": "https://github.com/oeg-upm/bimerr-kpi/releases/tag/0.0.3",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-kpi/tarball/0.0.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-kpi/zipball/0.0.3",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-kpi/releases/tag/0.0.3",
                 "url": "https://api.github.com/repos/oeg-upm/bimerr-kpi/releases/28028594",
                 "dateCreated": "2020-06-29T14:04:58Z",
                 "datePublished": "2020-06-29T15:18:21Z"

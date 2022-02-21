@@ -1,13 +1,6 @@
 {
     "description": [
         {
-            "excerpt": "get_properties_of_subject: Get the properties of a given subject. \n",
-            "confidence": [
-                0.9321032863031636
-            ],
-            "technique": "Supervised classification"
-        },
-        {
             "excerpt": "A python wrapper to easily query knowledge graphs with SPARQL",
             "confidence": [
                 1.0
@@ -17,14 +10,28 @@
     ],
     "installation": [
         {
-            "excerpt": "pip install easysparql \n",
+            "excerpt": "[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/) \n",
             "confidence": [
-                0.999746712887969
+                [
+                    0.902239628935452
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "easysparql"
+        },
+        {
+            "excerpt": "```pip install easysparql```\n \n",
+            "confidence": [
+                [
+                    0.999746712887969
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "via pip",
+            "parentHeader": "Install"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "easysparql",
         "confidence": [
             1.0
@@ -33,7 +40,9 @@
     },
     "run": [
         {
-            "excerpt": "```python -m unittest discover```\n\n\n",
+            "originalHeader": "Run tests",
+            "excerpt": "```python -m unittest discover```\n\n",
+            "parentHeader": "Install",
             "confidence": [
                 1
             ],
@@ -42,6 +51,7 @@
     ],
     "usage": [
         {
+            "originalHeader": "Example",
             "excerpt": "```\nfrom easysparql import easysparql\n\nDBPEDIA_ENDPOINT = \"https://dbpedia.org/sparql\"\n\nalbert_uri = \"http://dbpedia.org/resource/Albert_Einstein\"\nalbert_name = \"Albert Einstein\"\nscientist = \"http://dbpedia.org/ontology/Scientist\"\nfoaf_name = \"http://xmlns.com/foaf/0.1/name\"\n\n\nclasses = easysparql.get_classes(albert_uri, DBPEDIA_ENDPOINT)\n\nentities = easysparql.get_entities(albert_name, DBPEDIA_ENDPOINT, \"@en\")\n\nparents = easysparql.get_parents_of_class(scientist, DBPEDIA_ENDPOINT)\n\nquery = \"select distinct ?Concept where {[] a ?Concept} LIMIT 100\"\nresults = easysparql.run_query(query, DBPEDIA_ENDPOINT)\n\nsubjects = easysparql.get_subjects(class_uri=scientist, endpoint=DBPEDIA_ENDPOINT)\n\nproperties = easysparql.get_properties_of_subject(subject_uri=albert_uri, endpoint=DBPEDIA_ENDPOINT)\n\na =  [\"1.2\",\"2\",\"4\",\"3\",3,6,\"a\",\"b\", \"ccc\", \"1jasdf\"]\nnums = easysparql.get_numerics_from_list(a, 0.5)\n\n```\n\n",
             "confidence": [
                 1
@@ -115,28 +125,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/easysparql/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 12:02:23 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 12:02:23 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -144,6 +134,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/easysparql/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:57:25 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:57:25 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -158,7 +168,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/easysparql/blob/master/README.md",
         "confidence": [
             1.0
@@ -175,105 +185,105 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v1.5.4",
+                "tagName": "v1.5.4",
                 "name": "v1.5.4",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "* Fix empty cache files\r\n* Add a new parameter to specify cache directory",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.5.4",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.5.4",
-                "html_url": "https://github.com/oeg-upm/easysparql/releases/tag/v1.5.4",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.5.4",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.5.4",
+                "htmlUrl": "https://github.com/oeg-upm/easysparql/releases/tag/v1.5.4",
                 "url": "https://api.github.com/repos/oeg-upm/easysparql/releases/52791172",
                 "dateCreated": "2021-09-17T14:06:46Z",
                 "datePublished": "2021-11-05T14:47:29Z"
             },
             {
-                "tag_name": "v1.5.3",
+                "tagName": "v1.5.3",
                 "name": "v1.5.3",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "- Cache queries with no results.\r\n- Add more results.",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.5.3",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.5.3",
-                "html_url": "https://github.com/oeg-upm/easysparql/releases/tag/v1.5.3",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.5.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.5.3",
+                "htmlUrl": "https://github.com/oeg-upm/easysparql/releases/tag/v1.5.3",
                 "url": "https://api.github.com/repos/oeg-upm/easysparql/releases/49734594",
                 "dateCreated": "2021-09-17T09:20:54Z",
                 "datePublished": "2021-09-17T09:29:59Z"
             },
             {
-                "tag_name": "v1.5.2",
+                "tagName": "v1.5.2",
                 "name": "v1.5.2",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "* Fix bugs\r\n* Add `get_entities_and_classes` method to `EasySparql` class and as a function",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.5.2",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.5.2",
-                "html_url": "https://github.com/oeg-upm/easysparql/releases/tag/v1.5.2",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.5.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.5.2",
+                "htmlUrl": "https://github.com/oeg-upm/easysparql/releases/tag/v1.5.2",
                 "url": "https://api.github.com/repos/oeg-upm/easysparql/releases/49685587",
                 "dateCreated": "2021-09-16T15:04:44Z",
                 "datePublished": "2021-09-16T15:09:07Z"
             },
             {
-                "tag_name": "v1.5",
+                "tagName": "v1.5",
                 "name": "v1.5",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "- Add cache.\r\n- Add easysparql class.\r\n- Drop the support for python 2.",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.5",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.5",
-                "html_url": "https://github.com/oeg-upm/easysparql/releases/tag/v1.5",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.5",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.5",
+                "htmlUrl": "https://github.com/oeg-upm/easysparql/releases/tag/v1.5",
                 "url": "https://api.github.com/repos/oeg-upm/easysparql/releases/49635389",
                 "dateCreated": "2021-09-15T22:16:10Z",
                 "datePublished": "2021-09-15T22:17:35Z"
             },
             {
-                "tag_name": "v1.4",
+                "tagName": "v1.4",
                 "name": "v1.4",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "Add support to python3",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.4",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.4",
-                "html_url": "https://github.com/oeg-upm/easysparql/releases/tag/v1.4",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.4",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.4",
+                "htmlUrl": "https://github.com/oeg-upm/easysparql/releases/tag/v1.4",
                 "url": "https://api.github.com/repos/oeg-upm/easysparql/releases/48893603",
                 "dateCreated": "2021-09-02T13:44:16Z",
                 "datePublished": "2021-09-02T13:49:00Z"
             },
             {
-                "tag_name": "v1.3",
+                "tagName": "v1.3",
                 "name": "v1.3",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "Add the following functions:\r\n* `get_properties_of_subject`: Get the properties of a given subject.\r\n* `get_numerics_from_list`: Get the numbers from a list of strings and numbers (if they are more that the provided percentage).\r\n* `get_num`: Get the number of a given number/string or None (if it was not a number).\r\n\r\nand remove some unused functions.",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.3",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.3",
-                "html_url": "https://github.com/oeg-upm/easysparql/releases/tag/v1.3",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.3",
+                "htmlUrl": "https://github.com/oeg-upm/easysparql/releases/tag/v1.3",
                 "url": "https://api.github.com/repos/oeg-upm/easysparql/releases/28548376",
                 "dateCreated": "2020-07-14T15:01:20Z",
                 "datePublished": "2020-07-14T15:02:45Z"
             },
             {
-                "tag_name": "v1.2",
+                "tagName": "v1.2",
                 "name": "v1.2",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "* Add tests\r\n* Add the following functions:\r\n  * `get_subjects`: Get the number of subjects of a given class.\r\n  * `get_properties_of_subject`: Get the properties of a given subject.\r\n  * `get_property_count`: Get the number of objects of a given subject/property pairs.\r\n",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.2",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.2",
-                "html_url": "https://github.com/oeg-upm/easysparql/releases/tag/v1.2",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.2",
+                "htmlUrl": "https://github.com/oeg-upm/easysparql/releases/tag/v1.2",
                 "url": "https://api.github.com/repos/oeg-upm/easysparql/releases/28542172",
                 "dateCreated": "2020-07-14T12:34:25Z",
                 "datePublished": "2020-07-14T12:47:21Z"
             },
             {
-                "tag_name": "v1.1",
+                "tagName": "v1.1",
                 "name": "v1.1",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "This is a pip release of easysparql with dependencies.\r\n\r\nIt is composed of the following functions:\r\n* `run_query`: run a sparql query\r\n* `get_entities`: get candidate entities of the given name (exact match)\r\n* `get_classes`: get classes of a given entity\r\n* `get_parents_of_class`: get direct parent classes of a given class\r\n\r\n",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.1",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.1",
-                "html_url": "https://github.com/oeg-upm/easysparql/releases/tag/v1.1",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easysparql/tarball/v1.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easysparql/zipball/v1.1",
+                "htmlUrl": "https://github.com/oeg-upm/easysparql/releases/tag/v1.1",
                 "url": "https://api.github.com/repos/oeg-upm/easysparql/releases/28529490",
                 "dateCreated": "2020-07-14T06:04:59Z",
                 "datePublished": "2020-07-14T06:10:15Z"

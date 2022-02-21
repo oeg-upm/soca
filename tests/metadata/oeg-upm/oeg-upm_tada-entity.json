@@ -1,25 +1,26 @@
 {
     "description": [
         {
-            "excerpt": "Check the mean and the median for differences between the mean/median of the (mid) alphas for each  \n",
-            "confidence": [
-                0.941713725657347
-            ],
-            "technique": "Supervised classification"
-        },
-        {
             "excerpt": "Tabular Data Annotation of entity columns \n",
             "confidence": [
-                0.9956438268838141
+                [
+                    0.9956438268838141
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Invalid",
+            "parentHeader": "tada-entity --- Experiments --- SemTab"
         },
         {
-            "excerpt": "To report different alphas (note that it would take more time to compute it) \n",
+            "excerpt": "## Database\nHaving a database accessible by the application is a must. The file `mysql.cnf` should include the credential.\nBelow is an example of the file content : \n```\n[client]\ndatabase = mydbname\nuser = dbuser\npassword = dbpassword\ndefault-character-set = utf8\n```\nTo user an *alternative* database engine, you might need to update the `settings.py` file \nto specify the engine of your choosing (`sqlite` is not thread-safe, we don't recommend using it).  \n",
             "confidence": [
-                0.9262956417113827
+                [
+                    0.9412130548768608
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Invalid",
+            "parentHeader": "tada-entity --- Experiments --- SemTab"
         },
         {
             "excerpt": "Tabular Data Annotation of entity columns",
@@ -31,245 +32,95 @@
     ],
     "citation": [
         {
-            "excerpt": "Title case \n",
+            "excerpt": "Title \n```\npython -m experiments.st19_r1_experiment ~/workspaces/Datasets/semtab2019/Round\\ 1/gt/CTA_Round1_gt.csv ~/workspaces/Datasets/semtab2019/Round\\ 1/tables title alpha\n``` \n",
             "confidence": [
-                0.9707925318074234
+                [
+                    0.9104419726040097
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title  \n",
-            "confidence": [
-                0.9813161029725735
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case. \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case. \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title  \n",
-            "confidence": [
-                0.9813161029725735
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case. \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case. \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "--debug-class Journal \n",
-            "confidence": [
-                0.9330586062571771
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Title case \n",
-            "confidence": [
-                0.9707925318074234
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "ST19R1",
+            "parentHeader": "tada-entity --- Alpha analysis"
         }
     ],
     "installation": [
         {
-            "excerpt": "1. Download the project \n```\ngit clone git@github.com:oeg-upm/tada-entity.git; cd tada-entity/\n```\n2. Create virtual environment \n```\nvirtualenv  -p /usr/bin/python2.7 .venv\n```\n3. Install dependencies \n``` \npip install -r requirements.txt \n```\n4. create a mysql.cfg file in the same folder (see below)\n5. Setup database and apply migrations \n``` \npython manage.py makemigrations; python manage.py makemigrations tadae; python manage.py migrate\n```\n\n\n",
+            "excerpt": "[![Build Status](https://semaphoreci.com/api/v1/ahmad88me/tada-entity/branches/master/badge.svg)](https://semaphoreci.com/ahmad88me/tada-entity)\n[![codecov](https://codecov.io/gh/oeg-upm/tada-entity/branch/master/graph/badge.svg)](https://codecov.io/gh/oeg-upm/tada-entity)\n[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/) \n",
             "confidence": [
-                1
+                [
+                    0.9277923820229652
+                ]
             ],
-            "technique": "Header extraction"
+            "technique": "Supervised classification",
+            "originalHeader": "tada-entity"
         },
         {
-            "excerpt": "2. Run the following command \n",
+            "excerpt": "# Installation \n## Requirements\n* `virtualenv`\n* `python3`\n* `mysql`\n* `SPARQLWrapper` (using [this fork](https://github.com/syats/sparqlwrapper) as it supports self-signed certificates). \n\n## Installation steps (Linux and MacOS)\n1. Download the project \n```\ngit clone git@github.com:oeg-upm/tada-entity.git; cd tada-entity/\n```\n2. Create virtual environment \nBASH3*\n3. Install dependencies \nBASH4*\n4. create a mysql.cfg file in the same folder (see below)\n5. Setup database and apply migrations \nBASH5* \n",
             "confidence": [
-                0.9652472391227556
+                [
+                    0.9769420979004304,
+                    0.9301687332288426,
+                    0.9980313603963294
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Invalid",
+            "parentHeader": "tada-entity --- Experiments --- SemTab"
         },
         {
-            "excerpt": "In the terminal (command line interface) go the directory tada-entity/experiments/webcommons_v2/ using the below command (assuming you are in the directory tada-entity): \ncd experiments/webcommons_v2 \n",
+            "excerpt": "# Run the experiments\n## Web Commons v2\n1. Create the directory `tada-entity/experiments/webcommons_v2/data` (where `tada-entity` is the project's directory.\n2. Copy the json files to that directory. The data can be found [here](http://webdatacommons.org/webtables/goldstandardV2.html).\n3. In the terminal (command line interface) go the directory `tada-entity/experiments/webcommons_v2/` using the below command (assuming you are in the directory `tada-entity`):\n```cd experiments/webcommons_v2```\n \n4. Generate the csv files using the command:\n \n",
             "confidence": [
-                0.9548486346044032,
-                0.97258628462344
+                [
+                    0.9335268045776643
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Invalid",
+            "parentHeader": "tada-entity --- Experiments --- SemTab"
         },
         {
-            "excerpt": "MacOS (tested with Mojave) \nLinux (tested with Ubuntu) \n",
+            "excerpt": "\n# Environment\n## Operating Systems\n* MacOS (tested with Mojave)\n* Linux (tested with Ubuntu)\n* Windows (not tested but let us know if it works for you) \n",
             "confidence": [
-                0.9137056376845348,
-                0.9376585833262824
+                [
+                    0.9487072102769846
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Invalid",
+            "parentHeader": "tada-entity --- Experiments --- SemTab"
+        },
+        {
+            "excerpt": "## To run the coverage\n```sh run_coverage.sh``` \n",
+            "confidence": [
+                [
+                    0.9346719853914754
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Invalid",
+            "parentHeader": "tada-entity --- Experiments --- SemTab"
         }
     ],
-    "long_title": {
+    "invocation": [
+        {
+            "excerpt": "Generate diagram\n1. Manually copy the numbers to `wcv1_one_vs_cppo_title.csv`\n2. Run the following command\n```\npython docs/generate_one_cppo_diagrams.py wcv1_one_vs_cppo_title.csv wcv1_one_vs_cppo_title\n``` \n",
+            "confidence": [
+                [
+                    0.9162692643385146
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Compare One alpha",
+            "parentHeader": "tada-entity --- Class k-fold error analysis"
+        }
+    ],
+    "longTitle": {
         "excerpt": "tada-entity",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
-    "requirement": [
-        {
-            "excerpt": "* `virtualenv`\n* `python3`\n* `mysql`\n* `SPARQLWrapper` (using [this fork](https://github.com/syats/sparqlwrapper) as it supports self-signed certificates).\n\n\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        }
-    ],
-    "run": [
-        {
-            "excerpt": "```sh run_tests.sh```\n\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        },
-        {
-            "excerpt": "```sh run_coverage.sh```\n\n*Note that the experiments are not included in the coverage*\n\n-->\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        }
-    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/tada-entity",
         "confidence": [
@@ -336,28 +187,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/tada-entity/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:29:20 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:29:20 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -365,6 +196,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/tada-entity/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:48:08 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:48:08 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -381,7 +232,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/tada-entity/blob/master/README.md",
         "confidence": [
             1.0
@@ -417,14 +268,14 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v2.0",
+                "tagName": "v2.0",
                 "name": "v2.0",
-                "author_name": "ahmad88me",
+                "authorName": "ahmad88me",
                 "authorType": "User",
                 "body": "This includes multiple specificity functions and the experiments for T2Dv1, T2Dv2, and the Olympic Games.",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/tada-entity/tarball/v2.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/tada-entity/zipball/v2.0",
-                "html_url": "https://github.com/oeg-upm/tada-entity/releases/tag/v2.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/tada-entity/tarball/v2.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/tada-entity/zipball/v2.0",
+                "htmlUrl": "https://github.com/oeg-upm/tada-entity/releases/tag/v2.0",
                 "url": "https://api.github.com/repos/oeg-upm/tada-entity/releases/16585587",
                 "dateCreated": "2019-04-05T12:43:39Z",
                 "datePublished": "2019-04-05T16:28:38Z"

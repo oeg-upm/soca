@@ -1,11 +1,15 @@
 {
     "description": [
         {
-            "excerpt": "Mapeathor is a simple spreadsheet parser able to generate mapping rules in three mapping languages: R2RML, RML (with extension to functions from FnO) and YARRRML. It takes the mapping rules expressed in a spreadsheet and transforms them into the desired language. The spreadsheet template is designed to facilitate the mapping rules' writting, with the aim of being language independent, and thus, lowering the barrier of generating mappings for non-expert users. \n",
+            "excerpt": "[Mapeathor](https://morph.oeg.fi.upm.es/tool/mapeathor) is a simple spreadsheet parser able to generate mapping rules in three mapping languages: R2RML, RML (with extension to functions from FnO) and YARRRML. It takes the mapping rules expressed in a spreadsheet and transforms them into the desired language. The spreadsheet template is designed to facilitate the mapping rules' writting, with the aim of being language independent, and thus, lowering the barrier of generating mappings for non-expert users. \n",
             "confidence": [
-                0.9967629643513142
+                [
+                    0.9955817977681868
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Mapeathor translates your mapping rules specified in spreadsheets to a mapping language.",
+            "parentHeader": "Mapeathor"
         },
         {
             "excerpt": "Translator of spreadsheet mappings into R2RML, RML or YARRRML",
@@ -15,7 +19,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Mapeathor",
         "confidence": [
             1.0
@@ -31,27 +35,34 @@
             "technique": "Regular expression"
         }
     ],
+    "logo": {
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/Mapeathor/master/imgs/Square_logo_mapeathor.png",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/Mapeathor/master/imgs/sheets.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/Mapeathor/master/imgs/workflow.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "contact": [
         {
-            "excerpt": "- [Ana Iglesias-Molina](https://github.com/anaigmo) (ana.iglesiasm@upm.es)\n- [Luis Pozo](https://github.com/w0xter) (luis.pozo@upm.es)\n- [Daniel Do\u00f1a](https://github.com/daniel-dona) (daniel.dona@xnor.ga)\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        }
-    ],
-    "run": [
-        {
-            "excerpt": "The easiest way of running Mapeathor is using the [web service](https://morph.oeg.fi.upm.es/demo/mapeathor) and the [Swagger](https://morph.oeg.fi.upm.es/tool/mapeathor/swagger/) instance. For CLI lovers, the service is available as a [PyPi package](https://pypi.org/project/mapeathor/) and Docker image. The instructions of the latest can be found in the [wiki](https://github.com/oeg-upm/Mapeathor/wiki).\n\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        }
-    ],
-    "usage": [
-        {
-            "excerpt": "A more detailed explanation is provided in the [wiki](https://github.com/oeg-upm/Mapeathor/wiki).\n\n",
+            "originalHeader": "Authors and contact",
+            "excerpt": "- [Luis Pozo](https://github.com/w0xter) (luis.pozo@upm.es)\n- [Daniel Do\u00f1a](https://github.com/daniel-dona) (daniel.dona@xnor.ga)\n",
+            "parentHeader": "Mapeathor",
             "confidence": [
                 1
             ],
@@ -124,28 +135,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/mapeathor/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 19,
-            "date": "Sun, 20 Feb 2022 11:31:19 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 6,
-            "date": "Sun, 20 Feb 2022 11:31:19 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -170,6 +161,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 19,
+            "date": "Mon, 21 Feb 2022 05:49:32 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 6,
+            "date": "Mon, 21 Feb 2022 05:49:32 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "Python",
@@ -180,7 +191,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/mapeathor/blob/master/README.md",
         "confidence": [
             1.0
@@ -206,66 +217,66 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v1.5.3",
+                "tagName": "v1.5.3",
                 "name": "v1.5.3",
-                "author_name": "anaigmo",
+                "authorName": "anaigmo",
                 "authorType": "User",
                 "body": "Quotes in constant predicates are fixed",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.3",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.3",
-                "html_url": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.3",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.3",
+                "htmlUrl": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.3",
                 "url": "https://api.github.com/repos/oeg-upm/mapeathor/releases/59133274",
                 "dateCreated": "2022-02-09T15:01:28Z",
                 "datePublished": "2022-02-09T15:02:57Z"
             },
             {
-                "tag_name": "v1.5.2",
+                "tagName": "v1.5.2",
                 "name": "v1.5.2",
-                "author_name": "anaigmo",
+                "authorName": "anaigmo",
                 "authorType": "User",
                 "body": "Support to blank nodes in subjects added",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.2",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.2",
-                "html_url": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.2",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.2",
+                "htmlUrl": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.2",
                 "url": "https://api.github.com/repos/oeg-upm/mapeathor/releases/58703250",
                 "dateCreated": "2022-02-04T16:19:37Z",
                 "datePublished": "2022-02-04T16:22:39Z"
             },
             {
-                "tag_name": "v1.5.1",
+                "tagName": "v1.5.1",
                 "name": "v1.5.1",
-                "author_name": "anaigmo",
+                "authorName": "anaigmo",
                 "authorType": "User",
                 "body": "Test versioning",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.1",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.1",
-                "html_url": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.1",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.1",
+                "htmlUrl": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.1",
                 "url": "https://api.github.com/repos/oeg-upm/mapeathor/releases/58509092",
                 "dateCreated": "2022-02-02T12:06:41Z",
                 "datePublished": "2022-02-02T12:07:46Z"
             },
             {
-                "tag_name": "v1.5.0",
+                "tagName": "v1.5.0",
                 "name": "v1.5.0",
-                "author_name": "anaigmo",
+                "authorName": "anaigmo",
                 "authorType": "User",
                 "body": "This release incorporates the changes done over the last two years, including bugs, enhancements, source code modularization and a reorganization of the package content.",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.0",
-                "html_url": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.0",
+                "htmlUrl": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.0",
                 "url": "https://api.github.com/repos/oeg-upm/mapeathor/releases/58504800",
                 "dateCreated": "2022-02-02T10:54:05Z",
                 "datePublished": "2022-02-02T11:02:32Z"
             },
             {
-                "tag_name": "v1.0",
+                "tagName": "v1.0",
                 "name": "First template",
-                "author_name": "anaigmo",
+                "authorName": "anaigmo",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.0",
-                "html_url": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.0",
+                "htmlUrl": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.0",
                 "url": "https://api.github.com/repos/oeg-upm/mapeathor/releases/21580066",
                 "dateCreated": "2019-11-08T15:24:55Z",
                 "datePublished": "2019-11-19T10:26:47Z"

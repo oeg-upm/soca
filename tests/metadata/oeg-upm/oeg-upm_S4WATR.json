@@ -1,22 +1,15 @@
 {
     "description": [
         {
-            "excerpt": "Trabajo Fin de Grado: Introducir soporte al formato GeoPackage en herramientas de Linked Data Geogr\u00e1fico desarrolladas por el Grupo de Ingenier\u00eda Ontol\u00f3gica",
+            "excerpt": "Water Ontology",
             "confidence": [
                 1.0
             ],
             "technique": "GitHub API"
         }
     ],
-    "longTitle": {
-        "excerpt": "actualizar-herramientas-linked-data-geografico-OEG",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo",
+        "excerpt": "https://github.com/oeg-upm/S4WATR",
         "confidence": [
             1.0
         ],
@@ -37,49 +30,49 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2021-05-07T16:49:57Z",
+        "excerpt": "2019-09-09T10:05:57Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2021-12-08T22:15:09Z",
+        "excerpt": "2019-11-29T12:18:20Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "morph-geo",
+        "excerpt": "S4WATR",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/morph-geo",
+        "excerpt": "oeg-upm/S4WATR",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-geo/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/S4WATR/issues{/number}",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-geo/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/S4WATR/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo/releases",
+        "excerpt": "https://github.com/oeg-upm/S4WATR/releases",
         "confidence": [
             1.0
         ],
@@ -88,7 +81,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 07:16:03 GMT"
+            "date": "Mon, 21 Feb 2022 05:54:23 GMT"
         },
         "confidence": [
             1.0
@@ -97,8 +90,8 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 1,
-            "date": "Mon, 21 Feb 2022 07:16:03 GMT"
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 05:54:23 GMT"
         },
         "confidence": [
             1.0
@@ -107,8 +100,7 @@
     },
     "languages": {
         "excerpt": [
-            "Java",
-            "TeX"
+            "HTML"
         ],
         "confidence": [
             1.0
@@ -116,7 +108,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo/blob/main/README.md",
+        "excerpt": "https://github.com/oeg-upm/S4WATR/blob/master/README.md",
         "confidence": [
             1.0
         ],

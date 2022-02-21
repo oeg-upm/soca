@@ -12,12 +12,15 @@
         {
             "excerpt": "En este repositorio estamos intentando enlazar todas las contribuciones que pueda ir haciendo la comunidad acad\u00e9mica espa\u00f1ola para aplicar t\u00e9cnicas de Inteligencia Artificial sobre el conjunto de datos COVID-19 Open Research Dataset (CORD-19), as\u00ed como animar a todos a sumarse de manera voluntaria a esta iniciativa. \n",
             "confidence": [
-                0.999855375267491
+                [
+                    0.999855375267491
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "covid19"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "covid19",
         "confidence": [
             1.0
@@ -90,28 +93,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/covid19/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:58:48 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 5,
-            "date": "Sun, 20 Feb 2022 11:58:48 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -134,6 +117,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:56:29 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Mon, 21 Feb 2022 05:56:29 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "JavaScript",
@@ -146,7 +149,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/covid19/blob/master/README.md",
         "confidence": [
             1.0

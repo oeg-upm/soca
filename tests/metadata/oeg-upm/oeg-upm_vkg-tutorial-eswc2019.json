@@ -3,9 +3,13 @@
         {
             "excerpt": "Despite the emergence of RDF knowledge bases, exposed via SPARQL endpoints or as Linked Data, formats like CSV, JSON or XML are still the most used for exposing data on the web. Some solutions have been proposed to describe and integrate these resources using mapping languages (e.g. RML, CSVW, kR2RML, etc) and many of those are equipped with associated RDF generators (e.g. RML-Mapper, CSVW generator, Karma, etc).that they can not manage efficiently the data when is volatile (they can retrieve not updated data) and the performance along the integration process is a key factor (rapid answers over the data) As these solutions generate materialized RDF, they cannot efficiently deal with volatile data or provide a SPARQL entry point directly to the data sources. In this tutorial, we explain how to use a suite of tools to manage and exploitdata in heterogeneous formats (CSV, RDB, JSON or REST API) without the need to materialize theresulting RDF in a triple store. First, we present TADA, a tool for automatically annotating CSV files using existing Knowledge Graphs. Second, we present HELIO, a Linked Data publisher that provides a unified access in real-time to multiple heterogeneous data sources. Finally, we present an OBDA approach to exploit CSV published on the Web providing access via SPARQL or GraphQL \n",
             "confidence": [
-                0.9955476567711152
+                [
+                    0.9955476567711152
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Generating and querying (Virtual) Knowledge Graphs from heterogeneous data sources",
+            "parentHeader": "VKG2019"
         },
         {
             "excerpt": "Material for VKG2019 tutorial at ESWC2019",
@@ -15,7 +19,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "VKG2019",
         "confidence": [
             1.0
@@ -88,28 +92,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/vkg-tutorial-eswc2019/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 5,
-            "date": "Sun, 20 Feb 2022 11:30:05 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:30:05 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -136,6 +120,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Mon, 21 Feb 2022 05:48:39 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:48:39 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "Shell"
@@ -145,7 +149,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/vkg-tutorial-eswc2019/blob/master/README.md",
         "confidence": [
             1.0

@@ -1,11 +1,15 @@
 {
     "description": [
         {
-            "excerpt": "Despite the emergence of RDF knowledge bases, exposed via SPARQL endpoints or as Linked Data, formats like CSV, JSON or XML are still the most used for exposing data on the web. Some solutions have been proposed to describe and integrate these resources using declarative mapping languages (e.g. RML, CSVW, KR2RML, etc) and many of those are equipped with associated RDF generators (e.g. RMLMapper, CSVW generator, etc). The use of these technologies enables the construction of knowledge graphs in a declarative way. However, they have a steep learning curve for new users. Our aim in this tutorial is, from a practical perspective, to explain in detail the process of constructing knowledge graphs, from writing mappings to their use with suitable tools. First, we describe the mapping structure and a tool to ease writing mappings, Mapeathor, showing the main guidelines for attendants to create their own mappings. Then, we present Morph-CSV, a framework for virtual knowledge graph access over tabular data. Finally, we present Helio, a generator from heterogeneous data sources and publisher of Linked Data that provides unified access in real-time. \n",
+            "excerpt": "Despite the emergence of RDF knowledge bases, exposed via SPARQL endpoints or as Linked Data, formats like CSV, JSON or XML are still the most used for exposing data on the web. Some solutions have been proposed to describe and integrate these resources using declarative mapping languages (e.g. RML, CSVW, KR2RML, etc) and many of those are equipped with associated RDF generators (e.g. RMLMapper, CSVW generator, etc). The use of these technologies enables the construction of knowledge graphs in a declarative way. However, they have a steep learning curve for new users. Our aim in this tutorial is, from a practical perspective, to explain in detail the process of constructing knowledge graphs, from writing mappings to their use with suitable tools. First, we describe the mapping structure and a tool to ease writing mappings, [Mapeathor](https://morph.oeg.fi.upm.es/demo/mapeathor), showing the main guidelines for attendants to create their own mappings. Then, we present Morph-CSV, a framework for virtual knowledge graph access over tabular data. Finally, we present [Helio](http://helio.linkeddata.es/), a generator from heterogeneous data sources and publisher of Linked Data that provides unified access in real-time. \n",
             "confidence": [
-                0.9984733578774424
+                [
+                    0.9982339377908626
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Knowledge Graph Construction Using Declarative Mapping Rules",
+            "parentHeader": "KGC2020"
         },
         {
             "excerpt": "Material for KGC2020 tutorial at ISWC2020",
@@ -15,7 +19,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "KGC2020",
         "confidence": [
             1.0
@@ -88,28 +92,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/kgc-tutorial-iswc2020/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 5,
-            "date": "Sun, 20 Feb 2022 11:46:39 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 4,
-            "date": "Sun, 20 Feb 2022 11:46:39 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -117,6 +101,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/kgc-tutorial-iswc2020/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Mon, 21 Feb 2022 05:56:10 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 4,
+            "date": "Mon, 21 Feb 2022 05:56:10 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -133,7 +137,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/kgc-tutorial-iswc2020/blob/master/README.md",
         "confidence": [
             1.0

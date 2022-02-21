@@ -1,22 +1,6 @@
 {
     "description": [
         {
-            "excerpt": "The tool translates mapping rules from YARRRML in a pretty turtle-based serialization of RML. The translation is based  \non RML and YARRRML specifications. \nWe are working on inlcuding the following features which are not yet implemented: \n",
-            "confidence": [
-                0.9575463655649785,
-                0.9440017785383372,
-                0.9327828390873939
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Ontology Engineering Group - Data Integration: \n",
-            "confidence": [
-                0.9124827497889154
-            ],
-            "technique": "Supervised classification"
-        },
-        {
             "excerpt": "Repository for a human-readable translation of YARRRML mappings into a turtle-based RML rules",
             "confidence": [
                 1.0
@@ -26,24 +10,18 @@
     ],
     "installation": [
         {
-            "excerpt": "python3 -m pip install pretty-yarrrml2rml \n",
+            "excerpt": "In order to execute the code run you can download de PyPi module:\n```bash\npython3 -m pip install pretty-yarrrml2rml\npython3 -m pretty_yarrrml2rml -i path_to_input_yarrrml.yml -o path_to_output_rml.rml\n``` \n",
             "confidence": [
-                0.9674387932604293
+                [
+                    0.9718610716361873
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Execution",
+            "parentHeader": "Pretty-yarrrml2rml"
         }
     ],
-    "invocation": [
-        {
-            "excerpt": "import pretty_yarrrml2rml \nimport yaml \n",
-            "confidence": [
-                0.9133368656218674,
-                0.9022153493691685
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Pretty-yarrrml2rml",
         "confidence": [
             1.0
@@ -79,7 +57,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-01-21T17:39:07Z",
+        "excerpt": "2022-02-16T15:34:52Z",
         "confidence": [
             1.0
         ],
@@ -116,28 +94,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 06 Feb 2022 18:29:01 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 06 Feb 2022 18:29:01 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -161,6 +119,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Mon, 21 Feb 2022 07:13:55 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 07:13:55 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "Python"
@@ -170,7 +148,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/pretty-yarrrml2rml/blob/main/README.md",
         "confidence": [
             1.0
@@ -187,27 +165,27 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v0.5",
+                "tagName": "v0.5",
                 "name": "v0.5",
-                "author_name": "dachafra",
+                "authorName": "dachafra",
                 "authorType": "User",
                 "body": "- Refactorizing the code\r\n- New features included, such as the validation of the output file with RDFlib\r\n- Some identified bugs already fixed",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/tarball/v0.5",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/zipball/v0.5",
-                "html_url": "https://github.com/oeg-upm/pretty-yarrrml2rml/releases/tag/v0.5",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/tarball/v0.5",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/zipball/v0.5",
+                "htmlUrl": "https://github.com/oeg-upm/pretty-yarrrml2rml/releases/tag/v0.5",
                 "url": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/releases/46037225",
                 "dateCreated": "2021-07-12T07:00:09Z",
                 "datePublished": "2021-07-12T07:01:43Z"
             },
             {
-                "tag_name": "v0.1",
+                "tagName": "v0.1",
                 "name": "v0.1",
-                "author_name": "dachafra",
+                "authorName": "dachafra",
                 "authorType": "User",
                 "body": "Covering features:\r\n- Sources in any form\r\n- Subject in any form (no Graph property)\r\n- POMs (no Functions)",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/tarball/v0.1",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/zipball/v0.1",
-                "html_url": "https://github.com/oeg-upm/pretty-yarrrml2rml/releases/tag/v0.1",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/tarball/v0.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/zipball/v0.1",
+                "htmlUrl": "https://github.com/oeg-upm/pretty-yarrrml2rml/releases/tag/v0.1",
                 "url": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/releases/44398485",
                 "dateCreated": "2021-06-10T09:00:06Z",
                 "datePublished": "2021-06-10T09:01:15Z"

@@ -1,19 +1,35 @@
 {
     "description": [
         {
-            "excerpt": "Terminology extractor based on JATE 2.0 for Cibersecurity corpora \n",
+            "excerpt": "\nTerminology extractor based on JATE 2.0 for Cibersecurity corpora\n \n",
             "confidence": [
-                0.9699151018707276
+                [
+                    0.9699151018707276
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Terminology Extractor Incibe"
         },
         {
-            "excerpt": "and put /cvalue or /ttfidf in the Request-Handler \nThis work contains the library JATE 2.0  and an extension to work with Spanish documents \n",
+            "excerpt": "and put /cvalue or /ttfidf in the Request-Handler \n",
             "confidence": [
-                0.9596016138082215,
-                0.989277261664985
+                [
+                    0.9596016138082215
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "To retrieve terminology",
+            "parentHeader": "Terminology Extractor Incibe"
+        },
+        {
+            "excerpt": "This work contains the library JATE 2.0  and an extension to work with Spanish documents \n",
+            "confidence": [
+                [
+                    0.989277261664985
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Acknowledges"
         },
         {
             "excerpt": "Terminology extractor based on JATE 2.0 for Cibersecurity corpora",
@@ -27,21 +43,26 @@
         {
             "excerpt": "Zhang, Z., Gao, J., Ciravegna, F. 2016. JATE 2.0: Java Automatic Term Extraction with Apache Solr. In The Proceedings of the 10th Language Resources and Evaluation Conference, May 2016, Portoro\u017e, Slovenia \n",
             "confidence": [
-                0.9998594870927775
+                [
+                    0.9998594870927775
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Acknowledges"
         }
     ],
     "installation": [
         {
-            "excerpt": "Clone or download JATE: https://github.com/ziqizhang/jate\n\nCompile\n\n> mvn clean\n\n> mvn install\n\nCopy jate/target/jate-2.0-beta.11-jar-with-dependencies.jar to  terminology-extractor/solr-5.3.0/contrib/jate/lib/jate-2.0-beta.11-jar-with-dependencies.jar\n\n\n\n",
+            "originalHeader": "First Step  (trying to fix):",
+            "excerpt": "Clone or download JATE: https://github.com/ziqizhang/jate\n\nCompile\n\n> mvn clean\n\n> mvn install\n\nCopy jate/target/jate-2.0-beta.11-jar-with-dependencies.jar to  terminology-extractor/solr-5.3.0/contrib/jate/lib/jate-2.0-beta.11-jar-with-dependencies.jar\n\n\n",
+            "parentHeader": "Terminology Extractor Incibe --- To install",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Terminology Extractor Incibe",
         "confidence": [
             1.0
@@ -104,28 +125,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/terminology-extractor-incibe/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:27:00 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:27:00 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -138,7 +139,21 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:47:02 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:47:02 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -161,7 +176,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/terminology-extractor-incibe/blob/master/README.md",
         "confidence": [
             1.0

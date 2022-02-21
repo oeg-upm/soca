@@ -8,7 +8,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "IEBrain",
         "confidence": [
             1.0
@@ -17,6 +17,7 @@
     },
     "documentation": [
         {
+            "originalHeader": "Technical documentation",
             "excerpt": "* IEBrain core Ontology: [IEBrain](https://w3id.org/def/iebrain \"IEBrain\")\n* IEBrainActor Ontology: [IEBrain Actor](https://w3id.org/def/iebrainactor \"IEBrainActor\")\n\n\n",
             "confidence": [
                 1
@@ -80,28 +81,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/IEBrain/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 12:04:31 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 12:04:31 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -114,13 +95,27 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:06:07 GMT"
+        },
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 07:06:07 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/IEBrain/blob/master/README.md",
         "confidence": [
             1.0

@@ -1,13 +1,6 @@
 {
     "description": [
         {
-            "excerpt": "This repository contains the code and documentation generated for the Weather ontology which is available at: \n",
-            "confidence": [
-                0.9919265837625736
-            ],
-            "technique": "Supervised classification"
-        },
-        {
             "excerpt": "Repository for the BIMERR weather ontology",
             "confidence": [
                 1.0
@@ -15,7 +8,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Weather Ontology",
         "confidence": [
             1.0
@@ -88,28 +81,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-weather/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:44:38 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:44:38 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -117,6 +90,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/bimerr-weather/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:55:37 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:55:37 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -131,7 +124,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/bimerr-weather/blob/master/README.md",
         "confidence": [
             1.0

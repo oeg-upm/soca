@@ -1,12 +1,14 @@
 {
     "description": [
         {
-            "excerpt": "TADA for numeric column. It focuses on distributions to label numeric columns in tabular data. \nThe data is available here:  \n",
+            "excerpt": "TADA for numeric column. It focuses on distributions to label numeric columns in tabular data.\n \n",
             "confidence": [
-                0.9478889866832857,
-                0.9423888513638385
+                [
+                    0.9478889866832857
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "tada-num-dist"
         },
         {
             "excerpt": "TADA for numeric column. It focuses on distributions to label numeric columns in tabular data.",
@@ -18,7 +20,9 @@
     ],
     "citation": [
         {
-            "excerpt": "```\n@dataset{alobaid_ahmad_2018_1408562,\n  author       = {Alobaid, Ahmad and\n                  Corcho, Oscar},\n  title        = {Olympic Games 2020},\n  month        = sep,\n  year         = 2018,\n  publisher    = {Zenodo},\n  doi          = {10.5281/zenodo.1408562},\n  url          = {https://doi.org/10.5281/zenodo.1408562}\n}\n```\n\n",
+            "originalHeader": "To cite the Olympic Games dataset",
+            "excerpt": "```\n@dataset{alobaid_ahmad_2018_1408562,\n  author       = {Alobaid, Ahmad and\n                  Corcho, Oscar},\n  title        = {Olympic Games 2020},\n  month        = sep,\n  year         = 2018,\n  publisher    = {Zenodo},\n  doi          = {10.5281/zenodo.1408562},\n  url          = {https://doi.org/10.5281/zenodo.1408562}\n}\n```\n",
+            "parentHeader": "tada-num-dist --- Datasets --- Olympic Games Dataset",
             "confidence": [
                 1
             ],
@@ -32,107 +36,51 @@
             "technique": "Regular expression"
         },
         {
-            "excerpt": "| year | 0.76 | 0.70 | 0.73|  \n",
+            "excerpt": "The data is available here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1408562.svg)](https://doi.org/10.5281/zenodo.1408562) \n",
             "confidence": [
-                0.9664456561658856
+                [
+                    0.9999999672454299
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Olympic Games Dataset",
+            "parentHeader": "tada-num-dist --- Datasets"
         },
         {
-            "excerpt": "| year | 0.76 | 0.70 | 0.73|  \n",
+            "excerpt": "<!--\n## Data\n1. Download the csv files from here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1408562.svg)](https://doi.org/10.5281/zenodo.1408562)\n1. Create a folder `local_data/olympic_games/data`\n1. Put the csv files of the Olympic games inside it.\n1. Put the `meta.csv` in `local_data/olympic_games`\n-->\n \n",
             "confidence": [
-                0.9664456561658856
+                [
+                    0.9402849143276834
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.76 | 0.70 | 0.73|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.76 | 0.70 | 0.73|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.76 | 0.70 | 0.73|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.76 | 0.70 | 0.73|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.76 | 0.70 | 0.73|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.76 | 0.70 | 0.73|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.81 | 0.71 | 0.76|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.81 | 0.71 | 0.76|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.81 | 0.71 | 0.76|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "| year | 0.81 | 0.71 | 0.76|  \n",
-            "confidence": [
-                0.9664456561658856
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Olympic Games Dataset",
+            "parentHeader": "tada-num-dist --- Datasets"
         }
     ],
     "installation": [
         {
-            "excerpt": "* [T2Dv2_typology.csv](https://github.com/oeg-upm/ttla/blob/master/meta/T2Dv2_typology.csv)\n* [T2Dv2](http://webdatacommons.org/webtables/extended_instance_goldstandard.tar.gz)\n\n",
+            "originalHeader": "Manual",
+            "excerpt": "* [T2Dv2_typology.csv](https://github.com/oeg-upm/ttla/blob/master/meta/T2Dv2_typology.csv)\n* [T2Dv2](http://webdatacommons.org/webtables/extended_instance_goldstandard.tar.gz)\n",
+            "parentHeader": "tada-num-dist --- Datasets --- T2Dv2",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "excerpt": "You can run it as follows:sh scripts/olympic-download.sh \n",
+            "excerpt": "We have a script to download the data automatically here `scripts/olympic-download.sh` \nYou can run it as follows:```sh scripts/olympic-download.sh``` \n",
             "confidence": [
-                0.9679371642108594
+                [
+                    0.953214720681674
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Olympic Games Dataset",
+            "parentHeader": "tada-num-dist --- Datasets"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "tada-num-dist",
         "confidence": [
             1.0
@@ -221,28 +169,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/tada-qq/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 12:01:00 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 12:01:00 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -250,6 +178,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/tada-qq/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:57:12 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:57:12 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -265,7 +213,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/tada-qq/blob/master/README.md",
         "confidence": [
             1.0

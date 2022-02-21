@@ -1,22 +1,6 @@
 {
-    "description": [
-        {
-            "excerpt": "Trabajo Fin de Grado: Introducir soporte al formato GeoPackage en herramientas de Linked Data Geogr\u00e1fico desarrolladas por el Grupo de Ingenier\u00eda Ontol\u00f3gica",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
-    "longTitle": {
-        "excerpt": "actualizar-herramientas-linked-data-geografico-OEG",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo",
+        "excerpt": "https://github.com/oeg-upm/bimerr_materials_table",
         "confidence": [
             1.0
         ],
@@ -37,49 +21,49 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2021-05-07T16:49:57Z",
+        "excerpt": "2021-05-10T15:41:18Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2021-12-08T22:15:09Z",
+        "excerpt": "2021-06-28T08:37:47Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "morph-geo",
+        "excerpt": "bimerr_materials_table",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/morph-geo",
+        "excerpt": "oeg-upm/bimerr_materials_table",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-geo/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr_materials_table/issues{/number}",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-geo/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr_materials_table/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo/releases",
+        "excerpt": "https://github.com/oeg-upm/bimerr_materials_table/releases",
         "confidence": [
             1.0
         ],
@@ -88,7 +72,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 07:16:03 GMT"
+            "date": "Mon, 21 Feb 2022 07:16:11 GMT"
         },
         "confidence": [
             1.0
@@ -97,8 +81,8 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 1,
-            "date": "Mon, 21 Feb 2022 07:16:03 GMT"
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:16:11 GMT"
         },
         "confidence": [
             1.0
@@ -107,16 +91,8 @@
     },
     "languages": {
         "excerpt": [
-            "Java",
-            "TeX"
+            "Python"
         ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo/blob/main/README.md",
         "confidence": [
             1.0
         ],

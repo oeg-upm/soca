@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "This repo contains all the projects developed in the context of the project EasyTV \n",
+            "confidence": [
+                [
+                    0.9770146802655326
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "easytv-semantic-annotator"
+        },
+        {
             "excerpt": "Semantic annotator for sign language ontology",
             "confidence": [
                 1.0
@@ -8,7 +18,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "easytv-semantic-annotator",
         "confidence": [
             1.0
@@ -81,28 +91,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/easytv-semantic-annotator/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 06 Feb 2022 18:22:17 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 18:22:17 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -110,6 +100,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/easytv-semantic-annotator/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 07:06:12 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:06:12 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -127,7 +137,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/easytv-semantic-annotator/blob/main/README.md",
         "confidence": [
             1.0

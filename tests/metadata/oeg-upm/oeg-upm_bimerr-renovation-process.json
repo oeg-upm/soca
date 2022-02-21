@@ -1,11 +1,14 @@
 {
     "description": [
         {
-            "excerpt": "This repository contains the code and documentation generated for the Renovation Process ontology which is available at: \n",
+            "excerpt": "This repository contains the code and documentation generated for the Renovation Process ontology which is available at:\r\nhttp://bimerr.iot.linkeddata.es/def/renovation-process\r\n\r \n",
             "confidence": [
-                0.99023142124453
+                [
+                    0.9814943136874478
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Renovation Process Ontology"
         },
         {
             "excerpt": "Repository for the renovation process ontology.",
@@ -15,7 +18,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Renovation Process Ontology",
         "confidence": [
             1.0
@@ -78,28 +81,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-renovation-process/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 18:28:48 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 06 Feb 2022 18:28:48 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -112,13 +95,27 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:13:45 GMT"
+        },
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 07:13:45 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/bimerr-renovation-process/blob/main/README.md",
         "confidence": [
             1.0

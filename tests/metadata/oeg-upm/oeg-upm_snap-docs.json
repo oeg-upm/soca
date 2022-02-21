@@ -8,7 +8,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Transmodel Ontology",
         "confidence": [
             1.0
@@ -71,28 +71,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/snap-docs/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:44:30 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:44:30 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -105,7 +85,21 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:55:35 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:55:35 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -120,7 +114,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/snap-docs/blob/master/README.md",
         "confidence": [
             1.0
@@ -139,14 +133,14 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v0.1",
+                "tagName": "v0.1",
                 "name": "Transmodel Ontology Docs",
-                "author_name": "flowsta",
+                "authorName": "flowsta",
                 "authorType": "User",
                 "body": "First version of the Transmodel Ontology Documentation",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/snap-docs/tarball/v0.1",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/snap-docs/zipball/v0.1",
-                "html_url": "https://github.com/oeg-upm/snap-docs/releases/tag/v0.1",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/snap-docs/tarball/v0.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/snap-docs/zipball/v0.1",
+                "htmlUrl": "https://github.com/oeg-upm/snap-docs/releases/tag/v0.1",
                 "url": "https://api.github.com/repos/oeg-upm/snap-docs/releases/22149430",
                 "dateCreated": "2019-12-11T14:31:10Z",
                 "datePublished": "2019-12-11T15:51:45Z"

@@ -12,18 +12,13 @@
         {
             "excerpt": "You can run a local version using a server like Apache Tomcat. \n",
             "confidence": [
-                0.9548497701628138
+                [
+                    0.9548497701628138
+                ]
             ],
             "technique": "Supervised classification"
         }
     ],
-    "long_title": {
-        "excerpt": "![alt text](WebContent/static/images/logoprop.png \"OnToology\")",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/OnToologyDnD",
         "confidence": [
@@ -90,28 +85,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/OnToologyDnD/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 12:01:06 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 12:01:06 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -133,6 +108,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 05:57:15 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:57:15 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "Java",
@@ -144,7 +139,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/OnToologyDnD/blob/master/README.md",
         "confidence": [
             1.0

@@ -1,22 +1,6 @@
 {
-    "description": [
-        {
-            "excerpt": "Trabajo Fin de Grado: Introducir soporte al formato GeoPackage en herramientas de Linked Data Geogr\u00e1fico desarrolladas por el Grupo de Ingenier\u00eda Ontol\u00f3gica",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
-    "longTitle": {
-        "excerpt": "actualizar-herramientas-linked-data-geografico-OEG",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo",
+        "excerpt": "https://github.com/oeg-upm/delta-cims-monitor",
         "confidence": [
             1.0
         ],
@@ -37,49 +21,58 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2021-05-07T16:49:57Z",
+        "excerpt": "2020-07-21T09:52:11Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2021-12-08T22:15:09Z",
+        "excerpt": "2020-10-13T10:40:40Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
+    "description": [
+        {
+            "excerpt": "This monitor analyses the CIMs deployed by checking their health and potentially prevent attacks",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
     "name": {
-        "excerpt": "morph-geo",
+        "excerpt": "delta-cims-monitor",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/morph-geo",
+        "excerpt": "oeg-upm/delta-cims-monitor",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-geo/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/issues{/number}",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-geo/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo/releases",
+        "excerpt": "https://github.com/oeg-upm/delta-cims-monitor/releases",
         "confidence": [
             1.0
         ],
@@ -88,7 +81,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 07:16:03 GMT"
+            "date": "Mon, 21 Feb 2022 05:57:34 GMT"
         },
         "confidence": [
             1.0
@@ -97,8 +90,8 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 1,
-            "date": "Mon, 21 Feb 2022 07:16:03 GMT"
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:57:34 GMT"
         },
         "confidence": [
             1.0
@@ -107,16 +100,29 @@
     },
     "languages": {
         "excerpt": [
-            "Java",
-            "TeX"
+            "Java"
         ],
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo/blob/main/README.md",
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "#0.1.0",
+                "name": "0.1.0",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "CIMS Monitor version 0.1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/tarball/#0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/zipball/#0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/delta-cims-monitor/releases/tag/%230.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/releases/32497432",
+                "dateCreated": "2020-07-21T09:57:05Z",
+                "datePublished": "2020-10-13T10:42:24Z"
+            }
+        ],
         "confidence": [
             1.0
         ],

@@ -1,25 +1,16 @@
 {
     "description": [
         {
-            "excerpt": "The use of Eign library for matrices instead of fix n-dimentional arrays which are common in prototyping fuzzy c-means library. \n",
+            "excerpt": "\nThis project implements Fuzzy c-means from the original paper by James Bezdek.  \n* The use of Eign library for matrices instead of fix n-dimentional arrays which are common in prototyping fuzzy c-means library.\n* The use of dynamic sizes for matrices.\n* Make the FCM as a class, with all the related variables inside, so no need for Global variables and it also allow having multiple instances of FCM.\n* Add automated tests with googletest.\n* Add coverage for the tests.\n \n",
             "confidence": [
-                0.9355858029633661
+                [
+                    0.9024010455208966,
+                    0.9799087837209657
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Make the FCM as a class, with all the related variables inside, so no need for Global variables and it also allow having multiple instances of FCM. \n",
-            "confidence": [
-                0.9311836527000038
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Some of the dependancies: \n",
-            "confidence": [
-                0.9804181087665221
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Advantages of this implementation",
+            "parentHeader": "Fuzzy c-Means Library"
         },
         {
             "excerpt": "Fuzzy c-means c++ library",
@@ -29,52 +20,13 @@
             "technique": "GitHub API"
         }
     ],
-    "installation": [
-        {
-            "excerpt": "`make install`\n\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        },
-        {
-            "excerpt": "sh scripts/setup.sh \n",
-            "confidence": [
-                0.9605370163524597
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "* git \n",
-            "confidence": [
-                0.9395696914546919
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Fuzzy c-Means Library",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
-    "run": [
-        {
-            "excerpt": "`make test`\n\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        },
-        {
-            "excerpt": "`sh scripts/run_tests_with_docker.sh`\n\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        }
-    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/fcm-cpp",
         "confidence": [
@@ -141,28 +93,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/fcm-cpp/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 5,
-            "date": "Sun, 20 Feb 2022 11:26:57 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 3,
-            "date": "Sun, 20 Feb 2022 11:26:57 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -170,6 +102,26 @@
     },
     "downloadUrl": {
         "excerpt": "https://github.com/oeg-upm/fcm-cpp/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Mon, 21 Feb 2022 05:47:00 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Mon, 21 Feb 2022 05:47:00 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -187,7 +139,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/fcm-cpp/blob/master/README.md",
         "confidence": [
             1.0

@@ -10,15 +10,18 @@
     ],
     "citation": [
         {
-            "excerpt": "Vocabulary for DRUGS4COVID19 https://devpost.com/software/drugs4covid and  https://taiga.vencealvirus.software.imdea.org/project/ocorcho-salud-un-catalogo-de-medicamentos-usados-para-combatir-el-covid-19-segun-la-literatura-cientifica-y-aplicando-tecnicas-de-inteligencia-artificial-y-ciencia-ciudadana/wiki/home   \nOntology URI: https://w3id.org/def/DRUGS4COVID19 \n",
+            "excerpt": "Vocabulary for DRUGS4COVID19 https://devpost.com/software/drugs4covid and  https://taiga.vencealvirus.software.imdea.org/project/ocorcho-salud-un-catalogo-de-medicamentos-usados-para-combatir-el-covid-19-segun-la-literatura-cientifica-y-aplicando-tecnicas-de-inteligencia-artificial-y-ciencia-ciudadana/wiki/home   \nOntology URI: [https://w3id.org/def/DRUGS4COVID19](https://w3id.org/def/DRUGS4COVID19) \n",
             "confidence": [
-                0.9999811510128696,
-                0.9278824608274014
+                [
+                    0.9999811510128696,
+                    0.9919784769950174
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "DRUGS4COVID19"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "DRUGS4COVID19",
         "confidence": [
             1.0
@@ -81,28 +84,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19-vocab/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:59:41 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 5,
-            "date": "Sun, 20 Feb 2022 11:59:41 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -115,7 +98,21 @@
         ],
         "technique": "GitHub API"
     },
-    "license": {
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:56:35 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Mon, 21 Feb 2022 05:56:35 GMT"
+        },
         "confidence": [
             1.0
         ],
@@ -130,7 +127,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/drugs4covid19-vocab/blob/master/README.md",
         "confidence": [
             1.0

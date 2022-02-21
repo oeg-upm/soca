@@ -1,19 +1,25 @@
 {
     "description": [
         {
-            "excerpt": "Tool to transform ontology conceptualizations made with diagrams.net into OWL code. \n",
+            "excerpt": "Tool to transform ontology conceptualizations made with diagrams.net into OWL code.\r\n\r\nThe conceptualizations should follow the <a href=\"https://chowlk.linkeddata.es/notation.html\">Chowlk visual notation</a>. Please visit the specification for more details.\r\n\r \n",
             "confidence": [
-                0.920746187152997
+                [
+                    0.9370490666739703
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Chowlk Converter"
         },
         {
-            "excerpt": "ttl_data: Contains the ontology generated from the diagram in Turtle format. It is returned in string format. \nnew_namespaces: Contains the new namespaces created for the ontology, when prefixes are founded in the model but are not declared in the namespace block in the diagram. The returned object is a dictionary with the following format: {\"prefix1\": \"namespace1\", \"prefix2\": \"namespace2\"} \n",
+            "excerpt": "\r\nThe following command line will return the ontology in Turtle format.\r\n\r\n```bash\r\ncurl -F 'data=@/path/to/diagram.xml' https://chowlk.linkeddata.es/api\r\n```\r\n\r\nThe service will return the following dictionary:\r\n\r\nBASH2*\r\n\r\n* **ttl_data:** Contains the ontology generated from the diagram in Turtle format. It is returned in string format.\r\n* **new_namespaces:** Contains the new namespaces created for the ontology, when prefixes are founded in the model but are not declared in the namespace block in the diagram. The returned object is a dictionary with the following format: {\"prefix1\": \"namespace1\", \"prefix2\": \"namespace2\"}\r\n* **errors:** Contains the errors founded in the ontology diagram, organized by types. The following keywords can be founded: \"Concepts\", \"Arrows\", \"Rhombuses\", \"Ellipses\", \"Attributes\", \"Namespaces\", \"Metadata\", \"Hexagons\", \"Individual\". The value for these keywords is an array that may contain objects that have the following structure:\r\n\r\nBASH3*\r\n\r\n\r \n",
             "confidence": [
-                0.9256286996507834,
-                0.9919477092213548
+                [
+                    0.9414259833957962
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "2. The API:",
+            "parentHeader": "Chowlk Converter --- How to use the tool"
         },
         {
             "excerpt": "Tool to transform an ontology diagram into OWL code.",
@@ -25,16 +31,26 @@
     ],
     "installation": [
         {
-            "excerpt": "git clone https://github.com/oeg-upm/Chowlk.git \ngit checkout webservice \n",
+            "excerpt": "```bash\r\ngit clone https://github.com/oeg-upm/Chowlk.git\r\ngit checkout webservice\r\n```\r\n\r \n",
             "confidence": [
-                0.9893272198983933,
-                0.9206633769338113
+                [
+                    0.9926670979372864
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Copy the project:",
+            "parentHeader": "Chowlk Converter --- How to use the tool"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Chowlk Converter",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "logo": {
+        "excerpt": "https://github.com/oeg-upm/Chowlk/blob/webservice/static/resources/logo.png",
         "confidence": [
             1.0
         ],
@@ -42,7 +58,9 @@
     },
     "contact": [
         {
+            "originalHeader": "Contact",
             "excerpt": "* Serge Ch\u00e1vez-Feria (serge.chavez.feria@upm.es)\r\n* Maria Poveda-Villal\u00f3n (mpoveda@fi.upm.es)\r\n",
+            "parentHeader": "Chowlk Converter",
             "confidence": [
                 1
             ],
@@ -51,7 +69,9 @@
     ],
     "requirement": [
         {
-            "excerpt": "```bash\r\npip install -r requirements.txt\r\n```\r\n\r\n",
+            "originalHeader": "Requirements:",
+            "excerpt": "```bash\r\npip install -r requirements.txt\r\n```\r\n\r",
+            "parentHeader": "Chowlk Converter --- How to use the tool",
             "confidence": [
                 1
             ],
@@ -60,14 +80,9 @@
     ],
     "run": [
         {
-            "excerpt": "\r\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        },
-        {
-            "excerpt": "```bash\r\npython app.py\r\n```\r\n\r\n",
+            "originalHeader": "To run the app locally:",
+            "excerpt": "```bash\r\npython app.py\r\n```\r\n\r",
+            "parentHeader": "Chowlk Converter --- How to use the tool",
             "confidence": [
                 1
             ],
@@ -76,7 +91,9 @@
     ],
     "usage": [
         {
-            "excerpt": "\r\nYou have several options to use this tool.\r\n\r\n",
+            "originalHeader": "How to use the tool",
+            "excerpt": "\r\nYou have several options to use this tool.\r\n\r",
+            "parentHeader": "Chowlk Converter",
             "confidence": [
                 1
             ],
@@ -149,28 +166,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/Chowlk/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 2,
-            "date": "Sun, 20 Feb 2022 11:59:54 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Sun, 20 Feb 2022 11:59:54 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -196,6 +193,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Mon, 21 Feb 2022 05:56:41 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Mon, 21 Feb 2022 05:56:41 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "Python",
@@ -208,7 +225,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/Chowlk/blob/webservice/README.md",
         "confidence": [
             1.0
@@ -234,14 +251,14 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v0.0.1",
+                "tagName": "v0.0.1",
                 "name": "Chowlk Web Service v0.0.1",
-                "author_name": "Serge3006",
+                "authorName": "Serge3006",
                 "authorType": "User",
                 "body": "",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/Chowlk/tarball/v0.0.1",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/Chowlk/zipball/v0.0.1",
-                "html_url": "https://github.com/oeg-upm/Chowlk/releases/tag/v0.0.1",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/Chowlk/tarball/v0.0.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/Chowlk/zipball/v0.0.1",
+                "htmlUrl": "https://github.com/oeg-upm/Chowlk/releases/tag/v0.0.1",
                 "url": "https://api.github.com/repos/oeg-upm/Chowlk/releases/35043501",
                 "dateCreated": "2020-12-08T15:05:57Z",
                 "datePublished": "2020-12-09T13:39:44Z"

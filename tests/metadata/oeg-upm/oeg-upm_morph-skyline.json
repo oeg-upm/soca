@@ -1,29 +1,27 @@
 {
     "description": [
         {
-            "excerpt": "Morph-Skyline is an RDB2RDF engine for skyline queries developed by the Ontology Engineering Group, that follows the R2RML specification (http://www.w3.org/TR/r2rml/).  \nSkyline queries are preference-based queries, which were proposed by B\u00f6rzs\u00f6nyi et al. [1] extending SQL by means of a SKYLINE OF clause as follows: SKYLINE OF d1 [MIN | MAX],..., dn [MIN | MAX] where where di denote the dimensions of the Skyline, and MIN and MAX specify whether the value in that dimension should be minimised or maximised. \nMorph-Skyline extends Morph-RDB and it supports two operational modes: data upgrade (generating RDF instances from data in a relational database) and skyline query translation (SPARQL to SQL). Morph-Skyline has been tested on synthetic datasets using the data generator provided by B\u00f6rzs\u00f6nyi et al.[1]. At the moment, Morph-Skyline works with EXASol. \nThis repository contains code of the engine and a set of general experiments to test perfomance, scalability and completeness of our approach. \nAdditionally, for the ISWC'20 demo-paper \"Morph-Skyline: Skyline Queries for Virtual Knowledge Graph Access\", the resources and results can be found in the demo-paper folder \n",
+            "excerpt": "Morph-Skyline is an RDB2RDF engine for skyline queries developed by the Ontology Engineering Group, that follows the R2RML specification (http://www.w3.org/TR/r2rml/).  \nSkyline queries are preference-based queries, which were proposed by B\u00f6rzs\u00f6nyi et al. [1] extending SQL by means of a SKYLINE OF clause as follows: SKYLINE OF d1 [MIN | MAX],..., dn [MIN | MAX] where where di denote the dimensions of the Skyline, and MIN and MAX specify whether the value in that dimension should be minimised or maximised. \nMorph-Skyline extends Morph-RDB and it supports two operational modes: data upgrade (generating RDF instances from data in a relational database) and skyline query translation (SPARQL to SQL). Morph-Skyline has been tested on synthetic datasets using the data generator provided by B\u00f6rzs\u00f6nyi et al.[1]. At the moment, Morph-Skyline works with EXASol. \nThis repository contains code of the engine and a set of general experiments to test perfomance, scalability and completeness of our approach.\nAdditionally, for the ISWC'20 demo-paper \"Morph-Skyline: Skyline Queries for Virtual Knowledge Graph Access\", the resources and results can be found in the [demo-paper folder](https://github.com/oeg-upm/morph-skyline/tree/master/demo-paper) \n",
             "confidence": [
-                0.9469979235501415,
-                0.9624420352133615,
-                0.96689825098161,
-                0.9913999542998098,
-                0.9039932181223785
+                [
+                    0.9469979235501415,
+                    0.9624420352133615,
+                    0.96689825098161,
+                    0.9817371976708774
+                ]
             ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "If, on the other hand, you want to edit the project or at least work from an IDE such as Eclipse, we suggest you to follow this steps: \n",
-            "confidence": [
-                0.9194108186276992
-            ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Morph-Skyline"
         },
         {
             "excerpt": "<!--- Acknowledgement: Since January 2020, the development of morph-Skyline has been supported by the SPRINT project (http://sprint-transport.eu/).---> \n",
             "confidence": [
-                0.9227569447700069
+                [
+                    0.9227569447700069
+                ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Morph-Skyline"
         },
         {
             "excerpt": "Virtual Knowledge Graph Access for Skyline Queries",
@@ -33,7 +31,7 @@
             "technique": "GitHub API"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Morph-Skyline",
         "confidence": [
             1.0
@@ -105,28 +103,8 @@
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
+    "forksUrl": {
         "excerpt": "https://api.github.com/repos/oeg-upm/morph-skyline/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:45:42 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Sun, 20 Feb 2022 11:45:42 GMT"
-        },
         "confidence": [
             1.0
         ],
@@ -152,6 +130,26 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:55:54 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Mon, 21 Feb 2022 05:55:54 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
             "Scala",
@@ -164,7 +162,7 @@
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
+    "readmeUrl": {
         "excerpt": "https://github.com/oeg-upm/morph-skyline/blob/master/README.md",
         "confidence": [
             1.0
@@ -195,14 +193,14 @@
     "releases": {
         "excerpt": [
             {
-                "tag_name": "v1.0",
+                "tagName": "v1.0",
                 "name": "v1.0",
-                "author_name": "dachafra",
+                "authorName": "dachafra",
                 "authorType": "User",
                 "body": "The first version of the engine. It supports the Skyline operator in SPARQL to directly query RDB",
-                "tarball_url": "https://api.github.com/repos/oeg-upm/morph-skyline/tarball/v1.0",
-                "zipball_url": "https://api.github.com/repos/oeg-upm/morph-skyline/zipball/v1.0",
-                "html_url": "https://github.com/oeg-upm/morph-skyline/releases/tag/v1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-skyline/tarball/v1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-skyline/zipball/v1.0",
+                "htmlUrl": "https://github.com/oeg-upm/morph-skyline/releases/tag/v1.0",
                 "url": "https://api.github.com/repos/oeg-upm/morph-skyline/releases/29399517",
                 "dateCreated": "2020-05-24T17:08:47Z",
                 "datePublished": "2020-08-06T09:10:16Z"
