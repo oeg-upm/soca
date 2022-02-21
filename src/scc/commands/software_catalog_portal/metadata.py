@@ -49,53 +49,57 @@ class metadata(object):
                    data-toggle="tooltip" data-placement="right" title="Copy card as embbeded HTML">
                    </button>"""
 
+    def add_tooltip(self, placement, tooltip_text):
+        """Supported placements: ['bottom', 'up', 'right', 'left']"""
+        return f'''data-toggle="tooltip" data-placement="{placement}" title="{tooltip_text}" alt="{tooltip_text}"'''
+
     def html_repo_icons(self):
 
         html = ''
-    
-        license = self.license()
-        if license:
-            html += f"""<a href="{safe_dic(license,'url')}" target="_blank" class="repo-icon">
-                            <img src="{self.base}repo_icons/license.png" 
-                            alt="license" class="repo-icon" 
-                            data-toggle="tooltip" data-placement="bottom" title="License: {license['name']}">
-                        </a>"""
-        
+
         readme_url = self.readme()
         if readme_url:
             html += f"""<a href="{readme_url}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/readme.png" 
-                            alt="readme" class="repo-icon" 
-                            data-toggle="tooltip" data-placement="bottom" title="Readme">
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom','Readme')}>
+                        </a>"""
+
+        license = self.license()
+        if license:
+            html += f"""<a href="{safe_dic(license,'url')}" target="_blank" class="repo-icon">
+                            <img src="{self.base}repo_icons/license.png" 
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom',f'License: {license["name"]}')}>
                         </a>"""
         
         notebook = self.notebook()
         if notebook:
             html += f"""<img src="{self.base}repo_icons/notebook.png" 
-                        alt="notebook" class="repo-icon" 
-                        data-toggle="tooltip" data-placement="bottom" title="Notebook">"""
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom','Notebook')}>"""
 
         download_url = self.download_url()
         if download_url:
             html += f"""<a href="{download_url}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/download.png" 
-                            alt="download" class="repo-icon" 
-                            data-toggle="tooltip" data-placement="bottom" title="Download">
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom','Download')}>
                         </a>"""
 
         citations = self.citations()
         if citations:
             for citation in citations:
                 html += f"""<img src="{self.base}repo_icons/citation.png" 
-                            alt="citation" class="repo-icon" 
-                            data-toggle="tooltip" data-placement="bottom" title="{citation}">"""
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom',f"{citation}")}>"""
 
         identifier = self.identifier()
         if identifier:
             html += f"""<a href="{identifier}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/doi.png" 
-                            alt="DOI" class="repo-icon" 
-                            data-toggle="tooltip" data-placement="bottom" title="DOI: {identifier}">
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom',f"DOI: {identifier}")}>
                     </a>"""
                             
         papers = self.paper()
@@ -103,42 +107,41 @@ class metadata(object):
             for paper in papers:
                 html += f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
                                 <img src="{self.base}repo_icons/paper.png" 
-                                alt="Paper: {paper.title_paper}" class="repo-icon" 
-                                data-toggle="tooltip" data-placement="bottom" title="Paper: {paper.title_paper}">
+                                class="repo-icon" 
+                                {self.add_tooltip('bottom',f"Paper: {paper.title_paper}")}>
                         </a>"""
             
         docker = self.docker()
         if docker:
             html += f"""<img src="{self.base}repo_icons/docker.png" 
-                        alt="docker" class="repo-icon" 
-                        data-toggle="tooltip" data-placement="bottom" title="{[str(d) for d in docker]}">"""
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom',f"{[str(d) for d in docker]}")}>"""
         
         installation = self.installation()
         if installation:
             html += f"""<img src="{self.base}repo_icons/installation.png" 
-                        alt="installation" class="repo-icon" 
-                        data-toggle="tooltip" data-placement="bottom" title="Installation:\n{installation}">"""
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom','Installation')}>"""
         
         requirements = self.requirements()
         if requirements:
-            html += f"""<img src="{self.base}repo_icons/requirements.png" 
-                        alt="requirements" 
+            html += f"""<img src="{self.base}repo_icons/requirements.png"  
                         class="repo-icon" 
-                        data-toggle="tooltip" data-placement="bottom" title="Requirements:\n{requirements}">"""
+                        {self.add_tooltip('bottom','Requirements')}>"""
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
             html += f"""<a href="{hasDocumentation}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/documentation.png" 
-                            alt="Documentation" class="repo-icon" 
-                            data-toggle="tooltip" data-placement="bottom" title="Documentation">
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom','Documentation')}>
                         </a>"""
 
         acknowledgement =  self.acknowledgement()
         if acknowledgement:
             html += f"""<img src="{self.base}repo_icons/acknowledgement.png" 
-                        alt="acknowledgement" class="repo-icon" 
-                        data-toggle="tooltip" data-placement="bottom" title="Acknowledgement:\n{acknowledgement}">"""
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom',f"Acknowledgement: {acknowledgement}")}>"""
 
         return html
     
@@ -189,7 +192,7 @@ class metadata(object):
         return safe_list(safe_dic(safe_dic(self.md,'hasDocumentation'),'excerpt'),0)
 
     def requirements(self):
-        return safe_list(safe_dic(safe_dic(self.md,'requirement'),'excerpt'),0)
+        return safe_dic(safe_list(safe_dic(self.md,'requirement'),0),'excerpt')
 
     def installation(self):
         return safe_dic(safe_list(safe_dic(self.md,'installation'),0),'excerpt')
@@ -216,7 +219,7 @@ class metadata(object):
         return safe_dic(safe_dic(self.md,'hasExecutableNotebook'),'excerpt')
 
     def readme(self):
-        return safe_dic(safe_dic(self.md,'readme_url'),'excerpt')
+        return safe_dic(safe_dic(self.md,'readmeUrl'),'excerpt')
 
     def languagues(self):
         langs = safe_dic(safe_dic(self.md,'languages'),'excerpt')
@@ -258,13 +261,13 @@ class metadata(object):
         return date_modified
     
     def last_update_days(self):
-        date_of_extraction_str = safe_dic(safe_dic(safe_dic(self.md,'stargazers_count'),'excerpt'),'date')[:-4]
+        date_of_extraction_str = safe_dic(safe_dic(safe_dic(self.md,'stargazersCount'),'excerpt'),'date')[:-4]
         date_of_extraction = datetime.strptime(date_of_extraction_str, '%a, %d %b %Y %H:%M:%S') 
         last_update = self.last_update()
         return (date_of_extraction - last_update).days
 
     def stars(self):
-        return safe_dic(safe_dic(safe_dic(self.md,'stargazers_count'),'excerpt'),'count')
+        return safe_dic(safe_dic(safe_dic(self.md,'stargazersCount'),'excerpt'),'count')
     
     def n_releases(self):
         rel = safe_dic(safe_dic(self.md,'releases'),'excerpt')

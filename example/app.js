@@ -22,6 +22,7 @@ const download = document.getElementById('download');
 const installation = document.getElementById('installation');
 const license = document.getElementById('license');
 const notebook = document.getElementById('notebook');
+const requirements = document.getElementById('requirements');
 const paper = document.getElementById('paper');
 
 const title = document.getElementById('title');
@@ -104,7 +105,13 @@ notebook.addEventListener('click', () => {
     else notebook.classList.remove("filter-selected");
     search(); 
 });
-
+requirements.addEventListener('click', () => { 
+    state_requirements = !state_requirements;
+    if (state_requirements)
+        requirements.classList.add("filter-selected");
+    else requirements.classList.remove("filter-selected");
+    search(); 
+});
 paper.addEventListener('click', () => { 
     state_paper = !state_paper; 
     if (state_paper)
@@ -162,6 +169,7 @@ let state_download = false;
 let state_installation = false;
 let state_license = false;
 let state_notebook = false;
+let state_requirements = false;
 let state_paper = false;
 
 let state_title = false;
@@ -185,6 +193,7 @@ function search() {
                 && ((state_license)? card.license : true)
                 && ((state_notebook)? card.notebook : true)
                 && ((state_paper)? card.paper : true)
+                && ((state_requirements)? card.requirements : true)
                 && ((state_installation)? card.installation : true));
     });
 

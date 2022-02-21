@@ -70,11 +70,11 @@ def html_view(repo_metadata, embedded, minify=True):
                 <div class="flex-horizontal float-right">
                     {md.recently_updated()}
                 </div>
-                <div class="flex-horizontal float-right" style="margin-top: 0.3rem;" data-toggle="tooltip" data-placement="right" title="Stars">
+                <div class="flex-horizontal float-right" style="margin-top: 0.3rem;" {md.add_tooltip('right','Stars')}>
                     <b>{md.stars()}</b>
                     <img src="{md.icon_star()}" alt="stars" class="repo-icon">
                 </div>
-                <div data-toggle="tooltip" data-placement="right" title="Releases">
+                <div {md.add_tooltip('right','Releases')}>
                     <a href="{md.url_releases()}" target="_blank" class="flex-horizontal float-right" style="text-decoration: none;">
                         <b>{md.n_releases()}</b>
                         <img src="{md.icon_releases()}" alt="releases" class="repo-icon">
