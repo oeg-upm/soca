@@ -1,4 +1,3 @@
-from matplotlib.pyplot import title
 from scc import base_dir
 from pathlib import Path
 from os import listdir
