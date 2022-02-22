@@ -1,85 +1,69 @@
 {
-    "description": [
-        {
-            "excerpt": "Repository for the new version of Hydrontology. ",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
-    "longTitle": {
-        "excerpt": "hydrontology",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/hydrontology",
+        "excerpt": "https://github.com/dakixr/MenuSantander",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "owner": {
-        "excerpt": "oeg-upm",
+        "excerpt": "dakixr",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "ownerType": {
-        "excerpt": "Organization",
+        "excerpt": "User",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2017-12-01T09:58:31Z",
+        "excerpt": "2019-07-10T07:47:35Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2017-12-01T09:58:31Z",
+        "excerpt": "2019-09-01T17:11:14Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "hydrontology",
+        "excerpt": "MenuSantander",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/hydrontology",
+        "excerpt": "dakixr/MenuSantander",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/hydrontology/issues{/number}",
+        "excerpt": "https://api.github.com/repos/dakixr/MenuSantander/issues{/number}",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/hydrontology/forks",
+        "excerpt": "https://api.github.com/repos/dakixr/MenuSantander/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/hydrontology/releases",
+        "excerpt": "https://github.com/Dakixr/MenuSantander/releases",
         "confidence": [
             1.0
         ],
@@ -88,7 +72,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 20:05:31 GMT"
+            "date": "Tue, 22 Feb 2022 18:16:51 GMT"
         },
         "confidence": [
             1.0
@@ -97,16 +81,25 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 1,
-            "date": "Tue, 22 Feb 2022 20:05:31 GMT"
+            "count": 0,
+            "date": "Tue, 22 Feb 2022 18:16:51 GMT"
         },
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
+    "languages": {
+        "excerpt": [
+            "Kotlin"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/hydrontology/blob/master/README.md",
+        "excerpt": "https://github.com/dakixr/MenuSantander/blob/master/README.md",
         "confidence": [
             1.0
         ],

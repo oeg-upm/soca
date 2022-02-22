@@ -1,85 +1,69 @@
 {
-    "description": [
-        {
-            "excerpt": "Repository for the new version of Hydrontology. ",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
-    "longTitle": {
-        "excerpt": "hydrontology",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/hydrontology",
+        "excerpt": "https://github.com/dakixr/dakixr.github.io",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "owner": {
-        "excerpt": "oeg-upm",
+        "excerpt": "dakixr",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "ownerType": {
-        "excerpt": "Organization",
+        "excerpt": "User",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2017-12-01T09:58:31Z",
+        "excerpt": "2019-09-01T16:36:01Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2017-12-01T09:58:31Z",
+        "excerpt": "2019-09-20T09:32:53Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "hydrontology",
+        "excerpt": "dakixr.github.io",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/hydrontology",
+        "excerpt": "dakixr/dakixr.github.io",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/hydrontology/issues{/number}",
+        "excerpt": "https://api.github.com/repos/dakixr/dakixr.github.io/issues{/number}",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/hydrontology/forks",
+        "excerpt": "https://api.github.com/repos/dakixr/dakixr.github.io/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/hydrontology/releases",
+        "excerpt": "https://github.com/Dakixr/dakixr.github.io/releases",
         "confidence": [
             1.0
         ],
@@ -88,7 +72,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 20:05:31 GMT"
+            "date": "Tue, 22 Feb 2022 18:14:09 GMT"
         },
         "confidence": [
             1.0
@@ -97,16 +81,26 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 1,
-            "date": "Tue, 22 Feb 2022 20:05:31 GMT"
+            "count": 0,
+            "date": "Tue, 22 Feb 2022 18:14:09 GMT"
         },
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
+    "languages": {
+        "excerpt": [
+            "HTML",
+            "CSS"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/hydrontology/blob/master/README.md",
+        "excerpt": "https://github.com/dakixr/dakixr.github.io/blob/master/README.md",
         "confidence": [
             1.0
         ],

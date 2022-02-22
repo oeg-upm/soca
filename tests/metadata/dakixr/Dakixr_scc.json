@@ -10,14 +10,16 @@
     ],
     "installation": [
         {
+            "originalHeader": "Install from GitHub",
             "excerpt": "```text\ngit clone https://github.com/dakixr/scc\ncd scc\npip install -e .\n```\n",
+            "parentHeader": "Software Catalog Creator",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         }
     ],
-    "long_title": {
+    "longTitle": {
         "excerpt": "Software Catalog Creator",
         "confidence": [
             1.0
@@ -26,7 +28,9 @@
     },
     "usage": [
         {
-            "excerpt": "Click [here](https://dakixr.github.io/scc/example/index.html) to see an interactive example.\n\n",
+            "originalHeader": "Example",
+            "excerpt": "Click [here](https://dakixr.github.io/scc/example/index.html) to see an interactive example.\n",
+            "parentHeader": "Software Catalog Creator",
             "confidence": [
                 1
             ],
@@ -34,14 +38,14 @@
         }
     ],
     "codeRepository": {
-        "excerpt": "https://github.com/Dakixr/scc",
+        "excerpt": "https://github.com/dakixr/scc",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "owner": {
-        "excerpt": "Dakixr",
+        "excerpt": "dakixr",
         "confidence": [
             1.0
         ],
@@ -62,7 +66,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-01-22T23:00:30Z",
+        "excerpt": "2022-02-19T20:46:53Z",
         "confidence": [
             1.0
         ],
@@ -86,41 +90,21 @@
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "Dakixr/scc",
+        "excerpt": "dakixr/scc",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/Dakixr/scc/issues{/number}",
+        "excerpt": "https://api.github.com/repos/dakixr/scc/issues{/number}",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "forks_url": {
-        "excerpt": "https://api.github.com/repos/Dakixr/scc/forks",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "stargazers_count": {
-        "excerpt": {
-            "count": 1,
-            "date": "Fri, 04 Feb 2022 09:49:19 GMT"
-        },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "forks_count": {
-        "excerpt": {
-            "count": 0,
-            "date": "Fri, 04 Feb 2022 09:49:19 GMT"
-        },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/dakixr/scc/forks",
         "confidence": [
             1.0
         ],
@@ -133,18 +117,40 @@
         ],
         "technique": "GitHub API"
     },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Tue, 22 Feb 2022 18:16:55 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 22 Feb 2022 18:16:55 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "languages": {
         "excerpt": [
+            "Python",
+            "JavaScript",
             "HTML",
-            "Python"
+            "CSS"
         ],
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "readme_url": {
-        "excerpt": "https://github.com/Dakixr/scc/blob/main/README.md",
+    "readmeUrl": {
+        "excerpt": "https://github.com/dakixr/scc/blob/main/README.md",
         "confidence": [
             1.0
         ],
