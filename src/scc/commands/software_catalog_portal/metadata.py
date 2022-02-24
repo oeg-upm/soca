@@ -78,12 +78,19 @@ class metadata(object):
                         class="repo-icon" 
                         {self.add_tooltip('bottom','Notebook')}>"""
 
-        download_url = self.download_url()
-        if download_url:
-            html += f"""<a href="{download_url}" target="_blank" class="repo-icon">
-                            <img src="{self.base}repo_icons/download.png" 
-                            class="repo-icon" 
-                            {self.add_tooltip('bottom','Download')}>
+        docker = self.docker()
+        if docker:
+            html += f"""<img src="{self.base}repo_icons/docker.png" 
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom',f"{[str(d) for d in docker]}")}>"""
+
+        papers = self.paper()
+        if papers:
+            for paper in papers:
+                html += f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
+                                <img src="{self.base}repo_icons/paper.png" 
+                                class="repo-icon" 
+                                {self.add_tooltip('bottom',f"Paper: {paper.title_paper}")}>
                         </a>"""
 
         citations = self.citations()
@@ -100,22 +107,7 @@ class metadata(object):
                             class="repo-icon" 
                             {self.add_tooltip('bottom',f"DOI: {identifier}")}>
                     </a>"""
-                            
-        papers = self.paper()
-        if papers:
-            for paper in papers:
-                html += f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
-                                <img src="{self.base}repo_icons/paper.png" 
-                                class="repo-icon" 
-                                {self.add_tooltip('bottom',f"Paper: {paper.title_paper}")}>
-                        </a>"""
-            
-        docker = self.docker()
-        if docker:
-            html += f"""<img src="{self.base}repo_icons/docker.png" 
-                        class="repo-icon" 
-                        {self.add_tooltip('bottom',f"{[str(d) for d in docker]}")}>"""
-        
+
         installation = self.installation()
         if installation:
             html += f"""<img src="{self.base}repo_icons/installation.png" 
@@ -141,6 +133,14 @@ class metadata(object):
             html += f"""<img src="{self.base}repo_icons/acknowledgement.png" 
                         class="repo-icon" 
                         {self.add_tooltip('bottom',f"Acknowledgement: {acknowledgement}")}>"""
+        
+        download_url = self.download_url()
+        if download_url:
+            html += f"""<a href="{download_url}" target="_blank" class="repo-icon">
+                            <img src="{self.base}repo_icons/download.png" 
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom','Download')}>
+                        </a>"""
 
         return html
     
