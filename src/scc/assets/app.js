@@ -189,7 +189,7 @@ function search() {
                 && ((state_docker)? card.docker : true)
                 && ((state_documentation)? card.hasDocumentation : true)
                 && ((state_identifier)? card.identifier : true) 
-                && ((state_download)? card.download : true)
+                && ((state_download)? card.downloadUrl : true)
                 && ((state_license)? card.license : true)
                 && ((state_notebook)? card.notebook : true)
                 && ((state_paper)? card.paper : true)
@@ -226,6 +226,28 @@ const displayCards = (cards) => {
 
     add_tooltip();
     add_copy_card();
+    add_modals();
 }
+
+function add_modals() {
+    cards_icons_list = document.getElementsByClassName('ref-repo-icons');
+    for(const cards_icons of cards_icons_list){
+        for(const card_icon of cards_icons.children){
+            const icon = card_icon.getElementsByClassName('icon')[0];
+            const modal = card_icon.getElementsByClassName('modal')[0];
+            const span_close = card_icon.getElementsByClassName('close')[0];
+            if (modal != undefined){
+                icon.addEventListener('click', () => { 
+                    modal.classList.add('modal-on');
+                });
+                span_close.addEventListener('click', () => { 
+                    modal.classList.remove('modal-on');
+                });
+            }
+        }
+    }
+    
+}
+
 
 loadCardsData();

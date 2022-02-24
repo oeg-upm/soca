@@ -51,6 +51,12 @@ class metadata(object):
     def add_tooltip(self, placement, tooltip_text):
         """Supported placements: ['bottom', 'up', 'right', 'left']"""
         return f'''data-toggle="tooltip" data-placement="{placement}" title="{tooltip_text}" alt="{tooltip_text}"'''
+    
+    def icon_wrapper(self, class_name, icon_html, modal_html = None):
+        return f"""<div>
+                        <div class="icon">{icon_html}</div>
+                        {modal_html if modal_html else ''}
+                    </div>"""
 
     def html_repo_icons(self):
 
@@ -58,89 +64,115 @@ class metadata(object):
 
         readme_url = self.readme()
         if readme_url:
-            html += f"""<a href="{readme_url}" target="_blank" class="repo-icon">
+            html += self.icon_wrapper('readme_url',
+                    f"""<a href="{readme_url}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/readme.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom','Readme')}>
-                        </a>"""
+                        </a>""")
 
         license = self.license()
         if license:
-            html += f"""<a href="{safe_dic(license,'url')}" target="_blank" class="repo-icon">
+            html += self.icon_wrapper('license',
+                f"""<a href="{safe_dic(license,'url')}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/license.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom',f'License: {license["name"]}')}>
-                        </a>"""
+                        </a>""")
         
         notebook = self.notebook()
         if notebook:
-            html += f"""<img src="{self.base}repo_icons/notebook.png" 
+            html += self.icon_wrapper('notebook',
+                f"""<img src="{self.base}repo_icons/notebook.png" 
                         class="repo-icon" 
-                        {self.add_tooltip('bottom','Notebook')}>"""
+                        {self.add_tooltip('bottom','Notebook')}>""")
 
         docker = self.docker()
         if docker:
-            html += f"""<img src="{self.base}repo_icons/docker.png" 
+            html += self.icon_wrapper('docker',
+                f"""<img src="{self.base}repo_icons/docker.png" 
                         class="repo-icon" 
-                        {self.add_tooltip('bottom',f"{[str(d) for d in docker]}")}>"""
+                        {self.add_tooltip('bottom',f"{[str(d) for d in docker]}")}>""")
 
         papers = self.paper()
         if papers:
             for paper in papers:
-                html += f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
+                html += self.icon_wrapper('paper',
+                    f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
                                 <img src="{self.base}repo_icons/paper.png" 
                                 class="repo-icon" 
                                 {self.add_tooltip('bottom',f"Paper: {paper.title_paper}")}>
-                        </a>"""
+                        </a>""")
 
         citations = self.citations()
         if citations:
             for citation in citations:
-                html += f"""<img src="{self.base}repo_icons/citation.png" 
+                html += self.icon_wrapper('citations',
+                f"""<img src="{self.base}repo_icons/citation.png" 
                             class="repo-icon" 
-                            {self.add_tooltip('bottom',f"{citation}")}>"""
+                            {self.add_tooltip('bottom',f"{citation}")}>""")
 
         identifier = self.identifier()
         if identifier:
-            html += f"""<a href="{identifier}" target="_blank" class="repo-icon">
+            html += self.icon_wrapper('identifier',
+                f"""<a href="{identifier}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/doi.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom',f"DOI: {identifier}")}>
-                    </a>"""
+                    </a>""")
 
         installation = self.installation()
         if installation:
-            html += f"""<img src="{self.base}repo_icons/installation.png" 
+            html += self.icon_wrapper('installation',
+                f"""<img src="{self.base}repo_icons/installation.png" 
                         class="repo-icon" 
-                        {self.add_tooltip('bottom','Installation')}>"""
+                        {self.add_tooltip('bottom','Installation')}>""")
         
         requirements = self.requirements()
         if requirements:
-            html += f"""<img src="{self.base}repo_icons/requirements.png"  
+            html += self.icon_wrapper('requirements',
+                f"""<img src="{self.base}repo_icons/requirements.png"  
                         class="repo-icon" 
-                        {self.add_tooltip('bottom','Requirements')}>"""
+                        {self.add_tooltip('bottom','Requirements')}>""")
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
-            html += f"""<a href="{hasDocumentation}" target="_blank" class="repo-icon">
+            html += self.icon_wrapper('hasDocumentation',
+                f"""<a href="{hasDocumentation}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/documentation.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom','Documentation')}>
-                        </a>"""
+                        </a>""")
 
         acknowledgement =  self.acknowledgement()
         if acknowledgement:
-            html += f"""<img src="{self.base}repo_icons/acknowledgement.png" 
+            html += self.icon_wrapper(
+                class_name = 'acknowledgement',
+
+                icon_html = f"""<img src="{self.base}repo_icons/acknowledgement.png" 
                         class="repo-icon" 
-                        {self.add_tooltip('bottom',f"Acknowledgement: {acknowledgement}")}>"""
+                        {self.add_tooltip('bottom',f"Acknowledgement: {acknowledgement}")}>""",
+
+                modal_html = f"""<div class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>{acknowledgement}</p>
+                            </div>
+                        </div>"""
+                    )
+
         
-        download_url = self.download_url()
-        if download_url:
-            html += f"""<a href="{download_url}" target="_blank" class="repo-icon">
+        downloadUrl = self.downloadUrl()
+        if downloadUrl:
+            html += self.icon_wrapper(
+                class_name = 'downloadUrl',
+
+                icon_html = f"""<a href="{downloadUrl}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/download.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom','Download')}>
                         </a>"""
+                )
 
         return html
     
@@ -211,7 +243,7 @@ class metadata(object):
                 citations.append(c['excerpt'])
         return citations if len(citations) > 0 else None
         
-    def download_url(self):
+    def downloadUrl(self):
         return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt') if self.n_releases() > 0 else None
 
     def notebook(self):

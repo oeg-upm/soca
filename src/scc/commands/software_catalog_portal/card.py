@@ -38,7 +38,7 @@ def cards_data_dump(repo_metadata_dir):
                     'hasDocumentation': md.hasDocumentation() is not None,
                     'identifier': md.identifier() is not None,
                     'acknowledgement': md.acknowledgement() is not None,
-                    'download': md.download_url() is not None
+                    'downloadUrl': md.downloadUrl() is not None
 
                 })
 
@@ -85,7 +85,7 @@ def html_view(repo_metadata, embedded, minify=True):
 
         <div class="card-row">
             <div class="card-col">
-                <div class="flex-horizontal">
+                <div class="flex-horizontal ref-repo-icons">
                     {md.html_repo_icons()}
                 </div>
             </div>
