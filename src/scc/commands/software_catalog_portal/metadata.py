@@ -52,7 +52,7 @@ class metadata(object):
         """Supported placements: ['bottom', 'up', 'right', 'left']"""
         return f'''data-toggle="tooltip" data-placement="{placement}" title="{tooltip_text}" alt="{tooltip_text}"'''
     
-    def icon_wrapper(self, class_name, icon_html, modal_html = None):
+    def icon_wrapper(self, icon_html, modal_html = None):
         return f"""<div>
                         <div class="icon">{icon_html}</div>
                         {modal_html if modal_html else ''}
@@ -64,7 +64,7 @@ class metadata(object):
 
         readme_url = self.readme()
         if readme_url:
-            html += self.icon_wrapper('readme_url',
+            html += self.icon_wrapper(
                     f"""<a href="{readme_url}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/readme.png" 
                             class="repo-icon" 
@@ -73,7 +73,7 @@ class metadata(object):
 
         license = self.license()
         if license:
-            html += self.icon_wrapper('license',
+            html += self.icon_wrapper(
                 f"""<a href="{safe_dic(license,'url')}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/license.png" 
                             class="repo-icon" 
@@ -82,14 +82,14 @@ class metadata(object):
         
         notebook = self.notebook()
         if notebook:
-            html += self.icon_wrapper('notebook',
+            html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/notebook.png" 
                         class="repo-icon" 
                         {self.add_tooltip('bottom','Notebook')}>""")
 
         docker = self.docker()
         if docker:
-            html += self.icon_wrapper('docker',
+            html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/docker.png" 
                         class="repo-icon" 
                         {self.add_tooltip('bottom',f"{[str(d) for d in docker]}")}>""")
@@ -97,7 +97,7 @@ class metadata(object):
         papers = self.paper()
         if papers:
             for paper in papers:
-                html += self.icon_wrapper('paper',
+                html += self.icon_wrapper(
                     f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
                                 <img src="{self.base}repo_icons/paper.png" 
                                 class="repo-icon" 
@@ -107,14 +107,14 @@ class metadata(object):
         citations = self.citations()
         if citations:
             for citation in citations:
-                html += self.icon_wrapper('citations',
+                html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/citation.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom',f"{citation}")}>""")
 
         identifier = self.identifier()
         if identifier:
-            html += self.icon_wrapper('identifier',
+            html += self.icon_wrapper(
                 f"""<a href="{identifier}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/doi.png" 
                             class="repo-icon" 
@@ -123,21 +123,21 @@ class metadata(object):
 
         installation = self.installation()
         if installation:
-            html += self.icon_wrapper('installation',
+            html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/installation.png" 
                         class="repo-icon" 
                         {self.add_tooltip('bottom','Installation')}>""")
         
         requirements = self.requirements()
         if requirements:
-            html += self.icon_wrapper('requirements',
+            html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/requirements.png"  
                         class="repo-icon" 
                         {self.add_tooltip('bottom','Requirements')}>""")
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
-            html += self.icon_wrapper('hasDocumentation',
+            html += self.icon_wrapper(
                 f"""<a href="{hasDocumentation}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/documentation.png" 
                             class="repo-icon" 
@@ -147,7 +147,6 @@ class metadata(object):
         acknowledgement =  self.acknowledgement()
         if acknowledgement:
             html += self.icon_wrapper(
-                class_name = 'acknowledgement',
 
                 icon_html = f"""<img src="{self.base}repo_icons/acknowledgement.png" 
                         class="repo-icon" 
@@ -165,8 +164,7 @@ class metadata(object):
         downloadUrl = self.downloadUrl()
         if downloadUrl:
             html += self.icon_wrapper(
-                class_name = 'downloadUrl',
-
+                
                 icon_html = f"""<a href="{downloadUrl}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/download.png" 
                             class="repo-icon" 

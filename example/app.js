@@ -231,21 +231,17 @@ const displayCards = (cards) => {
 
 function add_modals() {
     cards_icons_list = document.getElementsByClassName('ref-repo-icons');
-    //console.log(cards_icons_list);
     for(const cards_icons of cards_icons_list){
         for(const card_icon of cards_icons.children){
-            console.log(card_icon);
             const icon = card_icon.getElementsByClassName('icon')[0];
             const modal = card_icon.getElementsByClassName('modal')[0];
             const span_close = card_icon.getElementsByClassName('close')[0];
             if (modal != undefined){
                 icon.addEventListener('click', () => { 
                     modal.classList.add('modal-on');
-                    console.log('open modal!');
                 });
                 span_close.addEventListener('click', () => { 
                     modal.classList.remove('modal-on');
-                    console.log('close modal!');
                 });
             }
         }
