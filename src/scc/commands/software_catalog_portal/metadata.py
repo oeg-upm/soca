@@ -18,7 +18,11 @@ class metadata(object):
 
     # Assets ####################################################
     def logo(self):
-        return f"{self.base}img/github-default.svg"
+        logo = safe_dic(safe_dic(self.md,'logo'),'excerpt')
+        if logo:
+            if str(logo).startswith('https://github'):
+                logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+        return logo if logo else f"{self.base}img/github-default.svg"
 
     def icon_star(self):
         return f"{self.base}repo_icons/star.png"
@@ -52,6 +56,11 @@ class metadata(object):
                    data-toggle="tooltip" data-placement="right" title="Copy card as embbeded HTML">
                    </button>"""
 
+    def html_license(self, license_input):
+        html = 'This will display all the properties of the license: ' + str(license_input)
+        return html
+
+
     def html_repo_icons(self):
 
         html = ''
@@ -59,7 +68,7 @@ class metadata(object):
         readme_url = self.readme()
         if readme_url:
             html += self.icon_wrapper(
-                    f"""<a href="{readme_url}" target="_blank" class="repo-icon">
+                    icon_html = f"""<a href="{readme_url}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/readme.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom','Readme')}>
@@ -68,17 +77,20 @@ class metadata(object):
         license = self.license()
         if license:
             html += self.icon_wrapper(
-                f"""<a href="{safe_dic(license,'url')}" target="_blank" class="repo-icon">
-                            <img src="{self.base}repo_icons/license.png" 
+                icon_html = f"""<img src="{self.base}repo_icons/license.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom',f'License: {license["name"]}')}>
-                        </a>""")
+                            """,
+                modal_html= self.modal(
+                    title = 'License',
+                    body = self.html_license(license),
+                    markdown_translation=False))
         
         notebook = self.notebook()
         if notebook:
-            mk_list = "\n".join(["* "+str(n) for n in notebook])
+            mk_list = "\n".join([f'* <{n}>' for n in notebook])
             html += self.icon_wrapper(
-                f"""<img src="{self.base}repo_icons/notebook.png" 
+                icon_html = f"""<img src="{self.base}repo_icons/notebook.png" 
                         class="repo-icon" 
                         {self.add_tooltip('bottom','Notebook')}>""",
 
@@ -89,9 +101,9 @@ class metadata(object):
 
         docker = self.docker()
         if docker:
-            mk_list = "\n".join(["* "+str(d) for d in docker])
+            mk_list = "\n".join([f'* <{d}>' for d in docker])
             html += self.icon_wrapper(
-                f"""<img src="{self.base}repo_icons/docker.png" 
+                icon_html = f"""<img src="{self.base}repo_icons/docker.png" 
                         class="repo-icon" 
                         {self.add_tooltip('bottom',"Docker")}>""",
 
@@ -103,7 +115,7 @@ class metadata(object):
         if papers:
             for paper in papers:
                 html += self.icon_wrapper(
-                    f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
+                    icon_html = f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
                                 <img src="{self.base}repo_icons/paper.png" 
                                 class="repo-icon" 
                                 {self.add_tooltip('bottom',paper.title_paper)}>
@@ -114,20 +126,19 @@ class metadata(object):
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
             for citation in citations:
                 html += self.icon_wrapper(
-                f"""<img src="{self.base}repo_icons/citation.png" 
-                            class="repo-icon" 
-                            {self.add_tooltip('bottom',f"Citation")}>""",
+                    icon_html = f"""<img src="{self.base}repo_icons/citation.png" 
+                                class="repo-icon" 
+                                {self.add_tooltip('bottom',f"Citation")}>""",
 
-                modal_html = self.modal(
-                    title = 'Citation',
-                    body = f'<div style="font-family: monospace;">{highlight(citation, ScdocLexer(), formatter)}</div>',
-                    markdown_translation=False))
-                print(citation)
+                    modal_html = self.modal(
+                        title = 'Citation',
+                        body = f'<div style="font-family: monospace;">{highlight(citation, ScdocLexer(), formatter)}</div>',
+                        markdown_translation=False))
 
         identifier = self.identifier()
         if identifier:
             html += self.icon_wrapper(
-                f"""<a href="{identifier}" target="_blank" class="repo-icon">
+                icon_html = f"""<a href="{identifier}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/doi.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom',f"DOI: {identifier}")}>
@@ -136,7 +147,7 @@ class metadata(object):
         installation = self.installation()
         if installation:
             html += self.icon_wrapper(
-                f"""<img src="{self.base}repo_icons/installation.png" 
+                icon_html = f"""<img src="{self.base}repo_icons/installation.png" 
                         class="repo-icon" 
                         {self.add_tooltip('bottom','Installation')}>""",
 
@@ -147,7 +158,7 @@ class metadata(object):
         requirements = self.requirements()
         if requirements:
             html += self.icon_wrapper(
-                f"""<img src="{self.base}repo_icons/requirements.png"  
+                icon_html = f"""<img src="{self.base}repo_icons/requirements.png"  
                         class="repo-icon" 
                         {self.add_tooltip('bottom','Requirements')}>""",
 
@@ -158,7 +169,7 @@ class metadata(object):
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
             html += self.icon_wrapper(
-                f"""<a href="{hasDocumentation}" target="_blank" class="repo-icon">
+                icon_html = f"""<a href="{hasDocumentation}" target="_blank" class="repo-icon">
                             <img src="{self.base}repo_icons/documentation.png" 
                             class="repo-icon" 
                             {self.add_tooltip('bottom','Documentation')}>
@@ -349,7 +360,9 @@ class metadata(object):
     
     def url_releases(self):
         return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
-        
+    
+    def url_stars(self):
+        return self.repo_url()+'/stargazers'
     
 # Aux ##########################################################
 def safe_dic(dic, key):
@@ -380,4 +393,6 @@ class citation_parser(object):
             self.title_paper = self.title_paper.group(1)
 
         if self.doi_paper and not self.link_paper:
-            self.link_paper = 'https://www.doi.org/' + self.doi_paper
+            if self.doi_paper and 'http' not in self.doi_paper:
+                self.link_paper = 'https://www.doi.org/' + self.doi_paper
+            else: self.link_paper = self.doi_paper

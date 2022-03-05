@@ -64,15 +64,19 @@ def html_view(repo_metadata, embedded, minify=True):
                 <p class="description">{md.description()}</p>
             </div>
             <div>
-                <a href="{md.repo_url()}" target="_blank" style="text-decoration: none;">
-                    <img src="{md.logo()}" alt="repo-logo" class="repo-logo">
-                </a>
+                <div style="min-height: 6rem;display: flex;align-items: center;justify-content: center;">
+                    <a href="{md.repo_url()}" target="_blank" style="text-decoration: none;">
+                        <img src="{md.logo()}" alt="repo-logo" class="repo-logo">
+                    </a>
+                </div>
                 <div class="flex-horizontal float-right">
                     {md.recently_updated()}
                 </div>
                 <div class="flex-horizontal float-right" style="margin-top: 0.3rem;" {md.add_tooltip('right','Stars')}>
-                    <b>{md.stars()}</b>
-                    <img src="{md.icon_star()}" alt="stars" class="repo-icon">
+                    <a href="{md.url_stars()}" target="_blank" class="flex-horizontal float-right" style="text-decoration: none;">
+                        <b>{md.stars()}</b>
+                        <img src="{md.icon_star()}" alt="stars" class="repo-icon">
+                    </a>
                 </div>
                 <div {md.add_tooltip('right','Releases')}>
                     <a href="{md.url_releases()}" target="_blank" class="flex-horizontal float-right" style="text-decoration: none;">
