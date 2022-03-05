@@ -5,6 +5,10 @@ from os.path import isfile, join
 from datetime import datetime
 import re
 import sys
+from markdown2 import Markdown
+from pygments import highlight
+from pygments.lexers.scdoc import ScdocLexer
+from pygments.formatters import HtmlFormatter
 
 class metadata(object):
 
@@ -48,16 +52,6 @@ class metadata(object):
                    data-toggle="tooltip" data-placement="right" title="Copy card as embbeded HTML">
                    </button>"""
 
-    def add_tooltip(self, placement, tooltip_text):
-        """Supported placements: ['bottom', 'up', 'right', 'left']"""
-        return f'''data-toggle="tooltip" data-placement="{placement}" title="{tooltip_text}" alt="{tooltip_text}"'''
-    
-    def icon_wrapper(self, icon_html, modal_html = None):
-        return f"""<div>
-                        <div class="icon">{icon_html}</div>
-                        {modal_html if modal_html else ''}
-                    </div>"""
-
     def html_repo_icons(self):
 
         html = ''
@@ -82,17 +76,28 @@ class metadata(object):
         
         notebook = self.notebook()
         if notebook:
+            mk_list = "\n".join(["* "+str(n) for n in notebook])
             html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/notebook.png" 
                         class="repo-icon" 
-                        {self.add_tooltip('bottom','Notebook')}>""")
+                        {self.add_tooltip('bottom','Notebook')}>""",
+
+                modal_html = self.modal(
+                    title = 'Notebook',
+                    body = mk_list))
+
 
         docker = self.docker()
         if docker:
+            mk_list = "\n".join(["* "+str(d) for d in docker])
             html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/docker.png" 
                         class="repo-icon" 
-                        {self.add_tooltip('bottom',f"{[str(d) for d in docker]}")}>""")
+                        {self.add_tooltip('bottom',"Docker")}>""",
+
+                modal_html = self.modal(
+                    title = 'Docker',
+                    body = mk_list))
 
         papers = self.paper()
         if papers:
@@ -101,16 +106,23 @@ class metadata(object):
                     f"""<a href="{paper.link_paper}" target="_blank" class="repo-icon">
                                 <img src="{self.base}repo_icons/paper.png" 
                                 class="repo-icon" 
-                                {self.add_tooltip('bottom',f"Paper: {paper.title_paper}")}>
+                                {self.add_tooltip('bottom',paper.title_paper)}>
                         </a>""")
 
         citations = self.citations()
         if citations:
+            formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
             for citation in citations:
                 html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/citation.png" 
                             class="repo-icon" 
-                            {self.add_tooltip('bottom',f"{citation}")}>""")
+                            {self.add_tooltip('bottom',f"Citation")}>""",
+
+                modal_html = self.modal(
+                    title = 'Citation',
+                    body = f'<div style="font-family: monospace;">{highlight(citation, ScdocLexer(), formatter)}</div>',
+                    markdown_translation=False))
+                print(citation)
 
         identifier = self.identifier()
         if identifier:
@@ -126,14 +138,22 @@ class metadata(object):
             html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/installation.png" 
                         class="repo-icon" 
-                        {self.add_tooltip('bottom','Installation')}>""")
+                        {self.add_tooltip('bottom','Installation')}>""",
+
+                modal_html = self.modal(
+                    title = 'Installation',
+                    body = f'{installation}'))
         
         requirements = self.requirements()
         if requirements:
             html += self.icon_wrapper(
                 f"""<img src="{self.base}repo_icons/requirements.png"  
                         class="repo-icon" 
-                        {self.add_tooltip('bottom','Requirements')}>""")
+                        {self.add_tooltip('bottom','Requirements')}>""",
+
+                modal_html = self.modal(
+                    title = 'Requirements',
+                    body = f'{requirements}'))
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
@@ -150,15 +170,11 @@ class metadata(object):
 
                 icon_html = f"""<img src="{self.base}repo_icons/acknowledgement.png" 
                         class="repo-icon" 
-                        {self.add_tooltip('bottom',f"Acknowledgement: {acknowledgement}")}>""",
+                        {self.add_tooltip('bottom',f"Acknowledgement")}>""",
 
-                modal_html = f"""<div class="modal">
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>{acknowledgement}</p>
-                            </div>
-                        </div>"""
-                    )
+                modal_html = self.modal(
+                    title = 'Acknowledgement',
+                    body = f'{acknowledgement}'))
 
         
         downloadUrl = self.downloadUrl()
@@ -173,9 +189,39 @@ class metadata(object):
                 )
 
         return html
-    
-    def recently_updated(self):
 
+    # HTML helper ##################################################
+
+    
+    def add_tooltip(self, placement, tooltip_text):
+        """Supported placements: ['bottom', 'up', 'right', 'left']"""
+        return f'''data-toggle="tooltip" data-placement="{placement}" title="{tooltip_text}" alt="{tooltip_text}"'''
+    
+    def icon_wrapper(self, icon_html, modal_html = None):
+        return f"""<div>
+                        <div class="icon">{icon_html}</div>
+                        {modal_html if modal_html else ''}
+                    </div>"""
+    
+    def modal(self, title, body, markdown_translation = True):
+    
+        markdowner = Markdown()
+
+        if markdown_translation:
+            body = markdowner.convert(body)
+        
+        return f"""<div class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 style="margin-bottom: 1rem;">{title}</h2>
+                            <div style="margin-bottom: 1rem; overflow: auto;">{body}</div>
+                        </div>
+                    </div>"""
+
+
+    # Metadata ##################################################
+
+    def recently_updated(self):
         #TODO: Retreive days_theshold from properties file
         hex_states = [
             {'hex': '#6da862', 'days_threshold': 30},
@@ -196,7 +242,6 @@ class metadata(object):
                    title="Last updated on: {self.last_update().strftime('%d-%m-%Y')}">
                    </div>"""
 
-    # Metadata ##################################################
     def paper(self):
         citations = self.citations()
         p = []

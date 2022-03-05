@@ -28,12 +28,13 @@
 .scc-card .float-right{justify-content: flex-end;}
 .scc-card .grey-color-svg{filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);}
 .scc-card .title:hover{text-decoration: underline;}
+.highlight *{font-family: monospace; font-size: large;}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 20vh; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -45,11 +46,13 @@
   
   /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #e0e0e0;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    border: 0px;
+    width: 90%;
+    max-width: 50rem;
+    border-radius: 1rem;
   }
   .modal-on{
     display: block; /* Hidden by default */
@@ -57,10 +60,12 @@
 
   /* The Close Button */
   .close {
-    color: #aaaaaa;
+    color: #3e3e3e;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: relative;
+    bottom: 0.8rem;
   }
   
   .close:hover,
