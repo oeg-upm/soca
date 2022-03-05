@@ -182,28 +182,28 @@ function search() {
 
     const usr_query = searchBar.value.toLowerCase();
     const filteredCards = cards.filter(card => {
-        return (card.title.toLowerCase().includes(usr_query) || card.description.toLowerCase().includes(usr_query))
+        return (card.name.toLowerCase().includes(usr_query) || card.description.toLowerCase().includes(usr_query))
             && ( 
                    ((state_acknowledgement)? card.acknowledgement : true) 
                 && ((state_citation)? card.citation : true)
-                && ((state_docker)? card.docker : true)
+                && ((state_docker)? card.hasBuildFile : true)
                 && ((state_documentation)? card.hasDocumentation : true)
                 && ((state_identifier)? card.identifier : true) 
                 && ((state_download)? card.downloadUrl : true)
                 && ((state_license)? card.license : true)
-                && ((state_notebook)? card.notebook : true)
+                && ((state_notebook)? card.hasExecutableNotebook : true)
                 && ((state_paper)? card.paper : true)
-                && ((state_requirements)? card.requirements : true)
+                && ((state_requirements)? card.requirement : true)
                 && ((state_installation)? card.installation : true));
     });
 
     // Order by
     ordered_cards = filteredCards.sort((a,b) => {
         if (state_title) {
-            return (a.title > b.title)? 1 : -1;
+            return (a.name > b.name)? 1 : -1;
         }
         if (state_stars) {
-            return b.stars - a.stars;
+            return b.stargazersCount - a.stargazersCount;
         }
         if (state_releases) {
             return b.releases - a.releases;
