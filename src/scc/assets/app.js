@@ -245,9 +245,63 @@ function add_modals() {
                 });
             }
         }
+        
+        const license = cards_icons.getElementsByClassName('ref-license')[0];
+        if (license != undefined) {
+            license.addEventListener('click', () => { 
+                getGithub(license);
+            });
+        }
+        
     }
     
 }
 
 
 loadCardsData();
+
+
+async function getGithub(license){
+    if (license.dataset.url != 'None'){
+
+        const response = await fetch(license.dataset.url);
+        const data =  await response.json();
+
+        const name = license.getElementsByClassName('ref-name')[0]
+        const description = license.getElementsByClassName('ref-description')[0]
+        const permissions = license.getElementsByClassName('ref-permissions')[0]
+        const conditions = license.getElementsByClassName('ref-conditions')[0]
+        const limitations = license.getElementsByClassName('ref-limitations')[0]
+
+        name.innerHTML = await data.name
+        description.innerHTML = await data.description
+
+        var list = document.createElement("ol");
+        for (let i of data.permissions) {
+            let item = document.createElement("li");
+            item.innerHTML = i;
+            list.appendChild(item);
+        }
+        permissions.innerHTML = ''
+        permissions.appendChild(list);
+
+        var list = document.createElement("ol");
+        for (let i of data.conditions) {
+            let item = document.createElement("li");
+            item.innerHTML = i;
+            list.appendChild(item);
+        }
+        conditions.innerHTML = ''
+        conditions.appendChild(list);
+
+        var list = document.createElement("ol");
+        for (let i of data.limitations) {
+            let item = document.createElement("li");
+            item.innerHTML = i;
+            list.appendChild(item);
+        }
+        limitations.innerHTML = ''
+        limitations.appendChild(list);
+
+    } else console.log('No license.');
+}

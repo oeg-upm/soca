@@ -57,7 +57,29 @@ class metadata(object):
                    </button>"""
 
     def html_license(self, license_input):
-        html = 'This will display all the properties of the license: ' + str(license_input)
+        if safe_dic(license_input,"url"):
+            html = """
+            <h3 class="ref-name"></h3>
+
+            <h4>Description:</h4>
+            <p class="ref-description">Loading...</p>
+
+            <h4>Permissions:</h4>
+            <div class="ref-permissions"><ul><li>Loading...</li></ul></div>
+
+            <h4>Conditions:</h4>
+            <div class="ref-conditions"><ul><li>Loading...</li></ul></div>
+
+            <h4>Limitations:</h4>
+            <div class="ref-limitations"><ul><li>Loading...</li></ul></div>
+            """
+        else:
+            html = f"""
+            <h3 class="ref-name">{safe_dic(license_input,"name")}</h3>
+
+            <h4>Description:</h4>
+            <p class="ref-description">There is not an available description.</p>
+            """
         return html
 
 
@@ -78,13 +100,15 @@ class metadata(object):
         if license:
             html += self.icon_wrapper(
                 icon_html = f"""<img src="{self.base}repo_icons/license.png" 
-                            class="repo-icon" 
+                            class="repo-icon"
                             {self.add_tooltip('bottom',f'License: {license["name"]}')}>
                             """,
                 modal_html= self.modal(
                     title = 'License',
                     body = self.html_license(license),
-                    markdown_translation=False))
+                    markdown_translation=False),
+                    other_field=f'class="ref-license" data-url="{safe_dic(license,"url")}"'
+                    )
         
         notebook = self.notebook()
         if notebook:
@@ -208,8 +232,8 @@ class metadata(object):
         """Supported placements: ['bottom', 'up', 'right', 'left']"""
         return f'''data-toggle="tooltip" data-placement="{placement}" title="{tooltip_text}" alt="{tooltip_text}"'''
     
-    def icon_wrapper(self, icon_html, modal_html = None):
-        return f"""<div>
+    def icon_wrapper(self, icon_html, modal_html = None, other_field = None):
+        return f"""<div {other_field if other_field else ''}>
                         <div class="icon">{icon_html}</div>
                         {modal_html if modal_html else ''}
                     </div>"""
@@ -365,6 +389,7 @@ class metadata(object):
         return self.repo_url()+'/stargazers'
     
 # Aux ##########################################################
+
 def safe_dic(dic, key):
     try:
         return dic[key]
