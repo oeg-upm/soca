@@ -60,18 +60,19 @@ class metadata(object):
         if safe_dic(license_input,"url"):
             html = """
             <h3 class="ref-name"></h3>
+            <span class="ref-description-aux">
+                <h4>Description:</h4>
+                <p class="ref-description" style="text-align: justify;">Loading...</p>
 
-            <h4>Description:</h4>
-            <p class="ref-description">Loading...</p>
+                <h4>Permissions:</h4>
+                <div class="ref-permissions"><ul><li>Loading...</li></ul></div>
 
-            <h4>Permissions:</h4>
-            <div class="ref-permissions"><ul><li>Loading...</li></ul></div>
+                <h4>Conditions:</h4>
+                <div class="ref-conditions"><ul><li>Loading...</li></ul></div>
 
-            <h4>Conditions:</h4>
-            <div class="ref-conditions"><ul><li>Loading...</li></ul></div>
-
-            <h4>Limitations:</h4>
-            <div class="ref-limitations"><ul><li>Loading...</li></ul></div>
+                <h4>Limitations:</h4>
+                <div class="ref-limitations"><ul><li>Loading...</li></ul></div>
+            </span>
             """
         else:
             html = f"""

@@ -260,48 +260,40 @@ function add_modals() {
 
 loadCardsData();
 
+function addList(element, iterable){
+    var list = document.createElement("ol");
+        for (let i of iterable) {
+            let item = document.createElement("li");
+            item.innerHTML = i.charAt(0).toUpperCase() + i.slice(1);
+            list.appendChild(item);
+        }
+        element.innerHTML = '';
+        element.appendChild(list);
+}
 
 async function getGithub(license){
     if (license.dataset.url != 'None'){
-
         const response = await fetch(license.dataset.url);
-        const data =  await response.json();
+        const response_aux = await response.clone();
+        try {
+            const data =  await response.json();
 
-        const name = license.getElementsByClassName('ref-name')[0]
-        const description = license.getElementsByClassName('ref-description')[0]
-        const permissions = license.getElementsByClassName('ref-permissions')[0]
-        const conditions = license.getElementsByClassName('ref-conditions')[0]
-        const limitations = license.getElementsByClassName('ref-limitations')[0]
+            const name = license.getElementsByClassName('ref-name')[0];
+            const description = license.getElementsByClassName('ref-description')[0];
+            const permissions = license.getElementsByClassName('ref-permissions')[0];
+            const conditions = license.getElementsByClassName('ref-conditions')[0];
+            const limitations = license.getElementsByClassName('ref-limitations')[0];
 
-        name.innerHTML = await data.name
-        description.innerHTML = await data.description
+            name.innerHTML = await data.name;
+            description.innerHTML = await data.description;
 
-        var list = document.createElement("ol");
-        for (let i of data.permissions) {
-            let item = document.createElement("li");
-            item.innerHTML = i;
-            list.appendChild(item);
+            addList(permissions, data.permissions);
+            addList(conditions, data.conditions);
+            addList(limitations, data.limitations);
+
+        } catch (error) {
+            const description = license.getElementsByClassName('ref-description-aux')[0];
+            description.innerHTML = '<pre style="font-family: monospace;">'+await response_aux.text()+'</pre>';
         }
-        permissions.innerHTML = ''
-        permissions.appendChild(list);
-
-        var list = document.createElement("ol");
-        for (let i of data.conditions) {
-            let item = document.createElement("li");
-            item.innerHTML = i;
-            list.appendChild(item);
-        }
-        conditions.innerHTML = ''
-        conditions.appendChild(list);
-
-        var list = document.createElement("ol");
-        for (let i of data.limitations) {
-            let item = document.createElement("li");
-            item.innerHTML = i;
-            list.appendChild(item);
-        }
-        limitations.innerHTML = ''
-        limitations.appendChild(list);
-
     } else console.log('No license.');
 }
