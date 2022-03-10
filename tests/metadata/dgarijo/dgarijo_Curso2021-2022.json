@@ -1,0 +1,215 @@
+{
+    "description": [
+        {
+            "excerpt": "This is the repository that we will use for our collaborative work and for uploading all the assignments for our course. \nThis is the normal process that you will have to follow in order to interact with the repository: \nFork the main repository into your own account (this will generate a new repository in your GitHub account). This is done only once during the course.  \n",
+            "confidence": [
+                0.9973630961470614,
+                0.9771396567103054,
+                0.9640679655289521
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Checkout the local master branch of your fork:  \n",
+            "confidence": [
+                0.970366716110998
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Make any changes to your repository, according to the specific assignment \n",
+            "confidence": [
+                0.9446739814879829
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Assignment 2a - Exercise on RDF and RDFS. Upload the RDF files corresponding to the exercise in the GitHub repository, and comment on those from your colleagues (if you wish), creating issues in the GitHub repository. This can be done in the Assignment2 folder, using your GitHub username - your NameSurname + (.png/.svg) and (.rdf/.ttl), or any other similar file extension. \n",
+            "confidence": [
+                0.926061327055335
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Assignment 2b - Exercise on RDF and RDFS (second part). Upload to the GitHub repository the JSON-LD files corresponding to the exercises described in the slides. This can be done in the Assignment2 folder, using the following names: \n",
+            "confidence": [
+                0.9162734192558234
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Repository for the course 2021-2022",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "git remote add upstream https://github.com/FacultadInformatica-LinkedData/Curso2021-2022 \n",
+            "confidence": [
+                0.9175990150648242
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "git fetch upstream \n",
+            "confidence": [
+                0.9395696914546919
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "git checkout master \n",
+            "confidence": [
+                0.925194063462346
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "git merge upstream/master \n",
+            "confidence": [
+                0.9117941562816807
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "long_title": {
+        "excerpt": "Course 2021-2022",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/dgarijo/Curso2021-2022",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "dgarijo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "User",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-09-23T12:45:23Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-11-10T11:44:32Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "Curso2021-2022",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "dgarijo/Curso2021-2022",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/dgarijo/Curso2021-2022/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/dgarijo/Curso2021-2022/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:01:51 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:01:51 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/dgarijo/Curso2021-2022/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Jupyter Notebook",
+            "Python"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/dgarijo/Curso2021-2022/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasExecutableNotebook": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/dgarijo/Curso2021-2022/master/Assignment4/course_materials/notebooks/Task09.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/Curso2021-2022/master/Assignment4/course_materials/notebooks/Task08.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/Curso2021-2022/master/Assignment4/course_materials/notebooks/Task04.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/Curso2021-2022/master/Assignment4/course_materials/notebooks/Task06.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/Curso2021-2022/master/Assignment4/course_materials/notebooks/Task02.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/Curso2021-2022/master/Assignment4/course_materials/notebooks/Task07.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/Curso2021-2022/master/Assignment4/course_materials/notebooks/Task05.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/Curso2021-2022/master/Assignment4/course_materials/notebooks/Task01.ipynb",
+            "https://raw.githubusercontent.com/dgarijo/Curso2021-2022/master/Assignment4/course_materials/notebooks/Task03.ipynb"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

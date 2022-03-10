@@ -1,0 +1,1020 @@
+{
+    "description": [
+        {
+            "excerpt": "- [The Smart Data Analytics (SDA)](http://sda.tech/) - Research group, Institute for Computer Science at the University of Bonn, the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS) and the Institute for Applied Computer Science Leipzig.\n- [Agile Knowledge Engineering and Semantic Web (AKSW)](http://aksw.org) - The Research Group Agile Knowledge Engineering and Semantic Web (AKSW) is hosted by the Chair of Business Information Systems (BIS) of the Institute of Computer Science (IfI) / University of Leipzig as well as the Institute for Applied Informatics (InfAI).\n- [University of Zurich Dynamic and Distributed Information Systems Group](http://www.ifi.uzh.ch/en/ddis.html)\n- [WESO](http://www.weso.es/) - WESO is a research group at the University of Oviedo founded in 2004.\n- [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/) - Department D5 of the Max Planck Institute for Informatics.\n- [DICE: Data Science Group](http://dice.cs.uni-paderborn.de/about/) - Universit\u00e4t Paderborn.\n- [Ontology Engineering Group (OEG)](http://www.oeg-upm.net/) - The Ontology Engineering Group (OEG) is based at the Computer Science School at Universidad Polit\u00e9cnica de Madrid (UPM).\n- [Knowledge Representation and Reasoning Group (KRR)](https://krr.cs.vu.nl/) - Research group is based at the Vrije Universiteit Amsterdam (VU).\n- [eXascale Infolab](https://exascale.info/) - eXascale Infolab, University of Fribourg, Switzerland.\n- [Wimmics](http://wimmics.inria.fr/corese) - Wimmics stands for Web-Instrumented Man-Machine Interactions, Communities, and Semantics, a joint research team between INRIA Sophia Antipolis - M\u00e9diterran\u00e9e and I3S (CNRS and Universit\u00e9 C\u00f4te d'Azur).\n- [Data Semantics Lab](https://dase.cs.wright.edu/) - Data Semantics Lab, Wright State University\n- [Stanford BMIR](https://bmir.stanford.edu) - Stanford University Center for Biomedical Informatics Research\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "A curated list of various semantic web and linked data resources. \nTo add something to the list please either submit a pull request or add a comment with a link to issues/awesomelets. Pull requests will be evaluated immediately for inclusion while posts while awesomelets will be evaluated at some indeterminate time in the future.  \n",
+            "confidence": [
+                0.921165307243141,
+                0.9306861044260017
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "SKOS Tools \n",
+            "confidence": [
+                0.923948005372906
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "RDF 1.1: On Semantics of RDF Datasets \n",
+            "confidence": [
+                0.978852817986473
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Model for Tabular Data and Metadata on the Web \nMetadata Vocabulary for Tabular Data \n",
+            "confidence": [
+                0.9901074941323801,
+                0.9095008199984523
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Generating RDF from Tabular Data on the Web \n",
+            "confidence": [
+                0.9308749589276025
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Web Annotation Data Model \n",
+            "confidence": [
+                0.9513493846414374
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "| HDT | Binary RDF Representation for Publication and Exchange. | application/x-binary-rdf | \n",
+            "confidence": [
+                0.9008520622457938
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "RDF Datatyping - This document summarizes the common understanding of the RDF Core Working Group (further referred to as WG) with regards to the theoretical foundation for datatyping of literal values and serves as a basis of definition, discussion, and comparison of all proposed schemes for achieving a complete datatyping solution which are to be considered by the WG. \n",
+            "confidence": [
+                0.9990659366666624
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Stardog Union - Knowledge Graph Platform for the Enterprise. \n",
+            "confidence": [
+                0.9508468766405168
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Elsevier - Global information analytics business that helps institutions and professionals advance healthcare, open science and improve performance for the benefit of humanity \n",
+            "confidence": [
+                0.9262370385751695
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "BrightstarDB - (OS) A native RDF database for the .NET platform written in C#. \n",
+            "confidence": [
+                0.9479446717978608
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "levelgraph - (OS) Graph database JS style for Node.js and the Browser. \n",
+            "confidence": [
+                0.9103660334035396
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "redstore - (OS) RedStore is a lightweight RDF triplestore written in C using the Redland library. \n",
+            "confidence": [
+                0.9673686529834025
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "neptune - ($) Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets. \nfabric - (OS) Fabric is a simple triplestore written in Golang. \n(Note: this classification is somewhat arbitrary and is meant to capture databases that only have a published paper or were developed for that purpose and are not actively maintained) \n",
+            "confidence": [
+                0.9275066327218905,
+                0.934413735953467,
+                0.9805895234544496
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "RIQ - RIQ is a new software tool for fast processing of SPARQL queries on RDF quadruples. \n",
+            "confidence": [
+                0.988631603981079
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Katts - Katts is A Triple Torrent Sieve. \n",
+            "confidence": [
+                0.9891785691729262
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "sepa - A JAVA implementation of the SPARQL Event Processing Architecture including the engine, APIs and tools. \n",
+            "confidence": [
+                0.9611534774996503
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "dice-group/triplestore-benchmarks - An Evaluation of Triplestore Benchamrks. \n",
+            "confidence": [
+                0.9415819618060711
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "sparqlab - Lab for exercising SPARQL. \n",
+            "confidence": [
+                0.9394449182630016
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "d3-sparql - Query a SPARQL endpoint with a SELECT query and get the data ready to be used with d3js \nd3sparql - JavaScript library for executing SPARQL query and transforming resulted JSON for visualization in D3.js. \n",
+            "confidence": [
+                0.961275726126898,
+                0.9199900277630821
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "odata2sparql - An OData proxy server that takes data from SPARQL endpoints or RDF graphs and publishes as OData V4 endpoint. \nlens2odata - A GUI for discovery, search, and graph of RDF sources. \n",
+            "confidence": [
+                0.9038789525037687,
+                0.9512098371430345
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "pubby - A Linked Data frontend for SPARQL endpoints. \n",
+            "confidence": [
+                0.9737891997691791
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Trifid - Lightweight Linked Data Server and Proxy \n",
+            "confidence": [
+                0.9244495653383725
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "SEPA - A JAVA implementation of the SPARQL Event Processing Architecture including the engine, APIs and tools. \nProcessor - Ontology-driven Linked Data processor and server for SPARQL backends. \n",
+            "confidence": [
+                0.9611534774996503,
+                0.9268712879757378
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "hypergraphql - GraphQL interface for querying and serving linked data on the Web. \n",
+            "confidence": [
+                0.9743475046682208
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "LDFlex - A JavaScript DSL for querying Linked Data on the Web. \ncommunica - A modular framework for querying Linked Data on the Web. \nfedora - Repository platform with native linked data support. \n",
+            "confidence": [
+                0.9793939458399393,
+                0.9788290780272703,
+                0.9804185511611561
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Marmotta - Apache linked data platform implementation. \n",
+            "confidence": [
+                0.9085250747944672
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "ldp-coap-framework - Linked Data Platform for the Constrained Application Protocol  \n",
+            "confidence": [
+                0.9135037697714311
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Metaphacts - ($) End-to-end platform to create and utilize enterprise knowledge graphs. \n",
+            "confidence": [
+                0.9284091350952476
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Wikibase - (OS) Collection of applications and libraries for creating, managing and sharing structured data. \n",
+            "confidence": [
+                0.9738994108673527
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Karma - Transform data expressed in multiple data formats into RDF. \n",
+            "confidence": [
+                0.918216581428547
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "TripleGeo - TripleGeo utility for converting geospatial data into triples. \n",
+            "confidence": [
+                0.9528637983705089
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "PA4RDF - functionality on top of an RDF store while accounting for and exploiting the fundamental differences between graph storage and relational storage. \n",
+            "confidence": [
+                0.9689482451320052
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "XML2RDF-DataTransformation-MappingTool - XML2RDF Data Transformation Tool (Mapping Tool): This generic data transformation tool maps XML data files to RDF files, given a schema matching definition, based on this Mapping Language Schema. \n",
+            "confidence": [
+                0.9066301949361375
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "quetzal - SPARQL to SQL translation engine for multiple backends, such as DB2, PostgreSQL and Apache Spark. \nsparql-gremlin - SPARQL to Gremlin Translator available as a plugin of the popular Apache TinkerPop graph computing framework.  \n",
+            "confidence": [
+                0.9011252655708295,
+                0.9245374190896217
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "ontmalizer - Comprehensive transformations of XML Schemas (XSD) and XML data to RDF/OWL automatically. \n",
+            "confidence": [
+                0.9547978079065338
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "ontop - Ontop is a platform to query relational databases as Virtual RDF Graphs using SPARQL. It's fast and is packed with features. \ndb2triples - Antidot implementations of R2RML and Direct Mapping specifications. \n",
+            "confidence": [
+                0.9915806869463645,
+                0.93686234849693
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Juma - Juma, jigsaw puzzles for representing mapping, is a method that applies the block metaphor to mapping languages. \n",
+            "confidence": [
+                0.9689764775882955
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "BioPortal - Open repository with tools for ontologies and SKOS vocabularies; biomedical content dominates but all research domains welcome \n",
+            "confidence": [
+                0.9865498255970665
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "dcat - DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web. \nprof The Profiles Ontology is an RDF vocabulary to describe profiles of (one or more) standards for information resources. \n",
+            "confidence": [
+                0.9793717292837308,
+                0.9872195638626101
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "foaf - Friend of a Friend (FOAF) ontology. \n",
+            "confidence": [
+                0.9968029537584643
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "vocab-transit - RDF Schema for transit data. \n",
+            "confidence": [
+                0.9737891997691791
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "VIVO ISF - Researchers and the full context in which they work. \n",
+            "confidence": [
+                0.9502093631161177
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "MMOntologies - Multimedia ontologies studied for the paper \"The Landscape of Multimedia Ontologies in the last Decade\". \nWine - Wine Ontology is a popular example of an OWL ontology. \nPizza - A step-by-step guide to modelling in OWL using the popular Prot\u00e9g\u00e9 OWL tools. \n",
+            "confidence": [
+                0.9810844038600864,
+                0.9554446269901129,
+                0.9561689469182258
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Coursera - Web of Data - A joint initiative between EIT Digital, Universit\u00e9 de Nice Sophia-Antipolis / Universit\u00e9 C\u00f4te d'Azur and INRIA - introduces the Linked Data standards and principles that provide the foundation of the Semantic web. \n",
+            "confidence": [
+                0.986167864011763
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "OntoVerbal - OntoVerbal is a Protege 4.2 plugin that generates natural language descriptions for classes for an ontology written in OWL. \n",
+            "confidence": [
+                0.9799430308647098
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Demystifying OWL for the Enterprise \n",
+            "confidence": [
+                0.9684915575131307
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "grafter - Linked Data & RDF Manufacturing Tools in Clojure. \nkr - Clojure API for RDF and SPARQL - provides consistent access to APIs including Jena and Sesame. \n",
+            "confidence": [
+                0.9796637136271108,
+                0.9631769093384164
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "seabass - A library for working with RDF with Jena in Clojure. \naristotle - RDF, SPARQL and OWL for Clojure \naesopica -  A Clojure library designed to help create Semantic Web based applications. \n",
+            "confidence": [
+                0.9360315644015724,
+                0.978027802044922,
+                0.9101667306825715
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "rdflib.js - Linked Data API for JavaScript. \nsparks - Sparks is a set of JavaScript libraries designed for simplifying the access to RDF data. \nSPARQL.js - A parser for the SPARQL query language in JavaScript. \nsparqlalgebrajs - SPARQL to SPARQL Algebra converter. \n",
+            "confidence": [
+                0.9122200533829993,
+                0.9910904170261974,
+                0.9613379308890659,
+                0.9693233393948762
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "graphy.js - A collection of RDF libraries for JavaScript developers with a focus on performance and usability. \n@zazuko/rdf-vocabularies - Library of common vocabularies \n",
+            "confidence": [
+                0.9809215737564295,
+                0.9155612846584052
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "rdfdev-js - Collection of libraries to ease in JavaScript RDF development. \n",
+            "confidence": [
+                0.9435042574281465
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "SPARQLKit - An implementation of the SPARQL 1.1 query language in Objective-C. \n",
+            "confidence": [
+                0.9884064062612828
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "PyShEx - ShEx interpreter for ShEx 2.0. \n",
+            "confidence": [
+                0.9394449182630016
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Djubby - Linked Data frontend for SPARQL endpoints for Django. \n",
+            "confidence": [
+                0.9754965533244071
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "rdftools - Simple collection of python RDF tools. \n",
+            "confidence": [
+                0.9049777422571106
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "rdf-serializers - Adds RDF serialization to Ruby on Rails active model serializers \nsophia_rs - Sophia: a Rust toolkit for RDF and Linked Data. \nbanana-rdf - A library for RDF, SPARQL and Linked Data technologies in Scala. \n",
+            "confidence": [
+                0.9065778901273241,
+                0.942387160314205,
+                0.9454349975159474
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "scowl - A Scala DSL for programming with the OWL API. \n",
+            "confidence": [
+                0.9196526181699751
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "URITemplate - Swift implementation of URI Template (RFC6570). \n",
+            "confidence": [
+                0.9100657217107402
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Linked Data syntaxes - Syntax highlighting for SPARQL 1.1, Turtle, TriG, N-Triples, N-Quads, Notation3 and ShExC. \n",
+            "confidence": [
+                0.961359250726299
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "BBC - Ontologies - The ontologies the BBC is using to support its audience facing applications such as BBC Sport, BBC Education, BBC Music, News projects and more. \n",
+            "confidence": [
+                0.9692683845868322
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "permid - PermID: Connecting Data to the World. \n",
+            "confidence": [
+                0.9488834954818955
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "rdfagents - Real-time messaging for the Semantic Web. \nr43ples - Revision Management for the Semantic Web. \n",
+            "confidence": [
+                0.908653424376495,
+                0.9134459888952035
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "rdf-toolkit - RDF Serializer, to be used in a git commit-hook to force automatic correct rewrite of every OWL ontology. \n",
+            "confidence": [
+                0.9223584207994705
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "owl2vcs - owl2vcs is a set of tools designed to facilitate version control of OWL 2 ontologies using version control systems. \n",
+            "confidence": [
+                0.9561930834839922
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "trinity - An application development platform for Microsoft .NET and Mono. It allows to easily build Linked Data and Semantic Web applications based on RDF. \n",
+            "confidence": [
+                0.9741595323049927
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "rww-play - An implementation in Play of a number of tools to build a Read-Write-Web server using Play2.x and akka. \n",
+            "confidence": [
+                0.952913348603956
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "lodspeakr - Framework to create Linked Data-based applications. \n",
+            "confidence": [
+                0.9481220351940889
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "imagesnippets - ImageSnippets is a complete metadata editing interface that enables someone who knows little to nothing about RDF, OWL, ontologies, or even URIs to create descriptions for images using Linked Data which is written in RDF. \nLinked Data Reactor (LD-R) - A full-stack platform for building adaptive component-based Linked Data applications in NodeJS and React. \n",
+            "confidence": [
+                0.9886687226029834,
+                0.9309357105760581
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Widoco - A Wizard for documenting and publishing ontologies on the Web. \n",
+            "confidence": [
+                0.982270736146481
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "How to diff RDF \n",
+            "confidence": [
+                0.9693233393948762
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "prefix.cc - namespace lookup for RDF developers \n",
+            "confidence": [
+                0.9394449182630016
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "CEDAR Workbench - Center for Expanded Data Annotation and Retrieval offers full life cycle management for semantically linked metadata \nOnToology - A system for collaborative ontology development. Given a GitHub repository with an OWL file, OnToology will survey it and produce diagrams, a complete documentation and validation based on common pitfalls. \n",
+            "confidence": [
+                0.9557356880089521,
+                0.9581396377917192
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "SolRDF - An RDF plugin for Solr. \n",
+            "confidence": [
+                0.9184967628330425
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "SARQ - Free Text Indexing for SPARQL using a remote Solr server. \nEARQ - EARQ is a combination of ARQ and ElasticSearch. \nsesametools - A collection of utilities for use with OpenRDF Sesame. \nImperium - Imperium is a plugin for the Play! framework similar to the existing JPA plugin that allows the use of Empire seamlessly in a Play! based application. \njekyll-rdf - A Jekyll plugin for including RDF data in your static site. \n",
+            "confidence": [
+                0.9116938522307169,
+                0.9995844212521221,
+                0.9409430363896409,
+                0.9848165224793299,
+                0.911465926303079
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "mu-semtech - An Ecosystem of User-facing Microservices supported by Semantic Models. \n",
+            "confidence": [
+                0.9015939971851441
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "jena-grande - Jena Grande is a collection of utilities, experiments and examples on how to use MapReduce, Pig, HBase or Giraph to process data in RDF format. \nmrlin - MapReduce processing of Linked Data. \n",
+            "confidence": [
+                0.9521590401080677,
+                0.9842872057724863
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "ODCS - The tool uses data processing pipelines for obtaining, processing, and storing RDF data. \n",
+            "confidence": [
+                0.9271583128228887
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "skosprovider - Skosprovider provides an interface that can be included in an application to allow it to talk to different SKOS vocabularies.  \n",
+            "confidence": [
+                0.9393398879644357
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Lemon - The Lexicon Model for Ontologies \n",
+            "confidence": [
+                0.9775265914507184
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "n3pygments - Pygments lexer to perform syntax highlighting for N3, Turtle and SPARQL. \nlevelgraph-n3 - LevelGraph plugin for storing N3/Turtle/RDF data. \n",
+            "confidence": [
+                0.943720503160803,
+                0.9737891997691791
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "swrlapi - The SWRLAPI is a Java API for working with the OWL-based SWRL rule and SQWRL query languages. It includes graphical tools for editing and executing rules and queries. \n",
+            "confidence": [
+                0.9936033513096375
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Git2PROV - Unleash the potential of Git in the new W3C standard for provenance. \n",
+            "confidence": [
+                0.9514251850748832
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "jqudt - Java library for working with the QUDT ontology and data using it. \n",
+            "confidence": [
+                0.9700073481975878
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "owlapitools - Set of independent add-ons for OWL API. \n",
+            "confidence": [
+                0.9508225305334009
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "mediation - Jena based framework to implement ontological mediation of SPARQL queries. \n",
+            "confidence": [
+                0.9892902670948353
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "SemanticPingback - This small vocabulary defines resources which are used in the context of Semantic Pingback. \n",
+            "confidence": [
+                0.911127218700715
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "grefine-rdf-extension - An extension to Google Refine that enables graphical mapping of Google Refine project data to an RDF skeleton and then exporting it in RDF format. \n",
+            "confidence": [
+                0.9877544080099607
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "xodx - An implementation of Semantic Pingback and PuSH for a DSSN. \nmorph-starter - this project is a simple Java (and Scala) demo of how to use morph. \nsesametools - A collection of utilities for use with OpenRDF Sesame (as of recently, Eclipse RDF4J). \n",
+            "confidence": [
+                0.9768968118212837,
+                0.9814360768824297,
+                0.9674252226428679
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "balloon - A tool-suite for Linked Data consumption. balloon aims in offering public services and tools to take advantage of the semantic web with less effort. The basic motivation is to establish a foundation for Linked Data as a Service (LDaaS). \n",
+            "confidence": [
+                0.995995242814336
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "semargl - Highly performant, lightweight framework for linked data processing. Supports RDFa, JSON-LD, RDF/XML and plain text formats, runs on Android and GAE, provides integration with Jena, Sesame and Clerezza. \n",
+            "confidence": [
+                0.9866865597354428
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "SEPA - A JAVA implementation of the SPARQL Event Processing Architecture including the engine, APIs and tools. \n",
+            "confidence": [
+                0.9611534774996503
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "sparql-ld - SPARQL-LD: A SPARQL Extension for Fetching and Querying Linked Data. \n",
+            "confidence": [
+                0.9420374109678618
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "CSO - The Computer Science Ontology (CSO) is a large-scale ontology of research areas that was automatically generated using the Klink-2 algorithm on the Rexplore dataset, which consists of about 16 million publications, mainly in the field of Computer Science. \nmetreeca - The model-driven linked data platform. \nOLGA - OLGA (Ontology Library GenerAtor) is a generic tool aiming to accelerate the adoption of Standard W3C Semantic technology among developers. \n",
+            "confidence": [
+                0.958645247719953,
+                0.9311335819015948,
+                0.9502206746510556
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "amazon-neptune-tools - Tools and utilities to enable loading data and building graph applications with Amazon Neptune. \nsparql-ld - SPARQL-LD: A SPARQL Extension for Fetching and Querying Linked Data. \ngenealogical-trees - Semantic Web Exercise: Reasoning and Visualization of the Genealogical Ontologies. \n",
+            "confidence": [
+                0.9883719394650515,
+                0.9420374109678618,
+                0.9582408328432815
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "LodLive - browse the web of data - a SPARQL navigator http://lodlive.it \n",
+            "confidence": [
+                0.9822777671873387
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "ontmalizer - A tool that performs comprehensive transformations of XML Schemas (XSD) and XML data to RDF/OWL automatically \n",
+            "confidence": [
+                0.9629714334792362
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "ML-Schema/core - CORE ontology of ML-Schema schema. It's the mapping to others machine learning vocabularies and ontologies (DMOP, Expose, OntoDM and MEX) \n",
+            "confidence": [
+                0.9881954326712546
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Mandolin - sparkle Markov Logic Networks for the Discovery of Links \ndocker2rdf - Mapper to represent Dockerfiles as RDF triples \nYARRML - YARRRML is a human readable text-based representation for declarative generation rules. It is a subset of [YAML], a widely used data serialization language designed to be human-friendly.  \n",
+            "confidence": [
+                0.9658585946843461,
+                0.9010956798869101,
+                0.9827222487608361
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Linked-Data-Studio - The Linked Data Studio is an extension to the Linked Data Theatre for the creation of Linked Data. \ncanonical_rdf - Proof-of-concept implementation of Aidan Hogan's RDF canonicalization algorithm in node.js. \nLinked-Data-Theatre - The Linked Data Theatre is a platform for an optimal presentation of Linked Data. \nSEPA - A JAVA implementation of the SPARQL Event Processing Architecture including the engine, APIs and tools. \n",
+            "confidence": [
+                0.9707512695392654,
+                0.9843703414119188,
+                0.9970088446313093,
+                0.9611534774996503
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Map-On - A web-based editor for visual ontology mapping for R2RML documents.  \n",
+            "confidence": [
+                0.9451629987148598
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "owlproofs - Extension to the OWL API to request proofs of entailments from the reasoner. \n",
+            "confidence": [
+                0.9730562501602691
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "konclude - Konclude is a high-performance reasoner for large and expressive ontologies. \n",
+            "confidence": [
+                0.9711798305639942
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "spdx - Software Package Data Exchange\u00ae (SPDX\u00ae) is an open standard for communicating software bill of material information (including components, licenses, copyrights, and security references). \n",
+            "confidence": [
+                0.976010431925601
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Sequoia - Sequoia is a consequence-based OWL 2 DL Reasoner supporting multithreaded reasoning. \nCostFed - Cost-Based Query Optimization for SPARQL Endpoint Federation. \nsparql-ld - SPARQL-LD: A SPARQL Extension for Fetching and Querying Linked Data. \n",
+            "confidence": [
+                0.9109340605672717,
+                0.9554825584673026,
+                0.9420374109678618
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "premon - PREdicate Model for ONtologies \neso-and-ceo - Event and Implied Situation Ontology (ESO) and the Circumstantial Event Ontology for Calamities (CEO). \n",
+            "confidence": [
+                0.959961309707981,
+                0.9783851780665145
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "umls2rdf - These python scripts connect to the Unified Medical Language System (UMLS) database and translate the ontologies into RDF/OWL files. This is part of the BioPortal project. \n",
+            "confidence": [
+                0.9918536307816999
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "A curated list of various semantic web and linked data resources.",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "Machine Learning \n",
+            "confidence": [
+                0.9195926162616405
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Semantic Web Journal \n",
+            "confidence": [
+                0.9330586062571771
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "International Journal of Web and Semantic Technology \n",
+            "confidence": [
+                0.9754687259365097
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "visu - Visual SPARQL query tool. \n",
+            "confidence": [
+                0.9414616401702977
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "International Semantic Web Conference (ISWC 2019) \nEuropean Semantic Web Conference (ESWC 2019) \n",
+            "confidence": [
+                0.9988461346356616,
+                0.9988461346356616
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "LOV - Linked Open Vocabularies. Portal / search tool for vocabularies. \n",
+            "confidence": [
+                0.9274384332336776
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "RDFSharp.Semantics - .NET library for OWL-DL/SKOS ontology modeling, validation and reasoning \n",
+            "confidence": [
+                0.9283183835609227
+            ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "rocker - key A Refinement Operator Approach for Key Discovery. http://aksw.org/projects/Rocker \n",
+            "confidence": [
+                0.9963953642271064
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "tawny-owl - Build OWL Ontologies in a Programmatic Environment. \n",
+            "confidence": [
+                0.944222377628984
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "long_title": {
+        "excerpt": "Awesome Semantic Web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "documentation": [
+        {
+            "excerpt": "https://skosprovider.readthedocs.io/",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "usage": [
+        {
+            "excerpt": "- [rdf2go](https://github.com/deiu/rdf2go) - Native golang library for RDF.\n- [knakk/rdf](https://github.com/knakk/rdf) - RDF library for Go.\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/dgarijo/awesome-semantic-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "dgarijo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "User",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-05-11T19:03:43Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-05-11T19:21:02Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Creative Commons Zero v1.0 Universal",
+            "url": "https://api.github.com/licenses/cc0-1.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "awesome-semantic-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "dgarijo/awesome-semantic-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/dgarijo/awesome-semantic-web/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_url": {
+        "excerpt": "https://api.github.com/repos/dgarijo/awesome-semantic-web/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazers_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:01:25 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forks_count": {
+        "excerpt": {
+            "count": 0,
+            "date": "Fri, 04 Feb 2022 10:01:25 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/dgarijo/awesome-semantic-web/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readme_url": {
+        "excerpt": "https://github.com/dgarijo/awesome-semantic-web/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'CC0 1.0 Universal\\n\\nStatement of Purpose\\n\\nThe laws of most jurisdictions throughout the world automatically confer\\nexclusive Copyright and Related Rights (defined below) upon the creator and\\nsubsequent owner(s) (each and all, an \"owner\") of an original work of\\nauthorship and/or a database (each, a \"Work\").\\n\\nCertain owners wish to permanently relinquish those rights to a Work for the\\npurpose of contributing to a commons of creative, cultural and scientific\\nworks (\"Commons\") that the public can reliably and without fear of later\\nclaims of infringement build upon, modify, incorporate in other works, reuse\\nand redistribute as freely as possible in any form whatsoever and for any\\npurposes, including without limitation commercial purposes. These owners may\\ncontribute to the Commons to promote the ideal of a free culture and the\\nfurther production of creative, cultural and scientific works, or to gain\\nreputation or greater distribution for their Work in part through the use and\\nefforts of others.\\n\\nFor these and/or other purposes and motivations, and without any expectation\\nof additional consideration or compensation, the person associating CC0 with a\\nWork (the \"Affirmer\"), to the extent that he or she is an owner of Copyright\\nand Related Rights in the Work, voluntarily elects to apply CC0 to the Work\\nand publicly distribute the Work under its terms, with knowledge of his or her\\nCopyright and Related Rights in the Work and the meaning and intended legal\\neffect of CC0 on those rights.\\n\\n1. Copyright and Related Rights. A Work made available under CC0 may be\\nprotected by copyright and related or neighboring rights (\"Copyright and\\nRelated Rights\"). Copyright and Related Rights include, but are not limited\\nto, the following:\\n\\n  i. the right to reproduce, adapt, distribute, perform, display, communicate,\\n  and translate a Work;\\n\\n  ii. moral rights retained by the original author(s) and/or performer(s);\\n\\n  iii. publicity and privacy rights pertaining to a person\\'s image or likeness\\n  depicted in a Work;\\n\\n  iv. rights protecting against unfair competition in regards to a Work,\\n  subject to the limitations in paragraph 4(a), below;\\n\\n  v. rights protecting the extraction, dissemination, use and reuse of data in\\n  a Work;\\n\\n  vi. database rights (such as those arising under Directive 96/9/EC of the\\n  European Parliament and of the Council of 11 March 1996 on the legal\\n  protection of databases, and under any national implementation thereof,\\n  including any amended or successor version of such directive); and\\n\\n  vii. other similar, equivalent or corresponding rights throughout the world\\n  based on applicable law or treaty, and any national implementations thereof.\\n\\n2. Waiver. To the greatest extent permitted by, but not in contravention of,\\napplicable law, Affirmer hereby overtly, fully, permanently, irrevocably and\\nunconditionally waives, abandons, and surrenders all of Affirmer\\'s Copyright\\nand Related Rights and associated claims and causes of action, whether now\\nknown or unknown (including existing as well as future claims and causes of\\naction), in the Work (i) in all territories worldwide, (ii) for the maximum\\nduration provided by applicable law or treaty (including future time\\nextensions), (iii) in any current or future medium and for any number of\\ncopies, and (iv) for any purpose whatsoever, including without limitation\\ncommercial, advertising or promotional purposes (the \"Waiver\"). Affirmer makes\\nthe Waiver for the benefit of each member of the public at large and to the\\ndetriment of Affirmer\\'s heirs and successors, fully intending that such Waiver\\nshall not be subject to revocation, rescission, cancellation, termination, or\\nany other legal or equitable action to disrupt the quiet enjoyment of the Work\\nby the public as contemplated by Affirmer\\'s express Statement of Purpose.\\n\\n3. Public License Fallback. Should any part of the Waiver for any reason be\\njudged legally invalid or ineffective under applicable law, then the Waiver\\nshall be preserved to the maximum extent permitted taking into account\\nAffirmer\\'s express Statement of Purpose. In addition, to the extent the Waiver\\nis so judged Affirmer hereby grants to each affected person a royalty-free,\\nnon transferable, non sublicensable, non exclusive, irrevocable and\\nunconditional license to exercise Affirmer\\'s Copyright and Related Rights in\\nthe Work (i) in all territories worldwide, (ii) for the maximum duration\\nprovided by applicable law or treaty (including future time extensions), (iii)\\nin any current or future medium and for any number of copies, and (iv) for any\\npurpose whatsoever, including without limitation commercial, advertising or\\npromotional purposes (the \"License\"). The License shall be deemed effective as\\nof the date CC0 was applied by Affirmer to the Work. Should any part of the\\nLicense for any reason be judged legally invalid or ineffective under\\napplicable law, such partial invalidity or ineffectiveness shall not\\ninvalidate the remainder of the License, and in such case Affirmer hereby\\naffirms that he or she will not (i) exercise any of his or her remaining\\nCopyright and Related Rights in the Work or (ii) assert any associated claims\\nand causes of action with respect to the Work, in either case contrary to\\nAffirmer\\'s express Statement of Purpose.\\n\\n4. Limitations and Disclaimers.\\n\\n  a. No trademark or patent rights held by Affirmer are waived, abandoned,\\n  surrendered, licensed or otherwise affected by this document.\\n\\n  b. Affirmer offers the Work as-is and makes no representations or warranties\\n  of any kind concerning the Work, express, implied, statutory or otherwise,\\n  including without limitation warranties of title, merchantability, fitness\\n  for a particular purpose, non infringement, or the absence of latent or\\n  other defects, accuracy, or the present or absence of errors, whether or not\\n  discoverable, all to the greatest extent permissible under applicable law.\\n\\n  c. Affirmer disclaims responsibility for clearing rights of other persons\\n  that may apply to the Work or any use thereof, including without limitation\\n  any person\\'s Copyright and Related Rights in the Work. Further, Affirmer\\n  disclaims responsibility for obtaining any necessary consents, permissions\\n  or other rights required for any use of the Work.\\n\\n  d. Affirmer understands and acknowledges that Creative Commons is not a\\n  party to this document and has no duty or obligation with respect to this\\n  CC0 or use of the Work.\\n\\nFor more information, please see\\nhttp://creativecommons.org/publicdomain/zero/1.0/\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

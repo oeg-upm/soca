@@ -1,0 +1,342 @@
+{
+    "description": [
+        {
+            "excerpt": "Refer to [Using JHipster in production][] for more details.\n \n",
+            "confidence": [
+                [
+                    0.9815070336070729
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Packaging as jar",
+            "parentHeader": "AXA --- Building for production"
+        },
+        {
+            "excerpt": "For more information refer to [Using Docker and Docker-Compose][], this page also contains information on the docker-compose sub-generator (`jhipster docker-compose`), which is able to generate docker configurations for one or several JHipster applications.\n \n",
+            "confidence": [
+                [
+                    0.9713393415289909
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Using Docker to simplify development (optional)",
+            "parentHeader": "AXA"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "Before you can build this project, you must install and configure the following dependencies on your machine: \n1. [Node.js][]: We use Node to run a development web server and build the project.\n   Depending on your system, you can install Node either from source or as a pre-packaged bundle. \nAfter installing Node, you should be able to run the following command to install development tools.\nYou will only need to run this command when dependencies change in [package.json](package.json).\n```\nnpm install\n```\n \n",
+            "confidence": [
+                [
+                    0.9787772187955958,
+                    0.9192377544019876,
+                    0.9902924153692072
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Development",
+            "parentHeader": "AXA"
+        },
+        {
+            "excerpt": "Npm is also used to manage CSS and JavaScript dependencies used in this application. You can upgrade dependencies by\nspecifying a newer version in [package.json](package.json). You can also run `npm update` and `npm install` to manage dependencies.\nAdd the `help` flag on any command to see how you can use it. For example, `npm help update`. \n",
+            "confidence": [
+                [
+                    0.9883008576129786
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Development",
+            "parentHeader": "AXA"
+        },
+        {
+            "excerpt": "You can run a Sonar analysis with using the [sonar-scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner) or by using the maven plugin. \n",
+            "confidence": [
+                [
+                    0.9460655880205955
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Code quality",
+            "parentHeader": "AXA --- Testing"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "AXA",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "requirement": [
+        {
+            "originalHeader": "Managing dependencies",
+            "excerpt": "For example, to add [Leaflet][] library as a runtime dependency of your application, you would run following command:\n\n```\nnpm install --save --save-exact leaflet\n```\n\nTo benefit from TypeScript type definitions from [DefinitelyTyped][] repository in development, you would run following command:\n\n```\nnpm install --save-dev --save-exact @types/leaflet\n```\n\nThen you would import the JS and CSS files specified in library's installation instructions so that [Webpack][] knows about them:\nNote: There are still a few other things remaining to do for Leaflet that we won't detail here.\n\nFor further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].\n",
+            "parentHeader": "AXA --- Development",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "run": [
+        {
+            "originalHeader": "Running MongoDB in Dokcker",
+            "excerpt": "```\ndocker run --name mongoAxa -d mongo:4.4.5 -p 27017:27017\n```",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "support": [
+        {
+            "originalHeader": "PWA Support",
+            "excerpt": "JHipster ships with PWA (Progressive Web App) support, and it's turned off by default. One of the main components of a PWA is a service worker.\n\nThe service worker initialization code is commented out by default. To enable it, uncomment the following code in `src/main/webapp/index.html`:\n\n```html\n<script>\n  if ('serviceWorker' in navigator) {\n    navigator.serviceWorker.register('./service-worker.js').then(function () {\n      console.log('Service Worker Registered');\n    });\n  }\n</script>\n```\n\nNote: [Workbox](https://developers.google.com/web/tools/workbox/) powers JHipster's service worker. It dynamically generates the `service-worker.js` file.\n",
+            "parentHeader": "AXA --- Development",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/dakixr/Hackathon-AXA",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "dakixr",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "User",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-04-20T10:12:47Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-04-20T16:15:21Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "Hackathon-AXA",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "dakixr/Hackathon-AXA",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/dakixr/Hackathon-AXA/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/dakixr/Hackathon-AXA/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/Dakixr/Hackathon-AXA/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 22 Feb 2022 18:14:13 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 22 Feb 2022 18:14:13 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "JavaScript",
+            "Java",
+            "TypeScript",
+            "HTML",
+            "SCSS",
+            "CSS",
+            "Shell",
+            "Batchfile",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/dakixr/Hackathon-AXA/blob/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'Copyright (c) 2015, Wes Todd\\n\\nPermission to use, copy, modify, and/or distribute this software for any\\npurpose with or without fee is hereby granted, provided that the above\\ncopyright notice and this permission notice appear in all copies.\\n\\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY\\nSPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION\\nOF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "contributingGuidelines": {
+        "excerpt": "Developer's Certificate of Origin 1.1\nBy making a contribution to this project, I certify that:\n\n\n(a) The contribution was created in whole or in part by me and I\n  have the right to submit it under the open source license\n  indicated in the file; or\n\n\n(b) The contribution is based upon previous work that, to the best\n  of my knowledge, is covered under an appropriate open source\n  license and I have the right under that license to submit that\n  work with modifications, whether created in whole or in part\n  by me, under the same open source license (unless I am\n  permitted to submit under a different license), as indicated\n  in the file; or\n\n\n(c) The contribution was provided directly to me by some other\n  person who certified (a), (b) or (c) and I have not modified\n  it.\n\n\n(d) I understand and agree that this project and the contribution\n  are public and that a record of the contribution (including all\n  personal information I submit with it, including my sign-off) is\n  maintained indefinitely and may be redistributed consistent with\n  this project or the open source license(s) involved.\n\n\nModeration Policy\nThe Node.js Moderation Policy applies to this WG.\nCode of Conduct\nThe Node.js Code of Conduct applies to this WG.",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "codeOfConduct": {
+        "excerpt": "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/CODE_OF_CONDUCT.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "acknowledgments": {
+        "excerpt": "\"use strict\";\nvar _Object$defineProperty = require(\"@babel/runtime-corejs3/core-js-stable/object/define-property\");\n_Object$defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\nvar docAcknowledgmentsRole = {\n  abstract: false,\n  accessibleNameRequired: false,\n  baseConcepts: [],\n  childrenPresentational: false,\n  nameFrom: ['author'],\n  prohibitedProps: [],\n  props: {\n    'aria-disabled': null,\n    'aria-errormessage': null,\n    'aria-expanded': null,\n    'aria-haspopup': null,\n    'aria-invalid': null\n  },\n  relatedConcepts: [{\n    concept: {\n      name: 'acknowledgments [EPUB-SSV]'\n    },\n    module: 'EPUB'\n  }],\n  requireContextRole: [],\n  requiredContextRole: [],\n  requiredOwnedElements: [],\n  requiredProps: {},\n  superClass: [['roletype', 'structure', 'section', 'landmark']]\n};\nvar _default = docAcknowledgmentsRole;\nexports.default = _default;",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "contributors": {
+        "excerpt": "People who have agreed to one of the CLAs and can contribute patches.\nThe AUTHORS file lists the copyright holders; this file\nlists people.  For example, Google employees are listed here\nbut not in AUTHORS, because Google holds the copyright.\n\nhttps://developers.google.com/open-source/cla/individual\nhttps://developers.google.com/open-source/cla/corporate\n\nNames should be added to this file as:\nName <email address>\nSurma &#115;&#117;&#114;&#109;&#97;&#64;&#103;&#111;&#111;&#103;&#108;&#101;&#46;&#99;&#111;&#109;",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/%40surma/rollup-plugin-off-main-thread/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasDocumentation": {
+        "excerpt": [
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/target/node/node_modules/npm/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/target/node/node_modules/npm/node_modules/wcwidth/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/target/node/node_modules/npm/node_modules/smart-buffer/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/target/node/node_modules/npm/node_modules/socks/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-merge-longhand/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-minify-selectors/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/wcwidth/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-minify-font-values/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-normalize-unicode/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-reduce-transforms/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-minify-gradients/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-minify-params/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/cssnano-util-raw-cache/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/fs-monkey/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-ordered-values/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-merge-rules/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/css-declaration-sorter/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-normalize-display-values/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/cssnano-preset-default/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-discard-duplicates/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/date-fns/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/@typescript-eslint/eslint-plugin/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-discard-overridden/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/smart-buffer/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-convert-values/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-normalize-url/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-discard-comments/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-colormin/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/fs-extra/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-calc/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-svgo/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-discard-empty/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-normalize-timing-functions/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/renderkid/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/socks/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-normalize-charset/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/@sinonjs/samsam/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-normalize-string/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/generator-jhipster/generators/client/templates/vue/src/main/webapp/app/admin/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/generator-jhipster/generators/client/templates/angular/src/main/webapp/app/admin/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/generator-jhipster/generators/client/templates/react/src/main/webapp/app/modules/administration/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-unique-selectors/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-normalize-whitespace/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/cssnano/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-normalize-positions/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/simple-progress-webpack-plugin/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-normalize-repeat-style/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/stylehacks/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/node_modules/postcss-reduce-initial/node_modules/postcss/docs",
+            "https://github.com/Dakixr/Hackathon-AXA/tree/master/src/main/webapp/app/modules/administration/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/target/node/node_modules/npm/node_modules/node-gyp/macOS_Catalina_acid_test.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/target/node/node_modules/npm/node_modules/node-gyp/gyp/tools/emacs/run-unit-tests.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/target/node/node_modules/npm/lib/utils/completion.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/jake/bin/bash_completion.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/coa/lib/completion.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/%40cnakazawa/watch/scripts/release.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/node-gyp/macOS_Catalina_acid_test.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/node-gyp/gyp/tools/emacs/run-unit-tests.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/exit/test/fixtures/create-files.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/browser-sync/certs/gen.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/jmespath/g.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/husky/.husky/_/husky.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/husky/sh/husky.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/babel-preset-current-node-syntax/scripts/check-yarn-bug.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/node_modules/buffer/bin/update-authors.sh",
+            "https://raw.githubusercontent.com/Dakixr/Hackathon-AXA/master/src/main/docker/jib/entrypoint.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

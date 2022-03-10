@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="cards_data.json" type="text/javascript"></script>
+<title>SCC</title>
+<link rel="stylesheet" href="styles.css"></styles>
+<link rel="stylesheet" href="scc-card.css"></styles>
+</head>
+<body>
+<nav class="navbar">
+	<div class="navbar-inside">
+		<h2 id="nav-title">Software Catalog</h2>
+		<input id="searchBar" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
+	</div>
+	
+
+	<div class="filters-wrapper">
+		<div class="filters">
+			<div data-toggle="tooltip" data-placement="bottom" title="Filter"><img src="img/filter.svg" class="sort-filter-icon"/></div>
+			<div class="filter-includes">
+				<div class="filter-includes-box" id="license" data-toggle="tooltip" data-placement="bottom" title="Filter by license"><img class="repo-icon-filter" src="repo_icons/license.png"/></div>
+				<div class="filter-includes-box" id="notebook" data-toggle="tooltip" data-placement="bottom" title="Filter by notebook"><img class="repo-icon-filter" src="repo_icons/notebook.png"/></div>
+				<div class="filter-includes-box" id="docker" data-toggle="tooltip" data-placement="bottom" title="Filter by docker"><img class="repo-icon-filter" src="repo_icons/docker.png"/></div>
+				<div class="filter-includes-box" id="paper" data-toggle="tooltip" data-placement="bottom" title="Filter by paper"><img class="repo-icon-filter" src="repo_icons/paper.png"/></div>
+				<div class="filter-includes-box" id="citation" data-toggle="tooltip" data-placement="bottom" title="Filter by citation"><img class="repo-icon-filter" src="repo_icons/citation.png"/></div>
+				<div class="filter-includes-box" id="identifier" data-toggle="tooltip" data-placement="bottom" title="Filter by identifier"><img class="repo-icon-filter" src="repo_icons/doi.png"/></div>
+				<div class="filter-includes-box" id="installation" data-toggle="tooltip" data-placement="bottom" title="Filter by installation"><img class="repo-icon-filter" src="repo_icons/installation.png"/></div>
+				<div class="filter-includes-box" id="requirements" data-toggle="tooltip" data-placement="bottom" title="Filter by requirements"><img class="repo-icon-filter" src="repo_icons/requirements.png"/></div>
+				<div class="filter-includes-box" id="documentation" data-toggle="tooltip" data-placement="bottom" title="Filter by documentation"><img class="repo-icon-filter" src="repo_icons/documentation.png"/></div>
+				<div class="filter-includes-box" id="acknowledgement" data-toggle="tooltip" data-placement="bottom" title="Filter by acknowledgement"><img class="repo-icon-filter" src="repo_icons/acknowledgement.png"/></div>
+				<div class="filter-includes-box" id="download" data-toggle="tooltip" data-placement="bottom" title="Filter by download"><img class="repo-icon-filter" src="repo_icons/download.png"/></div>
+			</div>
+		</div>
+		<div class="filters">
+			<div data-toggle="tooltip" data-placement="bottom" title="Sort"><img src="img/sort.svg" class="sort-filter-icon"/></div>
+			<div class="sort">
+				<div data-toggle="tooltip" data-placement="bottom" title="Sort by title" class="sort-box" id="title"><p>Title</p></div>
+				<div data-toggle="tooltip" data-placement="bottom" title="Sort by number of stars" class="sort-box" id="stars"><p>Stars</p></div>
+				<div data-toggle="tooltip" data-placement="bottom" title="Sort by number of releases" class="sort-box" id="releases"><p>Releases</p></div>
+				<div data-toggle="tooltip" data-placement="bottom" title="Sort by last updated" class="sort-box" id="last_updated"><p>Last updated</p></div>
+			</div>
+		</div>
+		
+	</div></nav>
+<div id="myCards">
+</div>
+<footer>
+	<div style="height: 4rem; display: flex; flex-direction: column; justify-content: center">
+		<p id="portal-last-updated">Last updated at XX XX XXXX</p>
+		<p>Built with <a href="https://github.com/dakixr/scc" target="_blank">scc</a></p>
+	</div>
+	<div style="height: 4rem; flex-direction: row;">
+		<a class="footer-img" href="http://fi.upm.es/" target="_blank"><img alt="FI logo" class="footer-img" src="img/fi_logo.png"/></a>
+		<a class="footer-img" href="https://www.upm.es/" target="_blank"><img alt="UPM logo" class="footer-img" src="img/upm_logo.png"/></a>
+		<a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
+	</div>
+</footer>
+<script></script>
+<script src="app.js"></script>
+</body>
+</html>
