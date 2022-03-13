@@ -24,6 +24,15 @@ class metadata(object):
                 logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
         return logo if logo else f"{self.base}img/github-default.svg"
 
+    def html_repo_type(self):
+        repo_type = self.repo_type()
+        if not repo_type:
+            return ''
+        if repo_type == 'web': 
+            return f'<img src="{self.base}repo_icons/web.png" {self.add_tooltip("left","Website")} alt="repo-type" class="repo-type">'
+        if repo_type == 'ontology': 
+            return f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">'  
+
     def icon_star(self):
         return f"{self.base}repo_icons/star.png"
 
@@ -169,6 +178,18 @@ class metadata(object):
                             {self.add_tooltip('bottom',f"DOI: {identifier}")}>
                     </a>""")
 
+        status = self.status()
+        if status:
+            html += self.icon_wrapper(
+                icon_html = f"""<img src="{self.base}repo_icons/status.png" 
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom','Status')}>
+                            """,
+
+                modal_html = self.modal(
+                    title = 'Status',
+                    body = '### Description  \n'+ safe_dic(status,'description') + '#### More information  \n' + f'<{safe_dic(status,"excerpt")}>'))
+
         installation = self.installation()
         if installation:
             html += self.icon_wrapper(
@@ -189,7 +210,29 @@ class metadata(object):
 
                 modal_html = self.modal(
                     title = 'Requirements',
-                    body = f'{requirements}'))
+                    body = requirements))
+
+        usage = self.usage()
+        if usage:
+            html += self.icon_wrapper(
+                icon_html = f"""<img src="{self.base}repo_icons/usage.png"  
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom','Usage')}>""",
+
+                modal_html = self.modal(
+                    title = 'Usage',
+                    body = usage))
+
+        help = self.help()
+        if help:
+            html += self.icon_wrapper(
+                icon_html = f"""<img src="{self.base}repo_icons/help.png"  
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom','Help')}>""",
+
+                modal_html = self.modal(
+                    title = 'Help',
+                    body = help))
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
@@ -234,7 +277,7 @@ class metadata(object):
         return f'''data-toggle="tooltip" data-placement="{placement}" title="{tooltip_text}" alt="{tooltip_text}"'''
     
     def icon_wrapper(self, icon_html, modal_html = None, other_field = None):
-        return f"""<div {other_field if other_field else ''}>
+        return f"""<div {other_field if other_field else ''} style="cursor: pointer;">
                         <div class="icon">{icon_html}</div>
                         {modal_html if modal_html else ''}
                     </div>"""
@@ -256,6 +299,48 @@ class metadata(object):
 
 
     # Metadata ##################################################
+
+    def repo_type(self):
+        langs = self.languagues()
+
+        if not langs: # Most ontologies does not have any language
+            return 'ontology'
+
+        web_langs = ['html','css','javascript'] 
+        ontology_langs = ['html','css','javascript'] 
+
+        is_ontology = True
+        is_web = True
+
+        for lang in langs:
+            if lang not in web_langs:
+                is_web = False
+            if lang not in ontology_langs:
+                is_ontology = False
+
+        if (is_ontology and is_web 
+                and (   
+                    'ontolog' in self.description().lower() 
+                    or 
+                    'ontolog' in self.title().lower())
+                ):
+            return 'ontology'
+              
+        return 'web' if is_web else None
+         
+    def usage(self):
+        return safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
+
+    def help(self):
+        support = safe_dic(safe_list(safe_dic(self.md,'support'),0),'excerpt')
+        faq = safe_dic(safe_list(safe_dic(self.md,'faq'),0),'excerpt')
+        supportChannels = safe_dic(safe_list(safe_dic(self.md,'supportChannels'),0),'excerpt')
+
+        support_md = ('### Support  \n' + support) if support else ''
+        faq_md = ('### FAQ  \n' + faq) if faq else ''
+        supportChannels_md = ('### Support Channels  \n' + supportChannels) if supportChannels else ''
+
+        return support_md + faq_md + supportChannels_md if support or faq or supportChannels else None
 
     def recently_updated(self):
         #TODO: Retreive days_theshold from properties file
@@ -294,6 +379,9 @@ class metadata(object):
         
     def identifier(self):
         return safe_dic(safe_list(safe_dic(self.md,'identifier'),0),'excerpt')
+    
+    def status(self):
+        return safe_dic(self.md,'repoStatus')
 
     def acknowledgement(self):
         return safe_dic(safe_list(safe_dic(self.md,'acknowledgement'),0),'excerpt')

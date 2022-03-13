@@ -18,11 +18,14 @@ const citation = document.getElementById('citation');
 const docker = document.getElementById('docker');
 const documentation = document.getElementById('documentation');
 const identifier = document.getElementById('identifier');
+const status_let = document.getElementById('status');
 const download = document.getElementById('download');
 const installation = document.getElementById('installation');
 const license = document.getElementById('license');
 const notebook = document.getElementById('notebook');
 const requirements = document.getElementById('requirements');
+const usage = document.getElementById('usage');
+const help = document.getElementById('help');
 const paper = document.getElementById('paper');
 
 const title = document.getElementById('title');
@@ -73,6 +76,13 @@ identifier.addEventListener('click', () => {
     else identifier.classList.remove("filter-selected");
     search(); 
 });
+status_let.addEventListener('click', () => { 
+    state_status = !state_status;
+    if (state_status)
+        status_let.classList.add("filter-selected");
+    else status_let.classList.remove("filter-selected");
+    search(); 
+});
 
 download.addEventListener('click', () => { 
     state_download = !state_download;
@@ -110,6 +120,20 @@ requirements.addEventListener('click', () => {
     if (state_requirements)
         requirements.classList.add("filter-selected");
     else requirements.classList.remove("filter-selected");
+    search(); 
+});
+usage.addEventListener('click', () => { 
+    state_usage = !state_usage;
+    if (state_usage)
+        usage.classList.add("filter-selected");
+    else usage.classList.remove("filter-selected");
+    search(); 
+});
+help.addEventListener('click', () => { 
+    state_help = !state_help;
+    if (state_help)
+        help.classList.add("filter-selected");
+    else help.classList.remove("filter-selected");
     search(); 
 });
 paper.addEventListener('click', () => { 
@@ -165,11 +189,14 @@ let state_citation = false;
 let state_docker = false;
 let state_documentation = false;
 let state_identifier = false;
+let state_status = false;
 let state_download = false;
 let state_installation = false;
 let state_license = false;
 let state_notebook = false;
 let state_requirements = false;
+let state_usage = false;
+let state_help = false;
 let state_paper = false;
 
 let state_title = false;
@@ -189,11 +216,14 @@ function search() {
                 && ((state_docker)? card.hasBuildFile : true)
                 && ((state_documentation)? card.hasDocumentation : true)
                 && ((state_identifier)? card.identifier : true) 
+                && ((state_status)? card.repoStatus : true) 
                 && ((state_download)? card.downloadUrl : true)
                 && ((state_license)? card.license : true)
                 && ((state_notebook)? card.hasExecutableNotebook : true)
                 && ((state_paper)? card.paper : true)
                 && ((state_requirements)? card.requirement : true)
+                && ((state_usage)? card.usage : true)
+                && ((state_help)? card.help : true)
                 && ((state_installation)? card.installation : true));
     });
 
@@ -274,7 +304,7 @@ function addList(element, iterable){
 async function getGithub(license){
     if (license.dataset.url != 'None'){
         const response = await fetch(license.dataset.url);
-        const response_aux = await response.clone();
+        const response_aux = response.clone();
         try {
             const data =  await response.json();
 
