@@ -268,7 +268,7 @@ class metadata(object):
         return f'''data-toggle="tooltip" data-placement="{placement}" title="{tooltip_text}" alt="{tooltip_text}"'''
     
     def icon_wrapper(self, icon_html, modal_html = None, other_field = None):
-        return f"""<div {other_field if other_field else ''}>
+        return f"""<div {other_field if other_field else ''} style="cursor: pointer;">
                         <div class="icon">{icon_html}</div>
                         {modal_html if modal_html else ''}
                     </div>"""
