@@ -24,6 +24,15 @@ class metadata(object):
                 logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
         return logo if logo else f"{self.base}img/github-default.svg"
 
+    def html_repo_type(self):
+        repo_type = self.repo_type()
+        if not repo_type:
+            return ''
+        if repo_type == 'web': 
+            return f'<img src="{self.base}repo_icons/web.png" {self.add_tooltip("left","Website")} alt="repo-type" class="repo-type">'
+        if repo_type == 'ontology': 
+            return f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">'  
+
     def icon_star(self):
         return f"{self.base}repo_icons/star.png"
 
@@ -291,6 +300,34 @@ class metadata(object):
 
     # Metadata ##################################################
 
+    def repo_type(self):
+        langs = self.languagues()
+
+        if not langs: # Most ontologies does not have any language
+            return 'ontology'
+
+        web_langs = ['html','css','javascript'] 
+        ontology_langs = ['html','css','javascript'] 
+
+        is_ontology = True
+        is_web = True
+
+        for lang in langs:
+            if lang not in web_langs:
+                is_web = False
+            if lang not in ontology_langs:
+                is_ontology = False
+
+        if (is_ontology and is_web 
+                and (   
+                    'ontolog' in self.description().lower() 
+                    or 
+                    'ontolog' in self.title().lower())
+                ):
+            return 'ontology'
+              
+        return 'web' if is_web else None
+         
     def usage(self):
         return safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
 

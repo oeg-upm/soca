@@ -73,6 +73,7 @@ def html_view(repo_metadata, embedded, minify=True):
                     </a>
                 </div>
                 <div class="flex-horizontal float-right">
+                    {md.html_repo_type()}
                     {md.recently_updated()}
                 </div>
                 <div class="flex-horizontal float-right" style="margin-top: 0.3rem;" {md.add_tooltip('right','Stars')}>
