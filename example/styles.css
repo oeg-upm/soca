@@ -15,7 +15,7 @@ footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content
 .sort, .filter-includes{display: flex; margin-right: 1rem; flex-wrap: wrap; justify-content: center;}
 .sort{justify-content: center; display: flex; width: 100%;}
 .filter-includes-box{width: 1.8rem;height: 1.8rem;margin:0.2rem;display: flex;align-items: center;justify-content: center;cursor: pointer;}
-.filters-wrapper{display: flex;flex-wrap: wrap;min-height: 3.5rem;padding: 0 1rem;justify-content: center;}
+.filters-wrapper{display: flex;flex-wrap: wrap;min-height: 3.5rem;justify-content: center; max-width: 56.5rem; margin: auto;justify-content: space-around;position: relative;left: 0.5rem;}
 .tooltip{position:absolute;z-index:1070;display:block;font-style:normal;font-weight:400;line-height:1.42857143;line-break:auto;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;font-size:12px;opacity:0}
 .tooltip.in{opacity:.9}
 .tooltip.top{padding:5px 0;margin-top:-3px}
@@ -37,7 +37,7 @@ footer{width:100%;padding:1rem 2rem;margin-top:auto;display:flex;justify-content
 @media only screen and (max-width: 1378px) { .navbar-inside{ width: 56.5rem; } }
 @media only screen and (max-width: 907px) { 
     .navbar-inside, .filters-wrapper{ width: 28.2rem; } 
-    .filters-wrapper{ margin: 0 auto; border-radius: 19px; display: block;} 
+    .filters-wrapper{ margin: 0 auto; border-radius: 19px; display: block;padding: 0 1rem;position: static;} 
     .filter-includes, .sort{margin-bottom: 0.5rem; margin-top: 0.5rem;}
     .navbar{width: 28rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; margin: auto; padding-bottom: 0.5rem;}
 }
