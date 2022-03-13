@@ -169,6 +169,18 @@ class metadata(object):
                             {self.add_tooltip('bottom',f"DOI: {identifier}")}>
                     </a>""")
 
+        status = self.status()
+        if status:
+            html += self.icon_wrapper(
+                icon_html = f"""<img src="{self.base}repo_icons/status.png" 
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom','Status')}>
+                            """,
+
+                modal_html = self.modal(
+                    title = 'Status',
+                    body = '### Description  \n'+ safe_dic(status,'description') + '#### More information  \n' + f'<{safe_dic(status,"excerpt")}>'))
+
         installation = self.installation()
         if installation:
             html += self.icon_wrapper(
@@ -189,7 +201,29 @@ class metadata(object):
 
                 modal_html = self.modal(
                     title = 'Requirements',
-                    body = f'{requirements}'))
+                    body = requirements))
+
+        usage = self.usage()
+        if usage:
+            html += self.icon_wrapper(
+                icon_html = f"""<img src="{self.base}repo_icons/usage.png"  
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom','Usage')}>""",
+
+                modal_html = self.modal(
+                    title = 'Usage',
+                    body = usage))
+
+        help = self.help()
+        if help:
+            html += self.icon_wrapper(
+                icon_html = f"""<img src="{self.base}repo_icons/help.png"  
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom','Help')}>""",
+
+                modal_html = self.modal(
+                    title = 'Help',
+                    body = help))
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
@@ -257,6 +291,20 @@ class metadata(object):
 
     # Metadata ##################################################
 
+    def usage(self):
+        return safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
+
+    def help(self):
+        support = safe_dic(safe_list(safe_dic(self.md,'support'),0),'excerpt')
+        faq = safe_dic(safe_list(safe_dic(self.md,'faq'),0),'excerpt')
+        supportChannels = safe_dic(safe_list(safe_dic(self.md,'supportChannels'),0),'excerpt')
+
+        support_md = ('### Support  \n' + support) if support else ''
+        faq_md = ('### FAQ  \n' + faq) if faq else ''
+        supportChannels_md = ('### Support Channels  \n' + supportChannels) if supportChannels else ''
+
+        return support_md + faq_md + supportChannels_md if support or faq or supportChannels else None
+
     def recently_updated(self):
         #TODO: Retreive days_theshold from properties file
         hex_states = [
@@ -294,6 +342,9 @@ class metadata(object):
         
     def identifier(self):
         return safe_dic(safe_list(safe_dic(self.md,'identifier'),0),'excerpt')
+    
+    def status(self):
+        return safe_dic(self.md,'repoStatus')
 
     def acknowledgement(self):
         return safe_dic(safe_list(safe_dic(self.md,'acknowledgement'),0),'excerpt')

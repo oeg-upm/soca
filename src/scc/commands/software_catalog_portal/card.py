@@ -35,8 +35,11 @@ def cards_data_dump(repo_metadata_dir):
                     'hasBuildFile': md.docker() is not None,
                     'installation': md.installation() is not None,
                     'requirement': md.requirements() is not None,
+                    'usage': md.usage() is not None,
+                    'help': md.help() is not None,
                     'hasDocumentation': md.hasDocumentation() is not None,
                     'identifier': md.identifier() is not None,
+                    'repoStatus': md.status() is not None,
                     'acknowledgement': md.acknowledgement() is not None,
                     'downloadUrl': md.downloadUrl() is not None
 
