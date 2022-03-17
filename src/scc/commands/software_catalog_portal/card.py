@@ -82,8 +82,9 @@ def html_view(repo_metadata, embedded, minify=True):
                         <img src="{md.icon_star()}" alt="stars" class="repo-icon">
                     </a>
                 </div>
-                <div {md.add_tooltip('right','Releases')}>
-                    <a href="{md.url_releases()}" target="_blank" class="flex-horizontal float-right" style="text-decoration: none;">
+                <div {md.add_tooltip('right','Releases')} class="flex-horizontal float-right">
+                    {md.html_last_release()}
+                    <a href="{md.url_releases()}" target="_blank" class="flex-horizontal" style="text-decoration: none;">                        
                         <b>{md.n_releases()}</b>
                         <img src="{md.icon_releases()}" alt="releases" class="repo-icon">
                     </a>

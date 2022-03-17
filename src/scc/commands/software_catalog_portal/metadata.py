@@ -1,3 +1,4 @@
+from platform import release
 from scc import base_dir
 from pathlib import Path
 from os import listdir
@@ -38,6 +39,14 @@ class metadata(object):
 
     def icon_releases(self):
         return f"{self.base}repo_icons/releases.png"
+    
+    def html_last_release(self):
+
+        if self.n_releases() == 0:
+            return ''
+
+        releases = self.releases()[0]
+        return f'<a href="{releases["htmlUrl"]}" target="_blank" style="margin-right: 0.5rem; text-decoration: none;"><b><i>{releases["tagName"]}</i></b></a>'
     
     def html_languages(self):
 
@@ -470,6 +479,9 @@ class metadata(object):
     def n_releases(self):
         rel = safe_dic(safe_dic(self.md,'releases'),'excerpt')
         return len(rel) if rel is not None else 0
+
+    def releases(self):
+        return safe_dic(safe_dic(self.md,'releases'),'excerpt')
     
     def url_releases(self):
         return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
