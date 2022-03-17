@@ -303,7 +303,7 @@ class metadata(object):
     def repo_type(self):
         langs = self.languagues()
 
-        if not langs: # Most ontologies does not have any language
+        if not langs: # Most ontologies doesn't have any language
             return 'ontology'
 
         web_langs = ['html','css','javascript'] 
