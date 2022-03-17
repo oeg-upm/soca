@@ -1,4 +1,3 @@
-from platform import release
 from scc import base_dir
 from pathlib import Path
 from os import listdir

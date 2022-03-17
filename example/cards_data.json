@@ -25,7 +25,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/LDP4RO",
@@ -56,7 +58,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/lynx-py",
@@ -84,7 +88,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/pretty-yarrrml2rml",
@@ -112,7 +118,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-obxml",
@@ -140,7 +148,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-rdb",
@@ -173,7 +183,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": true,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mapeathor",
@@ -202,7 +214,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ainn-userm",
@@ -231,7 +245,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/Morph-OME",
@@ -262,7 +278,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/Themis",
@@ -293,7 +311,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/oops-plugin",
@@ -322,7 +342,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-streams-web",
@@ -353,7 +375,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/city4age",
@@ -379,7 +403,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-material-properties",
@@ -405,7 +431,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/agora-py",
@@ -436,7 +464,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/covid19",
@@ -467,7 +497,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/declarative-functions",
@@ -493,7 +525,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/epw2csv",
@@ -519,7 +553,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/transmodel-ontology",
@@ -547,7 +583,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-kpi",
@@ -573,7 +611,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/corpuser",
@@ -604,7 +644,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/tada-hdt-numeric",
@@ -635,7 +677,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/LLD-Search",
@@ -666,7 +710,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/tada-map-score",
@@ -697,7 +743,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/agora-docker",
@@ -726,7 +774,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/gtfs-bench",
@@ -756,7 +806,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/tada-entity",
@@ -786,7 +838,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-weather",
@@ -814,7 +868,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/hydrontology",
@@ -840,7 +896,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/easytv-annotator",
@@ -871,7 +929,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/delta-ontology",
@@ -897,7 +957,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/vicinity-ontologies",
@@ -923,7 +985,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/btn100",
@@ -951,7 +1015,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/AI4EU_raidologist",
@@ -981,7 +1047,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/cogito-resources-ontology",
@@ -1007,7 +1075,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/SOMEF-server",
@@ -1036,7 +1106,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/loupe-api",
@@ -1066,7 +1138,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/auroral-privacy-ontology",
@@ -1092,7 +1166,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/FarolAppsWeb",
@@ -1122,7 +1198,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/oeg-upm.github.io",
@@ -1150,7 +1228,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/website",
@@ -1181,7 +1261,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ar2dtool-oegfork",
@@ -1211,7 +1293,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": true,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/drugs4covid19-cs",
@@ -1240,7 +1324,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/tada-gam",
@@ -1270,7 +1356,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/docker-freeling4",
@@ -1298,7 +1386,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-senML",
@@ -1324,7 +1414,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ipfs-service",
@@ -1354,7 +1446,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/drugs4covid19-nlp",
@@ -1383,7 +1477,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/IEBrain",
@@ -1409,7 +1505,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/astrea-web",
@@ -1440,7 +1538,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/delta-cims-monitor",
@@ -1468,7 +1568,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/confs-info",
@@ -1498,7 +1600,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/Ethereum-Smart-Contract-Downloader",
@@ -1526,7 +1630,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/agora-gw",
@@ -1554,7 +1660,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-streams",
@@ -1583,7 +1691,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mappingpedia-userinterface",
@@ -1613,7 +1723,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-website",
@@ -1644,7 +1756,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/pycpulimit",
@@ -1673,7 +1787,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/BIMERR-KGG",
@@ -1701,7 +1817,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-csv",
@@ -1734,7 +1852,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": true,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mobility",
@@ -1760,7 +1880,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/loom-ld",
@@ -1788,7 +1910,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ontology-BTN100",
@@ -1817,7 +1941,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/licensius",
@@ -1849,7 +1975,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/drugs4covid19-vocab",
@@ -1877,7 +2005,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/ssspotter",
@@ -1908,7 +2038,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/LOT-resources",
@@ -1936,7 +2068,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/cogito-quality-ontology",
@@ -1962,7 +2096,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/saref-ext",
@@ -1993,7 +2129,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mappingpedia-engine-mappings-ws",
@@ -2021,7 +2159,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ontology-directory",
@@ -2049,7 +2189,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/Jarsomatic",
@@ -2078,7 +2220,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/DBpedia-downloader",
@@ -2106,7 +2250,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-annotation-objects",
@@ -2132,7 +2278,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/TPool",
@@ -2160,7 +2308,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/auroral-core-ontology",
@@ -2186,7 +2336,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/kgc-tutorial-iswc2020",
@@ -2216,7 +2368,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/webODE",
@@ -2245,7 +2399,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/S4WATR",
@@ -2273,7 +2429,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-epw",
@@ -2304,7 +2462,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/wot-hive",
@@ -2332,7 +2492,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/vocabUpdates",
@@ -2358,7 +2520,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ai4gov-website",
@@ -2388,7 +2552,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/tada-hdt-entity",
@@ -2419,7 +2585,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/helio-plugins",
@@ -2448,7 +2616,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/scc",
@@ -2479,7 +2649,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/chowlk_spec",
@@ -2509,7 +2681,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-renovation-measures",
@@ -2535,7 +2709,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/OEG-tutorial-template",
@@ -2566,7 +2742,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/subject_column_election",
@@ -2596,7 +2774,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/gwt-blocks",
@@ -2626,7 +2806,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/vocab.linkeddata.es",
@@ -2657,7 +2839,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/pytada-hdt-entity",
@@ -2689,7 +2873,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/OnToology-view-mock",
@@ -2720,7 +2906,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/tada-reduce-combine",
@@ -2751,7 +2939,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/kehio",
@@ -2779,7 +2969,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-gft",
@@ -2807,7 +2999,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/linked-gtfs",
@@ -2833,7 +3027,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/fcm-cpp",
@@ -2864,7 +3060,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/astrea",
@@ -2893,7 +3091,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/srbench",
@@ -2921,7 +3121,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/geo-agreement",
@@ -2947,7 +3149,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/wikidata-label-extractor",
@@ -2978,7 +3182,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-renovation-process",
@@ -3004,7 +3210,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mappingpedia-engine-datasets",
@@ -3033,7 +3241,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/OnToologyDnD",
@@ -3063,7 +3273,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-health-security",
@@ -3089,7 +3301,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/epnoi",
@@ -3121,7 +3335,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/easytv-onto",
@@ -3147,7 +3363,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/easytv-resources",
@@ -3177,7 +3395,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-skyline",
@@ -3208,7 +3428,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/geo.linkeddata.es-TripleGeoKettle",
@@ -3236,7 +3458,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/biotea",
@@ -3265,7 +3489,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/pcake",
@@ -3294,7 +3520,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/cogito-kgg",
@@ -3323,7 +3551,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/vocabTest",
@@ -3349,7 +3579,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/cogito-construction-ontology",
@@ -3375,7 +3607,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/valkyr-ie-gate",
@@ -3404,7 +3638,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ontologia-ciberseguridad",
@@ -3433,7 +3669,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mappingpedia-engine-commons-ws",
@@ -3461,7 +3699,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/map4rdf-mobile-lite",
@@ -3495,7 +3735,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/epw2rdf-contents",
@@ -3526,7 +3768,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/r4r",
@@ -3555,7 +3799,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": true,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/snap-docs",
@@ -3583,7 +3829,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/fuzzy-c-means",
@@ -3612,7 +3860,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/weather1",
@@ -3640,7 +3890,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/PPool",
@@ -3668,7 +3920,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/Massive-ROs-Creator",
@@ -3699,7 +3953,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/OWL-To-OAS-Specification",
@@ -3725,7 +3981,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ainn-request",
@@ -3753,7 +4011,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ya2ro",
@@ -3783,7 +4043,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/tada-web",
@@ -3812,7 +4074,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/terminology-extractor-incibe",
@@ -3848,7 +4112,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/vkg-tutorial-eswc2019",
@@ -3876,7 +4142,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/BO2DM",
@@ -3904,7 +4172,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/auroral-tourism-ontology",
@@ -3930,7 +4200,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/beto-covid-sentiment-analysis",
@@ -3958,7 +4230,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-information-objects",
@@ -3984,7 +4258,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/epw2rdf",
@@ -4012,7 +4288,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/pausa-web",
@@ -4044,7 +4322,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/Widoco",
@@ -4076,7 +4356,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/cogito-relational_ddbb",
@@ -4106,7 +4388,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/cogito-construction-process-ontology",
@@ -4132,7 +4416,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ainn-website",
@@ -4163,7 +4449,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/awesome-semantic-web",
@@ -4189,7 +4477,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/agora-wot",
@@ -4217,7 +4507,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/helio",
@@ -4245,7 +4537,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-metadata",
@@ -4271,7 +4565,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/transmodel-cq",
@@ -4299,7 +4595,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/devops-infra",
@@ -4329,7 +4627,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-website",
@@ -4359,7 +4659,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/Wikidata-class-diagram-generator",
@@ -4387,7 +4689,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mobileage-platform-example",
@@ -4416,7 +4720,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/r2rml-editor",
@@ -4442,7 +4748,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/Chowlk",
@@ -4473,7 +4781,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/doccano_formatter",
@@ -4501,7 +4811,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/DeltaCimApp",
@@ -4535,7 +4847,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/w3id.org",
@@ -4563,7 +4877,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/things-manager-platform",
@@ -4591,7 +4907,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mappingpedia-engine-datasets-ws",
@@ -4619,7 +4937,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ner4soft",
@@ -4649,7 +4969,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/Instituto-Estudios-Fiscales-ontologias",
@@ -4679,7 +5001,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ORSD-template",
@@ -4707,7 +5031,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/docker-geokettle-x3geo",
@@ -4733,7 +5059,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/easysparql",
@@ -4761,7 +5089,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/websiteFooterLogos",
@@ -4789,7 +5119,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/CJCyL",
@@ -4818,7 +5150,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/outlinejs",
@@ -4847,7 +5181,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/website-geo",
@@ -4879,7 +5215,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/Conceptual-Mapping",
@@ -4907,7 +5245,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/rmlc-statistic",
@@ -4938,7 +5278,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/terminology-extractor",
@@ -4975,7 +5317,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/wot-jtd",
@@ -5003,7 +5347,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/drugs4covid19-kg",
@@ -5035,7 +5381,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr_materials_table",
@@ -5063,7 +5411,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/tada-type-graph",
@@ -5092,7 +5442,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/easytv-semantic-annotator",
@@ -5123,7 +5475,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/AstreaRun",
@@ -5153,7 +5507,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/eWoT",
@@ -5182,7 +5538,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/personal-repo",
@@ -5208,7 +5566,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/kgc-eval",
@@ -5238,7 +5598,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mappingpedia-engine-ws",
@@ -5266,7 +5628,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mgds-ids",
@@ -5295,7 +5659,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/SMART-Protocols",
@@ -5321,7 +5687,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/OpenRefineExtension_Transformation",
@@ -5352,7 +5720,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-kgc",
@@ -5380,7 +5750,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/WordPress-RDFa",
@@ -5411,7 +5783,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/MIRROR",
@@ -5441,7 +5815,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/drugs4covid19web",
@@ -5473,7 +5849,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/mappingpedia-engine-commons",
@@ -5502,7 +5880,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-occupant-behavior",
@@ -5528,7 +5908,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-graphql",
@@ -5563,7 +5945,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-materials",
@@ -5591,7 +5975,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/valkyr-ie-py",
@@ -5621,7 +6007,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/map4rdf",
@@ -5651,7 +6039,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/tada-qq",
@@ -5680,7 +6070,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/tada-hdt-entity-experiment",
@@ -5712,7 +6104,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/morph-geo",
@@ -5741,7 +6135,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/201612-clarityhackathon-upm",
@@ -5770,7 +6166,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/termlex",
@@ -5796,7 +6194,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/Linkeddata.es-Code",
@@ -5825,7 +6225,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/TFM-Open-Data-for-Universities",
@@ -5853,7 +6255,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/web-oeg",
@@ -5885,7 +6289,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ssn-resource-center",
@@ -5911,7 +6317,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/sancus",
@@ -5944,7 +6352,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/virtuoso-triple-store",
@@ -5972,7 +6382,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/gtfs-csv2rdf",
@@ -6000,7 +6412,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/drugs4covid19",
@@ -6026,7 +6440,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/OTALEX-C",
@@ -6057,7 +6473,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/sdg-text-retriever",
@@ -6086,7 +6504,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/fair_ontologies",
@@ -6117,7 +6537,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/bimerr-building",
@@ -6143,7 +6565,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": true,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/SendEmailWebApp",
@@ -6172,7 +6596,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ttla",
@@ -6202,7 +6628,9 @@
         "identifier": true,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": true
+        "downloadUrl": true,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/SmartDeveloperHub.github.io",
@@ -6232,7 +6660,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": true
     },
     {
         "id": "https://github.com/oeg-upm/mappingpedia-contents",
@@ -6260,7 +6690,9 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     },
     {
         "id": "https://github.com/oeg-upm/ShapesToWidocoHTML",
@@ -6293,6 +6725,8 @@
         "identifier": false,
         "repoStatus": false,
         "acknowledgement": false,
-        "downloadUrl": false
+        "downloadUrl": false,
+        "isOntology": false,
+        "isWeb": false
     }
 ]

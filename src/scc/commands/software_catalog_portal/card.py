@@ -41,8 +41,9 @@ def cards_data_dump(repo_metadata_dir):
                     'identifier': md.identifier() is not None,
                     'repoStatus': md.status() is not None,
                     'acknowledgement': md.acknowledgement() is not None,
-                    'downloadUrl': md.downloadUrl() is not None
-
+                    'downloadUrl': md.downloadUrl() is not None,
+                    'isOntology': md.repo_type() == 'ontology',
+                    'isWeb': md.repo_type() == 'web'
                 })
 
     return cards_data

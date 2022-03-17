@@ -27,6 +27,8 @@ const requirements = document.getElementById('requirements');
 const usage = document.getElementById('usage');
 const help = document.getElementById('help');
 const paper = document.getElementById('paper');
+const web = document.getElementById('web');
+const ontology = document.getElementById('ontology');
 
 const title = document.getElementById('title');
 const stars = document.getElementById('stars');
@@ -143,6 +145,20 @@ paper.addEventListener('click', () => {
     else paper.classList.remove("filter-selected");
     search(); 
 });
+web.addEventListener('click', () => { 
+    state_web = !state_web; 
+    if (state_web)
+        web.classList.add("filter-selected");
+    else web.classList.remove("filter-selected");
+    search(); 
+});
+ontology.addEventListener('click', () => { 
+    state_ontology = !state_ontology; 
+    if (state_ontology)
+        ontology.classList.add("filter-selected");
+    else ontology.classList.remove("filter-selected");
+    search(); 
+});
 
 title.addEventListener('click', () => { 
     state_title = !state_title; state_stars = false; state_releases = false; state_last_updated = false; 
@@ -198,6 +214,8 @@ let state_requirements = false;
 let state_usage = false;
 let state_help = false;
 let state_paper = false;
+let state_web = false;
+let state_ontology = false;
 
 let state_title = false;
 let state_stars = false;
@@ -221,6 +239,8 @@ function search() {
                 && ((state_license)? card.license : true)
                 && ((state_notebook)? card.hasExecutableNotebook : true)
                 && ((state_paper)? card.paper : true)
+                && ((state_ontology)? card.isOntology : true)
+                && ((state_web)? card.isWeb : true)
                 && ((state_requirements)? card.requirement : true)
                 && ((state_usage)? card.usage : true)
                 && ((state_help)? card.help : true)
