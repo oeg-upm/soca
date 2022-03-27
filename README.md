@@ -1,6 +1,8 @@
 
 # Software Catalog Creator
 
+![scc-logo](scc-logo.png)
+
 A repository that given an organization URL, it will create a software catalog for browsing all repositories.
 
 ## Example
