@@ -6,13 +6,13 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 def cli():
     """
     SCC (Software Catalog Creator)\n
-    Automatically generates a searchable portal for every repsitory of an organization/s or user/s, which is easy to host.\n
+    Automatically generates a searchable portal for every repository of an organization/s or user/s, which is easy to host.\n
 
     Usage:
 
     1. (repos) Fetch all repos from the desired organization/s\n
     2. (extract) Extract all metadata for every repo\n
-    3. (portal) Generate a searchable portal for all the retreived data\n
+    3. (portal) Generate a searchable portal for all the retrieved data\n
 
     """
     pass 
@@ -36,15 +36,15 @@ def extract(input, output):
     extract_metadata.fetch(input, output)
 
 @cli.command()
-@click.option('--input','-i', required=True, help="Dir respositories metadata in json format", metavar='<dir-json-metadata>')
-@click.option('--output','-o', default="portal", show_default=True, help="Dir where Software Catalog Portal will be saved")
+@click.option('--input','-i', required=True, help="Dir repositories metadata in json format", metavar='<dir-json-metadata>')
+@click.option('--output','-o', default="portal", show_default=True, help="Dir where Software Catalog Portal will be saved", metavar='<path>')
 def portal(input, output):
     """Build a portal with a minimalistic desing"""
     from scc.commands.portal import portal
     portal.generate(input, output)
 
 @cli.command()
-@click.option('--input','-i', required=True, help="Respository URL", metavar='<url>')
+@click.option('--input','-i', required=True, help="Repository URL", metavar='<url>')
 @click.option('--output','-o', default="card", show_default=True, help="Output file where the html will be saved", metavar='<path>')
 @click.option('--html', 'save_as', flag_value='html', default=True, show_default=True, help="Save card as html")
 @click.option('--png', 'save_as', flag_value='png', default=False, show_default=True, help="Save card as a png")
