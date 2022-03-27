@@ -109,8 +109,9 @@ def html_view(repo_metadata, embedded, minify=True):
     {sc.js_dependencies if embedded else ''}
     {f'<script>{sc.tooltip}</script>' if embedded else ''}
     {f'<script>{sc.copy_card}</script>' if embedded else ''}
+    {f'<script>{sc.modals}add_modals();</script>' if embedded else ''}
     {f'<style>{s.rules}</style>' if embedded else ''}
     </article>
     """
-    #return html_card
-    return htmlmin.minify(html_card, remove_empty_space=True) if minify else html_card
+    
+    return htmlmin.minify(html_card, remove_empty_space=True).replace('\n','') if minify else html_card

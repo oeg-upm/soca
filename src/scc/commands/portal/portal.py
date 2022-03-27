@@ -29,7 +29,7 @@ def generate(repo_metadata_dir, output):
 
     # Insert extra scripts
     sc = scripts.scripts()
-    soup.body.script.string = sc.function_copy_card() + sc.function_tooltip()
+    soup.body.script.string = sc.function_copy_card() + sc.function_tooltip() + sc.funtions_modals()
 
     # Save index.html
     with open(f"{output}/index.html", "w") as index:
