@@ -25,7 +25,7 @@ def cards_data_dump(repo_metadata_dir):
                     'recently_updated': md.last_update_days(),
                     'stargazersCount': md.stars(),
                     'releases': md.n_releases(),
-                    'languagues': md.languagues(),
+                    'languages': md.languages(),
                     'description': md.description(),
                     'license': md.license() is not None,
                     'readmeUrl': md.readme() is not None,

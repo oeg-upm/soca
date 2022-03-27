@@ -7,7 +7,7 @@
         "recently_updated": 2164,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Extension to ease the federation process of CKAN catalogs with the global catalog of Spain, <a href=\"http://www.datos.gob.es/\">Datos.gob</a>.</p>\n",
@@ -37,7 +37,7 @@
         "recently_updated": 12,
         "stargazersCount": 3,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "html",
             "css",
@@ -70,7 +70,7 @@
         "recently_updated": 79,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Library for accessing and consume services developed in the European Project Lynx</p>\n",
@@ -100,7 +100,7 @@
         "recently_updated": 37,
         "stargazersCount": 3,
         "releases": 2,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Repository for a human-readable translation of YARRRML mappings into a turtle-based RML rules</p>\n",
@@ -130,7 +130,7 @@
         "recently_updated": 270,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -160,7 +160,7 @@
         "recently_updated": 74,
         "stargazersCount": 32,
         "releases": 30,
-        "languagues": [
+        "languages": [
             "scala",
             "java",
             "shell",
@@ -195,7 +195,7 @@
         "recently_updated": 1291,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -225,7 +225,7 @@
         "recently_updated": 10,
         "stargazersCount": 23,
         "releases": 5,
-        "languagues": [
+        "languages": [
             "python",
             "dockerfile"
         ],
@@ -256,7 +256,7 @@
         "recently_updated": 1320,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "go",
             "shell"
         ],
@@ -287,7 +287,7 @@
         "recently_updated": 203,
         "stargazersCount": 6,
         "releases": 3,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "shell",
@@ -320,7 +320,7 @@
         "recently_updated": 74,
         "stargazersCount": 4,
         "releases": 4,
-        "languagues": [
+        "languages": [
             "html",
             "java",
             "javascript",
@@ -353,7 +353,7 @@
         "recently_updated": 165,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "html"
         ],
@@ -384,7 +384,7 @@
         "recently_updated": 2279,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "scala",
             "javascript",
@@ -417,7 +417,7 @@
         "recently_updated": 1485,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Repositorio para la publicaci\u00f3n de los trabajos realizados en el proyecto City4Age</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -445,7 +445,7 @@
         "recently_updated": 154,
         "stargazersCount": 0,
         "releases": 3,
-        "languagues": null,
+        "languages": null,
         "description": "<p>BIMERR ontology for the material properties domain</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -473,7 +473,7 @@
         "recently_updated": 1445,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "javascript",
             "html",
@@ -506,7 +506,7 @@
         "recently_updated": 715,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "css",
             "html",
@@ -539,7 +539,7 @@
         "recently_updated": 870,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Definition of declarative functions following the Function Ontology</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -567,7 +567,7 @@
         "recently_updated": 1599,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>No description available yet.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -595,7 +595,7 @@
         "recently_updated": 896,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Transform weather data in EPW format to CSV</p>\n",
         "license": true,
         "readmeUrl": false,
@@ -623,7 +623,7 @@
         "recently_updated": 344,
         "stargazersCount": 7,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>A repository to work on the transmodel ontology that provides support to the NeTEx model</p>\n",
@@ -653,7 +653,7 @@
         "recently_updated": 154,
         "stargazersCount": 0,
         "releases": 2,
-        "languagues": null,
+        "languages": null,
         "description": "<p>BIMERR ontology for KPI data</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -681,7 +681,7 @@
         "recently_updated": 1008,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "typescript",
             "html",
             "css",
@@ -714,7 +714,7 @@
         "recently_updated": 678,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "c++",
             "makefile",
             "shell",
@@ -747,7 +747,7 @@
         "recently_updated": 2017,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "html",
             "javascript",
@@ -780,7 +780,7 @@
         "recently_updated": 843,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>No description available yet.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -808,7 +808,7 @@
         "recently_updated": 897,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "shell",
@@ -841,7 +841,7 @@
         "recently_updated": 1494,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "shell"
         ],
@@ -872,7 +872,7 @@
         "recently_updated": 16,
         "stargazersCount": 12,
         "releases": 6,
-        "languagues": [
+        "languages": [
             "python",
             "shell",
             "dockerfile"
@@ -904,7 +904,7 @@
         "recently_updated": 25,
         "stargazersCount": 2,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "shell"
@@ -936,7 +936,7 @@
         "recently_updated": 154,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "shell"
         ],
         "description": "<p>Repository for the BIMERR weather ontology</p>\n",
@@ -966,7 +966,7 @@
         "recently_updated": 1575,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Repository for the new version of Hydrontology.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -994,7 +994,7 @@
         "recently_updated": 329,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>DELTA ontology</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -1022,7 +1022,7 @@
         "recently_updated": 1810,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Ontologies developed during the VICINITY European project about IoT and related domains.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -1050,7 +1050,7 @@
         "recently_updated": 151,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "python",
             "dockerfile"
@@ -1082,7 +1082,7 @@
         "recently_updated": 17,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository contains the code and documentation generated for the COGITO Resources ontology.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -1110,7 +1110,7 @@
         "recently_updated": 1250,
         "stargazersCount": 1,
         "releases": 4,
-        "languagues": [
+        "languages": [
             "scala",
             "java",
             "html",
@@ -1144,7 +1144,7 @@
         "recently_updated": 375,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "html"
         ],
@@ -1175,7 +1175,7 @@
         "recently_updated": 986,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "html",
             "dockerfile"
@@ -1207,7 +1207,7 @@
         "recently_updated": 51,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository contains the code and documentation generated for the the AURORAL privacy ontology.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -1235,7 +1235,7 @@
         "recently_updated": 2072,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "javascript",
             "css",
             "html"
@@ -1267,7 +1267,7 @@
         "recently_updated": 2574,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>Repository used to generate the OEG-UPM group website for development</p>\n",
@@ -1297,7 +1297,7 @@
         "recently_updated": 282,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "vue",
             "javascript",
             "html",
@@ -1330,7 +1330,7 @@
         "recently_updated": 1233,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "scala",
             "java"
         ],
@@ -1361,7 +1361,7 @@
         "recently_updated": 533,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "java",
             "javascript",
             "css"
@@ -1393,7 +1393,7 @@
         "recently_updated": 699,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css"
         ],
@@ -1424,7 +1424,7 @@
         "recently_updated": 859,
         "stargazersCount": 1,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "shell"
@@ -1456,7 +1456,7 @@
         "recently_updated": 150,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "dockerfile"
         ],
         "description": "<p>Docker Image for FreeLing 4</p>\n",
@@ -1486,7 +1486,7 @@
         "recently_updated": 154,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": null,
+        "languages": null,
         "description": "<p>BIMERR ontology for sensor data</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -1514,7 +1514,7 @@
         "recently_updated": 79,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "html",
             "shell"
@@ -1546,7 +1546,7 @@
         "recently_updated": 329,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "jupyter notebook",
             "python"
         ],
@@ -1577,7 +1577,7 @@
         "recently_updated": 154,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "shell"
         ],
@@ -1608,7 +1608,7 @@
         "recently_updated": 64,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "jupyter notebook",
             "python",
             "shell"
@@ -1640,7 +1640,7 @@
         "recently_updated": 522,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>IE Brain project is about connecting the AI market</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -1668,7 +1668,7 @@
         "recently_updated": 497,
         "stargazersCount": 0,
         "releases": 9,
-        "languagues": [
+        "languages": [
             "html",
             "java",
             "javascript",
@@ -1701,7 +1701,7 @@
         "recently_updated": 528,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>This monitor analyses the CIMs deployed by checking their health and potentially prevent attacks</p>\n",
@@ -1731,7 +1731,7 @@
         "recently_updated": 239,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css",
             "javascript"
@@ -1763,7 +1763,7 @@
         "recently_updated": 108,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>A tool for extracting smart contracts from the Ethereum blockchain</p>\n",
@@ -1793,7 +1793,7 @@
         "recently_updated": 1521,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -1823,7 +1823,7 @@
         "recently_updated": 193,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "scala"
         ],
@@ -1854,7 +1854,7 @@
         "recently_updated": 626,
         "stargazersCount": 3,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "python",
             "shell"
@@ -1886,7 +1886,7 @@
         "recently_updated": 479,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "shell"
         ],
@@ -1917,7 +1917,7 @@
         "recently_updated": 135,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "html",
             "css",
@@ -1951,7 +1951,7 @@
         "recently_updated": 937,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "python",
             "shell"
         ],
@@ -1982,7 +1982,7 @@
         "recently_updated": 704,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>Knowledge Graph Generator module for the BIMERR project</p>\n",
@@ -2012,7 +2012,7 @@
         "recently_updated": 165,
         "stargazersCount": 8,
         "releases": 3,
-        "languagues": [
+        "languages": [
             "python",
             "javascript",
             "html",
@@ -2047,7 +2047,7 @@
         "recently_updated": 3,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css",
             "javascript"
@@ -2079,7 +2079,7 @@
         "recently_updated": 22,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "python"
         ],
@@ -2110,7 +2110,7 @@
         "recently_updated": 666,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css"
         ],
@@ -2141,7 +2141,7 @@
         "recently_updated": 101,
         "stargazersCount": 5,
         "releases": 2,
-        "languagues": [
+        "languages": [
             "javascript",
             "java",
             "html",
@@ -2175,7 +2175,7 @@
         "recently_updated": 617,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>Vocabulario para DRUGS4COVID19</p>\n",
@@ -2205,7 +2205,7 @@
         "recently_updated": 906,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "dockerfile",
@@ -2238,7 +2238,7 @@
         "recently_updated": 110,
         "stargazersCount": 3,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "tex"
         ],
         "description": "<p>This repository contains the resources associated to LOT methodology that are not available online somewhere else.</p>\n",
@@ -2268,7 +2268,7 @@
         "recently_updated": 98,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository contains the code and documentation generated for the COGITO Quqlity ontology.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -2296,7 +2296,7 @@
         "recently_updated": 1706,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "postscript",
             "html",
             "web ontology language",
@@ -2329,7 +2329,7 @@
         "recently_updated": 1292,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -2359,7 +2359,7 @@
         "recently_updated": 45,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -2389,7 +2389,7 @@
         "recently_updated": 297,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "python",
             "html"
         ],
@@ -2420,7 +2420,7 @@
         "recently_updated": 465,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>An app to help download DBpedia</p>\n",
@@ -2450,7 +2450,7 @@
         "recently_updated": 154,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>BIMERR ontology for Annotated Information Objects domain</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -2478,7 +2478,7 @@
         "recently_updated": 10,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Thread Pool for python 2 and 3 with multiple parameters</p>\n",
@@ -2508,7 +2508,7 @@
         "recently_updated": 51,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository contains the code and documentation generated for the the AURORAL Core ontology.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -2536,7 +2536,7 @@
         "recently_updated": 346,
         "stargazersCount": 5,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "tex",
             "shell"
@@ -2568,7 +2568,7 @@
         "recently_updated": 119,
         "stargazersCount": 3,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "html"
         ],
@@ -2599,7 +2599,7 @@
         "recently_updated": 847,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>Water Ontology</p>\n",
@@ -2629,7 +2629,7 @@
         "recently_updated": 172,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>No description available yet.</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -2657,7 +2657,7 @@
         "recently_updated": 270,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "python",
             "css",
@@ -2690,7 +2690,7 @@
         "recently_updated": 24,
         "stargazersCount": 7,
         "releases": 8,
-        "languagues": [
+        "languages": [
             "javascript",
             "ruby",
             "java",
@@ -2727,7 +2727,7 @@
         "recently_updated": 1333,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repo allows you to add new ontologies to be included in http://vocab.linkeddata.es</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -2755,7 +2755,7 @@
         "recently_updated": 133,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css",
             "javascript"
@@ -2787,7 +2787,7 @@
         "recently_updated": 212,
         "stargazersCount": 2,
         "releases": 9,
-        "languagues": [
+        "languages": [
             "c++",
             "makefile",
             "shell",
@@ -2820,7 +2820,7 @@
         "recently_updated": 465,
         "stargazersCount": 4,
         "releases": 3,
-        "languagues": [
+        "languages": [
             "java",
             "shell"
         ],
@@ -2851,7 +2851,7 @@
         "recently_updated": 16,
         "stargazersCount": 3,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "javascript",
             "css",
@@ -2884,7 +2884,7 @@
         "recently_updated": 561,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -2914,7 +2914,7 @@
         "recently_updated": 106,
         "stargazersCount": 1,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "html",
             "css",
             "javascript"
@@ -2946,7 +2946,7 @@
         "recently_updated": 672,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>BIMERR Ontology for the Renovation Measures domain</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -2974,7 +2974,7 @@
         "recently_updated": 397,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "scss",
             "css",
@@ -3007,7 +3007,7 @@
         "recently_updated": 905,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "shell",
             "dockerfile"
@@ -3039,7 +3039,7 @@
         "recently_updated": 2073,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "java",
             "css",
             "html"
@@ -3071,7 +3071,7 @@
         "recently_updated": 80,
         "stargazersCount": 4,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "java",
             "javascript",
@@ -3104,7 +3104,7 @@
         "recently_updated": 360,
         "stargazersCount": 0,
         "releases": 3,
-        "languagues": [
+        "languages": [
             "c++",
             "python",
             "swig",
@@ -3138,7 +3138,7 @@
         "recently_updated": 638,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "python",
             "dockerfile",
@@ -3171,7 +3171,7 @@
         "recently_updated": 946,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "shell",
@@ -3204,7 +3204,7 @@
         "recently_updated": 261,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>Kehio allows to explicitly annotate an attribute from a  Java class using the annotation '@RdfId' to store the resource URI within, i.e., the subject from a set of triples with that very same URI. This attribute can be either a <em>String</em> or <em>java.net.URI</em>, any other attribute annotated with '@RdfId' will end up throwing an exception. Notice that a subject can also be a blank node and not a URI, in this case Kehio would handle it in the same way as shown in the following examples. \nDuring the example the caption of the classes are linked to the full classes present in the code, in addition all the code displayed in this section can be found in this <a href=\"\">test class.</a></p>\n",
@@ -3234,7 +3234,7 @@
         "recently_updated": 1636,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "scala"
         ],
         "description": "<p>morph-GFT is an extension of Morph that works with Google Fusion Table (GFT) tables mapped with R2RML Mappings and enables users to query those tables using SPARQL queries</p>\n",
@@ -3264,7 +3264,7 @@
         "recently_updated": 2526,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Separate repository for the Linked GTFS vocabulary</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -3292,7 +3292,7 @@
         "recently_updated": 55,
         "stargazersCount": 5,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "c++",
             "makefile",
             "shell",
@@ -3325,7 +3325,7 @@
         "recently_updated": 48,
         "stargazersCount": 5,
         "releases": 4,
-        "languagues": [
+        "languages": [
             "java",
             "shell"
         ],
@@ -3356,7 +3356,7 @@
         "recently_updated": 2915,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "scala"
         ],
         "description": "<p>SRBench SPARQL RDF Bench</p>\n",
@@ -3386,7 +3386,7 @@
         "recently_updated": 771,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository is focused on developing software and techniques to be used to integrated open geospatial data sources (e.g., OpenStreetMap, public open data, crowdsourced data, etc.) and understand and visualise the level of agreement</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -3414,7 +3414,7 @@
         "recently_updated": 215,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "c",
             "python",
             "dockerfile",
@@ -3447,7 +3447,7 @@
         "recently_updated": 93,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Repository for the renovation process ontology.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -3475,7 +3475,7 @@
         "recently_updated": 1233,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "scala",
             "java"
         ],
@@ -3506,7 +3506,7 @@
         "recently_updated": 554,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "javascript",
             "css"
@@ -3538,7 +3538,7 @@
         "recently_updated": 767,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "c++"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -3568,7 +3568,7 @@
         "recently_updated": 702,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>BIMERR ontology for the health and security domain</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -3596,7 +3596,7 @@
         "recently_updated": 2249,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "java",
             "html",
@@ -3630,7 +3630,7 @@
         "recently_updated": 79,
         "stargazersCount": 1,
         "releases": 2,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Repository for the easyTV ontology.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -3658,7 +3658,7 @@
         "recently_updated": 585,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "perl",
             "shell",
             "batchfile"
@@ -3690,7 +3690,7 @@
         "recently_updated": 77,
         "stargazersCount": 1,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "scala",
             "java",
             "shell",
@@ -3723,7 +3723,7 @@
         "recently_updated": 1361,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>Repository where the integration of TripleGeo and GeoKettle is performed, used in the datos.ign.es project</p>\n",
@@ -3753,7 +3753,7 @@
         "recently_updated": 2227,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "html"
         ],
@@ -3784,7 +3784,7 @@
         "recently_updated": 64,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "html"
         ],
@@ -3815,7 +3815,7 @@
         "recently_updated": 105,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "dockerfile"
         ],
@@ -3846,7 +3846,7 @@
         "recently_updated": 729,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>While the system is working you can check the status of the server and jobs: http://jarsomatic.linkeddata.es/</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -3874,7 +3874,7 @@
         "recently_updated": 1233,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "scala",
             "java"
         ],
@@ -3905,7 +3905,7 @@
         "recently_updated": 98,
         "stargazersCount": 0,
         "releases": 2,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository contains the code and documentation generated for the COGITO Construction ontology.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -3933,7 +3933,7 @@
         "recently_updated": 291,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "java",
             "dockerfile"
         ],
@@ -3964,7 +3964,7 @@
         "recently_updated": 1191,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css"
         ],
@@ -3995,7 +3995,7 @@
         "recently_updated": 1298,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -4025,7 +4025,7 @@
         "recently_updated": 984,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "html",
             "javascript",
@@ -4061,7 +4061,7 @@
         "recently_updated": 372,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "python",
             "css",
@@ -4094,7 +4094,7 @@
         "recently_updated": 164,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "dockerfile"
         ],
@@ -4125,7 +4125,7 @@
         "recently_updated": 133,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "css"
         ],
         "description": "<p>SNAP Documentation</p>\n",
@@ -4155,7 +4155,7 @@
         "recently_updated": 148,
         "stargazersCount": 26,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "python",
             "shell"
         ],
@@ -4186,7 +4186,7 @@
         "recently_updated": 848,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>Ontology for weather phenomenon</p>\n",
@@ -4216,7 +4216,7 @@
         "recently_updated": 1277,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>PPool is a Pool for Processes in Python with locks</p>\n",
@@ -4246,7 +4246,7 @@
         "recently_updated": 39,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "scss",
             "css",
@@ -4279,7 +4279,7 @@
         "recently_updated": 583,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>A repository for describing the mapping between OWL and OAS</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -4307,7 +4307,7 @@
         "recently_updated": 946,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Request and Answers for Mappings</p>\n",
@@ -4337,7 +4337,7 @@
         "recently_updated": 53,
         "stargazersCount": 1,
         "releases": 2,
-        "languagues": [
+        "languages": [
             "html",
             "python",
             "dockerfile"
@@ -4369,7 +4369,7 @@
         "recently_updated": 361,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "python",
             "shell"
         ],
@@ -4400,7 +4400,7 @@
         "recently_updated": 91,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "javascript",
             "css",
@@ -4438,7 +4438,7 @@
         "recently_updated": 652,
         "stargazersCount": 5,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "shell"
         ],
         "description": "<p>Material for VKG2019 tutorial at ESWC2019</p>\n",
@@ -4468,7 +4468,7 @@
         "recently_updated": 122,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>BIMERR Ontology to Data Model Converter</p>\n",
@@ -4498,7 +4498,7 @@
         "recently_updated": 25,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository contains the code and related resources for the tourism domain AURORAL ontology</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -4526,7 +4526,7 @@
         "recently_updated": 83,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<ul>\n<li><h3><em>RetrieveTweets.py</em>:</h3>\nThis script creates a dataset of tweets based on the keywords given and the number of tweets to be retrieved.<ul>\n<li>How to use it:<pre><code>python RetrieveTweets.py --search &lt;keyword&gt; --amount &lt;number_of_tweets&gt; --save_tweets_on_directory &lt;directory&gt; --twitter_token &lt;your_token&gt;\n</code></pre>\n<ul>\n<li><em>--search</em>: parameter to search the keyword or keywords. If more than one keyword is going to be used then you need to quote them ('your keywords').</li>\n<li><em>--amount</em>: parameter to specify the number of tweets to retrieve (be aware that if considerable amount of tweets are going to be solicited, you may exceed Twitter's limitation of queries per minute).</li>\n<li><em>--save_tweets_on_directory</em>: parameter to specify where to store the tweets retrieved.</li>\n<li><em>--twitter_token</em>: parameter to specify your Twitter developer access token.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><h3><em>Preprocesing.py</em>:</h3>\nThis script cleans the previous dataset obtained with <em>RetrieveTweets.py</em> for it to be suitable to be used on <em>SentimentTweets.py</em>.<ul>\n<li>How to use it:<pre><code>python Preprocesing.py --dataset &lt;directory&gt; --save_directory &lt;directory&gt; [--merge [name][description]]\n</code></pre>\n<ul>\n<li><em>--dataset</em>: parameter to specify the dataset to be cleaned.</li>\n<li><em>--save_directory</em>: parameter to specify where to store the cleaned dataset.</li>\n<li><em>--merge</em>: parameter to specify which columns will be merged with the <em>tweet_text</em> column. It can be both (<em>name</em> and <em>description</em>), just one of them or none.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li><h3><em>CustomModel.py</em>:</h3>\nThis script contains the code necessary to build the model class. It is imported in the script <em>SentimentTweets.py</em> for it to be used as the model for the fine tuning task. It recieves the name of the BETO based model to be used.</li>\n<li><h3><em>SentimentTweets.py</em>:</h3>\nThis script contains all the code necessary to do the fine tuning task. Recieves the train and test datasets to fine tune the model. It can save the model after fine tuned and gives an output with the results of the training.<ul>\n<li>How to use it:<pre><code>python SentimentTweets.py --train_data &lt;directory&gt; --test_data &lt;directory&gt; --model_name &lt;name_or_path&gt; [--save_model_on_directory &lt;directory&gt;]\n</code></pre>\n<ul>\n<li><em>--train_data</em>: parameter to specify the train dataset to be used.</li>\n<li><em>--test_data</em>: parameter to specify the test data to be used.</li>\n<li><em>--model_name</em>: parameter to specify the name of the model (from hugging face) to be used.</li>\n<li><em>--save_model_on_directory</em>: parameter to specify where to store the fine tuned model.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n",
@@ -4556,7 +4556,7 @@
         "recently_updated": 154,
         "stargazersCount": 3,
         "releases": 2,
-        "languagues": [
+        "languages": [
             "java",
             "shell"
         ],
@@ -4587,7 +4587,7 @@
         "recently_updated": 154,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Repository for the Information Objects Ontology</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -4615,7 +4615,7 @@
         "recently_updated": 878,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Transform weather data in EPW format to RDF</p>\n",
@@ -4645,7 +4645,7 @@
         "recently_updated": 74,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "jupyter notebook",
             "dockerfile"
@@ -4677,7 +4677,7 @@
         "recently_updated": 277,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "python",
             "html",
@@ -4711,7 +4711,7 @@
         "recently_updated": 756,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "xslt",
             "css",
@@ -4745,7 +4745,7 @@
         "recently_updated": 106,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "dockerfile",
             "shell"
@@ -4777,7 +4777,7 @@
         "recently_updated": 74,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css",
             "javascript"
@@ -4809,7 +4809,7 @@
         "recently_updated": 17,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository contains the code and documentation generated for the COGITO Construction Process ontology.</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -4837,7 +4837,7 @@
         "recently_updated": 1115,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "ruby",
             "html",
             "shell",
@@ -4870,7 +4870,7 @@
         "recently_updated": 478,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>A curated list of various semantic web and linked data resources.</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -4898,7 +4898,7 @@
         "recently_updated": 1445,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>A Python-based framework for describing, discovering and accessing the Web of Things</p>\n",
@@ -4928,7 +4928,7 @@
         "recently_updated": 72,
         "stargazersCount": 6,
         "releases": 4,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>Helio is a framework that allows publishing RDF data as a Linked Data service, in which data comes from different heterogeneous sources. The translation of data into RDF can be performed using different tools from the literature, or the Helio materialisation engine. Additionally, the RDF produced is injected automatically in a triple store and can be versioned. Finally, Helio offers also the necessary components to publish the RDF at resource level, dataset level, and enables a SPARQL endpoint. Nevertheless, Helio also allow users to define dynamic views of the data and associate html views, that may have embedded RDF (RDFa).</p>\n",
@@ -4958,7 +4958,7 @@
         "recently_updated": 154,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Repository for the BIMERR Metadata Ontology</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -4986,7 +4986,7 @@
         "recently_updated": 964,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -5016,7 +5016,7 @@
         "recently_updated": 46,
         "stargazersCount": 2,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "html",
             "css",
             "javascript"
@@ -5048,7 +5048,7 @@
         "recently_updated": 303,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css",
             "javascript"
@@ -5080,7 +5080,7 @@
         "recently_updated": 404,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "jupyter notebook"
         ],
         "description": "<p>Generaci\u00f3n de diagramas de ontolog\u00edas basado en consultas SPARQL realizadas a Wikidata</p>\n",
@@ -5110,7 +5110,7 @@
         "recently_updated": 946,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "html"
         ],
@@ -5141,7 +5141,7 @@
         "recently_updated": 1115,
         "stargazersCount": 3,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>A repository related to the creation of an R2RML editor</p>\n",
         "license": true,
         "readmeUrl": false,
@@ -5169,7 +5169,7 @@
         "recently_updated": 2,
         "stargazersCount": 3,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "css",
@@ -5202,7 +5202,7 @@
         "recently_updated": 206,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Project to transform doccano outputs to different formats for research purposes</p>\n",
@@ -5232,7 +5232,7 @@
         "recently_updated": 268,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>International Workshop on Discovery on the Internet of Things</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -5260,7 +5260,7 @@
         "recently_updated": 417,
         "stargazersCount": 1,
         "releases": 8,
-        "languagues": [
+        "languages": [
             "javascript",
             "css",
             "java",
@@ -5296,7 +5296,7 @@
         "recently_updated": 2675,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "php"
         ],
         "description": "<p>Website source code for w3id.org</p>\n",
@@ -5326,7 +5326,7 @@
         "recently_updated": 126,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -5356,7 +5356,7 @@
         "recently_updated": 74,
         "stargazersCount": 0,
         "releases": 3,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -5386,7 +5386,7 @@
         "recently_updated": 1292,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -5416,7 +5416,7 @@
         "recently_updated": 157,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "python",
             "dockerfile"
@@ -5448,7 +5448,7 @@
         "recently_updated": 173,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "jupyter notebook",
             "css"
@@ -5480,7 +5480,7 @@
         "recently_updated": 289,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "tex"
         ],
         "description": "<p>LaTeX template for the  Ontology Requirements Specification Document (ORSD) from the NeOn methodology</p>\n",
@@ -5510,7 +5510,7 @@
         "recently_updated": 1530,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Docker Image for GeoKettle and TripleGeoKettle plugin</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -5538,7 +5538,7 @@
         "recently_updated": 189,
         "stargazersCount": 0,
         "releases": 8,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>A python wrapper to easily query knowledge graphs with SPARQL</p>\n",
@@ -5568,7 +5568,7 @@
         "recently_updated": 667,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>An HTML footer to integrate the OEG,UPM and FI logos.</p>\n",
@@ -5598,7 +5598,7 @@
         "recently_updated": 2605,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "css"
         ],
@@ -5629,7 +5629,7 @@
         "recently_updated": 1353,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "html"
         ],
@@ -5660,7 +5660,7 @@
         "recently_updated": 1739,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "css",
@@ -5694,7 +5694,7 @@
         "recently_updated": 14,
         "stargazersCount": 4,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "html"
         ],
         "description": "<p>This vocabulary has been developed to gather the expressiveness of current mapping languages that describe the transformation of heterogeneous data sources into RDF. The scope of the vocabulary is to represent description of data sources, their access, mapping rules for RDF transformation and functions.</p>\n<p>The following diagram shows a general overview of the classes and properties of the Conceptual Mapping vocabulary. This diagram follows the <a href=\"https://chowlk.linkeddata.es/notation.html\">Chowlk notation</a>.</p>\n",
@@ -5724,7 +5724,7 @@
         "recently_updated": 1226,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>No description available yet.</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -5752,7 +5752,7 @@
         "recently_updated": 1208,
         "stargazersCount": 2,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "html",
             "javascript",
             "css",
@@ -5785,7 +5785,7 @@
         "recently_updated": 1130,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "roff",
             "javascript",
@@ -5824,7 +5824,7 @@
         "recently_updated": 127,
         "stargazersCount": 12,
         "releases": 2,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>Java API for Thing Descriptions of the Web of Things</p>\n",
@@ -5854,7 +5854,7 @@
         "recently_updated": 442,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "shell",
             "python",
@@ -5888,7 +5888,7 @@
         "recently_updated": 270,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -5918,7 +5918,7 @@
         "recently_updated": 980,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "shell"
         ],
@@ -5949,7 +5949,7 @@
         "recently_updated": 337,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "powershell",
             "shell"
@@ -5981,7 +5981,7 @@
         "recently_updated": 526,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "java",
             "html"
         ],
@@ -6012,7 +6012,7 @@
         "recently_updated": 2586,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Personal Maven Repository</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -6040,7 +6040,7 @@
         "recently_updated": 39,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "dockerfile",
             "shell"
@@ -6072,7 +6072,7 @@
         "recently_updated": 1354,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java"
         ],
         "description": "<p>Web service controller of mappingpedia-engine</p>\n",
@@ -6102,7 +6102,7 @@
         "recently_updated": 463,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "shell",
             "dockerfile"
         ],
@@ -6133,7 +6133,7 @@
         "recently_updated": 2670,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>SMART-Protocols is an ontology to represent experimental protocols, available at http://vocab.linkeddata.es/SMARTProtocols/</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -6161,7 +6161,7 @@
         "recently_updated": 1989,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "html",
             "java",
@@ -6194,7 +6194,7 @@
         "recently_updated": 4,
         "stargazersCount": 39,
         "releases": 17,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Scalable RDF Knowledge Graph Construction with [R2]RML Mappings</p>\n",
@@ -6224,7 +6224,7 @@
         "recently_updated": 986,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "css",
             "html",
@@ -6257,7 +6257,7 @@
         "recently_updated": 550,
         "stargazersCount": 8,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "java",
             "html",
             "batchfile"
@@ -6289,7 +6289,7 @@
         "recently_updated": 518,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "html",
             "css",
@@ -6323,7 +6323,7 @@
         "recently_updated": 1215,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "scala",
             "java"
         ],
@@ -6354,7 +6354,7 @@
         "recently_updated": 154,
         "stargazersCount": 0,
         "releases": 2,
-        "languagues": null,
+        "languages": null,
         "description": "<p>BIMERR ontology for Occupant Behavior data for energy consumption</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -6382,7 +6382,7 @@
         "recently_updated": 164,
         "stargazersCount": 7,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "javascript",
             "java",
             "html",
@@ -6419,7 +6419,7 @@
         "recently_updated": 270,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>No description available yet.</p>\n",
@@ -6449,7 +6449,7 @@
         "recently_updated": 122,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "css"
@@ -6481,7 +6481,7 @@
         "recently_updated": 430,
         "stargazersCount": 10,
         "releases": 3,
-        "languagues": [
+        "languages": [
             "java",
             "css",
             "javascript"
@@ -6513,7 +6513,7 @@
         "recently_updated": 59,
         "stargazersCount": 1,
         "releases": 3,
-        "languagues": [
+        "languages": [
             "python",
             "shell"
         ],
@@ -6544,7 +6544,7 @@
         "recently_updated": 212,
         "stargazersCount": 2,
         "releases": 3,
-        "languagues": [
+        "languages": [
             "c++",
             "python",
             "makefile",
@@ -6578,7 +6578,7 @@
         "recently_updated": 28,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "tex",
             "shell"
@@ -6610,7 +6610,7 @@
         "recently_updated": 1932,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "java",
             "html"
         ],
@@ -6641,7 +6641,7 @@
         "recently_updated": 50,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "html",
             "css"
@@ -6673,7 +6673,7 @@
         "recently_updated": 71,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository is intended to collect material that supports the development of the Termlex module, a an extension proposal of OntoLex-lemon to cover the current gaps regarding the publication of terminological resources in Semantic Web formats.\nThe work started in October 2020 as part of the NexusLinguarum Action (http://nexuslinguarum.eu/), that supported the development with the founding of an short term scientific mission amongst the main institutions behind the work: UPM (Universidad Polit\u00e9cnica de Madrid) and DFKI (Deutsches Forschungszentrum f\u00fcr K\u00fcnstliche Intelligenz). \nThe repo contains the preliminary ontology in Turtle, and some use cases examples in the same format. \nThese files are support the ongoing publication to present this module. More info about the proposal can be found in the Ontology Lexica Community Group Wiki page: https://www.w3.org/community/ontolex/wiki/Terminology</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -6701,7 +6701,7 @@
         "recently_updated": 1928,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css"
         ],
@@ -6732,7 +6732,7 @@
         "recently_updated": 242,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Trabajo Fin de Master - Datos abiertos para Universidades</p>\n",
@@ -6762,7 +6762,7 @@
         "recently_updated": 74,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "html",
             "tex",
             "css",
@@ -6796,7 +6796,7 @@
         "recently_updated": 521,
         "stargazersCount": 2,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>This repository contains all types of material that we consider useful for the management and usage of the W3C Semantic Sensor Network Ontology</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -6824,7 +6824,7 @@
         "recently_updated": 127,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "solidity",
             "css",
             "java",
@@ -6859,7 +6859,7 @@
         "recently_updated": 115,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python"
         ],
         "description": "<p>Virtuoso triple store for the storage of the rdf data in the digital twin platform.</p>\n",
@@ -6889,7 +6889,7 @@
         "recently_updated": 2517,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript"
         ],
         "description": "<p>Mapping script which transforms GTFS CSV into GTFS RDF</p>\n",
@@ -6919,7 +6919,7 @@
         "recently_updated": 672,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": null,
+        "languages": null,
         "description": "<p>Tools to extract knowledge from scientific publications on COVID-19</p>\n",
         "license": true,
         "readmeUrl": true,
@@ -6947,7 +6947,7 @@
         "recently_updated": 2245,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "shell",
             "html",
@@ -6980,7 +6980,7 @@
         "recently_updated": 1011,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "tsql",
             "java"
         ],
@@ -7011,7 +7011,7 @@
         "recently_updated": 154,
         "stargazersCount": 1,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "javascript",
             "scss",
             "less",
@@ -7047,7 +7047,7 @@
         "recently_updated": 108,
         "stargazersCount": 3,
         "releases": 2,
-        "languagues": [
+        "languages": [
             "java",
             "html",
             "javascript",
@@ -7080,7 +7080,7 @@
         "recently_updated": 143,
         "stargazersCount": 0,
         "releases": 3,
-        "languagues": null,
+        "languages": null,
         "description": "<p>BIMERR ontology for the building domain</p>\n",
         "license": false,
         "readmeUrl": true,
@@ -7108,7 +7108,7 @@
         "recently_updated": 2074,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "java",
             "css"
         ],
@@ -7139,7 +7139,7 @@
         "recently_updated": 702,
         "stargazersCount": 0,
         "releases": 1,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "shell"
@@ -7171,7 +7171,7 @@
         "recently_updated": 1400,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "html",
             "css",
             "javascript"
@@ -7203,7 +7203,7 @@
         "recently_updated": 1082,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "shell"
         ],
         "description": "<p>Repository for storing mappings of mappingpedia</p>\n",
@@ -7233,7 +7233,7 @@
         "recently_updated": 638,
         "stargazersCount": 0,
         "releases": 0,
-        "languagues": [
+        "languages": [
             "python",
             "html",
             "javascript",
