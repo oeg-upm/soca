@@ -38,15 +38,7 @@ class metadata(object):
 
     def icon_releases(self):
         return f"{self.base}repo_icons/releases.png"
-    
-    def html_last_release(self):
 
-        if self.n_releases() == 0:
-            return ''
-
-        releases = self.releases()[0]
-        return f'<a href="{releases["htmlUrl"]}" target="_blank" style="margin-right: 0.5rem; text-decoration: none;"><b><i>{releases["tagName"]}</i></b></a>'
-    
     def html_languages(self):
 
         languages = self.languagues()
@@ -307,7 +299,9 @@ class metadata(object):
 
 
     # Metadata ##################################################
-
+    def last_release(self):
+        return self.releases()[0]["tagName"] if self.n_releases() != 0 else ''
+        
     def repo_type(self):
         langs = self.languagues()
 
