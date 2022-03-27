@@ -40,7 +40,7 @@ def extract(input, output):
 @click.option('--output','-o', default="portal", show_default=True, help="Dir where Software Catalog Portal will be saved")
 def portal(input, output):
     """Build a portal with a minimalistic desing"""
-    from scc.commands.software_catalog_portal import portal
+    from scc.commands.portal import portal
     portal.generate(input, output)
 
 @cli.command()

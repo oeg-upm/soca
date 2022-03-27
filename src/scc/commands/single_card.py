@@ -1,4 +1,4 @@
-from scc.commands.software_catalog_portal import card
+from scc.commands.portal import card
 from somef.cli import cli_get_data
 
 import traceback

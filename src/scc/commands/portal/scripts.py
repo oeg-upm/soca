@@ -30,6 +30,3 @@ class scripts(object):
 
 def mini(js):
     return '\n'+js.replace('    ','').replace('\n','')
-
-
-	

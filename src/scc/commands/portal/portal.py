@@ -25,7 +25,7 @@ def generate(repo_metadata_dir, output):
     cards_data = card.cards_data_dump(repo_metadata_dir)
     with open(f"{output}/cards_data.json", "w") as cards_data_json:
         json.dump(cards_data ,fp=cards_data_json, indent=4)
-        print(f"Cards data saved at {output}/cards_data.json")
+        print(f"✅ A total of {len(cards_data)} cards saved in: {os.path.abspath(output)}/cards_data.json")
 
     # Insert extra scripts
     sc = scripts.scripts()
@@ -34,7 +34,7 @@ def generate(repo_metadata_dir, output):
     # Save index.html
     with open(f"{output}/index.html", "w") as index:
         index.write(str(soup))
-        print(f"Portal saved at {output}/index.html")
+        print(f"✅ Portal saved in: {os.path.abspath(output)}/index.html")
 
 def copy_assets(output):
 
