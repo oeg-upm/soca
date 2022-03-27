@@ -45,8 +45,10 @@ def portal(input, output):
 
 @cli.command()
 @click.option('--input','-i', required=True, help="Respository URL", metavar='<url>')
-@click.option('--output','-o', default="card.html", show_default=True, help="Output file where the html will be saved", metavar='<path>')
-def card(input, output):
+@click.option('--output','-o', default="card", show_default=True, help="Output file where the html will be saved", metavar='<path>')
+@click.option('--html', 'save_as', flag_value='html', default=True, show_default=True, help="Save card as html")
+@click.option('--png', 'save_as', flag_value='png', default=False, show_default=True, help="Save card as a png")
+def card(input, output, save_as):
     """Create a stand-alone card ready to be embedded in a website"""
     from scc.commands import single_card
-    single_card.create(input, output)
+    single_card.create(input, output, save_as)
