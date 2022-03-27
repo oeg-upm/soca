@@ -2,23 +2,26 @@ import os
 import requests
 import csv
 
-def fetch(input, output):
+def fetch(input, output, type):
 
     open(output, 'w')
 
     if os.path.isfile(input):
         with open(input) as org_list:
             for org in org_list.readlines():
-                fetch_org(org.rstrip("\n"), output)
+                _fetch(org.rstrip("\n"), output, type)
     else:
-        fetch_org(input, output)
+        _fetch(input, output, type)
 
 
-def fetch_org(user, out_path):
+def _fetch(name, out_path, type):
 
-    print(f"Fetching repositories from {user}:")
+    if type not in ['orgs','users']:
+        raise ValueError(f'Type {type} is not supported.')
 
-    URL = "https://api.github.com/users/" + user + "/repos"
+    print(f"Fetching repositories from {type} {name}:")
+
+    URL = f"https://api.github.com/{type}/{name}/repos"
     page_size = 50
     page = 1
     PARAMS = {'per_page':page_size,'page':page}
@@ -40,6 +43,6 @@ def fetch_org(user, out_path):
                 if len(data_repos) < 50:
                     cont = False
             except Exception as e: 
-                print(f"ERROR: '{user}' does not exist.")
+                print(f"ERROR: '{type} {name}' does not exist.")
                 return
 

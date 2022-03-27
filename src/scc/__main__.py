@@ -1,59 +1,52 @@
 import click
 
-@click.group()
+CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
+
+@click.group(context_settings=CONTEXT_SETTINGS)
 def cli():
     """
     SCC (Software Catalog Creator)\n
-    Automatically generates a searchable portal for every repsitory of an organization/s, which is easy to host.\n
+    Automatically generates a searchable portal for every repsitory of an organization/s or user/s, which is easy to host.\n
 
-    Steps:
+    Usage:
 
-    1. (Command repos) Fetch all repos from the desired organization/s.\n
-    2. (Command extract) Extract all metadata for every repo.\n
-    3. (Command portal) Generate a searchable portal for all the retreived data.\n
+    1. (repos) Fetch all repos from the desired organization/s\n
+    2. (extract) Extract all metadata for every repo\n
+    3. (portal) Generate a searchable portal for all the retreived data\n
 
     """
     pass 
 
 @cli.command()
-@click.option('--input','-i', required=True, help="Organization name or file with a list of organizations. Use '\/n' as separator.")
-@click.option('--output','-o', default="repos.csv", help="Output data will be stored in a new csv file.")
-def orgrepos(input, output):
-    """Retreive all organization/s repositories."""
-    from scc.commands import fetch_repositories_organization
-    fetch_repositories_organization.fetch(input, output)
+@click.option('--input','-i', required=True, help="Organization or user name", metavar='<name-or-path>')
+@click.option('--output','-o', default="repos.csv", show_default=True, help="Output csv file", metavar='<path>')
+@click.option('--org', 'repo_type', flag_value='orgs', default=True, show_default=True, help="Extracting from a organization")
+@click.option('--user', 'repo_type', flag_value='users', default=False, show_default=True, help="Extracting from a user")
+def repos(input, output, repo_type):
+    """Retreive all organization/s or user/s repositories"""
+    from scc.commands import fetch_repositories
+    fetch_repositories.fetch(input, output, repo_type)
 
 @cli.command()
-@click.option('--input','-i', required=True, help="User name or file with a list of users. Use '\/n' as separator.")
-@click.option('--output','-o', default="repos.csv", help="Output data will be stored in a new csv file.")
-def usrrepos(input, output):
-    """Retreive all user/s repositories."""
-    from scc.commands import fetch_repositories_user
-    fetch_repositories_user.fetch(input, output)
-
-@cli.command()
-@click.option('--input','-i', required=True, help="All the pointers to the repositories of the organization/s in csv format.")
-@click.option('--output','-o', default="repos-metadata", help="Output dir where repositories metadata will be saved.")
+@click.option('--input','-i', required=True, help="Pointers to the repositories in csv format", metavar='<csv-repos>')
+@click.option('--output','-o', default="repos-metadata", help="Dir where repositories metadata will be saved", metavar='<path>')
 def extract(input, output):
-    """Execute  SOMEF for  every  repo introduced."""
+    """Fetch and save metadata from introduced repos"""
     from scc.commands import extract_metadata
     extract_metadata.fetch(input, output)
 
 @cli.command()
-@click.option('--input','-i', required=True, help="Respositories metadata representation in json format.")
-@click.option('--output','-o', default="portal", help="Outout dir where the Software Catalog Portal will be saved.")
+@click.option('--input','-i', required=True, help="Dir respositories metadata in json format", metavar='<dir-json-metadata>')
+@click.option('--output','-o', default="portal", show_default=True, help="Dir where Software Catalog Portal will be saved")
 def portal(input, output):
-    """Build  a  portal  with a  minimalistic desing."""
+    """Build a portal with a minimalistic desing"""
     from scc.commands.software_catalog_portal import portal
     portal.generate(input, output)
 
 @cli.command()
-@click.option('--input','-i', required=True, help="Respository URL")
-@click.option('--output','-o', default="card", help="Outout file where the card will be saved.")
+@click.option('--input','-i', required=True, help="Respository URL", metavar='<url>')
+@click.option('--output','-o', default="card.html", show_default=True, help="Output file where the html will be saved", metavar='<path>')
 def card(input, output):
-    """Create a single ready to use card with the css embedded."""
+    """Create a stand-alone card ready to be embedded in a website"""
     from scc.commands import single_card
     single_card.create(input, output)
-
-#if __name__ == "__main__":
-#    cli()
