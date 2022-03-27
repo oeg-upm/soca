@@ -42,5 +42,5 @@ def fetch(repos_csv, output):
         for fr in failed_repos:
             print(fr)
     
-    print(f"\nSuccessfully extracted metadata from ({len(repos_url)-len(failed_repos)}/{len(repos_url)}) repositories.")
+    print(f"\n✅ Successfully extracted metadata from ({len(repos_url)-len(failed_repos)}/{len(repos_url)}) repositories.")
 
