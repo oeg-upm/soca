@@ -60,7 +60,7 @@ First thing to do is fetch all repositories pointers that we want to use. We'll 
 ```
 
 Is important to determine if the name belongs to a user or a organization.  
-`scc fetch -i dakixr --user`
+`scc fetch -i dakixr --user`  
 `scc fetch -i oeg-upm --org -o oeg-upm_repos.csv`  
 
 This command also accepts a file as input (names separated by a new-line).
