@@ -446,8 +446,8 @@ class metadata(object):
             description = safe_dic(safe_list(all_descriptions,0),'excerpt')
             if not description:
                 description = 'No description available yet.'
-            
-        return description
+
+        return mistune.html(description)
 
     def license(self):
         return safe_dic(safe_dic(self.md,'license'),'excerpt')
