@@ -749,6 +749,15 @@
         ],
         "technique": "Regular expression"
     },
+    "image": [
+        {
+            "excerpt": "https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "documentation": [
         {
             "excerpt": "https://skosprovider.readthedocs.io/",
@@ -852,7 +861,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 18:20:41 GMT"
+            "date": "Sat, 26 Mar 2022 01:41:04 GMT"
         },
         "confidence": [
             1.0
@@ -862,15 +871,8 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 18:20:41 GMT"
+            "date": "Sat, 26 Mar 2022 01:41:04 GMT"
         },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/awesome-semantic-web/blob/master/README.md",
         "confidence": [
             1.0
         ],
@@ -882,5 +884,12 @@
             1.0
         ],
         "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/awesome-semantic-web/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
     }
 }

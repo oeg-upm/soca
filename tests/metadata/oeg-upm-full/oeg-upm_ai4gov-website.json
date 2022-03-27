@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 18:18:58 GMT"
+            "date": "Sat, 26 Mar 2022 01:36:55 GMT"
         },
         "confidence": [
             1.0
@@ -107,8 +107,8 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 3,
-            "date": "Tue, 22 Feb 2022 18:18:58 GMT"
+            "count": 4,
+            "date": "Sat, 26 Mar 2022 01:36:55 GMT"
         },
         "confidence": [
             1.0
@@ -127,7 +127,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ai4gov-website/blob/main/README.md",
+        "excerpt": "https://github.com/oeg-upm/ai4gov-website/README.md",
         "confidence": [
             1.0
         ],

@@ -160,7 +160,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 19:13:42 GMT"
+            "date": "Sat, 26 Mar 2022 02:36:10 GMT"
         },
         "confidence": [
             1.0
@@ -170,7 +170,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 19:13:42 GMT"
+            "date": "Sat, 26 Mar 2022 02:36:10 GMT"
         },
         "confidence": [
             1.0
@@ -192,13 +192,6 @@
         ],
         "technique": "GitHub API"
     },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/DeltaCimApp/blob/master/README.md",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
     "licenseText": {
         "excerpt": "b'The MIT License (MIT)\\n\\nCopyright (c) 2013-2019 Blackrock Digital LLC\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \"Software\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in\\nall copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\nTHE SOFTWARE.\\n'",
         "confidence": [
@@ -206,21 +199,15 @@
         ],
         "technique": "File Exploration"
     },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/DeltaCimApp/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "releases": {
         "excerpt": [
-            {
-                "tagName": "#2.2.6",
-                "name": "CIM 2.2.6",
-                "authorName": "AndreaCimminoArriaga",
-                "authorType": "User",
-                "body": "Release only for testing",
-                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/#2.2.6",
-                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/#2.2.6",
-                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/%232.2.6",
-                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/41006988",
-                "dateCreated": "2021-02-01T13:35:08Z",
-                "datePublished": "2021-04-07T13:01:49Z"
-            },
             {
                 "tagName": "2.2.5",
                 "name": "CIM 2.2.5",
@@ -233,6 +220,19 @@
                 "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/36702029",
                 "dateCreated": "2021-02-01T13:35:08Z",
                 "datePublished": "2021-04-06T15:54:16Z"
+            },
+            {
+                "tagName": "#2.2.6",
+                "name": "CIM 2.2.6",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "Release only for testing",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/#2.2.6",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/#2.2.6",
+                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/%232.2.6",
+                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/41006988",
+                "dateCreated": "2021-02-01T13:35:08Z",
+                "datePublished": "2021-04-07T13:01:49Z"
             },
             {
                 "tagName": "#2.1.7",

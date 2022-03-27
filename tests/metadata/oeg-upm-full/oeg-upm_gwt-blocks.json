@@ -45,6 +45,43 @@
         ],
         "technique": "Regular expression"
     },
+    "image": [
+        {
+            "excerpt": "https://img.shields.io/badge/Guice--servlet-3.0-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Presenter-1.1.1-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Dispatch-1.2.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Inject-2.1.2-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT-2.6.1-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "requirement": [
         {
             "originalHeader": "1) Pre-requisites ",
@@ -140,7 +177,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 20:04:08 GMT"
+            "date": "Sat, 26 Mar 2022 09:28:09 GMT"
         },
         "confidence": [
             1.0
@@ -150,7 +187,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 20:04:08 GMT"
+            "date": "Sat, 26 Mar 2022 09:28:09 GMT"
         },
         "confidence": [
             1.0
@@ -169,7 +206,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/gwt-blocks/blob/master/README.MD",
+        "excerpt": "https://github.com/oeg-upm/gwt-blocks/README.MD",
         "confidence": [
             1.0
         ],

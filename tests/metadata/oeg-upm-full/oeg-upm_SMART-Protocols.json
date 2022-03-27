@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 21:32:03 GMT"
+            "date": "Sat, 26 Mar 2022 09:53:52 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 21:32:03 GMT"
+            "date": "Sat, 26 Mar 2022 09:53:52 GMT"
         },
         "confidence": [
             1.0
@@ -116,7 +116,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/SMART-Protocols/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/SMART-Protocols/README.md",
         "confidence": [
             1.0
         ],

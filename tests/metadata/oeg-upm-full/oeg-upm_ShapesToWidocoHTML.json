@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 21:31:50 GMT"
+            "date": "Sat, 26 Mar 2022 09:53:36 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 21:31:50 GMT"
+            "date": "Sat, 26 Mar 2022 09:53:36 GMT"
         },
         "confidence": [
             1.0
@@ -129,18 +129,18 @@
         ],
         "technique": "GitHub API"
     },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ShapesToWidocoHTML/blob/master/README.md",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
     "licenseText": {
         "excerpt": "b'Copyright (c) 2007-2009, Justin Bronn\\nAll rights reserved.\\n\\nRedistribution and use in source and binary forms, with or without modification,\\nare permitted provided that the following conditions are met:\\n\\n    1. Redistributions of source code must retain the above copyright notice,\\n       this list of conditions and the following disclaimer.\\n\\n    2. Redistributions in binary form must reproduce the above copyright\\n       notice, this list of conditions and the following disclaimer in the\\n       documentation and/or other materials provided with the distribution.\\n\\n    3. Neither the name of OGRGeometry nor the names of its contributors may be used\\n       to endorse or promote products derived from this software without\\n       specific prior written permission.\\n\\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\\n\\n'",
         "confidence": [
             1.0
         ],
         "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/ShapesToWidocoHTML/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
     }
 }

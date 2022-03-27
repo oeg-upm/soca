@@ -37,6 +37,15 @@
         ],
         "technique": "Regular expression"
     },
+    "image": [
+        {
+            "excerpt": "https://github.com/mariapoveda/easytv-onto/blob/master/OnToology/ontology/core.ttl/documentation/resources/images/model.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/easytv-onto",
         "confidence": [
@@ -110,7 +119,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 19:21:50 GMT"
+            "date": "Sat, 26 Mar 2022 09:03:13 GMT"
         },
         "confidence": [
             1.0
@@ -120,7 +129,7 @@
     "forksCount": {
         "excerpt": {
             "count": 4,
-            "date": "Tue, 22 Feb 2022 19:21:50 GMT"
+            "date": "Sat, 26 Mar 2022 09:03:13 GMT"
         },
         "confidence": [
             1.0
@@ -128,7 +137,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/easytv-onto/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/easytv-onto/README.md",
         "confidence": [
             1.0
         ],

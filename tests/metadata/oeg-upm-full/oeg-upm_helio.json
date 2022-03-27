@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 6,
-            "date": "Tue, 22 Feb 2022 20:04:11 GMT"
+            "date": "Sat, 26 Mar 2022 09:28:11 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 20:04:11 GMT"
+            "date": "Sat, 26 Mar 2022 09:28:11 GMT"
         },
         "confidence": [
             1.0
@@ -125,7 +125,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/helio/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/helio/README.md",
         "confidence": [
             1.0
         ],

@@ -100,7 +100,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 18:18:01 GMT"
+            "date": "Sat, 26 Mar 2022 01:34:53 GMT"
         },
         "confidence": [
             1.0
@@ -110,7 +110,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 18:18:01 GMT"
+            "date": "Sat, 26 Mar 2022 01:34:53 GMT"
         },
         "confidence": [
             1.0
@@ -128,7 +128,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/201612-clarityhackathon-upm/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/201612-clarityhackathon-upm/README.md",
         "confidence": [
             1.0
         ],

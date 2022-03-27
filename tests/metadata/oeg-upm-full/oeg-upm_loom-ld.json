@@ -56,7 +56,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-02-22T13:56:59Z",
+        "excerpt": "2022-03-04T09:24:02Z",
         "confidence": [
             1.0
         ],
@@ -109,11 +109,11 @@
     },
     "topics": {
         "excerpt": [
-            "rdf",
-            "sparql",
-            "semantic-web",
             "linked-data",
-            "ontology"
+            "ontology",
+            "rdf",
+            "semantic-web",
+            "sparql"
         ],
         "confidence": [
             1.0
@@ -123,7 +123,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 22 Feb 2022 20:09:47 GMT"
+            "date": "Sat, 26 Mar 2022 09:31:05 GMT"
         },
         "confidence": [
             1.0
@@ -133,7 +133,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 20:09:47 GMT"
+            "date": "Sat, 26 Mar 2022 09:31:05 GMT"
         },
         "confidence": [
             1.0
@@ -142,15 +142,9 @@
     },
     "languages": {
         "excerpt": [
-            "Java"
+            "Java",
+            "Python"
         ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/loom-ld/blob/main/README.md",
         "confidence": [
             1.0
         ],
@@ -162,6 +156,13 @@
             1.0
         ],
         "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/loom-ld/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
     },
     "hasDocumentation": {
         "excerpt": [

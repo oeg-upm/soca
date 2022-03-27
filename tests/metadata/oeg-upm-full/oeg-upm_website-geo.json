@@ -7,7 +7,8 @@
                     0.9684417842847608
                 ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "oeg-upm/website-geo"
         },
         {
             "excerpt": "Official repository with all source code to generate https://geo.linkeddata.es",
@@ -97,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 22:41:02 GMT"
+            "date": "Sat, 26 Mar 2022 10:06:25 GMT"
         },
         "confidence": [
             1.0
@@ -107,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 22:41:02 GMT"
+            "date": "Sat, 26 Mar 2022 10:06:25 GMT"
         },
         "confidence": [
             1.0
@@ -128,7 +129,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/website-geo/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/website-geo/README.md",
         "confidence": [
             1.0
         ],

@@ -1,32 +1,13 @@
 {
-    "description": [
-        {
-            "excerpt": "This repo contains all the projects developed in the context of the project EasyTV \n",
-            "confidence": [
-                [
-                    0.9770146802655326
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "easytv-semantic-annotator"
-        },
-        {
-            "excerpt": "Semantic annotator for sign language ontology",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
     "longTitle": {
-        "excerpt": "easytv-semantic-annotator",
+        "excerpt": "JSONPath-to-SPARQL",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/easytv-semantic-annotator",
+        "excerpt": "https://github.com/oeg-upm/JSONPath-to-SPARQL",
         "confidence": [
             1.0
         ],
@@ -47,14 +28,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2020-10-06T07:21:12Z",
+        "excerpt": "2021-10-04T14:05:10Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-01-05T09:30:15Z",
+        "excerpt": "2021-10-04T14:05:13Z",
         "confidence": [
             1.0
         ],
@@ -71,35 +52,35 @@
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "easytv-semantic-annotator",
+        "excerpt": "JSONPath-to-SPARQL",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/easytv-semantic-annotator",
+        "excerpt": "oeg-upm/JSONPath-to-SPARQL",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-semantic-annotator/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/JSONPath-to-SPARQL/issues{/number}",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-semantic-annotator/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/JSONPath-to-SPARQL/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/easytv-semantic-annotator/releases",
+        "excerpt": "https://github.com/oeg-upm/JSONPath-to-SPARQL/releases",
         "confidence": [
             1.0
         ],
@@ -107,8 +88,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 1,
-            "date": "Tue, 22 Feb 2022 16:26:35 GMT"
+            "count": 0,
+            "date": "Sat, 26 Mar 2022 09:29:11 GMT"
         },
         "confidence": [
             1.0
@@ -118,27 +99,8 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 16:26:35 GMT"
+            "date": "Sat, 26 Mar 2022 09:29:11 GMT"
         },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "languages": {
-        "excerpt": [
-            "Java",
-            "Perl",
-            "Shell",
-            "Batchfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/easytv-semantic-annotator/blob/main/README.md",
         "confidence": [
             1.0
         ],
@@ -151,14 +113,11 @@
         ],
         "technique": "File Exploration"
     },
-    "hasScriptFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/easytv-semantic-annotator/main/easytv-rdfy/InstallDependencies.sh",
-            "https://raw.githubusercontent.com/oeg-upm/easytv-semantic-annotator/main/easytv-annotator/InstallDependencies.sh"
-        ],
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/JSONPath-to-SPARQL/README.md",
         "confidence": [
             1.0
         ],
-        "technique": "File Exploration"
+        "technique": "GitHub API"
     }
 }

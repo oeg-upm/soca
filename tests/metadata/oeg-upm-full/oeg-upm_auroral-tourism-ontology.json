@@ -25,6 +25,15 @@
         ],
         "technique": "Regular expression"
     },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/auroral-toursim-ontology/blob/main/diagrams/tourism.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/auroral-tourism-ontology",
         "confidence": [
@@ -54,7 +63,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-02-03T14:42:30Z",
+        "excerpt": "2022-02-28T17:01:56Z",
         "confidence": [
             1.0
         ],
@@ -97,8 +106,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 0,
-            "date": "Tue, 22 Feb 2022 18:20:36 GMT"
+            "count": 1,
+            "date": "Sat, 26 Mar 2022 01:40:51 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +117,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 18:20:36 GMT"
+            "date": "Sat, 26 Mar 2022 01:40:51 GMT"
         },
         "confidence": [
             1.0
@@ -116,7 +125,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/auroral-tourism-ontology/blob/main/README.md",
+        "excerpt": "https://github.com/oeg-upm/auroral-tourism-ontology/README.md",
         "confidence": [
             1.0
         ],

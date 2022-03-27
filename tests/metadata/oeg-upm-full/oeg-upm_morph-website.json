@@ -108,10 +108,10 @@
     "topics": {
         "excerpt": [
             "data-integration",
-            "knowledge-graph",
             "heterogenous-data",
-            "obdi",
-            "obda"
+            "knowledge-graph",
+            "obda",
+            "obdi"
         ],
         "confidence": [
             1.0
@@ -121,7 +121,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 21:24:36 GMT"
+            "date": "Sat, 26 Mar 2022 09:48:54 GMT"
         },
         "confidence": [
             1.0
@@ -131,7 +131,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 22 Feb 2022 21:24:36 GMT"
+            "date": "Sat, 26 Mar 2022 09:48:54 GMT"
         },
         "confidence": [
             1.0
@@ -143,15 +143,9 @@
             "JavaScript",
             "HTML",
             "CSS",
+            "Dockerfile",
             "Shell"
         ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-website/blob/master/README.md",
         "confidence": [
             1.0
         ],
@@ -164,10 +158,25 @@
         ],
         "technique": "File Exploration"
     },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/morph-website/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/morph-website/master/website/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
     "hasScriptFile": {
         "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/morph-website/master/morph-group/build.sh",
-            "https://raw.githubusercontent.com/oeg-upm/morph-website/master/morph-group/public/getimages.sh"
+            "https://raw.githubusercontent.com/oeg-upm/morph-website/master/website/public/getimages.sh"
         ],
         "confidence": [
             1.0

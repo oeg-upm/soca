@@ -95,7 +95,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 19:12:28 GMT"
+            "date": "Sat, 26 Mar 2022 02:32:27 GMT"
         },
         "confidence": [
             1.0
@@ -105,7 +105,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 19:12:28 GMT"
+            "date": "Sat, 26 Mar 2022 02:32:27 GMT"
         },
         "confidence": [
             1.0
@@ -124,7 +124,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/chowlk_spec/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/chowlk_spec/README.md",
         "confidence": [
             1.0
         ],
