@@ -113,4 +113,4 @@ def html_view(repo_metadata, embedded, minify=True):
     </article>
     """
     
-    return htmlmin.minify(html_card, remove_empty_space=True).replace('\n','') if minify else html_card
+    return htmlmin.minify(html_card, remove_empty_space=True) if minify else html_card
