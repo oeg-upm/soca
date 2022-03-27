@@ -5,10 +5,10 @@ from os.path import isfile, join
 from datetime import datetime
 import re
 import sys
-from markdown2 import Markdown
 from pygments import highlight
 from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
+import mistune
 
 class metadata(object):
 
@@ -284,11 +284,9 @@ class metadata(object):
     
     def modal(self, title, body, markdown_translation = True):
     
-        markdowner = Markdown()
-
         if markdown_translation:
-            body = markdowner.convert(body)
-        
+            body = mistune.html(body)
+           
         return f"""<div class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
