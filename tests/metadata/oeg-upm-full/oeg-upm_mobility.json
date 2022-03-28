@@ -35,7 +35,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-01-24T11:01:19Z",
+        "excerpt": "2022-03-22T10:35:46Z",
         "confidence": [
             1.0
         ],
@@ -78,8 +78,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 0,
-            "date": "Tue, 22 Feb 2022 20:12:18 GMT"
+            "count": 1,
+            "date": "Sat, 26 Mar 2022 09:32:32 GMT"
         },
         "confidence": [
             1.0
@@ -89,15 +89,26 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 20:12:18 GMT"
+            "date": "Sat, 26 Mar 2022 09:32:32 GMT"
         },
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
+    "languages": {
+        "excerpt": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/mobility/blob/main/README.md",
+        "excerpt": "https://github.com/oeg-upm/mobility/README.md",
         "confidence": [
             1.0
         ],

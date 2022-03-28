@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 20:05:34 GMT"
+            "date": "Sat, 26 Mar 2022 09:28:59 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 22 Feb 2022 20:05:34 GMT"
+            "date": "Sat, 26 Mar 2022 09:28:59 GMT"
         },
         "confidence": [
             1.0
@@ -116,7 +116,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/IEBrain/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/IEBrain/README.md",
         "confidence": [
             1.0
         ],

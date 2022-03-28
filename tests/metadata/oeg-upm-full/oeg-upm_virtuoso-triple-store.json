@@ -40,6 +40,36 @@
         ],
         "technique": "Regular expression"
     },
+    "image": [
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master//master//master//master/images/sparql_update.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master//master//master/images/sparql_user.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master//master/images/users.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master/images/conductor.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "usage": [
         {
             "originalHeader": "Stopping and starting the container",
@@ -124,7 +154,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 22:15:47 GMT"
+            "date": "Sat, 26 Mar 2022 09:59:01 GMT"
         },
         "confidence": [
             1.0
@@ -134,7 +164,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 22:15:47 GMT"
+            "date": "Sat, 26 Mar 2022 09:59:01 GMT"
         },
         "confidence": [
             1.0
@@ -151,7 +181,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/virtuoso-triple-store/blob/main/readme.md",
+        "excerpt": "https://github.com/oeg-upm/virtuoso-triple-store/readme.md",
         "confidence": [
             1.0
         ],

@@ -111,7 +111,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 18:19:37 GMT"
+            "date": "Sat, 26 Mar 2022 01:39:10 GMT"
         },
         "confidence": [
             1.0
@@ -121,7 +121,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 18:19:37 GMT"
+            "date": "Sat, 26 Mar 2022 01:39:10 GMT"
         },
         "confidence": [
             1.0
@@ -141,7 +141,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ainn-website/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/ainn-website/README.md",
         "confidence": [
             1.0
         ],

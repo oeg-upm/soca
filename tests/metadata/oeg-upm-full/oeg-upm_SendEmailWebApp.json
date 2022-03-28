@@ -37,6 +37,85 @@
         ],
         "technique": "Regular expression"
     },
+    "image": [
+        {
+            "excerpt": "https://img.shields.io/badge/Version-0.0.1-lightgrey.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/build-Maven-lightgrey.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Simple%20Captcha-1.2.1-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Java%20Mail-1.5.5-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Java-1.7%20or%20later-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/i18n%20API%3F-yes-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-jQuery-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/design-Responsive-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-JS-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-CSS-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-HTML-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "requirement": [
         {
             "originalHeader": "Pre-requisites",
@@ -132,7 +211,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 21:31:48 GMT"
+            "date": "Sat, 26 Mar 2022 09:53:34 GMT"
         },
         "confidence": [
             1.0
@@ -142,7 +221,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 21:31:48 GMT"
+            "date": "Sat, 26 Mar 2022 09:53:34 GMT"
         },
         "confidence": [
             1.0
@@ -160,7 +239,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/SendEmailWebApp/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/SendEmailWebApp/README.md",
         "confidence": [
             1.0
         ],

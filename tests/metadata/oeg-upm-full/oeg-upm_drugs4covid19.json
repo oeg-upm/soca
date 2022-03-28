@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 19:14:12 GMT"
+            "date": "Sat, 26 Mar 2022 02:37:22 GMT"
         },
         "confidence": [
             1.0
@@ -108,15 +108,8 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 19:14:12 GMT"
+            "date": "Sat, 26 Mar 2022 02:37:22 GMT"
         },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/drugs4covid19/blob/master/README.md",
         "confidence": [
             1.0
         ],
@@ -128,5 +121,12 @@
             1.0
         ],
         "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/drugs4covid19/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
     }
 }

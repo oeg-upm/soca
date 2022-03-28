@@ -88,7 +88,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 20:09:42 GMT"
+            "date": "Sat, 26 Mar 2022 09:31:03 GMT"
         },
         "confidence": [
             1.0
@@ -98,7 +98,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 20:09:42 GMT"
+            "date": "Sat, 26 Mar 2022 09:31:03 GMT"
         },
         "confidence": [
             1.0
@@ -118,7 +118,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/LLD-Search/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/LLD-Search/README.md",
         "confidence": [
             1.0
         ],

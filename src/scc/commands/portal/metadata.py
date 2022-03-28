@@ -5,10 +5,10 @@ from os.path import isfile, join
 from datetime import datetime
 import re
 import sys
-from markdown2 import Markdown
 from pygments import highlight
 from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
+import mistune
 
 class metadata(object):
 
@@ -38,10 +38,10 @@ class metadata(object):
 
     def icon_releases(self):
         return f"{self.base}repo_icons/releases.png"
-    
+
     def html_languages(self):
 
-        languages = self.languagues()
+        languages = self.languages()
 
         if not languages:
             return ''
@@ -284,11 +284,9 @@ class metadata(object):
     
     def modal(self, title, body, markdown_translation = True):
     
-        markdowner = Markdown()
-
         if markdown_translation:
-            body = markdowner.convert(body)
-        
+            body = mistune.html(body)
+           
         return f"""<div class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
@@ -299,11 +297,13 @@ class metadata(object):
 
 
     # Metadata ##################################################
-
+    def last_release(self):
+        return self.releases()[0]["tagName"] if self.n_releases() != 0 else ''
+        
     def repo_type(self):
-        langs = self.languagues()
+        langs = self.languages()
 
-        if not langs: # Most ontologies does not have any language
+        if not langs: # Most ontologies doesn't have any language
             return 'ontology'
 
         web_langs = ['html','css','javascript'] 
@@ -419,7 +419,7 @@ class metadata(object):
     def readme(self):
         return safe_dic(safe_dic(self.md,'readmeUrl'),'excerpt')
 
-    def languagues(self):
+    def languages(self):
         langs = safe_dic(safe_dic(self.md,'languages'),'excerpt')
         if not langs:
             return None
@@ -446,8 +446,8 @@ class metadata(object):
             description = safe_dic(safe_list(all_descriptions,0),'excerpt')
             if not description:
                 description = 'No description available yet.'
-            
-        return description
+
+        return mistune.html(description)
 
     def license(self):
         return safe_dic(safe_dic(self.md,'license'),'excerpt')
@@ -470,6 +470,9 @@ class metadata(object):
     def n_releases(self):
         rel = safe_dic(safe_dic(self.md,'releases'),'excerpt')
         return len(rel) if rel is not None else 0
+
+    def releases(self):
+        return safe_dic(safe_dic(self.md,'releases'),'excerpt')
     
     def url_releases(self):
         return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')

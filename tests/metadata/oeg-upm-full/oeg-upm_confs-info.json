@@ -108,11 +108,11 @@
     },
     "topics": {
         "excerpt": [
-            "journals",
-            "conferences",
-            "semantic-web",
             "artificial-intelligence",
-            "knowledge-graph"
+            "conferences",
+            "journals",
+            "knowledge-graph",
+            "semantic-web"
         ],
         "confidence": [
             1.0
@@ -122,7 +122,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 19:13:18 GMT"
+            "date": "Sat, 26 Mar 2022 02:35:04 GMT"
         },
         "confidence": [
             1.0
@@ -132,7 +132,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 22 Feb 2022 19:13:18 GMT"
+            "date": "Sat, 26 Mar 2022 02:35:04 GMT"
         },
         "confidence": [
             1.0
@@ -151,7 +151,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/confs-info/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/confs-info/README.md",
         "confidence": [
             1.0
         ],

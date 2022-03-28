@@ -14,7 +14,7 @@ def cards_data_dump(repo_metadata_dir):
         filename = os.fsdecode(file)
         if filename.endswith(".json"): 
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
-                print(f"Creating card for {filename}")
+                print(f"Creating card for '{filename}'")
                 repo_metadata = json.load(json_metadata)
                 md = metadata.metadata(repo_metadata)
                 cards_data.append({
@@ -25,7 +25,7 @@ def cards_data_dump(repo_metadata_dir):
                     'recently_updated': md.last_update_days(),
                     'stargazersCount': md.stars(),
                     'releases': md.n_releases(),
-                    'languagues': md.languagues(),
+                    'languages': md.languages(),
                     'description': md.description(),
                     'license': md.license() is not None,
                     'readmeUrl': md.readme() is not None,
@@ -41,9 +41,11 @@ def cards_data_dump(repo_metadata_dir):
                     'identifier': md.identifier() is not None,
                     'repoStatus': md.status() is not None,
                     'acknowledgement': md.acknowledgement() is not None,
-                    'downloadUrl': md.downloadUrl() is not None
-
+                    'downloadUrl': md.downloadUrl() is not None,
+                    'isOntology': md.repo_type() == 'ontology',
+                    'isWeb': md.repo_type() == 'web'
                 })
+    print('-'*80)
 
     return cards_data
 
@@ -64,7 +66,7 @@ def html_view(repo_metadata, embedded, minify=True):
                     </a>
                     {md.copy_btn()}
                 </div>
-                <p class="description">{md.description()}</p>
+                <div class="description">{md.description()}</div>
             </div>
             <div>
                 <div style="min-height: 6rem;display: flex;align-items: center;justify-content: center;">
@@ -82,8 +84,8 @@ def html_view(repo_metadata, embedded, minify=True):
                         <img src="{md.icon_star()}" alt="stars" class="repo-icon">
                     </a>
                 </div>
-                <div {md.add_tooltip('right','Releases')}>
-                    <a href="{md.url_releases()}" target="_blank" class="flex-horizontal float-right" style="text-decoration: none;">
+                <div {md.add_tooltip('right','No releases yet' if md.last_release() == '' else 'Last release: '+ md.last_release())} class="flex-horizontal float-right">
+                    <a href="{md.url_releases()}" target="_blank" class="flex-horizontal" style="text-decoration: none;">                        
                         <b>{md.n_releases()}</b>
                         <img src="{md.icon_releases()}" alt="releases" class="repo-icon">
                     </a>
@@ -106,8 +108,9 @@ def html_view(repo_metadata, embedded, minify=True):
     {sc.js_dependencies if embedded else ''}
     {f'<script>{sc.tooltip}</script>' if embedded else ''}
     {f'<script>{sc.copy_card}</script>' if embedded else ''}
+    {f'<script>{sc.modals}add_modals();</script>' if embedded else ''}
     {f'<style>{s.rules}</style>' if embedded else ''}
     </article>
     """
-    #return html_card
+    
     return htmlmin.minify(html_card, remove_empty_space=True) if minify else html_card

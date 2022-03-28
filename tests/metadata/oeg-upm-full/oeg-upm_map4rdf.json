@@ -23,6 +23,211 @@
             "technique": "Supervised classification"
         }
     ],
+    "image": [
+        {
+            "excerpt": "https://img.shields.io/badge/Version-0.5.0-lightgrey.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/build-Maven-lightgrey.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/JSON--java-20140107-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Geotools-11.0-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/slf4j-1.7.7-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Jena--arq-2.12.1-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/JavaAPIforKml-2.2.1-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Guice--servlet-3.0-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Java-1.7%20or%20later-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-OSGeoMaps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-OpenCycleMaps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-MapBox-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-IDE--Maps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-Cartociudad-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-GoogleMaps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-OpenStreetMaps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Maps-3.9.0--build--17-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Dispatch-1.2.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Inject-2.1.2-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Charts-0.9.9-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Blocks-0.1.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20OpenLayers-1.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT-2.7.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-Proj4js-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-jQuery-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/design-Cross--Browsers-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-JS-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-CSS-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-HTML-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/map4rdf",
         "confidence": [
@@ -104,10 +309,10 @@
     },
     "topics": {
         "excerpt": [
-            "map4rdf",
             "geo",
+            "geolinkeddata",
             "geosparql",
-            "geolinkeddata"
+            "map4rdf"
         ],
         "confidence": [
             1.0
@@ -117,7 +322,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 10,
-            "date": "Tue, 22 Feb 2022 20:10:07 GMT"
+            "date": "Sat, 26 Mar 2022 09:31:17 GMT"
         },
         "confidence": [
             1.0
@@ -127,7 +332,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 22 Feb 2022 20:10:07 GMT"
+            "date": "Sat, 26 Mar 2022 09:31:17 GMT"
         },
         "confidence": [
             1.0
@@ -146,7 +351,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/map4rdf/blob/master/README.MD",
+        "excerpt": "https://github.com/oeg-upm/map4rdf/README.MD",
         "confidence": [
             1.0
         ],

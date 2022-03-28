@@ -8,8 +8,20 @@
             "technique": "GitHub API"
         }
     ],
+    "citation": [
+        {
+            "excerpt": "Este repositorio es el resultado de varios TFGs de la ETSI Inform\u00e1ticos de la Universidad Polit\u00e9cnica de Madrid, basados en el trabajo previo que el Grupo de Ingenier\u00eda Ontol\u00f3gica  ha venido tradicionalmente realizando con instituciones relacionadas con los datos geogr\u00e1ficos, y m\u00e1s espec\u00edficamente con instituciones como el Instituto Geogr\u00e1fico Nacional, para la exportaci\u00f3n de algunos de sus datos geogr\u00e1ficos a RDF y su publicaci\u00f3n como datos enlazados (Linked Data). Un ejemplo de los resultados obtenidos se puede encontrar en https://datos.ign.es/\n \n",
+            "confidence": [
+                [
+                    0.9999985705425856
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "morph-GEO"
+        }
+    ],
     "longTitle": {
-        "excerpt": "actualizar-herramientas-linked-data-geografico-OEG",
+        "excerpt": "morph-GEO",
         "confidence": [
             1.0
         ],
@@ -37,14 +49,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2021-05-07T16:49:57Z",
+        "excerpt": "2022-02-25T09:45:56Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2021-12-08T22:15:09Z",
+        "excerpt": "2022-02-25T09:47:34Z",
         "confidence": [
             1.0
         ],
@@ -88,7 +100,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 21:22:02 GMT"
+            "date": "Sat, 26 Mar 2022 09:33:03 GMT"
         },
         "confidence": [
             1.0
@@ -98,7 +110,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 21:22:02 GMT"
+            "date": "Sat, 26 Mar 2022 09:33:03 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +120,8 @@
     "languages": {
         "excerpt": [
             "Java",
-            "TeX"
+            "TeX",
+            "Shell"
         ],
         "confidence": [
             1.0
@@ -116,10 +129,25 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-geo/blob/main/README.md",
+        "excerpt": "https://github.com/oeg-upm/morph-geo/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/shpTogpkg.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/gpkg-rar.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/gpkg-git.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/CURV_NIV.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/convertidorTripleGeoKettle.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/gpkg-tests.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/TripleGeoKettle-PDI9/instalador.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 22 Feb 2022 21:29:48 GMT"
+            "date": "Sat, 26 Mar 2022 09:52:21 GMT"
         },
         "confidence": [
             1.0
@@ -108,15 +108,8 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 21:29:48 GMT"
+            "date": "Sat, 26 Mar 2022 09:52:21 GMT"
         },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/OWL-To-OAS-Specification/blob/master/README.md",
         "confidence": [
             1.0
         ],
@@ -128,6 +121,13 @@
             1.0
         ],
         "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/OWL-To-OAS-Specification/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
     },
     "hasDocumentation": {
         "excerpt": [

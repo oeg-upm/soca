@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 18:24:53 GMT"
+            "date": "Sat, 26 Mar 2022 01:52:34 GMT"
         },
         "confidence": [
             1.0
@@ -108,15 +108,8 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 18:24:53 GMT"
+            "date": "Sat, 26 Mar 2022 01:52:34 GMT"
         },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/bimerr-information-objects/blob/main/README.md",
         "confidence": [
             1.0
         ],
@@ -128,5 +121,12 @@
             1.0
         ],
         "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-information-objects/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
     }
 }

@@ -25,10 +25,24 @@
         ],
         "technique": "Regular expression"
     },
+    "repoStatus": {
+        "excerpt": "https://www.repostatus.org/#concept",
+        "description": "Concept \u2013 Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.",
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://www.repostatus.org/badges/latest/concept.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "usage": [
         {
-            "originalHeader": "A live demo is available at http://purl.org/net/ldp4ro",
-            "excerpt": "This work has been supported by the DrInventor project (http://drinventor.eu/)\n",
+            "originalHeader": "Demo",
+            "excerpt": "A live demo is available at http://purl.org/net/ldp4ro\n\nThis work has been supported by the DrInventor project (http://drinventor.eu/)\n",
             "parentHeader": "LDP4RO",
             "confidence": [
                 1
@@ -65,7 +79,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2019-01-26T14:21:42Z",
+        "excerpt": "2022-03-13T19:53:05Z",
         "confidence": [
             1.0
         ],
@@ -118,7 +132,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 22 Feb 2022 20:07:34 GMT"
+            "date": "Sat, 26 Mar 2022 09:29:53 GMT"
         },
         "confidence": [
             1.0
@@ -128,7 +142,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 22 Feb 2022 20:07:34 GMT"
+            "date": "Sat, 26 Mar 2022 09:29:53 GMT"
         },
         "confidence": [
             1.0
@@ -148,7 +162,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/LDP4RO/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/LDP4RO/README.md",
         "confidence": [
             1.0
         ],

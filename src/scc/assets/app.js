@@ -27,6 +27,8 @@ const requirements = document.getElementById('requirements');
 const usage = document.getElementById('usage');
 const help = document.getElementById('help');
 const paper = document.getElementById('paper');
+const web = document.getElementById('web');
+const ontology = document.getElementById('ontology');
 
 const title = document.getElementById('title');
 const stars = document.getElementById('stars');
@@ -143,6 +145,20 @@ paper.addEventListener('click', () => {
     else paper.classList.remove("filter-selected");
     search(); 
 });
+web.addEventListener('click', () => { 
+    state_web = !state_web; 
+    if (state_web)
+        web.classList.add("filter-selected");
+    else web.classList.remove("filter-selected");
+    search(); 
+});
+ontology.addEventListener('click', () => { 
+    state_ontology = !state_ontology; 
+    if (state_ontology)
+        ontology.classList.add("filter-selected");
+    else ontology.classList.remove("filter-selected");
+    search(); 
+});
 
 title.addEventListener('click', () => { 
     state_title = !state_title; state_stars = false; state_releases = false; state_last_updated = false; 
@@ -198,6 +214,8 @@ let state_requirements = false;
 let state_usage = false;
 let state_help = false;
 let state_paper = false;
+let state_web = false;
+let state_ontology = false;
 
 let state_title = false;
 let state_stars = false;
@@ -221,6 +239,8 @@ function search() {
                 && ((state_license)? card.license : true)
                 && ((state_notebook)? card.hasExecutableNotebook : true)
                 && ((state_paper)? card.paper : true)
+                && ((state_ontology)? card.isOntology : true)
+                && ((state_web)? card.isWeb : true)
                 && ((state_requirements)? card.requirement : true)
                 && ((state_usage)? card.usage : true)
                 && ((state_help)? card.help : true)
@@ -259,71 +279,4 @@ const displayCards = (cards) => {
     add_modals();
 }
 
-function add_modals() {
-    cards_icons_list = document.getElementsByClassName('ref-repo-icons');
-    for(const cards_icons of cards_icons_list){
-        for(const card_icon of cards_icons.children){
-            const icon = card_icon.getElementsByClassName('icon')[0];
-            const modal = card_icon.getElementsByClassName('modal')[0];
-            const span_close = card_icon.getElementsByClassName('close')[0];
-            if (modal != undefined){
-                icon.addEventListener('click', () => { 
-                    modal.classList.add('modal-on');
-                });
-                span_close.addEventListener('click', () => { 
-                    modal.classList.remove('modal-on');
-                });
-            }
-        }
-        
-        const license = cards_icons.getElementsByClassName('ref-license')[0];
-        if (license != undefined) {
-            license.addEventListener('click', () => { 
-                getGithub(license);
-            });
-        }
-        
-    }
-    
-}
-
-
 loadCardsData();
-
-function addList(element, iterable){
-    var list = document.createElement("ol");
-        for (let i of iterable) {
-            let item = document.createElement("li");
-            item.innerHTML = i.charAt(0).toUpperCase() + i.slice(1);
-            list.appendChild(item);
-        }
-        element.innerHTML = '';
-        element.appendChild(list);
-}
-
-async function getGithub(license){
-    if (license.dataset.url != 'None'){
-        const response = await fetch(license.dataset.url);
-        const response_aux = response.clone();
-        try {
-            const data =  await response.json();
-
-            const name = license.getElementsByClassName('ref-name')[0];
-            const description = license.getElementsByClassName('ref-description')[0];
-            const permissions = license.getElementsByClassName('ref-permissions')[0];
-            const conditions = license.getElementsByClassName('ref-conditions')[0];
-            const limitations = license.getElementsByClassName('ref-limitations')[0];
-
-            name.innerHTML = await data.name;
-            description.innerHTML = await data.description;
-
-            addList(permissions, data.permissions);
-            addList(conditions, data.conditions);
-            addList(limitations, data.limitations);
-
-        } catch (error) {
-            const description = license.getElementsByClassName('ref-description-aux')[0];
-            description.innerHTML = '<pre style="font-family: monospace;">'+await response_aux.text()+'</pre>';
-        }
-    } else console.log('No license.');
-}

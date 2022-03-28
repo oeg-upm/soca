@@ -318,7 +318,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 18:18:35 GMT"
+            "date": "Sat, 26 Mar 2022 01:36:01 GMT"
         },
         "confidence": [
             1.0
@@ -328,7 +328,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 22 Feb 2022 18:18:35 GMT"
+            "date": "Sat, 26 Mar 2022 01:36:01 GMT"
         },
         "confidence": [
             1.0
@@ -347,7 +347,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/AI4EU_raidologist/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/AI4EU_raidologist/README.md",
         "confidence": [
             1.0
         ],
