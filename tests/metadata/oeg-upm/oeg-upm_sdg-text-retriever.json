@@ -99,7 +99,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 05:49:36 GMT"
+            "date": "Sat, 26 Mar 2022 09:53:24 GMT"
         },
         "confidence": [
             1.0
@@ -109,7 +109,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 05:49:36 GMT"
+            "date": "Sat, 26 Mar 2022 09:53:24 GMT"
         },
         "confidence": [
             1.0
@@ -127,7 +127,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/sdg-text-retriever/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/sdg-text-retriever/README.md",
         "confidence": [
             1.0
         ],

@@ -1,64 +1,4 @@
 {
-    "description": [
-        {
-            "excerpt": "Aplicaci\u00f3n de gesti\u00f3n de corpus documentales, desarrollada como Trabajo de Fin de Grado.",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
-    "citation": [
-        {
-            "excerpt": "Aplicaci\u00f3n de visualizaci\u00f3n de datos procedentes de cualquier conjunto de documentos. Desarrollada con Angular y empleando el uso de un servidor de Elasticsearch previamente instalado de manera local en la m\u00e1quina que despliega el servicio. \nSe trata de un proyecto destinado al Trabajo de Fin de Grado para el Grado en Ingenier\u00eda Inform\u00e1tica por la Universidad Polit\u00e9cnica de Madrid. \n",
-            "confidence": [
-                [
-                    0.9999180408484702,
-                    0.9996795998162804
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "corpuser - Gesti\u00f3n de Corpus Documentales"
-        }
-    ],
-    "longTitle": {
-        "excerpt": "corpuser - Gesti\u00f3n de Corpus Documentales",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
-    "run": [
-        {
-            "originalHeader": "Running unit tests",
-            "excerpt": "Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).\n",
-            "parentHeader": "corpuser - Gesti\u00f3n de Corpus Documentales",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        },
-        {
-            "originalHeader": "Running end-to-end tests",
-            "excerpt": "Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).\n",
-            "parentHeader": "corpuser - Gesti\u00f3n de Corpus Documentales",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        }
-    ],
-    "support": [
-        {
-            "originalHeader": "Further help",
-            "excerpt": "To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).\n\n",
-            "parentHeader": "corpuser - Gesti\u00f3n de Corpus Documentales",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        }
-    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/corpuser",
         "confidence": [
@@ -94,6 +34,15 @@
         ],
         "technique": "GitHub API"
     },
+    "description": [
+        {
+            "excerpt": "Aplicaci\u00f3n de gesti\u00f3n de corpus documentales, desarrollada como Trabajo de Fin de Grado.",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
     "name": {
         "excerpt": "corpuser",
         "confidence": [
@@ -132,7 +81,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 05:49:41 GMT"
+            "date": "Sat, 26 Mar 2022 02:35:09 GMT"
         },
         "confidence": [
             1.0
@@ -142,7 +91,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 05:49:41 GMT"
+            "date": "Sat, 26 Mar 2022 02:35:09 GMT"
         },
         "confidence": [
             1.0
@@ -156,13 +105,6 @@
             "CSS",
             "JavaScript"
         ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/corpuser/blob/master/README.md",
         "confidence": [
             1.0
         ],

@@ -25,6 +25,15 @@
         ],
         "technique": "Regular expression"
     },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/bimerr-kpi/blob/master/diagrams/diagram.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/bimerr-kpi",
         "confidence": [
@@ -98,7 +107,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 05:55:46 GMT"
+            "date": "Sat, 26 Mar 2022 01:52:49 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +117,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Mon, 21 Feb 2022 05:55:46 GMT"
+            "date": "Sat, 26 Mar 2022 01:52:49 GMT"
         },
         "confidence": [
             1.0
@@ -116,7 +125,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/bimerr-kpi/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/bimerr-kpi/README.md",
         "confidence": [
             1.0
         ],

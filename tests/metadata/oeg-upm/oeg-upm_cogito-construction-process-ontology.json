@@ -18,6 +18,15 @@
         ],
         "technique": "Regular expression"
     },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/cogito-construction-process-ontology/blob/master/diagram/diagram.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/cogito-construction-process-ontology",
         "confidence": [
@@ -47,7 +56,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2021-09-17T10:19:18Z",
+        "excerpt": "2022-03-08T11:36:03Z",
         "confidence": [
             1.0
         ],
@@ -91,7 +100,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 07:16:37 GMT"
+            "date": "Sat, 26 Mar 2022 02:34:15 GMT"
         },
         "confidence": [
             1.0
@@ -101,7 +110,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 07:16:37 GMT"
+            "date": "Sat, 26 Mar 2022 02:34:15 GMT"
         },
         "confidence": [
             1.0
@@ -109,7 +118,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/cogito-construction-process-ontology/blob/master/README.md",
+        "excerpt": "https://github.com/oeg-upm/cogito-construction-process-ontology/README.md",
         "confidence": [
             1.0
         ],
