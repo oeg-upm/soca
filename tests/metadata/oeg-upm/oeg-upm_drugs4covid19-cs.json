@@ -107,7 +107,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 05:56:39 GMT"
+            "date": "Sat, 26 Mar 2022 02:37:25 GMT"
         },
         "confidence": [
             1.0
@@ -117,7 +117,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 05:56:39 GMT"
+            "date": "Sat, 26 Mar 2022 02:37:25 GMT"
         },
         "confidence": [
             1.0
@@ -134,18 +134,18 @@
         ],
         "technique": "GitHub API"
     },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/drugs4covid19-cs/blob/master/README.md",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
     "licenseText": {
         "excerpt": "b'MIT License\\n\\nCopyright (c) 2020 Ontology Engineering Group (UPM)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \"Software\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n'",
         "confidence": [
             1.0
         ],
         "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/drugs4covid19-cs/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
     }
 }

@@ -25,6 +25,15 @@
         ],
         "technique": "Regular expression"
     },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/bimerr-renovation-process/blob/main/diagrams/diagram.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/bimerr-renovation-process",
         "confidence": [
@@ -98,7 +107,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 07:13:45 GMT"
+            "date": "Sat, 26 Mar 2022 02:01:07 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +117,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Mon, 21 Feb 2022 07:13:45 GMT"
+            "date": "Sat, 26 Mar 2022 02:01:07 GMT"
         },
         "confidence": [
             1.0
@@ -116,7 +125,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/bimerr-renovation-process/blob/main/README.md",
+        "excerpt": "https://github.com/oeg-upm/bimerr-renovation-process/README.md",
         "confidence": [
             1.0
         ],
