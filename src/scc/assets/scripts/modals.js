@@ -12,6 +12,9 @@ function add_modals() {
                 span_close.addEventListener('click', () => { 
                     modal.classList.remove('modal-on');
                 });
+                modal.addEventListener('click', () => { 
+                    modal.classList.remove('modal-on');
+                });
             }
         }
         
