@@ -88,6 +88,8 @@ Then we use the `extract` command to extract all the needed data for each reposi
   -i, --input <csv-repos>  Pointers to the repositories in csv format
                            [required]
   -o, --output <path>      Dir where repositories metadata will be saved
+  -i4p, --inspect4py       Use inspect4py to extract additional metadata from
+                           Python repositories
   -h, --help               Show this message and exit.
 ```
 
