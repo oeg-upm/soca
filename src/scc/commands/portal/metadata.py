@@ -30,8 +30,11 @@ class metadata(object):
             return ''
         if repo_type == 'web': 
             return f'<img src="{self.base}repo_icons/web.png" {self.add_tooltip("left","Website")} alt="repo-type" class="repo-type">'
-        if repo_type == 'ontology': 
-            return f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">'  
+        elif repo_type == 'ontology': 
+            return f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">'
+        elif repo_type in ['package','library','service','script']:
+            return f'<div class="grey-color-svg" style="display:flex;" {self.add_tooltip("left",f"Python {repo_type}")}><img src="{self.base}language_icons/python.svg" alt="repo-type" class="repo-type"></div>'
+            
 
     def icon_star(self):
         return f"{self.base}repo_icons/star.png"
@@ -301,6 +304,16 @@ class metadata(object):
         return self.releases()[0]["tagName"] if self.n_releases() != 0 else ''
         
     def repo_type(self):
+
+        # inspect4py
+        ######################
+
+        if 'inspect4py' in self.md:
+            return self.md["inspect4py"]["software_type"] # package, library, service, script
+
+        # web and ontology
+        ######################
+
         langs = self.languages()
 
         if not langs: # Most ontologies doesn't have any language
