@@ -57,6 +57,9 @@ def copy_assets(output):
     # Copy css files
     shutil.copy(f"{base_dir}/assets/scc-card.css", f"{output}")
     shutil.copy(f"{base_dir}/assets/styles.css", f"{output}")
+
+    # Copy About page
+    shutil.copy(f"{base_dir}/assets/about.html", f"{output}")
     
 
 

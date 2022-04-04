@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>About-SCC</title>
+<link rel="stylesheet" href="styles.css"></styles>
+<link rel="stylesheet" href="scc-card.css"></styles>
+</head>
+<body>
+<nav class="navbar">
+	<div class="navbar-inside" style="justify-content: flex-start;">
+		<a href="index.html"><img src="img/back_arrow.svg" style="height: 3rem;"></a>
+		<h2 id="nav-title">About page</h2>
+	</div>
+</nav>
+
+<div id="myCards">
+	<article class="scc-card" style="min-height: 44rem; display: inline;">
+		<h3 style="margin-bottom: 1rem;">Card Legend</h3>
+		<div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/license.png"/></div>License</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/notebook.png"/></div>One or multiple python notebooks</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/docker.png"/></div>One or multiple DockerFiles</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/paper.png"/></div>Paper associated or references to one</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/citation.png"/></div>Bibtex citation</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/doi.png"/></div>Has an identifier</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/status.png"/></div>Has a status label</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/installation.png"/></div>Installation instructions</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/requirements.png"/></div>Requirements for using the repository</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/usage.png"/></div>How to use the repository</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/help.png"/></div>Help</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/documentation.png"/></div>In-depth documentation of the repository</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/acknowledgement.png"/></div>Acknowledgements present in the repository</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/download.png"/></div>Download options</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/web.png"/></div>This repository is a webpage</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/ontology.png"/></div>This repository is an ontology</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/star.png"/></div>Number of stars given to the repository</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/releases.png"/></div>Number of releases</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/copy.svg"/></div>Copy the card as embedded html</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><div class="recently-updated" style="background-color: #6da862; margin: 0;"></div></div>Updated recently</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><div class="recently-updated" style="background-color: #a88d62; margin: 0;"></div></div>Updated in the last 3 months</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><div class="recently-updated" style="background-color: #a86262; margin: 0;"></div></div>Not recently updated</div>
+		</div>
+    </article>
+	<article class="scc-card" style="min-height: 44rem; display: inline;">
+		<h3 style="margin-bottom: 1rem;">Info</h3>
+		<p style="margin-bottom: 1.5rem; text-align: justify;">
+			This software catalog has been created with the python package scc.
+			<br><br>
+			Each card represents a different repository from GitHub. The main objective of this web is to 
+			give visibility to the work of the researches, showcasing their researches in a minimalist portal.
+			<br><br>
+			For easing the discovery and classification of the repositories scc extracts a large variety of 
+			metadata with the help of somef, enabling the end-user to filter and sort all the repos in multiple ways.
+
+		</p>
+		<h3 style="margin-bottom: 1rem;">Author</h3>
+		<p style="text-align: justify;">
+			The python package used for the creation of this portal (scc) is the final project of Daniel Rodríguez Mariblanca
+			 a former student of <i>Universidad Politécnica de Madrid, ETSIINF</i> graduated in Computer Engineering, Business Administration and Management.
+		</p>
+    </article>
+</div>
+
+
+<footer>
+	<div style="height: 4rem; display: flex; flex-direction: column; justify-content: center">
+		<p>Built with <a href="https://github.com/dakixr/scc" target="_blank">scc</a></p>
+	</div>
+	<div style="height: 4rem; flex-direction: row;">
+		<a class="footer-img" href="http://fi.upm.es/" target="_blank"><img alt="FI logo" class="footer-img" src="img/fi_logo.png"/></a>
+		<a class="footer-img" href="https://www.upm.es/" target="_blank"><img alt="UPM logo" class="footer-img" src="img/upm_logo.png"/></a>
+		<a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
+	</div>
+</footer>
+</body>
+</html>
