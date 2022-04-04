@@ -4,6 +4,7 @@ function add_modals() {
         for(const card_icon of cards_icons.children){
             const icon = card_icon.getElementsByClassName('icon')[0];
             const modal = card_icon.getElementsByClassName('modal')[0];
+            const modal_content = card_icon.getElementsByClassName('modal-content')[0];
             const span_close = card_icon.getElementsByClassName('close')[0];
             if (modal != undefined){
                 icon.addEventListener('click', () => { 
@@ -12,8 +13,12 @@ function add_modals() {
                 span_close.addEventListener('click', () => { 
                     modal.classList.remove('modal-on');
                 });
+                modal_content.addEventListener('click', (event) => { 
+                    event.stopPropagation();
+                });
                 modal.addEventListener('click', () => { 
                     modal.classList.remove('modal-on');
+
                 });
             }
         }
