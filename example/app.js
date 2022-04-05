@@ -277,25 +277,32 @@ const displayCards = (cards) => {
 
     let n_pages = Math.ceil(cards.length / cards_per_page);
     
+    // Build pagination numbers
     if (current_page != 1){
         pagination.innerHTML = '<span id="prev-page" style="cursor: pointer;"> < </span>';
     } else {pagination.innerHTML = ''}
-    
+    let dots_right = false;
     for (let i_page = 1; i_page <= n_pages; i_page++) {
-        page = '<span id="'+i_page+'" style="cursor: pointer;">'+i_page +' </span>';
-        if (i_page == current_page){
-            page = '<b>'+page+'</b>';
+        if(i_page == 1 || Math.abs(i_page - current_page) <=1 || i_page == n_pages){
+            page = '<span id="'+i_page+'" style="cursor: pointer;">'+i_page +' </span>';
+            if (i_page == current_page){
+                page = '<b>'+page+'</b>';
+            }
+            if (i_page == 1 && current_page >= 4) {
+                page += ' ... ';
+            }
+            if (i_page == n_pages && current_page <= n_pages-3) {
+                page = ' ... ' + page;
+            }
+            pagination.innerHTML += page;
         }
-        pagination.innerHTML += page;
     }
     if (current_page != n_pages){
        pagination.innerHTML += '<span id="next-page" style="cursor: pointer;"> > </span>'; 
     }
-
     if (n_pages == 0 || n_pages == 1){
         pagination.innerHTML = '<b style="cursor: pointer;" >1</b>';
     }
-
     for (let i_page = 1; i_page <= n_pages; i_page++) {
         ref = document.getElementById(''+i_page);
         if(ref != undefined){
@@ -305,7 +312,6 @@ const displayCards = (cards) => {
             });
         }
     }
-
     ref_prev = document.getElementById('prev-page');
     if(ref_prev != undefined){
         ref_prev.addEventListener('click', () => {
@@ -313,15 +319,15 @@ const displayCards = (cards) => {
             search();
         });
     }
-
     ref_next = document.getElementById('next-page');
-    if(ref_prev != undefined){
+    if(ref_next != undefined){
         ref_next.addEventListener('click', () => {
             current_page = Math.min(current_page+1, n_pages);
             search();
         });
     }
 
+    // Show only cards in current page
     let start = (current_page-1) * cards_per_page;
     let end = Math.min(current_page * cards_per_page, cards.length - 1);
     cards_page = cards.slice(start, end);
