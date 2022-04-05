@@ -6,6 +6,7 @@ function add_modals() {
             const modal = card_icon.getElementsByClassName('modal')[0];
             const modal_content = card_icon.getElementsByClassName('modal-content')[0];
             const span_close = card_icon.getElementsByClassName('close')[0];
+            
             if (modal != undefined){
                 icon.addEventListener('click', () => { 
                     modal.classList.add('modal-on');
@@ -31,7 +32,35 @@ function add_modals() {
         }
         
     }
+    const descriptions = document.getElementsByClassName('description');
+    [].forEach.call(descriptions, function (description) {
+        if (isOverflown(description)) {
+            description.style.cursor="pointer";
+            const modal = description.getElementsByClassName('modal')[0];
+            const modal_content = description.getElementsByClassName('modal-content')[0];
+            const span_close = description.getElementsByClassName('close')[0];
+            if (modal != undefined){
+                description.addEventListener('click', () => { 
+                    modal.classList.add('modal-on');
+                });
+                span_close.addEventListener('click', () => { 
+                    modal.classList.remove('modal-on');
+                });
+                modal_content.addEventListener('click', (event) => { 
+                    event.stopPropagation();
+                });
+                modal.addEventListener('click', (event) => { 
+                    modal.classList.remove('modal-on');
+                    event.stopPropagation();
+                });
+            }
+        }
+    });
     
+}
+
+function isOverflown(element) {
+    return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
 }
 
 function addList(element, iterable){

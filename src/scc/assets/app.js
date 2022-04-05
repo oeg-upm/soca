@@ -43,7 +43,7 @@ const pagination = document.getElementById('pagination');
 
 
 // Listeners
-searchBar.addEventListener('keyup', () => { search(); })
+searchBar.addEventListener('keyup', () => { current_page = 1; search(); })
 
 acknowledgement.addEventListener('click', () => { 
     state_acknowledgement = !state_acknowledgement;  

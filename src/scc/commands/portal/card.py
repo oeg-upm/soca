@@ -66,7 +66,7 @@ def html_view(repo_metadata, embedded, minify=True):
                     </a>
                     {md.copy_btn()}
                 </div>
-                <div class="description">{md.description()}</div>
+                <div class="description">{md.description()}{md.modal(md.title(), md.description())}</div>
             </div>
             <div>
                 <div style="min-height: 6rem;display: flex;align-items: center;justify-content: center;">
