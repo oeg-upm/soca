@@ -10,6 +10,10 @@ const loadCardsData = async () => {
     }
 }
 
+// Pagination vars
+let current_page = 1;
+let cards_per_page = 12;
+
 // References
 const searchBar = document.getElementById('searchBar');
 
@@ -34,6 +38,8 @@ const title = document.getElementById('title');
 const stars = document.getElementById('stars');
 const releases = document.getElementById('releases');
 const last_updated = document.getElementById('last_updated');
+
+const pagination = document.getElementById('pagination');
 
 
 // Listeners
@@ -266,13 +272,67 @@ function search() {
     displayCards(ordered_cards);
 }
 
+
 const displayCards = (cards) => {
-    const htmlString = cards
+
+    let n_pages = Math.ceil(cards.length / cards_per_page);
+    
+    if (current_page != 1){
+        pagination.innerHTML = '<span id="prev-page" style="cursor: pointer;"> < </span>';
+    } else {pagination.innerHTML = ''}
+    
+    for (let i_page = 1; i_page <= n_pages; i_page++) {
+        page = '<span id="'+i_page+'" style="cursor: pointer;">'+i_page +' </span>';
+        if (i_page == current_page){
+            page = '<b>'+page+'</b>';
+        }
+        pagination.innerHTML += page;
+    }
+    if (current_page != n_pages){
+       pagination.innerHTML += '<span id="next-page" style="cursor: pointer;"> > </span>'; 
+    }
+
+    if (n_pages == 0 || n_pages == 1){
+        pagination.innerHTML = '<b style="cursor: pointer;" >1</b>';
+    }
+
+    for (let i_page = 1; i_page <= n_pages; i_page++) {
+        ref = document.getElementById(''+i_page);
+        if(ref != undefined){
+            ref.addEventListener('click', () => {
+                current_page = i_page;
+                search();
+            });
+        }
+    }
+
+    ref_prev = document.getElementById('prev-page');
+    if(ref_prev != undefined){
+        ref_prev.addEventListener('click', () => {
+            current_page = Math.max(current_page-1, 1);
+            search();
+        });
+    }
+
+    ref_next = document.getElementById('next-page');
+    if(ref_prev != undefined){
+        ref_next.addEventListener('click', () => {
+            current_page = Math.min(current_page+1, n_pages);
+            search();
+        });
+    }
+
+    let start = (current_page-1) * cards_per_page;
+    let end = Math.min(current_page * cards_per_page, cards.length - 1);
+    cards_page = cards.slice(start, end);
+
+    const htmlString = cards_page
         .map((card) => {
-            return card.html_card
+            return card.html_card;
         })
         .join('');
-    document.getElementById('myCards').innerHTML = htmlString
+
+    document.getElementById('myCards').innerHTML = htmlString;
 
     add_tooltip();
     add_copy_card();

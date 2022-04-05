@@ -32,7 +32,7 @@ class scripts(object):
     def function_tooltip(self):
         return mini(f"function add_tooltip(){{{self.tooltip}}};")
     
-    def funtions_modals(self):
+    def functions_modals(self):
         return mini(self.modals)
 
 def mini(js):
