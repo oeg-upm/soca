@@ -1,0 +1,214 @@
+{
+    "description": [
+        {
+            "excerpt": "Morph-Skyline is an RDB2RDF engine for skyline queries developed by the Ontology Engineering Group, that follows the R2RML specification (http://www.w3.org/TR/r2rml/).  \nSkyline queries are preference-based queries, which were proposed by B\u00f6rzs\u00f6nyi et al. [1] extending SQL by means of a SKYLINE OF clause as follows: SKYLINE OF d1 [MIN | MAX],..., dn [MIN | MAX] where where di denote the dimensions of the Skyline, and MIN and MAX specify whether the value in that dimension should be minimised or maximised. \nMorph-Skyline extends Morph-RDB and it supports two operational modes: data upgrade (generating RDF instances from data in a relational database) and skyline query translation (SPARQL to SQL). Morph-Skyline has been tested on synthetic datasets using the data generator provided by B\u00f6rzs\u00f6nyi et al.[1]. At the moment, Morph-Skyline works with EXASol. \nThis repository contains code of the engine and a set of general experiments to test perfomance, scalability and completeness of our approach.\nAdditionally, for the ISWC'20 demo-paper \"Morph-Skyline: Skyline Queries for Virtual Knowledge Graph Access\", the resources and results can be found in the [demo-paper folder](https://github.com/oeg-upm/morph-skyline/tree/master/demo-paper) \n",
+            "confidence": [
+                [
+                    0.9469979235501415,
+                    0.9624420352133615,
+                    0.96689825098161,
+                    0.9817371976708774
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Morph-Skyline"
+        },
+        {
+            "excerpt": "<!--- Acknowledgement: Since January 2020, the development of morph-Skyline has been supported by the SPRINT project (http://sprint-transport.eu/).---> \n",
+            "confidence": [
+                [
+                    0.9227569447700069
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Morph-Skyline"
+        },
+        {
+            "excerpt": "Virtual Knowledge Graph Access for Skyline Queries",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Morph-Skyline",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/morph-skyline",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-01-21T15:43:44Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-01-07T11:02:32Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Other"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "morph-skyline",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/morph-skyline",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-skyline/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-skyline/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/morph-skyline/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "data-integration",
+            "knowledge-graph",
+            "r2rml",
+            "relational-databases",
+            "sparql"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:22:51 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:22:51 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Scala",
+            "Java",
+            "Shell",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/morph-skyline/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/morph-skyline/master/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/morph-skyline/master/Experiments/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/morph-skyline/master/Experiments/run.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-skyline/master/demo-paper/run.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-skyline/master/demo-paper/skyTPF/runGTFS.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v1.0",
+                "name": "v1.0",
+                "authorName": "dachafra",
+                "authorType": "User",
+                "body": "The first version of the engine. It supports the Skyline operator in SPARQL to directly query RDB",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-skyline/tarball/v1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-skyline/zipball/v1.0",
+                "htmlUrl": "https://github.com/oeg-upm/morph-skyline/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/oeg-upm/morph-skyline/releases/29399517",
+                "dateCreated": "2020-05-24T17:08:47Z",
+                "datePublished": "2020-08-06T09:10:16Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

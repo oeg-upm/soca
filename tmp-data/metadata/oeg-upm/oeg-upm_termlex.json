@@ -1,0 +1,128 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository is intended to collect material that supports the development of the Termlex module, a an extension proposal of OntoLex-lemon to cover the current gaps regarding the publication of terminological resources in Semantic Web formats.\nThe work started in October 2020 as part of the NexusLinguarum Action (http://nexuslinguarum.eu/), that supported the development with the founding of an short term scientific mission amongst the main institutions behind the work: UPM (Universidad Polit\u00e9cnica de Madrid) and DFKI (Deutsches Forschungszentrum f\u00fcr K\u00fcnstliche Intelligenz). \nThe repo contains the preliminary ontology in Turtle, and some use cases examples in the same format. \nThese files are support the ongoing publication to present this module. More info about the proposal can be found in the Ontology Lexica Community Group Wiki page: https://www.w3.org/community/ontolex/wiki/Terminology \n",
+            "confidence": [
+                [
+                    0.9991934279391748,
+                    0.9279755428058719
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Termlex, an OntoLex-lemon module to represent terminologies"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Termlex, an OntoLex-lemon module to represent terminologies",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/termlex/blob/main/termlex_core.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/termlex",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2022-01-13T13:00:11Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-01-13T13:00:44Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "termlex",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/termlex",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/termlex/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/termlex/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/termlex/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:32:11 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:32:11 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/termlex/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

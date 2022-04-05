@@ -1,0 +1,131 @@
+{
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/delta-cims-monitor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-07-21T09:52:11Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-10-13T10:40:40Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "description": [
+        {
+            "excerpt": "This monitor analyses the CIMs deployed by checking their health and potentially prevent attacks",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "name": {
+        "excerpt": "delta-cims-monitor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/delta-cims-monitor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/delta-cims-monitor/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:40 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:40 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "#0.1.0",
+                "name": "0.1.0",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "CIMS Monitor version 0.1.0",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/tarball/#0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/zipball/#0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/delta-cims-monitor/releases/tag/%230.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/delta-cims-monitor/releases/32497432",
+                "dateCreated": "2020-07-21T09:57:05Z",
+                "datePublished": "2020-10-13T10:42:24Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

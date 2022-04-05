@@ -1,0 +1,160 @@
+{
+    "description": [
+        {
+            "excerpt": "The purpose of w3id.org is to provide a secure, permanent URL re-direction\nservice for Web applications. This service is run by the [W3C Permanent\nIdentifier Community Group](http://www.w3.org/community/perma-id/). \nWeb applications that deal with Linked Data often need to specify and use URLs \nthat are very stable. They utilize services such as this one to ensure that \napplications using their URLs will always be re-directed to a working \nwebsite. This website operates like a switchboard, connecting requests for \ninformation with the true location of the information on the Web. The \nswitchboard can be reconfigured to point to a new location if the old \nlocation stops working. \nThere are a growing group of organizations that have pledged responsibility \nto ensure the operation of this website. These organizations are: \nDigital Bazaar, 3 Round Stones, OpenLink Software, Applied Testing and \nTechnology, Openspring, and Bosatsu Consulting. \nThey are responsible for all administrative \ntasks associated with operating the service. The social contract between \nthese organizations gives each of them full access to all information required \nto maintain and operate the website. The agreement is setup such that a \nnumber of these companies could fail, lose interest, or become unavailable \nfor long periods of time without negatively affecting the operation of the site. \nThis website operates in HTTPS-only mode to ensure end-to-end security. \nThis means that it may be used for Linked Data applications that require \nhigh levels of security such as those found in the financial, medical, and \npublic infrastructure sectors. \nAll identifiers associated with this website are intended to be around for \nas long as the Web is around. This means decades, if not centuries. If the \nfinal destination for popular identifiers used by this service fail in \nsuch a way as to be a major inconvenience or danger to the Web, the community \nwill mirror the information for the popular identifier and setup a working \nredirect to restore service to the rest of the Web.\n \nFor the technically savvy, the preferred way to create the redirect yourself is\nby following these steps: \n",
+            "confidence": [
+                [
+                    0.9495390330053173,
+                    0.9664099522541221,
+                    0.9994828928858924,
+                    0.9805424062265994,
+                    0.9843808333162277,
+                    0.9136259773101816
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Adding a Permanent Identifier to w3id.org"
+        },
+        {
+            "excerpt": "Website source code for w3id.org",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "[![Build Status](https://travis-ci.org/perma-id/w3id.org.svg)](https://travis-ci.org/perma-id/w3id.org) \n",
+            "confidence": [
+                [
+                    0.9977891579776246
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Permanent Identifiers for the Web"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Permanent Identifiers for the Web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://travis-ci.org/perma-id/w3id.org.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/w3id.org",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2014-11-27T10:58:24Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2014-11-27T10:58:24Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "w3id.org",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/w3id.org",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/w3id.org/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/w3id.org/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/w3id.org/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:33:36 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:33:36 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "PHP"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/w3id.org/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

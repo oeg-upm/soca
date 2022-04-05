@@ -1,0 +1,331 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the code and releases of the official plugins that can be used with both the Helio Materialiser [for users](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users) or [for developers](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-developers) and the [Helio Publisher](https://github.com/oeg-upm/helio/wiki/Helio-Publisher). The following table summarises the plugins available by their type: \n| Plugin Type   | Plugin       | Description                                                                                                                                                 |\n|---------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Data Provider | [BashProvider](https://github.com/oeg-upm/helio-plugins/tree/master/providers/bashprovider#helio-bash-provider-plugin) | This plugin allows to run a set of bash commands, and then, read a file with potential results; e.g., run a docker process and feed Helio with some results |\n| Data Provider | [EthereumProvider](https://github.com/oeg-upm/helio-plugins/tree/master/providers/ethereum-provider) | This plugin allows to collect a block or a set of blocks of an [Ethereum Blockchain](https://ethereum.org/en/). Those blocks contain all the original data and meta-data, the data of the block is expressed in JSON |\n|               |              |                                                                                                                                                             | \nHelio has been designed to be extensible through custom plugins that are dynamically loaded by either the Helio Materialiser [for users](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users) or [for developers](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-developers) and the [Helio Publisher](https://github.com/oeg-upm/helio/wiki/Helio-Publisher). Developing a new plugin does not require extending the core code of these software artefacts, instead, a plugin consists in an independent project that once compiled as jar is automatically identified and loaded by Helio. \nIn order to develop a plugin, the following steps must be performed:\n1. [Create a Fork of this repository](https://github.com/oeg-upm/helio-plugins#1-create-a-fork-of-this-repository)\n2. [Clone the code from the fork and create a new plugin project](https://github.com/oeg-upm/helio-plugins#2-clone-the-code-from-the-fork-and-create-a-new-plugin-project)\n3. [Develop the plugin code](https://github.com/oeg-upm/helio-plugins#3-develop-the-plugin-code)\n4. [(Optional) Open a Pull Request to publish the plugin's code in the official Helio plugins repository](https://github.com/oeg-upm/helio-plugins#4-open-a-pull-request-to-publish-the-plugins-code-in-the-official-helio-plugins-repository)\n5. [(Optional) Upload a release to the official Helio plugins repository](https://github.com/oeg-upm/helio-plugins#5-upload-a-release-to-the-official-helio-plugins-repository) \n\nIn following subsections, all these steps are explained in detail. Notice that **any plugin developed, published, and released in the official Helio plugins repository will have an Apache 2.0 license**.\n \nA fork is a copy of the parent repository, which however, remains synchronised with the former repository. When new modifications are commited to the forked repository these are marked as changes from the original repository, and thus, can be later be pushed to the original repository requesting a Pull Request. The bottom line idea is to fork the Helio plugins repository, include the new code in the fork, and then create a Pull Request to merge the new plugin code in the original repository. To fork the Helio plugins repository click in the \"Fork\" button on the upper right-corner of the repository page. \n",
+            "confidence": [
+                [
+                    0.9426790634536995,
+                    0.9624260109380579,
+                    0.9656204344600483,
+                    0.9589652364474749,
+                    0.9553950867994568,
+                    0.9962023916332706
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "1. Create a Fork of this repository",
+            "parentHeader": "Helio plugins --- Developing a plugin"
+        },
+        {
+            "excerpt": "Once forked the a copy of the Helio plugins repository must appear in the private account of the user who forked the repotiroty.\n \nOnce the project is forked the code must be cloned, for this end, the following command can be used. Bear in mind that */username* should be replaced with a valid username.\n`````\ngit clone https://github.com/username/helio-plugins.git\n`````\nAfter cloned, is recommended to create a new branch different from the master to isolate the new plugin's code. For this end, use the following command to create a new branch named *new-plugin*, however, any name could be given to the new branch.\n`````\ngit branch new-plugin\n`````\nBefore starting to develop any code, swap to the new brach using the command\nBASH3*``\nFollowing, in this new branch create a new folder in one of the existing directories depending on the type of plugin that will be developed. For instance, if the new plugin is a [Data Provider](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users#data-providers) then the new folder should be created under the existing folder *providers*. This new folder should have a suitable name that describes the plugin, try to follow the rule *[name]-[plugin type]*. For instance, for an mqqt provider the new folder should be called *mqtt-provider*. **IT IS IMPORTANT THAT ANY MODIFICATION TO THE HELIO PLUGINS REPOSITORY OCCURS UNDER THE NEW PLUGIN FOLDER AND NOTHING ELSE IS MODIFIED OUTSIDE SUCH FOLDER**.\n \n",
+            "confidence": [
+                [
+                    0.9800277628729974,
+                    0.9522654212051076
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "2. Clone the code from the fork and create a new plugin project",
+            "parentHeader": "Helio plugins --- Developing a plugin"
+        },
+        {
+            "excerpt": "Now your local environment and IDE are ready to start developing the plugin's code. For this end create a new java class for the plugin and extend any of the interfaces that Helio supports as pluggable. These interfaces and the goal of the code that implements them are the following:  \n* *DataProvider* this kind of components retrieve and fetch data from a new data source, regarless the format of such data. For instance, a new provider could retrie the data from an MQTT broker regardless if the format of such data is json, xml, csv, or any other.\n* *DataHandler* this kind of components are used to filter and handle the data relying on their format. For instance, a new handler could select some values from an XML file using Json Path expressions, or even iterate over a list in XML using these Json Path expressions.\n* *HelioCache* this kind of components are used to store the RDF generated by Helio. For instance, a new cache could store in Git Hub the RDF been generated by Helio providing versioning capabilities to the RDF been produced by Helio in time.\n* *Functions* this kind of components are used to extend the functions that can be called from the mappings in Helio.\n* *MappingTranslator* this kind of components are used to extend the mapping languages that Helio understands. \nOnce specified the interface to be implemented the IDE will require a set of methods to be implemented (to know more about these methods and their socope check the [Helio Java Docs](https://oeg-upm.github.io/helio-framework/), otherwise, the plugins in this repository can be taken as an example). As a result, these methods will implement the functionalities of the new plugin. \nFinally, **it is required to create a file README.md documenting the plugin**, especially, indicating the structure of the expected json document to setup the new plugin. Once all the code is developed, register the new changes in the git branch of the new plugin. For this end, follow this excerpt of commands. \n",
+            "confidence": [
+                [
+                    0.9910188455567989,
+                    0.9933914530336653,
+                    0.9513559615794073,
+                    0.9929998753660072
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "3. Develop the plugin code",
+            "parentHeader": "Helio plugins --- Developing a plugin"
+        },
+        {
+            "excerpt": "After pushing the changes to Git Hub, the last step to publish the plugin's code in the official Helio repository is opening a Pull Request \nTo request a Pull Request there are several options. The easiest is to open in a browser the forked repository and click the button *Compare & Pull Request* that will appear, as shown in the following capture in red. \n",
+            "confidence": [
+                [
+                    0.9760442404834865,
+                    0.9832419896687257
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "4. Open a Pull Request to publish the plugin's code in the official Helio plugins repository",
+            "parentHeader": "Helio plugins --- Developing a plugin"
+        },
+        {
+            "excerpt": "After clicking the *Compare & Pull Request* the plugin's branch from the forked repository will appear compared against the master from the original (or the master branch from the forked repository against the master of the original if no additional branch was created). In the image below the red square indicates the  master from the original repository, and the red square the brach of the forked repository. Add an meaninful message for the Pull Request and submit the request. \n",
+            "confidence": [
+                [
+                    0.9737619278512226
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "4. Open a Pull Request to publish the plugin's code in the official Helio plugins repository",
+            "parentHeader": "Helio plugins --- Developing a plugin"
+        },
+        {
+            "excerpt": "If the whole process was correctly carried out, as depicted in the figure below, in the tab section *Pull requests* (marked in blue in the figure) of the Helio plugins repository must appear the new created Pull Request (marked in red in the figure).  \n",
+            "confidence": [
+                [
+                    0.9127388425422293
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "4. Open a Pull Request to publish the plugin's code in the official Helio plugins repository",
+            "parentHeader": "Helio plugins --- Developing a plugin"
+        },
+        {
+            "excerpt": "Helio repository for plugins",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "![ForkButton](https://upload.wikimedia.org/wikipedia/commons/2/26/Fork_button.jpg) \n",
+            "confidence": [
+                [
+                    0.9278824608274014
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "1. Create a Fork of this repository",
+            "parentHeader": "Helio plugins --- Developing a plugin"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "Once the folder for the new plugin is created, a new maven project must be created under that folder. After creating the new maven project, open the file *pom.xml* and add the following content.\n`````\n   <url>https://github.com/oeg-upm/helio-plugins</url>\n  \n   <properties>\n        <maven.compiler.target>1.8</maven.compiler.target>\n        <maven.compiler.source>1.8</maven.compiler.source> \n        <java.version>1.8</java.version>\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>   \n  </properties>\n  \n  <dependencies>\n    <!-- Helio framework -->\n    <dependency>\n      <groupId>upm.oeg.helio</groupId>\n      <artifactId>framework</artifactId>\n      <version>X.X</version>\n    </dependency>\n    \n    <!-- Other dependencies go here below -->\n   \n  </dependencies>\n  \n  <build>\n    <plugins>\n      <plugin>\n        <groupId>org.apache.maven.plugins</groupId>\n        <artifactId>maven-assembly-plugin</artifactId>\n        <version>3.1.1</version>\n        <configuration>\n          <descriptorRefs>\n            <descriptorRef>jar-with-dependencies</descriptorRef>\n          </descriptorRefs>\n         </configuration>\n         <executions>\n          <execution>\n            <id>make-assembly</id>\n            <phase>package</phase>\n            <goals>\n              <goal>single</goal>\n            </goals>\n           </execution>\n          </executions>\n      </plugin> \n    </plugins>\n  </build>\n`````\n \nBe aware that in the previous snippet the version of the Helio framework is marked as X.X, check and replace these tokens with the latest version of the [Helio Framework Maven dependency from the releases](https://github.com/oeg-upm/helio/releases). Then, download the latest version of this dependency from the releases and run the script *mvn-install.sh* to install this dependency in your local maven environment.  \n",
+            "confidence": [
+                [
+                    0.9476361551300235,
+                    0.9595326161318892
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "3. Develop the plugin code",
+            "parentHeader": "Helio plugins --- Developing a plugin"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Helio plugins",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://i.imgur.com/6RMGOms.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://i.imgur.com/8TBDGJR.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://i.imgur.com/1U2Z2pQ.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://upload.wikimedia.org/wikipedia/commons/2/26/Fork_button.jpg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/helio-plugins",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2019-02-13T09:15:28Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-12-15T12:09:05Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "helio-plugins",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/helio-plugins",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/helio-plugins/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/helio-plugins/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/helio-plugins/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 4,
+            "date": "Tue, 05 Apr 2022 09:11:48 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Tue, 05 Apr 2022 09:11:48 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'                                 Apache License\\n                           Version 2.0, January 2004\\n                        http://www.apache.org/licenses/\\n\\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\\n\\n   1. Definitions.\\n\\n      \"License\" shall mean the terms and conditions for use, reproduction,\\n      and distribution as defined by Sections 1 through 9 of this document.\\n\\n      \"Licensor\" shall mean the copyright owner or entity authorized by\\n      the copyright owner that is granting the License.\\n\\n      \"Legal Entity\" shall mean the union of the acting entity and all\\n      other entities that control, are controlled by, or are under common\\n      control with that entity. For the purposes of this definition,\\n      \"control\" means (i) the power, direct or indirect, to cause the\\n      direction or management of such entity, whether by contract or\\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\\n      outstanding shares, or (iii) beneficial ownership of such entity.\\n\\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\\n      exercising permissions granted by this License.\\n\\n      \"Source\" form shall mean the preferred form for making modifications,\\n      including but not limited to software source code, documentation\\n      source, and configuration files.\\n\\n      \"Object\" form shall mean any form resulting from mechanical\\n      transformation or translation of a Source form, including but\\n      not limited to compiled object code, generated documentation,\\n      and conversions to other media types.\\n\\n      \"Work\" shall mean the work of authorship, whether in Source or\\n      Object form, made available under the License, as indicated by a\\n      copyright notice that is included in or attached to the work\\n      (an example is provided in the Appendix below).\\n\\n      \"Derivative Works\" shall mean any work, whether in Source or Object\\n      form, that is based on (or derived from) the Work and for which the\\n      editorial revisions, annotations, elaborations, or other modifications\\n      represent, as a whole, an original work of authorship. For the purposes\\n      of this License, Derivative Works shall not include works that remain\\n      separable from, or merely link (or bind by name) to the interfaces of,\\n      the Work and Derivative Works thereof.\\n\\n      \"Contribution\" shall mean any work of authorship, including\\n      the original version of the Work and any modifications or additions\\n      to that Work or Derivative Works thereof, that is intentionally\\n      submitted to Licensor for inclusion in the Work by the copyright owner\\n      or by an individual or Legal Entity authorized to submit on behalf of\\n      the copyright owner. For the purposes of this definition, \"submitted\"\\n      means any form of electronic, verbal, or written communication sent\\n      to the Licensor or its representatives, including but not limited to\\n      communication on electronic mailing lists, source code control systems,\\n      and issue tracking systems that are managed by, or on behalf of, the\\n      Licensor for the purpose of discussing and improving the Work, but\\n      excluding communication that is conspicuously marked or otherwise\\n      designated in writing by the copyright owner as \"Not a Contribution.\"\\n\\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\\n      on behalf of whom a Contribution has been received by Licensor and\\n      subsequently incorporated within the Work.\\n\\n   2. Grant of Copyright License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      copyright license to reproduce, prepare Derivative Works of,\\n      publicly display, publicly perform, sublicense, and distribute the\\n      Work and such Derivative Works in Source or Object form.\\n\\n   3. Grant of Patent License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      (except as stated in this section) patent license to make, have made,\\n      use, offer to sell, sell, import, and otherwise transfer the Work,\\n      where such license applies only to those patent claims licensable\\n      by such Contributor that are necessarily infringed by their\\n      Contribution(s) alone or by combination of their Contribution(s)\\n      with the Work to which such Contribution(s) was submitted. If You\\n      institute patent litigation against any entity (including a\\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\\n      or a Contribution incorporated within the Work constitutes direct\\n      or contributory patent infringement, then any patent licenses\\n      granted to You under this License for that Work shall terminate\\n      as of the date such litigation is filed.\\n\\n   4. Redistribution. You may reproduce and distribute copies of the\\n      Work or Derivative Works thereof in any medium, with or without\\n      modifications, and in Source or Object form, provided that You\\n      meet the following conditions:\\n\\n      (a) You must give any other recipients of the Work or\\n          Derivative Works a copy of this License; and\\n\\n      (b) You must cause any modified files to carry prominent notices\\n          stating that You changed the files; and\\n\\n      (c) You must retain, in the Source form of any Derivative Works\\n          that You distribute, all copyright, patent, trademark, and\\n          attribution notices from the Source form of the Work,\\n          excluding those notices that do not pertain to any part of\\n          the Derivative Works; and\\n\\n      (d) If the Work includes a \"NOTICE\" text file as part of its\\n          distribution, then any Derivative Works that You distribute must\\n          include a readable copy of the attribution notices contained\\n          within such NOTICE file, excluding those notices that do not\\n          pertain to any part of the Derivative Works, in at least one\\n          of the following places: within a NOTICE text file distributed\\n          as part of the Derivative Works; within the Source form or\\n          documentation, if provided along with the Derivative Works; or,\\n          within a display generated by the Derivative Works, if and\\n          wherever such third-party notices normally appear. The contents\\n          of the NOTICE file are for informational purposes only and\\n          do not modify the License. You may add Your own attribution\\n          notices within Derivative Works that You distribute, alongside\\n          or as an addendum to the NOTICE text from the Work, provided\\n          that such additional attribution notices cannot be construed\\n          as modifying the License.\\n\\n      You may add Your own copyright statement to Your modifications and\\n      may provide additional or different license terms and conditions\\n      for use, reproduction, or distribution of Your modifications, or\\n      for any such Derivative Works as a whole, provided Your use,\\n      reproduction, and distribution of the Work otherwise complies with\\n      the conditions stated in this License.\\n\\n   5. Submission of Contributions. Unless You explicitly state otherwise,\\n      any Contribution intentionally submitted for inclusion in the Work\\n      by You to the Licensor shall be under the terms and conditions of\\n      this License, without any additional terms or conditions.\\n      Notwithstanding the above, nothing herein shall supersede or modify\\n      the terms of any separate license agreement you may have executed\\n      with Licensor regarding such Contributions.\\n\\n   6. Trademarks. This License does not grant permission to use the trade\\n      names, trademarks, service marks, or product names of the Licensor,\\n      except as required for reasonable and customary use in describing the\\n      origin of the Work and reproducing the content of the NOTICE file.\\n\\n   7. Disclaimer of Warranty. Unless required by applicable law or\\n      agreed to in writing, Licensor provides the Work (and each\\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\\n      implied, including, without limitation, any warranties or conditions\\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\\n      PARTICULAR PURPOSE. You are solely responsible for determining the\\n      appropriateness of using or redistributing the Work and assume any\\n      risks associated with Your exercise of permissions under this License.\\n\\n   8. Limitation of Liability. In no event and under no legal theory,\\n      whether in tort (including negligence), contract, or otherwise,\\n      unless required by applicable law (such as deliberate and grossly\\n      negligent acts) or agreed to in writing, shall any Contributor be\\n      liable to You for damages, including any direct, indirect, special,\\n      incidental, or consequential damages of any character arising as a\\n      result of this License or out of the use or inability to use the\\n      Work (including but not limited to damages for loss of goodwill,\\n      work stoppage, computer failure or malfunction, or any and all\\n      other commercial damages or losses), even if such Contributor\\n      has been advised of the possibility of such damages.\\n\\n   9. Accepting Warranty or Additional Liability. While redistributing\\n      the Work or Derivative Works thereof, You may choose to offer,\\n      and charge a fee for, acceptance of support, warranty, indemnity,\\n      or other liability obligations and/or rights consistent with this\\n      License. However, in accepting such obligations, You may act only\\n      on Your own behalf and on Your sole responsibility, not on behalf\\n      of any other Contributor, and only if You agree to indemnify,\\n      defend, and hold each Contributor harmless for any liability\\n      incurred by, or claims asserted against, such Contributor by reason\\n      of your accepting any such warranty or additional liability.\\n\\n   END OF TERMS AND CONDITIONS\\n\\n   APPENDIX: How to apply the Apache License to your work.\\n\\n      To apply the Apache License to your work, attach the following\\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\\n      replaced with your own identifying information. (Don\\'t include\\n      the brackets!)  The text should be enclosed in the appropriate\\n      comment syntax for the file format. We also recommend that a\\n      file or class name and description of purpose be included on the\\n      same \"printed page\" as the copyright notice for easier\\n      identification within third-party archives.\\n\\n   Copyright [yyyy] [name of copyright owner]\\n\\n   Licensed under the Apache License, Version 2.0 (the \"License\");\\n   you may not use this file except in compliance with the License.\\n   You may obtain a copy of the License at\\n\\n       http://www.apache.org/licenses/LICENSE-2.0\\n\\n   Unless required by applicable law or agreed to in writing, software\\n   distributed under the License is distributed on an \"AS IS\" BASIS,\\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\\n   See the License for the specific language governing permissions and\\n   limitations under the License.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/helio-plugins/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/helio-plugins/master/providers/bash-provider/src/test/resources/script.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "#1.0.0",
+                "name": "Ethereum Provider plugin for Helio",
+                "authorName": "juancanobenito",
+                "authorType": "User",
+                "body": "This plugin allows to collect a block or a set of blocks of an Ethereum Blockchain. Those blocks contain all the original data and meta-data, the data of the block is expressed in JSON. ",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/helio-plugins/tarball/#1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/helio-plugins/zipball/#1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/helio-plugins/releases/tag/%231.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/helio-plugins/releases/33226371",
+                "dateCreated": "2020-12-15T12:04:12Z",
+                "datePublished": "2020-10-29T15:41:05Z"
+            },
+            {
+                "tagName": "#0.1.0",
+                "name": "MQTT Provider plugin for Helio",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This provides allows Helio to subscribe to a set of topics in an MQTT broker and retrieve data",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/helio-plugins/tarball/#0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/helio-plugins/zipball/#0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/helio-plugins/releases/tag/%230.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/helio-plugins/releases/35287298",
+                "dateCreated": "2020-12-15T12:09:01Z",
+                "datePublished": "2020-12-15T12:12:01Z"
+            },
+            {
+                "tagName": "#0.1.5",
+                "name": "Bash Provider plugin for Helio",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "\r\nThis plugin allows executing a set of bash commands (e.g., docker, scripts, ...) and then specifies to Helio a file to read (where the results of those commands should be stored)",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/helio-plugins/tarball/#0.1.5",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/helio-plugins/zipball/#0.1.5",
+                "htmlUrl": "https://github.com/oeg-upm/helio-plugins/releases/tag/%230.1.5",
+                "url": "https://api.github.com/repos/oeg-upm/helio-plugins/releases/33076925",
+                "dateCreated": "2020-10-26T19:57:13Z",
+                "datePublished": "2020-10-26T19:59:18Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

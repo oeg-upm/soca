@@ -1,0 +1,376 @@
+{
+    "description": [
+        {
+            "excerpt": "We present GTFS-Madrid-Bench, **a benchmark to evaluate declarative KG construction engines** that can be used for the provision of access mechanisms to (virtual) knowledge graphs. Our proposal introduces several scenarios that aim at measuring performance and scalability as well as the query capabilities of all this kind of engines, considering their heterogeneity. The data sources used in our benchmark are derived from the [GTFS](https://developers.google.com/transit/gtfs) data files of the subway network of Madrid. They can be transformed into several formats (CSV, JSON, SQL and XML) and scaled up. The query set aims at addressing a representative number of SPARQL 1.1 features while covering usual queries that data consumers may be interested in. \n",
+            "confidence": [
+                [
+                    0.995734180002838
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "The GTFS-Madrid-Bench"
+        },
+        {
+            "excerpt": "Additionally to the generator engine, that provides the data at desirable scales and distributions, together with corresponding mappings and queries, there are also common resources openly available to be modified or used by any practicioner or developer: \n- Folder [mappings](https://github.com/oeg-upm/gtfs-bench/tree/master/mappings) contains RML mappings for CSV, XML, JSON and RDB distributions of the input GTFS dataset, R2RML mapping for RDB and xR2RML mapping for MongoDB. It also includes CSVW annotations for the CSV distributions.\n- Folder [queries](https://github.com/oeg-upm/gtfs-bench/tree/master/queries) includes 18 queries with different levels of complexity including a representative set of SPARQL 1.1. operators. Additionally, the folder contains [11 simple queries](https://github.com/oeg-upm/gtfs-bench/tree/master/queries/simple) that will help to test the basic capabilities of virtual KG construction engines (i.e., to understand if the engine is able to translate correctly the SPARQL operators over different GTFS distributions before starting to test performance and scalability).\n \nOur experiences testing (virtual) knowledge graph engines have revealed the difficulties for setting up an infrastructure where many variables and resources are involved: databases, raw data, mappings, queries, data paths, mapping paths, databases connections, etc. For that reason, and in order to facilitate the use of the benchmark to any developer or practitioner, we provide a set of [utils](https://github.com/oeg-upm/gtfs-bench/tree/master/utils) such as docker-compose templates or evaluation bash scripts that, in our opinion, can reduce the time for preparing the testing set up.\n \n",
+            "confidence": [
+                [
+                    0.9879189402205972,
+                    0.929882483835703,
+                    0.9852131600255233
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Utils",
+            "parentHeader": "The GTFS-Madrid-Bench"
+        },
+        {
+            "excerpt": "We know that there are variables and dimensions that we did not take into account in the current version of the benchmark (e.g., transformation function defined in the mapping rules). If you are interested in collaborate with us in a new version of the benchmark, send us an email or open a new [discussion](https://github.com/oeg-upm/gtfs-bench/discussions)! \n",
+            "confidence": [
+                [
+                    0.9523488226709581
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Contribute",
+            "parentHeader": "The GTFS-Madrid-Bench"
+        },
+        {
+            "excerpt": "GTFS-Madrid-Bench: A Benchmark for Knowledge Graph Construction Engines",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "@article{chaves2020gtfs,\n  title={GTFS-Madrid-Bench: A benchmark for virtual knowledge graph access in the transport domain},\n  author={Chaves-Fraga, David and Priyatna, Freddy and Cimmino, Andrea and Toledo, Jhon and Ruckhaus, Edna and Corcho, Oscar},\n  journal={Journal of Web Semantics},\n  volume={65},\n  pages={100596},\n  year={2020},\n  doi={https://doi.org/10.1016/j.websem.2020.100596},\n  publisher={Elsevier}\n}",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "David Chaves-Fraga, Freddy Priyatna, Andrea Cimmino, Jhon Toledo, Edna Ruckhaus, & Oscar Corcho (2020). GTFS-Madrid-Bench: A benchmark for virtual knowledge graph access in the transport domain. Journal of Web Semantics, 65. [Online](https://doi.org/10.1016/j.websem.2020.100596) \n**Citing GTFS-Madrid-Bench**: If you used GTFS-Madrid-Bench in your work, please cite as: \n",
+            "confidence": [
+                [
+                    0.9996438303123169,
+                    0.9996353576413408
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Main Publication:",
+            "parentHeader": "The GTFS-Madrid-Bench"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "*R Package available at: https://github.com/dachafra/dief (extension from https://github.com/maribelacosta/dief)\n \n",
+            "confidence": [
+                [
+                    0.9556957259360148
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Desirable Metrics:",
+            "parentHeader": "The GTFS-Madrid-Bench"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "The GTFS-Madrid-Bench",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "logo": {
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/misc/logo.png",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master//master/misc/gtfs-demo.gif",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "requirement": [
+        {
+            "originalHeader": "Requirements for the use:",
+            "excerpt": "To have locally installed [docker](https://docs.docker.com/engine/install/).\n\nDecide the distributions to be used for your testing. They can be:\n- Standard distributions: data sources are represented in one format (e.g., GTFS-CSV, GTFS-JSON or GTFS-SQL).\n- Custom distributions: each data source is represented in the format selected by the user (e.g., SHAPES in JSON, CALENDAR in CSV, etc.)\n\n",
+            "parentHeader": "The GTFS-Madrid-Bench",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Requirements for the use:",
+            "excerpt": "To have locally installed [docker](https://docs.docker.com/engine/install/).\n\nDecide the distributions to be used for your testing. They can be:\n- Standard distributions: data sources are represented in one format (e.g., GTFS-CSV, GTFS-JSON or GTFS-SQL).\n- Custom distributions: each data source is represented in the format selected by the user (e.g., SHAPES in JSON, CALENDAR in CSV, etc.)\n\n",
+            "parentHeader": "The GTFS-Madrid-Bench",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/gtfs-bench",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2018-02-26T10:53:36Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-03-10T08:00:04Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "gtfs-bench",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/gtfs-bench",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/gtfs-bench/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/gtfs-bench/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/gtfs-bench/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "data-integration",
+            "knowledge-graph",
+            "obda",
+            "obdi",
+            "r2rml",
+            "rml",
+            "transport-domain"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 12,
+            "date": "Tue, 05 Apr 2022 09:11:02 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 10,
+            "date": "Tue, 05 Apr 2022 09:11:02 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python",
+            "Shell",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'                                 Apache License\\n                           Version 2.0, January 2004\\n                        http://www.apache.org/licenses/\\n\\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\\n\\n   1. Definitions.\\n\\n      \"License\" shall mean the terms and conditions for use, reproduction,\\n      and distribution as defined by Sections 1 through 9 of this document.\\n\\n      \"Licensor\" shall mean the copyright owner or entity authorized by\\n      the copyright owner that is granting the License.\\n\\n      \"Legal Entity\" shall mean the union of the acting entity and all\\n      other entities that control, are controlled by, or are under common\\n      control with that entity. For the purposes of this definition,\\n      \"control\" means (i) the power, direct or indirect, to cause the\\n      direction or management of such entity, whether by contract or\\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\\n      outstanding shares, or (iii) beneficial ownership of such entity.\\n\\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\\n      exercising permissions granted by this License.\\n\\n      \"Source\" form shall mean the preferred form for making modifications,\\n      including but not limited to software source code, documentation\\n      source, and configuration files.\\n\\n      \"Object\" form shall mean any form resulting from mechanical\\n      transformation or translation of a Source form, including but\\n      not limited to compiled object code, generated documentation,\\n      and conversions to other media types.\\n\\n      \"Work\" shall mean the work of authorship, whether in Source or\\n      Object form, made available under the License, as indicated by a\\n      copyright notice that is included in or attached to the work\\n      (an example is provided in the Appendix below).\\n\\n      \"Derivative Works\" shall mean any work, whether in Source or Object\\n      form, that is based on (or derived from) the Work and for which the\\n      editorial revisions, annotations, elaborations, or other modifications\\n      represent, as a whole, an original work of authorship. For the purposes\\n      of this License, Derivative Works shall not include works that remain\\n      separable from, or merely link (or bind by name) to the interfaces of,\\n      the Work and Derivative Works thereof.\\n\\n      \"Contribution\" shall mean any work of authorship, including\\n      the original version of the Work and any modifications or additions\\n      to that Work or Derivative Works thereof, that is intentionally\\n      submitted to Licensor for inclusion in the Work by the copyright owner\\n      or by an individual or Legal Entity authorized to submit on behalf of\\n      the copyright owner. For the purposes of this definition, \"submitted\"\\n      means any form of electronic, verbal, or written communication sent\\n      to the Licensor or its representatives, including but not limited to\\n      communication on electronic mailing lists, source code control systems,\\n      and issue tracking systems that are managed by, or on behalf of, the\\n      Licensor for the purpose of discussing and improving the Work, but\\n      excluding communication that is conspicuously marked or otherwise\\n      designated in writing by the copyright owner as \"Not a Contribution.\"\\n\\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\\n      on behalf of whom a Contribution has been received by Licensor and\\n      subsequently incorporated within the Work.\\n\\n   2. Grant of Copyright License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      copyright license to reproduce, prepare Derivative Works of,\\n      publicly display, publicly perform, sublicense, and distribute the\\n      Work and such Derivative Works in Source or Object form.\\n\\n   3. Grant of Patent License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      (except as stated in this section) patent license to make, have made,\\n      use, offer to sell, sell, import, and otherwise transfer the Work,\\n      where such license applies only to those patent claims licensable\\n      by such Contributor that are necessarily infringed by their\\n      Contribution(s) alone or by combination of their Contribution(s)\\n      with the Work to which such Contribution(s) was submitted. If You\\n      institute patent litigation against any entity (including a\\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\\n      or a Contribution incorporated within the Work constitutes direct\\n      or contributory patent infringement, then any patent licenses\\n      granted to You under this License for that Work shall terminate\\n      as of the date such litigation is filed.\\n\\n   4. Redistribution. You may reproduce and distribute copies of the\\n      Work or Derivative Works thereof in any medium, with or without\\n      modifications, and in Source or Object form, provided that You\\n      meet the following conditions:\\n\\n      (a) You must give any other recipients of the Work or\\n          Derivative Works a copy of this License; and\\n\\n      (b) You must cause any modified files to carry prominent notices\\n          stating that You changed the files; and\\n\\n      (c) You must retain, in the Source form of any Derivative Works\\n          that You distribute, all copyright, patent, trademark, and\\n          attribution notices from the Source form of the Work,\\n          excluding those notices that do not pertain to any part of\\n          the Derivative Works; and\\n\\n      (d) If the Work includes a \"NOTICE\" text file as part of its\\n          distribution, then any Derivative Works that You distribute must\\n          include a readable copy of the attribution notices contained\\n          within such NOTICE file, excluding those notices that do not\\n          pertain to any part of the Derivative Works, in at least one\\n          of the following places: within a NOTICE text file distributed\\n          as part of the Derivative Works; within the Source form or\\n          documentation, if provided along with the Derivative Works; or,\\n          within a display generated by the Derivative Works, if and\\n          wherever such third-party notices normally appear. The contents\\n          of the NOTICE file are for informational purposes only and\\n          do not modify the License. You may add Your own attribution\\n          notices within Derivative Works that You distribute, alongside\\n          or as an addendum to the NOTICE text from the Work, provided\\n          that such additional attribution notices cannot be construed\\n          as modifying the License.\\n\\n      You may add Your own copyright statement to Your modifications and\\n      may provide additional or different license terms and conditions\\n      for use, reproduction, or distribution of Your modifications, or\\n      for any such Derivative Works as a whole, provided Your use,\\n      reproduction, and distribution of the Work otherwise complies with\\n      the conditions stated in this License.\\n\\n   5. Submission of Contributions. Unless You explicitly state otherwise,\\n      any Contribution intentionally submitted for inclusion in the Work\\n      by You to the Licensor shall be under the terms and conditions of\\n      this License, without any additional terms or conditions.\\n      Notwithstanding the above, nothing herein shall supersede or modify\\n      the terms of any separate license agreement you may have executed\\n      with Licensor regarding such Contributions.\\n\\n   6. Trademarks. This License does not grant permission to use the trade\\n      names, trademarks, service marks, or product names of the Licensor,\\n      except as required for reasonable and customary use in describing the\\n      origin of the Work and reproducing the content of the NOTICE file.\\n\\n   7. Disclaimer of Warranty. Unless required by applicable law or\\n      agreed to in writing, Licensor provides the Work (and each\\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\\n      implied, including, without limitation, any warranties or conditions\\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\\n      PARTICULAR PURPOSE. You are solely responsible for determining the\\n      appropriateness of using or redistributing the Work and assume any\\n      risks associated with Your exercise of permissions under this License.\\n\\n   8. Limitation of Liability. In no event and under no legal theory,\\n      whether in tort (including negligence), contract, or otherwise,\\n      unless required by applicable law (such as deliberate and grossly\\n      negligent acts) or agreed to in writing, shall any Contributor be\\n      liable to You for damages, including any direct, indirect, special,\\n      incidental, or consequential damages of any character arising as a\\n      result of this License or out of the use or inability to use the\\n      Work (including but not limited to damages for loss of goodwill,\\n      work stoppage, computer failure or malfunction, or any and all\\n      other commercial damages or losses), even if such Contributor\\n      has been advised of the possibility of such damages.\\n\\n   9. Accepting Warranty or Additional Liability. While redistributing\\n      the Work or Derivative Works thereof, You may choose to offer,\\n      and charge a fee for, acceptance of support, warranty, indemnity,\\n      or other liability obligations and/or rights consistent with this\\n      License. However, in accepting such obligations, You may act only\\n      on Your own behalf and on Your sole responsibility, not on behalf\\n      of any other Contributor, and only if You agree to indemnify,\\n      defend, and hold each Contributor harmless for any liability\\n      incurred by, or claims asserted against, such Contributor by reason\\n      of your accepting any such warranty or additional liability.\\n\\n   END OF TERMS AND CONDITIONS\\n\\n   APPENDIX: How to apply the Apache License to your work.\\n\\n      To apply the Apache License to your work, attach the following\\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\\n      replaced with your own identifying information. (Don\\'t include\\n      the brackets!)  The text should be enclosed in the appropriate\\n      comment syntax for the file format. We also recommend that a\\n      file or class name and description of purpose be included on the\\n      same \"printed page\" as the copyright notice for easier\\n      identification within third-party archives.\\n\\n   Copyright [yyyy] [name of copyright owner]\\n\\n   Licensed under the Apache License, Version 2.0 (the \"License\");\\n   you may not use this file except in compliance with the License.\\n   You may obtain a copy of the License at\\n\\n       http://www.apache.org/licenses/LICENSE-2.0\\n\\n   Unless required by applicable law or agreed to in writing, software\\n   distributed under the License is distributed on an \"AS IS\" BASIS,\\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\\n   See the License for the specific language governing permissions and\\n   limitations under the License.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/gtfs-bench/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/docker/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/docker/build.sh",
+            "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/docker/start.sh",
+            "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/generation/generate.sh",
+            "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/generation/resources/csvs/headers.sh",
+            "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/generation/resources/csvs/clean.sh",
+            "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/generation/resources/csvs/distribution.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v1.2.3",
+                "name": "v1.2.3",
+                "authorName": "dachafra",
+                "authorType": "User",
+                "body": "- Solving problems with URIs generation + references in VIG\r\n- Adding utils folder with scripts and schemes for other RDBMS",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/tarball/v1.2.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/zipball/v1.2.3",
+                "htmlUrl": "https://github.com/oeg-upm/gtfs-bench/releases/tag/v1.2.3",
+                "url": "https://api.github.com/repos/oeg-upm/gtfs-bench/releases/61468312",
+                "dateCreated": "2022-02-14T15:46:01Z",
+                "datePublished": "2022-03-10T08:08:34Z"
+            },
+            {
+                "tagName": "v1.2.2",
+                "name": "v1.2.2",
+                "authorName": "dachafra",
+                "authorType": "User",
+                "body": "- Output compression format is switched from `.zip` to `tar.xz` due to performance potential issues with large datasets",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/tarball/v1.2.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/zipball/v1.2.2",
+                "htmlUrl": "https://github.com/oeg-upm/gtfs-bench/releases/tag/v1.2.2",
+                "url": "https://api.github.com/repos/oeg-upm/gtfs-bench/releases/44627470",
+                "dateCreated": "2021-06-14T17:03:15Z",
+                "datePublished": "2021-06-15T08:25:18Z"
+            },
+            {
+                "tagName": "v1.2.1",
+                "name": "v1.2.1",
+                "authorName": "dachafra",
+                "authorType": "User",
+                "body": "- Mapping bug in shape_points generation \r\n- Fixed columns with VIG are currently working as is expected",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/tarball/v1.2.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/zipball/v1.2.1",
+                "htmlUrl": "https://github.com/oeg-upm/gtfs-bench/releases/tag/v1.2.1",
+                "url": "https://api.github.com/repos/oeg-upm/gtfs-bench/releases/44400566",
+                "dateCreated": "2021-06-10T08:55:24Z",
+                "datePublished": "2021-06-10T09:35:06Z"
+            },
+            {
+                "tagName": "v1.2.0",
+                "name": "v1.2.0",
+                "authorName": "dachafra",
+                "authorType": "User",
+                "body": "- Solving many issues (from #120 to #129)\r\n- Changing mapping rules and queries\r\n- Changing generator\r\n- Improving documentation",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/tarball/v1.2.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/zipball/v1.2.0",
+                "htmlUrl": "https://github.com/oeg-upm/gtfs-bench/releases/tag/v1.2.0",
+                "url": "https://api.github.com/repos/oeg-upm/gtfs-bench/releases/39664308",
+                "dateCreated": "2021-03-11T15:55:58Z",
+                "datePublished": "2021-03-11T15:58:22Z"
+            },
+            {
+                "tagName": "v1.1.0",
+                "name": "v1.1.0",
+                "authorName": "dachafra",
+                "authorType": "User",
+                "body": "Docker-based generation of instances of the benchmark. Possibility for the user to decide which are the sources and sizes in the generation. Fixing bugs in the mapping rules",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/tarball/v1.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/zipball/v1.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/gtfs-bench/releases/tag/v1.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/gtfs-bench/releases/33638644",
+                "dateCreated": "2020-11-07T16:39:28Z",
+                "datePublished": "2020-11-09T10:43:55Z"
+            },
+            {
+                "tagName": "v1.0.0",
+                "name": "v1.0.0",
+                "authorName": "dachafra",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/tarball/v1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/gtfs-bench/zipball/v1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/gtfs-bench/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/gtfs-bench/releases/22209734",
+                "dateCreated": "2019-10-08T12:32:06Z",
+                "datePublished": "2019-12-13T13:20:34Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "script"
+    }
+}

@@ -1,0 +1,170 @@
+{
+    "description": [
+        {
+            "excerpt": "Using pipes we can download, decompress and filter the triples in a continuous flow of about 15MB/s, but that is still slow and takes about 12 hours. The bottleneck is the filtering part, that hits the processor single-thread limit. \nAs a solution, a mechanism has been designed to partition the TTL file and thus parallelize the filtering of its triples with an arbitrary number of threads, at the user's discretion. \n",
+            "confidence": [
+                [
+                    0.9833003943275531,
+                    0.954684080129781
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "The solution"
+        },
+        {
+            "excerpt": "Streaming Wikidata label extractor",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "wikidata-label-extractor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "faq": [
+        {
+            "originalHeader": "The problem",
+            "excerpt": "Processing large numbers of triples can be slow, especially if they are not already indexed in some triplet store capable of returning the desired subset in a reasonable time.\n\nIn our case we want to get all the `rdfs:label` and `rdfs:altLabel` properties from Wikidata, which is done from the regular dumps in TTL (~ 700GB). \n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/wikidata-label-extractor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-08-23T07:58:06Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-08-23T07:58:07Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "wikidata-label-extractor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/wikidata-label-extractor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/wikidata-label-extractor/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/wikidata-label-extractor/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/wikidata-label-extractor/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:35:31 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:35:31 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "C",
+            "Python",
+            "Dockerfile",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/wikidata-label-extractor/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/wikidata-label-extractor/main/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/wikidata-label-extractor/main/get.sh",
+            "https://raw.githubusercontent.com/oeg-upm/wikidata-label-extractor/main/run.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "inspect4py": {
+        "software_type": "script"
+    }
+}

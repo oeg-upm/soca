@@ -1,0 +1,205 @@
+{
+    "description": [
+        {
+            "originalHeader": "Description:",
+            "excerpt": "Massive ROs Creator is a python program that, given a group of search parameters, navigates to the Norwegian Research Data Archive (NIRD), realizes an advanced search and recovers data from the resources obtained by this search.\nThe program is set to insert this data into ROs in the ROHub platform. A functionality that will be added in posterior versions.\nThe program uses automated web navigation in the local machine where it is being excuted.\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "Massive ROs Creator is a python program that, given a group of search parameters, navigates to the Norwegian Research Data Archive (NIRD), realizes an advanced search and recovers data from the resources obtained by this search. The program is set to insert this data into ROs in the ROHub platform. A functionality that will be added in posterior versions. The program uses automated web navigation in the local machine where it is being excuted.",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "ROHub library installation",
+            "excerpt": "In your terminal, type and excute the next command: \\\n`pip install rohub` \n",
+            "parentHeader": "Requirements:",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Selenium library installation:",
+            "excerpt": "In your terminal, type and excute the next command: \\\n`pip install selenium`  \n",
+            "parentHeader": "Requirements:",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "pip installation:",
+            "excerpt": "Usually, pip is automatically installed. In case it's not, please install it following the steps in: \\\nhttps://pip.pypa.io/en/stable/installation/ \n",
+            "parentHeader": "Requirements:",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Massive-ROs-Creator",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "download": [
+        {
+            "originalHeader": "Download the newest version of chromedriver:",
+            "excerpt": "You can download the latest version of the Chromedriver from this link: \\\nhttps://chromedriver.chromium.org/downloads \n",
+            "parentHeader": "Requirements:",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "How to use Massive-ROs-Creator?",
+            "excerpt": "After fulfilling the requirements' mentioned before, please follow the next steps to excute the program:\n\n1. Download a local version of the project in your machine\n2. Modify entery parameters in the script called \"SearchEngine.py\" to match your search (domain, field....)\n3. Fill in the variable PATH with the local absolute path of your ChromeDriver in both SearchEngine.py and WebScraper.py scripts\n4. In your terminal navigate to your project folder then type and excute the next command: \\\n`py SearchEngine.py`\n5. A json file called \"ToScrape.json\" is created in your project folder. This file contains the IDs of the resourses matching the anterior search and their respective titles.\n6. In your terminal, supposing that you are still in the project's folder, type and excute the next command: \\\n`py WebScraper.py`\n7. 5. A json file called \"ROs.json\" is created in you project folder. This file contains the data of the resources recovered after navegating  the search results one by one.\n8. To be continued\n\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/Massive-ROs-Creator",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-10-26T19:07:30Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-02-14T12:22:12Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "Massive-ROs-Creator",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/Massive-ROs-Creator",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Massive-ROs-Creator/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Massive-ROs-Creator/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/Massive-ROs-Creator/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:14:40 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:14:40 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python",
+            "SCSS",
+            "CSS",
+            "JavaScript"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'The MIT License (MIT)\\n\\nCopyright (c) 2013-2018 Blackrock Digital LLC\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \"Software\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in\\nall copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\nTHE SOFTWARE.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/Massive-ROs-Creator/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "script"
+    }
+}

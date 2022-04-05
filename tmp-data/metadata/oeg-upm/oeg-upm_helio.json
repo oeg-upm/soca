@@ -1,0 +1,194 @@
+{
+    "description": [
+        {
+            "excerpt": "Helio is a framework that allows publishing RDF data as a Linked Data service, in which data comes from different heterogeneous sources. The translation of data into RDF can be performed using different tools from the literature, or the Helio materialisation engine. Additionally, the RDF produced is injected automatically in a triple store and can be versioned. Finally, Helio offers also the necessary components to publish the RDF at resource level, dataset level, and enables a SPARQL endpoint. Nevertheless, Helio also allow users to define dynamic views of the data and associate html views that may have embedded RDF (RDFa). \n",
+            "confidence": [
+                [
+                    0.994345148784346
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Helio framework"
+        },
+        {
+            "excerpt": "Helio is a framework that allows publishing RDF data as a Linked Data service, in which data comes from different heterogeneous sources. The translation of data into RDF can be performed using different tools from the literature, or the Helio materialisation engine. Additionally, the RDF produced is injected automatically in a triple store and can be versioned. Finally, Helio offers also the necessary components to publish the RDF at resource level, dataset level, and enables a SPARQL endpoint. Nevertheless, Helio also allow users to define dynamic views of the data and associate html views, that may have embedded RDF (RDFa).",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Helio framework",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/helio",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2019-10-08T12:46:26Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-01-12T10:07:11Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "helio",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/helio",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/helio/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/helio/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/helio/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 6,
+            "date": "Tue, 05 Apr 2022 09:11:40 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:11:40 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "HTML"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/helio/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "publisher-0.3.11",
+                "name": "Helio Publisher",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "#### Changelog:\r\n* Imports materialiser version 0.3.14\r\n",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/helio/tarball/publisher-0.3.11",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/helio/zipball/publisher-0.3.11",
+                "htmlUrl": "https://github.com/oeg-upm/helio/releases/tag/publisher-0.3.11",
+                "url": "https://api.github.com/repos/oeg-upm/helio/releases/30737541",
+                "dateCreated": "2020-12-15T12:20:11Z",
+                "datePublished": "2020-09-04T15:58:17Z"
+            },
+            {
+                "tagName": "materialiser-0.3.14",
+                "name": "Helio Materialiser",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "New Functionalities:\r\n\r\n* Allowed the usage of functions that return a list of elements, like splitBy.\r\n* Code refactoring that makes the RDF generation lighter\r\n* RML parsing bugs fixed \r\n* Loggin system\r\n--------\r\n* Multiple data references in a subject, predicate, or object are allowed. These references can also use functions.\r\n* Bug with regex that use the character '[' or ']' fixed, e.g. `[REGEXP_REPLACE({$.measure_property}, '\\\\([^\\\\)]+\\\\)','')]`\r\n--------\r\n* MaterialiserCaches can be loaded dynamically using the config file from the local classes and from the plugins\r\n--------\r\n* Able to generate DataTypes from data.\r\n--------\r\n* Prevents two or more same subjects generated from the same rule set + data sources to override their data among each other\r\n* [Log level](https://logging.apache.org/log4j/log4j-2.4/faq.html) enabled \r\n* Fixes issue #10 \r\nFunctionalities:\r\n* Accepts as plugins: DataProviders, DataHandlers, Functions, Caches, MappingTranslators\r\n* Load plugins from files\r\n* Load plugins from URLs\r\n* Fixes issues #4, #8, #9",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/helio/tarball/materialiser-0.3.14",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/helio/zipball/materialiser-0.3.14",
+                "htmlUrl": "https://github.com/oeg-upm/helio/releases/tag/materialiser-0.3.14",
+                "url": "https://api.github.com/repos/oeg-upm/helio/releases/30737171",
+                "dateCreated": "2020-12-15T12:20:11Z",
+                "datePublished": "2020-09-04T15:48:20Z"
+            },
+            {
+                "tagName": "helio-0.3.14-dependency",
+                "name": "Helio Maven dependency",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "### New Functionalities:\r\n\r\n* Allowed the usage of functions that return a list of elements, like splitBy.\r\n* Code refactoring that makes the RDF generation lighter\r\n* RML parsing bugs fixed\r\n------\r\n* Multiple data references in a subject, predicate, or object are allowed. These references can also use functions.\r\n* Bug with regex that use the character '[' or ']' fixed, e.g. `[REGEXP_REPLACE({$.measure_property}, '\\\\([^\\\\)]+\\\\)','')]`\r\n*\r\n----\r\n* MaterialiserCaches can be loaded dynamically using the config file from the local classes and from the plugins\r\n----\r\n* Able to generate DataTypes from data\r\n-----\r\n* Prevents two or more same subjects generated from the same rule set + data sources to override their data among each other\r\n* [Log level](https://logging.apache.org/log4j/log4j-2.4/faq.html) enabled \r\n* Fixes issue #10 \r\nFunctionalities:\r\n* Accepts as plugins: DataProviders, DataHandlers, Functions, Caches, MappingTranslators\r\n* Load plugins from files\r\n* Load plugins from URLs\r\n* Fixes issues #4, #8, #9",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/helio/tarball/helio-0.3.14-dependency",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/helio/zipball/helio-0.3.14-dependency",
+                "htmlUrl": "https://github.com/oeg-upm/helio/releases/tag/helio-0.3.14-dependency",
+                "url": "https://api.github.com/repos/oeg-upm/helio/releases/30736865",
+                "dateCreated": "2020-12-15T12:20:11Z",
+                "datePublished": "2020-09-04T15:42:44Z"
+            },
+            {
+                "tagName": "framework-0.3.7-dependency",
+                "name": "Helio Framework Maven dependency",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/helio/tarball/framework-0.3.7-dependency",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/helio/zipball/framework-0.3.7-dependency",
+                "htmlUrl": "https://github.com/oeg-upm/helio/releases/tag/framework-0.3.7-dependency",
+                "url": "https://api.github.com/repos/oeg-upm/helio/releases/30736762",
+                "dateCreated": "2020-12-15T12:20:11Z",
+                "datePublished": "2020-09-04T15:37:45Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

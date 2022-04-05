@@ -1,0 +1,162 @@
+{
+    "description": [
+        {
+            "excerpt": "\nReason 1: this docker image was created because there was a mismatch between compatible OS versions and libraries dependencies. Also, this image has all the software necessary to run all the features of the last version of GeoKettle and it will be updated when the dependencies, libraries or OS base would be safe to be updated. \nReason 2: this docker image has been compiled with source code of GeoKettle last version and Java 8, so all the software and recent plugins are working well because there is compatibility between them. This is a critical feature, especially for Mac OS version. \n",
+            "confidence": [
+                [
+                    0.9473233564299193,
+                    0.9539097590753831
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "GeoKettle Docker Image"
+        },
+        {
+            "excerpt": "Docker Image for GeoKettle and TripleGeoKettle plugin",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": " * Java OpenJDK 8 ([debian:jessie](https://github.com/docker-library/openjdk/blob/238cc35696423794b1951fc63d4cc9ffb8ca9685/8-jdk/Dockerfile))\n * [Apache Ant](https://ant.apache.org/bindownload.cgi)\n * [GeoKettle 2.5](http://www.spatialytics.org/projects/geokettle/)\n * [TripleGeoKettle](https://github.com/oeg-upm/geo.linkeddata.es-TripleGeoKettle) \n",
+            "confidence": [
+                [
+                    0.991925468123454
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "GeoKettle Docker Image"
+        },
+        {
+            "excerpt": "Ontology Engineering Group \u00a9 Copyright 2017. \n",
+            "confidence": [
+                [
+                    0.9677640385174676
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "GeoKettle Docker Image"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/docker-geokettle-x3geo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2017-07-13T11:04:41Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2018-01-15T18:48:26Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "docker-geokettle-x3geo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/docker-geokettle-x3geo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/docker-geokettle-x3geo/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/docker-geokettle-x3geo/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/docker-geokettle-x3geo/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "docker",
+            "geo",
+            "gis",
+            "pentaho"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:01:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:01:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/docker-geokettle-x3geo/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/docker-geokettle-x3geo/master/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

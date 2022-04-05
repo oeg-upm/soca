@@ -1,0 +1,136 @@
+{
+    "description": [
+        {
+            "excerpt": "You can use this code to extract multiple types of text related to SDG's. First of all, you can get Goteo projects' description. To achieve that, I've used Goteo's API. You can try it by calling getProjectsFromGoteo function in the main class with the page number as a parameter. Each page contains 50 projects, and the information I persist in the database is the project name, short description, complete description and the owner ID. I have used RestTemplate framework to develop the request logic. There's a problem you should have in mind when making request to Goteo's services: there's a restriction in the number of request we can make in a short period of time. After that, you will always get a 429 error (TOO MANY REQUESTS), and you'll have to wait.  \nYou can also get texts from SDG websites (like this one https://www.un.org/sustainabledevelopment/es/hunger/). For that, just call the function scrapWebONUX, where X is the SDG's number, passing the SGD'S website URL as a parameter. I persist the text obtained in my database. I have used JSoup library to do the web scrapping in Java. \n",
+            "confidence": [
+                [
+                    0.9637070958796685,
+                    0.9294785106448737
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "sdg-text-retriever"
+        },
+        {
+            "excerpt": "A program to retrieve texts related to Sustainable Development Goals from webs and PDF's",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "sdg-text-retriever",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/sdg-text-retriever",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2019-06-18T10:10:31Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2019-06-18T10:11:25Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "sdg-text-retriever",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/sdg-text-retriever",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/sdg-text-retriever/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/sdg-text-retriever/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/sdg-text-retriever/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:27:59 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:27:59 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "TSQL",
+            "Java"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/sdg-text-retriever/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

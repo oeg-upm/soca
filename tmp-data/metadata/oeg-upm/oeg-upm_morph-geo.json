@@ -1,0 +1,153 @@
+{
+    "description": [
+        {
+            "excerpt": "Trabajo Fin de Grado: Introducir soporte al formato GeoPackage en herramientas de Linked Data Geogr\u00e1fico desarrolladas por el Grupo de Ingenier\u00eda Ontol\u00f3gica",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "Este repositorio es el resultado de varios TFGs de la ETSI Inform\u00e1ticos de la Universidad Polit\u00e9cnica de Madrid, basados en el trabajo previo que el Grupo de Ingenier\u00eda Ontol\u00f3gica  ha venido tradicionalmente realizando con instituciones relacionadas con los datos geogr\u00e1ficos, y m\u00e1s espec\u00edficamente con instituciones como el Instituto Geogr\u00e1fico Nacional, para la exportaci\u00f3n de algunos de sus datos geogr\u00e1ficos a RDF y su publicaci\u00f3n como datos enlazados (Linked Data). Un ejemplo de los resultados obtenidos se puede encontrar en https://datos.ign.es/\n \n",
+            "confidence": [
+                [
+                    0.9999985705425856
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "morph-GEO"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "morph-GEO",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/morph-geo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2022-02-25T09:45:56Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-02-25T09:47:34Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "morph-geo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/morph-geo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-geo/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-geo/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/morph-geo/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:15:23 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:15:23 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "TeX",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/morph-geo/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/shpTogpkg.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/gpkg-rar.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/gpkg-git.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/CURV_NIV.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/convertidorTripleGeoKettle.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/scripts/gpkg-tests.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-geo/main/TripleGeoKettle-PDI9/instalador.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

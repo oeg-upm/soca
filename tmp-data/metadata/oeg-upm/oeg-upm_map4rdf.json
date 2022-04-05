@@ -1,0 +1,407 @@
+{
+    "description": [
+        {
+            "excerpt": "Map4RDF allows visualising and interacting with Linked Geospatial Data available in any SPARQL endpoint",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "[![Code HTML](https://img.shields.io/badge/code-HTML-blue.svg)](https://www.w3.org/TR/html/)\n[![Code CSS](https://img.shields.io/badge/code-CSS-blue.svg)](http://www.w3schools.com/css/css_intro.asp)\n[![Code JS](https://img.shields.io/badge/code-JS-blue.svg)](http://www.w3schools.com/js/)\n[![Design Cross-browsers](https://img.shields.io/badge/design-Cross--Browsers-blue.svg)](https://en.wikipedia.org/wiki/Cross-browser) \n[![lib jQuery](https://img.shields.io/badge/lib-jQuery-green.svg)](https://jquery.com/)\n[![lib Proj4js](https://img.shields.io/badge/lib-Proj4js-green.svg)](http://proj4js.org/) \n[![GWT 2.7.0](https://img.shields.io/badge/GWT-2.7.0-43a047.svg)](http://www.gwtproject.org/)\n[![GWT OpenLayers 1.0](https://img.shields.io/badge/GWT%20OpenLayers-1.0-43a047.svg)](https://github.com/geosdi/GWT-OpenLayers)\n[![GWT Blocks 0.1.0](https://img.shields.io/badge/GWT%20Blocks-0.1.0-43a047.svg)](https://github.com/oeg-upm/gwt-blocks/)\n[![GWT Charts 0.9.9](https://img.shields.io/badge/GWT%20Charts-0.9.9-43a047.svg)](https://github.com/google/gwt-charts)\n[![GWT Inject 2.1.2](https://img.shields.io/badge/GWT%20Inject-2.1.2-43a047.svg)](https://code.google.com/archive/p/google-gin/)\n[![GWT Dispatch 1.2.0](https://img.shields.io/badge/GWT%20Dispatch-1.2.0-43a047.svg)](https://github.com/randombits-org/gwt-dispatch)\n[![GWT Maps 3.9.0-build-17](https://img.shields.io/badge/GWT%20Maps-3.9.0--build--17-43a047.svg)](https://github.com/branflake2267/GWT-Maps-V3-Api) \n[![maps OpenStreetMaps](https://img.shields.io/badge/maps-OpenStreetMaps-ff9800.svg)](http://www.openstreetmap.org)\n[![maps GoogleMaps](https://img.shields.io/badge/maps-GoogleMaps-ff9800.svg)](https://maps.google.es)\n[![maps Cartociudad](https://img.shields.io/badge/maps-Cartociudad-ff9800.svg)](http://www.cartociudad.es/)\n[![maps IDE Maps](https://img.shields.io/badge/maps-IDE--Maps-ff9800.svg)](http://www.idee.es/visualizador/)\n[![maps MapBox](https://img.shields.io/badge/maps-MapBox-ff9800.svg)](https://www.mapbox.com/)\n[![maps OpenCycleMaps](https://img.shields.io/badge/maps-OpenCycleMaps-ff9800.svg)](http://www.opencyclemap.org/)\n[![maps OSGeoMaps](https://img.shields.io/badge/maps-OSGeoMaps-ff9800.svg)](http://www.osgeo.org/mapguide) \n[![Java 1.7 or later](https://img.shields.io/badge/Java-1.7%20or%20later-40c4ff.svg)](https://www.java.com/es/download/help/index_installing.xml?j=7)\n[![Guice-servlet 3.0](https://img.shields.io/badge/Guice--servlet-3.0-40c4ff.svg)](https://github.com/google/guice/wiki/Servlets)\n[![JavaAPIforKml 2.2.1](https://img.shields.io/badge/JavaAPIforKml-2.2.1-40c4ff.svg)](https://labs.micromata.de/projects/jak.html)\n[![Jena-arq 2.12.1](https://img.shields.io/badge/Jena--arq-2.12.1-40c4ff.svg)](https://jena.apache.org/documentation/query/)\n[![slf4j 1.7.7](https://img.shields.io/badge/slf4j-1.7.7-40c4ff.svg)](http://www.slf4j.org/)\n[![Geotools 11.0](https://img.shields.io/badge/Geotools-11.0-40c4ff.svg)](http://www.geotools.org/)\n[![JSON-java 20140107](https://img.shields.io/badge/JSON--java-20140107-40c4ff.svg)](https://github.com/stleary/JSON-java) \n",
+            "confidence": [
+                [
+                    0.9998788947389798,
+                    0.9683294261185372,
+                    0.9999999510406509,
+                    0.9999851224401916,
+                    0.9999991539269386
+                ]
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "image": [
+        {
+            "excerpt": "https://img.shields.io/badge/Version-0.5.0-lightgrey.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/build-Maven-lightgrey.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/JSON--java-20140107-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Geotools-11.0-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/slf4j-1.7.7-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Jena--arq-2.12.1-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/JavaAPIforKml-2.2.1-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Guice--servlet-3.0-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Java-1.7%20or%20later-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-OSGeoMaps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-OpenCycleMaps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-MapBox-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-IDE--Maps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-Cartociudad-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-GoogleMaps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/maps-OpenStreetMaps-ff9800.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Maps-3.9.0--build--17-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Dispatch-1.2.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Inject-2.1.2-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Charts-0.9.9-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Blocks-0.1.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20OpenLayers-1.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT-2.7.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-Proj4js-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-jQuery-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/design-Cross--Browsers-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-JS-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-CSS-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-HTML-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/map4rdf",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2014-02-28T21:44:12Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-01-19T20:05:01Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Other"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "map4rdf",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/map4rdf",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/map4rdf/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/map4rdf/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/map4rdf/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "geo",
+            "geolinkeddata",
+            "geosparql",
+            "map4rdf"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 10,
+            "date": "Tue, 05 Apr 2022 09:13:46 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Tue, 05 Apr 2022 09:13:46 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "CSS",
+            "JavaScript"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/map4rdf/README.MD",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "0.0.5",
+                "name": "Map4RDF-0.0.5",
+                "authorName": "Fransiro",
+                "authorType": "User",
+                "body": "Map4RDF-0.0.5\n- Multiple instances of Map4RDF on one with Multiple-configurations-files feature.\n- WKT support\n- GeoJSON support\n- GeoSPARQL support for Strabon and Virtuoso\n- Draw resources by label or by facet\n- Better visualization of Facets view\n- More default configurations to choose\n- More default maps to choose\n- More EPSG tranformations with Proj4JS\n- More Additional Information configurations (by default added)\n- Service for parse wikipedia pages\n",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/map4rdf/tarball/0.0.5",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/map4rdf/zipball/0.0.5",
+                "htmlUrl": "https://github.com/oeg-upm/map4rdf/releases/tag/0.0.5",
+                "url": "https://api.github.com/repos/oeg-upm/map4rdf/releases/3769593",
+                "dateCreated": "2016-07-29T12:31:50Z",
+                "datePublished": "2016-07-29T12:32:09Z"
+            },
+            {
+                "tagName": "0.0.4a",
+                "name": "Map4RDF-0.0.4a",
+                "authorName": "Fransiro",
+                "authorType": "User",
+                "body": "This is Map4RDF-0.0.4a version.\n",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/map4rdf/tarball/0.0.4a",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/map4rdf/zipball/0.0.4a",
+                "htmlUrl": "https://github.com/oeg-upm/map4rdf/releases/tag/0.0.4a",
+                "url": "https://api.github.com/repos/oeg-upm/map4rdf/releases/2412446",
+                "dateCreated": "2016-01-12T13:50:47Z",
+                "datePublished": "2016-01-12T13:52:12Z"
+            },
+            {
+                "tagName": "0.0.4",
+                "name": "Map4RDF-0.0.4",
+                "authorName": "Fransiro",
+                "authorType": "User",
+                "body": "Map4RDF-0.0.4 Beta versi\u00f3n.\n",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/map4rdf/tarball/0.0.4",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/map4rdf/zipball/0.0.4",
+                "htmlUrl": "https://github.com/oeg-upm/map4rdf/releases/tag/0.0.4",
+                "url": "https://api.github.com/repos/oeg-upm/map4rdf/releases/223680",
+                "dateCreated": "2014-03-14T09:06:49Z",
+                "datePublished": "2014-03-14T10:22:34Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

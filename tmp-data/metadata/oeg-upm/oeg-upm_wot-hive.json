@@ -1,0 +1,347 @@
+{
+    "description": [
+        {
+            "excerpt": "The WoT Hive an implementation of a WoT Directory described in the W3C WoT Discovery standard",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "2. Set up the triple store",
+            "excerpt": "In order to connect the WoT Hive to a remote triple store a `POST` request must be sent to `/configuration/triplestore` containing the in the body the following JSON\n\n```json\n{\n    \"updateEnpoint\": \"http://localhost:3030/sparql\",\n    \"queryEnpoint\": \"http://localhost:3030/sparql\",\n    \"queryUsingGET\": true\n}\n```\n\nNotice that `\"queryEndpoint\"`and `\"updateEndpoint\"` must have as value the correct endpoints of the triple store for either querying or inserting data. Finally, if the triple store implements the SPARQL protocol through `GET` requests then leave `\"queryUsingGET\": true`, otherwise, for using `POST`set it to false `\"queryUsingGET\": false`.\n",
+            "parentHeader": "Jar quick start",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "logo": {
+        "excerpt": "https://www.auroral.eu/img/logos/bandeira.png",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://user-images.githubusercontent.com/4105186/141472288-1b15e0ba-8ae1-414a-a849-222b6bc27754.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/License-Apache%202.0-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/Version-0.2.2-orange",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "originalHeader": "Acknowledgements",
+            "excerpt": "This project has been partially funded by the European project AURORAL from the European Union's Horizont 2020 research and innovation programme under grant agreement N\u00ba101016854.\n\n<img src=\"https://user-images.githubusercontent.com/4105186/141472288-1b15e0ba-8ae1-414a-a849-222b6bc27754.png\" height=\"75\" /> <img src=\"https://www.auroral.eu/img/logos/bandeira.png\"  height=\"80\" />\n\n",
+            "parentHeader": "WoT Hive API",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "download": [
+        {
+            "originalHeader": "1. Download the WoT Hive service",
+            "excerpt": "Download the latest release of WoT Hive into a folder. Notice that the releases have several files that must be downloaded and placed in the same folder:\n* **log4j.properties** allows to customise the logs of the service\n* **schema.json** allows to perform JSON schema validation over the Thing Descriptions\n* **shape.ttl** allows to perform SHACL shapes validation over the Thing Descriptions\n* **wothive.jar** is the jar of the service\n\nOnce downloaded all the resources in the same folder the service can be ran using the command\n\n```bash\njava -jar wothive.jar\n```\n\nWhen the service is up and running a file called *configuration.json* will be created in the directory of the jar.  The service will run by default in port 9000. ",
+            "parentHeader": "Jar quick start",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Docker quick start",
+            "excerpt": "Copy this receipt in a *docker-compose.yml* file\n\n```yaml\nversion: '2'\nservices:\n  triplestore:\n    image: acimmino/auroral-fuseky:latest\n    environment:\n     ADMIN_PASSWORD: pw123\n    volumes:\n    - triplestore:/fuseki\n    ports:\n      - '3030:3030'\n  wothive:\n    image: acimmino/wot-hive:auroral-dev\n    # volumes:\n    # - ./configuration.json:/usr/src/wothive/configuration.json\n    ports:\n      - '9000:9000'\nvolumes:\n  triplestore:\n```\n\nRun the docker command\n\n```bash\ndocker-compose up\n```\n\n\n[OPTIONAL] Uncomment wothive volume to bind your own configuration file for the wothive. Default file is configured to connect the fuseki service running in the docker-compose network.\n\n[OPTIONAL 2] If you want to change the fuseki service location (Move outside docker for instance), you can change the configuration of the wothive also via API. A `POST` request must be sent to `/configuration/triplestore` containing the in the body the following JSON. This \n\n```json\n{\n    \"updateEnpoint\": \"http://triplestore:3030/sparql\",\n    \"queryEnpoint\": \"http://triplestore:3030/sparql\",\n    \"queryUsingGET\": true\n}\n```\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/wot-hive",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-07-05T09:47:01Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-03-01T10:15:37Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "wot-hive",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/wot-hive",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/wot-hive/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/wot-hive/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/wot-hive/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 7,
+            "date": "Tue, 05 Apr 2022 09:35:36 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Tue, 05 Apr 2022 09:35:36 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "JavaScript",
+            "Ruby",
+            "Java",
+            "HTML",
+            "CSS",
+            "Shell",
+            "Smarty",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'\\n                                 Apache License\\n                           Version 2.0, January 2004\\n                        http://www.apache.org/licenses/\\n\\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\\n\\n   1. Definitions.\\n\\n      \"License\" shall mean the terms and conditions for use, reproduction,\\n      and distribution as defined by Sections 1 through 9 of this document.\\n\\n      \"Licensor\" shall mean the copyright owner or entity authorized by\\n      the copyright owner that is granting the License.\\n\\n      \"Legal Entity\" shall mean the union of the acting entity and all\\n      other entities that control, are controlled by, or are under common\\n      control with that entity. For the purposes of this definition,\\n      \"control\" means (i) the power, direct or indirect, to cause the\\n      direction or management of such entity, whether by contract or\\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\\n      outstanding shares, or (iii) beneficial ownership of such entity.\\n\\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\\n      exercising permissions granted by this License.\\n\\n      \"Source\" form shall mean the preferred form for making modifications,\\n      including but not limited to software source code, documentation\\n      source, and configuration files.\\n\\n      \"Object\" form shall mean any form resulting from mechanical\\n      transformation or translation of a Source form, including but\\n      not limited to compiled object code, generated documentation,\\n      and conversions to other media types.\\n\\n      \"Work\" shall mean the work of authorship, whether in Source or\\n      Object form, made available under the License, as indicated by a\\n      copyright notice that is included in or attached to the work\\n      (an example is provided in the Appendix below).\\n\\n      \"Derivative Works\" shall mean any work, whether in Source or Object\\n      form, that is based on (or derived from) the Work and for which the\\n      editorial revisions, annotations, elaborations, or other modifications\\n      represent, as a whole, an original work of authorship. For the purposes\\n      of this License, Derivative Works shall not include works that remain\\n      separable from, or merely link (or bind by name) to the interfaces of,\\n      the Work and Derivative Works thereof.\\n\\n      \"Contribution\" shall mean any work of authorship, including\\n      the original version of the Work and any modifications or additions\\n      to that Work or Derivative Works thereof, that is intentionally\\n      submitted to Licensor for inclusion in the Work by the copyright owner\\n      or by an individual or Legal Entity authorized to submit on behalf of\\n      the copyright owner. For the purposes of this definition, \"submitted\"\\n      means any form of electronic, verbal, or written communication sent\\n      to the Licensor or its representatives, including but not limited to\\n      communication on electronic mailing lists, source code control systems,\\n      and issue tracking systems that are managed by, or on behalf of, the\\n      Licensor for the purpose of discussing and improving the Work, but\\n      excluding communication that is conspicuously marked or otherwise\\n      designated in writing by the copyright owner as \"Not a Contribution.\"\\n\\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\\n      on behalf of whom a Contribution has been received by Licensor and\\n      subsequently incorporated within the Work.\\n\\n   2. Grant of Copyright License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      copyright license to reproduce, prepare Derivative Works of,\\n      publicly display, publicly perform, sublicense, and distribute the\\n      Work and such Derivative Works in Source or Object form.\\n\\n   3. Grant of Patent License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      (except as stated in this section) patent license to make, have made,\\n      use, offer to sell, sell, import, and otherwise transfer the Work,\\n      where such license applies only to those patent claims licensable\\n      by such Contributor that are necessarily infringed by their\\n      Contribution(s) alone or by combination of their Contribution(s)\\n      with the Work to which such Contribution(s) was submitted. If You\\n      institute patent litigation against any entity (including a\\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\\n      or a Contribution incorporated within the Work constitutes direct\\n      or contributory patent infringement, then any patent licenses\\n      granted to You under this License for that Work shall terminate\\n      as of the date such litigation is filed.\\n\\n   4. Redistribution. You may reproduce and distribute copies of the\\n      Work or Derivative Works thereof in any medium, with or without\\n      modifications, and in Source or Object form, provided that You\\n      meet the following conditions:\\n\\n      (a) You must give any other recipients of the Work or\\n          Derivative Works a copy of this License; and\\n\\n      (b) You must cause any modified files to carry prominent notices\\n          stating that You changed the files; and\\n\\n      (c) You must retain, in the Source form of any Derivative Works\\n          that You distribute, all copyright, patent, trademark, and\\n          attribution notices from the Source form of the Work,\\n          excluding those notices that do not pertain to any part of\\n          the Derivative Works; and\\n\\n      (d) If the Work includes a \"NOTICE\" text file as part of its\\n          distribution, then any Derivative Works that You distribute must\\n          include a readable copy of the attribution notices contained\\n          within such NOTICE file, excluding those notices that do not\\n          pertain to any part of the Derivative Works, in at least one\\n          of the following places: within a NOTICE text file distributed\\n          as part of the Derivative Works; within the Source form or\\n          documentation, if provided along with the Derivative Works; or,\\n          within a display generated by the Derivative Works, if and\\n          wherever such third-party notices normally appear. The contents\\n          of the NOTICE file are for informational purposes only and\\n          do not modify the License. You may add Your own attribution\\n          notices within Derivative Works that You distribute, alongside\\n          or as an addendum to the NOTICE text from the Work, provided\\n          that such additional attribution notices cannot be construed\\n          as modifying the License.\\n\\n      You may add Your own copyright statement to Your modifications and\\n      may provide additional or different license terms and conditions\\n      for use, reproduction, or distribution of Your modifications, or\\n      for any such Derivative Works as a whole, provided Your use,\\n      reproduction, and distribution of the Work otherwise complies with\\n      the conditions stated in this License.\\n\\n   5. Submission of Contributions. Unless You explicitly state otherwise,\\n      any Contribution intentionally submitted for inclusion in the Work\\n      by You to the Licensor shall be under the terms and conditions of\\n      this License, without any additional terms or conditions.\\n      Notwithstanding the above, nothing herein shall supersede or modify\\n      the terms of any separate license agreement you may have executed\\n      with Licensor regarding such Contributions.\\n\\n   6. Trademarks. This License does not grant permission to use the trade\\n      names, trademarks, service marks, or product names of the Licensor,\\n      except as required for reasonable and customary use in describing the\\n      origin of the Work and reproducing the content of the NOTICE file.\\n\\n   7. Disclaimer of Warranty. Unless required by applicable law or\\n      agreed to in writing, Licensor provides the Work (and each\\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\\n      implied, including, without limitation, any warranties or conditions\\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\\n      PARTICULAR PURPOSE. You are solely responsible for determining the\\n      appropriateness of using or redistributing the Work and assume any\\n      risks associated with Your exercise of permissions under this License.\\n\\n   8. Limitation of Liability. In no event and under no legal theory,\\n      whether in tort (including negligence), contract, or otherwise,\\n      unless required by applicable law (such as deliberate and grossly\\n      negligent acts) or agreed to in writing, shall any Contributor be\\n      liable to You for damages, including any direct, indirect, special,\\n      incidental, or consequential damages of any character arising as a\\n      result of this License or out of the use or inability to use the\\n      Work (including but not limited to damages for loss of goodwill,\\n      work stoppage, computer failure or malfunction, or any and all\\n      other commercial damages or losses), even if such Contributor\\n      has been advised of the possibility of such damages.\\n\\n   9. Accepting Warranty or Additional Liability. While redistributing\\n      the Work or Derivative Works thereof, You may choose to offer,\\n      and charge a fee for, acceptance of support, warranty, indemnity,\\n      or other liability obligations and/or rights consistent with this\\n      License. However, in accepting such obligations, You may act only\\n      on Your own behalf and on Your sole responsibility, not on behalf\\n      of any other Contributor, and only if You agree to indemnify,\\n      defend, and hold each Contributor harmless for any liability\\n      incurred by, or claims asserted against, such Contributor by reason\\n      of your accepting any such warranty or additional liability.\\n\\n- - - - - - - - - - - - - - - - - - - - - - - \\n\\n  (c) Copyright 2003, Plugged In Software \\n\\n  All rights reserved.\\n\\n Redistribution and use in source and binary forms, with or without\\n modification, are permitted provided that the following conditions\\n are met:\\n 1. Redistributions of source code must retain the above copyright\\n    notice, this list of conditions and the following disclaimer.\\n 2. Redistributions in binary form must reproduce the above copyright\\n    notice, this list of conditions and the following disclaimer in the\\n    documentation and/or other materials provided with the distribution.\\n 3. The name of the author may not be used to endorse or promote products\\n    derived from this software without specific prior written permission.\\n\\n THIS SOFTWARE IS PROVIDED BY THE AUTHOR AS IS\\'\\' AND ANY EXPRESS OR\\n IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\\n OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\\n IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,\\n INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\\n NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\\n DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\\n THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\\n (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\\n THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\\n\\n- - - - - - - - - - - - - - - - - - - - - - - \\n\\nhttp://www.slf4j.org/license.html\\n\\n Copyright (c) 2004-2011 QOS.ch\\n All rights reserved.\\n\\n Permission is hereby granted, free  of charge, to any person obtaining\\n a  copy  of this  software  and  associated  documentation files  (the\\n \"Software\"), to  deal in  the Software without  restriction, including\\n without limitation  the rights to  use, copy, modify,  merge, publish,\\n distribute,  sublicense, and/or sell  copies of  the Software,  and to\\n permit persons to whom the Software  is furnished to do so, subject to\\n the following conditions:\\n \\n The  above  copyright  notice  and  this permission  notice  shall  be\\n included in all copies or substantial portions of the Software.\\n \\n THE  SOFTWARE IS  PROVIDED  \"AS  IS\", WITHOUT  WARRANTY  OF ANY  KIND,\\n EXPRESS OR  IMPLIED, INCLUDING  BUT NOT LIMITED  TO THE  WARRANTIES OF\\n MERCHANTABILITY,    FITNESS    FOR    A   PARTICULAR    PURPOSE    AND\\n NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\\n LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\\n OF CONTRACT, TORT OR OTHERWISE,  ARISING FROM, OUT OF OR IN CONNECTION\\n WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n\\n- - - - - - - - - - - - - - - - - - - - - - - \\n\\nJakarta JSON Processing (JSON-P)\\nhttps://eclipse-ee4j.github.io/jsonp/\\n\\nis licensed under the Eclipse Public License 2.0.\\nhttp://www.eclipse.org/legal/epl-2.0\\n\\norg.glassfish:jakarta.json\\nis licensed under the Eclipse Public License 2.0.\\nhttp://www.eclipse.org/legal/epl-2.0\\n\\n==============================================================\\n Jetty Web Container\\n Copyright 1995-2012 Mort Bay Consulting Pty Ltd.\\n==============================================================\\n\\nThe Jetty Web Container is Copyright Mort Bay Consulting Pty Ltd\\nunless otherwise noted.\\n\\nJetty is dual licensed under both\\n\\n  * The Apache 2.0 License\\n    http://www.apache.org/licenses/LICENSE-2.0.html\\n\\n      and\\n\\n  * The Eclipse Public 1.0 License\\n    http://www.eclipse.org/legal/epl-v10.html\\n\\nJetty may be distributed under either license.\\n\\nThe javax.servlet package used was sourced from the Apache\\nSoftware Foundation and is distributed under the apache 2.0\\nlicense.\\n\\nThe UnixCrypt.java code implements the one way cryptography used by\\nUnix systems for simple password protection.  Copyright 1996 Aki Yoshida,\\nmodified April 2001  by Iris Van den Broeke, Daniel Deville.\\nPermission to use, copy, modify and distribute UnixCrypt\\nfor non-commercial or commercial purposes and without fee is\\ngranted provided that the copyright notice appears in all copies.\\n\\n- - - - - - - - - - - - - - - - - - - - - - - \\n\\nThis product bundles \"Bootstrap\", which is available under an\\nMIT license.  See: https://github.com/twbs/bootstrap/blob/master/LICENSE\\n\\nThis product bundles \"codemirror\", which is available under an\\nMIT license.  See http://codemirror.net/LICENSE\\n\\nThis product bundles \"jquery\", which is available under an\\nMIT license.  See https://jquery.org/license/\\n\\nThis product bundles \"jquery.form\", which is available under an\\nMIT license.  See http://malsup.github.io/mit-license.txt\\n\\nThis product bundles \"jquery.xdomainrequest\", which is available under an\\nMIT license.  See https://github.com/MoonScript/jQuery-ajaxTransport-XDomainRequest/blob/master/LICENSE.txt\\n\\nThis product bundles \"backbone.js\", which is available under an\\nMIT license.  See https://github.com/jashkenas/backbone/blob/master/LICENSE\\n\\nThis product bundles \"backbone.marionette\", which is available under an\\nMIT license. See http://mutedsolutions.mit-license.org/\\n   \"backbone.marionette\" includes \"Backbone.BabySitter\" and \\n   \"Backbone.Wreqr\" also available under the same MIT license.\\n\\nThis product bundles \"html5shiv\", which is available under an\\nMIT license.  See https://code.google.com/p/html5shiv/\\n\\nThis product bundles \"RequireJS\", which is available under an\\nMIT license. \\nhttps://github.com/jrburke/requirejs/blob/master/LICENSE\\n  \"RequireJS\" is also available with a \"30clause BSD license\"\\n\\nThis product bundles \"Respond\", which is available under an\\nMIT license. See https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT\\n\\nThis product bundles \"sprintf.js\", which is available under a\\n\"3 clause BSD\" license. \\n  https://github.com/alexei/sprintf.js/blob/master/LICENSE\\n\\nThis product bundles \"underscore\", which is available under an\\nMIT license.  See https://github.com/jashkenas/underscore/blob/master/LICENSE\\n\\nThis product bundles \"FontAwesome\"\\n  \"Font Awesome by Dave Gandy - http://fontawesome.io\"\\nThe font is available under an  SIL Open Font License 1.1\\nand the CSS files under an MIT License.\\nSee http://fontawesome.io/license/\\n\\nThis product bundles \"jQuery File Upload Plugin\" \\nwhich is available under an MIT License.\\nSee https://github.com/blueimp/jQuery-File-Upload\\n\\nThis product bundles \"Bootstrap-select\"\\nwhich is available under an MIT License.\\nSee https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE\\n\\nThis product bundles \"pivot.js\"\\nwhich is available under a BSD 3-clause style license.\\nhttps://github.com/rwjblue/pivot.js/blob/master/LICENSE\\n\\nThis product bundles \"YASEQE - Yet Another Sparql Query Editor\"\\nwhich is available under an MIT License.\\nSee http://yasqe.yasgui.org/license.txt\\n\\nThis product bundles \"YASR - Yet Another Sparql Resultset GUI\"\\nwhich is available under an MIT License.\\nSee http://yasr.yasgui.org/license.txt\\n\\n- - - - - - - - - - - - - - - - - - - - - - - \\n\\nFrom Apache Lucene:\\n\\nSome code in core/src/java/org/apache/lucene/util/UnicodeUtil.java was\\nderived from unicode conversion examples available at\\nhttp://www.unicode.org/Public/PROGRAMS/CVTUTF.  Here is the copyright\\nfrom those sources:\\n\\n/*\\n * Copyright 2001-2004 Unicode, Inc.\\n * \\n * Disclaimer\\n * \\n * This source code is provided as is by Unicode, Inc. No claims are\\n * made as to fitness for any particular purpose. No warranties of any\\n * kind are expressed or implied. The recipient agrees to determine\\n * applicability of information provided. If this file has been\\n * purchased on magnetic or optical media from Unicode, Inc., the\\n * sole remedy for any claim will be exchange of defective media\\n * within 90 days of receipt.\\n * \\n * Limitations on Rights to Redistribute This Code\\n * \\n * Unicode, Inc. hereby grants the right to freely use the information\\n * supplied in this file in the creation of products supporting the\\n * Unicode Standard, and to make copies of this file in any form\\n * for internal or external distribution as long as this notice\\n * remains attached.\\n */\\n\\n\\nSome code in core/src/java/org/apache/lucene/util/ArrayUtil.java was\\nderived from Python 2.4.2 sources available at\\nhttp://www.python.org. Full license is here:\\n\\n  http://www.python.org/download/releases/2.4.2/license/\\n\\nSome code in core/src/java/org/apache/lucene/util/UnicodeUtil.java was\\nderived from Python 3.1.2 sources available at\\nhttp://www.python.org. Full license is here:\\n\\n  http://www.python.org/download/releases/3.1.2/license/\\n\\nSome code in core/src/java/org/apache/lucene/util/automaton was\\nderived from Brics automaton sources available at\\nwww.brics.dk/automaton/. Here is the copyright from those sources:\\n\\n/*\\n * Copyright (c) 2001-2009 Anders Moeller\\n * All rights reserved.\\n * \\n * Redistribution and use in source and binary forms, with or without\\n * modification, are permitted provided that the following conditions\\n * are met:\\n * 1. Redistributions of source code must retain the above copyright\\n *    notice, this list of conditions and the following disclaimer.\\n * 2. Redistributions in binary form must reproduce the above copyright\\n *    notice, this list of conditions and the following disclaimer in the\\n *    documentation and/or other materials provided with the distribution.\\n * 3. The name of the author may not be used to endorse or promote products\\n *    derived from this software without specific prior written permission.\\n * \\n * THIS SOFTWARE IS PROVIDED BY THE AUTHORAS IS\\'\\' AND ANY EXPRESS OR\\n * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\\n * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\\n * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,\\n * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\\n * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\\n * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\\n * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\\n * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\\n * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\\n /\\n \\nThe levenshtein automata tables in core/src/java/org/apache/lucene/util/automaton \\nwere automatically generated with the moman/finenight FSA package.\\nHere is the copyright for those sources:\\n\\n# Copyright (c) 2010, Jean-Philippe Barrette-LaPierre, &#106;&#112;&#98;&#64;&#114;&#114;&#101;&#116;&#116;&#101;&#46;&#99;&#111;&#109;\\n#\\n# Permission is hereby granted, free of charge, to any person\\n# obtaining a copy of this software and associated documentation\\n# files (the \"Software\"), to deal in the Software without\\n# restriction, including without limitation the rights to use,\\n# copy, modify, merge, publish, distribute, sublicense, and/or sell\\n# copies of the Software, and to permit persons to whom the\\n# Software is furnished to do so, subject to the following\\n# conditions:\\n#\\n# The above copyright notice and this permission notice shall be\\n# included in all copies or substantial portions of the Software.\\n#\\n# THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\\n# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\\n# OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\\n# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\\n# HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\\n# WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\\n# OTHER DEALINGS IN THE SOFTWARE.\\n\\nSome code in core/src/java/org/apache/lucene/util/UnicodeUtil.java was\\nderived from ICU (http://www.icu-project.org)\\nThe full license is available here: \\n  http://source.icu-project.org/repos/icu/icu/trunk/license.html\\n\\n/\\n * Copyright (C) 1999-2010, International Business Machines\\n * Corporation and others.  All Rights Reserved.\\n \\n * Permission is hereby granted, free of charge, to any person obtaining a copy \\n * of this software and associated documentation files (the \"Software\"), to deal\\n * in the Software without restriction, including without limitation the rights \\n * to use, copy, modify, merge, publish, distribute, and/or sell copies of the \\n * Software, and to permit persons to whom the Software is furnished to do so, \\n * provided that the above copyright notice(s) and this permission notice appear \\n * in all copies of the Software and that both the above copyright notice(s) and\\n * this permission notice appear in supporting documentation.\\n * \\n * THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \\n * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \\n * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. \\n * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE \\n * LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR \\n * ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER \\n * IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT \\n * OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\\n \\n * Except as contained in this notice, the name of a copyright holder shall not \\n * be used in advertising or otherwise to promote the sale, use or other \\n * dealings in this Software without prior written authorization of the \\n * copyright holder.\\n */\\n \\nThe following license applies to the Snowball stemmers:\\n\\nCopyright (c) 2001, Dr Martin Porter\\nCopyright (c) 2002, Richard Boulton\\nAll rights reserved.\\n\\nRedistribution and use in source and binary forms, with or without\\nmodification, are permitted provided that the following conditions are met:\\n\\n    * Redistributions of source code must retain the above copyright notice,\\n    * this list of conditions and the following disclaimer.\\n    * Redistributions in binary form must reproduce the above copyright\\n    * notice, this list of conditions and the following disclaimer in the\\n    * documentation and/or other materials provided with the distribution.\\n    * Neither the name of the copyright holders nor the names of its contributors\\n    * may be used to endorse or promote products derived from this software\\n    * without specific prior written permission.\\n\\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE\\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\\n\\nThe following license applies to the KStemmer:\\n\\nCopyright \\xc2\\xa9 2003,\\nCenter for Intelligent Information Retrieval,\\nUniversity of Massachusetts, Amherst.\\nAll rights reserved.\\n\\nRedistribution and use in source and binary forms, with or without modification,\\nare permitted provided that the following conditions are met:\\n\\n1. Redistributions of source code must retain the above copyright notice, this\\nlist of conditions and the following disclaimer.\\n\\n2. Redistributions in binary form must reproduce the above copyright notice,\\nthis list of conditions and the following disclaimer in the documentation\\nand/or other materials provided with the distribution.\\n\\n3. The names \"Center for Intelligent Information Retrieval\" and\\n\"University of Massachusetts\" must not be used to endorse or promote products\\nderived from this software without prior written permission. To obtain\\npermission, contact info@ciir.cs.umass.edu.\\n\\nTHIS SOFTWARE IS PROVIDED BY UNIVERSITY OF MASSACHUSETTS AND OTHER CONTRIBUTORS\\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE\\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\\nSUCH DAMAGE.\\n\\nThe following license applies to the Morfologik project:\\n\\nCopyright (c) 2006 Dawid Weiss\\nCopyright (c) 2007-2011 Dawid Weiss, Marcin Mi\\xc5\\x82kowski\\nAll rights reserved.\\n\\nRedistribution and use in source and binary forms, with or without modification, \\nare permitted provided that the following conditions are met:\\n\\n    * Redistributions of source code must retain the above copyright notice, \\n    this list of conditions and the following disclaimer.\\n    \\n    * Redistributions in binary form must reproduce the above copyright notice, \\n    this list of conditions and the following disclaimer in the documentation \\n    and/or other materials provided with the distribution.\\n    \\n    * Neither the name of Morfologik nor the names of its contributors \\n    may be used to endorse or promote products derived from this software \\n    without specific prior written permission.\\n\\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND \\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR \\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; \\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON \\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS \\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\\n\\n---\\n\\nThe dictionary comes from Morfologik project. Morfologik uses data from \\nPolish ispell/myspell dictionary hosted at http://www.sjp.pl/slownik/en/ and \\nis licenced on the terms of (inter alia) LGPL and Creative Commons \\nShareAlike. The part-of-speech tags were added in Morfologik project and\\nare not found in the data from sjp.pl. The tagset is similar to IPI PAN\\ntagset.\\n\\n---\\n\\nThe following license applies to the Morfeusz project,\\nused by org.apache.lucene.analysis.morfologik.\\n\\nBSD-licensed dictionary of Polish (SGJP)\\nhttp://sgjp.pl/morfeusz/\\n\\nCopyright \\xc2\\xa9 2011 Zygmunt Saloni, W\\xc5\\x82odzimierz Gruszczy\\xc5\\x84ski, \\n\\t    \\t Marcin Woli\\xc5\\x84ski, Robert Wo\\xc5\\x82osz\\n\\nAll rights reserved.\\n\\nRedistribution and  use in  source and binary  forms, with  or without\\nmodification, are permitted provided that the following conditions are\\nmet:\\n\\n1. Redistributions of source code must retain the above copyright\\n   notice, this list of conditions and the following disclaimer.\\n\\n2. Redistributions in binary form must reproduce the above copyright\\n   notice, this list of conditions and the following disclaimer in the\\n   documentation and/or other materials provided with the\\n   distribution.\\n\\nTHIS SOFTWARE IS PROVIDED BY COPYRIGHT HOLDERS \\xe2\\x80\\x9cAS IS\\xe2\\x80\\x9d AND ANY EXPRESS\\nOR  IMPLIED WARRANTIES,  INCLUDING, BUT  NOT LIMITED  TO,  THE IMPLIED\\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\\nDISCLAIMED.  IN NO EVENT  SHALL COPYRIGHT  HOLDERS OR  CONTRIBUTORS BE\\nLIABLE FOR  ANY DIRECT,  INDIRECT, INCIDENTAL, SPECIAL,  EXEMPLARY, OR\\nCONSEQUENTIAL DAMAGES  (INCLUDING, BUT NOT LIMITED  TO, PROCUREMENT OF\\nSUBSTITUTE  GOODS OR  SERVICES;  LOSS  OF USE,  DATA,  OR PROFITS;  OR\\nBUSINESS INTERRUPTION) HOWEVER CAUSED  AND ON ANY THEORY OF LIABILITY,\\nWHETHER IN  CONTRACT, STRICT LIABILITY, OR  TORT (INCLUDING NEGLIGENCE\\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN\\nIF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\\n\\n---\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/wot-hive/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/wot-hive/main/docker/auroral-hive/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/wot-hive/main/docker/fuseki/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/wot-hive/main/docker/auroral-hive/build%26publish.sh",
+            "https://raw.githubusercontent.com/oeg-upm/wot-hive/main/docker/fuseki/build%26publish.sh",
+            "https://raw.githubusercontent.com/oeg-upm/wot-hive/main/docker/fuseki/webapp/js/lib/refresh.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v0.2.2",
+                "name": "WoT Hive",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This is a release of the WoT Hive directory. This implementation is compliant with the future [WoT discovery standard](https://www.w3.org/TR/wot-discovery/). The current implementation status is:\r\n\r\nCHANGELOG:\r\n* Fixed deletion of Thing Descriptions\r\n* Enabled Json Path\r\n______ \r\n\r\nThe service can be run executing `java -jar wothive-0.2.2.jar`, the service will run in an embedded Jetty server.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/tarball/v0.2.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/zipball/v0.2.2",
+                "htmlUrl": "https://github.com/oeg-upm/wot-hive/releases/tag/v0.2.2",
+                "url": "https://api.github.com/repos/oeg-upm/wot-hive/releases/57991125",
+                "dateCreated": "2022-01-25T15:56:14Z",
+                "datePublished": "2022-01-26T08:58:03Z"
+            },
+            {
+                "tagName": "v0.2.1",
+                "name": "WoT Hive",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This is the first official release of the WoT Hive directory. This implementation is compliant with the future WoT discovery standard. The current implementation status is:\r\n\r\nCHANGELOG:\r\n* Added functionalities required to connect with triple stores with authentication\r\n* Added functionalities to fix #17 #19 #20 \r\n______ \r\n\r\nThe service can be run executing `java -jar wothive-0.2.1.jar`, the service will run in an embedded Jetty server.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/tarball/v0.2.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/zipball/v0.2.1",
+                "htmlUrl": "https://github.com/oeg-upm/wot-hive/releases/tag/v0.2.1",
+                "url": "https://api.github.com/repos/oeg-upm/wot-hive/releases/57593953",
+                "dateCreated": "2022-01-20T16:48:35Z",
+                "datePublished": "2022-01-20T16:55:45Z"
+            },
+            {
+                "tagName": "v0.2.0",
+                "name": "WoT Hive",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This is the first official release of the WoT Hive directory. This implementation is compliant with the future WoT discovery standard. The current implementation status is:\r\n\r\nCHANGELOG:\r\n* Interaction of the directory with the triple store based on jena\r\n* Things translation handle by jena\r\n* Temporally disabled the injection of registration information\r\n______ \r\n\r\n* Introduction Mechanisms with well-known URIs\r\n* Directory Service API\r\n    * Registration (100%)\r\n    * Management (100%)\r\n    * Notification (100%)\r\n    * Search (100%)\r\n         - Not supported optional search based on XMLPath\r\n\r\nThe service can be run executing `java -jar wothive-0.2.0.jar`, the service will run in an embedded Jetty server.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/tarball/v0.2.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/zipball/v0.2.0",
+                "htmlUrl": "https://github.com/oeg-upm/wot-hive/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/oeg-upm/wot-hive/releases/57485626",
+                "dateCreated": "2022-01-19T16:27:25Z",
+                "datePublished": "2022-01-19T16:52:20Z"
+            },
+            {
+                "tagName": "v0.1.8",
+                "name": "WoT Hive",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This is the first official release of the WoT Hive directory. This implementation is compliant with the future WoT discovery standard. The current implementation status is:\r\n\r\nCHANGELOG:\r\n* Added query flags\r\n*  Improved interaction of the directory with the triple store for storing TDs\r\n______ \r\n\r\n* Introduction Mechanisms with well-known URIs\r\n* Directory Service API\r\n    * Registration (100%)\r\n    * Management (100%)\r\n    * Notification (100%)\r\n    * Search (100%)\r\n         - Not supported optional search based on XMLPath\r\n\r\nThe service can be run executing `java -jar wothive-0.1.8.jar`, the service will run in an embedded Jetty server.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/tarball/v0.1.8",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/zipball/v0.1.8",
+                "htmlUrl": "https://github.com/oeg-upm/wot-hive/releases/tag/v0.1.8",
+                "url": "https://api.github.com/repos/oeg-upm/wot-hive/releases/55470254",
+                "dateCreated": "2021-12-16T16:26:02Z",
+                "datePublished": "2021-12-16T16:33:50Z"
+            },
+            {
+                "tagName": "V0.1.7",
+                "name": "WoT Hive",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This is the first official release of the WoT Hive directory. This implementation is compliant with the future WoT discovery standard. The current implementation status is:\r\n\r\nCHANGELOG:\r\n* Bug registering uuid without prefix solved, nevertheless some triple stores like GraphDB or RDF4J do not support this kind of identifiers \r\n______ \r\n\r\n* Introduction Mechanisms with well-known URIs\r\n* Directory Service API\r\n    * Registration (98%)\r\n         - The core implementation is done, remains implementing sorting and ordering in listings\r\n    * Management (100%)\r\n    * Notification (100%)\r\n    * Search (100%)\r\n         - Not supported optional search based on XMLPath\r\n\r\nThe service can be run executing `java -jar wothive-0.1.4.jar`, the service will run in an embedded Jetty server.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/tarball/V0.1.7",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/zipball/V0.1.7",
+                "htmlUrl": "https://github.com/oeg-upm/wot-hive/releases/tag/V0.1.7",
+                "url": "https://api.github.com/repos/oeg-upm/wot-hive/releases/50729180",
+                "dateCreated": "2021-10-07T18:25:36Z",
+                "datePublished": "2021-10-04T10:01:31Z"
+            },
+            {
+                "tagName": "V0.1.3",
+                "name": "WoT Hive",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This is the first official release of the WoT Hive directory. This implementation is compliant with the future WoT discovery standard. The current implementation status is:\r\n\r\n* Introduction Mechanisms with well-known URIs\r\n* Directory Service API\r\n   * Registration (98%)\r\n          - The core implementation is done, remains implementing sorting and ordering in listings\r\n    * Management (100%)\r\n    * Notification (100%)\r\n    * Search (100%)\r\n          - Not supported optional search based on XMLPath\r\n\r\nThe service can be run executing `java -jar wothive-0.1.3.jar`, the service will run in an embedded Jetty server.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/tarball/V0.1.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/zipball/V0.1.3",
+                "htmlUrl": "https://github.com/oeg-upm/wot-hive/releases/tag/V0.1.3",
+                "url": "https://api.github.com/repos/oeg-upm/wot-hive/releases/49990090",
+                "dateCreated": "2021-09-21T13:38:21Z",
+                "datePublished": "2021-09-21T14:33:05Z"
+            },
+            {
+                "tagName": "V0.1.1",
+                "name": "WoT Hive",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This is the first official release of the WoT Hive directory. This implementation is compliant with the future WoT discovery standard. The current implementation status is:\r\n\r\n* Introduction Mechanisms (Optional, 0%)\r\n* Directory Service API\r\n   * Registration (98%)\r\n      * The core implementation is done, remains implementing sorting and ordering in listings\r\n   * Management (100%)\r\n   * Notification (100%)\r\n   * Search (100%)\r\n      * Not supported optional search based on XMLPath\r\n\r\nThe service can be run executing the script run.sh as follows\r\n\r\n> bash rush.sh\r\n\r\nThe service will run in an embedded Jetty server.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/tarball/V0.1.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/zipball/V0.1.1",
+                "htmlUrl": "https://github.com/oeg-upm/wot-hive/releases/tag/V0.1.1",
+                "url": "https://api.github.com/repos/oeg-upm/wot-hive/releases/49734614",
+                "dateCreated": "2021-09-16T16:49:29Z",
+                "datePublished": "2021-09-17T09:32:05Z"
+            },
+            {
+                "tagName": "V0.1.0",
+                "name": "WoT Hive",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This is the first official release of the WoT Hive directory. This implementation is compliant with the future [WoT discovery standard](https://www.w3.org/TR/wot-discovery/). The current implementation status is:\r\n\r\n* Introduction Mechanisms (Optional, 0%)\r\n* Directory Service API\r\n  * Registration (98%) \r\n     *  *The core implementation is done, remains implementing sorting and ordering in listings*\r\n  * Management (100%)\r\n  * Notification (60%)\r\n      * *Still under development*\r\n  * Search (100%) \r\n     * *Not supported optional search based on XMLPath* \r\n     \r\nThe service can be run executing the script *run.sh* as follows\r\n\r\n>bash rush.sh\r\n\r\nThe service will run in an embedded Jetty server.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/tarball/V0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/wot-hive/zipball/V0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/wot-hive/releases/tag/V0.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/wot-hive/releases/49544142",
+                "dateCreated": "2021-08-23T10:49:31Z",
+                "datePublished": "2021-09-14T17:48:21Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

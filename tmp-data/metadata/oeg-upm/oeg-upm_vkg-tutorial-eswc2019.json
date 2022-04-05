@@ -1,0 +1,183 @@
+{
+    "description": [
+        {
+            "excerpt": "Despite the emergence of RDF knowledge bases, exposed via SPARQL endpoints or as Linked Data, formats like CSV, JSON or XML are still the most used for exposing data on the web. Some solutions have been proposed to describe and integrate these resources using mapping languages (e.g. RML, CSVW, kR2RML, etc) and many of those are equipped with associated RDF generators (e.g. RML-Mapper, CSVW generator, Karma, etc).that they can not manage efficiently the data when is volatile (they can retrieve not updated data) and the performance along the integration process is a key factor (rapid answers over the data) As these solutions generate materialized RDF, they cannot efficiently deal with volatile data or provide a SPARQL entry point directly to the data sources. In this tutorial, we explain how to use a suite of tools to manage and exploitdata in heterogeneous formats (CSV, RDB, JSON or REST API) without the need to materialize theresulting RDF in a triple store. First, we present TADA, a tool for automatically annotating CSV files using existing Knowledge Graphs. Second, we present HELIO, a Linked Data publisher that provides a unified access in real-time to multiple heterogeneous data sources. Finally, we present an OBDA approach to exploit CSV published on the Web providing access via SPARQL or GraphQL \n",
+            "confidence": [
+                [
+                    0.9955476567711152
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Generating and querying (Virtual) Knowledge Graphs from heterogeneous data sources",
+            "parentHeader": "VKG2019"
+        },
+        {
+            "excerpt": "Material for VKG2019 tutorial at ESWC2019",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "VKG2019",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/vkg-tutorial-eswc2019",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2019-04-26T08:50:18Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-06-12T00:52:42Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "MIT License",
+            "url": "https://api.github.com/licenses/mit"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "vkg-tutorial-eswc2019",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/vkg-tutorial-eswc2019",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/vkg-tutorial-eswc2019/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/vkg-tutorial-eswc2019/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/vkg-tutorial-eswc2019/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "graphql",
+            "heterogeneous-data-integration",
+            "knowledge-graph",
+            "mappings",
+            "obda",
+            "semantic-annotation"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Tue, 05 Apr 2022 09:33:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:33:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'MIT License\\n\\nCopyright (c) 2019 Ontology Engineering Group (UPM)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \"Software\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/vkg-tutorial-eswc2019/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/Helio/decompress.sh",
+            "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/Helio/stars4all/run.sh",
+            "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/Helio/taxons/run.sh",
+            "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/morph-csv/run-scripts/cities-batch.sh",
+            "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/morph-csv/run-scripts/bio2rdf-queries.sh",
+            "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/morph-csv/run-scripts/bio2rdf-batch.sh",
+            "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/morph-csv/run-scripts/cities-queries.sh",
+            "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/morph-csv/run-scripts/simple-queries.sh",
+            "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/morph-csv/run-scripts/simple-batch.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}
