@@ -34,7 +34,7 @@ class metadata(object):
             return f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">'
         elif repo_type in ['package','library','service','script']:
             return f'<div class="grey-color-svg" style="display:flex;" {self.add_tooltip("left",f"Python {repo_type}")}><img src="{self.base}language_icons/python.svg" alt="repo-type" class="repo-type"></div>'
-            
+        else: return ''
 
     def icon_star(self):
         return f"{self.base}repo_icons/star.png"
