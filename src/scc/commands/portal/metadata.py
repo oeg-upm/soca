@@ -467,7 +467,7 @@ class metadata(object):
             if not description:
                 description = 'No description available yet.'
 
-        return mistune.html(description)
+        return f'<span>{mistune.html(description)}</span>'
 
     def license(self):
         return safe_dic(safe_dic(self.md,'license'),'excerpt')
