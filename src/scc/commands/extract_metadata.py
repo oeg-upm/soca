@@ -46,6 +46,7 @@ def fetch(repos_csv, output, use_inspect4py):
                 shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
                 metadata["inspect4py"] = {}
                 metadata["inspect4py"]["software_type"] = ins4py["software_type"]
+                metadata["inspect4py"]["run"] = ins4py["software_invocation"][0]["run"]
             except:
                 shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
                 print(f"ERROR: Could not run inspect4py for {repo_url}")

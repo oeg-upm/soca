@@ -342,7 +342,14 @@ class metadata(object):
         return 'web' if is_web else None
          
     def usage(self):
-        return safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
+        usage = safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
+        run_list = safe_dic(safe_dic(self.md,'inspect4py'),'run')
+        if run_list:
+            run = '\n'.join([ f'* {x}' for x in run_list])
+            run_md = '### How to run it  \n' + run
+        else: run_md = ''
+
+        return usage + run_md if usage or run_md else None
 
     def help(self):
         support = safe_dic(safe_list(safe_dic(self.md,'support'),0),'excerpt')
