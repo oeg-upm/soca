@@ -38,7 +38,7 @@ def generate(repo_metadata_dir, output):
         owner_filter = soup.find(id='owner-filter')
         l = '\n'.join([ f'<option value="{owner}">{owner}</option>' for owner in owners ])
         html_parsed = BeautifulSoup(f"""
-        <div data-toggle="tooltip" data-placement="bottom" title="Filter by User/Organization"><img src="img/owner.svg" class="sort-filter-icon grey-color-svg"/></div>
+        <div data-toggle="tooltip" data-placement="bottom" title="Filter by User/Organization"><img src="repo_icons/owner.svg" class="sort-filter-icon grey-color-svg"/></div>
 			<select id="owner" class="owner-dropdown">
 				<option value="all">All</option>
                 {l}
