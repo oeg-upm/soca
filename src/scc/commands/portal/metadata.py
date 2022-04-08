@@ -363,7 +363,7 @@ class metadata(object):
         return support_md + faq_md + supportChannels_md if support or faq or supportChannels else None
 
     def recently_updated(self):
-        #TODO: Retreive days_theshold from properties file
+        #TODO: Retreive days_threshold from properties file
         hex_states = [
             {'hex': '#6da862', 'days_threshold': 30},
             {'hex': '#a88d62', 'days_threshold': 90},
