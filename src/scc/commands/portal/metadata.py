@@ -499,6 +499,9 @@ class metadata(object):
     
     def url_stars(self):
         return self.repo_url()+'/stargazers'
+
+    def owner(self):
+        return safe_dic(safe_dic(self.md,'owner'),'excerpt')
     
 # Aux ##########################################################
 

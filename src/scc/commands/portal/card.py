@@ -43,7 +43,8 @@ def cards_data_dump(repo_metadata_dir):
                     'acknowledgement': md.acknowledgement() is not None,
                     'downloadUrl': md.downloadUrl() is not None,
                     'isOntology': md.repo_type() == 'ontology',
-                    'isWeb': md.repo_type() == 'web'
+                    'isWeb': md.repo_type() == 'web',
+                    'owner': md.owner()
                 })
     print('-'*80)
 

@@ -41,6 +41,7 @@ const last_updated = document.getElementById('last_updated');
 
 const pagination = document.getElementById('pagination');
 
+const owner = document.getElementById("owner");
 
 // Listeners
 searchBar.addEventListener('keyup', () => { current_page = 1; search(); })
@@ -225,6 +226,15 @@ last_updated.addEventListener('click', () => {
     search(); 
 }); 
 
+document.addEventListener('input', function (event) {
+
+    // Only run on our select menu
+    if (event.target.id !== 'owner') return;
+    current_page = 1;
+    search();
+
+}, false);
+
 // States
 let state_acknowledgement = false;
 let state_citation = false;
@@ -270,7 +280,12 @@ function search() {
                 && ((state_requirements)? card.requirement : true)
                 && ((state_usage)? card.usage : true)
                 && ((state_help)? card.help : true)
-                && ((state_installation)? card.installation : true));
+                && ((state_installation)? card.installation : true)
+                )
+            &&
+                (
+                    owner == undefined || card.owner == owner.value || 'all' == owner.value
+                );
     });
 
     // Order by
