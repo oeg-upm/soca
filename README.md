@@ -13,7 +13,7 @@ Command used:
 
 ```text
 scc fetch -i oeg-upm --org -o oeg-upm_repos.csv &&
-scc extract -i oeg-upm_repos.csv -o oeg-upm_metadata &&
+scc extract -i oeg-upm_repos.csv -o oeg-upm_metadata -i4p &&
 scc portal -i oeg-upm_metadata -o oeg-upm_portal
 ```
 
