@@ -353,7 +353,12 @@ const displayCards = (cards) => {
     // Show only cards in current page
     let start = (current_page-1) * cards_per_page;
     let end = Math.min(current_page * cards_per_page, cards.length - 1);
-    cards_page = cards.slice(start, end);
+    if (cards.length <= cards_per_page) {
+        cards_page = cards;
+    } else {
+        cards_page = cards.slice(start, end);
+    }
+    
 
     const htmlString = cards_page
         .map((card) => {
