@@ -1,0 +1,160 @@
+{
+    "installation": [
+        {
+            "excerpt": "1. ```sudo apt-get install virtuoso-opensource```\n2. BASH2*\n3. copy the below to `/etc/apache2/apache2.conf`\nBASH3*\nThis might be different. See the output of the previous step which will output the configurations with the correct versions \n",
+            "confidence": [
+                [
+                    0.955011310868026
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Post Vagrant (once)"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "ainn-website",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "run": [
+        {
+            "originalHeader": "Run the app (whenever you start the app)",
+            "excerpt": "``` \ncd $HOME/ainn-website/\nsource <(curl -s https://raw.githubusercontent.com/oeg-upm/ainn-website/master/startup.sh)\n```\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Run the app (whenever you start the app)",
+            "excerpt": "``` \ncd $HOME/ainn-website/\nsource <(curl -s https://raw.githubusercontent.com/oeg-upm/ainn-website/master/startup.sh)\n```\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/ainn-website",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2018-07-26T15:34:01Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2019-03-06T16:21:10Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "ainn-website",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/ainn-website",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ainn-website/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ainn-website/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/ainn-website/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 08:45:47 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 08:45:47 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Ruby",
+            "HTML",
+            "Shell",
+            "CSS"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/ainn-website/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/ainn-website/master/startup.sh",
+            "https://raw.githubusercontent.com/oeg-upm/ainn-website/master/bootstrap-sample.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

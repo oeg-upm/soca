@@ -1,0 +1,149 @@
+{
+    "description": [
+        {
+            "excerpt": "TFG Mejora de Sistemas de Documentaci\u00f3n de Ontolog\u00edas y su Publicaci\u00f3n mediante Funcionalidades de Validaci\u00f3n",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "proyectoTFG Adding SHACL shapes and validation functinoality to Widoco HTML",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/ShapesToWidocoHTML",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-06-25T10:26:04Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-06-25T10:27:47Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "ShapesToWidocoHTML",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/ShapesToWidocoHTML",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ShapesToWidocoHTML/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ShapesToWidocoHTML/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/ShapesToWidocoHTML/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:28:06 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:28:06 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python",
+            "HTML",
+            "JavaScript",
+            "CSS",
+            "PowerShell",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'Copyright (c) 2007-2009, Justin Bronn\\nAll rights reserved.\\n\\nRedistribution and use in source and binary forms, with or without modification,\\nare permitted provided that the following conditions are met:\\n\\n    1. Redistributions of source code must retain the above copyright notice,\\n       this list of conditions and the following disclaimer.\\n\\n    2. Redistributions in binary form must reproduce the above copyright\\n       notice, this list of conditions and the following disclaimer in the\\n       documentation and/or other materials provided with the distribution.\\n\\n    3. Neither the name of OGRGeometry nor the names of its contributors may be used\\n       to endorse or promote products derived from this software without\\n       specific prior written permission.\\n\\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR\\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\\n\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/ShapesToWidocoHTML/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "service"
+    }
+}

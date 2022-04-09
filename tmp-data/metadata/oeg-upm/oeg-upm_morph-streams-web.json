@@ -1,0 +1,149 @@
+{
+    "description": [
+        {
+            "excerpt": "morph-web",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "Install it yourself",
+            "excerpt": "You will need:\n* java7\n* sbt: www.scala-sbt.org/\n* play framework: www.playframework.com/\u200e\n\nThen you can:\n\n* download the code\n* start the application: `play run``\n* go to a browser to `localhost:9000``\n* that's it\n",
+            "parentHeader": "morph-streams-web",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "morph-streams-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "usage": [
+        {
+            "originalHeader": "Use cases",
+            "excerpt": "Follow the [tutorial](https://github.com/oeg-upm/morph-streams-web/wiki/Tutorial:-Morph-streams) to learn about:\n* Registering a query\n* Pulling data from a registered query\n* Pushing data with WebSockets\n* Creating R2RML mappings\n",
+            "parentHeader": "morph-streams-web",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/morph-streams-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2014-05-22T21:54:22Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2015-12-28T21:25:30Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "morph-streams-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/morph-streams-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-streams-web/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-streams-web/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/morph-streams-web/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:23:02 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:23:02 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "HTML",
+            "Scala",
+            "JavaScript",
+            "CSS"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/morph-streams-web/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

@@ -1,0 +1,155 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the code and documentation generated for the Sensor Data ontology which is available at:\r\nhttp://bimerr.iot.linkeddata.es/def/sensor-data\r\n\r \n",
+            "confidence": [
+                [
+                    0.985034315773805
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Sensor Data Ontology"
+        },
+        {
+            "excerpt": "BIMERR ontology for sensor data ",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Sensor Data Ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/bimerr-senML/blob/master/diagrams/diagram.jpg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-senML",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2019-12-27T16:04:12Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-10-22T10:27:48Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "bimerr-senML",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/bimerr-senML",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-senML/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-senML/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-senML/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:49:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Tue, 05 Apr 2022 08:49:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-senML/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v0.1.0",
+                "name": "v0.1.0",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-senML/tarball/v0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-senML/zipball/v0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-senML/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-senML/releases/32911596",
+                "dateCreated": "2020-09-21T13:31:16Z",
+                "datePublished": "2020-10-22T11:01:11Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

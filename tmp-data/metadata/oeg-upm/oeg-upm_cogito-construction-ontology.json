@@ -1,0 +1,161 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the code and documentation generated for the COGITO Construction ontology.\n \n",
+            "confidence": [
+                [
+                    0.9843065141482484
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "COGITO Construction ontology"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "COGITO Construction ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/cogito-construction-ontology/blob/main/diagrams/diagram.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/cogito-construction-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-07-13T16:19:00Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-12-17T15:27:13Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "cogito-construction-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/cogito-construction-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-construction-ontology/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-construction-ontology/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/cogito-construction-ontology/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:06 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:06 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/cogito-construction-ontology/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "release_2",
+                "name": "COGITO Construction Ontology 0.0.2",
+                "authorName": "Salva5297",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/cogito-construction-ontology/tarball/release_2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/cogito-construction-ontology/zipball/release_2",
+                "htmlUrl": "https://github.com/oeg-upm/cogito-construction-ontology/releases/tag/release_2",
+                "url": "https://api.github.com/repos/oeg-upm/cogito-construction-ontology/releases/55575487",
+                "dateCreated": "2021-12-17T15:27:11Z",
+                "datePublished": "2021-12-17T21:12:19Z"
+            },
+            {
+                "tagName": "release",
+                "name": "COGITO Construction Ontology 0.0.1",
+                "authorName": "Salva5297",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/cogito-construction-ontology/tarball/release",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/cogito-construction-ontology/zipball/release",
+                "htmlUrl": "https://github.com/oeg-upm/cogito-construction-ontology/releases/tag/release",
+                "url": "https://api.github.com/repos/oeg-upm/cogito-construction-ontology/releases/50481952",
+                "dateCreated": "2021-09-17T10:27:51Z",
+                "datePublished": "2021-09-29T15:03:25Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

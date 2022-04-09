@@ -1,0 +1,168 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the code and documentation generated for the KPI ontology which is available at:\r\nhttp://bimerr.iot.linkeddata.es/def/key-performance-indicator\r\n\r \n",
+            "confidence": [
+                [
+                    0.9902144348764089
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Key Performance Indicator Ontology"
+        },
+        {
+            "excerpt": "BIMERR ontology for KPI data",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Key Performance Indicator Ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/bimerr-kpi/blob/master/diagrams/diagram.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-kpi",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-01-09T10:33:56Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-10-22T10:39:03Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "bimerr-kpi",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/bimerr-kpi",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-kpi/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-kpi/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-kpi/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:48:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Tue, 05 Apr 2022 08:48:04 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-kpi/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v0.1.0",
+                "name": "v0.1.0",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-kpi/tarball/v0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-kpi/zipball/v0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-kpi/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-kpi/releases/32911367",
+                "dateCreated": "2020-10-22T10:53:57Z",
+                "datePublished": "2020-10-22T10:55:01Z"
+            },
+            {
+                "tagName": "0.0.3",
+                "name": "",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-kpi/tarball/0.0.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-kpi/zipball/0.0.3",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-kpi/releases/tag/0.0.3",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-kpi/releases/28028594",
+                "dateCreated": "2020-06-29T14:04:58Z",
+                "datePublished": "2020-06-29T15:18:21Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

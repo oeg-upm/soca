@@ -1,0 +1,455 @@
+{
+    "description": [
+        {
+            "excerpt": "**agora-py** is a Python library that supports *Web-scale Ontology-driven Access to Distributed Linked Data*. \nCurrently, there is a huge number of *dereferenciable* Linked Data resources that are not being properly consumed neither explored.\nThat is, the absolute majority of approaches for consuming Linked Data either ignore or inhibit such virtue, \nunderutilizing the Web as a platform.  \nAgora (agora-py) aims to be a tool that enables Linked Data consumers to live-query the Web of Data in a unified and explorative way:\n* Driven by known vocabularies;\n* Constrained by\n   * the scope of the given query,\n   * a set of seed resources whose URIs and types are known.\n    \nAlthough Agora is designed as well to be deployed as a microservices infrastructure, \nit can be fully used as a Python middleware, without the need for any other external dependency than the Web of Data. \n \n",
+            "confidence": [
+                [
+                    0.9428399361383036,
+                    0.9987201790050967
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "agora-py"
+        },
+        {
+            "excerpt": "The Linked Data principles [^1] enable the creation of the Web of Data: \n",
+            "confidence": [
+                [
+                    0.9804721171589174
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Linked Data",
+            "parentHeader": "agora-py --- Background"
+        },
+        {
+            "excerpt": "Only link traversal leverages available Linked Data (look-up) interfaces. A URI should not just serve as a global identifier, but also as provider of a structured data representation of the identified entity. The absolute majority of implemented solutions ignore both principles. \nWhy do not we rely on these HTTP look-up interfaces to directly consume Linked Data? Is it really necessary to give them up in favor of using SPARQL endpoints or any other (non-LD) interface to efficiently access and query Linked Data?\n \nThe three main benefits of the Web of Data are: \n* Feasibility to perform live-querying over a dataspace that integrates a large number of interlinked datasets as if it was a huge multidatabase system.\n* Data sources may be considerably lighter, scalable and maintanable than (reliable) SPARQL endpoints. They can be interfaced as just RESTful APIs that provide RDF by dereferencing known resources.\n* Enables freshness and serendipitous discovery of data sources and results.\n \n",
+            "confidence": [
+                [
+                    0.97519395474952,
+                    0.9881272621578914,
+                    0.9843820378989266,
+                    0.9413111028502014
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Benefits",
+            "parentHeader": "agora-py --- Background --- Web of Data"
+        },
+        {
+            "excerpt": "Link traversal is focused on querying the whole Web of Data without any prior knowledge about the vocabularies that are being used to describe the data. \nOntology-driven link traversal is less ambitious and aims only at querying the sub-dataspace that is described following the previously known vocabularies. In practice, it is only interested in those resources that are described so that they can be correctly interpreted, explored and consumed without extra effort. \nAssuming that data are linked using the properties specified in the selected vocabularies, we can extract and exploit the underlying cabigational paths to easily access reachable and query-relevant fragments of data. \n",
+            "confidence": [
+                [
+                    0.9973512250393228,
+                    0.9795223271367042,
+                    0.9790390267734216
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Ontology-driven link traversal",
+            "parentHeader": "agora-py --- Approach"
+        },
+        {
+            "excerpt": "A set of known seeds of any type can be used as starting points of such navigational paths, so that they do not need to be explicitly included in queries. Using those seeds facilitates the selection fo data sources based on different criteria: reliability, security, etc. \n",
+            "confidence": [
+                [
+                    0.9767161176377144
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Ontology-driven link traversal",
+            "parentHeader": "agora-py --- Approach"
+        },
+        {
+            "excerpt": "The *gathering place* for Distributed Linked Data. \nThe Agora was a central space or square in ancient Greek city-states. The literal meaning of the word is \"gathering place\" or \"assembly\". \nThe agora was the centre of athletic, artistic, spiritual and political life of the city. \n",
+            "confidence": [
+                [
+                    0.9477651772160889,
+                    0.97629713328966,
+                    0.9766593940351931
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Concept",
+            "parentHeader": "agora-py"
+        },
+        {
+            "excerpt": "The simplest Agora Engine is composed by a Fountain and a Planner. \n",
+            "confidence": [
+                [
+                    0.939563313988757
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "How it works",
+            "parentHeader": "agora-py"
+        },
+        {
+            "excerpt": "### Fountain\nThe Fountain is the *place* where all navigational paths found in known vocabularies are exposed, taking into account a number of heterogeneous seeds to be later on proposed as starting points for search plans.\n \nThe Fountain queries the given vocabularies in order to create the underlying link graph. Basically, it tries to find out the domain and range of all properties in the vocabulary with the aim of identifying the set of nodes and edges that make up such link graph. In the end, (a subset of) concepts and properties in the ontology become the nodes and edges of the link graph, respectively.\n \nThe Fountain accepts vocabularies for registration in two different formats: Turtle and RDF/XML. In order to identify the only ontology that should be described in the submitted content, the Fountain parses it and queries the resulting graph with:\n```sql\nSELECT ?o WHERE {\n    ?o a owl:Ontology FILTER (isURI(?o))\n}\n```\n \n",
+            "confidence": [
+                [
+                    0.9910801541056792,
+                    0.9934308181435948,
+                    0.9924193860773917
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Vocabulary registration",
+            "parentHeader": "agora-py --- How it works --- Fountain --- Path extraction from vocabularies"
+        },
+        {
+            "excerpt": "* The **size** of the result set must be 1. That is, vocabularies have to be registered one at a time.\n* There must be a **declared prefix** that is equal to the URI binded by `?o`. The name of such prefix will be considered by Agora as the **identifier** of the vocabulary. \n",
+            "confidence": [
+                [
+                    0.9441928374387111
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Vocabulary registration",
+            "parentHeader": "agora-py --- How it works --- Fountain --- Path extraction from vocabularies"
+        },
+        {
+            "excerpt": "Thus, there are some rules that must be taken into account in order to let the Fountain *detect* nodes in ontologies. That is, nodes are all URIs that match at least one of the following: \n* It is a class, either an `owl:Class` or a `rdfs:Class`.\n* It has at least one subclass in the ontology or it is the superclass of any other.\n* It belongs to the domain of a datatype property.\n* Given an object property,\n    * it is a class that belongs to its range or/and domain.\n    * there may be a set of things for which such property may have values of it. \nIt is important to note that no automatic reasoning is performed in this process. All required information must be materialized in the ontology description that is being submitted. Furthermore, existing conflicts and/or inconsistencies in definitions will not be treated; neither a warning nor an error message will be generated.\n \nSimilarly to the process of node extraction, the detection of *valid* edges for the link graph in an ontology is built on the following query:\n```sql\nSELECT DISTINCT ?p WHERE {\n    { ?p a rdf:Property }\n    UNION\n    { ?p a owl:ObjectProperty }\n    UNION\n    { ?p a owl:DatatypeProperty }\n    UNION\n    {\n        [] a owl:Restriction ;\n           owl:onProperty ?p .\n    }\n    FILTER(isURI(?p))\n}\n```\n \nThe result set of the corresponding query is composed of all the URIs that have been described in such a way that they can be considered as edges. The corresponding matching rules for edges are: \n* It is a `rdf:Property`, an `owl:ObjectProperty` or an `owl:DatatypeProperty`.\n* There is some restriction on it as a property.\n \nOnce the Fountain has identified all nodes from the vocabularies, it is prepared to search for the incoming (references) and outgoing (properties) edges for each of them. To do so, it creates and keeps a tuple map that puts nodes and their properties together:\n```sql\nSELECT DISTINCT ?c ?p WHERE {\n    { ?c rdfs:subClassOf [ owl:onProperty ?p ] }\n    UNION\n    { ?p rdfs:domain ?c }\n    FILTER (isURI(?p) && isURI(?c))\n}\n```\n \n",
+            "confidence": [
+                [
+                    0.9502272501333491,
+                    0.9634536615291007,
+                    0.9378633688669685,
+                    0.9952256561753493,
+                    0.9545342250582929,
+                    0.986375147158082,
+                    0.9722855791704432
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Node properties",
+            "parentHeader": "agora-py --- How it works --- Fountain --- Path extraction from vocabularies"
+        },
+        {
+            "excerpt": "Having such map in memory, it is trivial to filter the properties of each node (fixing a value for *n*).\n \nThe domain of an edge *e* is composed by all those nodes for which *e* is a property.\n```sql\nSELECT DISTINCT ?e ?c WHERE {\n    { ?p rdfs:domain ?c }\n    UNION\n    { ?c rdfs:subClassOf [ owl:onProperty ?e ] }\n    FILTER (isURI(?e) && isURI(?c))\n}\n```\n \nThe range of an edge *e* is composed by: \n* All those nodes for which *e* is a reference.\n* Datatype URIs that appear in a data-range restriction of *e* for a certain node.\n```sql\nSELECT DISTINCT ?e ?r WHERE {\n    {?e rdfs:range ?r}\n    UNION\n    {\n        ?d owl:onProperty ?e.\n        { ?d owl:allValuesFrom ?r }\n        UNION\n        { ?d owl:someValuesFrom ?r }\n        UNION\n        { ?d owl:onClass ?r }\n        UNION\n        { ?d owl:onDataRange ?r }\n    }\n    FILTER(isURI(?e) && isURI(?r))\n}\n```\n \n",
+            "confidence": [
+                [
+                    0.9762257825166163,
+                    0.9749870188699551,
+                    0.9646594071944683,
+                    0.9821033561950498
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Edge range",
+            "parentHeader": "agora-py --- How it works --- Fountain --- Path extraction from vocabularies"
+        },
+        {
+            "excerpt": "A Python library for Web-scale Ontology-driven Access to Distributed Linked Data",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "originalHeader": "References",
+            "excerpt": "[ldf]: <http://linkeddatafragments.org/>\n\n[^1]: Tim Berners-Lee. Linked data-design issues (2006) http://www.w3.org/DesignIssues/LinkedData.html\n\n[^2]: Hartig et al. A Database Perspective on Consuming Linked Data on the Web (2010)\n\n[^3]: Olaf Hartig. An Overview on Execution Strategies for Linked Data Queries (2013)\n\n[^4]: Olaf Hartig. SQUIN: A Traversal Based Query Execution System for the Web of Linked Data (2013)\n\n[^5]: Olaf Hartig. SPARQL for a Web of Linked Data: Semantics and Computability (2012)\n\n[^6]: Bouquet et al. Querying the Web of Data: A Formal Approach (2009)\n\n\nagora-py is distributed under the Apache License, version 2.0.\n",
+            "parentHeader": "agora-py",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Node references",
+            "excerpt": "The process to obtain the incoming edges of all nodes is identical to that of properties. Here, the corresponding query that results in the required tuple map is the following:\n\n```sql\nSELECT ?c ?p WHERE {\n    {\n        ?r owl:onProperty ?p.\n        { ?r owl:someValuesFrom ?c }\n        UNION\n        { ?r owl:allValuesFrom ?c }\n        UNION\n        { ?r owl:onClass ?c }\n    }\n    UNION\n    { ?p rdfs:range ?c }\n    FILTER (isURI(?p) && isURI(?c))\n}\n```\n\nGiven a node *n*, its references are all those URIs that fulfill the following conditions:\n\n* *n* belongs to its range.\n* There is a restriction that specifies that any of its values may be of the type represented by *n*.\n",
+            "parentHeader": "agora-py --- How it works --- Fountain --- Path extraction from vocabularies",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "<p align=\"center\">\n    <img src=\"docs/img/approach.png\" title=\"Ontology-driven link traversal approach\" width=\"80%\">\n</p> \n",
+            "confidence": [
+                [
+                    0.9976895441854482
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Ontology-driven link traversal",
+            "parentHeader": "agora-py --- Approach"
+        },
+        {
+            "excerpt": "<p align=\"center\">\n    <img src=\"docs/img/concept.png\" title=\"Concept of Agora\">\n</p>\n \n",
+            "confidence": [
+                [
+                    0.9783185813132451
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Concept",
+            "parentHeader": "agora-py"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "Install",
+            "excerpt": "agora-py is still not uploaded to PyPi, however the current repository\ncan be passed as source for pip:\n\n```\n$ pip install git+https://github.com/oeg-upm/agora-py.git\n```\n",
+            "parentHeader": "agora-py",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "invocation": [
+        {
+            "excerpt": "**agora-py** requires to be provided with the vocabularies (RDFS, OWL) that will be used\nto drive the exploration of Linked Data resources.\n```python\nfrom agora import Agora\n\na = Agora()\n\n# movies.ttl is in path agora/examples/movies/movies.ttl\nwith open('movies.ttl') as f:\n    a.fountain.add_vocabulary(f.read())\n\nprint a.fountain.types\n\n```\n \n",
+            "confidence": [
+                [
+                    0.9367999427791948
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Register vocabularies",
+            "parentHeader": "agora-py --- Getting Started"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "agora-py",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/agora-py/master//master//master//master//master//master/docs/img/voc_branch.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/agora-py/master//master//master//master//master/docs/img/core.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/agora-py/master//master//master//master/docs/img/concept.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/agora-py/master//master//master/docs/img/search.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/agora-py/master//master/docs/img/approach.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/agora-py/master/docs/img/workload.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://dl.dropboxusercontent.com/u/1731751/agora/agora.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "faq": [
+        {
+            "originalHeader": "Problems",
+            "excerpt": "Some problems of (live-)querying the Web of Data:\n\n* Not any approach for executing queries that range over all Linked Data on the Web can guarantee complete query results.\n* Its openness and growth introduces data integration issues such as coreferencing and schema heterogeneity.\n* Looking up certain URIs may result in the retrieval of an unforeseeable large set of RDF triples.\n* Response times may vary significantly between different servers. Look-ups may take unexpectedly long or may not be answered at all.\n* Restrictions on clients such as sercing only a limited number of requests per second (rate limits).\n",
+            "parentHeader": "agora-py --- Background --- Web of Data",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Getting Started",
+            "excerpt": "Before issuing the first query, Agora needs to know the following:\n1. The vocabulary that will drive the exploration;\n2. One seed resource whose URI and type (any Class in the vocabulary) is known.\n",
+            "parentHeader": "agora-py",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Example",
+            "excerpt": "<p align=\"center\">\n    <img src=\"docs/img/voc_branch.png\" title=\"Excerpt from vocabulary for path extraction\">\n</p>\n",
+            "parentHeader": "agora-py --- How it works --- Fountain --- Path extraction from vocabularies",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/agora-py",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2017-02-24T07:54:39Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2018-04-10T09:41:18Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "agora-py",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/agora-py",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/agora-py/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/agora-py/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/agora-py/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "linked-data",
+            "ontologies",
+            "rdf",
+            "sparql"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:45:18 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 08:45:18 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'\\n                                 Apache License\\n                           Version 2.0, January 2004\\n                        http://www.apache.org/licenses/\\n\\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\\n\\n   1. Definitions.\\n\\n      \"License\" shall mean the terms and conditions for use, reproduction,\\n      and distribution as defined by Sections 1 through 9 of this document.\\n\\n      \"Licensor\" shall mean the copyright owner or entity authorized by\\n      the copyright owner that is granting the License.\\n\\n      \"Legal Entity\" shall mean the union of the acting entity and all\\n      other entities that control, are controlled by, or are under common\\n      control with that entity. For the purposes of this definition,\\n      \"control\" means (i) the power, direct or indirect, to cause the\\n      direction or management of such entity, whether by contract or\\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\\n      outstanding shares, or (iii) beneficial ownership of such entity.\\n\\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\\n      exercising permissions granted by this License.\\n\\n      \"Source\" form shall mean the preferred form for making modifications,\\n      including but not limited to software source code, documentation\\n      source, and configuration files.\\n\\n      \"Object\" form shall mean any form resulting from mechanical\\n      transformation or translation of a Source form, including but\\n      not limited to compiled object code, generated documentation,\\n      and conversions to other media types.\\n\\n      \"Work\" shall mean the work of authorship, whether in Source or\\n      Object form, made available under the License, as indicated by a\\n      copyright notice that is included in or attached to the work\\n      (an example is provided in the Appendix below).\\n\\n      \"Derivative Works\" shall mean any work, whether in Source or Object\\n      form, that is based on (or derived from) the Work and for which the\\n      editorial revisions, annotations, elaborations, or other modifications\\n      represent, as a whole, an original work of authorship. For the purposes\\n      of this License, Derivative Works shall not include works that remain\\n      separable from, or merely link (or bind by name) to the interfaces of,\\n      the Work and Derivative Works thereof.\\n\\n      \"Contribution\" shall mean any work of authorship, including\\n      the original version of the Work and any modifications or additions\\n      to that Work or Derivative Works thereof, that is intentionally\\n      submitted to Licensor for inclusion in the Work by the copyright owner\\n      or by an individual or Legal Entity authorized to submit on behalf of\\n      the copyright owner. For the purposes of this definition, \"submitted\"\\n      means any form of electronic, verbal, or written communication sent\\n      to the Licensor or its representatives, including but not limited to\\n      communication on electronic mailing lists, source code control systems,\\n      and issue tracking systems that are managed by, or on behalf of, the\\n      Licensor for the purpose of discussing and improving the Work, but\\n      excluding communication that is conspicuously marked or otherwise\\n      designated in writing by the copyright owner as \"Not a Contribution.\"\\n\\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\\n      on behalf of whom a Contribution has been received by Licensor and\\n      subsequently incorporated within the Work.\\n\\n   2. Grant of Copyright License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      copyright license to reproduce, prepare Derivative Works of,\\n      publicly display, publicly perform, sublicense, and distribute the\\n      Work and such Derivative Works in Source or Object form.\\n\\n   3. Grant of Patent License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      (except as stated in this section) patent license to make, have made,\\n      use, offer to sell, sell, import, and otherwise transfer the Work,\\n      where such license applies only to those patent claims licensable\\n      by such Contributor that are necessarily infringed by their\\n      Contribution(s) alone or by combination of their Contribution(s)\\n      with the Work to which such Contribution(s) was submitted. If You\\n      institute patent litigation against any entity (including a\\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\\n      or a Contribution incorporated within the Work constitutes direct\\n      or contributory patent infringement, then any patent licenses\\n      granted to You under this License for that Work shall terminate\\n      as of the date such litigation is filed.\\n\\n   4. Redistribution. You may reproduce and distribute copies of the\\n      Work or Derivative Works thereof in any medium, with or without\\n      modifications, and in Source or Object form, provided that You\\n      meet the following conditions:\\n\\n      (a) You must give any other recipients of the Work or\\n          Derivative Works a copy of this License; and\\n\\n      (b) You must cause any modified files to carry prominent notices\\n          stating that You changed the files; and\\n\\n      (c) You must retain, in the Source form of any Derivative Works\\n          that You distribute, all copyright, patent, trademark, and\\n          attribution notices from the Source form of the Work,\\n          excluding those notices that do not pertain to any part of\\n          the Derivative Works; and\\n\\n      (d) If the Work includes a \"NOTICE\" text file as part of its\\n          distribution, then any Derivative Works that You distribute must\\n          include a readable copy of the attribution notices contained\\n          within such NOTICE file, excluding those notices that do not\\n          pertain to any part of the Derivative Works, in at least one\\n          of the following places: within a NOTICE text file distributed\\n          as part of the Derivative Works; within the Source form or\\n          documentation, if provided along with the Derivative Works; or,\\n          within a display generated by the Derivative Works, if and\\n          wherever such third-party notices normally appear. The contents\\n          of the NOTICE file are for informational purposes only and\\n          do not modify the License. You may add Your own attribution\\n          notices within Derivative Works that You distribute, alongside\\n          or as an addendum to the NOTICE text from the Work, provided\\n          that such additional attribution notices cannot be construed\\n          as modifying the License.\\n\\n      You may add Your own copyright statement to Your modifications and\\n      may provide additional or different license terms and conditions\\n      for use, reproduction, or distribution of Your modifications, or\\n      for any such Derivative Works as a whole, provided Your use,\\n      reproduction, and distribution of the Work otherwise complies with\\n      the conditions stated in this License.\\n\\n   5. Submission of Contributions. Unless You explicitly state otherwise,\\n      any Contribution intentionally submitted for inclusion in the Work\\n      by You to the Licensor shall be under the terms and conditions of\\n      this License, without any additional terms or conditions.\\n      Notwithstanding the above, nothing herein shall supersede or modify\\n      the terms of any separate license agreement you may have executed\\n      with Licensor regarding such Contributions.\\n\\n   6. Trademarks. This License does not grant permission to use the trade\\n      names, trademarks, service marks, or product names of the Licensor,\\n      except as required for reasonable and customary use in describing the\\n      origin of the Work and reproducing the content of the NOTICE file.\\n\\n   7. Disclaimer of Warranty. Unless required by applicable law or\\n      agreed to in writing, Licensor provides the Work (and each\\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\\n      implied, including, without limitation, any warranties or conditions\\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\\n      PARTICULAR PURPOSE. You are solely responsible for determining the\\n      appropriateness of using or redistributing the Work and assume any\\n      risks associated with Your exercise of permissions under this License.\\n\\n   8. Limitation of Liability. In no event and under no legal theory,\\n      whether in tort (including negligence), contract, or otherwise,\\n      unless required by applicable law (such as deliberate and grossly\\n      negligent acts) or agreed to in writing, shall any Contributor be\\n      liable to You for damages, including any direct, indirect, special,\\n      incidental, or consequential damages of any character arising as a\\n      result of this License or out of the use or inability to use the\\n      Work (including but not limited to damages for loss of goodwill,\\n      work stoppage, computer failure or malfunction, or any and all\\n      other commercial damages or losses), even if such Contributor\\n      has been advised of the possibility of such damages.\\n\\n   9. Accepting Warranty or Additional Liability. While redistributing\\n      the Work or Derivative Works thereof, You may choose to offer,\\n      and charge a fee for, acceptance of support, warranty, indemnity,\\n      or other liability obligations and/or rights consistent with this\\n      License. However, in accepting such obligations, You may act only\\n      on Your own behalf and on Your sole responsibility, not on behalf\\n      of any other Contributor, and only if You agree to indemnify,\\n      defend, and hold each Contributor harmless for any liability\\n      incurred by, or claims asserted against, such Contributor by reason\\n      of your accepting any such warranty or additional liability.\\n\\n   END OF TERMS AND CONDITIONS\\n\\n   APPENDIX: How to apply the Apache License to your work.\\n\\n      To apply the Apache License to your work, attach the following\\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\\n      replaced with your own identifying information. (Don\\'t include\\n      the brackets!)  The text should be enclosed in the appropriate\\n      comment syntax for the file format. We also recommend that a\\n      file or class name and description of purpose be included on the\\n      same \"printed page\" as the copyright notice for easier\\n      identification within third-party archives.\\n\\n   Copyright [yyyy] [name of copyright owner]\\n\\n   Licensed under the Apache License, Version 2.0 (the \"License\");\\n   you may not use this file except in compliance with the License.\\n   You may obtain a copy of the License at\\n\\n       http://www.apache.org/licenses/LICENSE-2.0\\n\\n   Unless required by applicable law or agreed to in writing, software\\n   distributed under the License is distributed on an \"AS IS\" BASIS,\\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\\n   See the License for the specific language governing permissions and\\n   limitations under the License.'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/agora-py/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasDocumentation": {
+        "excerpt": [
+            "https://github.com/oeg-upm/agora-py/tree/master/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "inspect4py": {
+        "software_type": "library"
+    }
+}

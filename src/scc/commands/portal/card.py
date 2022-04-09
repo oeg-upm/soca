@@ -43,7 +43,8 @@ def cards_data_dump(repo_metadata_dir):
                     'acknowledgement': md.acknowledgement() is not None,
                     'downloadUrl': md.downloadUrl() is not None,
                     'isOntology': md.repo_type() == 'ontology',
-                    'isWeb': md.repo_type() == 'web'
+                    'isWeb': md.repo_type() == 'web',
+                    'owner': md.owner()
                 })
     print('-'*80)
 
@@ -66,7 +67,7 @@ def html_view(repo_metadata, embedded, minify=True):
                     </a>
                     {md.copy_btn()}
                 </div>
-                <div class="description">{md.description()}</div>
+                <div class="description">{md.description()}{md.modal(md.title(), md.description())}</div>
             </div>
             <div>
                 <div style="min-height: 6rem;display: flex;align-items: center;justify-content: center;">

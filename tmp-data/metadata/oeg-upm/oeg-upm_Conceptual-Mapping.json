@@ -1,0 +1,193 @@
+{
+    "description": [
+        {
+            "excerpt": "The Conceptual Mapping aims to gather the expressiveness of current mapping languages that describe the transformation of heterogeneous data sources into RDF. This language was born from the assumption that all mapping languages, being used for the basic same purpose of describing data sources in terms of an ontology to create RDF, must have some basic patterns and inherent shared characteristics across all languages. The Conceptual Mapping's model is designed to represent and articulate these core features, which are extracted from two sources: (1) the analysis of current mapping languages, and (2) the limitations of current languages identified by the community. These limitations are referred to as Mapping Challenges, and are proposed by the W3C Knowledge Graph Construction Community Group. \nThe scope of the vocabulary is to represent features based on declarative languages for describing data sources, their access, mapping rules for RDF transformation and functions. It is out of the scope representing the entire expressivenes of procedural languages based on SPARQL, such as SPARQL-Generate of Facade-X.\n \nThe following diagram shows a general overview of the classes and properties of the Conceptual Mapping vocabulary. This diagram follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html). \n",
+            "confidence": [
+                [
+                    0.9965254127369735,
+                    0.99869026255161,
+                    0.913100800131683
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Ontology model",
+            "parentHeader": "Conceptual Mapping --- Vocabulary development"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Conceptual Mapping",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/anaigmo/Conceptual-Mapping-Ontology/blob/main/OnToology/ontology/conceptual-mapping-ontology.owl/documentation/resources/images/cm_diagram.png?raw=true",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "requirement": [
+        {
+            "originalHeader": "Requirements",
+            "excerpt": "The requirements of this vocabulary are specified [here](https://github.com/oeg-upm/Conceptual-Mapping/blob/main/requirements/Requirements%20-%20conceptual%20mapping.xlsx).\n",
+            "parentHeader": "Conceptual Mapping --- Vocabulary development",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Examples",
+            "excerpt": "Some examples of how the language can be used to describe data for RDF transformation is shown in the [examples folder](https://github.com/oeg-upm/Conceptual-Mapping/tree/main/examples).\n",
+            "parentHeader": "Conceptual Mapping",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/Conceptual-Mapping",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-10-15T15:39:24Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-03-11T13:35:01Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "Conceptual-Mapping",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/Conceptual-Mapping",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Conceptual-Mapping/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Conceptual-Mapping/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/Conceptual-Mapping/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "mapping-languages",
+            "ontology",
+            "semantic-web"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 4,
+            "date": "Tue, 05 Apr 2022 09:00:26 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Tue, 05 Apr 2022 09:00:26 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "HTML"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/Conceptual-Mapping/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v1.0.0",
+                "name": "v1.0.0",
+                "authorName": "anaigmo",
+                "authorType": "User",
+                "body": "First release",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/Conceptual-Mapping/tarball/v1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/Conceptual-Mapping/zipball/v1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/Conceptual-Mapping/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/Conceptual-Mapping/releases/60370007",
+                "dateCreated": "2022-02-24T14:11:46Z",
+                "datePublished": "2022-02-24T14:13:18Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

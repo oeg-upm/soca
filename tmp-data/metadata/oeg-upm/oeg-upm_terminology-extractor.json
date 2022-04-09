@@ -1,0 +1,220 @@
+{
+    "description": [
+        {
+            "excerpt": "and put /cvalue or /ttfidf in the Request-Handler\n \n",
+            "confidence": [
+                [
+                    0.9596016138082215
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "To retrieve terminology",
+            "parentHeader": "Terminology Extractor. Spanish Extension of JATE 2.0"
+        },
+        {
+            "excerpt": "This work contains the library JATE 2.0  and an extension to work with Spanish documents \n",
+            "confidence": [
+                [
+                    0.989277261664985
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Acknowledges"
+        },
+        {
+            "excerpt": "Extension of JATE 2.0 for Spanish",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "Zhang, Z., Gao, J., Ciravegna, F. 2016. JATE 2.0: Java Automatic Term Extraction with Apache Solr. In The Proceedings of the 10th Language Resources and Evaluation Conference, May 2016, Portoro\u017e, Slovenia \n",
+            "confidence": [
+                [
+                    0.9998594870927775
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Acknowledges"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "First Step  (trying to fix):",
+            "excerpt": "Download JATE release: https://github.com/ziqizhang/jate\n\nVersion > jate-2.0-beta.1-jar-with-dependencies.jar\n\nCopy jate/target/jate-2.0-beta.1-jar-with-dependencies.jar to  terminology-extractor/solr-5.3.0/contrib/jate/lib/jate-2.0-beta.1-jar-with-dependencies.jar\n\n\n",
+            "parentHeader": "Terminology Extractor. Spanish Extension of JATE 2.0 --- To install",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Terminology Extractor. Spanish Extension of JATE 2.0",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "run": [
+        {
+            "originalHeader": "To execute",
+            "excerpt": "To add files stored in Corpus folder and add them to the Solr SpanishCore \n\n> java -cp target/terminology-extractor-1.0-jar-with-dependencies.jar org.upm.oeg.terminology.extractor.Populator -c Corpus -i Spanishcore\n\nFor commodity, use\n\n> AddSpanishCorpus.bat\n\n",
+            "parentHeader": "Terminology Extractor. Spanish Extension of JATE 2.0",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/terminology-extractor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2018-11-12T19:48:47Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2019-02-19T14:29:13Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "terminology-extractor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/terminology-extractor",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/terminology-extractor/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/terminology-extractor/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/terminology-extractor/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:30:13 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:30:13 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "HTML",
+            "Roff",
+            "JavaScript",
+            "CSS",
+            "XSLT",
+            "Shell",
+            "Batchfile",
+            "Java",
+            "Python",
+            "AMPL"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/terminology-extractor/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasDocumentation": {
+        "excerpt": [
+            "https://github.com/oeg-upm/terminology-extractor/tree/master/solr-5.3.0/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/CleanSpanishCore.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/CleanEnglishCore.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/AddSpanishCorpus.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/stop_solr_server.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/AddEnglishCorpus.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/start_solr_server.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/solr-5.3.0/bin/install_solr_service.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/solr-5.3.0/bin/oom_solr.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/solr-5.3.0/bin/solr.in.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/solr-5.3.0/example/exampledocs/test_utf8.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/solr-5.3.0/server/scripts/map-reduce/set-map-reduce-classpath.sh",
+            "https://raw.githubusercontent.com/oeg-upm/terminology-extractor/master/solr-5.3.0/server/scripts/cloud-scripts/zkcli.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "inspect4py": {
+        "software_type": "script"
+    }
+}

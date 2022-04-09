@@ -1,0 +1,180 @@
+{
+    "description": [
+        {
+            "excerpt": "Project designed to create and browse Research Objects following the W3C LDP protocol and using LDP4J (http://www.ldp4j.org/#/).\nThe project consists on a client for easily creating ROs and a connector to handle the requests to LDP.\nThis is a work in progress. \n",
+            "confidence": [
+                [
+                    0.9951199567657814
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "LDP4RO"
+        },
+        {
+            "excerpt": "Project to create Research Objects following the LDP model and using LDP4J",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "LDP4RO",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "repoStatus": {
+        "excerpt": "https://www.repostatus.org/#concept",
+        "description": "Concept \u2013 Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.",
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://www.repostatus.org/badges/latest/concept.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Demo",
+            "excerpt": "A live demo is available at http://purl.org/net/ldp4ro\n\nThis work has been supported by the DrInventor project (http://drinventor.eu/)\n",
+            "parentHeader": "LDP4RO",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/LDP4RO",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2014-11-24T17:48:07Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-03-13T19:53:05Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Other"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "LDP4RO",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/LDP4RO",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/LDP4RO/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/LDP4RO/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/LDP4RO/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Tue, 05 Apr 2022 09:13:01 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:13:01 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "HTML",
+            "CSS",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/LDP4RO/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/LDP4RO/master/integration-tests/install.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

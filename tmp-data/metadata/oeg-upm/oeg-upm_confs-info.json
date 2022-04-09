@@ -1,0 +1,160 @@
+{
+    "description": [
+        {
+            "excerpt": "A single page that contains a list of conferences and journals relevant to the domain of the semantic web. It is updated regularly, *your contribution is highly valiable*. \n",
+            "confidence": [
+                [
+                    0.9966334590295497
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Conferences dates"
+        },
+        {
+            "excerpt": "Update the data in `confs.js`, or you can create an issue and someone \nfrom the group will update it. \n",
+            "confidence": [
+                [
+                    0.9044285962275377
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "How to contribute",
+            "parentHeader": "Conferences dates"
+        },
+        {
+            "excerpt": "List of submission dates for conferences and journals special issues relevant to the domain of semantic web",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Conferences dates",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/confs-info",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2018-08-03T14:01:08Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-07-29T18:50:16Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "confs-info",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/confs-info",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/confs-info/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/confs-info/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/confs-info/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "artificial-intelligence",
+            "conferences",
+            "journals",
+            "knowledge-graph",
+            "semantic-web"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:29 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Tue, 05 Apr 2022 09:00:29 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/confs-info/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

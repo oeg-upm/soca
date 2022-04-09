@@ -1,0 +1,175 @@
+{
+    "citation": [
+        {
+            "excerpt": "API desarrollada en javascript para la creaci\u00f3n de un nodo que recibe\ny ejecuta las funcionalidades IPFS pertientes en funci\u00f3n de las peticiones http\nque recibe.\n \n",
+            "confidence": [
+                [
+                    0.9370097659044052
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "API Restful para IPFS"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "_Descarga e instalaci\u00f3n desde ubuntu_\n```\n# Si utilizamos ubuntu\ncurl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -\nsudo apt-get install -y nodejs\n```\n_Inicializaci\u00f3n del proyecto_\n```\nnpm init\n```\n \n",
+            "confidence": [
+                [
+                    0.9921664803019491
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Instalaci\u00f3n de Node JS",
+            "parentHeader": "API Restful para IPFS --- Comenzando \ud83d\ude80 --- Instalaci\u00f3n \ud83d\udd27"
+        },
+        {
+            "excerpt": "* [ipfs.io](https://dist.ipfs.io/#go-ipfs) - descarga del fichero binario\n```\n#Descargamos el fichero binario\nwget https://dist.ipfs.io/go-ipfs/v0.11.0/go-ipfs_v0.11.0_linux-amd64.tar.gz\n\n#Descomprimimos el fichero\ntar -xvzf go-ipfs_v0.11.0_linux-amd64.tar.gz\n\n#Ejecutamos el fichero de instalaci\u00f3n\ncd go-ipfs\nsudo bash install.sh\n\n#Comprobamos que ha sido instalado correctamente_\nipfs --version\n> ipfs version 0.11.0\n```\n \n",
+            "confidence": [
+                [
+                    0.9856328285685373
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Instalaci\u00f3n de IPFS",
+            "parentHeader": "API Restful para IPFS --- Comenzando \ud83d\ude80 --- Instalaci\u00f3n \ud83d\udd27"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "API Restful para IPFS",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/ipfs-service",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-11-10T17:29:03Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-01-05T11:59:35Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "MIT License",
+            "url": "https://api.github.com/licenses/mit"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "ipfs-service",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/ipfs-service",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ipfs-service/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ipfs-service/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/ipfs-service/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:12:14 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:12:14 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "JavaScript",
+            "HTML",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/ipfs-service/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/ipfs-service/main/caso1/maq1/cliente1.sh",
+            "https://raw.githubusercontent.com/oeg-upm/ipfs-service/main/caso2/maq1/aux2-2.sh",
+            "https://raw.githubusercontent.com/oeg-upm/ipfs-service/main/caso2/maq1/cliente2.sh",
+            "https://raw.githubusercontent.com/oeg-upm/ipfs-service/main/caso2/maq1/aux2.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

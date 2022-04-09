@@ -1,0 +1,895 @@
+{
+    "description": [
+        {
+            "originalHeader": "Research Institutions",
+            "excerpt": "- [The Smart Data Analytics (SDA)](http://sda.tech/) - Research group, Institute for Computer Science at the University of Bonn, the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS) and the Institute for Applied Computer Science Leipzig.\n- [Agile Knowledge Engineering and Semantic Web (AKSW)](http://aksw.org) - The Research Group Agile Knowledge Engineering and Semantic Web (AKSW) is hosted by the Chair of Business Information Systems (BIS) of the Institute of Computer Science (IfI) / University of Leipzig as well as the Institute for Applied Informatics (InfAI).\n- [University of Zurich Dynamic and Distributed Information Systems Group](http://www.ifi.uzh.ch/en/ddis.html)\n- [WESO](http://www.weso.es/) - WESO is a research group at the University of Oviedo founded in 2004.\n- [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/) - Department D5 of the Max Planck Institute for Informatics.\n- [DICE: Data Science Group](http://dice.cs.uni-paderborn.de/about/) - Universit\u00e4t Paderborn.\n- [Ontology Engineering Group (OEG)](http://www.oeg-upm.net/) - The Ontology Engineering Group (OEG) is based at the Computer Science School at Universidad Polit\u00e9cnica de Madrid (UPM).\n- [Knowledge Representation and Reasoning Group (KRR)](https://krr.cs.vu.nl/) - Research group is based at the Vrije Universiteit Amsterdam (VU).\n- [eXascale Infolab](https://exascale.info/) - eXascale Infolab, University of Fribourg, Switzerland.\n- [Wimmics](http://wimmics.inria.fr/corese) - Wimmics stands for Web-Instrumented Man-Machine Interactions, Communities, and Semantics, a joint research team between INRIA Sophia Antipolis - M\u00e9diterran\u00e9e and I3S (CNRS and Universit\u00e9 C\u00f4te d'Azur).\n- [Data Semantics Lab](https://dase.cs.wright.edu/) - Data Semantics Lab, Wright State University\n- [Stanford BMIR](https://bmir.stanford.edu) - Stanford University Center for Biomedical Informatics Research\n- [Exascale Infolab](https://exascale.info/projects/research/) - University of Fribourg, Switzerland\n",
+            "parentHeader": "Awesome Semantic Web ",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "A curated list of various semantic web and linked data resources. \nTo add something to the list please either submit a pull request or add a comment with a link to [issues/awesomelets](https://github.com/semantalytics/awesome-semantic-web/issues/81). Pull requests will be evaluated immediately for inclusion while posts while awesomelets will be evaluated at some indeterminate time in the future.  \n",
+            "confidence": [
+                [
+                    0.921165307243141,
+                    0.9004381367688843
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "- [Serialization](#serialization)\n- [Datatypes](#datatypes)\n- [Companies](#companies)\n- [Industry](#industry)\n- [Research Institutions](#research-institutions)\n- [Academic Journals](academic-journals)\n- [Databases](#databases)\n- [SPARQL](#sparql)\n  - [Streaming](#streaming-sparql)\n  - [Federated](#federated-sparql)\n  - [Applications](#sparql-applications)\n  - [Benchmarks](#benchmarks)\n- [GraphQL](#graphql)\n- [Linked Data Fragments](#linked-data-fragments)\n- [Linked Data Platform](#linked-data-platform-ldp)\n- [Ecosystem](#ecosystem)\n- [Knowledge Graph Management](#knowledge-graph-management)\n- [Web Annotations](#web-annotations)\n- [Mapping](#mapping)\n- [Ontologies](#ontologies)\n- [Ontology Development](#ontology-development)\n- [Reasoners](#reasoners)\n- [Books](#books)\n- [Programming](#programming)\n  - [C](#c)\n  - [C\\#](#c-1)\n  - [Clojure](#clojure)\n  - [Elixir](#elixir)\n  - [Go](#go)\n  - [Groovy](#groovy)\n  - [Haskell](#haskell)\n  - [Java](#java)\n  - [JavaScript](#javascript)\n  - [Kotlin](#kotlin)\n  - [ObjectiveC](#objectivec)\n  - [OCaml](#ocaml)\n  - [Perl](#perl)\n  - [PHP](#php)\n  - [Prolog](#prolog)\n  - [Python](#python)\n  - [R](#r)\n  - [Ruby](#ruby)\n  - [Rust](#rust)\n  - [Scala](#scala)\n  - [Swift](#swift)\n- [Editors](#editors)\n- [Geo](#geo-1)\n- [Visualization](#visualization)\n- [Data Cube](#data-cube)\n- [Datasets](#datasets)\n- [IoT](#iot)\n- [DevOps](#devops)\n- [Platforms](#platforms)\n- [Tools](#tools)\n- [Integrations](#integrations)\n- [Machine Learning](#machine-learning)\n- [Linked Data](#linked-data)\n- [WebID](#webid)\n- [SHACL Implementations](#shacl-implementations)\n- [SKOS Tools](#skos-tools)\n- [NLP](#nlp)\n- [IIIF](#iiif)\n- [Other Awesome](#other-awesome)\n- [Misc](#misc) \n",
+            "confidence": [
+                [
+                    0.9802388343568196
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Standards",
+            "parentHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "- [CDT](https://ci.mines-stetienne.fr/lindt/v2/custom_datatypes.html)\n- [QUDT](http://www.qudt.org)\n- [RDF Datatyping](http://infolab.stanford.edu/~melnik/rdf/datatyping/) - This document summarizes the common understanding of the RDF Core Working Group (further referred to as WG) with regards to the theoretical foundation for datatyping of literal values and serves as a basis of definition, discussion, and comparison of all proposed schemes for achieving a complete datatyping solution which are to be considered by the WG.\n \n",
+            "confidence": [
+                [
+                    0.9974862612437662
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Datatypes",
+            "parentHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "(Note: this classification is somewhat arbitrary and is meant to capture databases that only have a published paper or were developed for that purpose and are not actively maintained) \n",
+            "confidence": [
+                [
+                    0.9805895234544496
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Academic",
+            "parentHeader": "Awesome Semantic Web  --- Databases"
+        },
+        {
+            "excerpt": "- [Metaphacts](http://metaphacts.com) - ($) End-to-end platform to create and utilize enterprise knowledge graphs.\n- [OntoWiki](https://github.com/AKSW/OntoWiki) - (OS) Semantic data wiki as well as Linked Data publishing engine.\n- [GNOSS-Sherlock](https://www.gnoss.com/en/semantic-framework/knowledge-graph-management) - ($) Cognitive Intelligence tool for machines to understand us.\n- [Wikibase](http://wikiba.se) - (OS) Collection of applications and libraries for creating, managing and sharing structured data.\n- [eccenca Corporate Memory](https://www.eccenca.com) - build, explore and consume Knowledge Graphs\n \n",
+            "confidence": [
+                [
+                    0.9075943062468258
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Knowledge Graph Management",
+            "parentHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "- [MMOntologies](https://github.com/gatemezing/MMOntologies) - Multimedia ontologies studied for the paper \"The Landscape of Multimedia Ontologies in the last Decade\".\n- [Wine](https://www.quora.com/What-is-wine-ontology) - Wine Ontology is a popular example of an OWL ontology.\n- [Pizza](http://owl.cs.manchester.ac.uk/publications/talks-and-tutorials/protg-owl-tutorial/) - A step-by-step guide to modelling in OWL using the popular Prot\u00e9g\u00e9 OWL tools.\n- [W3C Best Practices for Publishing Linked Data](https://www.w3.org/TR/ld-bp/)\n- [Coursera - Web of Data](https://www.coursera.org/learn/web-data/) - A joint initiative between EIT Digital, Universit\u00e9 de Nice Sophia-Antipolis / Universit\u00e9 C\u00f4te d'Azur and INRIA - introduces the Linked Data standards and principles that provide the foundation of the Semantic web.\n- [Linked Data Patterns](http://patterns.dataincubator.org/book/index.html)\n \n",
+            "confidence": [
+                [
+                    0.9866484752296344
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Educational",
+            "parentHeader": "Awesome Semantic Web  --- Ontologies"
+        },
+        {
+            "excerpt": "- [BBC - Ontologies](https://www.bbc.co.uk/ontologies) - The ontologies the BBC is using to support its audience facing applications such as BBC Sport, BBC Education, BBC Music, News projects and more.\n- [DBpedia](http://dbpedia.org)\n- [geonames](https://github.com/ldodds/geonames)\n- [permid](http://permid.org) - PermID: Connecting Data to the World.\n- [wikidata](http://wikidata.org) - Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.\n- [lod-cloud](https://lod-cloud.net) - The Linked Open Data Cloud. \n",
+            "confidence": [
+                [
+                    0.9188185870691836
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [trinity](https://bitbucket.org/semiodesk/trinity) - An application development platform for Microsoft .NET and Mono. It allows to easily build Linked Data and Semantic Web applications based on RDF.\n- [Wings](https://github.com/IKCAP/wings) - A workflow system.\n- [rww-play](https://github.com/read-write-web/rww-play) - An implementation in Play of a number of tools to build a Read-Write-Web server using Play2.x and akka.\n- [prissma-studio](https://github.com/lukostaz/prissma-studio) - PRISSMA Studio: a web application to create Prisms, context-aware presentation metadata for Linked Data visualization.\n- [lodspeakr](https://github.com/alangrafu/lodspeakr) - Framework to create Linked Data-based applications.\n- [comunica](https://github.com/comunica/comunica) - Flexible meta query engine for the Web.\n- [imagesnippets](http://www.imagesnippets.com/) - ImageSnippets is a complete metadata editing interface that enables someone who knows little to nothing about RDF, OWL, ontologies, or even URIs to create descriptions for images using Linked Data which is written in RDF.\n- [Linked Data Reactor (LD-R)](http://ld-r.org) - A full-stack platform for building adaptive component-based Linked Data applications in NodeJS and React.\n- [LDIF](https://github.com/wbsg/ldif) - Linked Data Integration Framework. \n## Tools \n",
+            "confidence": [
+                [
+                    0.9520641832879257,
+                    0.923948005372906
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "## SKOS Tools \n",
+            "confidence": [
+                [
+                    0.923948005372906
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "A curated list of various semantic web and linked data resources. \nTo add something to the list please either submit a pull request or add a comment with a link to [issues/awesomelets](https://github.com/semantalytics/awesome-semantic-web/issues/81). Pull requests will be evaluated immediately for inclusion while posts while awesomelets will be evaluated at some indeterminate time in the future.  \n",
+            "confidence": [
+                [
+                    0.921165307243141,
+                    0.9004381367688843
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "- [Standards](#standards)\n- [Serialization](#serialization)\n- [Datatypes](#datatypes)\n- [Companies](#companies)\n- [Industry](#industry)\n- [Research Institutions](#research-institutions)\n- [Academic Journals](academic-journals)\n- [Databases](#databases)\n- [SPARQL](#sparql)\n  - [Streaming](#streaming-sparql)\n  - [Federated](#federated-sparql)\n  - [Applications](#sparql-applications)\n  - [Benchmarks](#benchmarks)\n- [GraphQL](#graphql)\n- [Linked Data Fragments](#linked-data-fragments)\n- [Linked Data Platform](#linked-data-platform-ldp)\n- [Ecosystem](#ecosystem)\n- [Knowledge Graph Management](#knowledge-graph-management)\n- [Web Annotations](#web-annotations)\n- [Mapping](#mapping)\n- [Ontologies](#ontologies)\n- [Ontology Development](#ontology-development)\n- [Reasoners](#reasoners)\n- [Books](#books)\n- [Programming](#programming)\n  - [C](#c)\n  - [C\\#](#c-1) \n",
+            "confidence": [
+                [
+                    0.9295798688887118
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C#",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [BBC - Ontologies](https://www.bbc.co.uk/ontologies) - The ontologies the BBC is using to support its audience facing applications such as BBC Sport, BBC Education, BBC Music, News projects and more.\n- [DBpedia](http://dbpedia.org)\n- [geonames](https://github.com/ldodds/geonames)\n- [permid](http://permid.org) - PermID: Connecting Data to the World.\n- [wikidata](http://wikidata.org) - Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.\n- [lod-cloud](https://lod-cloud.net) - The Linked Open Data Cloud.\n \n",
+            "confidence": [
+                [
+                    0.9188185870691836
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Datasets",
+            "parentHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "- [trinity](https://bitbucket.org/semiodesk/trinity) - An application development platform for Microsoft .NET and Mono. It allows to easily build Linked Data and Semantic Web applications based on RDF.\n- [Wings](https://github.com/IKCAP/wings) - A workflow system.\n- [rww-play](https://github.com/read-write-web/rww-play) - An implementation in Play of a number of tools to build a Read-Write-Web server using Play2.x and akka.\n- [prissma-studio](https://github.com/lukostaz/prissma-studio) - PRISSMA Studio: a web application to create Prisms, context-aware presentation metadata for Linked Data visualization.\n- [lodspeakr](https://github.com/alangrafu/lodspeakr) - Framework to create Linked Data-based applications.\n- [comunica](https://github.com/comunica/comunica) - Flexible meta query engine for the Web.\n- [imagesnippets](http://www.imagesnippets.com/) - ImageSnippets is a complete metadata editing interface that enables someone who knows little to nothing about RDF, OWL, ontologies, or even URIs to create descriptions for images using Linked Data which is written in RDF.\n- [Linked Data Reactor (LD-R)](http://ld-r.org) - A full-stack platform for building adaptive component-based Linked Data applications in NodeJS and React.\n- [LDIF](https://github.com/wbsg/ldif) - Linked Data Integration Framework.\n \n",
+            "confidence": [
+                [
+                    0.9520641832879257
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Platforms",
+            "parentHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "A curated list of various semantic web and linked data resources.",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "- [RDF 1.1 Primer](https://www.w3.org/TR/rdf11-primer/)\n- [RDF 1.1 Semantics](https://www.w3.org/TR/rdf11-mt/)\n- [RDF 1.1 Concepts and Abstract Syntax](https://www.w3.org/TR/rdf11-concepts/)\n- [RDF 1.1: On Semantics of RDF Datasets](https://www.w3.org/TR/rdf11-datasets/)\n- [RDF Dataset Normalization](https://json-ld.github.io/normalization/spec/)\n \n",
+            "confidence": [
+                [
+                    0.9966794373795457
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RDF",
+            "parentHeader": "Awesome Semantic Web  --- Standards"
+        },
+        {
+            "excerpt": "- [OWL 2 Web Ontology Language Document Overview](https://www.w3.org/TR/owl-overview/)\n- [OWL 2 Web Ontology Language Primer](https://www.w3.org/TR/owl-primer/)\n- [manchester](https://www.w3.org/2007/OWL/draft/ED-owl2-manchester-syntax-20081128/)\n- [manchester-syntax-owl](https://github.com/rollxx/manchester-syntax-owl2)\n \n",
+            "confidence": [
+                [
+                    0.9983264958782873
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "OWL",
+            "parentHeader": "Awesome Semantic Web  --- Standards"
+        },
+        {
+            "excerpt": "- [XHTML+RDFa 1.1 - Third Edition](https://www.w3.org/TR/xhtml-rdfa/)\n- [RDFa Lite 1.1 - Second Edition](https://www.w3.org/TR/rdfa-lite/)\n- [HTML+RDFa 1.1 - Second Edition](https://www.w3.org/TR/html-rdfa/)\n \n",
+            "confidence": [
+                [
+                    0.9917790708691095
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RDFa",
+            "parentHeader": "Awesome Semantic Web  --- Standards"
+        },
+        {
+            "excerpt": "- [open-services.net](https://open-services.net/)\n \n",
+            "confidence": [
+                [
+                    0.9993693846419163
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Open Services for Lifecycle Collaboration (OSLC)",
+            "parentHeader": "Awesome Semantic Web  --- Standards"
+        },
+        {
+            "excerpt": "- [Semantic Web Journal](http://www.semantic-web-journal.net/)\n- [Journal of Web Semantics](https://www.journals.elsevier.com/journal-of-web-semantics)\n- [International Journal of Web and Semantic Technology](http://www.airccse.org/journal/ijwest/ijwest.html)\n \n",
+            "confidence": [
+                [
+                    0.9999999097066775
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Academic Journals",
+            "parentHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "- [TripleRush](https://github.com/uzh/triplerush) - (OS).\n- [corese](https://github.com/Wimmics/corese) - (OS).\n- [rdf3x](https://code.google.com/archive/p/rdf3x/) - (OS).\n- [gh-rdf3x](https://github.com/gh-rdf3x/gh-rdf3x) - (OS).\n- [rdf3x-mpi](https://bitbucket.org/saikrishnan/rdf3x-mpi)\n- [Qamel](https://github.com/dice-group/qamel) - RDF4J ported to Andriod.\n- [dipLODocus](https://www.semanticscholar.org/paper/a1510214a16c73f464a8d1ae631054870114bbc8)\n- [SW-Store](https://cs.uwaterloo.ca/~gweddell/cs848/papers/SW-Store.pdf)\n- [Yars2](https://www.semanticscholar.org/paper/08bae32492f4f8a262ec990853613151cc484dc5)\n- [Shard](https://sourceforge.net/projects/shard-3store/)\n- [Hexastore](http://www.vldb.org/pvldb/1/1453965.pdf)\n- [BitMat](https://www.cs.ox.ac.uk/people/medha.atre/papers/atre-ssws2009.pdf)\n- [LUPOSDATE](https://www.ifis.uni-luebeck.de/index.php?id=luposdate-demo)\n- [DREAM](https://github.com/CMU-Q/DREAM) - DREAM - Distributed RDF Engine with Adaptive Query Planner and Minimal Communication.\n- [RIQ](https://github.com/UMKC-BigDataLab/RIQ) - RIQ is a new software tool for fast processing of SPARQL queries on RDF quadruples.\n- [hyrise](https://github.com/hyrise/hyrise) - Hyrise is a research in-memory database. \n",
+            "confidence": [
+                [
+                    0.9999999949977223
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Academic",
+            "parentHeader": "Awesome Semantic Web  --- Databases"
+        },
+        {
+            "excerpt": "- [CSPARQL-engine](https://github.com/streamreasoning/CSPARQL-engine)\n- [Triplewave](https://github.com/streamreasoning/TripleWave)\n- [morph-streams](https://github.com/jpcik/morph-streams)\n- [Katts](https://github.com/uzh/katts) - Katts is A Triple Torrent Sieve.\n- [WAVES](https://www.waves-rsp.org/)\n- [Strider](https://github.com/renxiangnan/strider)\n- [cqels](https://github.com/KMax/cqels)\n- [morph](https://github.com/jpcik/morph) - Sparql-stream sensor queries.\n- [morph-web](https://github.com/jpcik/morph-web)\n- [sepa](https://github.com/arces-wot/SEPA) - A JAVA implementation of the SPARQL Event Processing Architecture including the engine, APIs and tools.\n- [StreamingMASSIF](https://github.com/IBCNServices/StreamingMASSIF)\n- [streaming-sparql](https://github.com/weblyzard/streaming-sparql)\n \n",
+            "confidence": [
+                [
+                    0.9999997590190055
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Streaming SPARQL",
+            "parentHeader": "Awesome Semantic Web  --- SPARQL"
+        },
+        {
+            "excerpt": "- [Semagrow](https://github.com/semagrow)\n- [CostFed](https://github.com/dice-group/CostFed)\n- [QUETSAL](http://aksw.org/Projects/QUETSAL.html)\n- [SPLENDID](http://ceur-ws.org/Vol-782/GoerlitzAndStaab_COLD2011.pdf)\n- [ANAPSID](https://github.com/anapsid/anapsid)\n- [HiBISCuS](https://github.com/AKSW/HiBISCuS)\n- [SPARQLFederator](https://github.com/djogopatrao/SPARQLFederator)\n- [rdffederator](https://github.com/goerlitz/rdffederator)\n- [Avalanche](http://www.ifi.uzh.ch/en/ddis/research/avalanche.html)\n- [FedX](https://github.com/VeritasOS/fedx)\n- [anapsid](https://github.com/anapsid/anapsid) - An adaptive query processing engine for SPARQL endpoints.\n- [luposdate](https://github.com/luposdate/luposdate) - A Semantic Web Database Management System developed by IFIS at the University of L\u00fcbeck. \n",
+            "confidence": [
+                [
+                    0.9999999950541678
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Federated SPARQL",
+            "parentHeader": "Awesome Semantic Web  --- SPARQL"
+        },
+        {
+            "excerpt": "- [SemWIQ](https://sourceforge.net/projects/semwiq/)\n- [DARQ](http://darq.sourceforge.net/)\n \n",
+            "confidence": [
+                [
+                    0.9788914761692258
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Federated SPARQL",
+            "parentHeader": "Awesome Semantic Web  --- SPARQL"
+        },
+        {
+            "excerpt": "- [SPARQL2Git](https://github.com/albertmeronyo/SPARQL2Git) - Easily store and curate SPARQL queries (and their associated Linked Data APIs) in GitHub.\n- [sparql-transformer](https://github.com/D2KLab/sparql-transformer) - A generic JSON-LD transformer.\n- [sparqlab](https://github.com/jindrichmynarz/sparqlab) - Lab for exercising SPARQL.\n- [SNORQL](https://github.com/kurtjx/SNORQL) - Ajaxy front-end for exploring triple stores.\n- [d3-sparql](https://github.com/zazuko/d3-sparql/) - Query a SPARQL endpoint with a SELECT query and get the data ready to be used with d3js\n- [d3sparql](https://github.com/ktym/d3sparql) - JavaScript library for executing SPARQL query and transforming resulted JSON for visualization in D3.js.\n- [jdbc4sparql](https://github.com/Claudenw/jdbc4sparql) - A JDBC driver that takes data from SPARQL endpoints or RDF graphs.\n- [odata2sparql](https://github.com/peterjohnlawrence/com.inova8.odata2sparql.v4) - An OData proxy server that takes data from SPARQL endpoints or RDF graphs and publishes as OData V4 endpoint.\n- [lens2odata](https://github.com/peterjohnlawrence/com.inova8.lens.framework.v4) - A GUI for discovery, search, and graph of RDF sources.\n- [sparql2xquery](https://github.com/marklogic/sparql2xquery) - SPARQL to XQuery Translator for use with MarkLogic Semantic Toolkit.\n- [SparqlAnalytics](https://github.com/AKSW/SparqlAnalytics)\n- [decentsparql](https://github.com/itm/decentsparql)\n- [sparqled](https://github.com/sindice/sparqled)\n- [SPARQL2NL](https://github.com/AKSW/SPARQL2NL)\n- [sparql-proxy](https://github.com/clarkparsia/sparql-proxy)\n- [AutoSPARQL](https://github.com/AKSW/AutoSPARQL)\n- [YASGUI](https://github.com/OpenTriply/YASGUI) - Yet Another Sparql GUI.\n- [YASGUI.legacy](https://github.com/OpenTriply/YASGUI.legacy)\n- [pubby](https://github.com/cygri/pubby) - A Linked Data frontend for SPARQL endpoints.\n- [fluent-sparql](https://github.com/stoewer/fluent-sparql)\n- [FlintSparqlEditor](https://github.com/TSO-Openup/FlintSparqlEditor)\n- [reactive-sparql](https://github.com/modelfabric/reactive-sparql)\n- [sparql-transformer](https://github.com/D2KLab/sparql-transformer)\n- [spanqit](https://github.com/anqit/spanqit) - Java-based SPARQL query generator.\n- [squebi](https://github.com/tkurz/squebi) - Squebi is a SPARQL editor and SPARQL result visualizer.\n- [zeppelin-sparql](https://github.com/nick-manasys/zeppelin-sparql) - Zeppelin sparql interpreter.\n- [SAFE](https://github.com/yasarkhangithub/SAFE)\n- [Sparql-cli](https://github.com/lambdamusic/Sparql-cli) - Command line API for SPARQL.\n- [snap-sparql-query](https://github.com/protegeproject/snap-sparql-query)\n- [Trifid](https://github.com/zazuko/trifid) - Lightweight Linked Data Server and Proxy\n- [asqc](https://github.com/gklyne/asqc) - SPARQL query client (pronounced \"ask\").\n- [SPARQL-parser](https://github.com/tenforce/SPARQL-parser)\n- [antlr-sparql-grammar](https://github.com/rollxx/antlr-sparql-grammar)\n- [visu](https://github.com/jiemakel/visu) - Visual SPARQL query tool.\n- [Porthole](https://itunes.apple.com/us/app/porthole/id984035787) - Mac SPARQL editor and client.\n- [datastudio-sparql-connector](https://github.com/DataFabricRus/datastudio-sparql-connector) - SPARQL Connector for Google Data Studio.\n- [QLever](https://github.com/ad-freiburg/QLever) - Highly efficient query engine for SPARQL+Text.\n- [sage-engine](https://github.com/sage-org/sage-engine) - a SPARQL query engine for public Linked Data providers. \n- [SEPA](https://github.com/arces-wot/SEPA) - A JAVA implementation of the SPARQL Event Processing Architecture including the engine, APIs and tools.\n- [Processor](https://github.com/AtomGraph/Processor) - Ontology-driven Linked Data processor and server for SPARQL backends.\n- [LinkedDataHub](https://atomgraph.github.io/LinkedDataHub/) - SPARQL-powered Knowledge Graph management system.\n- [SparqlBlocks](http://sparqlblocks.org/) - Build SPARQL queries with blocks\n- [SparqlProg](https://github.com/cmungall/sparqlprog) - composable SPARQL using logic programming\n- [Sparklis](https://github.com/sebferre/sparklis) - natural language query builder to explore and query endpoints with all the power of SPARQL yet without any knowledge of SPARQL.\n \n",
+            "confidence": [
+                [
+                    0.9999942945340953
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "SPARQL Applications",
+            "parentHeader": "Awesome Semantic Web  --- Benchmarks"
+        },
+        {
+            "excerpt": "- [International Semantic Web Conference (ISWC 2019)](http://iswc2019.semanticweb.org)\n- [European Semantic Web Conference (ESWC 2019)](https://2019.eswc-conferences.org)\n- [US2TS -- U.S. Semantic Technologies Symposium](http://us2ts.org)\n \n",
+            "confidence": [
+                [
+                    0.9999999983852348
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Conferences",
+            "parentHeader": "Awesome Semantic Web  --- Ecosystem"
+        },
+        {
+            "excerpt": "- [RDF-DEV](https://www.w3.org/community/rdf-dev/) - RDF-DEV COMMUNITY GROUP.\n- [w3c semantic web](https://lists.w3.org/Archives/Public/semantic-web/)\n- [JSON-LD Working Group](https://www.w3.org/2018/json-ld-wg/)\n- [w3c activities](https://www.w3.org/Consortium/activities)\n \n",
+            "confidence": [
+                [
+                    0.993413731761794
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Groups",
+            "parentHeader": "Awesome Semantic Web  --- Ecosystem"
+        },
+        {
+            "excerpt": "- [TabLinker](https://github.com/Data2Semantics/TabLinker)\n- [xlwrap](https://github.com/sidewinderlabs/xlwrap)\n \n- [guide-o-matic](https://github.com/baskaufs/guid-o-matic) - Xquery scripts to convert fielded text (CSV) files to RDF serialized as XML, Turtle, and JSON-LD.\n- [COW](https://github.com/CLARIAH/COW) - CSV On the Web (CSVW) converter.\n- [CSV2RDF](https://github.com/clarkparsia/csv2rdf) - CSV to RDF mapper.\n- [csv2rdf](https://github.com/notruthless/csv2rdf)\n- [csv2rdf4lod-automation](https://github.com/timrdf/csv2rdf4lod-automation)\n- [tarql-component](https://github.com/opencube-toolkit/tarql-component)\n- [tarql](https://github.com/tarql/tarql)\n- [CSV2RDF](https://github.com/AtomGraph/CSV2RDF) - Streaming, transforming, SPARQL-based CSV to RDF converter\n \n",
+            "confidence": [
+                [
+                    0.9872421892177753,
+                    0.9675815529738188
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "CSV/Tabular",
+            "parentHeader": "Awesome Semantic Web  --- Mapping"
+        },
+        {
+            "excerpt": "- [morph-xr2rml](https://github.com/frmichel/morph-xr2rml)\n- [XR2RML](https://github.com/djimloic/XR2RML)\n \n- [paper](http://events.linkeddata.org/ldow2016/papers/LDOW2016_paper_14.pdf)\n- [Adapt R2RML](https://opengogs.adaptcentre.ie/debruync/r2rml) \n",
+            "confidence": [
+                [
+                    0.9872421892177753,
+                    0.9513733337966637
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RML",
+            "parentHeader": "Awesome Semantic Web  --- Mapping --- XML"
+        },
+        {
+            "excerpt": "- [foaf](http://www.foaf-project.org/) - Friend of a Friend (FOAF) ontology.\n- [uberon](http://uberon.github.io) - Integrated cross-species ontology covering anatomical structures in animals.\n- [juso-ontology](http://rdfs.co/juso/latest/html) - Vocabulary for describing geographical addresses and features.\n- [obo-relations](http://obofoundry.org/ontology/ro.html) - Relation Ontology. Relationship types shared across multiple ontologies.\n- [orderedlistonto](https://github.com/smiy/orderedlistonto) - The Ordered List Ontology.\n- [evidenceontology](http://evidenceontology.org) - EVIDENCE & CONCLUSION ONTOLOGY.\n- [bevon](http://rdfs.co/bevon/latest/html) - Beverage ontology.\n- [cyber-ontology](https://github.com/daedafusion/cyber-ontology) - Cyber Intelligence Ontology.\n- [doap](https://github.com/edumbill/doap) - RDF schema for describing software projects.\n- [qb4olap](https://github.com/lorenae/qb4olap) - A Vocabulary for Business Intelligence over Linked Data.\n- [Hydra](https://github.com/lanthaler/Hydra) - A lightweight vocabulary for hypermedia-driven Web APIs.\n- [vocab-transit](https://github.com/wwaites/vocab-transit) - RDF Schema for transit data.\n- [ssso](https://github.com/gbv/ssso) - Specification of Simple Service Status Ontology.\n- [dso](https://github.com/gbv/dso) - Specification of Document Service Ontology.\n- [schema.org](https://schema.org/docs/datamodel.html) - Structured data on the Internet (Google, Microsoft, Yahoo and Yandex).\n- [SPAR](http://www.sparontologies.net) - Semantic Publishing and Referencing Ontologies.\n- [BFO](http://basic-formal-ontology.org) - Basic Formal Ontology.\n- [VIVO ISF](https://wiki.duraspace.org/display/VTDA/VIVO-ISF+Ontology) - Researchers and the full context in which they work.\n- [yago](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/) YAGO is a huge semantic knowledge base, derived from Wikipedia WordNet and GeoNames.\n- [dbpedia](http://dbpedia.org/ontology/)\n \n",
+            "confidence": [
+                [
+                    0.9999820292502314
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Community",
+            "parentHeader": "Awesome Semantic Web  --- Ontologies"
+        },
+        {
+            "excerpt": "- [Pellet](https://github.com/stardog-union/pellet)\n- [openllet](https://github.com/Galigator/openllet)\n- [FaCT++](https://github.com/ethz-asl/libfactplusplus)\n- [HermiT](http://www.hermit-reasoner.com/)\n- [ELK](https://github.com/liveontologies/elk-reasoner)\n- [Whelk](https://github.com/balhoff/whelk)\n- [OWL-RL](https://github.com/RDFLib/OWL-RL)\n- [RacerPro](https://franz.com/agraph/racer/)\n- [Manchester List of Reasoners](http://owl.cs.manchester.ac.uk/tools/list-of-reasoners/)\n- [elephant-reasoner](https://github.com/sertkaya/elephant-reasoner)\n- [HyLAR](https://github.com/ucbl/HyLAR-Reasoner)\n- [ruby-rdf/rdf-reasoner](https://github.com/ruby-rdf/rdf-reasoner)\n- [cel](https://github.com/julianmendez/cel) -A lightweight Description Logic reasoner for large-scale biomedical ontologies.\n- [reasonable](https://github.com/gtfierro/reasonable) - OWL 2 Reasoner built on DataFrog\n- [eye](https://github.com/josd/eye) - Euler Yet another proof Engine.\n- [Sequoia](https://github.com/andrewdbate/Sequoia) - Sequoia is a consequence-based OWL 2 DL Reasoner supporting multithreaded reasoning.\n- [konclude](http://www.derivo.de/en/produkte/konclude.html) - Konclude is a high-performance reasoner for large and expressive ontologies.\n- [owlproofs](https://github.com/klinovp/owlproofs) - Extension to the OWL API to request proofs of entailments from the reasoner.\n \n",
+            "confidence": [
+                [
+                    0.999999174397203
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Reasoners",
+            "parentHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "- [serd](https://github.com/drobilla/serd) - Lightweight C library for RDF syntax.\n- [librdf](https://github.com/dajobe/librdf) - Redland librdf RDF API and triple stores.\n- [raptor](https://github.com/dajobe/raptor) - Redland Raptor RDF syntax library.\n- [rasqal](https://github.com/dajobe/rasqal) - Redland Rasqal RDF Query Library.\n- [cowl](https://github.com/sisinflab-swot/cowl) - A lightweight C API for working with OWL ontologies. \n",
+            "confidence": [
+                [
+                    0.9989168862112461
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [dotNetRDF](https://github.com/dotnetrdf/dotnetrdf)\n- [RDFSharp](https://github.com/mdesalvo/RDFSharp)\n- [Rdf.Vocabularies](https://github.com/wikibus/rdf.vocabularies) \n",
+            "confidence": [
+                [
+                    0.9983032396216318
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [RDF.ex](https://github.com/marcelotto/rdf-ex) \n",
+            "confidence": [
+                [
+                    0.9105368110547479
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [groovyrdf](https://github.com/angelo-v/groovyrdf) \n",
+            "confidence": [
+                [
+                    0.9105368110547479
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [rdf4h](https://github.com/robstewart57/rdf4h)\n- [swish](https://bitbucket.org/doug_burke/swish/wiki/Home)\n- [hsparql](https://github.com/robstewart57/hsparql) \n",
+            "confidence": [
+                [
+                    0.9994691431251316
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [RDF4J](http://rdf4j.org)\n- [Jena](http://jena.apache.org)\n- [commons-rdf](http://commons.apache.org/proper/commons-rdf/)\n- [foafssl-java](https://github.com/bblfish/foafssl-java)\n- [soarql-dl-api](https://github.com/protegeproject/sparql-dl-api) - A query engine for SPARQL-DL.\n- [nxparser](https://github.com/nxparser/nxparser) - Java parsers for different RDF serialisations + API + tools + JAX-RS integration.\n- [Eclipse Lyo](https://www.eclipse.org/lyo/)\n- [JB4JSON-LD](https://github.com/kbss-cvut/jb4jsonld), [JB4JSON-LD Jackson](https://github.com/kbss-cvut/jb4jsonld-jackson) - Java binding for JSON-LD (mapping POJO - JSON-LD). \n",
+            "confidence": [
+                [
+                    0.9994619443037509
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [kotlin-rdf](https://github.com/nicholashauschild/kotlin-rdf) \n",
+            "confidence": [
+                [
+                    0.9105368110547479
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [ocaml-rdf](https://www.good-eris.net/ocaml-rdf/) - Manipulate RDF graphs and execute Sparql queries. \n",
+            "confidence": [
+                [
+                    0.9701353172993468
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [Attean](https://metacpan.org/pod/Attean)\n- [RDF::Trine](https://metacpan.org/pod/RDF::Trine) \n",
+            "confidence": [
+                [
+                    0.9919784769950174
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [EasyRdf](http://www.easyrdf.org/)\n- [semsol](https://github.com/semsol/arc2/wiki)\n- [PHP-SPARQL-Lib](https://github.com/cgutteridge/PHP-SPARQL-Lib)\n- [Graphite](http://graphite.ecs.soton.ac.uk/)\n- [sparqllib](http://graphite.ecs.soton.ac.uk/sparqllib/) \n",
+            "confidence": [
+                [
+                    0.9845430165664976
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [rrdf](https://github.com/egonw/rrdf)\n- [rdflib](https://github.com/ropensci/rdflib)\n- [redland](https://github.com/ropensci/redland-bindings)\n- [jsonld](https://github.com/ropensci/jsonld) \n",
+            "confidence": [
+                [
+                    0.9996468825501161
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [swift-sparql-syntax](https://github.com/kasei/swift-sparql-syntax) - SPARQL 1.1 Parser.\n- [URITemplate](https://github.com/kasei/URITemplate) - Swift implementation of URI Template ([RFC6570](https://tools.ietf.org/html/rfc6570)).\n- [swift-serd](https://github.com/kasei/swift-serd) - Swift package wrapper for the [Serd RDF library](http://drobilla.net/software/serd).\n- [kineo](https://github.com/kasei/kineo) - A SPARQL endpoint and quadstore written in Swift.\n- [swift-hdt](https://github.com/kasei/swift-hdt) - An [HDT](http://www.rdfhdt.org/) RDF Parser. \n",
+            "confidence": [
+                [
+                    0.9970159595937381
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [sparql.vim](https://github.com/vim-scripts/sparql.vim) - SPARQL syntax highlighting.\n- [vim-sparql](https://github.com/Omer/vim-sparql)\n- [semweb.vim](https://github.com/seebi/semweb.vim) \n",
+            "confidence": [
+                [
+                    0.9983032396216318
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [sparql4idea](https://github.com/mattnathan/sparql4idea) - SPARQL language plugin for IntelliJ IDEA.\n- [RDF and SPARQL](https://sharedvocabs.com/products/rdfandsparql/) - RDF and SPARQL plugin for JetBrains IDEs \n",
+            "confidence": [
+                [
+                    0.9844136574931703
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [sparql/turtle extension](https://github.com/peta/turtle.tmbundle) \n",
+            "confidence": [
+                [
+                    0.9105368110547479
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [Turtle syntax highlighter](https://github.com/njh/bbedit-turtle) \n",
+            "confidence": [
+                [
+                    0.9105368110547479
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [LinkedGeoData](https://github.com/GeoKnow/LinkedGeoData)\n- [SemantGeo](https://github.com/apseyed/SemantGeo)\n- [GeoLift](https://github.com/AKSW/GeoLift)\n- [linkedspatialindex](https://github.com/wwaites/linkedspatialindex)\n- [GeomRDF](https://github.com/fhamdi/GeomRDF)\n- [GeoARQ](https://github.com/castagna/GeoARQ)\n- [USeekM](https://www.openhub.net/p/useekm) \n",
+            "confidence": [
+                [
+                    0.9999993642445335
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [Visual SPARQL Builder](https://leipert.github.io/vsb/)\n- [d3-sparql](https://github.com/zazuko/d3-sparql)\n- [SPARQLFilterFlow](http://sparql.visualdataweb.org/)\n- [VOWL](http://vowl.visualdataweb.org/) - Visual Notation for OWL Ontologies.\n- [gephi-semantic-web-import](https://github.com/Wimmics/gephi-semantic-web-import)\n- [visualRDF](https://github.com/alangrafu/visualRDF)\n- [rdfdot](https://github.com/wastl/rdfdot) - Tools for drawing graphs from RDF files with GraphViz.\n- [ontodia](https://github.com/ontodia-org/ontodia) - Ontodia data diagraming library.\n- [rdfpuml](https://github.com/VladimirAlexiev/rdf2rml) - True RDF Diagrams.\n- [Ontology Visualisation](https://github.com/usc-isi-i2/ontology-visualization) - Create graphs from RDF using GraphViz.\n- [SparqlBlocks](http://sparqlblocks.org/) - Build SPARQL queries with blocks\n- [Cameo Concept Modeler](https://www.nomagic.com/product-addons/magicdraw-addons/cameo-concept-modeler-plugin#key-benefits) - a cross-platform app for OWL ontology modeling, visualization, and natural-language validation \n",
+            "confidence": [
+                [
+                    0.9999843364007079
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "## Machine Learning \n",
+            "confidence": [
+                [
+                    0.9195926162616405
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [xwiki](https://github.com/bblfish/xwiki) - Xwiki related code for WebID.\n- [solid-spec](https://github.com/solid/solid-spec)\n- [webid-demo](https://github.com/digitalbazaar/webid-demo)\n- [webid-spec](https://github.com/webid-community/webid-spec)\n- [node-webid](https://github.com/magnetik/node-webid) \n",
+            "confidence": [
+                [
+                    0.9999155499352882
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [TopQuadrant/shacl](https://github.com/TopQuadrant/shacl) - SHACL API in Java based on Apache Jena.\n- [RDFunit](https://github.com/AKSW/RDFUnit/)\n- [labra/shaclex](https://github.com/labra/shaclex)\n- [pySHACL](https://github.com/RDFLib/pySHACL) - A Python validator for SHACL.\n- [rdf4j-shacl](http://docs.rdf4j.org/programming/#_validation_with_shacl) \n",
+            "confidence": [
+                [
+                    0.9982189775514637
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "## IIIF\n- [IIIF](https://iiif.io/)\n- [fester](https://github.com/UCLALibrary/fester) \n",
+            "confidence": [
+                [
+                    0.9422100272984922
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [awesome-graph](https://github.com/jbmusso/awesome-graph)\n- [awesome-prolog](https://github.com/klaussinani/awesome-prolog)\n- [awesome-ontologies](htps://github.com/semantalytics/awesome-ontologies)\n- [shaoxiongi/awesome-knowlege-graph](https://github.com/shaoxiongji/awesome-knowledge-graph)\n- [totogo/awesome-knowledge-graph](https://github.com/totogo/awesome-knowledge-graph)\n- [awesome GLAM semweb](https://github.com/ncarboni/awesome-GLAM-semweb) \n",
+            "confidence": [
+                [
+                    0.9998929892400048
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "# Awesome Semantic Web [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) \n",
+            "confidence": [
+                [
+                    0.9751099931275486
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C#",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [sparql.vim](https://github.com/vim-scripts/sparql.vim) - SPARQL syntax highlighting.\n- [vim-sparql](https://github.com/Omer/vim-sparql)\n- [semweb.vim](https://github.com/seebi/semweb.vim)\n \n",
+            "confidence": [
+                [
+                    0.9983032396216318
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "VIM",
+            "parentHeader": "Awesome Semantic Web  --- Editors"
+        },
+        {
+            "excerpt": "- [sparql4idea](https://github.com/mattnathan/sparql4idea) - SPARQL language plugin for IntelliJ IDEA.\n- [RDF and SPARQL](https://sharedvocabs.com/products/rdfandsparql/) - RDF and SPARQL plugin for JetBrains IDEs\n \n",
+            "confidence": [
+                [
+                    0.9844136574931703
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "IntelliJ",
+            "parentHeader": "Awesome Semantic Web  --- Editors"
+        },
+        {
+            "excerpt": "- [sparql/turtle extension](https://github.com/peta/turtle.tmbundle)\n \n",
+            "confidence": [
+                [
+                    0.9105368110547479
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "TextMate",
+            "parentHeader": "Awesome Semantic Web  --- Editors"
+        },
+        {
+            "excerpt": "- [Turtle syntax highlighter](https://github.com/njh/bbedit-turtle) \n",
+            "confidence": [
+                [
+                    0.9105368110547479
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [LinkedGeoData](https://github.com/GeoKnow/LinkedGeoData)\n- [SemantGeo](https://github.com/apseyed/SemantGeo)\n- [GeoLift](https://github.com/AKSW/GeoLift)\n- [linkedspatialindex](https://github.com/wwaites/linkedspatialindex)\n- [GeomRDF](https://github.com/fhamdi/GeomRDF)\n- [GeoARQ](https://github.com/castagna/GeoARQ)\n- [USeekM](https://www.openhub.net/p/useekm)\n \n- [Visual SPARQL Builder](https://leipert.github.io/vsb/)\n- [d3-sparql](https://github.com/zazuko/d3-sparql)\n- [SPARQLFilterFlow](http://sparql.visualdataweb.org/)\n- [VOWL](http://vowl.visualdataweb.org/) - Visual Notation for OWL Ontologies.\n- [gephi-semantic-web-import](https://github.com/Wimmics/gephi-semantic-web-import)\n- [visualRDF](https://github.com/alangrafu/visualRDF)\n- [rdfdot](https://github.com/wastl/rdfdot) - Tools for drawing graphs from RDF files with GraphViz.\n- [ontodia](https://github.com/ontodia-org/ontodia) - Ontodia data diagraming library.\n- [rdfpuml](https://github.com/VladimirAlexiev/rdf2rml) - True RDF Diagrams.\n- [Ontology Visualisation](https://github.com/usc-isi-i2/ontology-visualization) - Create graphs from RDF using GraphViz.\n- [SparqlBlocks](http://sparqlblocks.org/) - Build SPARQL queries with blocks\n- [Cameo Concept Modeler](https://www.nomagic.com/product-addons/magicdraw-addons/cameo-concept-modeler-plugin#key-benefits) - a cross-platform app for OWL ontology modeling, visualization, and natural-language validation\n \n",
+            "confidence": [
+                [
+                    0.9999993642445335,
+                    0.9999843364007079
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Visualization",
+            "parentHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "- [xwiki](https://github.com/bblfish/xwiki) - Xwiki related code for WebID.\n- [solid-spec](https://github.com/solid/solid-spec)\n- [webid-demo](https://github.com/digitalbazaar/webid-demo)\n- [webid-spec](https://github.com/webid-community/webid-spec)\n- [node-webid](https://github.com/magnetik/node-webid)\n \n- [TopQuadrant/shacl](https://github.com/TopQuadrant/shacl) - SHACL API in Java based on Apache Jena.\n- [RDFunit](https://github.com/AKSW/RDFUnit/)\n- [labra/shaclex](https://github.com/labra/shaclex)\n- [pySHACL](https://github.com/RDFLib/pySHACL) - A Python validator for SHACL.\n- [rdf4j-shacl](http://docs.rdf4j.org/programming/#_validation_with_shacl)\n \n",
+            "confidence": [
+                [
+                    0.9999155499352882,
+                    0.9982189775514637
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "SHACL Implementations",
+            "parentHeader": "Awesome Semantic Web "
+        },
+        {
+            "excerpt": "- [IIIF](https://iiif.io/)\n- [fester](https://github.com/UCLALibrary/fester)\n \n- [awesome-graph](https://github.com/jbmusso/awesome-graph)\n- [awesome-prolog](https://github.com/klaussinani/awesome-prolog)\n- [awesome-ontologies](htps://github.com/semantalytics/awesome-ontologies)\n- [shaoxiongi/awesome-knowlege-graph](https://github.com/shaoxiongji/awesome-knowledge-graph)\n- [totogo/awesome-knowledge-graph](https://github.com/totogo/awesome-knowledge-graph)\n- [awesome GLAM semweb](https://github.com/ncarboni/awesome-GLAM-semweb)\n \n",
+            "confidence": [
+                [
+                    0.9422100272984922,
+                    0.9998929892400048
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Other Awesome",
+            "parentHeader": "Awesome Semantic Web "
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "- [rdf4h](https://github.com/robstewart57/rdf4h)\n- [swish](https://bitbucket.org/doug_burke/swish/wiki/Home)\n- [hsparql](https://github.com/robstewart57/hsparql) \n",
+            "confidence": [
+                [
+                    0.9091268858800027
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [sparql.vim](https://github.com/vim-scripts/sparql.vim) - SPARQL syntax highlighting.\n- [vim-sparql](https://github.com/Omer/vim-sparql)\n- [semweb.vim](https://github.com/seebi/semweb.vim) \n",
+            "confidence": [
+                [
+                    0.9044498830234139
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [sparql/turtle extension](https://github.com/peta/turtle.tmbundle) \n",
+            "confidence": [
+                [
+                    0.9437305366693024
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "C",
+            "parentHeader": "Awesome Semantic Web  --- Programming"
+        },
+        {
+            "excerpt": "- [sparql.vim](https://github.com/vim-scripts/sparql.vim) - SPARQL syntax highlighting.\n- [vim-sparql](https://github.com/Omer/vim-sparql)\n- [semweb.vim](https://github.com/seebi/semweb.vim)\n \n",
+            "confidence": [
+                [
+                    0.9044498830234139
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "VIM",
+            "parentHeader": "Awesome Semantic Web  --- Editors"
+        },
+        {
+            "excerpt": "- [sparql/turtle extension](https://github.com/peta/turtle.tmbundle)\n \n",
+            "confidence": [
+                [
+                    0.9437305366693024
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "TextMate",
+            "parentHeader": "Awesome Semantic Web  --- Editors"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Awesome Semantic Web ",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "documentation": [
+        {
+            "excerpt": "https://skosprovider.readthedocs.io/",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Go",
+            "excerpt": "  - [Groovy](#groovy)",
+            "parentHeader": "Awesome Semantic Web  --- Programming",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/awesome-semantic-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-12-02T08:28:19Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-12-02T08:28:20Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Creative Commons Zero v1.0 Universal",
+            "url": "https://api.github.com/licenses/cc0-1.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "awesome-semantic-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/awesome-semantic-web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/awesome-semantic-web/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/awesome-semantic-web/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/awesome-semantic-web/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:46:14 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:46:14 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'CC0 1.0 Universal\\n\\nStatement of Purpose\\n\\nThe laws of most jurisdictions throughout the world automatically confer\\nexclusive Copyright and Related Rights (defined below) upon the creator and\\nsubsequent owner(s) (each and all, an \"owner\") of an original work of\\nauthorship and/or a database (each, a \"Work\").\\n\\nCertain owners wish to permanently relinquish those rights to a Work for the\\npurpose of contributing to a commons of creative, cultural and scientific\\nworks (\"Commons\") that the public can reliably and without fear of later\\nclaims of infringement build upon, modify, incorporate in other works, reuse\\nand redistribute as freely as possible in any form whatsoever and for any\\npurposes, including without limitation commercial purposes. These owners may\\ncontribute to the Commons to promote the ideal of a free culture and the\\nfurther production of creative, cultural and scientific works, or to gain\\nreputation or greater distribution for their Work in part through the use and\\nefforts of others.\\n\\nFor these and/or other purposes and motivations, and without any expectation\\nof additional consideration or compensation, the person associating CC0 with a\\nWork (the \"Affirmer\"), to the extent that he or she is an owner of Copyright\\nand Related Rights in the Work, voluntarily elects to apply CC0 to the Work\\nand publicly distribute the Work under its terms, with knowledge of his or her\\nCopyright and Related Rights in the Work and the meaning and intended legal\\neffect of CC0 on those rights.\\n\\n1. Copyright and Related Rights. A Work made available under CC0 may be\\nprotected by copyright and related or neighboring rights (\"Copyright and\\nRelated Rights\"). Copyright and Related Rights include, but are not limited\\nto, the following:\\n\\n  i. the right to reproduce, adapt, distribute, perform, display, communicate,\\n  and translate a Work;\\n\\n  ii. moral rights retained by the original author(s) and/or performer(s);\\n\\n  iii. publicity and privacy rights pertaining to a person\\'s image or likeness\\n  depicted in a Work;\\n\\n  iv. rights protecting against unfair competition in regards to a Work,\\n  subject to the limitations in paragraph 4(a), below;\\n\\n  v. rights protecting the extraction, dissemination, use and reuse of data in\\n  a Work;\\n\\n  vi. database rights (such as those arising under Directive 96/9/EC of the\\n  European Parliament and of the Council of 11 March 1996 on the legal\\n  protection of databases, and under any national implementation thereof,\\n  including any amended or successor version of such directive); and\\n\\n  vii. other similar, equivalent or corresponding rights throughout the world\\n  based on applicable law or treaty, and any national implementations thereof.\\n\\n2. Waiver. To the greatest extent permitted by, but not in contravention of,\\napplicable law, Affirmer hereby overtly, fully, permanently, irrevocably and\\nunconditionally waives, abandons, and surrenders all of Affirmer\\'s Copyright\\nand Related Rights and associated claims and causes of action, whether now\\nknown or unknown (including existing as well as future claims and causes of\\naction), in the Work (i) in all territories worldwide, (ii) for the maximum\\nduration provided by applicable law or treaty (including future time\\nextensions), (iii) in any current or future medium and for any number of\\ncopies, and (iv) for any purpose whatsoever, including without limitation\\ncommercial, advertising or promotional purposes (the \"Waiver\"). Affirmer makes\\nthe Waiver for the benefit of each member of the public at large and to the\\ndetriment of Affirmer\\'s heirs and successors, fully intending that such Waiver\\nshall not be subject to revocation, rescission, cancellation, termination, or\\nany other legal or equitable action to disrupt the quiet enjoyment of the Work\\nby the public as contemplated by Affirmer\\'s express Statement of Purpose.\\n\\n3. Public License Fallback. Should any part of the Waiver for any reason be\\njudged legally invalid or ineffective under applicable law, then the Waiver\\nshall be preserved to the maximum extent permitted taking into account\\nAffirmer\\'s express Statement of Purpose. In addition, to the extent the Waiver\\nis so judged Affirmer hereby grants to each affected person a royalty-free,\\nnon transferable, non sublicensable, non exclusive, irrevocable and\\nunconditional license to exercise Affirmer\\'s Copyright and Related Rights in\\nthe Work (i) in all territories worldwide, (ii) for the maximum duration\\nprovided by applicable law or treaty (including future time extensions), (iii)\\nin any current or future medium and for any number of copies, and (iv) for any\\npurpose whatsoever, including without limitation commercial, advertising or\\npromotional purposes (the \"License\"). The License shall be deemed effective as\\nof the date CC0 was applied by Affirmer to the Work. Should any part of the\\nLicense for any reason be judged legally invalid or ineffective under\\napplicable law, such partial invalidity or ineffectiveness shall not\\ninvalidate the remainder of the License, and in such case Affirmer hereby\\naffirms that he or she will not (i) exercise any of his or her remaining\\nCopyright and Related Rights in the Work or (ii) assert any associated claims\\nand causes of action with respect to the Work, in either case contrary to\\nAffirmer\\'s express Statement of Purpose.\\n\\n4. Limitations and Disclaimers.\\n\\n  a. No trademark or patent rights held by Affirmer are waived, abandoned,\\n  surrendered, licensed or otherwise affected by this document.\\n\\n  b. Affirmer offers the Work as-is and makes no representations or warranties\\n  of any kind concerning the Work, express, implied, statutory or otherwise,\\n  including without limitation warranties of title, merchantability, fitness\\n  for a particular purpose, non infringement, or the absence of latent or\\n  other defects, accuracy, or the present or absence of errors, whether or not\\n  discoverable, all to the greatest extent permissible under applicable law.\\n\\n  c. Affirmer disclaims responsibility for clearing rights of other persons\\n  that may apply to the Work or any use thereof, including without limitation\\n  any person\\'s Copyright and Related Rights in the Work. Further, Affirmer\\n  disclaims responsibility for obtaining any necessary consents, permissions\\n  or other rights required for any use of the Work.\\n\\n  d. Affirmer understands and acknowledges that Creative Commons is not a\\n  party to this document and has no duty or obligation with respect to this\\n  CC0 or use of the Work.\\n\\nFor more information, please see\\nhttp://creativecommons.org/publicdomain/zero/1.0/\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/awesome-semantic-web/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

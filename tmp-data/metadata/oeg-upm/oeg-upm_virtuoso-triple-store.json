@@ -1,0 +1,193 @@
+{
+    "description": [
+        {
+            "excerpt": "Virtuoso triple store for the storage of the rdf data in the digital twin platform.\n \n",
+            "confidence": [
+                [
+                    0.9826033091943742
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Triple Store"
+        },
+        {
+            "excerpt": "1. Access the conductor as dba user, using the password during the creation of the container. \n",
+            "confidence": [
+                [
+                    0.9539075113347237
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Giving rights to insert data",
+            "parentHeader": "Triple Store --- Setting up virtuoso"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "Setting up virtuoso",
+            "excerpt": "The specific instructions on how to run the Virtuoso Docker are in this link:\n\nhttps://hub.docker.com/r/openlink/virtuoso-opensource-7\n",
+            "parentHeader": "Triple Store",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Triple Store",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master//master//master//master/images/sparql_update.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master//master//master/images/sparql_user.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master//master/images/users.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master/images/conductor.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Stopping and starting the container",
+            "excerpt": "Stop container:\n\n```docker stop my_virtdb```\n\nStart container: This will run Virtuoso on the background.\n\n```docker start my_virtdb```\n",
+            "parentHeader": "Triple Store --- Setting up virtuoso",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/virtuoso-triple-store",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-10-20T08:33:34Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-11-30T13:46:06Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "virtuoso-triple-store",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/virtuoso-triple-store",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/virtuoso-triple-store/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/virtuoso-triple-store/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/virtuoso-triple-store/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:32:56 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:32:56 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/virtuoso-triple-store/readme.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "script"
+    }
+}

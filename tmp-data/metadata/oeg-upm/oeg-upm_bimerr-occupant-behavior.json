@@ -1,0 +1,168 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the code and documentation generated for the Occupancy Profile ontology which is available at:\r\nhttp://bimerr.iot.linkeddata.es/def/occupancy-profile\r\n\r \n",
+            "confidence": [
+                [
+                    0.9814429042574881
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Occupancy Profile Ontology"
+        },
+        {
+            "excerpt": "BIMERR ontology for Occupant Behavior data for energy consumption",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Occupancy Profile Ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/bimerr-occupant-behavior/blob/master/diagrams/diagram.jpg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-occupant-behavior",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2019-12-27T15:58:39Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-10-22T10:33:33Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "bimerr-occupant-behavior",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/bimerr-occupant-behavior",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-occupant-behavior/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-occupant-behavior/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-occupant-behavior/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:48:58 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Tue, 05 Apr 2022 08:48:58 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-occupant-behavior/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "0.1.0",
+                "name": "First Stable Release",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-occupant-behavior/tarball/0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-occupant-behavior/zipball/0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-occupant-behavior/releases/tag/0.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-occupant-behavior/releases/32421679",
+                "dateCreated": "2020-06-25T20:37:51Z",
+                "datePublished": "2020-10-11T14:12:35Z"
+            },
+            {
+                "tagName": "0.0.6",
+                "name": "",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-occupant-behavior/tarball/0.0.6",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-occupant-behavior/zipball/0.0.6",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-occupant-behavior/releases/tag/0.0.6",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-occupant-behavior/releases/28915231",
+                "dateCreated": "2020-06-25T20:37:51Z",
+                "datePublished": "2020-07-24T14:11:00Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

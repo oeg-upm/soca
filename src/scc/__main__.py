@@ -30,10 +30,11 @@ def repos(input, output, repo_type):
 @cli.command()
 @click.option('--input','-i', required=True, help="Pointers to the repositories in csv format", metavar='<csv-repos>')
 @click.option('--output','-o', default="repos-metadata", help="Dir where repositories metadata will be saved", metavar='<path>')
-def extract(input, output):
+@click.option('--inspect4py','-i4p', is_flag=True, help="Use inspect4py to extract additional metadata from Python repositories")
+def extract(input, output, inspect4py):
     """Fetch and save metadata from introduced repos"""
     from scc.commands import extract_metadata
-    extract_metadata.fetch(input, output)
+    extract_metadata.fetch(input, output, inspect4py)
 
 @cli.command()
 @click.option('--input','-i', required=True, help="Dir repositories metadata in json format", metavar='<dir-json-metadata>')

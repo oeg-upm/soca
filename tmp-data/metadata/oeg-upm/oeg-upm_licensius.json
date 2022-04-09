@@ -1,0 +1,220 @@
+{
+    "description": [
+        {
+            "excerpt": "Collection of RDF licensing projects. See:  \n",
+            "confidence": [
+                [
+                    0.9217428044965839
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "licensius"
+        },
+        {
+            "excerpt": "Collection of license-related services",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "Linked Data Rights - http://purl.oclc.org/NET/ldr/ns#\nRights Information for Language Resources - http://purl.org/NET/ms-rights# \n",
+            "confidence": [
+                [
+                    0.9437953785581491
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "other projects pending to be migrated here:",
+            "parentHeader": "licensius"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "licensius",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://jitpack.io/v/oeg-upm/licensius.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "license": {
+        "excerpt": {
+            "name": "MIT License",
+            "url": "https://api.github.com/licenses/mit"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/licensius",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2015-10-22T15:29:39Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-12-14T17:19:58Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "licensius",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/licensius",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/licensius/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/licensius/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/licensius/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 5,
+            "date": "Tue, 05 Apr 2022 09:13:03 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:13:03 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "JavaScript",
+            "Java",
+            "HTML",
+            "CSS",
+            "Batchfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'The MIT License (MIT)\\n\\nCopyright (c) 2014 Ontology Engineering Group (OEG-UPM)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \"Software\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/licensius/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasDocumentation": {
+        "excerpt": [
+            "https://github.com/oeg-upm/licensius/tree/master/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "1.0.3",
+                "name": "jodrlapi",
+                "authorName": "vroddon",
+                "authorType": "User",
+                "body": "This is a release test.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/licensius/tarball/1.0.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/licensius/zipball/1.0.3",
+                "htmlUrl": "https://github.com/oeg-upm/licensius/releases/tag/1.0.3",
+                "url": "https://api.github.com/repos/oeg-upm/licensius/releases/33011144",
+                "dateCreated": "2020-10-24T11:29:05Z",
+                "datePublished": "2020-10-24T11:37:23Z"
+            },
+            {
+                "tagName": "1.0",
+                "name": "Version 1.0",
+                "authorName": "vroddon",
+                "authorType": "User",
+                "body": "This is the first running version separing licensius-core.jar from licensius.war (core and HTTP RESTful online services)\n",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/licensius/tarball/1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/licensius/zipball/1.0",
+                "htmlUrl": "https://github.com/oeg-upm/licensius/releases/tag/1.0",
+                "url": "https://api.github.com/repos/oeg-upm/licensius/releases/2708877",
+                "dateCreated": "2016-02-29T10:24:44Z",
+                "datePublished": "2016-02-29T10:28:14Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

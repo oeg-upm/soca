@@ -1,0 +1,148 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the code and documentation generated for the COGITO Resources ontology.\n \n",
+            "confidence": [
+                [
+                    0.9818538716000247
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "COGITO Resources ontology"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "COGITO Resources ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/cogito-resources-ontology/blob/master/diagram/diagram.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/cogito-resources-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-07-14T14:40:18Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-03-08T11:52:52Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "cogito-resources-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/cogito-resources-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/cogito-resources-ontology/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:22 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:22 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/cogito-resources-ontology/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "release",
+                "name": "COGITO Resources Ontology 0.0.1",
+                "authorName": "Salva5297",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/tarball/release",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/zipball/release",
+                "htmlUrl": "https://github.com/oeg-upm/cogito-resources-ontology/releases/tag/release",
+                "url": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/releases/50481826",
+                "dateCreated": "2021-09-17T10:26:19Z",
+                "datePublished": "2021-09-29T15:01:54Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

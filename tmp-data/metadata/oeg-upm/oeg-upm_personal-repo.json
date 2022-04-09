@@ -1,0 +1,136 @@
+{
+    "description": [
+        {
+            "excerpt": "Personal Maven Repository",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "originalHeader": "6) In any project that uses this library, you must include the reference to this repository:",
+            "excerpt": "<repositories>\n    <repository>\n        <id>PROJECT-NAME-mvn-repo</id>\n        <url>https://raw.github.com/USERNAME/PROJECT-NAME/mvn-repo/</url>\n        <snapshots>\n            <enabled>true</enabled>\n            <updatePolicy>always</updatePolicy>\n        </snapshots>\n    </repository>\n</repositories>\n```\nThat's all!!\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "2) Get a personal access token from Github.",
+            "excerpt": "##### 3) Copy that token as password in your maven config file",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "6) In any project that uses this library, you must include the reference to this repository:",
+            "excerpt": "<repositories>\n    <repository>\n        <id>PROJECT-NAME-mvn-repo</id>\n        <url>https://raw.github.com/USERNAME/PROJECT-NAME/mvn-repo/</url>\n        <snapshots>\n            <enabled>true</enabled>\n            <updatePolicy>always</updatePolicy>\n        </snapshots>\n    </repository>\n</repositories>\n```\nThat's all!!\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/personal-repo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2015-02-24T15:25:00Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2015-02-24T14:30:44Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "personal-repo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/personal-repo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/personal-repo/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/personal-repo/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/personal-repo/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:27:13 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:27:13 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/personal-repo/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

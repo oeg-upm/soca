@@ -1,0 +1,110 @@
+{
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/AstreaRun",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-04-20T10:55:43Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-04-22T07:35:06Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "AstreaRun",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/AstreaRun",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/AstreaRun/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/AstreaRun/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/AstreaRun/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:45:57 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:45:57 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python",
+            "PowerShell",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b\"This packge contains a modified version of ca-bundle.crt:\\n\\nca-bundle.crt -- Bundle of CA Root Certificates\\n\\nCertificate data from Mozilla as of: Thu Nov  3 19:04:19 2011#\\nThis is a bundle of X.509 certificates of public Certificate Authorities\\n(CA). These were automatically extracted from Mozilla's root certificates\\nfile (certdata.txt).  This file can be found in the mozilla source tree:\\nhttp://mxr.mozilla.org/mozilla/source/security/nss/lib/ckfw/builtins/certdata.txt?raw=1#\\nIt contains the certificates in PEM format and therefore\\ncan be directly used with curl / libcurl / php_curl, or with\\nan Apache+mod_ssl webserver for SSL client authentication.\\nJust configure this file as the SSLCACertificateFile.#\\n\\n* BEGIN LICENSE BLOCK \\nThis Source Code Form is subject to the terms of the Mozilla Public License,\\nv. 2.0. If a copy of the MPL was not distributed with this file, You can obtain\\none at http://mozilla.org/MPL/2.0/.\\n\\n END LICENSE BLOCK ***\\n@(#) $RCSfile: certdata.txt,v $ $Revision: 1.80 $ $Date: 2011/11/03 15:11:58 $\\n\"",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

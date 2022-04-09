@@ -1,0 +1,162 @@
+{
+    "longTitle": {
+        "excerpt": "Things Manager platform",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/things-manager-platform",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2022-01-10T10:02:56Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-01-10T12:23:10Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "things-manager-platform",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/things-manager-platform",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/things-manager-platform/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/things-manager-platform/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/things-manager-platform/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:32:24 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:32:24 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/things-manager-platform/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "#0.1.9",
+                "name": "Things Manager",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "### Changelog\r\nNew features:\r\n\r\n - [0.1.9] Configuration from file of the TDD, Triple store, and self host\r\n \r\nPrevious features:\r\n\r\n- [0.1.8] Configuration of endpoints from a file\r\n- [0.1.7] CRUD of containers for storing files or meta-files\r\n- [0.1.7]  CRUD of files, or meta-files\r\n- [0.1.7] Automatic creation of Thing Descriptions from files, enrichment of created Thing Descriptions from meta-files\r\n- [0.1.7] API for notification of events through the SSE protocol\r\n- [0.1.7] Swagger documentation\r\n- [0.1.7] Docker recipe",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/things-manager-platform/tarball/#0.1.9",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/things-manager-platform/zipball/#0.1.9",
+                "htmlUrl": "https://github.com/oeg-upm/things-manager-platform/releases/tag/%230.1.9",
+                "url": "https://api.github.com/repos/oeg-upm/things-manager-platform/releases/56838722",
+                "dateCreated": "2022-01-11T15:20:54Z",
+                "datePublished": "2022-01-11T15:21:17Z"
+            },
+            {
+                "tagName": "#0.1.8",
+                "name": "Things Manager",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "### Changelog\r\nNew features:\r\n- Configuration of endpoints from a file\r\n\r\nPrevious features:\r\n\r\n- CRUD of containers for storing files or meta-files\r\n- CRUD of files, or meta-files\r\n- Automatic creation of Thing Descriptions from files, enrichment of created Thing Descriptions from meta-files\r\n- API for notification of events through the SSE protocol\r\n- Swagger documentation\r\n- Docker recipe",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/things-manager-platform/tarball/#0.1.8",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/things-manager-platform/zipball/#0.1.8",
+                "htmlUrl": "https://github.com/oeg-upm/things-manager-platform/releases/tag/%230.1.8",
+                "url": "https://api.github.com/repos/oeg-upm/things-manager-platform/releases/56734029",
+                "dateCreated": "2022-01-10T12:23:02Z",
+                "datePublished": "2022-01-10T13:52:21Z"
+            },
+            {
+                "tagName": "#0.1.6",
+                "name": "Things Manager",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "### **Changelog**\r\n\r\nThis release includes:\r\n- CRUD of containers for storing files or meta-files\r\n- CRUD of files, or meta-files\r\n- Automatic creation of Thing Descriptions from files, enrichment of created Thing Descriptions from meta-files\r\n- API for notification of events through the SSE protocol\r\n- Swagger documentation\r\n- Docker recipe",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/things-manager-platform/tarball/#0.1.6",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/things-manager-platform/zipball/#0.1.6",
+                "htmlUrl": "https://github.com/oeg-upm/things-manager-platform/releases/tag/%230.1.6",
+                "url": "https://api.github.com/repos/oeg-upm/things-manager-platform/releases/56724783",
+                "dateCreated": "2022-01-10T10:04:21Z",
+                "datePublished": "2022-01-10T10:35:52Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

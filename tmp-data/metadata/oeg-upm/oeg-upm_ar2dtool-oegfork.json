@@ -1,0 +1,246 @@
+{
+    "description": [
+        {
+            "excerpt": "The syntax of the simple parameters is: \n",
+            "confidence": [
+                [
+                    0.979906049975148
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Configuration file"
+        },
+        {
+            "excerpt": "- classShape, individualShape, and literalShape: shapes of each type of element of the graph. Allowed values are: recatangle (default), ellipse, triangle, and diamond (e.g. classShape=ellipse;). \n\n- classColor, individualColor, and literalColor: color of each type of element of the graph. Allowed values so far are: black (default), red, blue, green, orange, yellow (e.g. literalColor=blue;). \n- nodeNameMode: defines the way the resources are named. You can specify 'fulluri' for using the URIs of each resource, 'prefix' for shortened names using the specified prefixes (resources with no mathcing prefix will be displayed with their full URI. By default the base prefix will be displayed as \"base:\", unless vann:preferredNamespacePrefix is specified, in which case its value will be used as base prefix), or 'localname' for using the localname of the resource. (e.g. nodeNameMode=localname;). \n",
+            "confidence": [
+                [
+                    0.9801432851814029,
+                    0.9339562791808411,
+                    0.9202467835613409
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Configuration file"
+        },
+        {
+            "excerpt": "The syntax of a list is: listName=[<elementA1, elementA2,..., elementA3><elementB1, elementB2,..., elementb3>...<elementZ1, elementZ2,..., elementZ3>]; \nBasically a list is a set of N-tuples. In most cases you will only need 1 tuple for your whole list, but in some cases it will be necessary to include more than one (like in the case of specialElementsList or equivalentElementList parameters). \n",
+            "confidence": [
+                [
+                    0.9785990867973646,
+                    0.9466765082245798
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Configuration file"
+        },
+        {
+            "excerpt": "- equivalentElementList: each of the elements of a tuple will be replaced by the first element of it on the final diagram. \n",
+            "confidence": [
+                [
+                    0.911698431320808
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Configuration file"
+        },
+        {
+            "excerpt": "Two sample configuration files are available in the /samples folder. One creates and ER diagram of the ontology. The other one depicts the taxonomy of the classes. \n",
+            "confidence": [
+                [
+                    0.9123890070959134
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Configuration file"
+        },
+        {
+            "excerpt": "Another RDF to diagram tool",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "invocation": [
+        {
+            "excerpt": "- FileToOutputFile: output picture file. \n",
+            "confidence": [
+                [
+                    0.9038076866404997
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Standalone tool"
+        }
+    ],
+    "longTitle": {
+        "excerpt": " AR2DTool (alpha)",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "logo": {
+        "excerpt": "https://dl.dropboxusercontent.com/u/4192819/logoard2tool.png",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "acknowledgement": [
+        {
+            "originalHeader": "Acknowledgements",
+            "excerpt": "- In this work we use the GraphViz Java API developed by Laszlo Szathmary (https://github.com/jabbalaci) for generating the diagramas from DOT files https://github.com/jabbalaci/graphviz-java-api\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/ar2dtool-oegfork",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-10-08T09:25:47Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-10-08T13:08:33Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Other",
+            "url": "https://raw.githubusercontent.com/oeg-upm/ar2dtool-oegfork/master/LICENSE"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "ar2dtool-oegfork",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/ar2dtool-oegfork",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ar2dtool-oegfork/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/ar2dtool-oegfork/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/ar2dtool-oegfork/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:45:49 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 08:45:49 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "JavaScript",
+            "CSS"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'Copyright 2012-2013 Ontology Engineering Group, Universidad Polit\\xc3\\xa9cnica de Madrid, Spain\\n\\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\\n\\n   http://www.apache.org/licenses/LICENSE-2.0\\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/ar2dtool-oegfork/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v1.1",
+                "name": "v1.1",
+                "authorName": "ahmad88me",
+                "authorType": "User",
+                "body": "This release includes the latest updates of Idafen. It also includes the binary compiled with the newer java version.\r\n",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/ar2dtool-oegfork/tarball/v1.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/ar2dtool-oegfork/zipball/v1.1",
+                "htmlUrl": "https://github.com/oeg-upm/ar2dtool-oegfork/releases/tag/v1.1",
+                "url": "https://api.github.com/repos/oeg-upm/ar2dtool-oegfork/releases/32311374",
+                "dateCreated": "2016-09-19T14:52:12Z",
+                "datePublished": "2020-10-08T09:34:11Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

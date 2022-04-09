@@ -1,0 +1,249 @@
+{
+    "description": [
+        {
+            "originalHeader": "Description of the Scripts",
+            "excerpt": "- ### _RetrieveTweets.py_:\n  This script creates a dataset of tweets based on the keywords given and the number of tweets to be retrieved.\n  - How to use it:\n    ```\n    python RetrieveTweets.py --search <keyword> --amount <number_of_tweets> --save_tweets_on_directory <directory> --twitter_token <your_token>\n    ```\n    - _--search_: parameter to search the keyword or keywords. If more than one keyword is going to be used then you need to quote them ('your keywords').\n    - _--amount_: parameter to specify the number of tweets to retrieve (be aware that if considerable amount of tweets are going to be solicited, you may exceed Twitter's limitation of queries per minute).\n    - _--save_tweets_on_directory_: parameter to specify where to store the tweets retrieved.\n    - _--twitter_token_: parameter to specify your Twitter developer access token.\n- ### _Preprocesing.py_:\n  This script cleans the previous dataset obtained with _RetrieveTweets.py_ for it to be suitable to be used on _SentimentTweets.py_.\n  - How to use it:\n    ```\n    python Preprocesing.py --dataset <directory> --save_directory <directory> [--merge [name][description]]\n    ```\n    - _--dataset_: parameter to specify the dataset to be cleaned.\n    - _--save_directory_: parameter to specify where to store the cleaned dataset.\n    - _--merge_: parameter to specify which columns will be merged with the _tweet_text_ column. It can be both (_name_ and _description_), just one of them or none.\n- ### _CustomModel.py_:\n  This script contains the code necessary to build the model class. It is imported in the script _SentimentTweets.py_ for it to be used as the model for the fine tuning task. It recieves the name of the BETO based model to be used.\n- ### _SentimentTweets.py_:\n  This script contains all the code necessary to do the fine tuning task. Recieves the train and test datasets to fine tune the model. It can save the model after fine tuned and gives an output with the results of the training.\n  - How to use it:\n    ```\n    python SentimentTweets.py --train_data <directory> --test_data <directory> --model_name <name_or_path> [--save_model_on_directory <directory>]\n    ```\n    - _--train_data_: parameter to specify the train dataset to be used.\n    - _--test_data_: parameter to specify the test data to be used.\n    - _--model_name_: parameter to specify the name of the model (from hugging face) to be used.\n    - _--save_model_on_directory_: parameter to specify where to store the fine tuned model.\n",
+            "parentHeader": "beto-covid-sentiment-analysis",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "Research project of Sentiment Analysis based on [this code](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/) and using [this BETO model](https://github.com/dccuchile/beto). \n",
+            "confidence": [
+                [
+                    0.929780665618595
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "beto-covid-sentiment-analysis"
+        },
+        {
+            "excerpt": "# beto-covid-sentiment-analysis\nResearch project of Sentiment Analysis based on [this code](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/) and using [this BETO model](https://github.com/dccuchile/beto). \n",
+            "confidence": [
+                [
+                    0.9268919967816578
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RetrieveTweets.py:",
+            "parentHeader": "beto-covid-sentiment-analysis --- Description of the Scripts"
+        },
+        {
+            "excerpt": "## Description of the Scripts\n- ### _RetrieveTweets.py_:\n  This script creates a dataset of tweets based on the keywords given and the number of tweets to be retrieved.\n  - How to use it:\n    ```\n    python RetrieveTweets.py --search <keyword> --amount <number_of_tweets> --save_tweets_on_directory <directory> --twitter_token <your_token>\n    ```\n    - _--search_: parameter to search the keyword or keywords. If more than one keyword is going to be used then you need to quote them ('your keywords').\n    - _--amount_: parameter to specify the number of tweets to retrieve (be aware that if considerable amount of tweets are going to be solicited, you may exceed Twitter's limitation of queries per minute).\n    - _--save_tweets_on_directory_: parameter to specify where to store the tweets retrieved.\n    - _--twitter_token_: parameter to specify your Twitter developer access token.\n- ### _Preprocesing.py_:\n  This script cleans the previous dataset obtained with _RetrieveTweets.py_ for it to be suitable to be used on _SentimentTweets.py_.\n  - How to use it:\n    BASH2*\n    - _--dataset_: parameter to specify the dataset to be cleaned.\n    - _--save_directory_: parameter to specify where to store the cleaned dataset.\n    - _--merge_: parameter to specify which columns will be merged with the _tweet_text_ column. It can be both (_name_ and _description_), just one of them or none.\n- ### _CustomModel.py_:\n  This script contains the code necessary to build the model class. It is imported in the script _SentimentTweets.py_ for it to be used as the model for the fine tuning task. It recieves the name of the BETO based model to be used.\n- ### _SentimentTweets.py_:\n  This script contains all the code necessary to do the fine tuning task. Recieves the train and test datasets to fine tune the model. It can save the model after fine tuned and gives an output with the results of the training.\n  - How to use it:\n    BASH3*\n    - _--train_data_: parameter to specify the train dataset to be used.\n    - _--test_data_: parameter to specify the test data to be used.\n    - _--model_name_: parameter to specify the name of the model (from hugging face) to be used.\n    - _--save_model_on_directory_: parameter to specify where to store the fine tuned model.\n \n# beto-covid-sentiment-analysis\nResearch project of Sentiment Analysis based on [this code](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/) and using [this BETO model](https://github.com/dccuchile/beto). \n",
+            "confidence": [
+                [
+                    0.9679906545281172,
+                    0.9268919967816578
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RetrieveTweets.py:",
+            "parentHeader": "beto-covid-sentiment-analysis --- Description of the Scripts"
+        },
+        {
+            "excerpt": "## Description of the Scripts\n- ### _RetrieveTweets.py_:\n  This script creates a dataset of tweets based on the keywords given and the number of tweets to be retrieved.\n  - How to use it:\n    ```\n    python RetrieveTweets.py --search <keyword> --amount <number_of_tweets> --save_tweets_on_directory <directory> --twitter_token <your_token>\n    ```\n    - _--search_: parameter to search the keyword or keywords. If more than one keyword is going to be used then you need to quote them ('your keywords').\n    - _--amount_: parameter to specify the number of tweets to retrieve (be aware that if considerable amount of tweets are going to be solicited, you may exceed Twitter's limitation of queries per minute).\n    - _--save_tweets_on_directory_: parameter to specify where to store the tweets retrieved.\n    - _--twitter_token_: parameter to specify your Twitter developer access token.\n- ### _Preprocesing.py_:\n  This script cleans the previous dataset obtained with _RetrieveTweets.py_ for it to be suitable to be used on _SentimentTweets.py_.\n  - How to use it:\n    BASH2*\n    - _--dataset_: parameter to specify the dataset to be cleaned.\n    - _--save_directory_: parameter to specify where to store the cleaned dataset.\n    - _--merge_: parameter to specify which columns will be merged with the _tweet_text_ column. It can be both (_name_ and _description_), just one of them or none.\n- ### _CustomModel.py_:\n  This script contains the code necessary to build the model class. It is imported in the script _SentimentTweets.py_ for it to be used as the model for the fine tuning task. It recieves the name of the BETO based model to be used.\n- ### _SentimentTweets.py_:\n  This script contains all the code necessary to do the fine tuning task. Recieves the train and test datasets to fine tune the model. It can save the model after fine tuned and gives an output with the results of the training.\n  - How to use it:\n    BASH3*\n    - _--train_data_: parameter to specify the train dataset to be used.\n    - _--test_data_: parameter to specify the test data to be used.\n    - _--model_name_: parameter to specify the name of the model (from hugging face) to be used.\n    - _--save_model_on_directory_: parameter to specify where to store the fine tuned model.\n \n# beto-covid-sentiment-analysis\nResearch project of Sentiment Analysis based on [this code](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/) and using [this BETO model](https://github.com/dccuchile/beto). \n",
+            "confidence": [
+                [
+                    0.9679906545281172,
+                    0.9268919967816578
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RetrieveTweets.py:",
+            "parentHeader": "beto-covid-sentiment-analysis --- Description of the Scripts"
+        },
+        {
+            "excerpt": "## Description of the Scripts\n- ### _RetrieveTweets.py_:\n  This script creates a dataset of tweets based on the keywords given and the number of tweets to be retrieved.\n  - How to use it:\n    ```\n    python RetrieveTweets.py --search <keyword> --amount <number_of_tweets> --save_tweets_on_directory <directory> --twitter_token <your_token>\n    ```\n    - _--search_: parameter to search the keyword or keywords. If more than one keyword is going to be used then you need to quote them ('your keywords').\n    - _--amount_: parameter to specify the number of tweets to retrieve (be aware that if considerable amount of tweets are going to be solicited, you may exceed Twitter's limitation of queries per minute).\n    - _--save_tweets_on_directory_: parameter to specify where to store the tweets retrieved.\n    - _--twitter_token_: parameter to specify your Twitter developer access token.\n- ### _Preprocesing.py_:\n  This script cleans the previous dataset obtained with _RetrieveTweets.py_ for it to be suitable to be used on _SentimentTweets.py_.\n  - How to use it:\n    BASH2*\n    - _--dataset_: parameter to specify the dataset to be cleaned.\n    - _--save_directory_: parameter to specify where to store the cleaned dataset.\n    - _--merge_: parameter to specify which columns will be merged with the _tweet_text_ column. It can be both (_name_ and _description_), just one of them or none.\n- ### _CustomModel.py_:\n  This script contains the code necessary to build the model class. It is imported in the script _SentimentTweets.py_ for it to be used as the model for the fine tuning task. It recieves the name of the BETO based model to be used.\n- ### _SentimentTweets.py_:\n  This script contains all the code necessary to do the fine tuning task. Recieves the train and test datasets to fine tune the model. It can save the model after fine tuned and gives an output with the results of the training.\n  - How to use it:\n    BASH3*\n    - _--train_data_: parameter to specify the train dataset to be used.\n    - _--test_data_: parameter to specify the test data to be used.\n    - _--model_name_: parameter to specify the name of the model (from hugging face) to be used.\n    - _--save_model_on_directory_: parameter to specify where to store the fine tuned model.\n \n# beto-covid-sentiment-analysis\nResearch project of Sentiment Analysis based on [this code](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/) and using [this BETO model](https://github.com/dccuchile/beto). \n",
+            "confidence": [
+                [
+                    0.9679906545281172,
+                    0.9268919967816578
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RetrieveTweets.py:",
+            "parentHeader": "beto-covid-sentiment-analysis --- Description of the Scripts"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "# beto-covid-sentiment-analysis\nResearch project of Sentiment Analysis based on [this code](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/) and using [this BETO model](https://github.com/dccuchile/beto). \n",
+            "confidence": [
+                [
+                    0.9321634287430764
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RetrieveTweets.py:",
+            "parentHeader": "beto-covid-sentiment-analysis --- Description of the Scripts"
+        },
+        {
+            "excerpt": "# beto-covid-sentiment-analysis\nResearch project of Sentiment Analysis based on [this code](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/) and using [this BETO model](https://github.com/dccuchile/beto). \n",
+            "confidence": [
+                [
+                    0.9321634287430764
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RetrieveTweets.py:",
+            "parentHeader": "beto-covid-sentiment-analysis --- Description of the Scripts"
+        },
+        {
+            "excerpt": "# beto-covid-sentiment-analysis\nResearch project of Sentiment Analysis based on [this code](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/) and using [this BETO model](https://github.com/dccuchile/beto). \n",
+            "confidence": [
+                [
+                    0.9321634287430764
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RetrieveTweets.py:",
+            "parentHeader": "beto-covid-sentiment-analysis --- Description of the Scripts"
+        },
+        {
+            "excerpt": "# beto-covid-sentiment-analysis\nResearch project of Sentiment Analysis based on [this code](https://skimai.com/fine-tuning-bert-for-sentiment-analysis/) and using [this BETO model](https://github.com/dccuchile/beto). \n",
+            "confidence": [
+                [
+                    0.9321634287430764
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "RetrieveTweets.py:",
+            "parentHeader": "beto-covid-sentiment-analysis --- Description of the Scripts"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "beto-covid-sentiment-analysis",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/beto-covid-sentiment-analysis",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-11-11T11:08:09Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-01-01T15:25:22Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "MIT License",
+            "url": "https://api.github.com/licenses/mit"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "beto-covid-sentiment-analysis",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/beto-covid-sentiment-analysis",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/beto-covid-sentiment-analysis/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/beto-covid-sentiment-analysis/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/beto-covid-sentiment-analysis/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:46:22 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:46:22 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'MIT License\\n\\nCopyright (c) 2021 Ontology Engineering Group (UPM)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \"Software\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/beto-covid-sentiment-analysis/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "script"
+    }
+}

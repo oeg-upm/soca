@@ -1,0 +1,208 @@
+{
+    "description": [
+        {
+            "excerpt": "Valkyr-IE-Gate is a library for information extraction using the library GATE. The idea is to ease and encapuslate the complexity of the library to work with a simple API to exploit the two main components of the original library: Gazetteers and Jape Rules. \nThe idea of the library is to work as a microservice web API in which you configure only declare and configure the main processes and you receive the annotations of the document in a JSON document. Easy to integrate and use with other NLP libraries of the domain to be invoked by other languages as Python.   \n",
+            "confidence": [
+                [
+                    0.9904197157886923,
+                    0.9935136574855278
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Valkyr-IE-Gate"
+        },
+        {
+            "excerpt": "Valkyr-IE-Gate is a library for information extraction based on the core of the library GATE.",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "Install and Compile",
+            "excerpt": "To install and compile just type:\n```\nmvn clean install\n```\n\nThe  config folder will be deployed in the same directory\n",
+            "parentHeader": "Valkyr-IE-Gate",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Valkyr-IE-Gate",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "requirement": [
+        {
+            "originalHeader": "Requirements",
+            "excerpt": "Valkyr-IE needs of two local files:\n\n1. config (folder). A folder which contains the local configuration of GATE. The folder will be deployed when the proyect is compiled.\n2. processes.conf (file). File that declares the different processes that are performed over the document.\n\nBoth files are need to be in the path in which the jar is executed \n",
+            "parentHeader": "Valkyr-IE-Gate",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "run": [
+        {
+            "originalHeader": "Execute",
+            "excerpt": "In a folder in which the config folder and processes.conf exits:\n```\njava -jar target/valkyr-ie-gate-1.0.jar      \n```\n\nMorevover, you can declare multiple instances in different ports\n```\njava -jar -Dserver.port=8084 target/valkyr-ie-gate-1.0.jar      \n```\n",
+            "parentHeader": "Valkyr-IE-Gate",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Run through Docker:",
+            "excerpt": "First build the image (remember to COPY the config folder you want to use in the target directory):\n```\ndocker build -t valkyre .\n```\n\nAnd then just run:\n```\ndocker run --rm -p 8080:8080 valkyre:latest\n```\nto start a new instance of Valkyre-ie.\n",
+            "parentHeader": "Valkyr-IE-Gate",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/valkyr-ie-gate",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-05-10T11:01:27Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-06-08T08:10:58Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "valkyr-ie-gate",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/valkyr-ie-gate",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/valkyr-ie-gate/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/valkyr-ie-gate/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/valkyr-ie-gate/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:32:45 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:32:45 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/valkyr-ie-gate/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/valkyr-ie-gate/main/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "1.0.0",
+                "name": "valkyr-ie-gate",
+                "authorName": "SerPablo",
+                "authorType": "User",
+                "body": "Initial release",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/valkyr-ie-gate/tarball/1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/valkyr-ie-gate/zipball/1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/valkyr-ie-gate/releases/tag/1.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/valkyr-ie-gate/releases/42701887",
+                "dateCreated": "2021-05-10T11:10:03Z",
+                "datePublished": "2021-05-10T12:35:38Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

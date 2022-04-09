@@ -1,0 +1,181 @@
+{
+    "description": [
+        {
+            "excerpt": "BIMERR ontology for the building domain\r\n\r\nThis repository contains the code and documentation generated for the Material Properties ontology which is available at: http://bimerr.iot.linkeddata.es/def/material-properties\r\n\r \n",
+            "confidence": [
+                [
+                    0.9807380770069167
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "BIMERR Building Ontology"
+        },
+        {
+            "excerpt": "BIMERR ontology for the material properties domain",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "BIMERR Building Ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/bimerr-material-properties/blob/master/diagrams/diagram.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-material-properties",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-05-18T15:42:01Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-10-22T10:34:28Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "bimerr-material-properties",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/bimerr-material-properties",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-material-properties/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:48:06 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:48:06 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-material-properties/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v0.1.0",
+                "name": "v0.1.0",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/tarball/v0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/zipball/v0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-material-properties/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/releases/32856759",
+                "dateCreated": "2020-10-21T10:14:55Z",
+                "datePublished": "2020-10-21T10:16:25Z"
+            },
+            {
+                "tagName": "0.0.5",
+                "name": "",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/tarball/0.0.5",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/zipball/0.0.5",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-material-properties/releases/tag/0.0.5",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/releases/28352133",
+                "dateCreated": "2020-07-08T10:29:19Z",
+                "datePublished": "2020-07-08T10:50:46Z"
+            },
+            {
+                "tagName": "0.0.3",
+                "name": "",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "Ontology aligned with saref",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/tarball/0.0.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/zipball/0.0.3",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-material-properties/releases/tag/0.0.3",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-material-properties/releases/27882376",
+                "dateCreated": "2020-06-24T16:40:31Z",
+                "datePublished": "2020-06-24T16:46:51Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

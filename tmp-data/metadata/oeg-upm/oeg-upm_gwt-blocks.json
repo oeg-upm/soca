@@ -1,0 +1,236 @@
+{
+    "description": [
+        {
+            "excerpt": "This respository aims to help for the development of GWT projects.  \r\nAdd to your projects 3 new widgets: loading box, prettypopup, togglebutton.  \r\nAdd new events for togglebutton: toggleEvent and hasToggleEvent.  \r\nManages your URL places with PlaceManager.  \r\nBetter abstraction from presenter-display model.\r\n\r \n",
+            "confidence": [
+                [
+                    0.9812028252799271
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "GWT-Blocks"
+        },
+        {
+            "excerpt": "GWT Building Blocks",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "4) Development guide ",
+            "excerpt": "\r\nFor development guide visit the follow link:  \r\n[Development Guide](https://github.com/oeg-upm/gwt-blocks/wiki/Development-guide)\r\n\r",
+            "parentHeader": "Table of Contents",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "2) Compile and install it",
+            "excerpt": "\r\nTo compile, type in a cmd or terminal (On project folder, you need see the pom.xml):\r\n```sh\r\nmvn clean install\r\n```\r\nMaven install the library on local repository.\r\n\r",
+            "parentHeader": "Table of Contents",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "GWT-Blocks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://img.shields.io/badge/Guice--servlet-3.0-40c4ff.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Presenter-1.1.1-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Dispatch-1.2.0-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT%20Inject-2.1.2-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/GWT-2.6.1-43a047.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "requirement": [
+        {
+            "originalHeader": "1) Pre-requisites ",
+            "excerpt": "* Maven 3.0 or later.\r\n* Java 1.7 or later.\r\n* Internet connection if you use maven (for downloading dependencies).\r\n\r",
+            "parentHeader": "Table of Contents",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "3) Use as library ",
+            "excerpt": "**3.1) Import the library**  <a name=\"importLibrary\"></a>  \r\n\r\n- If you use Maven:  \r\nSee <https://maven.apache.org/> for more information.  \r\nWhen you does \"mvn clean install\" the library is installed locally (On your machine).  \r\nPut the next code on your pom.xml file (of your project) (Change the version and put the latest version):  \r\n~~~\r\n<dependency>  \r\n  <groupId>name.alexdeleon.lib</groupId>  \r\n  <artifactId>gwt-blocks</artifactId>  \r\n  <version>0.1.0</version>  \r\n</dependency>  \r\n~~~\r\nIf you want, change the version to another.\r\n\r\n- If you do not use Maven:  \r\nImport the file \"target/gwt-block-VERSION.jar\" into your project.  \r\nDownload and import:\r\n  * GWT user 2.6.1\r\n  * GWT inject 2.1.2\r\n  * GWT Guice 1.2.0\r\n  * GWT Presenter 1.1.1\r\n\r\n**3.2) Use the library**  <a name=\"useLibrary\"></a>  \r\n__3.2.a) As presenter/display__  <a name=\"useAsPresenter\"></a>  \r\nCreate a new class (Your own presenter/display):  \r\n~~~java\r\npublic class MyOwnPresenter extends ControlPresenter<MyOwnPresenter.Display> {\r\n\r\n\tpublic interface Display extends WidgetDisplay {\r\n\t  ... //Interface methods\r\n\t}\r\n\t\r\n}\r\n~~~\r\nImplements your view:  \r\n~~~java\r\npublic class MyOwnView extends Composite implements MyOwnPresenter.Display {\r\n\t... //TODO: Implements methods.\r\n}\r\n~~~\r\nCreate your own injector and bind the display with the presenter:  \r\n~~~java\r\npublic class MyOwnInjectorModule extends AbstractPresenterModule {\r\n\t@Override\r\n\tprotected void configure() {\r\n\t\tbindDisplay(MyOwnPresenter.Display.class, MyOwnView.class);\r\n\t}\r\n}\r\n~~~\r\nBind your injector to GWT Inject module:  \r\n~~~java\r\n@GinModules( { MyOwnInjectorModule.class})\r\npublic interface Injector extends Ginjector {\r\n\tMyOwnPresenter getMyOwnPresenter();\r\n\t//TODO: Add your others views methods\r\n}\r\n~~~\r\n\r\n\r\nInclude the next code on client entrypoint:  \r\n~~~java\r\nInjector injector = null;\r\ntry {\r\n\tinjector = GWT.create(Injector.class);\r\n} catch (Exception e) {\r\n\tinjector = null;\r\n\tWindow.alert(\"An several exception ocurred when load the webpage. \"\r\n\t\t\t+ \" Exception: \" + e.getMessage() + \".\"\r\n\t\t\t+ \"Please contact with System Admin\");\r\n}\r\nRootLayoutPanel.get().add(injector.getMyOwnPresenter().getDisplay().asWidget());\r\n~~~\r\n__3.2.b) Use widgets__ <a name=\"useWidgets\"></a>  \r\n__3.2.b.a) Use Loading widget__  <a name=\"useLoadingWidget\"></a>  \r\nInclude the follow code on your view:  \r\n~~~java\r\nImageResource loadingIcon; //TODO: create a loading icon\r\nLoadingWidget.Stylesheet css; //TODO: implements this interface with styles\r\nString loadingMessage = \"Loading\"; //TODO: your own loading messages for example in spanish \"Cargando\"\r\nLoadingWidget loadingWidget = new LoadingWidget(loadingIcon, loadingMessage, css);\r\n~~~\r\nUse this line for view the widget:  \r\n~~~java\r\nloadingWidget.center();\r\n~~~\r\nUse this line for hide the widget:  \r\n~~~java\r\nloadingWidget.hide();  \r\n~~~\r\n\r\n__3.2.b.b) Use PrettyPopup__  <a name=\"usePrettyPopup\"></a>  \r\nCreate style:  \r\nIf you want to use the default style put:  \r\n~~~java\r\nPrettyPopup.Stylesheet css = PrettyPopupStylesheetFactory.getDefaultStylesheet();\r\n~~~\r\nIf you want to use your own style:   \r\n~~~java\r\nPrettyPopup.Stylesheet css = new MyOwnStyleSheet(); //TODO: create your own class that implements PrettyPopup.Stylesheet\r\n~~~\r\n\r\nCreate the popup:  \r\n~~~java\r\nboolean modal = true; //If you want that the popup is modal popup.\r\nPrettyPopup myPopup = new PrettyPopup(css, modal);\r\n~~~\r\nAdd content to the popup:  \r\n~~~java\r\nmyPopup.getContentPanel().add(new HTML(\"<p>Hello</p>\")\\/\\*My Widgets or views\\*\\/);\r\n~~~\r\n\r\n__3.2.b.c) Use ToggleButton__  <a name=\"useToggleButton\"></a>  \r\nCreate a toggle button:\r\n~~~java\r\nCSS css; //TODO Create a css for the button. Example: = MyOwnCss(); that implements ToggleButton.Stylesheet\r\nToggleButton toggleButton = new ToggleButton(css);\r\n//TODO Add the button to a panel. Example: RootLayoutPanel.get().add(toggleButton);\r\n~~~\r\n\r",
+            "parentHeader": "Table of Contents",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/gwt-blocks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2014-07-31T07:55:44Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2016-07-21T11:38:56Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "gwt-blocks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/gwt-blocks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/gwt-blocks/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/gwt-blocks/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/gwt-blocks/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:11:37 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:11:37 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "CSS",
+            "HTML"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/gwt-blocks/README.MD",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "0.1.0",
+                "name": "GWT-Blocks 0.1.0",
+                "authorName": "Fransiro",
+                "authorType": "User",
+                "body": "GWT-Blocks library.\nSee README.MD for futher information.\n",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/gwt-blocks/tarball/0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/gwt-blocks/zipball/0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/gwt-blocks/releases/tag/0.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/gwt-blocks/releases/3783362",
+                "dateCreated": "2016-08-01T12:03:11Z",
+                "datePublished": "2016-08-01T12:04:28Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

@@ -30,8 +30,11 @@ class metadata(object):
             return ''
         if repo_type == 'web': 
             return f'<img src="{self.base}repo_icons/web.png" {self.add_tooltip("left","Website")} alt="repo-type" class="repo-type">'
-        if repo_type == 'ontology': 
-            return f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">'  
+        elif repo_type == 'ontology': 
+            return f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">'
+        elif repo_type in ['package','library','service','script']:
+            return f'<div class="grey-color-svg" style="display:flex;" {self.add_tooltip("left",f"Python {repo_type}")}><img src="{self.base}language_icons/python.svg" alt="repo-type" class="repo-type"></div>'
+        else: return ''
 
     def icon_star(self):
         return f"{self.base}repo_icons/star.png"
@@ -301,6 +304,16 @@ class metadata(object):
         return self.releases()[0]["tagName"] if self.n_releases() != 0 else ''
         
     def repo_type(self):
+
+        # inspect4py
+        ######################
+
+        if 'inspect4py' in self.md:
+            return self.md["inspect4py"]["software_type"] # package, library, service, script
+
+        # web and ontology
+        ######################
+
         langs = self.languages()
 
         if not langs: # Most ontologies doesn't have any language
@@ -329,7 +342,14 @@ class metadata(object):
         return 'web' if is_web else None
          
     def usage(self):
-        return safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
+        usage = safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
+        run_list = safe_dic(safe_dic(self.md,'inspect4py'),'run')
+        if run_list:
+            run = '\n'.join([ f'* {x}' for x in run_list])
+            run_md = '### How to run it  \n' + run
+        else: run_md = ''
+
+        return usage + run_md if usage or run_md else None
 
     def help(self):
         support = safe_dic(safe_list(safe_dic(self.md,'support'),0),'excerpt')
@@ -343,7 +363,7 @@ class metadata(object):
         return support_md + faq_md + supportChannels_md if support or faq or supportChannels else None
 
     def recently_updated(self):
-        #TODO: Retreive days_theshold from properties file
+        #TODO: Retreive days_threshold from properties file
         hex_states = [
             {'hex': '#6da862', 'days_threshold': 30},
             {'hex': '#a88d62', 'days_threshold': 90},
@@ -447,7 +467,7 @@ class metadata(object):
             if not description:
                 description = 'No description available yet.'
 
-        return mistune.html(description)
+        return f'<span>{mistune.html(description)}</span>'
 
     def license(self):
         return safe_dic(safe_dic(self.md,'license'),'excerpt')
@@ -479,6 +499,9 @@ class metadata(object):
     
     def url_stars(self):
         return self.repo_url()+'/stargazers'
+
+    def owner(self):
+        return safe_dic(safe_dic(self.md,'owner'),'excerpt')
     
 # Aux ##########################################################
 

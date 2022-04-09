@@ -1,0 +1,283 @@
+{
+    "description": [
+        {
+            "excerpt": "This web application conect with FarolApp4All Api and show the farols.  \nThis project is a GUI for FarolApp4All Api. \n",
+            "confidence": [
+                [
+                    0.9862041109359431
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "FarolApp4All Web"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "5) Development guide ",
+            "excerpt": "For development guide visit the follow link:  \n[Development Guide](wiki/Development-guide)\n",
+            "parentHeader": "Table of Contents",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "To compile, type in a cmd or terminal (On project folder, you need see the pom.xml):\n```sh\nmvn clean install\n``` \n",
+            "confidence": [
+                [
+                    0.9542109276433162
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "3) Compile ",
+            "parentHeader": "Table of Contents"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "FarolApp4All Web",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://img.shields.io/badge/Version-0.1-lightgrey.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/build-Maven-lightgrey.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-Font%20Awesome-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-Bootstrap-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-Sweet%20Alert-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-Modernizr-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-jQuery%20Mobile-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-jQuery-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/lib-Google%20Maps-green.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/design-Google%20Design-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/design-Responsive-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-JS-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-CSS3-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "https://img.shields.io/badge/code-HTML5-blue.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "requirement": [
+        {
+            "originalHeader": "1) Pre-requisites ",
+            "excerpt": "* Maven 3.0 or later.\n* Java 1.7 or later (for maven).\n* Tomcat 1.7 or later (for the development). You can put the files of \"src/main/webapp\" on a other web server.\n* Internet connection if you use maven (for downloading dependencies).\n",
+            "parentHeader": "Table of Contents",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/FarolAppsWeb",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2016-07-22T11:36:25Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2016-07-22T11:36:26Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "FarolAppsWeb",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/FarolAppsWeb",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/FarolAppsWeb/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/FarolAppsWeb/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/FarolAppsWeb/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:10:30 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:10:30 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/FarolAppsWeb/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "1.0.0",
+                "name": "FarolApp4All v1.0.0",
+                "authorName": "Fransiro",
+                "authorType": "User",
+                "body": "Firts version.\nFeatures:  \n-    Lamppost map\n-    Light pollution map\n-    Update a lamppost\n-    Registry one lamppost\n\nGenerated installation guide(readme.md), wiki with development guide and gh-pages.\n\nFarolApp4All.rar contains files for a simple web server.\nFarolApp4All.war contains files for tomcat server.\n",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/FarolAppsWeb/tarball/1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/FarolAppsWeb/zipball/1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/FarolAppsWeb/releases/tag/1.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/FarolAppsWeb/releases/3762887",
+                "dateCreated": "2016-07-26T10:48:56Z",
+                "datePublished": "2016-07-28T17:06:01Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

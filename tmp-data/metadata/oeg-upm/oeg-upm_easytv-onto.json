@@ -1,0 +1,180 @@
+{
+    "description": [
+        {
+            "excerpt": "Repository for the easyTV ontology.  \n",
+            "confidence": [
+                [
+                    0.9855784013981365
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "easytv-onto"
+        },
+        {
+            "excerpt": "Repository for the easyTV ontology. ",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "Ontology URI: [https://w3id.org/def/easytv](https://w3id.org/def/easytv) \n",
+            "confidence": [
+                [
+                    0.9919784769950174
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "easytv-onto"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "easytv-onto",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/mariapoveda/easytv-onto/blob/master/OnToology/ontology/core.ttl/documentation/resources/images/model.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/easytv-onto",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2018-08-03T08:45:18Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-01-05T09:30:21Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "easytv-onto",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/easytv-onto",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-onto/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-onto/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/easytv-onto/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:03:34 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 4,
+            "date": "Tue, 05 Apr 2022 09:03:34 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/easytv-onto/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "0.0.2",
+                "name": "Linguistic expression",
+                "authorName": "mariapoveda",
+                "authorType": "User",
+                "body": "This release includes the linguistic expression concept decoupling its representation from lemon:LexicalEntry",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easytv-onto/tarball/0.0.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easytv-onto/zipball/0.0.2",
+                "htmlUrl": "https://github.com/oeg-upm/easytv-onto/releases/tag/0.0.2",
+                "url": "https://api.github.com/repos/oeg-upm/easytv-onto/releases/12834479",
+                "dateCreated": "2018-09-11T10:30:56Z",
+                "datePublished": "2018-09-11T10:34:27Z"
+            },
+            {
+                "tagName": "release0.0.1",
+                "name": "Release 0.0.1",
+                "authorName": "mariapoveda",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/easytv-onto/tarball/release0.0.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/easytv-onto/zipball/release0.0.1",
+                "htmlUrl": "https://github.com/oeg-upm/easytv-onto/releases/tag/release0.0.1",
+                "url": "https://api.github.com/repos/oeg-upm/easytv-onto/releases/12738586",
+                "dateCreated": "2018-08-13T12:16:33Z",
+                "datePublished": "2018-09-05T10:40:01Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

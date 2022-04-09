@@ -1,0 +1,148 @@
+{
+    "description": [
+        {
+            "excerpt": "This repository contains the code and documentation generated for the COGITO Construction Process ontology.\n \n",
+            "confidence": [
+                [
+                    0.9811341239905327
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "COGITO Construction Process ontology"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "COGITO Construction Process ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/cogito-construction-process-ontology/blob/master/diagram/diagram.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/cogito-construction-process-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-07-14T11:09:53Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-03-08T11:36:03Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "cogito-construction-process-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/cogito-construction-process-ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-construction-process-ontology/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-construction-process-ontology/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/cogito-construction-process-ontology/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:09 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:09 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/cogito-construction-process-ontology/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "release",
+                "name": "COGITO Construction Process Ontology 0.0.1",
+                "authorName": "Salva5297",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/cogito-construction-process-ontology/tarball/release",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/cogito-construction-process-ontology/zipball/release",
+                "htmlUrl": "https://github.com/oeg-upm/cogito-construction-process-ontology/releases/tag/release",
+                "url": "https://api.github.com/repos/oeg-upm/cogito-construction-process-ontology/releases/50481875",
+                "dateCreated": "2021-09-17T10:19:16Z",
+                "datePublished": "2021-09-29T15:02:30Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

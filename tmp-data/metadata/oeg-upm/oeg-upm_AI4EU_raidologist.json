@@ -1,0 +1,377 @@
+{
+    "description": [
+        {
+            "excerpt": "# r.AID.ologist \ud83d\udd8a\ufe0f\n### \ud83d\udd0d**Description of the system**\nr.AID.ologist is a framework designed for radiologists to provide assistance on the generation of medical reports. \nIt is devised as a Case-Based Reasoning model, powered by several deep learning models which have been included to improve its performance, as well as providing additional features.   \nWhile CBR is integrated as a continuous cycle, its subparts are designed to be fully modular, thus can be easily substituted to fit new data. The following diagram provides an overview on the system. Modular elements are represented by bricks, implying that they can be replaced by different models as long as they meet the same objective.  \n",
+            "confidence": [
+                [
+                    0.9960595982790224,
+                    0.9534915512352676
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "### \ud83e\uddf1**Module specification**\nThe implementations of the different modules are contained in the *functions.py* file from the internal_functions folder. By default, the following models are employed for each of the denoted modules:\n#### Retrieve Modules\n 1. ***Image feature extraction***: A combination of a keypoint-based image feature algorithm (KAZE) and a pretrained Convolutional Neural Network (ResNet18). \n 2. ***Document embedding***:  An English pretrained model from SciSpacy is used (en_core_sci_md)\n 3. ***Named Entity Recognition***: An external resource, CliNER, is employed for this task. The employed pretrained model works for English textual data, and distinguishes between three types of named entities: problems, treatments and tests. These types **MUST** remain unchangeable in case of substitution. \n 4. ***Noise filtering***: SciSpacy is used to detect existing abbreviations. The ratio of identified abbreviations is obtained as *#_(detected_abbreviations ^ existing_tokens)/ #_detected abbreviations* \n#### Reuse Modules\n 1. ***Sectioning Model***: A bidirectional LSTM, implemented via Pytorch, is used to section the input report. The employed sectioning model, alongside its functions, is implemented in the *section_model.py* file contained in the internal_functions folder. In this default model, four sections are considered: **Findings, Comparison, Indication and Impression**\n 2. ***Scoring Model***: A combination of the aforementioned SciSpacy embedding model with a Random Forest Classifier is employed  to score each report as valid (1) or rejected (0).\n 3. ***Abbreviation Disambiguation***: The aforementioned SciSpacy English pretrained model is used to extract existing abbreviations. SNOMED's query service is then used to obtain potential disambiguations for each of the detected abbreviations. \n",
+            "confidence": [
+                [
+                    0.9974442748646842,
+                    0.9926524458928387
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": " 6. Go to the direction localhost:5000 in your web browser to start using the framework \n",
+            "confidence": [
+                [
+                    0.9199044131122265
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "### \u2753 **About**\nThis framework has been developed as part of the AI4EU project.  \n",
+            "confidence": [
+                [
+                    0.9290487679055828
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "# r.AID.ologist \ud83d\udd8a\ufe0f\n### \ud83d\udd0d**Description of the system**\nr.AID.ologist is a framework designed for radiologists to provide assistance on the generation of medical reports. \nIt is devised as a Case-Based Reasoning model, powered by several deep learning models which have been included to improve its performance, as well as providing additional features.   \nWhile CBR is integrated as a continuous cycle, its subparts are designed to be fully modular, thus can be easily substituted to fit new data. The following diagram provides an overview on the system. Modular elements are represented by bricks, implying that they can be replaced by different models as long as they meet the same objective.  \n",
+            "confidence": [
+                [
+                    0.9960595982790224,
+                    0.9534915512352676
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "### \ud83e\uddf1**Module specification**\nThe implementations of the different modules are contained in the *functions.py* file from the internal_functions folder. By default, the following models are employed for each of the denoted modules: \n 1. ***Image feature extraction***: A combination of a keypoint-based image feature algorithm (KAZE) and a pretrained Convolutional Neural Network (ResNet18). \n 2. ***Document embedding***:  An English pretrained model from SciSpacy is used (en_core_sci_md)\n 3. ***Named Entity Recognition***: An external resource, CliNER, is employed for this task. The employed pretrained model works for English textual data, and distinguishes between three types of named entities: problems, treatments and tests. These types **MUST** remain unchangeable in case of substitution. \n 4. ***Noise filtering***: SciSpacy is used to detect existing abbreviations. The ratio of identified abbreviations is obtained as *#_(detected_abbreviations ^ existing_tokens)/ #_detected abbreviations*\n \n 1. ***Sectioning Model***: A bidirectional LSTM, implemented via Pytorch, is used to section the input report. The employed sectioning model, alongside its functions, is implemented in the *section_model.py* file contained in the internal_functions folder. In this default model, four sections are considered: **Findings, Comparison, Indication and Impression**\n 2. ***Scoring Model***: A combination of the aforementioned SciSpacy embedding model with a Random Forest Classifier is employed  to score each report as valid (1) or rejected (0).\n 3. ***Abbreviation Disambiguation***: The aforementioned SciSpacy English pretrained model is used to extract existing abbreviations. SNOMED's query service is then used to obtain potential disambiguations for each of the detected abbreviations. \n",
+            "confidence": [
+                [
+                    0.9213079599336613,
+                    0.9974105399565842,
+                    0.9926047018225579
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Reuse Modules",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f --- \ud83e\uddf1Module specification"
+        },
+        {
+            "excerpt": " 6. Go to the direction localhost:5000 in your web browser to start using the framework \n",
+            "confidence": [
+                [
+                    0.9199044131122265
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "### \u2753 **About**\nThis framework has been developed as part of the AI4EU project.  \n",
+            "confidence": [
+                [
+                    0.9290487679055828
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "# r.AID.ologist \ud83d\udd8a\ufe0f\n### \ud83d\udd0d**Description of the system**\nr.AID.ologist is a framework designed for radiologists to provide assistance on the generation of medical reports. \nIt is devised as a Case-Based Reasoning model, powered by several deep learning models which have been included to improve its performance, as well as providing additional features.   \nWhile CBR is integrated as a continuous cycle, its subparts are designed to be fully modular, thus can be easily substituted to fit new data. The following diagram provides an overview on the system. Modular elements are represented by bricks, implying that they can be replaced by different models as long as they meet the same objective.  \n",
+            "confidence": [
+                [
+                    0.9960595982790224,
+                    0.9534915512352676
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "### \ud83e\uddf1**Module specification**\nThe implementations of the different modules are contained in the *functions.py* file from the internal_functions folder. By default, the following models are employed for each of the denoted modules:\n#### Retrieve Modules\n 1. ***Image feature extraction***: A combination of a keypoint-based image feature algorithm (KAZE) and a pretrained Convolutional Neural Network (ResNet18). \n 2. ***Document embedding***:  An English pretrained model from SciSpacy is used (en_core_sci_md)\n 3. ***Named Entity Recognition***: An external resource, CliNER, is employed for this task. The employed pretrained model works for English textual data, and distinguishes between three types of named entities: problems, treatments and tests. These types **MUST** remain unchangeable in case of substitution. \n 4. ***Noise filtering***: SciSpacy is used to detect existing abbreviations. The ratio of identified abbreviations is obtained as *#_(detected_abbreviations ^ existing_tokens)/ #_detected abbreviations* \n#### Reuse Modules\n 1. ***Sectioning Model***: A bidirectional LSTM, implemented via Pytorch, is used to section the input report. The employed sectioning model, alongside its functions, is implemented in the *section_model.py* file contained in the internal_functions folder. In this default model, four sections are considered: **Findings, Comparison, Indication and Impression**\n 2. ***Scoring Model***: A combination of the aforementioned SciSpacy embedding model with a Random Forest Classifier is employed  to score each report as valid (1) or rejected (0).\n 3. ***Abbreviation Disambiguation***: The aforementioned SciSpacy English pretrained model is used to extract existing abbreviations. SNOMED's query service is then used to obtain potential disambiguations for each of the detected abbreviations. \n",
+            "confidence": [
+                [
+                    0.9974442748646842,
+                    0.9926524458928387
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": " 6. Go to the direction localhost:5000 in your web browser to start using the framework \n",
+            "confidence": [
+                [
+                    0.9199044131122265
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "### \u2753 **About**\nThis framework has been developed as part of the AI4EU project.  \n",
+            "confidence": [
+                [
+                    0.9290487679055828
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "Code for the raidologist framework developed for the AI4EU Healthcare pilot.",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "installation": [
+        {
+            "originalHeader": "\ud83d\uddb1\ufe0f Installation",
+            "excerpt": "# r.AID.ologist \ud83d\udd8a\ufe0f\n### \ud83d\udd0d**Description of the system**\nr.AID.ologist is a framework designed for radiologists to provide assistance on the generation of medical reports. \nIt is devised as a Case-Based Reasoning model, powered by several deep learning models which have been included to improve its performance, as well as providing additional features.  \n\nWhile CBR is integrated as a continuous cycle, its subparts are designed to be fully modular, thus can be easily substituted to fit new data. The following diagram provides an overview on the system. Modular elements are represented by bricks, implying that they can be replaced by different models as long as they meet the same objective. \n\n<img src=\"https://i.ibb.co/7Y4ZyhR/Global-Diagram.png\" width=50% height=50%>\n\n### \ud83e\uddf1**Module specification**\nThe implementations of the different modules are contained in the *functions.py* file from the internal_functions folder. By default, the following models are employed for each of the denoted modules:\n#### Retrieve Modules\n 1. ***Image feature extraction***: A combination of a keypoint-based image feature algorithm (KAZE) and a pretrained Convolutional Neural Network (ResNet18). \n 2. ***Document embedding***:  An English pretrained model from SciSpacy is used (en_core_sci_md)\n 3. ***Named Entity Recognition***: An external resource, CliNER, is employed for this task. The employed pretrained model works for English textual data, and distinguishes between three types of named entities: problems, treatments and tests. These types **MUST** remain unchangeable in case of substitution. \n 4. ***Noise filtering***: SciSpacy is used to detect existing abbreviations. The ratio of identified abbreviations is obtained as *#_(detected_abbreviations ^ existing_tokens)/ #_detected abbreviations*\n\n#### Reuse Modules\n 1. ***Sectioning Model***: A bidirectional LSTM, implemented via Pytorch, is used to section the input report. The employed sectioning model, alongside its functions, is implemented in the *section_model.py* file contained in the internal_functions folder. In this default model, four sections are considered: **Findings, Comparison, Indication and Impression**\n 2. ***Scoring Model***: A combination of the aforementioned SciSpacy embedding model with a Random Forest Classifier is employed  to score each report as valid (1) or rejected (0).\n 3. ***Abbreviation Disambiguation***: The aforementioned SciSpacy English pretrained model is used to extract existing abbreviations. SNOMED's query service is then used to obtain potential disambiguations for each of the detected abbreviations.\n\n### \ud83d\uddb1\ufe0f **Installation**\nA ready-to-use version of the framework is available as a Docker image in **elviish/raidologist:latest**. Once downloaded, the image can be ran with the command:\n\n    docker run --name raidologist -p *selected_port*:5000 elviish/raidologist:latest\n  \nThe framework has been developed using Python 3.7. To locally run the framework,  or o modify it, these are the steps to follow:\n\n 1. Clone the repository\n `git clone https://github.com/oeg-upm/AI4EU_raidologist.git`\n \n 2. Install the required dependencies\n `pip install -r requirements.txt`\n \n 3. Install the spacy model\n `python -m spacy download en_core_web_sm`\n \n 4. Download the NER model and place it the directory *externals/i2b2*\n`curl -O https://drive.upm.es/s/gOXyNxXgnrDBIEj/download`\n\n 5. Execute the *main.py* file \n`python main.py`\n\n 6. Go to the direction localhost:5000 in your web browser to start using the framework\n\nIssues can be reported at https://github.com/oeg-upm/AI4EU_raidologist/issues\n\n### \u2753 **About**\nThis framework has been developed as part of the AI4EU project. \n\nIt is licensed under APACHE 2.0.\n\n   \n    \n\n\n \n\n\n",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "    docker run --name raidologist -p *selected_port*:5000 elviish/raidologist:latest\n  \nThe framework has been developed using Python 3.7. To locally run the framework,  or o modify it, these are the steps to follow: \n 1. Clone the repository\n `git clone https://github.com/oeg-upm/AI4EU_raidologist.git`\n \n 2. Install the required dependencies\n `pip install -r requirements.txt`\n \n 3. Install the spacy model\n `python -m spacy download en_core_web_sm`\n \n 4. Download the NER model and place it the directory *externals/i2b2*\n`curl -O https://drive.upm.es/s/gOXyNxXgnrDBIEj/download` \n",
+            "confidence": [
+                [
+                    0.9059086533320869,
+                    0.9989896066321361
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "    docker run --name raidologist -p *selected_port*:5000 elviish/raidologist:latest\n  \nThe framework has been developed using Python 3.7. To locally run the framework,  or o modify it, these are the steps to follow: \n 1. Clone the repository\n `git clone https://github.com/oeg-upm/AI4EU_raidologist.git`\n \n 2. Install the required dependencies\n `pip install -r requirements.txt`\n \n 3. Install the spacy model\n `python -m spacy download en_core_web_sm`\n \n 4. Download the NER model and place it the directory *externals/i2b2*\n`curl -O https://drive.upm.es/s/gOXyNxXgnrDBIEj/download` \n",
+            "confidence": [
+                [
+                    0.9059086533320869,
+                    0.9989896066321361
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": "    docker run --name raidologist -p *selected_port*:5000 elviish/raidologist:latest\n  \nThe framework has been developed using Python 3.7. To locally run the framework,  or o modify it, these are the steps to follow: \n 1. Clone the repository\n `git clone https://github.com/oeg-upm/AI4EU_raidologist.git`\n \n 2. Install the required dependencies\n `pip install -r requirements.txt`\n \n 3. Install the spacy model\n `python -m spacy download en_core_web_sm`\n \n 4. Download the NER model and place it the directory *externals/i2b2*\n`curl -O https://drive.upm.es/s/gOXyNxXgnrDBIEj/download` \n",
+            "confidence": [
+                [
+                    0.9059086533320869,
+                    0.9989896066321361
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        }
+    ],
+    "invocation": [
+        {
+            "excerpt": " 5. Execute the *main.py* file \n`python main.py` \n",
+            "confidence": [
+                [
+                    0.9448343571735753
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": " 5. Execute the *main.py* file \n`python main.py` \n",
+            "confidence": [
+                [
+                    0.9448343571735753
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        },
+        {
+            "excerpt": " 5. Execute the *main.py* file \n`python main.py` \n",
+            "confidence": [
+                [
+                    0.9448343571735753
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "\ud83d\udd0dDescription of the system",
+            "parentHeader": "r.AID.ologist \ud83d\udd8a\ufe0f"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "r.AID.ologist \ud83d\udd8a\ufe0f",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://i.ibb.co/7Y4ZyhR/Global-Diagram.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/AI4EU_raidologist",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-07-22T14:28:03Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-10-25T08:48:37Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "AI4EU_raidologist",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/AI4EU_raidologist",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/AI4EU_raidologist/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/AI4EU_raidologist/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/AI4EU_raidologist/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:45:28 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:45:28 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "HTML",
+            "Python",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/AI4EU_raidologist/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/AI4EU_raidologist/master/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasDocumentation": {
+        "excerpt": [
+            "https://github.com/oeg-upm/AI4EU_raidologist/tree/master/static/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "inspect4py": {
+        "software_type": "service"
+    }
+}

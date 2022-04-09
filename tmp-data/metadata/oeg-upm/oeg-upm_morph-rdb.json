@@ -1,0 +1,703 @@
+{
+    "description": [
+        {
+            "excerpt": "Morph-RDB (formerly called ODEMapster) is an RDB2RDF engine developed by the Ontology Engineering Group, that follows the R2RML specification (http://www.w3.org/TR/r2rml/).  \nMorph-RDB supports two operational modes: data upgrade (generating RDF instances from data in a relational database) and query translation (SPARQL to SQL). Morph-RDB employs various optimisation techniques in order to generate efficient SQL queries, such as self-join elimination and subquery elimination.  \n",
+            "confidence": [
+                [
+                    0.9182924156882086,
+                    0.9501481563488022
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Morph-RDB"
+        },
+        {
+            "excerpt": "Virtual Knowledge Graph Creation from RDB with R2RML",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Morph-RDB",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/architecture.png",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "acknowledgement": [
+        {
+            "originalHeader": "Acknowledgement",
+            "excerpt": "From January 2016 to January 2018, the development of morph-RDB has been supported by the Mobile Age project (http://www.mobile-age.eu/). After that period, the development has been supported by the Datos 4.0 Spanish national proect.\n",
+            "parentHeader": "Morph-RDB",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "How to use",
+            "excerpt": "User guides:\nFor those who want to use this project on an user level, you can find a little guide to on the main branch wiki : https://github.com/oeg-upm/morph-rdb/wiki\n\nIf, on the other hand, you want to edit the project or at least work from an IDE such as Eclipse, we suggest you to follow this steps:\n - Download the source code.\n - Once unziped, you may notice that the imports doesn\u00b4t match the actual directories. In order to avoid changing all the imports or all the directories, import this way: Import -> Maven -> Existing Maven Project, and select as root the folder where you unziped the project (it may take a few minutes).\n - Now that it\u00b4s finally imported, you can run the file es.upm.fi.dia.oeg.morph.r2rml.rdb.engine.MorphRDBRunner.scala (in other to pass the arguments in Eclipse, right click, Run As -> Run Configuration -> Arguments, and remember to imput both the path to the .properties file and it\u00b4s full name).\n* In case the program doesn\u00b4t find the file log4j.properties, move it from \"morph-examples\" to \"morph-r2rml-rdb\", thought this file isn\u00b4t essential.\n",
+            "parentHeader": "Morph-RDB",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/morph-rdb",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2014-05-19T10:19:07Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-01-10T23:19:02Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Other"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "morph-rdb",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/morph-rdb",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-rdb/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-rdb/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/morph-rdb/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 32,
+            "date": "Tue, 05 Apr 2022 09:22:41 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 37,
+            "date": "Tue, 05 Apr 2022 09:22:41 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Scala",
+            "Java",
+            "Shell",
+            "Batchfile",
+            "q",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/morph-rdb/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/sql-scripts/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/run-docker.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-postgresql/aact-query1.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-oracle/example1-query01-oracle.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-oracle/example1-query04-oracle.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-oracle/example1-batch-oracle.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-oracle/example1-query02-oracle.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-oracle/example1-query05-oracle.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-oracle/example1-query03-oracle.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/csv-example1-query04.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/csv-example1-query01.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/csv-example1-query05.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/csv-example1-batch.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/linkedfiestas-batch.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/edificio-historico-batch-csv.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/monumento-batch-csv.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/csv-example1-query02.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/csv-example1-query06.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/linkedfiestas-q1.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-csv/csv-example1-query03.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0010.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0000.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0014.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0020.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0004.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0015.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0005.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0011.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0001.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0016.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0006.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0012.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0002.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0013.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0003.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0017.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0007.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0018.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0008.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0019.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-postgresql/DirectGraphTC0009.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/mysql-example1-query04.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/mysql-example1-query05.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/mysql-example1-query01.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/run.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/mysql-example1-query02.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/mysql-example1-query03.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/compose.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/mysql-example1-batch.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-mysql/sql-scripts/run.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0011b.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0010.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0000.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0014.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0020.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0004.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0015.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0005.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0011.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0001.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0016.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0006.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0012.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0002.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0013.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0003.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0017.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0007.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0018.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0008.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0019.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-mysql/DirectGraphTC0009.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-epw/AthensEPWExample-q3.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-epw/AthensEPWExample-q2.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-epw/MadridEPWExample-q1.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-epw/MadridEPWExample-batch.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-epw/AthensEPWExample-batch.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-epw/AthensEPWExample-q1.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-epw/MadridEPWExample-q2.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-epw/MadridEPWExample-q3.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-h2/h2-example1-query05.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-h2/h2-example1-batch.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-h2/h2-example1-query01.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-h2/h2-example1-query04.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-h2/h2-example1-query03.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/examples-h2/h2-example1-query02.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0010.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0000.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0014.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0020.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0004.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0015.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0005.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0011.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0001.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0016.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0006.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0012.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0002.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0013.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0003.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0017.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0007.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0018.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0008.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0019.sh",
+            "https://raw.githubusercontent.com/oeg-upm/morph-rdb/master/morph-examples/testcases-oracle/DirectGraphTC0009.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v3.12.5",
+                "name": "morph-RDB v3.12.5",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "improve data translation",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.12.5",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.12.5",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.12.5",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/20143106",
+                "dateCreated": "2019-09-20T15:16:42Z",
+                "datePublished": "2019-09-20T15:44:51Z"
+            },
+            {
+                "tagName": "v3.12.4",
+                "name": "morph-RDB v3.12.4",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "improve error handling",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.12.4",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.12.4",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.12.4",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/20077377",
+                "dateCreated": "2019-09-18T12:33:01Z",
+                "datePublished": "2019-09-18T12:56:40Z"
+            },
+            {
+                "tagName": "v3.12.3",
+                "name": "morph-RDB v3.12.3",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "improve CondSQL generator",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.12.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.12.3",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.12.3",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/20051444",
+                "dateCreated": "2019-09-17T15:20:07Z",
+                "datePublished": "2019-09-17T15:42:29Z"
+            },
+            {
+                "tagName": "v3.12.2",
+                "name": "morph-RDB v3.12.2",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "improve query translation",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.12.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.12.2",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.12.2",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/20048152",
+                "dateCreated": "2019-09-17T14:02:37Z",
+                "datePublished": "2019-09-17T14:07:39Z"
+            },
+            {
+                "tagName": "v3.12.1",
+                "name": "morph-RDB v3.12.1",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "improve support for FILTER",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.12.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.12.1",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.12.1",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/20042446",
+                "dateCreated": "2019-09-17T10:36:35Z",
+                "datePublished": "2019-09-17T11:00:12Z"
+            },
+            {
+                "tagName": "v3.12.0",
+                "name": "morph-RDB v3.12.0",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "add support for custom boolean values",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.12.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.12.0",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.12.0",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/19013993",
+                "dateCreated": "2019-08-01T12:32:39Z",
+                "datePublished": "2019-08-01T12:54:29Z"
+            },
+            {
+                "tagName": "v3.11.2",
+                "name": "morph-RDB v3.11.2",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "improve support for DISTINCT",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.11.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.11.2",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.11.2",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/18833508",
+                "dateCreated": "2019-07-24T13:10:04Z",
+                "datePublished": "2019-07-24T13:29:22Z"
+            },
+            {
+                "tagName": "v3.11.1",
+                "name": "morph-RDB v3.11.1",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "improve support for boolean mapping",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.11.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.11.1",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.11.1",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/18828526",
+                "dateCreated": "2019-07-24T09:59:23Z",
+                "datePublished": "2019-07-24T10:19:04Z"
+            },
+            {
+                "tagName": "v3.10.1",
+                "name": "morph-RDB v3.10.1",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "add support for DISTINCT",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.10.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.10.1",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.10.1",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/18827239",
+                "dateCreated": "2019-07-24T09:04:26Z",
+                "datePublished": "2019-07-24T09:24:06Z"
+            },
+            {
+                "tagName": "v3.9.20",
+                "name": "morph-RDB v3.9.20",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "fix output date format",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.20",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.20",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.20",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/18795121",
+                "dateCreated": "2019-07-23T08:19:41Z",
+                "datePublished": "2019-07-23T08:43:57Z"
+            },
+            {
+                "tagName": "v3.9.18",
+                "name": "morph-RDB version 3.9.18",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "fixes RDF triples generation with NULL values in FK",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.18",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.18",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.18",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/18705313",
+                "dateCreated": "2019-07-22T11:55:48Z",
+                "datePublished": "2019-07-18T13:41:15Z"
+            },
+            {
+                "tagName": "v3.9.19",
+                "name": "morph-RDB v3.9.19",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.19",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.19",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.19",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/18772158",
+                "dateCreated": "2019-07-18T09:38:46Z",
+                "datePublished": "2019-07-22T12:30:20Z"
+            },
+            {
+                "tagName": "morph-RDB_v3.9.17",
+                "name": "morph-RDB v3.9.17",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "improve the generation of SQL queries when metadata generation fails",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/morph-RDB_v3.9.17",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/morph-RDB_v3.9.17",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/morph-RDB_v3.9.17",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/17427888",
+                "dateCreated": "2019-05-17T16:04:16Z",
+                "datePublished": "2019-05-17T16:38:29Z"
+            },
+            {
+                "tagName": "v3.9.16",
+                "name": "morph-RDB v3.9.16",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.16",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.16",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.16",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/17404127",
+                "dateCreated": "2019-05-16T14:59:37Z",
+                "datePublished": "2019-05-16T18:16:42Z"
+            },
+            {
+                "tagName": "v3.9.14",
+                "name": "morph-rdb v3.9.14: improve query translator",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.14",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.14",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.14",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/11755372",
+                "dateCreated": "2018-07-03T09:56:09Z",
+                "datePublished": "2018-07-03T10:28:18Z"
+            },
+            {
+                "tagName": "v3.9.11",
+                "name": "morph-rdb v3.9.11: fixes a bug when querying constant-uri object-map",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.11",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.11",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.11",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/11242539",
+                "dateCreated": "2018-05-30T14:52:29Z",
+                "datePublished": "2018-05-30T14:57:56Z"
+            },
+            {
+                "tagName": "v3.9.10",
+                "name": "morph-rdb version 3.9.10",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.10",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.10",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.10",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/10640826",
+                "dateCreated": "2018-04-20T10:35:21Z",
+                "datePublished": "2018-04-20T10:38:28Z"
+            },
+            {
+                "tagName": "v3.9.9",
+                "name": "morph-rdb version 3.9.9",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.9",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.9",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.9",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/10601339",
+                "dateCreated": "2018-04-18T10:46:12Z",
+                "datePublished": "2018-04-18T10:49:41Z"
+            },
+            {
+                "tagName": "v3.9.8",
+                "name": "morph-rdb version 3.9.8",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.8",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.8",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.8",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/10452927",
+                "dateCreated": "2018-04-09T10:12:16Z",
+                "datePublished": "2018-04-09T10:16:30Z"
+            },
+            {
+                "tagName": "v3.9.0",
+                "name": "morph-rdb v3.9.0",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.9.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.9.0",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.9.0",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/5596350",
+                "dateCreated": "2017-02-28T16:24:13Z",
+                "datePublished": "2017-02-28T16:30:18Z"
+            },
+            {
+                "tagName": "v3.8.2",
+                "name": "morph-rdb v3.8.2",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.8.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.8.2",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.8.2",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/5595199",
+                "dateCreated": "2017-02-28T15:02:17Z",
+                "datePublished": "2017-02-28T15:09:55Z"
+            },
+            {
+                "tagName": "v3.8.1",
+                "name": "morph-rdb v3.8.1",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.8.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.8.1",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.8.1",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/5562997",
+                "dateCreated": "2017-02-24T14:13:46Z",
+                "datePublished": "2017-02-24T14:17:22Z"
+            },
+            {
+                "tagName": "v3.7.9",
+                "name": "morph-rdb v3.7.9",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.7.9",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.7.9",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.7.9",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/5410851",
+                "dateCreated": "2017-02-09T17:12:25Z",
+                "datePublished": "2017-02-09T17:18:11Z"
+            },
+            {
+                "tagName": "v3.7.8",
+                "name": "morph-RDB version 3.7.8",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.7.8",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.7.8",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.7.8",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/3539410",
+                "dateCreated": "2016-06-29T12:51:52Z",
+                "datePublished": "2016-06-28T13:31:09Z"
+            },
+            {
+                "tagName": "v3.7.5",
+                "name": "morph-RDB version 3.7.5",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.7.5",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.7.5",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.7.5",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/3091875",
+                "dateCreated": "2016-04-25T15:12:32Z",
+                "datePublished": "2016-04-25T15:14:09Z"
+            },
+            {
+                "tagName": "v3.7.4",
+                "name": "morph-RDB version 3.7.4",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.7.4",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.7.4",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.7.4",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/3070861",
+                "dateCreated": "2016-04-20T14:34:16Z",
+                "datePublished": "2016-04-21T16:31:19Z"
+            },
+            {
+                "tagName": "v3.7.3",
+                "name": "morph-RDB version 3.7.3",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.7.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.7.3",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.7.3",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/3060878",
+                "dateCreated": "2016-04-20T14:34:16Z",
+                "datePublished": "2016-04-20T14:50:04Z"
+            },
+            {
+                "tagName": "v3.7.0",
+                "name": "morph-RDB version 3.7.0",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.7.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.7.0",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.7.0",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/3011487",
+                "dateCreated": "2016-04-13T14:31:38Z",
+                "datePublished": "2016-04-13T14:45:46Z"
+            },
+            {
+                "tagName": "v3.6.1",
+                "name": "morph-RDB version 3.6.1",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "Added initial support for H2 Database\n",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.6.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.6.1",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.6.1",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/2992633",
+                "dateCreated": "2016-04-11T09:41:21Z",
+                "datePublished": "2016-04-11T10:34:11Z"
+            },
+            {
+                "tagName": "v3.5.16",
+                "name": "morph-RDB v3.5.16",
+                "authorName": "fpriyatna",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/tarball/v3.5.16",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-rdb/zipball/v3.5.16",
+                "htmlUrl": "https://github.com/oeg-upm/morph-rdb/releases/tag/v3.5.16",
+                "url": "https://api.github.com/repos/oeg-upm/morph-rdb/releases/2663355",
+                "dateCreated": "2016-02-22T15:55:36Z",
+                "datePublished": "2016-02-22T16:05:45Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

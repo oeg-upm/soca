@@ -1,0 +1,156 @@
+{
+    "description": [
+        {
+            "excerpt": "The XXX ontology describes the domain of XXX \n",
+            "confidence": [
+                [
+                    0.9354044375383516
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "XXX Ontology"
+        },
+        {
+            "excerpt": "Repositorio de las ontolog\u00edas a desarrollar para el Instituto de Estudios Fiscales",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "XXX Ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "usage": [
+        {
+            "originalHeader": "Examples",
+            "excerpt": "Some [queries](https://github.com/repository-name/blob/master/examples/queries.md) will be performed in a\nSPARQL endpoint to test and exemplify its operability.\n\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/Instituto-Estudios-Fiscales-ontologias",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2021-02-11T08:54:35Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-10-03T17:38:40Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "Instituto-Estudios-Fiscales-ontologias",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/Instituto-Estudios-Fiscales-ontologias",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Instituto-Estudios-Fiscales-ontologias/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Instituto-Estudios-Fiscales-ontologias/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/Instituto-Estudios-Fiscales-ontologias/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:12:11 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Tue, 05 Apr 2022 09:12:11 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "HTML",
+            "Jupyter Notebook",
+            "CSS"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/Instituto-Estudios-Fiscales-ontologias/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasExecutableNotebook": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/Instituto-Estudios-Fiscales-ontologias/master/machine-learning/IEF-IVA-simple-numeric-categorical.ipynb",
+            "https://raw.githubusercontent.com/oeg-upm/Instituto-Estudios-Fiscales-ontologias/master/machine-learning/IEF-IVA-text-numeric-features.ipynb"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    }
+}

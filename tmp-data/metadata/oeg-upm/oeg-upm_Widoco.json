@@ -1,0 +1,297 @@
+{
+    "description": [
+        {
+            "originalHeader": "Description",
+            "excerpt": "WIDOCO helps you to publish and create an enriched and customized documentation of your ontology, by following a series of steps in a wizard. We extend the LODE framework by Silvio Peroni to describe the classes, properties and data properties of the ontology, the OOPS! webservice by Mar\u00eda Poveda to print an evaluation and the Licensius service by Victor Rodriguez Doncel to determine the license URI and title being used. In addition, we use WebVowl to visualize the ontology and have extended Bubastis to show a complete changelog between different versions of your ontology.\n\nFeatures of WIDOCO:\n* Automatic documentation of the terms in your ontology (based on [LODE](http://www.essepuntato.it/lode/))\n* Automatic annotation in JSON-LD snippets of the html produced.\n* Association of a provenance page which includes the history of your vocabulary (W3C PROV-O compliant).\n* Metadata extraction from the ontology plus the means to complete it on the fly when generating your ontology. Check the [best practice document](http://dgarijo.github.io/Widoco/doc/bestPractices/index-en.html) to know more about the terms recognized by WIDOCO.\n* Guidelines on the main sections that your document should have and how to complete them.\n* Integration with diagram creators ([WebVOWL](http://vowl.visualdataweb.org/webvowl/)).\n* Automatic changelog of differences between the actual and the previous version of the ontology (based on [Bubastis](http://www.ebi.ac.uk/efo/bubastis/)).\n* Separation of the sections of your html page so you can write them independently and replace only those needed.\n* Content negotiation and serialization of your ontology according to W3C best practices\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "We are working on the following features:\n* Means to add examples to your ontology terms.\n* Previsualization of the terms that will be generated. \n",
+            "confidence": [
+                [
+                    0.9612949988574552
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Current improvements"
+        },
+        {
+            "excerpt": "Wizard for documenting ontologies. WIDOCO is a step by step generator of HTML templates with the documentation of your ontology. It uses the LODE environment to create part of the template.",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "@inproceedings{garijo2017widoco,\n  title={WIDOCO: a wizard for documenting ontologies},\n  author={Garijo, Daniel},\n  booktitle={International Semantic Web Conference},\n  pages={94--102},\n  year={2017},\n  organization={Springer, Cham},\n  doi = {10.1007/978-3-319-68204-4_9},\n  funding = {USNSF ICER-1541029, NIH 1R01GM117097-01},\n  url={http://dgarijo.com/papers/widoco-iswc2017.pdf}\n}",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "[![DOI](https://zenodo.org/badge/11427075.svg)](https://zenodo.org/badge/latestdoi/11427075) \n",
+            "confidence": [
+                [
+                    0.9999959318575946
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
+        },
+        {
+            "excerpt": "**Author**: Daniel Garijo Verdejo (@dgarijo) \n",
+            "confidence": [
+                [
+                    0.9818894004866677
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
+        },
+        {
+            "excerpt": "**Citing WIDOCO**: Please cite the latest version of WIDOCO in Zenodo: https://zenodo.org/badge/latestdoi/11427075.\nISWC 2017 paper: https://iswc2017.semanticweb.org/paper-138 \n",
+            "confidence": [
+                [
+                    0.9999998909565793
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "To download WIDOCO, you need to download a JAR executable file. Check the latest release for more details: (https://github.com/dgarijo/WIDOCO/releases/latest).\n \n",
+            "confidence": [
+                [
+                    0.9190343646781911
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
+        }
+    ],
+    "invocation": [
+        {
+            "excerpt": "![Logo](src/main/resources/logo/logo2.png) \n",
+            "confidence": [
+                [
+                    0.9303728968469744
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "WIzard for DOCumenting Ontologies (WIDOCO)",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "identifier": [
+        {
+            "excerpt": "https://zenodo.org/badge/latestdoi/11427075",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "logo": {
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/src/main/resources/logo/logo2.png",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://zenodo.org/badge/11427075.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "documentation": [
+        {
+            "originalHeader": "Browser issues (Why can't I see the generated documentation / visualization?)",
+            "excerpt": "The result of executing WIDOCO is an HTML file. We have successfully tested it in Mozilla, IE, Safari and Chrome.  **When the page is stored in a server, WIDOCO's HTML  works correctly in all browsers**. If you view the file **on your local browser**, we recommend you to use Mozilla Firefox, Safari or Internet Explorer. Google Chrome will not show the contents correctly, as it doesn't allow  XMLHttpRequest without HTTP. If you want to view the page locally with Google Chrome you have two possibilities:\n\na) Place the file in a server and access it via its URL (for example, put it in dropbox and access through its public url, or on a Github page).\n\nb) Execute Chrome with the following commands (Thanks to Alejandro Fernandez Carrera):\n\n(WIN) chrome.exe --allow-file-access-from-files,\n\n(OSX) open /Applications/Google\\ Chrome.app/ --args --allow-file-access-from-files\n\n(UNX) /usr/bin/google-chrome --allow-file-access-from-files\n\t",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "requirement": [
+        {
+            "originalHeader": "Requirements",
+            "excerpt": "You will need Java 1.8 or higher (SDK 1.8 or JRE 8) for WIDOCO to work\nOtherwise, you will probably experience an \"Unsupported major.minor version 52.0\" exception when executing the JAR file.\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Examples",
+            "excerpt": "Examples of the features of WIDOCO can be seen on [the gallery](http://dgarijo.github.io/Widoco/doc/gallery/)\t\n\t",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Tutorial",
+            "excerpt": "A tutorial explaining the main features of the GUI can be found [here](http://dgarijo.github.io/Widoco/doc/tutorial/)    \n    ",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "How to use WIDOCO",
+            "excerpt": "Download all the files of the \"JAR\" folder into the same folder. Then just double click the .jar file.\n\nNow you can execute WIDOCO through the console. Usage:\n\n\tjava -jar widoco-VERSION-jar-with-dependencies.jar [-ontFile file] or [-ontURI uri] [-outFolder folderName] [-confFile propertiesFile] or [-getOntologyMetadata] [-oops] [-rewriteAll] [-crossRef] [-saveConfig configOutFile] [-useCustomStyle] [-lang lang1-lang2] [-includeImportedOntologies] [-htaccess] [-webVowl] [-licensius] [-ignoreIndividuals] [-analytics analyticsCode] [-doNotDisplaySerializations][-displayDirectImportsOnly] [-rewriteBase rewriteBasePath] [-excludeIntroduction] [-uniteSections]\n\nThe `ontFile` and `ontURI` options allow you to choose the ontology file or ontology URI of your ontology.\n\nThe `-outFolder` option specifies where you want to place the output.\n\nThe `-confFile` allows you to choose your own configuration file for the ontology metadata. However you can tell WIDOCO to try to extract some of the metadata from the ontology with getOntologyMetadata.\n\nThe `-oops` flag creates an html page with the evaluation from the OOPS service (http://oops.linkeddata.es/)\n\nThe `-rewriteAll` option will tell WIDOCO to rewrite files if the new generate files are replacing existing files. Otherwise the tool will promt a window asking the user.\n\nThe `-crossRef` option will ONLY generate the overview and cross reference sections. The index document will NOT be generated. The htaccess, provenance page, etc., will not be generated unless requested by other flags. This flag in intended to be used only after a first version of the documentation exists.\n\nThe `-saveConfig` option allows you to save a configuration file on the \"configOutFile\" route with the properties of a given ontology.\n\nThe `-useCustomStyle` option allows exporting the documentation using alternate css files (thanks to Daniel Vila).\n\nThe `-lang` option allows showing the languages in which the documentation will be published (separated by \"-\"). Note that if the language is not supported, the system will load the labels in english. For example: en-pt-es\n\nThe `-includeImportedOntologies` flag indicates whether the terms of the imported ontologies of the current ontology should be documented as well or not.\n\nThe `-htaccess` flag creates a bundle for publication ready to be deployed on your apache server.\n\nThe `-webVowl` flag provides a link to a visualization based on WebVowl (http://vowl.visualdataweb.org/webvowl/index.html#).\n\nThe `-licensius` flag uses the Licensius web services (http://licensius.com/apidoc/index.html) to retrieve license metadata. Only works if the `-getOntologyMetadata` flag is enabled.\n\nThe `-ignoreIndividuals` flag allows you to ignore the named individuals in the ontology.\n\nThe `-includeAnnotationProperties` flag will include annotation properties defined in your ontology (by default they are not included)\n\nThe `-analytics` flag will add a code snippet for Google analytics to track your page. You need to add your code next to it. For example: UA-1234\n\nThe `-doNotDisplaySerializations` flag allows not displaying available serializations of the ontology.\n\nThe `-displayDirectImportsOnly` flag allows displaying only those imported ontologies that are directly imported in the ontology being documented.\n\nThe `-rewriteBase` flag allows changing the default rewrite base path (until the documentation folder). By default it is \"/\".\n\nThe `-excludeIntroduction` flag skips adding an introduction section.\n\nThe `-uniteSections` includes all sections in the same HTML document.\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/Widoco",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-02-28T15:03:53Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2020-02-28T15:03:55Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Other",
+            "url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/LICENSE"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "Widoco",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/Widoco",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Widoco/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/Widoco/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/Widoco/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:35:25 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:35:25 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "XSLT",
+            "CSS",
+            "JavaScript",
+            "HTML"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'                                 Apache License\\n                           Version 2.0, January 2004\\n                        http://www.apache.org/licenses/\\n\\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\\n\\n   1. Definitions.\\n\\n      \"License\" shall mean the terms and conditions for use, reproduction,\\n      and distribution as defined by Sections 1 through 9 of this document.\\n\\n      \"Licensor\" shall mean the copyright owner or entity authorized by\\n      the copyright owner that is granting the License.\\n\\n      \"Legal Entity\" shall mean the union of the acting entity and all\\n      other entities that control, are controlled by, or are under common\\n      control with that entity. For the purposes of this definition,\\n      \"control\" means (i) the power, direct or indirect, to cause the\\n      direction or management of such entity, whether by contract or\\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\\n      outstanding shares, or (iii) beneficial ownership of such entity.\\n\\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\\n      exercising permissions granted by this License.\\n\\n      \"Source\" form shall mean the preferred form for making modifications,\\n      including but not limited to software source code, documentation\\n      source, and configuration files.\\n\\n      \"Object\" form shall mean any form resulting from mechanical\\n      transformation or translation of a Source form, including but\\n      not limited to compiled object code, generated documentation,\\n      and conversions to other media types.\\n\\n      \"Work\" shall mean the work of authorship, whether in Source or\\n      Object form, made available under the License, as indicated by a\\n      copyright notice that is included in or attached to the work\\n      (an example is provided in the Appendix below).\\n\\n      \"Derivative Works\" shall mean any work, whether in Source or Object\\n      form, that is based on (or derived from) the Work and for which the\\n      editorial revisions, annotations, elaborations, or other modifications\\n      represent, as a whole, an original work of authorship. For the purposes\\n      of this License, Derivative Works shall not include works that remain\\n      separable from, or merely link (or bind by name) to the interfaces of,\\n      the Work and Derivative Works thereof.\\n\\n      \"Contribution\" shall mean any work of authorship, including\\n      the original version of the Work and any modifications or additions\\n      to that Work or Derivative Works thereof, that is intentionally\\n      submitted to Licensor for inclusion in the Work by the copyright owner\\n      or by an individual or Legal Entity authorized to submit on behalf of\\n      the copyright owner. For the purposes of this definition, \"submitted\"\\n      means any form of electronic, verbal, or written communication sent\\n      to the Licensor or its representatives, including but not limited to\\n      communication on electronic mailing lists, source code control systems,\\n      and issue tracking systems that are managed by, or on behalf of, the\\n      Licensor for the purpose of discussing and improving the Work, but\\n      excluding communication that is conspicuously marked or otherwise\\n      designated in writing by the copyright owner as \"Not a Contribution.\"\\n\\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\\n      on behalf of whom a Contribution has been received by Licensor and\\n      subsequently incorporated within the Work.\\n\\n   2. Grant of Copyright License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      copyright license to reproduce, prepare Derivative Works of,\\n      publicly display, publicly perform, sublicense, and distribute the\\n      Work and such Derivative Works in Source or Object form.\\n\\n   3. Grant of Patent License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      (except as stated in this section) patent license to make, have made,\\n      use, offer to sell, sell, import, and otherwise transfer the Work,\\n      where such license applies only to those patent claims licensable\\n      by such Contributor that are necessarily infringed by their\\n      Contribution(s) alone or by combination of their Contribution(s)\\n      with the Work to which such Contribution(s) was submitted. If You\\n      institute patent litigation against any entity (including a\\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\\n      or a Contribution incorporated within the Work constitutes direct\\n      or contributory patent infringement, then any patent licenses\\n      granted to You under this License for that Work shall terminate\\n      as of the date such litigation is filed.\\n\\n   4. Redistribution. You may reproduce and distribute copies of the\\n      Work or Derivative Works thereof in any medium, with or without\\n      modifications, and in Source or Object form, provided that You\\n      meet the following conditions:\\n\\n      (a) You must give any other recipients of the Work or\\n          Derivative Works a copy of this License; and\\n\\n      (b) You must cause any modified files to carry prominent notices\\n          stating that You changed the files; and\\n\\n      (c) You must retain, in the Source form of any Derivative Works\\n          that You distribute, all copyright, patent, trademark, and\\n          attribution notices from the Source form of the Work,\\n          excluding those notices that do not pertain to any part of\\n          the Derivative Works; and\\n\\n      (d) If the Work includes a \"NOTICE\" text file as part of its\\n          distribution, then any Derivative Works that You distribute must\\n          include a readable copy of the attribution notices contained\\n          within such NOTICE file, excluding those notices that do not\\n          pertain to any part of the Derivative Works, in at least one\\n          of the following places: within a NOTICE text file distributed\\n          as part of the Derivative Works; within the Source form or\\n          documentation, if provided along with the Derivative Works; or,\\n          within a display generated by the Derivative Works, if and\\n          wherever such third-party notices normally appear. The contents\\n          of the NOTICE file are for informational purposes only and\\n          do not modify the License. You may add Your own attribution\\n          notices within Derivative Works that You distribute, alongside\\n          or as an addendum to the NOTICE text from the Work, provided\\n          that such additional attribution notices cannot be construed\\n          as modifying the License.\\n\\n      You may add Your own copyright statement to Your modifications and\\n      may provide additional or different license terms and conditions\\n      for use, reproduction, or distribution of Your modifications, or\\n      for any such Derivative Works as a whole, provided Your use,\\n      reproduction, and distribution of the Work otherwise complies with\\n      the conditions stated in this License.\\n\\n   5. Submission of Contributions. Unless You explicitly state otherwise,\\n      any Contribution intentionally submitted for inclusion in the Work\\n      by You to the Licensor shall be under the terms and conditions of\\n      this License, without any additional terms or conditions.\\n      Notwithstanding the above, nothing herein shall supersede or modify\\n      the terms of any separate license agreement you may have executed\\n      with Licensor regarding such Contributions.\\n\\n   6. Trademarks. This License does not grant permission to use the trade\\n      names, trademarks, service marks, or product names of the Licensor,\\n      except as required for reasonable and customary use in describing the\\n      origin of the Work and reproducing the content of the NOTICE file.\\n\\n   7. Disclaimer of Warranty. Unless required by applicable law or\\n      agreed to in writing, Licensor provides the Work (and each\\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\\n      implied, including, without limitation, any warranties or conditions\\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\\n      PARTICULAR PURPOSE. You are solely responsible for determining the\\n      appropriateness of using or redistributing the Work and assume any\\n      risks associated with Your exercise of permissions under this License.\\n\\n   8. Limitation of Liability. In no event and under no legal theory,\\n      whether in tort (including negligence), contract, or otherwise,\\n      unless required by applicable law (such as deliberate and grossly\\n      negligent acts) or agreed to in writing, shall any Contributor be\\n      liable to You for damages, including any direct, indirect, special,\\n      incidental, or consequential damages of any character arising as a\\n      result of this License or out of the use or inability to use the\\n      Work (including but not limited to damages for loss of goodwill,\\n      work stoppage, computer failure or malfunction, or any and all\\n      other commercial damages or losses), even if such Contributor\\n      has been advised of the possibility of such damages.\\n\\n   9. Accepting Warranty or Additional Liability. While redistributing\\n      the Work or Derivative Works thereof, You may choose to offer,\\n      and charge a fee for, acceptance of support, warranty, indemnity,\\n      or other liability obligations and/or rights consistent with this\\n      License. However, in accepting such obligations, You may act only\\n      on Your own behalf and on Your sole responsibility, not on behalf\\n      of any other Contributor, and only if You agree to indemnify,\\n      defend, and hold each Contributor harmless for any liability\\n      incurred by, or claims asserted against, such Contributor by reason\\n      of your accepting any such warranty or additional liability.\\n\\n   END OF TERMS AND CONDITIONS\\n\\n   APPENDIX: How to apply the Apache License to your work.\\n\\n      To apply the Apache License to your work, attach the following\\n      boilerplate notice, with the fields enclosed by brackets \"{}\"\\n      replaced with your own identifying information. (Don\\'t include\\n      the brackets!)  The text should be enclosed in the appropriate\\n      comment syntax for the file format. We also recommend that a\\n      file or class name and description of purpose be included on the\\n      same \"printed page\" as the copyright notice for easier\\n      identification within third-party archives.\\n\\n   Copyright 2018 Daniel Garijo\\n\\n   Licensed under the Apache License, Version 2.0 (the \"License\");\\n   you may not use this file except in compliance with the License.\\n   You may obtain a copy of the License at\\n\\n       http://www.apache.org/licenses/LICENSE-2.0\\n\\n   Unless required by applicable law or agreed to in writing, software\\n   distributed under the License is distributed on an \"AS IS\" BASIS,\\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\\n   See the License for the specific language governing permissions and\\n   limitations under the License.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/Widoco/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

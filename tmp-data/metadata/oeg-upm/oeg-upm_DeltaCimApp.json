@@ -1,0 +1,324 @@
+{
+    "description": [
+        {
+            "excerpt": "The CIM allows local infrastructures to communicate with others though a peer-to-peer network. Besides allowing the access of remote infrastructures, the CIM implements a semantic interoperability layer, which translates heterogeneous payloads into JSON-LD modelled with the DELTA ontology by means of interoperability modules. The translation is bidirectional, therefore, when needed the CIM also translates from JSON-LD to a set of heterogeneous formats that follow different  models. This potentially leads to having systems developed with different standards communicating transparently. \nAdditionaly, the CIM allows to consume the data of a local infrastructure using SPARQL queries, or, consume the data from the cloud, i.e., the peer-to-peer network, with SPARQL queries. Other functionalities implemented are: validation of payloads using SHACL shapes on the fly, access control list, jwt token authentication for local infrastructures to interact with the CIM, a GUI for configuring the CIM, and a documented REST API to use the CIM.\n \n**All the current CIM releases send data about the status of the service to a private secured monitor service, that analyses the health of the services and prevents from potential attacks**\n \n",
+            "confidence": [
+                [
+                    0.9923325648851167,
+                    0.9983095395800964,
+                    0.9659591665590266
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Monitoring capabilities:",
+            "parentHeader": "DeltaCimApp"
+        },
+        {
+            "excerpt": "The CIM allows local infrastructures to communicate with others though a peer-to-peer network. Besides allowing the access of remote infrastructures, the CIM implements a semantic interoperability layer, which translates heterogeneous payloads into JSON-LD modelled with the DELTA ontology by means of interoperability modules. The translation is bidirectional, therefore, when needed the CIM also translates from JSON-LD to a set of heterogeneous formats that follow different  models. This potentially leads to having systems developed with different standards communicating transparently. \nAdditionaly, the CIM allows to consume the data of a local infrastructure using SPARQL queries, or, consume the data from the cloud, i.e., the peer-to-peer network, with SPARQL queries. Other functionalities implemented are: validation of payloads using SHACL shapes on the fly, access control list, jwt token authentication for local infrastructures to interact with the CIM, a GUI for configuring the CIM, and a documented REST API to use the CIM. \n",
+            "confidence": [
+                [
+                    0.9923325648851167,
+                    0.9983095395800964
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Configuring &amp; using the CIM",
+            "parentHeader": "DeltaCimApp"
+        },
+        {
+            "excerpt": "**All the current CIM releases send data about the status of the service to a private secured monitor service, that analyses the health of the services and prevents from potential attacks** \n",
+            "confidence": [
+                [
+                    0.9659591665590266
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Configuring &amp; using the CIM",
+            "parentHeader": "DeltaCimApp"
+        },
+        {
+            "excerpt": "* Certificates: This folder contains an empty Keystore, by default its password is \"changeit\". In this Keystore either an encription certificate and an identity certificate for mutual authentication must be persisted.\n* shapes: The file within this folder must contain the shacl shapes associated to the ontology of DELTA. In order the CIM to correctly function the file shall be named *delta-shapes.ttl*\n* cim-X.X.X.jar: This is the compiled version of the CIM software.\n* modules: this folder contains the interoperability modules that allow integrating non-Delta local infrastructures with the DELTA platform, so they can exchange data transparently with the rest of the components in this platform. \n",
+            "confidence": [
+                [
+                    0.9848579176323642
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Running the CIM:",
+            "parentHeader": "DeltaCimApp"
+        },
+        {
+            "excerpt": "Other flags can be specified to modify the default behaviour of the CIM replacing the values within the characters [ and ] inclusive. For instance, the flag ```--spring.datasource.username=[USER]``` should be instantiated as BASH3*. The list of flags that can be configured are: \n",
+            "confidence": [
+                [
+                    0.9180318037736692
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Running the CIM:",
+            "parentHeader": "DeltaCimApp"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "DeltaCimApp",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "run": [
+        {
+            "originalHeader": "Running the CIM:",
+            "excerpt": "Go to the release section of this proyect, download the lastest version, and unzip the main file (cim-X.X.X.zip). The output folder has the following structure:\n\n* Certificates: This folder contains an empty Keystore, by default its password is \"changeit\". In this Keystore either an encription certificate and an identity certificate for mutual authentication must be persisted.\n* shapes: The file within this folder must contain the shacl shapes associated to the ontology of DELTA. In order the CIM to correctly function the file shall be named *delta-shapes.ttl*\n* cim-X.X.X.jar: This is the compiled version of the CIM software.\n* modules: this folder contains the interoperability modules that allow integrating non-Delta local infrastructures with the DELTA platform, so they can exchange data transparently with the rest of the components in this platform.\n\nFinally, to run the CIM, type down:\n\n``` java -jar cim-1.0.0.jar --server.port=8080```\n\n**WARNING**: The argument --server.port must always be specified for the correct functioning of the CIM.\n\nOther flags can be specified to modify the default behaviour of the CIM replacing the values within the characters [ and ] inclusive. For instance, the flag ```--spring.datasource.username=[USER]``` should be instantiated as ```--spring.datasource.username=toor```. The list of flags that can be configured are:\n\n* Change the password to connecto to the certificates key store, default password is *changeit*:\n\t* ``` --certificate.password=[PASS]```\n* When the CIM is already correctly configured, the following flag can be used for the CIM connect automatically to the Peer-to-Peer network without requiring the user to manually connect it. \n\t* ``--xmpp.autoconnection=true``\n* Change default username/password for the local database where the configuration of the CIM is stored, default value for username and password is *root* .\n\t* ```--spring.datasource.username=[USER]```\n\t* `` --spring.datasource.password=[PASS]``\n* Change the time outs of the CIM requests, all of them are expressed in milliseconds:\n\t* The timeout that the CIM has to answer a local request, that will be forwarded through the peer-to-peer network in order to be solved by another CIM ```--spring.mvc.async.request-timeout=[TIMEOUT]```\n\t* The request timeout of the requests sent from the CIM to the local infrastructures when solving a remote request sent by another CIM```--cim.timeout.request=[TIMEOUT]```\n\t* The socket timeout of the requests sent from the CIM to the local infrastructures when solving a remote request sent by another CIM ```--cim.timeout.socket=[TIMEOUT]```\n\t* The timeout of the requests sent through the peer-to-peer ```--cim.timeout.xmpp=[TIMEOUT]```\n\n\n## Configuring & using the CIM\nIn order to correctly configure and use the CIM, the user is kindly asked to check the [CIM's wiki]([https://github.com/oeg-upm/DeltaCimApp/wiki](https://github.com/oeg-upm/DeltaCimApp/wiki))\n\n",
+            "parentHeader": "DeltaCimApp",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/DeltaCimApp",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-01-12T17:04:20Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-02-01T13:35:27Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "DeltaCimApp",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/DeltaCimApp",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/DeltaCimApp/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/DeltaCimApp/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/DeltaCimApp/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 09:00:45 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:45 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "JavaScript",
+            "CSS",
+            "Java",
+            "HTML",
+            "Python",
+            "SCSS",
+            "R"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'The MIT License (MIT)\\n\\nCopyright (c) 2013-2019 Blackrock Digital LLC\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \"Software\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in\\nall copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\nTHE SOFTWARE.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/DeltaCimApp/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "2.2.5",
+                "name": "CIM 2.2.5",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This CIM release is tailored for high load of parallel requests, and for the translation of payloads for implementing semantic interoperability.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/2.2.5",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/2.2.5",
+                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/2.2.5",
+                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/36702029",
+                "dateCreated": "2021-02-01T13:35:08Z",
+                "datePublished": "2021-04-06T15:54:16Z"
+            },
+            {
+                "tagName": "#2.2.6",
+                "name": "CIM 2.2.6",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "Release only for testing",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/#2.2.6",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/#2.2.6",
+                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/%232.2.6",
+                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/41006988",
+                "dateCreated": "2021-02-01T13:35:08Z",
+                "datePublished": "2021-04-07T13:01:49Z"
+            },
+            {
+                "tagName": "#2.1.7",
+                "name": "CIM release 2.1.7",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/#2.1.7",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/#2.1.7",
+                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/%232.1.7",
+                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/32610383",
+                "dateCreated": "2021-02-01T13:35:08Z",
+                "datePublished": "2021-04-07T13:02:44Z"
+            },
+            {
+                "tagName": "#2.1.6",
+                "name": "CIM 2.1.6",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/#2.1.6",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/#2.1.6",
+                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/%232.1.6",
+                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/32575991",
+                "dateCreated": "2020-10-14T17:12:30Z",
+                "datePublished": "2020-10-14T17:21:03Z"
+            },
+            {
+                "tagName": "2.1.2-beta",
+                "name": "CIM 2.1.2",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This new version monitors the CIMs, and had a review from @kostopoulos (CERTH) and @AndreaCimminoArriaga (UPM).",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/2.1.2-beta",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/2.1.2-beta",
+                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/2.1.2-beta",
+                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/31051724",
+                "dateCreated": "2020-09-10T12:02:12Z",
+                "datePublished": "2020-09-10T12:17:41Z"
+            },
+            {
+                "tagName": "2.1.1-beta",
+                "name": "CIM 2.1.1",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "This new release includes the functionalities that implement bi-directional communication flow among components that are not DELTA-compliant. Additionally, further security mechanisms have been implemented, like the JWT tokens or the secured monitoring system.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/2.1.1-beta",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/2.1.1-beta",
+                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/2.1.1-beta",
+                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/28268756",
+                "dateCreated": "2020-07-10T09:18:33Z",
+                "datePublished": "2020-07-06T18:31:29Z"
+            },
+            {
+                "tagName": "2.0.0",
+                "name": "DELTA CIM v2.0",
+                "authorName": "juancanobenito",
+                "authorType": "User",
+                "body": "Now you must run the jar with, for example:\r\n\r\njava -jar cim-2.0.0.jar --server.port=8082 --certificate.password=changeit",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/2.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/2.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/2.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/26637038",
+                "dateCreated": "2020-05-18T16:58:30Z",
+                "datePublished": "2020-05-18T17:04:51Z"
+            },
+            {
+                "tagName": "v1.0.0",
+                "name": "DELTA CIM v1.0",
+                "authorName": "AndreaCimminoArriaga",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/tarball/v1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/DeltaCimApp/zipball/v1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/DeltaCimApp/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/DeltaCimApp/releases/23937132",
+                "dateCreated": "2020-02-24T16:45:50Z",
+                "datePublished": "2020-02-24T16:58:25Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "service"
+    }
+}

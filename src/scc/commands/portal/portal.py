@@ -7,6 +7,7 @@ import json
 
 from . import card
 from . import scripts
+from . import metadata
 from scc import base_dir
 
 
@@ -29,7 +30,22 @@ def generate(repo_metadata_dir, output):
 
     # Insert extra scripts
     sc = scripts.scripts()
-    soup.body.script.string = sc.function_copy_card() + sc.function_tooltip() + sc.funtions_modals()
+    soup.body.script.string = sc.function_copy_card() + sc.function_tooltip() + sc.functions_modals()
+
+    # Add filter owners
+    owners = list_owners(repo_metadata_dir)
+    if len(owners) > 1:
+        owner_filter = soup.find(id='owner-filter')
+        l = '\n'.join([ f'<option value="{owner}">{owner}</option>' for owner in owners ])
+        html_parsed = BeautifulSoup(f"""
+        <div data-toggle="tooltip" data-placement="bottom" title="Filter by User/Organization"><img src="repo_icons/owner.svg" class="sort-filter-icon grey-color-svg"/></div>
+			<select id="owner" class="owner-dropdown">
+				<option value="all">All</option>
+                {l}
+			</select>
+        """, 'html.parser')
+        owner_filter.append(html_parsed)
+        
 
     # Save index.html
     with open(f"{output}/index.html", "w") as index:
@@ -66,5 +82,21 @@ def copy_assets(output):
 def add_last_updated_date(soup):
     loc = soup.find(id="portal-last-updated")
     loc.string = f"Last updated on {datetime.today().strftime('%d/%m/%Y')}"
+
+def list_owners(repo_metadata_dir):
+
+    owners = []
+
+    for file in os.listdir(os.fsencode(repo_metadata_dir)):
+        filename = os.fsdecode(file)
+        if filename.endswith(".json"): 
+            with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
+                repo_metadata = json.load(json_metadata)
+                md = metadata.metadata(repo_metadata)
+                owner = md.owner()
+                if owner not in owners:
+                    owners.append(owner)
+
+    return owners
 
 

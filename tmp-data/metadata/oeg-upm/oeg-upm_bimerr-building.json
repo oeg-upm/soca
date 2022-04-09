@@ -1,0 +1,181 @@
+{
+    "description": [
+        {
+            "excerpt": "BIMERR ontology for the building domain\r\n\r\nThis repository contains the code and documentation generated for the building ontology which is available at: http://bimerr.iot.linkeddata.es/def/building\r\n\r \n",
+            "confidence": [
+                [
+                    0.9746879781294318
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "BIMERR Building Ontology"
+        },
+        {
+            "excerpt": "BIMERR ontology for the building domain",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "BIMERR Building Ontology",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "image": [
+        {
+            "excerpt": "https://github.com/oeg-upm/bimerr-building/blob/master/diagrams/ontology.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-building",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-03-25T16:57:13Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-11-02T15:39:07Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "bimerr-building",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/bimerr-building",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-building/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-building/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-building/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:47:07 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:47:07 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/bimerr-building/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v0.1.0",
+                "name": "v0.1.0",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-building/tarball/v0.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-building/zipball/v0.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-building/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-building/releases/32800345",
+                "dateCreated": "2020-10-20T09:43:31Z",
+                "datePublished": "2020-10-20T09:46:14Z"
+            },
+            {
+                "tagName": "0.0.5",
+                "name": "",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-building/tarball/0.0.5",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-building/zipball/0.0.5",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-building/releases/tag/0.0.5",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-building/releases/28352173",
+                "dateCreated": "2020-07-08T10:48:41Z",
+                "datePublished": "2020-07-08T10:52:01Z"
+            },
+            {
+                "tagName": "0.0.4",
+                "name": "",
+                "authorName": "Serge3006",
+                "authorType": "User",
+                "body": "",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/bimerr-building/tarball/0.0.4",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/bimerr-building/zipball/0.0.4",
+                "htmlUrl": "https://github.com/oeg-upm/bimerr-building/releases/tag/0.0.4",
+                "url": "https://api.github.com/repos/oeg-upm/bimerr-building/releases/28028500",
+                "dateCreated": "2020-06-29T15:14:44Z",
+                "datePublished": "2020-06-29T15:16:16Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

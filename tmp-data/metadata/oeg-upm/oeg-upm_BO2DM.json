@@ -1,0 +1,138 @@
+{
+    "description": [
+        {
+            "excerpt": "BIMERR Ontology to Data Model Converter",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "BIMERR to Data Model Converter (BO2DM)",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "run": [
+        {
+            "originalHeader": "How to run it:",
+            "excerpt": "1. git clone the repository:\n\n    `git clone https://github.com/oeg-upm/BO2DM.git`\n\n2. Install dependencies:\n\n    `pip install -r requirements.txt`\n\n3. Make sure to generate the enriched version of the ontology and name it in the following way:\n\n    **ns_enriched.ttl**\n    \n    Where **ns** is the namespace of the ontological model.\n\n4. Run the converter.py script\n\n    4.1. If you want to generate the data model using the original ontology published online.\n\n    `python converter.py path/to/enriched/ontology path/to/output/datamodel`\n\n    4.2. If you want to generate the data model using the original ontology from you local system.\n\n    `python converter.py path/to/enriched/ontology path/to/output/datamodel -o path/to/original/ontology`",
+            "parentHeader": "BIMERR to Data Model Converter (BO2DM)",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/BO2DM",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-03-11T18:00:12Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2021-11-23T17:27:33Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "BO2DM",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/BO2DM",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/BO2DM/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/BO2DM/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/BO2DM/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 1,
+            "date": "Tue, 05 Apr 2022 08:49:39 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 08:49:39 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/BO2DM/readme.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "script"
+    }
+}

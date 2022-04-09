@@ -1,0 +1,187 @@
+{
+    "description": [
+        {
+            "excerpt": "Public repository for an ontology network on DevOps infrastructure",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "[![DOI](https://zenodo.org/badge/325636796.svg)](https://zenodo.org/badge/latestdoi/325636796) \n",
+            "confidence": [
+                [
+                    0.9999959318575946
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "DevOps Infrastructure Ontology Network"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "DevOps Infrastructure Ontology Network",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "identifier": [
+        {
+            "excerpt": "https://zenodo.org/badge/latestdoi/325636796",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "image": [
+        {
+            "excerpt": "https://zenodo.org/badge/325636796.svg",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "requirement": [
+        {
+            "originalHeader": "Ontology network requirements",
+            "excerpt": "The list of requirements of the ontology network is available [here](https://github.com/oeg-upm/devops-infra/blob/master/Requirements.xlsx). New requirements or issues can be submitted in [here](https://github.com/oeg-upm/devops-infra/issues)\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/devops-infra",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2020-12-30T19:56:43Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-02-07T12:10:51Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "devops-infra",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/devops-infra",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/devops-infra/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/devops-infra/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/devops-infra/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Tue, 05 Apr 2022 09:00:54 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 0,
+            "date": "Tue, 05 Apr 2022 09:00:54 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/devops-infra/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "1.0.0",
+                "name": "First official version",
+                "authorName": "ocorcho",
+                "authorType": "User",
+                "body": "First official release of this Ontology Network for the representation of a DevOps infrastructure. It consists of 10 interrelated ontologies, which represent different aspects of such an infrastructure.\r\n\r\nThis release also includes a set of 16 SKOS concept schemes, with their corresponding SKOS concepts, and several HTML files for the publication of the catalogue of ontologies and thesauri.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/devops-infra/tarball/1.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/devops-infra/zipball/1.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/devops-infra/releases/tag/1.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/devops-infra/releases/41653525",
+                "dateCreated": "2021-04-19T15:27:52Z",
+                "datePublished": "2021-04-19T15:33:02Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

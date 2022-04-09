@@ -15,7 +15,7 @@
 </nav>
 
 <div id="myCards">
-	<article class="scc-card" style="min-height: 44rem; display: inline;">
+	<article class="scc-card" style="min-height: 46rem; display: inline;">
 		<h3 style="margin-bottom: 1rem;">Card Legend</h3>
 		<div>
 			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/license.png"/></div>License</div>
@@ -37,18 +37,19 @@
 			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/star.png"/></div>Number of stars given to the repository</div>
 			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/releases.png"/></div>Number of releases</div>
 			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/copy.svg"/></div>Copy the card as embedded html</div>
+			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><img class="repo-icon-filter" src="repo_icons/owner.svg"/></div>User/Organization who owns the repo</div>
 			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><div class="recently-updated" style="background-color: #6da862; margin: 0;"></div></div>Updated recently</div>
 			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><div class="recently-updated" style="background-color: #a88d62; margin: 0;"></div></div>Updated in the last 3 months</div>
 			<div style="display: flex; height: 1.75rem;"><div style="width: 2rem;"><div class="recently-updated" style="background-color: #a86262; margin: 0;"></div></div>Not recently updated</div>
 		</div>
     </article>
-	<article class="scc-card" style="min-height: 44rem; display: inline;">
+	<article class="scc-card" style="min-height: 46rem; display: inline;">
 		<h3 style="margin-bottom: 1rem;">Info</h3>
 		<p style="margin-bottom: 1.5rem; text-align: justify;">
 			This software catalog has been created with the python package scc.
 			<br><br>
 			Each card represents a different repository from GitHub. The main objective of this web is to 
-			give visibility to the work of the researches, showcasing their researches in a minimalist portal.
+			give visibility to the work of the researches, showcasing their work in a minimalist portal.
 			<br><br>
 			For easing the discovery and classification of the repositories scc extracts a large variety of 
 			metadata with the help of somef, enabling the end-user to filter and sort all the repos in multiple ways.
@@ -56,8 +57,56 @@
 		</p>
 		<h3 style="margin-bottom: 1rem;">Author</h3>
 		<p style="text-align: justify;">
-			The python package used for the creation of this portal (scc) is the final project of Daniel Rodríguez Mariblanca
+			The python package used for the creation of this portal SCC is the final project of Daniel Rodríguez Mariblanca
 			 a former student of <i>Universidad Politécnica de Madrid, ETSIINF</i> graduated in Computer Engineering, Business Administration and Management.
+		</p>
+    </article>
+	<article class="scc-card" style="min-height: 19rem; display: inline; min-width: 56.5rem;">
+		<h3 style="margin-bottom: 1rem;">Navigation</h3>
+		<p style="margin-bottom: 1.5rem; text-align: justify;">
+			To find the desired repositories we highly encourage to leverage the different filters, sorts and search-bar. 
+			The repositories will be displayed in minimalist cards, if the query yields more than 12 repositories scc will automatically paginate the results, increasing the user experience.
+			<h4>Desktop</h4>
+			There is the option to you use the left and right keys to go-back and go to the next page.
+			<br><br>
+			<h4>Phone/Tablet</h4>
+			There is the option to you swipe from left to right and right to left to go-back and go to the next page.
+			<br><br>
+		</p>
+    </article>
+	<article class="scc-card" style="min-height: 40rem; display: inline; min-width: 56.5rem;">
+		<div style="display: flex;">
+			<h3 style="margin-bottom: 1rem;">Python repositories</h3>
+			<img class="repo-icon-filter grey-color-svg" src="language_icons/python.svg" style="height: 1.5rem;"/>
+		</div>
+		<p style="margin-bottom: 1.5rem; text-align: justify;">
+
+			If this Python icon appears in one of the cards means that the flag -ip4 or --inspect4py was activated during the creation of this portal.
+			But what does it mean exactly? It just means that the repo with this icon uses Python and the package inspect4py has determined that is 
+			repository belongs in one of the following categories.
+
+			<h4>Package</h4>
+			A python package is a collection of modules. Modules that are related to each other are mainly put in the same package. When a module 
+			from an external package is required in a program, that package can be imported and its modules can be put to use.
+			<br><br>
+
+			<h4>Library</h4>
+			Python library is a reusable chunk of code that you may want to include in your programs/ projects. Compared to languages like C++ or C, a 
+			Python libraries do not pertain to any specific context in Python. Here, a 'library' loosely describes a collection of core modules.
+			<br><br>
+
+			<h4>Service</h4>
+			Services can be generally regarded as functions or functionality of applications or systems exposed over the Web using standardized message 
+			formats and typically interfaced to other software using traditional APIs, although "message-centric" usage of such services is also possible 
+			and may be favoured by certain technologies.
+			<br><br>
+
+			<h4>Script</h4>
+			A Python script is a collection of commands in a file designed to be executed like a program. The file can of course contain functions and 
+			import various modules, but the idea is that it will be run or executed from the command line or from within a Python interactive shell to 
+			perform a specific task.
+			<br><br>
+
 		</p>
     </article>
 </div>

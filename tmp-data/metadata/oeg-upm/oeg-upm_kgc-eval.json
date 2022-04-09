@@ -1,0 +1,223 @@
+{
+    "description": [
+        {
+            "excerpt": "We conduct an evaluation of KGC engines considering several R2RML and RML processors to identify their strengths and weaknesses. We (i) perform a qualitative analysis of the distinctive features of each engine, (ii) examine their conformance with the mapping language specification they support, and (iii) assess their performance and scalability using the GTFS-Madrid-Bench benchmark. \n",
+            "confidence": [
+                [
+                    0.989896388379069
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Knowledge Graph Construction with R2RML and RML"
+        },
+        {
+            "excerpt": "We test the performance and scalability of a set of KG construction engines: \n",
+            "confidence": [
+                [
+                    0.9552542341739365
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Engines",
+            "parentHeader": "Knowledge Graph Construction with R2RML and RML"
+        },
+        {
+            "excerpt": "We created a comparative framework to gather and compare the information about the engines' features, availabe [here](https://github.com/oeg-upm/kgc-eval/tree/master/results/table); and tested the engines with the mentioned benchmark in terms of time and memory used. The raw data resulting from the evaluation is stored [here](https://github.com/oeg-upm/kgc-eval/tree/master/results/raw-data), and the resulting figures can be seen [here](https://github.com/oeg-upm/kgc-eval/tree/master/results/figures).\n \n",
+            "confidence": [
+                [
+                    0.9129068273106372
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Results",
+            "parentHeader": "Knowledge Graph Construction with R2RML and RML"
+        },
+        {
+            "excerpt": "Evaluation of Knowledge Graph Construction Engines",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "@inproceedings{arenas2021knowledge,\n  title = {{Knowledge Graph Construction with R2RML and RML: An ETL System-based Overview}},\n  author = {Arenas-Guerrero, Juli\u00e1n and Scrocca, Mario and Iglesias-Molina, Ana and Toledo, Jhon and Pozo-Gilo, Luis and Do\u00f1a, Daniel and Corcho, Oscar and Chaves-Fraga, David},\n  booktitle = {Proceedings of the 2nd International Workshop on Knowledge Graph Construction},\n  year = {2021},\n  series = {CEUR Workshop Proceedings},\n  publisher = {CEUR-WS.org},\n  volume = {2873},\n  url = {http://ceur-ws.org/Vol-2873/paper11.pdf},\n}",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        },
+        {
+            "excerpt": "**Citing**: \n",
+            "confidence": [
+                [
+                    0.9565696357172301
+                ]
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "Knowledge Graph Construction with R2RML and RML",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "codeRepository": {
+        "excerpt": "https://github.com/oeg-upm/kgc-eval",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "oeg-upm",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "Organization",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2019-07-08T08:59:28Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-02-14T16:17:59Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "MIT License",
+            "url": "https://api.github.com/licenses/mit"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "kgc-eval",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "oeg-upm/kgc-eval",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/kgc-eval/issues{/number}",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/oeg-upm/kgc-eval/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/oeg-upm/kgc-eval/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 2,
+            "date": "Tue, 05 Apr 2022 09:12:26 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 3,
+            "date": "Tue, 05 Apr 2022 09:12:26 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Python",
+            "Dockerfile",
+            "Shell"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'MIT License\\n\\nCopyright (c) 2019 Ontology Engineering Group (UPM)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \"Software\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://github.com/oeg-upm/kgc-eval/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasBuildFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/morph-rdb/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/ontop/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/db2triples/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/chimera/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/rmlstreamer/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/carml/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/rmlmapper/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/sdm-rdfizer/Dockerfile",
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/rocketrml/Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/carml/run-carml.sh",
+            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/scripts/download-data.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "inspect4py": {
+        "software_type": "script"
+    }
+}
