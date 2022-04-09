@@ -165,4 +165,4 @@ Example:
 
 ### Styling the portal
 
-In case you want to change the default style of the portal, SCC decouples the .css files from the code-base. So in the resulting portal directory there are two .css files are available for further tinkering and styling to everyone needs.
+In case you want to change the default style of the portal, SCC decouples the .css files from the code-base. So in the resulting portal directory there will be two .css files are available for further tinkering and styling to everyone needs.
