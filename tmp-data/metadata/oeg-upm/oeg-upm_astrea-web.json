@@ -4,11 +4,24 @@
             "excerpt": "This repository is a web service that publishes the services of [Astrea]([https://github.com/oeg-upm/Astrea](https://github.com/oeg-upm/Astrea)), providing a user-friendly interface to generate SHACL shapes from one or more ontologies, and also a REST API to be used by third-party services.\n \n",
             "confidence": [
                 [
-                    0.961150811570801
+                    0.9946814654161491
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Astrea-web"
+        },
+        {
+            "excerpt": "In order to use our REST API, check our [online documentation](https://astrea.linkeddata.es/swagger-ui.html)\n \n",
+            "confidence": [
+                [
+                    0.9272405309983818
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Using the Rest API",
+            "parentHeader": [
+                "Astrea-web"
+            ]
         },
         {
             "excerpt": "Astrea-web is a service that offers a friendly interface for the Astrea core library, as well as, a Rest API for third-party services",
@@ -85,7 +98,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/astrea-web/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/astrea-web/issues",
         "confidence": [
             1.0
         ],
@@ -121,7 +134,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:45:55 GMT"
+            "date": "Wed, 27 Apr 2022 12:22:11 GMT"
         },
         "confidence": [
             1.0
@@ -131,7 +144,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 08:45:55 GMT"
+            "date": "Wed, 27 Apr 2022 12:22:11 GMT"
         },
         "confidence": [
             1.0
@@ -158,7 +171,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/astrea-web/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/astrea-web/master/README.md",
         "confidence": [
             1.0
         ],

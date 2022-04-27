@@ -56,7 +56,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-annotator-webservice/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-annotator-webservice/issues",
         "confidence": [
             1.0
         ],
@@ -79,7 +79,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:03:32 GMT"
+            "date": "Wed, 27 Apr 2022 13:23:17 GMT"
         },
         "confidence": [
             1.0
@@ -89,7 +89,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:03:32 GMT"
+            "date": "Wed, 27 Apr 2022 13:23:17 GMT"
         },
         "confidence": [
             1.0
@@ -106,7 +106,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/easytv-annotator-webservice/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/easytv-annotator-webservice/master/README.md",
         "confidence": [
             1.0
         ],

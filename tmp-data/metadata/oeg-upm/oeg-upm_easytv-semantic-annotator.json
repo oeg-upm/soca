@@ -11,6 +11,58 @@
             "originalHeader": "easytv-semantic-annotator"
         },
         {
+            "excerpt": "Project to annotate sign language videos (json files) with NLP tags and Babelnet synsets\n \n",
+            "confidence": [
+                [
+                    0.9566746097064254
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "EasyTV-annotator",
+            "parentHeader": [
+                "easytv-semantic-annotator"
+            ]
+        },
+        {
+            "excerpt": "Project to generate RDF triples for annotated Sign Language videos \n",
+            "confidence": [
+                [
+                    0.9772162517700655
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "EasyTV-rdfy",
+            "parentHeader": [
+                "easytv-semantic-annotator"
+            ]
+        },
+        {
+            "excerpt": "Project to deploy an API REST with the annotator and the rdfy\n \n",
+            "confidence": [
+                [
+                    0.9958787926113195
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "EasyTV-annotator-webservice",
+            "parentHeader": [
+                "easytv-semantic-annotator"
+            ]
+        },
+        {
+            "excerpt": "Project for the static resources needed for NLP tasks and rdfy \n",
+            "confidence": [
+                [
+                    0.9425939369724822
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "EasyTV-resources",
+            "parentHeader": [
+                "easytv-semantic-annotator"
+            ]
+        },
+        {
             "excerpt": "Semantic annotator for sign language ontology",
             "confidence": [
                 1.0
@@ -85,7 +137,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-semantic-annotator/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-semantic-annotator/issues",
         "confidence": [
             1.0
         ],
@@ -108,7 +160,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:05:20 GMT"
+            "date": "Wed, 27 Apr 2022 13:33:24 GMT"
         },
         "confidence": [
             1.0
@@ -118,7 +170,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:05:20 GMT"
+            "date": "Wed, 27 Apr 2022 13:33:24 GMT"
         },
         "confidence": [
             1.0
@@ -145,7 +197,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/easytv-semantic-annotator/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/easytv-semantic-annotator/main/README.md",
         "confidence": [
             1.0
         ],

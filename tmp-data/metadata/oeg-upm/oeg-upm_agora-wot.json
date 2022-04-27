@@ -85,7 +85,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/agora-wot/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/agora-wot/issues",
         "confidence": [
             1.0
         ],
@@ -120,7 +120,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:45:25 GMT"
+            "date": "Wed, 27 Apr 2022 12:20:47 GMT"
         },
         "confidence": [
             1.0
@@ -130,7 +130,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 08:45:25 GMT"
+            "date": "Wed, 27 Apr 2022 12:20:47 GMT"
         },
         "confidence": [
             1.0
@@ -154,13 +154,14 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/agora-wot/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/agora-wot/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "library"
+        "software_type": "library",
+        "run": "import agora-wot"
     }
 }

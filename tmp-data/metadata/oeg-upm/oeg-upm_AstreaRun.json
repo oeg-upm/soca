@@ -49,7 +49,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/AstreaRun/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/AstreaRun/issues",
         "confidence": [
             1.0
         ],
@@ -72,7 +72,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:45:57 GMT"
+            "date": "Wed, 27 Apr 2022 12:22:14 GMT"
         },
         "confidence": [
             1.0
@@ -82,7 +82,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:45:57 GMT"
+            "date": "Wed, 27 Apr 2022 12:22:14 GMT"
         },
         "confidence": [
             1.0

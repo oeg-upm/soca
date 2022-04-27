@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "\r\n<b>Authors:</b>\r\nMar\u00eda Poveda-Villal\u00f3n\r\nSerge Ch\u00e1vez-Feria\r\n\r\nRepository for the web of the Chowlk project, which provides an specification to create Ontology diagrams in <a href=\"https://www.draw.io/\">drawio</a>, and a service to generate the OWL code automatically from the diagram.\r\n\r\n<b>Visual notation:</b><br>\r\nhttps://chowlk.linkeddata.es/notation.html\r\n\r\n<b>Converter:</b><br>\r\nhttps://chowlk.linkeddata.es/index.html\r\n\r\n<b>Drawio library with the diagram blocks:</b><br>\r\n\r\n1. Complete diagrams.net template:\r\n\r\n    It contains all the building blocks specified in the visual notation.\r\n    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-complete.xml\r\n\r\n2. Library for Domain Experts:\r\n\r\n    It contains a subset of the specification for users less versed on the OWL language.\r\n    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-lightweight.xml\r\n \n",
+            "confidence": [
+                [
+                    0.9693554203689122
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Chowlk Ontology Visual Notation"
+        },
+        {
             "excerpt": "Repository for the chowlk project which aggregates the converter and the specification",
             "confidence": [
                 1.0
@@ -72,7 +82,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/chowlk_spec/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/chowlk_spec/issues",
         "confidence": [
             1.0
         ],
@@ -95,7 +105,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 08:59:49 GMT"
+            "date": "Wed, 27 Apr 2022 13:12:37 GMT"
         },
         "confidence": [
             1.0
@@ -105,7 +115,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 08:59:49 GMT"
+            "date": "Wed, 27 Apr 2022 13:12:37 GMT"
         },
         "confidence": [
             1.0
@@ -124,11 +134,27 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/chowlk_spec/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/chowlk_spec/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "https://w3id.org/def/saref4bldg#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/chowlk_spec/master/resources/saref4building.ttl"
+            },
+            {
+                "uri": "http://bimerr.iot.linkeddata.es/def/building#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/chowlk_spec/master/resources/building.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     },
     "releases": {
         "excerpt": [

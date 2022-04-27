@@ -68,7 +68,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/biotea/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/biotea/issues",
         "confidence": [
             1.0
         ],
@@ -91,7 +91,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 08:49:13 GMT"
+            "date": "Wed, 27 Apr 2022 12:33:27 GMT"
         },
         "confidence": [
             1.0
@@ -101,7 +101,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 08:49:13 GMT"
+            "date": "Wed, 27 Apr 2022 12:33:27 GMT"
         },
         "confidence": [
             1.0

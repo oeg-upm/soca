@@ -1,24 +1,6 @@
 {
-    "longTitle": {
-        "excerpt": "Note ",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
-    "installation": [
-        {
-            "originalHeader": "Install libraries for Python3 ",
-            "excerpt": "# **Note** <h0>\n\n## **Install libraries for Python3** <h2>\n\nThe `requirements.txt` file should list all Python libraries that your notebooks\ndepend on, and they will be installed using:\n\n```\npip install -r requirements.txt\n```\n",
-            "parentHeader": "Note ",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        }
-    ],
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/epw2rdf",
+        "excerpt": "https://github.com/oeg-upm/epw2csv",
         "confidence": [
             1.0
         ],
@@ -39,14 +21,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2019-10-11T11:55:08Z",
+        "excerpt": "2019-10-11T11:54:36Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2019-10-29T17:03:39Z",
+        "excerpt": "2019-10-11T11:54:38Z",
         "confidence": [
             1.0
         ],
@@ -64,7 +46,7 @@
     },
     "description": [
         {
-            "excerpt": "Transform weather data in EPW format to RDF",
+            "excerpt": "Transform weather data in EPW format to CSV",
             "confidence": [
                 1.0
             ],
@@ -72,35 +54,35 @@
         }
     ],
     "name": {
-        "excerpt": "epw2rdf",
+        "excerpt": "epw2csv",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/epw2rdf",
+        "excerpt": "oeg-upm/epw2csv",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/epw2rdf/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/epw2csv/issues",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/epw2rdf/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/epw2csv/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/epw2rdf/releases",
+        "excerpt": "https://github.com/oeg-upm/epw2csv/releases",
         "confidence": [
             1.0
         ],
@@ -108,8 +90,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 2,
-            "date": "Tue, 05 Apr 2022 09:08:53 GMT"
+            "count": 0,
+            "date": "Wed, 27 Apr 2022 13:51:25 GMT"
         },
         "confidence": [
             1.0
@@ -118,18 +100,9 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 2,
-            "date": "Tue, 05 Apr 2022 09:08:53 GMT"
+            "count": 0,
+            "date": "Wed, 27 Apr 2022 13:51:25 GMT"
         },
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "languages": {
-        "excerpt": [
-            "Python"
-        ],
         "confidence": [
             1.0
         ],
@@ -141,15 +114,5 @@
             1.0
         ],
         "technique": "File Exploration"
-    },
-    "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/epw2rdf/README.md",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "script"
     }
 }

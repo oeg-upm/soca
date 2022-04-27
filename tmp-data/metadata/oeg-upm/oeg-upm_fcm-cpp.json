@@ -1,16 +1,27 @@
 {
     "description": [
         {
-            "excerpt": "\nThis project implements Fuzzy c-means from the original paper by James Bezdek.  \n* The use of Eign library for matrices instead of fix n-dimentional arrays which are common in prototyping fuzzy c-means library.\n* The use of dynamic sizes for matrices.\n* Make the FCM as a class, with all the related variables inside, so no need for Global variables and it also allow having multiple instances of FCM.\n* Add automated tests with googletest.\n* Add coverage for the tests.\n \n",
+            "excerpt": "\nThis project implements Fuzzy c-means from the original paper by James Bezdek.  \n",
             "confidence": [
                 [
-                    0.9024010455208966,
+                    0.9024010455208966
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Fuzzy c-Means Library"
+        },
+        {
+            "excerpt": "* The use of Eign library for matrices instead of fix n-dimentional arrays which are common in prototyping fuzzy c-means library.\n* The use of dynamic sizes for matrices.\n* Make the FCM as a class, with all the related variables inside, so no need for Global variables and it also allow having multiple instances of FCM.\n* Add automated tests with googletest.\n* Add coverage for the tests.\n \n",
+            "confidence": [
+                [
                     0.9799087837209657
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Advantages of this implementation",
-            "parentHeader": "Fuzzy c-Means Library"
+            "parentHeader": [
+                "Fuzzy c-Means Library"
+            ]
         },
         {
             "excerpt": "Fuzzy c-means c++ library",
@@ -27,22 +38,6 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://codecov.io/gh/ahmad88me/fcm-cpp/branch/master/graph/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://semaphoreci.com/api/v1/ahmad88me/fcm-cpp/branches/master/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/fcm-cpp",
         "confidence": [
@@ -103,7 +98,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/fcm-cpp/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/fcm-cpp/issues",
         "confidence": [
             1.0
         ],
@@ -126,7 +121,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 5,
-            "date": "Tue, 05 Apr 2022 09:10:33 GMT"
+            "date": "Wed, 27 Apr 2022 13:55:39 GMT"
         },
         "confidence": [
             1.0
@@ -136,7 +131,7 @@
     "forksCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:10:33 GMT"
+            "date": "Wed, 27 Apr 2022 13:55:39 GMT"
         },
         "confidence": [
             1.0
@@ -163,21 +158,24 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/fcm-cpp/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/fcm-cpp/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/fcm-cpp/master/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/fcm-cpp/master/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/fcm-cpp/master/scripts/setup.sh",

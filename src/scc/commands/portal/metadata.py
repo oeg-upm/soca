@@ -315,14 +315,12 @@ class metadata(object):
         ######################
 
         langs = self.languages()
-
-        if not langs: # Most ontologies doesn't have any language
-            return 'ontology'
+        ontology = safe_dic(self.md,'ontologies')
 
         web_langs = ['html','css','javascript'] 
         ontology_langs = ['html','css','javascript'] 
 
-        is_ontology = True
+        is_ontology = (ontology is not None)
         is_web = True
 
         for lang in langs:
@@ -331,15 +329,13 @@ class metadata(object):
             if lang not in ontology_langs:
                 is_ontology = False
 
-        if (is_ontology and is_web 
-                and (   
-                    'ontolog' in self.description().lower() 
-                    or 
-                    'ontolog' in self.title().lower())
-                ):
+        if is_ontology:
             return 'ontology'
-              
-        return 'web' if is_web else None
+        
+        if is_web:
+            return 'web'
+        
+        return None
          
     def usage(self):
         usage = safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')

@@ -1,62 +1,43 @@
 {
     "description": [
         {
-            "excerpt": "The CIM allows local infrastructures to communicate with others though a peer-to-peer network. Besides allowing the access of remote infrastructures, the CIM implements a semantic interoperability layer, which translates heterogeneous payloads into JSON-LD modelled with the DELTA ontology by means of interoperability modules. The translation is bidirectional, therefore, when needed the CIM also translates from JSON-LD to a set of heterogeneous formats that follow different  models. This potentially leads to having systems developed with different standards communicating transparently. \nAdditionaly, the CIM allows to consume the data of a local infrastructure using SPARQL queries, or, consume the data from the cloud, i.e., the peer-to-peer network, with SPARQL queries. Other functionalities implemented are: validation of payloads using SHACL shapes on the fly, access control list, jwt token authentication for local infrastructures to interact with the CIM, a GUI for configuring the CIM, and a documented REST API to use the CIM.\n \n**All the current CIM releases send data about the status of the service to a private secured monitor service, that analyses the health of the services and prevents from potential attacks**\n \n",
+            "excerpt": "The CIM allows local infrastructures to communicate with others though a peer-to-peer network. Besides allowing the access of remote infrastructures, the CIM implements a semantic interoperability layer, which translates heterogeneous payloads into JSON-LD modelled with the DELTA ontology by means of interoperability modules. The translation is bidirectional, therefore, when needed the CIM also translates from JSON-LD to a set of heterogeneous formats that follow different  models. This potentially leads to having systems developed with different standards communicating transparently. \n",
             "confidence": [
                 [
-                    0.9923325648851167,
+                    0.9923325648851167
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "DeltaCimApp"
+        },
+        {
+            "excerpt": "Additionaly, the CIM allows to consume the data of a local infrastructure using SPARQL queries, or, consume the data from the cloud, i.e., the peer-to-peer network, with SPARQL queries. Other functionalities implemented are: validation of payloads using SHACL shapes on the fly, access control list, jwt token authentication for local infrastructures to interact with the CIM, a GUI for configuring the CIM, and a documented REST API to use the CIM. \n**All the current CIM releases send data about the status of the service to a private secured monitor service, that analyses the health of the services and prevents from potential attacks** \n",
+            "confidence": [
+                [
                     0.9983095395800964,
                     0.9659591665590266
                 ]
             ],
             "technique": "Supervised classification",
-            "originalHeader": "Monitoring capabilities:",
-            "parentHeader": "DeltaCimApp"
-        },
-        {
-            "excerpt": "The CIM allows local infrastructures to communicate with others though a peer-to-peer network. Besides allowing the access of remote infrastructures, the CIM implements a semantic interoperability layer, which translates heterogeneous payloads into JSON-LD modelled with the DELTA ontology by means of interoperability modules. The translation is bidirectional, therefore, when needed the CIM also translates from JSON-LD to a set of heterogeneous formats that follow different  models. This potentially leads to having systems developed with different standards communicating transparently. \nAdditionaly, the CIM allows to consume the data of a local infrastructure using SPARQL queries, or, consume the data from the cloud, i.e., the peer-to-peer network, with SPARQL queries. Other functionalities implemented are: validation of payloads using SHACL shapes on the fly, access control list, jwt token authentication for local infrastructures to interact with the CIM, a GUI for configuring the CIM, and a documented REST API to use the CIM. \n",
-            "confidence": [
-                [
-                    0.9923325648851167,
-                    0.9983095395800964
-                ]
-            ],
-            "technique": "Supervised classification",
             "originalHeader": "Configuring &amp; using the CIM",
-            "parentHeader": "DeltaCimApp"
+            "parentHeader": [
+                "DeltaCimApp"
+            ]
         },
         {
-            "excerpt": "**All the current CIM releases send data about the status of the service to a private secured monitor service, that analyses the health of the services and prevents from potential attacks** \n",
+            "excerpt": "* Certificates: This folder contains an empty Keystore, by default its password is \"changeit\". In this Keystore either an encription certificate and an identity certificate for mutual authentication must be persisted.\n* shapes: The file within this folder must contain the shacl shapes associated to the ontology of DELTA. In order the CIM to correctly function the file shall be named *delta-shapes.ttl*\n* cim-X.X.X.jar: This is the compiled version of the CIM software.\n* modules: this folder contains the interoperability modules that allow integrating non-Delta local infrastructures with the DELTA platform, so they can exchange data transparently with the rest of the components in this platform. \nOther flags can be specified to modify the default behaviour of the CIM replacing the values within the characters [ and ] inclusive. For instance, the flag ```--spring.datasource.username=[USER]``` should be instantiated as BASH3*. The list of flags that can be configured are: \n\n## Configuring & using the CIM\nIn order to correctly configure and use the CIM, the user is kindly asked to check the [CIM's wiki]([https://github.com/oeg-upm/DeltaCimApp/wiki](https://github.com/oeg-upm/DeltaCimApp/wiki)) \n",
             "confidence": [
                 [
-                    0.9659591665590266
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Configuring &amp; using the CIM",
-            "parentHeader": "DeltaCimApp"
-        },
-        {
-            "excerpt": "* Certificates: This folder contains an empty Keystore, by default its password is \"changeit\". In this Keystore either an encription certificate and an identity certificate for mutual authentication must be persisted.\n* shapes: The file within this folder must contain the shacl shapes associated to the ontology of DELTA. In order the CIM to correctly function the file shall be named *delta-shapes.ttl*\n* cim-X.X.X.jar: This is the compiled version of the CIM software.\n* modules: this folder contains the interoperability modules that allow integrating non-Delta local infrastructures with the DELTA platform, so they can exchange data transparently with the rest of the components in this platform. \n",
-            "confidence": [
-                [
-                    0.9848579176323642
+                    0.9848579176323642,
+                    0.9180318037736692,
+                    0.9827415042835657
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Running the CIM:",
-            "parentHeader": "DeltaCimApp"
-        },
-        {
-            "excerpt": "Other flags can be specified to modify the default behaviour of the CIM replacing the values within the characters [ and ] inclusive. For instance, the flag ```--spring.datasource.username=[USER]``` should be instantiated as BASH3*. The list of flags that can be configured are: \n",
-            "confidence": [
-                [
-                    0.9180318037736692
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Running the CIM:",
-            "parentHeader": "DeltaCimApp"
+            "parentHeader": [
+                "DeltaCimApp"
+            ]
         }
     ],
     "longTitle": {
@@ -66,11 +47,23 @@
         ],
         "technique": "Regular expression"
     },
+    "documentation": [
+        {
+            "excerpt": "https://github.com/oeg-upm/DeltaCimApp/wiki",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "wiki"
+        }
+    ],
     "run": [
         {
             "originalHeader": "Running the CIM:",
             "excerpt": "Go to the release section of this proyect, download the lastest version, and unzip the main file (cim-X.X.X.zip). The output folder has the following structure:\n\n* Certificates: This folder contains an empty Keystore, by default its password is \"changeit\". In this Keystore either an encription certificate and an identity certificate for mutual authentication must be persisted.\n* shapes: The file within this folder must contain the shacl shapes associated to the ontology of DELTA. In order the CIM to correctly function the file shall be named *delta-shapes.ttl*\n* cim-X.X.X.jar: This is the compiled version of the CIM software.\n* modules: this folder contains the interoperability modules that allow integrating non-Delta local infrastructures with the DELTA platform, so they can exchange data transparently with the rest of the components in this platform.\n\nFinally, to run the CIM, type down:\n\n``` java -jar cim-1.0.0.jar --server.port=8080```\n\n**WARNING**: The argument --server.port must always be specified for the correct functioning of the CIM.\n\nOther flags can be specified to modify the default behaviour of the CIM replacing the values within the characters [ and ] inclusive. For instance, the flag ```--spring.datasource.username=[USER]``` should be instantiated as ```--spring.datasource.username=toor```. The list of flags that can be configured are:\n\n* Change the password to connecto to the certificates key store, default password is *changeit*:\n\t* ``` --certificate.password=[PASS]```\n* When the CIM is already correctly configured, the following flag can be used for the CIM connect automatically to the Peer-to-Peer network without requiring the user to manually connect it. \n\t* ``--xmpp.autoconnection=true``\n* Change default username/password for the local database where the configuration of the CIM is stored, default value for username and password is *root* .\n\t* ```--spring.datasource.username=[USER]```\n\t* `` --spring.datasource.password=[PASS]``\n* Change the time outs of the CIM requests, all of them are expressed in milliseconds:\n\t* The timeout that the CIM has to answer a local request, that will be forwarded through the peer-to-peer network in order to be solved by another CIM ```--spring.mvc.async.request-timeout=[TIMEOUT]```\n\t* The request timeout of the requests sent from the CIM to the local infrastructures when solving a remote request sent by another CIM```--cim.timeout.request=[TIMEOUT]```\n\t* The socket timeout of the requests sent from the CIM to the local infrastructures when solving a remote request sent by another CIM ```--cim.timeout.socket=[TIMEOUT]```\n\t* The timeout of the requests sent through the peer-to-peer ```--cim.timeout.xmpp=[TIMEOUT]```\n\n\n## Configuring & using the CIM\nIn order to correctly configure and use the CIM, the user is kindly asked to check the [CIM's wiki]([https://github.com/oeg-upm/DeltaCimApp/wiki](https://github.com/oeg-upm/DeltaCimApp/wiki))\n\n",
-            "parentHeader": "DeltaCimApp",
+            "parentHeader": [
+                "DeltaCimApp"
+            ],
             "confidence": [
                 1
             ],
@@ -137,7 +130,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/DeltaCimApp/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/DeltaCimApp/issues",
         "confidence": [
             1.0
         ],
@@ -160,7 +153,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:00:45 GMT"
+            "date": "Wed, 27 Apr 2022 13:14:12 GMT"
         },
         "confidence": [
             1.0
@@ -170,7 +163,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:45 GMT"
+            "date": "Wed, 27 Apr 2022 13:14:12 GMT"
         },
         "confidence": [
             1.0
@@ -200,7 +193,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/DeltaCimApp/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/DeltaCimApp/master/README.md",
         "confidence": [
             1.0
         ],
@@ -319,6 +312,7 @@
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "service"
+        "software_type": "service",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/DeltaCimApp/Experimentation/reflect/reflect.py"
     }
 }

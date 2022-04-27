@@ -1,4 +1,32 @@
 {
+    "description": [
+        {
+            "excerpt": "In [this folder](./Examples) we can see an example of an [idf file](./Examples/ASHRAE_2005_HOF_Materials.idf), which has been transformed into a [json file](./Examples/ASHRAE_2005_HOF_Materials.json), with which the corresponding [RDF files](./RDF_Examples/ASHRAE_2005_HOF_Materials.ttl) have been obtained by means of declarative mappings. These files contain information about materials that have been used in constructions and buildings.\n \n",
+            "confidence": [
+                [
+                    0.9427707104871531
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "BIMERR MATERIALS FILES",
+            "parentHeader": [
+                "BIMERR-MATERIALS"
+            ]
+        },
+        {
+            "excerpt": "The implementation of the code has been carried out using the [Python language](https://www.python.org/download/releases/3.0/). Also, we have used [Helio](https://oeg-upm.github.io/helio/)) to achieve the transformation of the data by means of mappings to RDF format.\n \n",
+            "confidence": [
+                [
+                    0.989841753997618
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "CODE IMPLEMENTATION",
+            "parentHeader": [
+                "BIMERR-MATERIALS"
+            ]
+        }
+    ],
     "longTitle": {
         "excerpt": "BIMERR-MATERIALS",
         "confidence": [
@@ -66,7 +94,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-materials/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-materials/issues",
         "confidence": [
             1.0
         ],
@@ -89,7 +117,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:48:08 GMT"
+            "date": "Wed, 27 Apr 2022 12:29:50 GMT"
         },
         "confidence": [
             1.0
@@ -99,7 +127,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:48:08 GMT"
+            "date": "Wed, 27 Apr 2022 12:29:50 GMT"
         },
         "confidence": [
             1.0
@@ -123,7 +151,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/bimerr-materials/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/bimerr-materials/main/README.md",
         "confidence": [
             1.0
         ],

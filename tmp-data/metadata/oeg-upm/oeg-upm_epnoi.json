@@ -11,6 +11,19 @@
             "originalHeader": "epnoi"
         },
         {
+            "excerpt": "This work is funded by the EC-funded project DrInventor ([www.drinventor.eu](www.drinventor.eu)).\n \n",
+            "confidence": [
+                [
+                    0.9955704730230419
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Quick Navigation",
+            "parentHeader": [
+                "epnoi"
+            ]
+        },
+        {
             "excerpt": "epnoi is an unified information access middleware which objective is to increase the awareness and simplify the search of relevant content in situations where multiple heterogeneous non-structured information sources are involved.",
             "confidence": [
                 1.0
@@ -18,20 +31,15 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "[![Build Status](https://travis-ci.org/oeg-upm/epnoi.svg?branch=develop)](https://travis-ci.org/oeg-upm/epnoi) \n",
-            "confidence": [
-                [
-                    0.9519464998807204
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "epnoi"
-        }
-    ],
     "longTitle": {
         "excerpt": "epnoi",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "logo": {
+        "excerpt": "https://travis-ci.org/oeg-upm/epnoi.svg?branch=develop",
         "confidence": [
             1.0
         ],
@@ -61,13 +69,6 @@
         },
         {
             "excerpt": "https://dl.dropboxusercontent.com/u/299257/epnoi/images/question.png",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://travis-ci.org/oeg-upm/epnoi.svg?branch=develop",
             "confidence": [
                 1.0
             ],
@@ -134,7 +135,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/epnoi/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/epnoi/issues",
         "confidence": [
             1.0
         ],
@@ -157,7 +158,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:08:47 GMT"
+            "date": "Wed, 27 Apr 2022 13:51:13 GMT"
         },
         "confidence": [
             1.0
@@ -167,7 +168,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:08:47 GMT"
+            "date": "Wed, 27 Apr 2022 13:51:13 GMT"
         },
         "confidence": [
             1.0
@@ -195,24 +196,37 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/epnoi/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/api/src/main/docker/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/vms/src/main/docker/ftp/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/vms/src/main/docker/cassandra/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/vms/src/main/docker/elasticsearch/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/vms/src/main/docker/cassandra-datastax/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        },
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/api/src/main/docker/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/vms/src/main/docker/ftp/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/vms/src/main/docker/cassandra/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/vms/src/main/docker/elasticsearch/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/epnoi/develop/deploy.sh",

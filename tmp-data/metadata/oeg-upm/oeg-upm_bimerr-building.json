@@ -84,7 +84,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-building/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-building/issues",
         "confidence": [
             1.0
         ],
@@ -107,7 +107,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:47:07 GMT"
+            "date": "Wed, 27 Apr 2022 12:24:50 GMT"
         },
         "confidence": [
             1.0
@@ -117,7 +117,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:47:07 GMT"
+            "date": "Wed, 27 Apr 2022 12:24:50 GMT"
         },
         "confidence": [
             1.0
@@ -125,11 +125,35 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/bimerr-building/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/bimerr-building/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://bimerr.iot.linkeddata.es/def/building#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/bimerr-building/master/documentation/ontology.nt"
+            },
+            {
+                "uri": "http://bimerr.iot.linkeddata.es/def/building#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/bimerr-building/master/documentation/ontology.xml"
+            },
+            {
+                "uri": "http://bimerr.iot.linkeddata.es/def/building#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/bimerr-building/master/documentation/ontology.ttl"
+            },
+            {
+                "uri": "http://bimerr.iot.linkeddata.es/def/building#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/bimerr-building/master/ontology/building.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     },
     "releases": {
         "excerpt": [

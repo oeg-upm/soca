@@ -8,6 +8,17 @@
             "technique": "GitHub API"
         }
     ],
+    "installation": [
+        {
+            "excerpt": "1) install gorilla/mux\n```go get -u github.com/gorilla/mux```\n2) install mongo-go-driver (make sure you have dep installed)\n```dep ensure -add github.com/mongodb/mongo-go-driver/mongo```\n3) run run.sh script\n```sh run.sh```\n \n",
+            "confidence": [
+                [
+                    0.9938793550387012
+                ]
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/ainn-userm",
         "confidence": [
@@ -68,7 +79,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/ainn-userm/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/ainn-userm/issues",
         "confidence": [
             1.0
         ],
@@ -91,7 +102,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 08:45:45 GMT"
+            "date": "Wed, 27 Apr 2022 12:21:52 GMT"
         },
         "confidence": [
             1.0
@@ -101,7 +112,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 08:45:45 GMT"
+            "date": "Wed, 27 Apr 2022 12:21:52 GMT"
         },
         "confidence": [
             1.0
@@ -126,7 +137,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ainn-userm/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/ainn-userm/master/README.md",
         "confidence": [
             1.0
         ],
