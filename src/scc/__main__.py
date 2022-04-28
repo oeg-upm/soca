@@ -10,7 +10,7 @@ def cli():
 
     Usage:
 
-    1. (repos) Fetch all repos from the desired organization/s\n
+    1. (fetch) Fetch all repos from the desired organization/s\n
     2. (extract) Extract all metadata for every repo\n
     3. (portal) Generate a searchable portal for all the retrieved data\n
 
@@ -22,7 +22,7 @@ def cli():
 @click.option('--output','-o', default="repos.csv", show_default=True, help="Output csv file", metavar='<path>')
 @click.option('--org', 'repo_type', flag_value='orgs', default=True, show_default=True, help="Extracting from a organization")
 @click.option('--user', 'repo_type', flag_value='users', default=False, show_default=True, help="Extracting from a user")
-def repos(input, output, repo_type):
+def fetch(input, output, repo_type):
     """Retreive all organization/s or user/s repositories"""
     from scc.commands import fetch_repositories
     fetch_repositories.fetch(input, output, repo_type)

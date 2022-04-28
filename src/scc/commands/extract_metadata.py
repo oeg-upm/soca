@@ -36,10 +36,12 @@ def fetch(repos_csv, output, use_inspect4py):
         except KeyboardInterrupt:
             exit()
         except:
+            #traceback.print_exc()
             print(f"ERROR: Could not extract metadata from {repo_url}")
             failed_repos.append(repo_url)
+            continue
 
-        if use_inspect4py and 'languages' in metadata and 'Python' in metadata["languages"]:
+        if use_inspect4py and 'languages' in metadata and 'Python' in metadata["languages"]["excerpt"]:
             try:
                 metadata["inspect4py"] = {}
                 subprocess.call(
@@ -55,7 +57,6 @@ def fetch(repos_csv, output, use_inspect4py):
                 shutil.rmtree(f'{output}/inspect4py_tmp', ignore_errors=False, onerror=None)
                 shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
             except:
-                #traceback.print_exc()
                 shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
                 print(f"ERROR: Could not run inspect4py for {repo_url}: Error in {'sowftware_type' if 'sowftware_type' not in metadata['inspect4py'] else ''} {'software_invocation' if 'run' not in metadata['inspect4py'] else ''}")
                 failed_repos_i4p.append(repo_url)

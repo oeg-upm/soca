@@ -62,7 +62,7 @@ Usage: scc [OPTIONS] COMMAND [ARGS]...
 
   Usage:
 
-  1. (repos) Fetch all repos from the desired organization/s
+  1. (fetch) Fetch all repos from the desired organization/s
   2. (extract) Extract all metadata for every repo
   3. (portal) Generate a searchable portal for all the retrieved data
 
@@ -73,7 +73,7 @@ Commands:
   card     Create a stand-alone card ready to be embedded in a website
   extract  Fetch and save metadata from introduced repos
   portal   Build a portal with a minimalist design
-  repos    Retrieve all organization/s or user/s repositories
+  fetch    Retrieve all organization/s or user/s repositories
 ```
 
 In order to use SCC you will need to follow the next steps:  
