@@ -95,7 +95,7 @@
     "usage": [
         {
             "originalHeader": "Getting Started",
-            "excerpt": "**[PyPi](https://pypi.org/project/morph-kgc/)** is the fastest way to install Morph-KGC:\n```\npip install morph-kgc\n```\n\nWe recommend to use **[virtual environments](https://docs.python.org/3/library/venv.html#)** to install Morph-KGC.\n\nTo run the engine via **command line** you just need to execute the following:\n```\npython3 -m morph_kgc config.ini\n```\n\nCheck the **[documentation](https://morph-kgc.readthedocs.io/en/latest/documentation/#configuration)** to can see how to generate the configuration **INI file**. **[Here](https://github.com/oeg-upm/morph-kgc/blob/main/examples/configuration-file-examples/default_config.ini)** you can also see an example INI file.\n\nIt is also possible to run Morph-KGC as a **library** with **[RDFlib](https://rdflib.readthedocs.io)** and **[Oxigraph](https://oxigraph.org/pyoxigraph)**:\n```python\nimport morph_kgc\n\n# generate the triples and load them to an RDFlib graph\ng_rdflib = morph_kgc.materialize('/path/to/config.ini')\n# work with the RDFlib graph\nq_res = g_rdflib.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# generate the triples and load them to Oxigraph\ng_oxigraph = morph_kgc.materialize_oxigraph('/path/to/config.ini')\n# work with Oxigraph\nq_res = graph.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# the methods above also accept the config as a string\nconfig = \"\"\"\n            [DataSource1]\n            mappings=/path/to/mapping/mapping_file.rml.ttl\n            db_url=mysql+pymysql://user:password@localhost:3306/db_name\n         \"\"\"\ng_rdflib = morph_kgc.materialize(config)\n```\n",
+            "excerpt": "**[PyPi](https://pypi.org/project/morph-kgc/)** is the fastest way to install Morph-KGC:\n```\npip install morph-kgc\n```\n\nWe recommend to use **[virtual environments](https://docs.python.org/3/library/venv.html#)** to install Morph-KGC.\n\nTo run the engine via **command line** you just need to execute the following:\n```\npython3 -m morph_kgc config.ini\n```\n\nCheck the **[documentation](https://morph-kgc.readthedocs.io/en/latest/documentation/#configuration)** to can see how to generate the configuration **INI file**. **[Here](https://github.com/oeg-upm/morph-kgc/blob/main/examples/configuration-file/default_config.ini)** you can also see an example INI file.\n\nIt is also possible to run Morph-KGC as a **library** with **[RDFlib](https://rdflib.readthedocs.io)** and **[Oxigraph](https://oxigraph.org/pyoxigraph)**:\n```python\nimport morph_kgc\n\n# generate the triples and load them to an RDFlib graph\ng_rdflib = morph_kgc.materialize('/path/to/config.ini')\n# work with the RDFlib graph\nq_res = g_rdflib.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# generate the triples and load them to Oxigraph\ng_oxigraph = morph_kgc.materialize_oxigraph('/path/to/config.ini')\n# work with Oxigraph\nq_res = graph.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# the methods above also accept the config as a string\nconfig = \"\"\"\n            [DataSource1]\n            mappings=/path/to/mapping/mapping_file.rml.ttl\n            db_url=mysql+pymysql://user:password@localhost:3306/db_name\n         \"\"\"\ng_rdflib = morph_kgc.materialize(config)\n```\n",
             "confidence": [
                 1
             ],
@@ -131,7 +131,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-04-26T08:42:05Z",
+        "excerpt": "2022-04-28T14:35:29Z",
         "confidence": [
             1.0
         ],
@@ -191,8 +191,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 43,
-            "date": "Thu, 28 Apr 2022 11:16:55 GMT"
+            "count": 44,
+            "date": "Thu, 28 Apr 2022 16:29:28 GMT"
         },
         "confidence": [
             1.0
@@ -202,7 +202,7 @@
     "forksCount": {
         "excerpt": {
             "count": 4,
-            "date": "Thu, 28 Apr 2022 11:16:55 GMT"
+            "date": "Thu, 28 Apr 2022 16:29:28 GMT"
         },
         "confidence": [
             1.0
@@ -495,5 +495,9 @@
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "library",
+        "run": "import morph_kgc"
     }
 }

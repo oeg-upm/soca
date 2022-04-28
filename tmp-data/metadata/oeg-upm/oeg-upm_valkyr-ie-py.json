@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 11:17:52 GMT"
+            "date": "Thu, 28 Apr 2022 16:30:50 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 11:17:52 GMT"
+            "date": "Thu, 28 Apr 2022 16:30:50 GMT"
         },
         "confidence": [
             1.0
@@ -139,5 +139,9 @@
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "service",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/valkyr-ie-py/src/webservice/app.py"
     }
 }

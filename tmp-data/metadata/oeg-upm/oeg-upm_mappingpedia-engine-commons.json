@@ -1,13 +1,6 @@
 {
-    "longTitle": {
-        "excerpt": "mappingpedia-ws",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/mappingpedia-engine-mappings-ws",
+        "excerpt": "https://github.com/oeg-upm/mappingpedia-engine-commons",
         "confidence": [
             1.0
         ],
@@ -28,14 +21,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2018-05-28T14:16:35Z",
+        "excerpt": "2018-05-28T15:07:12Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2018-09-10T13:56:33Z",
+        "excerpt": "2018-11-26T13:59:46Z",
         "confidence": [
             1.0
         ],
@@ -52,35 +45,35 @@
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "mappingpedia-engine-mappings-ws",
+        "excerpt": "mappingpedia-engine-commons",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/mappingpedia-engine-mappings-ws",
+        "excerpt": "oeg-upm/mappingpedia-engine-commons",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-engine-mappings-ws/issues",
+        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-engine-commons/issues",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-engine-mappings-ws/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-engine-commons/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/mappingpedia-engine-mappings-ws/releases",
+        "excerpt": "https://github.com/oeg-upm/mappingpedia-engine-commons/releases",
         "confidence": [
             1.0
         ],
@@ -89,7 +82,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 10:59:27 GMT"
+            "date": "Thu, 28 Apr 2022 16:06:59 GMT"
         },
         "confidence": [
             1.0
@@ -99,7 +92,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 10:59:27 GMT"
+            "date": "Thu, 28 Apr 2022 16:06:59 GMT"
         },
         "confidence": [
             1.0
@@ -108,6 +101,7 @@
     },
     "languages": {
         "excerpt": [
+            "Scala",
             "Java"
         ],
         "confidence": [
@@ -123,7 +117,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://raw.githubusercontent.com/oeg-upm/mappingpedia-engine-mappings-ws/master/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/mappingpedia-engine-commons/master/README.md",
         "confidence": [
             1.0
         ],

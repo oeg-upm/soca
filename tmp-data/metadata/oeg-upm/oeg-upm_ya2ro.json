@@ -277,7 +277,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 11:21:56 GMT"
+            "date": "Thu, 28 Apr 2022 16:35:59 GMT"
         },
         "confidence": [
             1.0
@@ -287,7 +287,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 11:21:56 GMT"
+            "date": "Thu, 28 Apr 2022 16:35:59 GMT"
         },
         "confidence": [
             1.0
@@ -364,5 +364,11 @@
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "package",
+        "run": [
+            "ya2ro"
+        ]
     }
 }

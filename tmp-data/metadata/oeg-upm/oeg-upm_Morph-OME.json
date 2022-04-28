@@ -155,7 +155,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 6,
-            "date": "Thu, 28 Apr 2022 11:00:10 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:23 GMT"
         },
         "confidence": [
             1.0
@@ -165,7 +165,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 11:00:10 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:23 GMT"
         },
         "confidence": [
             1.0
@@ -268,5 +268,9 @@
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "service",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/Morph-OME/app.py"
     }
 }

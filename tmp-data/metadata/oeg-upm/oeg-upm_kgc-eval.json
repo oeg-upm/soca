@@ -179,7 +179,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 11:06:10 GMT"
+            "date": "Thu, 28 Apr 2022 16:14:44 GMT"
         },
         "confidence": [
             1.0
@@ -189,7 +189,7 @@
     "forksCount": {
         "excerpt": {
             "count": 3,
-            "date": "Thu, 28 Apr 2022 11:06:10 GMT"
+            "date": "Thu, 28 Apr 2022 16:14:44 GMT"
         },
         "confidence": [
             1.0
@@ -261,5 +261,9 @@
             1.0
         ],
         "technique": "File Exploration"
+    },
+    "inspect4py": {
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/kgc-eval/results/memory-plots.py"
     }
 }

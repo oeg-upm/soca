@@ -121,7 +121,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Thu, 28 Apr 2022 11:16:51 GMT"
+            "date": "Thu, 28 Apr 2022 16:29:24 GMT"
         },
         "confidence": [
             1.0
@@ -131,7 +131,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 11:16:51 GMT"
+            "date": "Thu, 28 Apr 2022 16:29:24 GMT"
         },
         "confidence": [
             1.0
@@ -181,5 +181,9 @@
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "inspect4py": {
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/owl2yarrrml/translate.py"
     }
 }
