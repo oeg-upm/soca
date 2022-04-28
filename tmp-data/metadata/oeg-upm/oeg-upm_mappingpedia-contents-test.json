@@ -56,7 +56,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-contents-test/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-contents-test/issues",
         "confidence": [
             1.0
         ],
@@ -79,7 +79,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:14:14 GMT"
+            "date": "Thu, 28 Apr 2022 10:56:42 GMT"
         },
         "confidence": [
             1.0
@@ -89,7 +89,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:14:14 GMT"
+            "date": "Thu, 28 Apr 2022 10:56:42 GMT"
         },
         "confidence": [
             1.0
@@ -97,7 +97,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/mappingpedia-contents-test/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/mappingpedia-contents-test/master/README.md",
         "confidence": [
             1.0
         ],

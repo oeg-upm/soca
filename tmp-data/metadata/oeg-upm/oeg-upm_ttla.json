@@ -9,18 +9,19 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "TTLA"
-        }
-    ],
-    "citation": [
+        },
         {
-            "excerpt": "[![Build Status](https://semaphoreci.com/api/v1/ahmad88me/ttla/branches/master/badge.svg)](https://semaphoreci.com/ahmad88me/ttla)\n[![codecov](https://codecov.io/gh/oeg-upm/ttla/branch/master/graph/badge.svg)](https://codecov.io/gh/oeg-upm/ttla)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2619306.svg)](https://doi.org/10.5281/zenodo.2619306) \n",
+            "excerpt": "* The source code related to detection of data types (e.g. categorical, continuous, ...) is located under `detect`.\n* while the files related to the annotation of the semantic types (e.g. height of a person) are located under `label`. \n",
             "confidence": [
                 [
-                    0.9999999999876081
+                    0.9773287744242708
                 ]
             ],
             "technique": "Supervised classification",
-            "originalHeader": "TTLA"
+            "originalHeader": "Code structure",
+            "parentHeader": [
+                "Contribution"
+            ]
         }
     ],
     "installation": [
@@ -28,24 +29,50 @@
             "excerpt": "1. [pip](https://pip.pypa.io/en/stable/installing/) \n2. [virtualenv](https://virtualenv.pypa.io/en/latest/)\n3. create virtualenv: `virtualenv -p /usr/bin/python2.7 .venv`\n4. access the virtualenv: `source .venv/bin/activate`\n5. install dependencies: `pip install -r requirements.txt` \n",
             "confidence": [
                 [
-                    0.9942426536226063
+                    0.9884643195444585
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Prerequisits (one time)"
         },
         {
-            "excerpt": "```\nsh run_tests.sh\n``` \n```\nsh run_cov.sh\n``` \n```\nsh run_t2dv2_cov.sh\n``` \n",
+            "excerpt": "```\nsh run_tests.sh\n``` \n",
             "confidence": [
                 [
-                    0.9023697225149864,
-                    0.9023697225149864,
+                    0.9023697225149864
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Quick tests (test the algorithms, but does not include the t2d experiment)",
+            "parentHeader": [
+                "Tests"
+            ]
+        },
+        {
+            "excerpt": "```\nsh run_cov.sh\n``` \n",
+            "confidence": [
+                [
+                    0.9023697225149864
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Coverage of the quick tests",
+            "parentHeader": [
+                "Coverage:"
+            ]
+        },
+        {
+            "excerpt": "```\nsh run_t2dv2_cov.sh\n``` \n",
+            "confidence": [
+                [
                     0.9023697225149864
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Coverage of T2Dv2 tests",
-            "parentHeader": "Coverage:"
+            "parentHeader": [
+                "Coverage:"
+            ]
         }
     ],
     "longTitle": {
@@ -64,34 +91,13 @@
             "technique": "Regular expression"
         }
     ],
-    "image": [
-        {
-            "excerpt": "https://zenodo.org/badge/DOI/10.5281/zenodo.2619306.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://codecov.io/gh/oeg-upm/ttla/branch/master/graph/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://semaphoreci.com/api/v1/ahmad88me/ttla/branches/master/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
     "download": [
         {
             "originalHeader": "To download the data of T2Dv2 automatically",
             "excerpt": "```\npython data/preprocessing.py\n```",
-            "parentHeader": "Run the experiments",
+            "parentHeader": [
+                "Run the experiments"
+            ],
             "confidence": [
                 1
             ],
@@ -100,9 +106,33 @@
     ],
     "run": [
         {
+            "originalHeader": "Detection",
+            "excerpt": "```\npython experiments/web_commons_v2.py detect\n```",
+            "parentHeader": [
+                "Run the experiments"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Labeling",
+            "excerpt": "1. Label (may take up to an hour, it needs to be connected to the internet)\n```\npython experiments/web_commons_v2.py label\n```\n2. Get the kinds (offline, quick)\n```\npython experiments/web_commons_v2.py addkinds\n \n```\n3. Show scores (offline, quick)\n```\npython experiments/web_commons_v2.py scores\n \n```\n\n",
+            "parentHeader": [
+                "Run the experiments"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
             "originalHeader": "run tests with the T2Dv2 experiment (may take up to an hour)",
             "excerpt": "```\nsh run_t2dv2_tests.sh\n```\n*not that some tests may fail overtime as they depend on dbpedia*\n",
-            "parentHeader": "Tests",
+            "parentHeader": [
+                "Tests"
+            ],
             "confidence": [
                 1
             ],
@@ -169,7 +199,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/ttla/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/ttla/issues",
         "confidence": [
             1.0
         ],
@@ -202,7 +232,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:40 GMT"
+            "date": "Thu, 28 Apr 2022 11:03:11 GMT"
         },
         "confidence": [
             1.0
@@ -212,7 +242,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:40 GMT"
+            "date": "Thu, 28 Apr 2022 11:03:11 GMT"
         },
         "confidence": [
             1.0
@@ -238,7 +268,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ttla/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/ttla/master/README.md",
         "confidence": [
             1.0
         ],
@@ -276,8 +306,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "service"
     }
 }

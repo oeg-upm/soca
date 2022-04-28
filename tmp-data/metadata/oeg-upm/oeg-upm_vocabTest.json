@@ -1,19 +1,10 @@
 {
     "description": [
         {
-            "excerpt": "While the system is working you can check the status of the server and jobs: http://jarsomatic.linkeddata.es/ \n",
+            "excerpt": "While the system is working you can check the status of the server and jobs: http://jarsomatic.linkeddata.es/ \nWhen the system finish you have to accept the pull request is generates in order to see the generated pre-visualization of your ontology. \n",
             "confidence": [
                 [
-                    0.9175400053681873
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "vocabTest"
-        },
-        {
-            "excerpt": "When the system finish you have to accept the pull request is generates in order to see the generated pre-visualization of your ontology. \n",
-            "confidence": [
-                [
+                    0.9175400053681873,
                     0.9875227749438859
                 ]
             ],
@@ -78,7 +69,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/vocabTest/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/vocabTest/issues",
         "confidence": [
             1.0
         ],
@@ -101,7 +92,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:33:30 GMT"
+            "date": "Thu, 28 Apr 2022 10:55:24 GMT"
         },
         "confidence": [
             1.0
@@ -111,7 +102,7 @@
     "forksCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:33:30 GMT"
+            "date": "Thu, 28 Apr 2022 10:55:24 GMT"
         },
         "confidence": [
             1.0
@@ -119,7 +110,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/vocabTest/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/vocabTest/master/README.md",
         "confidence": [
             1.0
         ],

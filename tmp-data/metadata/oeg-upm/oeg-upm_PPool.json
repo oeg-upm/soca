@@ -35,15 +35,13 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://badge.fury.io/py/PPool.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
+    "logo": {
+        "excerpt": "https://badge.fury.io/py/PPool.svg",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
     "usage": [
         {
             "originalHeader": "Example",
@@ -114,7 +112,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/PPool/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/PPool/issues",
         "confidence": [
             1.0
         ],
@@ -146,7 +144,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:27:17 GMT"
+            "date": "Thu, 28 Apr 2022 11:00:03 GMT"
         },
         "confidence": [
             1.0
@@ -156,7 +154,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:27:17 GMT"
+            "date": "Thu, 28 Apr 2022 11:00:03 GMT"
         },
         "confidence": [
             1.0
@@ -180,13 +178,10 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/PPool/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/PPool/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "library"
     }
 }

@@ -111,7 +111,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Wed, 27 Apr 2022 12:34:42 GMT"
+            "date": "Thu, 28 Apr 2022 11:11:04 GMT"
         },
         "confidence": [
             1.0
@@ -121,7 +121,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 27 Apr 2022 12:34:42 GMT"
+            "date": "Thu, 28 Apr 2022 11:11:04 GMT"
         },
         "confidence": [
             1.0
@@ -203,9 +203,5 @@
             1.0
         ],
         "technique": "File Exploration"
-    },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/BO2DM/source/converter.py"
     }
 }

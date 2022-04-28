@@ -1,6 +1,30 @@
 {
     "description": [
         {
+            "excerpt": "See also:\n * The introduction at http://vocab.gtfs.org\n * The [public CSV specification](https://developers.google.com/transit/gtfs/reference) where all semantics are derived from\n * The [spec](spec.md)\n \n",
+            "confidence": [
+                [
+                    0.9621216786405352
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Linked GTFS"
+        },
+        {
+            "excerpt": "The [General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/reference) defines an open standard data format for public transport schedules. Unlike other public transport data standards, it emerged to meet specific practical needs in passenger information systems and is a relatively simple tabular format. GTFS first appeared in 2005 through cooperation between a public agency and a private company, as a way for Portland, Oregon's TriMet agency to provide schedule data for the then-experimental Google Transit routing service. The standard is now maintained and revised through a public process on the [gtfs-changes mailing list](https://groups.google.com/forum/#!forum/gtfs-changes). For more information on the origins of GTFS, see [chapter 10 of Beyond Transparency](http://beyondtransparency.org/chapters/part-2/pioneering-open-data-standards-the-gtfs-story/). \nAn analysis of archived public feeds in the summer of 2012 found that after a period of rapid growth, \"about one fourth of the agencies in the U.S. have open route and schedule data, representing about 85 percent of the total passenger-miles served.\" [[1]](http://blog.openplans.org/2012/07/in-public-transit-the-number-of-passenger-miles-served-by-agencies-with-open-data-has-skyrocketed/) Open transit data is also becoming widely available in Europe. Most of this data is provided in the GTFS format either directly by transport agencies or by third party data aggregators.\n \n",
+            "confidence": [
+                [
+                    0.9779400524336546,
+                    0.9961834527316886
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Context",
+            "parentHeader": [
+                "Linked GTFS"
+            ]
+        },
+        {
             "excerpt": "Separate repository for the Linked GTFS vocabulary",
             "confidence": [
                 1.0
@@ -18,7 +42,9 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "Editors",
-            "parentHeader": "Linked GTFS"
+            "parentHeader": [
+                "Linked GTFS"
+            ]
         }
     ],
     "longTitle": {
@@ -78,7 +104,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/linked-gtfs/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/linked-gtfs/issues",
         "confidence": [
             1.0
         ],
@@ -101,7 +127,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:13:25 GMT"
+            "date": "Thu, 28 Apr 2022 10:41:12 GMT"
         },
         "confidence": [
             1.0
@@ -111,7 +137,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:13:25 GMT"
+            "date": "Thu, 28 Apr 2022 10:41:12 GMT"
         },
         "confidence": [
             1.0
@@ -119,7 +145,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/linked-gtfs/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/linked-gtfs/master/README.md",
         "confidence": [
             1.0
         ],

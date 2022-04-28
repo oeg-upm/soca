@@ -22,7 +22,8 @@
             "confidence": [
                 1.0
             ],
-            "technique": "Regular expression"
+            "technique": "Regular expression",
+            "doi": "https://doi.org/10.5281/zenodo.3764202"
         }
     ],
     "longTitle": {
@@ -50,21 +51,7 @@
     },
     "image": [
         {
-            "excerpt": "https://zenodo.org/badge/DOI/10.5281/zenodo.3764202.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://codecov.io/gh/oeg-upm/Morph-OME/branch/master/graph/badge.svg?token=TsSWMQGuoO",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://ahmad88me.semaphoreci.com/badges/Morph-OME/branches/master.svg",
+            "excerpt": "https://github.com/oeg-upm/OME/raw/master/screenshot.png",
             "confidence": [
                 1.0
             ],
@@ -131,7 +118,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/Morph-OME/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/Morph-OME/issues",
         "confidence": [
             1.0
         ],
@@ -168,7 +155,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 6,
-            "date": "Tue, 05 Apr 2022 09:22:37 GMT"
+            "date": "Thu, 28 Apr 2022 11:00:10 GMT"
         },
         "confidence": [
             1.0
@@ -178,7 +165,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:22:37 GMT"
+            "date": "Thu, 28 Apr 2022 11:00:10 GMT"
         },
         "confidence": [
             1.0
@@ -205,21 +192,24 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/Morph-OME/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/Morph-OME/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/Morph-OME/master/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/Morph-OME/master/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/Morph-OME/master/run_docker.sh",
@@ -278,8 +268,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "service"
     }
 }

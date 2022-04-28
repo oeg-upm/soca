@@ -75,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/vocab.linkeddata.es/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/vocab.linkeddata.es/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 4,
-            "date": "Tue, 05 Apr 2022 09:33:22 GMT"
+            "date": "Thu, 28 Apr 2022 10:40:07 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 10,
-            "date": "Tue, 05 Apr 2022 09:33:22 GMT"
+            "date": "Thu, 28 Apr 2022 10:40:07 GMT"
         },
         "confidence": [
             1.0
@@ -128,10 +128,30 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/vocab.linkeddata.es/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/vocab.linkeddata.es/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://vocab.linkeddata.es/ontology/report",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/vocab.linkeddata.es/master/OnToology/ontology/reportOntology.v1.0.owl/documentation/ontology.xml"
+            },
+            {
+                "uri": "http://vocab.linkeddata.es/ontology/report",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/vocab.linkeddata.es/master/OnToology/ontology/reportOntology.v1.0.owl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "http://vocab.linkeddata.es/ontology/report",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/vocab.linkeddata.es/master/ontology/reportOntology.v1.0.owl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

@@ -1,21 +1,11 @@
 {
     "description": [
         {
-            "excerpt": "Scalable RDF Knowledge Graph Construction with [R2]RML Mappings",
+            "excerpt": "Powerful RDF Knowledge Graph Generation with [R2]RML Mappings",
             "confidence": [
                 1.0
             ],
             "technique": "GitHub API"
-        }
-    ],
-    "installation": [
-        {
-            "originalHeader": "Installation and Usage",
-            "excerpt": "[PyPi](https://pypi.org/project/morph-kgc/) is the fastest way to install Morph-KGC:\n```\npip install morph-kgc\n```\n\nTo run the engine you just need to execute the following:\n```\npython3 -m morph_kgc config.ini\n```\n\n[Here](https://github.com/oeg-upm/Morph-KGC/wiki/Configuration) you can see how to generate the configuration file. It is also possible to run Morph-KGC as a library with [RDFlib](https://rdflib.readthedocs.io/en/stable/):\n```python\nimport morph_kgc\n\n# generate the triples and load them to an RDFlib graph\ngraph = morph_kgc.materialize('/path/to/config.ini')\n\n# work with the graph\ngraph.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n```\n",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
         }
     ],
     "identifier": [
@@ -28,20 +18,13 @@
         }
     ],
     "logo": {
-        "excerpt": "https://github.com/oeg-upm/morph-kgc/blob/main/logo.png",
+        "excerpt": "https://github.com/ArenasGuerreroJulian/morph-kgc/blob/main/docs/assets/logo.png",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
     "image": [
-        {
-            "excerpt": "https://github.com/oeg-upm/morph-kgc/actions/workflows/continuous-integration.yml/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
         {
             "excerpt": "https://img.shields.io:/pypi/status/morph-kgc?",
             "confidence": [
@@ -64,13 +47,6 @@
             "technique": "Regular expression"
         },
         {
-            "excerpt": "https://zenodo.org/badge/311956260.svg?style=flat",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
             "excerpt": "https://img.shields.io/pypi/l/morph-kgc.svg",
             "confidence": [
                 1.0
@@ -81,34 +57,45 @@
     "documentation": [
         {
             "originalHeader": "Documentation",
-            "excerpt": "Check the **[wiki](https://github.com/oeg-upm/Morph-KGC/wiki)** with all the information:\n\n**[Getting Started](https://github.com/oeg-upm/Morph-KGC/wiki/Getting-Started)**\n\n**[Usage](https://github.com/oeg-upm/Morph-KGC/wiki/Usage)**\n\n**[Configuration](https://github.com/oeg-upm/Morph-KGC/wiki/Configuration)**\n- **[Engine](https://github.com/oeg-upm/Morph-KGC/wiki/Engine-Configuration)**\n- **[Data Sources](https://github.com/oeg-upm/Morph-KGC/wiki/Data-Source-Configuration)**\n  - [Relational Databases](https://github.com/oeg-upm/Morph-KGC/wiki/Relational-Databases)\n  - [Data Files](https://github.com/oeg-upm/Morph-KGC/wiki/Data-Files)\n\n**[Features](https://github.com/oeg-upm/Morph-KGC/wiki/Features)**\n\n**[Academic Publications](https://github.com/oeg-upm/Morph-KGC/wiki/Academic-Publications)**\n\n**[License](https://github.com/oeg-upm/Morph-KGC/wiki/License)**\n\n**[FAQ](https://github.com/oeg-upm/Morph-KGC/wiki/FAQ)**\n",
+            "excerpt": "**[Read the documentation](https://morph-kgc.readthedocs.io/en/latest/documentation/)**.\n",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "excerpt": "https://rdflib.readthedocs.io/",
+            "excerpt": "https://morph-kgc.readthedocs.io/",
             "confidence": [
                 1.0
             ],
-            "technique": "Regular expression"
+            "technique": "Regular expression",
+            "type": "readthedocs"
         }
     ],
-    "contact": [
+    "contributor": [
         {
-            "originalHeader": "Contact",
-            "excerpt": "- **Juli\u00e1n Arenas-Guerrero (julian.arenas.guerrero@upm.es)**\n\n*Ontology Engineering Group, Universidad Polit\u00e9cnica de Madrid | 2020 - Present*\n",
+            "originalHeader": "Contributors",
+            "excerpt": "See the full list of contributors **[here](https://github.com/oeg-upm/morph-kgc/graphs/contributors)**.\n",
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         }
     ],
+    "license": {
+        "excerpt": {
+            "name": "Apache License 2.0",
+            "url": "https://api.github.com/licenses/apache-2.0"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
     "usage": [
         {
-            "originalHeader": "Installation and Usage",
-            "excerpt": "[PyPi](https://pypi.org/project/morph-kgc/) is the fastest way to install Morph-KGC:\n```\npip install morph-kgc\n```\n\nTo run the engine you just need to execute the following:\n```\npython3 -m morph_kgc config.ini\n```\n\n[Here](https://github.com/oeg-upm/Morph-KGC/wiki/Configuration) you can see how to generate the configuration file. It is also possible to run Morph-KGC as a library with [RDFlib](https://rdflib.readthedocs.io/en/stable/):\n```python\nimport morph_kgc\n\n# generate the triples and load them to an RDFlib graph\ngraph = morph_kgc.materialize('/path/to/config.ini')\n\n# work with the graph\ngraph.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n```\n",
+            "originalHeader": "Getting Started",
+            "excerpt": "**[PyPi](https://pypi.org/project/morph-kgc/)** is the fastest way to install Morph-KGC:\n```\npip install morph-kgc\n```\n\nWe recommend to use **[virtual environments](https://docs.python.org/3/library/venv.html#)** to install Morph-KGC.\n\nTo run the engine via **command line** you just need to execute the following:\n```\npython3 -m morph_kgc config.ini\n```\n\nCheck the **[documentation](https://morph-kgc.readthedocs.io/en/latest/documentation/#configuration)** to can see how to generate the configuration **INI file**. **[Here](https://github.com/oeg-upm/morph-kgc/blob/main/examples/configuration-file-examples/default_config.ini)** you can also see an example INI file.\n\nIt is also possible to run Morph-KGC as a **library** with **[RDFlib](https://rdflib.readthedocs.io)** and **[Oxigraph](https://oxigraph.org/pyoxigraph)**:\n```python\nimport morph_kgc\n\n# generate the triples and load them to an RDFlib graph\ng_rdflib = morph_kgc.materialize('/path/to/config.ini')\n# work with the RDFlib graph\nq_res = g_rdflib.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# generate the triples and load them to Oxigraph\ng_oxigraph = morph_kgc.materialize_oxigraph('/path/to/config.ini')\n# work with Oxigraph\nq_res = graph.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# the methods above also accept the config as a string\nconfig = \"\"\"\n            [DataSource1]\n            mappings=/path/to/mapping/mapping_file.rml.ttl\n            db_url=mysql+pymysql://user:password@localhost:3306/db_name\n         \"\"\"\ng_rdflib = morph_kgc.materialize(config)\n```\n",
             "confidence": [
                 1
             ],
@@ -144,17 +131,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-03-21T22:41:11Z",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "license": {
-        "excerpt": {
-            "name": "Apache License 2.0",
-            "url": "https://api.github.com/licenses/apache-2.0"
-        },
+        "excerpt": "2022-04-26T08:42:05Z",
         "confidence": [
             1.0
         ],
@@ -175,7 +152,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-kgc/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-kgc/issues",
         "confidence": [
             1.0
         ],
@@ -203,7 +180,9 @@
             "python",
             "r2rml",
             "rdf",
-            "rml"
+            "rdf-star",
+            "rml",
+            "rml-star"
         ],
         "confidence": [
             1.0
@@ -212,8 +191,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 39,
-            "date": "Tue, 05 Apr 2022 09:22:22 GMT"
+            "count": 43,
+            "date": "Thu, 28 Apr 2022 11:16:55 GMT"
         },
         "confidence": [
             1.0
@@ -222,8 +201,8 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 3,
-            "date": "Tue, 05 Apr 2022 09:22:22 GMT"
+            "count": 4,
+            "date": "Thu, 28 Apr 2022 11:16:55 GMT"
         },
         "confidence": [
             1.0
@@ -247,14 +226,49 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-kgc/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/morph-kgc/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
+    "hasDocumentation": {
+        "excerpt": [
+            "https://github.com/oeg-upm/morph-kgc/tree/main/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
     "releases": {
         "excerpt": [
+            {
+                "tagName": "2.0.1",
+                "name": "2.0.1",
+                "authorName": "ArenasGuerreroJulian",
+                "authorType": "User",
+                "body": "Minor performance enhancements.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-kgc/tarball/2.0.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-kgc/zipball/2.0.1",
+                "htmlUrl": "https://github.com/oeg-upm/morph-kgc/releases/tag/2.0.1",
+                "url": "https://api.github.com/repos/oeg-upm/morph-kgc/releases/65174346",
+                "dateCreated": "2022-04-24T17:00:59Z",
+                "datePublished": "2022-04-24T17:13:08Z"
+            },
+            {
+                "tagName": "2.0.0",
+                "name": "2.0.0",
+                "authorName": "ArenasGuerreroJulian",
+                "authorType": "User",
+                "body": "This major release features **[RML-star](https://kg-construct.github.io/rml-star-spec/)**.\r\n- Support for [RML-star](https://kg-construct.github.io/rml-star-spec/).\r\n- Integration with [Oxigraph](https://oxigraph.org/pyoxigraph/stable/index.html) via `materialize_oxigraph`.\r\n- _XPath 2.0_ has been replaced by _XPath 3.0_.\r\n- `clean_output_dir` has been removed as a parameter in the config file. Now Morph-KGC truncates only RDF output files by default.\r\n- It is now possible to generate multiple (smaller) output RDF files using `output_dir`.\r\n- RML-star test cases added to continuous integration.\r\n- New documentation replacing the Wiki.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-kgc/tarball/2.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-kgc/zipball/2.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/morph-kgc/releases/tag/2.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/morph-kgc/releases/64823849",
+                "dateCreated": "2022-04-20T09:09:43Z",
+                "datePublished": "2022-04-20T09:24:08Z"
+            },
             {
                 "tagName": "1.6.0",
                 "name": "1.6.0",
@@ -481,8 +495,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "library"
     }
 }

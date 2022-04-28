@@ -1,10 +1,11 @@
 {
     "description": [
         {
-            "excerpt": "3) wait for some VIP to accept it \n",
+            "excerpt": "3) wait for some VIP to accept it \nCheck the gh-page branch (e.g. http://oeg-upm.github.io/vocabUpdates/site) to check whether the new site is ok or not before making the pull request to master (so that it is updated in vocab.linkeddata.es)\n \n",
             "confidence": [
                 [
-                    0.9722889869317137
+                    0.9722889869317137,
+                    0.9830924053727084
                 ]
             ],
             "technique": "Supervised classification",
@@ -75,7 +76,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/vocabUpdates/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/vocabUpdates/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +99,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:33:33 GMT"
+            "date": "Thu, 28 Apr 2022 10:55:21 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +109,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:33:33 GMT"
+            "date": "Thu, 28 Apr 2022 10:55:21 GMT"
         },
         "confidence": [
             1.0
@@ -116,7 +117,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/vocabUpdates/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/vocabUpdates/master/README.md",
         "confidence": [
             1.0
         ],

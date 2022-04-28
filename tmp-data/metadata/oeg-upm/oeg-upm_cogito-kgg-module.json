@@ -89,7 +89,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 27 Apr 2022 13:13:20 GMT"
+            "date": "Thu, 28 Apr 2022 11:22:35 GMT"
         },
         "confidence": [
             1.0
@@ -99,7 +99,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 27 Apr 2022 13:13:20 GMT"
+            "date": "Thu, 28 Apr 2022 11:22:35 GMT"
         },
         "confidence": [
             1.0
@@ -162,9 +162,5 @@
             "technique": "File Exploration",
             "format": "Docker file"
         }
-    ],
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/cogito-kgg-module/KGG_manager.py"
-    }
+    ]
 }

@@ -19,7 +19,9 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "To retrieve terminology",
-            "parentHeader": "Terminology Extractor Incibe"
+            "parentHeader": [
+                "Terminology Extractor Incibe"
+            ]
         },
         {
             "excerpt": "This work contains the library JATE 2.0  and an extension to work with Spanish documents \n",
@@ -53,9 +55,24 @@
     ],
     "installation": [
         {
+            "originalHeader": "Second step",
+            "excerpt": "\nClean and install with mvn this repo\n\n> mvn clean install\n\n",
+            "parentHeader": [
+                "Terminology Extractor Incibe",
+                "To install"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
             "originalHeader": "First Step  (trying to fix):",
             "excerpt": "Clone or download JATE: https://github.com/ziqizhang/jate\n\nCompile\n\n> mvn clean\n\n> mvn install\n\nCopy jate/target/jate-2.0-beta.11-jar-with-dependencies.jar to  terminology-extractor/solr-5.3.0/contrib/jate/lib/jate-2.0-beta.11-jar-with-dependencies.jar\n\n\n",
-            "parentHeader": "Terminology Extractor Incibe --- To install",
+            "parentHeader": [
+                "Terminology Extractor Incibe",
+                "To install"
+            ],
             "confidence": [
                 1
             ],
@@ -119,7 +136,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/terminology-extractor-incibe/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/terminology-extractor-incibe/issues",
         "confidence": [
             1.0
         ],
@@ -142,7 +159,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:30:59 GMT"
+            "date": "Thu, 28 Apr 2022 11:02:37 GMT"
         },
         "confidence": [
             1.0
@@ -152,7 +169,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:30:59 GMT"
+            "date": "Thu, 28 Apr 2022 11:02:37 GMT"
         },
         "confidence": [
             1.0
@@ -177,7 +194,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/terminology-extractor-incibe/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/terminology-extractor-incibe/master/README.md",
         "confidence": [
             1.0
         ],
@@ -205,8 +222,5 @@
             1.0
         ],
         "technique": "File Exploration"
-    },
-    "inspect4py": {
-        "software_type": "script"
     }
 }

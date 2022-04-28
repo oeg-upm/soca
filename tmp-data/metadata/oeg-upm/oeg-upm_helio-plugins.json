@@ -1,80 +1,45 @@
 {
     "description": [
         {
-            "excerpt": "This repository contains the code and releases of the official plugins that can be used with both the Helio Materialiser [for users](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users) or [for developers](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-developers) and the [Helio Publisher](https://github.com/oeg-upm/helio/wiki/Helio-Publisher). The following table summarises the plugins available by their type: \n| Plugin Type   | Plugin       | Description                                                                                                                                                 |\n|---------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Data Provider | [BashProvider](https://github.com/oeg-upm/helio-plugins/tree/master/providers/bashprovider#helio-bash-provider-plugin) | This plugin allows to run a set of bash commands, and then, read a file with potential results; e.g., run a docker process and feed Helio with some results |\n| Data Provider | [EthereumProvider](https://github.com/oeg-upm/helio-plugins/tree/master/providers/ethereum-provider) | This plugin allows to collect a block or a set of blocks of an [Ethereum Blockchain](https://ethereum.org/en/). Those blocks contain all the original data and meta-data, the data of the block is expressed in JSON |\n|               |              |                                                                                                                                                             | \nHelio has been designed to be extensible through custom plugins that are dynamically loaded by either the Helio Materialiser [for users](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users) or [for developers](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-developers) and the [Helio Publisher](https://github.com/oeg-upm/helio/wiki/Helio-Publisher). Developing a new plugin does not require extending the core code of these software artefacts, instead, a plugin consists in an independent project that once compiled as jar is automatically identified and loaded by Helio. \nIn order to develop a plugin, the following steps must be performed:\n1. [Create a Fork of this repository](https://github.com/oeg-upm/helio-plugins#1-create-a-fork-of-this-repository)\n2. [Clone the code from the fork and create a new plugin project](https://github.com/oeg-upm/helio-plugins#2-clone-the-code-from-the-fork-and-create-a-new-plugin-project)\n3. [Develop the plugin code](https://github.com/oeg-upm/helio-plugins#3-develop-the-plugin-code)\n4. [(Optional) Open a Pull Request to publish the plugin's code in the official Helio plugins repository](https://github.com/oeg-upm/helio-plugins#4-open-a-pull-request-to-publish-the-plugins-code-in-the-official-helio-plugins-repository)\n5. [(Optional) Upload a release to the official Helio plugins repository](https://github.com/oeg-upm/helio-plugins#5-upload-a-release-to-the-official-helio-plugins-repository) \n\nIn following subsections, all these steps are explained in detail. Notice that **any plugin developed, published, and released in the official Helio plugins repository will have an Apache 2.0 license**.\n \nA fork is a copy of the parent repository, which however, remains synchronised with the former repository. When new modifications are commited to the forked repository these are marked as changes from the original repository, and thus, can be later be pushed to the original repository requesting a Pull Request. The bottom line idea is to fork the Helio plugins repository, include the new code in the fork, and then create a Pull Request to merge the new plugin code in the original repository. To fork the Helio plugins repository click in the \"Fork\" button on the upper right-corner of the repository page. \n",
+            "excerpt": "This repository contains the code and releases of the official plugins that can be used with both the Helio Materialiser [for users](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users) or [for developers](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-developers) and the [Helio Publisher](https://github.com/oeg-upm/helio/wiki/Helio-Publisher). The following table summarises the plugins available by their type: \n| Plugin Type   | Plugin       | Description                                                                                                                                                 |\n|---------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Data Provider | [BashProvider](https://github.com/oeg-upm/helio-plugins/tree/master/providers/bashprovider#helio-bash-provider-plugin) | This plugin allows to run a set of bash commands, and then, read a file with potential results; e.g., run a docker process and feed Helio with some results |\n| Data Provider | [EthereumProvider](https://github.com/oeg-upm/helio-plugins/tree/master/providers/ethereum-provider) | This plugin allows to collect a block or a set of blocks of an [Ethereum Blockchain](https://ethereum.org/en/). Those blocks contain all the original data and meta-data, the data of the block is expressed in JSON |\n|               |              |                                                                                                                                                             | \n",
             "confidence": [
                 [
-                    0.9426790634536995,
-                    0.9624260109380579,
-                    0.9656204344600483,
-                    0.9589652364474749,
+                    0.985742351943475,
+                    0.9916013138060781
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Helio plugins"
+        },
+        {
+            "excerpt": "Helio has been designed to be extensible through custom plugins that are dynamically loaded by either the Helio Materialiser [for users](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users) or [for developers](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-developers) and the [Helio Publisher](https://github.com/oeg-upm/helio/wiki/Helio-Publisher). Developing a new plugin does not require extending the core code of these software artefacts, instead, a plugin consists in an independent project that once compiled as jar is automatically identified and loaded by Helio. \n\nIn following subsections, all these steps are explained in detail. Notice that **any plugin developed, published, and released in the official Helio plugins repository will have an Apache 2.0 license**. \n##### [1. Create a Fork of this repository]() \nA fork is a copy of the parent repository, which however, remains synchronised with the former repository. When new modifications are commited to the forked repository these are marked as changes from the original repository, and thus, can be later be pushed to the original repository requesting a Pull Request. The bottom line idea is to fork the Helio plugins repository, include the new code in the fork, and then create a Pull Request to merge the new plugin code in the original repository. To fork the Helio plugins repository click in the \"Fork\" button on the upper right-corner of the repository page. \nOnce forked the a copy of the Helio plugins repository must appear in the private account of the user who forked the repotiroty. \n##### [2. Clone the code from the fork and create a new plugin project]() \nOnce the project is forked the code must be cloned, for this end, the following command can be used. Bear in mind that */username* should be replaced with a valid username.\n`````\ngit clone https://github.com/username/helio-plugins.git\n`````\nAfter cloned, is recommended to create a new branch different from the master to isolate the new plugin's code. For this end, use the following command to create a new branch named *new-plugin*, however, any name could be given to the new branch.\n`````\ngit branch new-plugin\n`````\nBefore starting to develop any code, swap to the new brach using the command\nBASH3*``\nFollowing, in this new branch create a new folder in one of the existing directories depending on the type of plugin that will be developed. For instance, if the new plugin is a [Data Provider](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users#data-providers) then the new folder should be created under the existing folder *providers*. This new folder should have a suitable name that describes the plugin, try to follow the rule *[name]-[plugin type]*. For instance, for an mqqt provider the new folder should be called *mqtt-provider*. **IT IS IMPORTANT THAT ANY MODIFICATION TO THE HELIO PLUGINS REPOSITORY OCCURS UNDER THE NEW PLUGIN FOLDER AND NOTHING ELSE IS MODIFIED OUTSIDE SUCH FOLDER**.\n \nNow your local environment and IDE are ready to start developing the plugin's code. For this end create a new java class for the plugin and extend any of the interfaces that Helio supports as pluggable. These interfaces and the goal of the code that implements them are the following:  \n* *DataProvider* this kind of components retrieve and fetch data from a new data source, regarless the format of such data. For instance, a new provider could retrie the data from an MQTT broker regardless if the format of such data is json, xml, csv, or any other.\n* *DataHandler* this kind of components are used to filter and handle the data relying on their format. For instance, a new handler could select some values from an XML file using Json Path expressions, or even iterate over a list in XML using these Json Path expressions.\n* *HelioCache* this kind of components are used to store the RDF generated by Helio. For instance, a new cache could store in Git Hub the RDF been generated by Helio providing versioning capabilities to the RDF been produced by Helio in time.\n* *Functions* this kind of components are used to extend the functions that can be called from the mappings in Helio.\n* *MappingTranslator* this kind of components are used to extend the mapping languages that Helio understands. \nOnce specified the interface to be implemented the IDE will require a set of methods to be implemented (to know more about these methods and their socope check the [Helio Java Docs](https://oeg-upm.github.io/helio-framework/), otherwise, the plugins in this repository can be taken as an example). As a result, these methods will implement the functionalities of the new plugin. \nFinally, **it is required to create a file README.md documenting the plugin**, especially, indicating the structure of the expected json document to setup the new plugin. Once all the code is developed, register the new changes in the git branch of the new plugin. For this end, follow this excerpt of commands. \nAfter pushing the changes to Git Hub, the last step to publish the plugin's code in the official Helio repository is opening a Pull Request \n\n##### [4. Open a Pull Request to publish the plugin's code in the official Helio plugins repository]() \nTo request a Pull Request there are several options. The easiest is to open in a browser the forked repository and click the button *Compare & Pull Request* that will appear, as shown in the following capture in red. \nAfter clicking the *Compare & Pull Request* the plugin's branch from the forked repository will appear compared against the master from the original (or the master branch from the forked repository against the master of the original if no additional branch was created). In the image below the red square indicates the  master from the original repository, and the red square the brach of the forked repository. Add an meaninful message for the Pull Request and submit the request. \nIf the whole process was correctly carried out, as depicted in the figure below, in the tab section *Pull requests* (marked in blue in the figure) of the Helio plugins repository must appear the new created Pull Request (marked in red in the figure).  \n##### [5. Upload a release to a repository]() \nIn order to publish a release of the plugin in the official Helio repository the code of the plugin must be pushed with a Pull Request as previously explained. After that, the managers of the Helio plugins repository will check the code, compile it, and publish the release. Additionally, they will update the current README including the plugin in the table of the available ones, for which end a good documentation of the plugin is required. \n \n",
+            "confidence": [
+                [
+                    0.9902070200279632,
                     0.9553950867994568,
-                    0.9962023916332706
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "1. Create a Fork of this repository",
-            "parentHeader": "Helio plugins --- Developing a plugin"
-        },
-        {
-            "excerpt": "Once forked the a copy of the Helio plugins repository must appear in the private account of the user who forked the repotiroty.\n \nOnce the project is forked the code must be cloned, for this end, the following command can be used. Bear in mind that */username* should be replaced with a valid username.\n`````\ngit clone https://github.com/username/helio-plugins.git\n`````\nAfter cloned, is recommended to create a new branch different from the master to isolate the new plugin's code. For this end, use the following command to create a new branch named *new-plugin*, however, any name could be given to the new branch.\n`````\ngit branch new-plugin\n`````\nBefore starting to develop any code, swap to the new brach using the command\nBASH3*``\nFollowing, in this new branch create a new folder in one of the existing directories depending on the type of plugin that will be developed. For instance, if the new plugin is a [Data Provider](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users#data-providers) then the new folder should be created under the existing folder *providers*. This new folder should have a suitable name that describes the plugin, try to follow the rule *[name]-[plugin type]*. For instance, for an mqqt provider the new folder should be called *mqtt-provider*. **IT IS IMPORTANT THAT ANY MODIFICATION TO THE HELIO PLUGINS REPOSITORY OCCURS UNDER THE NEW PLUGIN FOLDER AND NOTHING ELSE IS MODIFIED OUTSIDE SUCH FOLDER**.\n \n",
-            "confidence": [
-                [
+                    0.9775959901708702,
+                    0.9962023916332706,
                     0.9800277628729974,
-                    0.9522654212051076
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "2. Clone the code from the fork and create a new plugin project",
-            "parentHeader": "Helio plugins --- Developing a plugin"
-        },
-        {
-            "excerpt": "Now your local environment and IDE are ready to start developing the plugin's code. For this end create a new java class for the plugin and extend any of the interfaces that Helio supports as pluggable. These interfaces and the goal of the code that implements them are the following:  \n* *DataProvider* this kind of components retrieve and fetch data from a new data source, regarless the format of such data. For instance, a new provider could retrie the data from an MQTT broker regardless if the format of such data is json, xml, csv, or any other.\n* *DataHandler* this kind of components are used to filter and handle the data relying on their format. For instance, a new handler could select some values from an XML file using Json Path expressions, or even iterate over a list in XML using these Json Path expressions.\n* *HelioCache* this kind of components are used to store the RDF generated by Helio. For instance, a new cache could store in Git Hub the RDF been generated by Helio providing versioning capabilities to the RDF been produced by Helio in time.\n* *Functions* this kind of components are used to extend the functions that can be called from the mappings in Helio.\n* *MappingTranslator* this kind of components are used to extend the mapping languages that Helio understands. \nOnce specified the interface to be implemented the IDE will require a set of methods to be implemented (to know more about these methods and their socope check the [Helio Java Docs](https://oeg-upm.github.io/helio-framework/), otherwise, the plugins in this repository can be taken as an example). As a result, these methods will implement the functionalities of the new plugin. \nFinally, **it is required to create a file README.md documenting the plugin**, especially, indicating the structure of the expected json document to setup the new plugin. Once all the code is developed, register the new changes in the git branch of the new plugin. For this end, follow this excerpt of commands. \n",
-            "confidence": [
-                [
+                    0.9274917542601411,
+                    0.9450051033819594,
                     0.9910188455567989,
                     0.9933914530336653,
-                    0.9513559615794073,
-                    0.9929998753660072
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "3. Develop the plugin code",
-            "parentHeader": "Helio plugins --- Developing a plugin"
-        },
-        {
-            "excerpt": "After pushing the changes to Git Hub, the last step to publish the plugin's code in the official Helio repository is opening a Pull Request \nTo request a Pull Request there are several options. The easiest is to open in a browser the forked repository and click the button *Compare & Pull Request* that will appear, as shown in the following capture in red. \n",
-            "confidence": [
-                [
+                    0.9583882561018965,
+                    0.9929998753660072,
                     0.9760442404834865,
-                    0.9832419896687257
+                    0.9835718074074934,
+                    0.9832419896687257,
+                    0.9737619278512226,
+                    0.9127388425422293,
+                    0.9581785803433209,
+                    0.99749084231465
                 ]
             ],
             "technique": "Supervised classification",
-            "originalHeader": "4. Open a Pull Request to publish the plugin's code in the official Helio plugins repository",
-            "parentHeader": "Helio plugins --- Developing a plugin"
-        },
-        {
-            "excerpt": "After clicking the *Compare & Pull Request* the plugin's branch from the forked repository will appear compared against the master from the original (or the master branch from the forked repository against the master of the original if no additional branch was created). In the image below the red square indicates the  master from the original repository, and the red square the brach of the forked repository. Add an meaninful message for the Pull Request and submit the request. \n",
-            "confidence": [
-                [
-                    0.9737619278512226
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "4. Open a Pull Request to publish the plugin's code in the official Helio plugins repository",
-            "parentHeader": "Helio plugins --- Developing a plugin"
-        },
-        {
-            "excerpt": "If the whole process was correctly carried out, as depicted in the figure below, in the tab section *Pull requests* (marked in blue in the figure) of the Helio plugins repository must appear the new created Pull Request (marked in red in the figure).  \n",
-            "confidence": [
-                [
-                    0.9127388425422293
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "4. Open a Pull Request to publish the plugin's code in the official Helio plugins repository",
-            "parentHeader": "Helio plugins --- Developing a plugin"
+            "originalHeader": "Developing a plugin",
+            "parentHeader": [
+                "Helio plugins"
+            ]
         },
         {
             "excerpt": "Helio repository for plugins",
@@ -84,31 +49,20 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "![ForkButton](https://upload.wikimedia.org/wikipedia/commons/2/26/Fork_button.jpg) \n",
-            "confidence": [
-                [
-                    0.9278824608274014
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "1. Create a Fork of this repository",
-            "parentHeader": "Helio plugins --- Developing a plugin"
-        }
-    ],
     "installation": [
         {
             "excerpt": "Once the folder for the new plugin is created, a new maven project must be created under that folder. After creating the new maven project, open the file *pom.xml* and add the following content.\n`````\n   <url>https://github.com/oeg-upm/helio-plugins</url>\n  \n   <properties>\n        <maven.compiler.target>1.8</maven.compiler.target>\n        <maven.compiler.source>1.8</maven.compiler.source> \n        <java.version>1.8</java.version>\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>   \n  </properties>\n  \n  <dependencies>\n    <!-- Helio framework -->\n    <dependency>\n      <groupId>upm.oeg.helio</groupId>\n      <artifactId>framework</artifactId>\n      <version>X.X</version>\n    </dependency>\n    \n    <!-- Other dependencies go here below -->\n   \n  </dependencies>\n  \n  <build>\n    <plugins>\n      <plugin>\n        <groupId>org.apache.maven.plugins</groupId>\n        <artifactId>maven-assembly-plugin</artifactId>\n        <version>3.1.1</version>\n        <configuration>\n          <descriptorRefs>\n            <descriptorRef>jar-with-dependencies</descriptorRef>\n          </descriptorRefs>\n         </configuration>\n         <executions>\n          <execution>\n            <id>make-assembly</id>\n            <phase>package</phase>\n            <goals>\n              <goal>single</goal>\n            </goals>\n           </execution>\n          </executions>\n      </plugin> \n    </plugins>\n  </build>\n`````\n \nBe aware that in the previous snippet the version of the Helio framework is marked as X.X, check and replace these tokens with the latest version of the [Helio Framework Maven dependency from the releases](https://github.com/oeg-upm/helio/releases). Then, download the latest version of this dependency from the releases and run the script *mvn-install.sh* to install this dependency in your local maven environment.  \n",
             "confidence": [
                 [
                     0.9476361551300235,
-                    0.9595326161318892
+                    0.961703451763372
                 ]
             ],
             "technique": "Supervised classification",
-            "originalHeader": "3. Develop the plugin code",
-            "parentHeader": "Helio plugins --- Developing a plugin"
+            "originalHeader": "Developing a plugin",
+            "parentHeader": [
+                "Helio plugins"
+            ]
         }
     ],
     "longTitle": {
@@ -208,7 +162,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/helio-plugins/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/helio-plugins/issues",
         "confidence": [
             1.0
         ],
@@ -231,7 +185,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 4,
-            "date": "Tue, 05 Apr 2022 09:11:48 GMT"
+            "date": "Thu, 28 Apr 2022 11:03:24 GMT"
         },
         "confidence": [
             1.0
@@ -241,7 +195,7 @@
     "forksCount": {
         "excerpt": {
             "count": 5,
-            "date": "Tue, 05 Apr 2022 09:11:48 GMT"
+            "date": "Thu, 28 Apr 2022 11:03:24 GMT"
         },
         "confidence": [
             1.0
@@ -266,7 +220,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/helio-plugins/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/helio-plugins/master/README.md",
         "confidence": [
             1.0
         ],

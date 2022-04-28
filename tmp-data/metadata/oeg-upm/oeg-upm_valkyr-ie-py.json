@@ -75,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/valkyr-ie-py/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/valkyr-ie-py/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:49 GMT"
+            "date": "Thu, 28 Apr 2022 11:17:52 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:49 GMT"
+            "date": "Thu, 28 Apr 2022 11:17:52 GMT"
         },
         "confidence": [
             1.0
@@ -134,13 +134,10 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/valkyr-ie-py/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/valkyr-ie-py/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "service"
     }
 }

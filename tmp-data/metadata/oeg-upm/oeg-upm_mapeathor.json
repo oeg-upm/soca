@@ -4,12 +4,28 @@
             "excerpt": "[Mapeathor](https://morph.oeg.fi.upm.es/tool/mapeathor) is a simple spreadsheet parser able to generate mapping rules in three mapping languages: R2RML, RML (with extension to functions from FnO) and YARRRML. It takes the mapping rules expressed in a spreadsheet and transforms them into the desired language. The spreadsheet template is designed to facilitate the mapping rules' writting, with the aim of being language independent, and thus, lowering the barrier of generating mappings for non-expert users. \n",
             "confidence": [
                 [
-                    0.9955817977681868
+                    0.9967629643513142
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Mapeathor translates your mapping rules specified in spreadsheets to a mapping language.",
-            "parentHeader": "Mapeathor"
+            "parentHeader": [
+                "Mapeathor"
+            ]
+        },
+        {
+            "excerpt": "Iglesias-Molina, A., Pozo-Gilo, L., Dona, D., Ruckhaus, E., Chaves-Fraga, D., & Corcho, O. (2020, January). *Mapeathor: Simplifying the Specification of Declarative Rules for Knowledge Graph Construction. In ISWC (Demos/Industry).* [Online version](http://ceur-ws.org/Vol-2721/paper488.pdf) \nIglesias-Molina, A., Chaves-Fraga, D., Priyatna, F., & Corcho, O. (2019). Towards the Definition of a Language-Independent Mapping Template for Knowledge Graph Creation. *In Proceedings of the Third International Workshop on Capturing Scientific Knowledge co-located with the 10th International Conference on Knowledge Capture (K-CAP 2019)* (pp. 33-36). [Online version](https://sciknow.github.io/sciknow2019/papers/SciKnow_2019_paper_4.pdf)\n \n",
+            "confidence": [
+                [
+                    0.9681188383075913,
+                    0.9455000949079739
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Publications",
+            "parentHeader": [
+                "Mapeathor"
+            ]
         },
         {
             "excerpt": "Translator of spreadsheet mappings into R2RML, RML or YARRRML",
@@ -17,6 +33,21 @@
                 1.0
             ],
             "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "Iglesias-Molina, A., Chaves-Fraga, D., Priyatna, F., & Corcho, O. (2019). Towards the Definition of a Language-Independent Mapping Template for Knowledge Graph Creation. *In Proceedings of the Third International Workshop on Capturing Scientific Knowledge co-located with the 10th International Conference on Knowledge Capture (K-CAP 2019)* (pp. 33-36). [Online version](https://sciknow.github.io/sciknow2019/papers/SciKnow_2019_paper_4.pdf)\n \n",
+            "confidence": [
+                [
+                    0.9999982539965125
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Publications",
+            "parentHeader": [
+                "Mapeathor"
+            ]
         }
     ],
     "longTitle": {
@@ -28,7 +59,7 @@
     },
     "identifier": [
         {
-            "excerpt": "https://doi.org/10.5281/zenodo.6025390",
+            "excerpt": "https://doi.org/10.5281/zenodo.5973906",
             "confidence": [
                 1.0
             ],
@@ -56,48 +87,84 @@
                 1.0
             ],
             "technique": "Regular expression"
-        },
+        }
+    ],
+    "documentation": [
         {
-            "excerpt": "https://img.shields.io/pypi/v/mapeathor?style=flat",
+            "excerpt": "https://github.com/oeg-upm/mapeathor/wiki",
             "confidence": [
                 1.0
             ],
-            "technique": "Regular expression"
+            "technique": "Regular expression",
+            "type": "wiki"
         },
         {
-            "excerpt": "https://img.shields.io/badge/python-3.6+-blue.svg",
+            "excerpt": "https://github.com/oeg-upm/Mapeathor/wiki",
             "confidence": [
                 1.0
             ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://zenodo.org/badge/DOI/10.5281/zenodo.6025390.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/License-Apache%202.0-blue.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/Status-Developing-yellow",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
+            "technique": "Regular expression",
+            "type": "wiki"
         }
     ],
     "contact": [
         {
             "originalHeader": "Authors and contact",
-            "excerpt": "- [Luis Pozo](https://github.com/w0xter) (luis.pozo@upm.es)\n- [Daniel Do\u00f1a](https://github.com/daniel-dona) (daniel.dona@xnor.ga)\n",
-            "parentHeader": "Mapeathor",
+            "excerpt": "- [Ana Iglesias-Molina](https://github.com/anaigmo) - [ana.iglesiasm@upm.es](mailto:ana.iglesiasm@upm.es)\n- [Luis Pozo](https://github.com/w0xter)\n- [Daniel Do\u00f1a](https://github.com/daniel-dona)\n",
+            "parentHeader": [
+                "Mapeathor"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "run": [
+        {
+            "originalHeader": "Third Step: Run it!",
+            "excerpt": "The easiest way of running Mapeathor is using the [web service](https://morph.oeg.fi.upm.es/demo/mapeathor) and the [Swagger](https://morph.oeg.fi.upm.es/tool/mapeathor/swagger/) instance. For CLI lovers, the service is available as a [PyPi package](https://pypi.org/project/mapeathor/) and Docker image. The instructions of the latest can be found in the [wiki](https://github.com/oeg-upm/Mapeathor/wiki).\n",
+            "parentHeader": [
+                "Mapeathor",
+                "Example"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Example",
+            "excerpt": "A more detailed explanation is provided in the [wiki](https://github.com/oeg-upm/Mapeathor/wiki).\n",
+            "parentHeader": [
+                "Mapeathor"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "First Step: Fill the xlsx template with the transformation rules",
+            "excerpt": "The template has five mandatory sheets, *Prefixes, Source, Subject PredicateObjectMap* and *Functions*. The last one can be left blank in case there are no functions. The spreadsheet can be in XLSX format or a Google Spreadsheet. Here is an example of the structure of the spreadsheet.\n\n<p align=\"center\">\n <img src=\"https://raw.githubusercontent.com/oeg-upm/Mapeathor/master/imgs/sheets.png\" alt=\"sheets\" width=\"500\"/>\n</p>\n",
+            "parentHeader": [
+                "Mapeathor",
+                "Example"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Second Step: Choose the output language",
+            "excerpt": "One of three options can be chosen: R2RML, RML or YARRRML.\n",
+            "parentHeader": [
+                "Mapeathor",
+                "Example"
+            ],
             "confidence": [
                 1
             ],
@@ -133,7 +200,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-03-16T07:28:15Z",
+        "excerpt": "2022-04-14T23:34:10Z",
         "confidence": [
             1.0
         ],
@@ -164,7 +231,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/mapeathor/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/mapeathor/issues",
         "confidence": [
             1.0
         ],
@@ -198,8 +265,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 23,
-            "date": "Tue, 05 Apr 2022 09:13:53 GMT"
+            "count": 24,
+            "date": "Thu, 28 Apr 2022 11:04:14 GMT"
         },
         "confidence": [
             1.0
@@ -209,7 +276,7 @@
     "forksCount": {
         "excerpt": {
             "count": 7,
-            "date": "Tue, 05 Apr 2022 09:13:53 GMT"
+            "date": "Thu, 28 Apr 2022 11:04:14 GMT"
         },
         "confidence": [
             1.0
@@ -234,23 +301,49 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/mapeathor/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/mapeathor/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/mapeathor/master/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/mapeathor/master/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        },
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/mapeathor/master/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "releases": {
         "excerpt": [
+            {
+                "tagName": "v1.5.4",
+                "name": "v1.5.4",
+                "authorName": "anaigmo",
+                "authorType": "User",
+                "body": "The following errors have been fixed:\r\n* Iterator format for json/xml sources\r\n* Allowed subject without class\r\n* In Functions: \r\n    * Correct finding of source\r\n    * No error shown when there are functions in sheet but not referenced\r\n    * IRI type in Function Map\r\n    * Correct formating when referencing functions from function maps",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/tarball/v1.5.4",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/mapeathor/zipball/v1.5.4",
+                "htmlUrl": "https://github.com/oeg-upm/mapeathor/releases/tag/v1.5.4",
+                "url": "https://api.github.com/repos/oeg-upm/mapeathor/releases/63987891",
+                "dateCreated": "2022-04-08T16:02:53Z",
+                "datePublished": "2022-04-08T16:08:18Z"
+            },
             {
                 "tagName": "v1.5.3",
                 "name": "v1.5.3",
@@ -321,8 +414,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "library"
     }
 }

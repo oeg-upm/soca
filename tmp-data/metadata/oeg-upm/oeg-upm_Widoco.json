@@ -19,6 +19,16 @@
             "originalHeader": "Current improvements"
         },
         {
+            "excerpt": "Contributions to address any of the current issues are welcome. In order to push your contribution, just **push your pull request to the develop branch**. The master branch has only the code associated to the latest release. \n \n",
+            "confidence": [
+                [
+                    0.9702231144410863
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Contribution guidelines"
+        },
+        {
             "excerpt": "Wizard for documenting ontologies. WIDOCO is a step by step generator of HTML templates with the documentation of your ontology. It uses the LODE environment to create part of the template.",
             "confidence": [
                 1.0
@@ -32,17 +42,8 @@
             "confidence": [
                 1.0
             ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "[![DOI](https://zenodo.org/badge/11427075.svg)](https://zenodo.org/badge/latestdoi/11427075) \n",
-            "confidence": [
-                [
-                    0.9999959318575946
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
+            "technique": "Regular expression",
+            "doi": "https://doi.org/10.1007/978-3-319-68204-4_9"
         },
         {
             "excerpt": "**Author**: Daniel Garijo Verdejo (@dgarijo) \n",
@@ -61,8 +62,7 @@
                     0.9999998909565793
                 ]
             ],
-            "technique": "Supervised classification",
-            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
+            "technique": "Supervised classification"
         }
     ],
     "installation": [
@@ -71,18 +71,6 @@
             "confidence": [
                 [
                     0.9190343646781911
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
-        }
-    ],
-    "invocation": [
-        {
-            "excerpt": "![Logo](src/main/resources/logo/logo2.png) \n",
-            "confidence": [
-                [
-                    0.9303728968469744
                 ]
             ],
             "technique": "Supervised classification",
@@ -112,15 +100,6 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://zenodo.org/badge/11427075.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
     "documentation": [
         {
             "originalHeader": "Browser issues (Why can't I see the generated documentation / visualization?)",
@@ -227,7 +206,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/Widoco/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/Widoco/issues",
         "confidence": [
             1.0
         ],
@@ -250,7 +229,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:35:25 GMT"
+            "date": "Thu, 28 Apr 2022 11:10:52 GMT"
         },
         "confidence": [
             1.0
@@ -260,7 +239,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:35:25 GMT"
+            "date": "Thu, 28 Apr 2022 11:10:52 GMT"
         },
         "confidence": [
             1.0
@@ -288,10 +267,206 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/Widoco/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/test/otalex.owl"
+            },
+            {
+                "uri": "http://datos.bne.es/def/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/test/bne.ttl"
+            },
+            {
+                "uri": "http://geo.linkeddata.es/ontology/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/test/geolinkeddata.owl"
+            },
+            {
+                "uri": "http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/test/IFC4_ADD1.ttl"
+            },
+            {
+                "uri": "https://w3id.org/games/spec/coil#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/test/coil.owl"
+            },
+            {
+                "uri": "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/otalex.owl"
+            },
+            {
+                "uri": "http://data.businessgraph.io/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/ebg-ontology_edited.ttl"
+            },
+            {
+                "uri": "http://purl.org/net/p-plan#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/p-plan.owl"
+            },
+            {
+                "uri": "http://datos.bne.es/def/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/bne.ttl"
+            },
+            {
+                "uri": "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/NBAMovementsv2%20-%20copia.owl"
+            },
+            {
+                "uri": "https://w3id.org/def/System",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/System.owl"
+            },
+            {
+                "uri": "http://linguistic.linkeddata.es/def/retele-share",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/retele.ttl"
+            },
+            {
+                "uri": "http://geo.linkeddata.es/ontology/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/geolinkeddata.owl"
+            },
+            {
+                "uri": "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/contaminacion-acustica",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/contaminacion-acustica.owl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/instrument.ttl"
+            },
+            {
+                "uri": "http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/IFC4_ADD1.ttl"
+            },
+            {
+                "uri": "http://disk-project.org/ontology/disk",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/disk.ttl"
+            },
+            {
+                "uri": "http://www.w3.org/ns/oa#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/oa.ttl"
+            },
+            {
+                "uri": "http://purl.oclc.org/NET/ssnx/ssn",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/ssn.owl"
+            },
+            {
+                "uri": "https://w3id.org/def/Tissue",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/Tissue.ttl"
+            },
+            {
+                "uri": "http://iot.linkeddata.es/def/wot#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/wot.ttl"
+            },
+            {
+                "uri": "http://www.semanticweb.org/bravyto/ontologies/2016/9/Charity-Organization",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/charity_org_rdf_new.owl"
+            },
+            {
+                "uri": "http://schema.org/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/schema_sample.ttl"
+            },
+            {
+                "uri": "http://purl.org/net/SMARTprotocol#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/smartProtocol.owl"
+            },
+            {
+                "uri": "http://ontosoft.org/software",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/ontosoft-v1.0.owl"
+            },
+            {
+                "uri": "http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/IFC4_ADD1_wrongImport.ttl"
+            },
+            {
+                "uri": "https://w3id.org/def/saref4envi",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/saref4envi.ttl"
+            },
+            {
+                "uri": "http://linguistic.linkeddata.es/def/retele-share",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/retele-share.owl"
+            },
+            {
+                "uri": "https://w3id.org/games/spec/coil#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/coil.owl"
+            },
+            {
+                "uri": "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/NBAMovementsv2.owl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/diff/coreNew.ttl"
+            },
+            {
+                "uri": "https://w3id.org/games/spec/coil#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/diff/coilNew.owl"
+            },
+            {
+                "uri": "https://w3id.org/games/spec/coil#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/diff/coilOld.owl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/diff/coreOld.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/LinkedEarth/sensor.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/LinkedEarth/observation.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/LinkedEarth/archive.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/LinkedEarth/instrument.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/LinkedEarth/inferredVariables.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/LinkedEarth/core.ttl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/roevo",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/RO/roevo.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/roterms#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/RO/roterms.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/wf4ever",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/RO/wf4ever.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/wfdesc",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/RO/wfdesc.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/ro",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/RO/ro.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/wfprov",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/RO/wfprov.owl"
+            },
+            {
+                "uri": "http://disk-project.org/ontology/disk",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Widoco/master/doc/benchmark/Disk/disk.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

@@ -1,6 +1,29 @@
 {
     "description": [
         {
+            "excerpt": "The tool translates mapping rules from YARRRML in a pretty turtle-based serialization of RML. The translation is based \non [RML]((https://rml.io/specs/rml/ \"RML Spec\") and [YARRRML]((https://rml.io/yarrrml/spec/ \"YARRRML Spec\") specifications.\n \n",
+            "confidence": [
+                [
+                    0.9775753211966904
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Pretty-yarrrml2rml"
+        },
+        {
+            "excerpt": "We are working on inlcuding the following features which are not yet implemented:\n- Translation to [R2RML](https://www.w3.org/TR/r2rml)\n- [Named graphs](https://www.w3.org/TR/r2rml/#named-graphs) from R2RML\n- Functions included using the [FnO](https://fno.io/) Ontology\n \n",
+            "confidence": [
+                [
+                    0.9505576399761284
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Limitations:",
+            "parentHeader": [
+                "Pretty-yarrrml2rml"
+            ]
+        },
+        {
             "excerpt": "Repository for a human-readable translation of YARRRML mappings into a turtle-based RML rules",
             "confidence": [
                 1.0
@@ -18,7 +41,9 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "Execution",
-            "parentHeader": "Pretty-yarrrml2rml"
+            "parentHeader": [
+                "Pretty-yarrrml2rml"
+            ]
         }
     ],
     "longTitle": {
@@ -28,6 +53,16 @@
         ],
         "technique": "Regular expression"
     },
+    "documentation": [
+        {
+            "excerpt": "https://github.com/oeg-upm/pretty-yarrrml2rml/wiki",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "wiki"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/pretty-yarrrml2rml",
         "confidence": [
@@ -88,7 +123,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/pretty-yarrrml2rml/issues",
         "confidence": [
             1.0
         ],
@@ -122,7 +157,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:27:19 GMT"
+            "date": "Thu, 28 Apr 2022 11:17:27 GMT"
         },
         "confidence": [
             1.0
@@ -132,7 +167,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:27:19 GMT"
+            "date": "Thu, 28 Apr 2022 11:17:27 GMT"
         },
         "confidence": [
             1.0
@@ -156,7 +191,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/pretty-yarrrml2rml/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/pretty-yarrrml2rml/main/README.md",
         "confidence": [
             1.0
         ],
@@ -195,8 +230,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "script"
     }
 }

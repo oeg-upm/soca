@@ -19,18 +19,36 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "Engines",
-            "parentHeader": "Knowledge Graph Construction with R2RML and RML"
+            "parentHeader": [
+                "Knowledge Graph Construction with R2RML and RML"
+            ]
+        },
+        {
+            "excerpt": "Using the [GTFS-Madrid-Bench](https://github.com/oeg-upm/gtfs-bench) and based on the input dataset we create the following distributions to test the engines: \n",
+            "confidence": [
+                [
+                    0.9037643106827218
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "GTFS-Madrid-Bench",
+            "parentHeader": [
+                "Knowledge Graph Construction with R2RML and RML",
+                "Evaluation resources"
+            ]
         },
         {
             "excerpt": "We created a comparative framework to gather and compare the information about the engines' features, availabe [here](https://github.com/oeg-upm/kgc-eval/tree/master/results/table); and tested the engines with the mentioned benchmark in terms of time and memory used. The raw data resulting from the evaluation is stored [here](https://github.com/oeg-upm/kgc-eval/tree/master/results/raw-data), and the resulting figures can be seen [here](https://github.com/oeg-upm/kgc-eval/tree/master/results/figures).\n \n",
             "confidence": [
                 [
-                    0.9129068273106372
+                    0.9838200691220557
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Results",
-            "parentHeader": "Knowledge Graph Construction with R2RML and RML"
+            "parentHeader": [
+                "Knowledge Graph Construction with R2RML and RML"
+            ]
         },
         {
             "excerpt": "Evaluation of Knowledge Graph Construction Engines",
@@ -56,6 +74,19 @@
                 ]
             ],
             "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "- Juli\u00e1n Arenas-Guerrero - julian.arenas.guerrero@upm.es (Ontology Engineering Group - UPM)\n- Mario Scrocca (Cefriel - Politecnico di Milano)\n- David Chaves-Fraga (Ontology Engineering Group - UPM)\n- Jhon Toledo (Ontology Engineering Group - UPM) \n- Daniel Do\u00f1a (Ontology Engineering Group - UPM)\n- Luis Pozo-Gilo (Ontology Engineering Group - UPM)\n- Ana Iglesias (Ontology Engineering Group - UPM)\n \n",
+            "confidence": [
+                [
+                    0.9996500066079325
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Authors",
+            "parentHeader": [
+                "Knowledge Graph Construction with R2RML and RML"
+            ]
         }
     ],
     "longTitle": {
@@ -125,7 +156,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/kgc-eval/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/kgc-eval/issues",
         "confidence": [
             1.0
         ],
@@ -148,7 +179,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:12:26 GMT"
+            "date": "Thu, 28 Apr 2022 11:06:10 GMT"
         },
         "confidence": [
             1.0
@@ -158,7 +189,7 @@
     "forksCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:12:26 GMT"
+            "date": "Thu, 28 Apr 2022 11:06:10 GMT"
         },
         "confidence": [
             1.0
@@ -184,29 +215,43 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/kgc-eval/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/morph-rdb/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/ontop/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/db2triples/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/chimera/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/rmlstreamer/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/carml/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/rmlmapper/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/sdm-rdfizer/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/rocketrml/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/docker-compose.yml",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/chimera/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        },
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/morph-rdb/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/ontop/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/db2triples/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/chimera/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/rmlstreamer/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/carml/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/rmlmapper/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/sdm-rdfizer/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/rocketrml/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/kgc-eval/master/engines/carml/run-carml.sh",
@@ -216,8 +261,5 @@
             1.0
         ],
         "technique": "File Exploration"
-    },
-    "inspect4py": {
-        "software_type": "script"
     }
 }

@@ -75,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/websiteFooterLogos/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/websiteFooterLogos/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:35:24 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:10 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:35:24 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:10 GMT"
         },
         "confidence": [
             1.0
@@ -132,7 +132,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/websiteFooterLogos/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/websiteFooterLogos/master/README.md",
         "confidence": [
             1.0
         ],

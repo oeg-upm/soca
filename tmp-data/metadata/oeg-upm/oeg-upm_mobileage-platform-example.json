@@ -1,22 +1,25 @@
 {
     "installation": [
         {
-            "excerpt": "`sudo apt-get update` \n`sudo apt-get install python-pip python-dev` \n`pip install virtualenv` \n",
+            "excerpt": "`sudo apt-get update` \n`sudo apt-get install python-pip python-dev` \n`pip install virtualenv` \n`pip install -r requirements.txt` \n",
             "confidence": [
                 [
                     0.9623668047804587,
                     0.9979589622454941,
-                    0.9980827914613059
+                    0.9980827914613059,
+                    0.9979947896609701
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "mobileage-platform-example"
-        },
+        }
+    ],
+    "invocation": [
         {
-            "excerpt": "`pip install -r requirements.txt` \n",
+            "excerpt": "`python main.py`\n \n",
             "confidence": [
                 [
-                    0.9979947896609701
+                    0.9333384803827206
                 ]
             ],
             "technique": "Supervised classification",
@@ -90,7 +93,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/mobileage-platform-example/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/mobileage-platform-example/issues",
         "confidence": [
             1.0
         ],
@@ -113,7 +116,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:14:50 GMT"
+            "date": "Thu, 28 Apr 2022 10:59:13 GMT"
         },
         "confidence": [
             1.0
@@ -123,7 +126,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:14:50 GMT"
+            "date": "Thu, 28 Apr 2022 10:59:13 GMT"
         },
         "confidence": [
             1.0
@@ -148,13 +151,10 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/mobileage-platform-example/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/mobileage-platform-example/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "service"
     }
 }

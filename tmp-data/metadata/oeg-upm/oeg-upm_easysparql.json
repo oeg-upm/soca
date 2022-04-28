@@ -152,7 +152,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 27 Apr 2022 13:16:20 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:37 GMT"
         },
         "confidence": [
             1.0
@@ -162,7 +162,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 27 Apr 2022 13:16:20 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:37 GMT"
         },
         "confidence": [
             1.0
@@ -303,9 +303,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import easysparql"
     }
 }

@@ -27,6 +27,16 @@
         ],
         "technique": "Regular expression"
     },
+    "documentation": [
+        {
+            "excerpt": "https://github.com/oeg-upm/morph-streams/wiki",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "wiki"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/morph-streams",
         "confidence": [
@@ -77,7 +87,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-streams/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-streams/issues",
         "confidence": [
             1.0
         ],
@@ -100,7 +110,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:23:00 GMT"
+            "date": "Thu, 28 Apr 2022 10:40:33 GMT"
         },
         "confidence": [
             1.0
@@ -110,7 +120,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:23:00 GMT"
+            "date": "Thu, 28 Apr 2022 10:40:33 GMT"
         },
         "confidence": [
             1.0
@@ -128,10 +138,62 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-streams/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://oeg-upm.net/onto/sensordemo/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/query-rewriting/src/test/resources/ontologies/sensordemo.owl"
+            },
+            {
+                "uri": "http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/UXE.owl"
+            },
+            {
+                "uri": "http://www.semanticweb.org/ontologies/2008/8/24/Ontology1222256119496.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/P5XE.owl"
+            },
+            {
+                "uri": "http://www.semanticweb.org/ontologies/2008/8/24/Ontology1222256119496.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/P5.owl"
+            },
+            {
+                "uri": "http://ksg.meraka.co.za/adolena.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/AXE.owl"
+            },
+            {
+                "uri": "http://www.owl-ontologies.com/Ontology1207768242.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/S.owl"
+            },
+            {
+                "uri": "http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/UX.owl"
+            },
+            {
+                "uri": "http://ksg.meraka.co.za/adolena.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/AX.owl"
+            },
+            {
+                "uri": "http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/U.owl"
+            },
+            {
+                "uri": "http://ksg.meraka.co.za/adolena.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/A.owl"
+            },
+            {
+                "uri": "http://vicodi.org/ontology",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/morph-streams/master/stream-reasoning/src/test/resources/ontologies/V.owl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

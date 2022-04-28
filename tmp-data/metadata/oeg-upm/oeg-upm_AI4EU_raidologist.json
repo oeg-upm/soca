@@ -165,7 +165,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 27 Apr 2022 12:20:51 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:49 GMT"
         },
         "confidence": [
             1.0
@@ -175,7 +175,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 27 Apr 2022 12:20:51 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:49 GMT"
         },
         "confidence": [
             1.0
@@ -220,9 +220,5 @@
             1.0
         ],
         "technique": "File Exploration"
-    },
-    "inspect4py": {
-        "software_type": "service",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/AI4EU_raidologist/main.py"
     }
 }

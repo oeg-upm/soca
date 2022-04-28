@@ -1,33 +1,41 @@
 {
     "description": [
         {
-            "excerpt": "Source code for OnToology Drag&Drop",
+            "excerpt": "\nTADA (TAbular Data Annotator) for numeric column. It focuses on distributions to label numeric columns in tabular data. \n",
+            "confidence": [
+                [
+                    0.9622425972016023
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "tada-qq"
+        },
+        {
+            "excerpt": "TADA for numeric column. It focuses on distributions to label numeric columns in tabular data.",
             "confidence": [
                 1.0
             ],
             "technique": "GitHub API"
         }
     ],
-    "installation": [
-        {
-            "excerpt": "You can run a local version using a server like Apache Tomcat. \n",
-            "confidence": [
-                [
-                    0.9548497701628138
-                ]
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
-    "logo": {
-        "excerpt": "https://raw.githubusercontent.com/oeg-upm/OnToologyDnD/master/WebContent/static/images/logoprop.png",
+    "longTitle": {
+        "excerpt": "tada-qq",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
+    "identifier": [
+        {
+            "excerpt": "https://doi.org/10.5281/zenodo.6344539",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/OnToologyDnD",
+        "excerpt": "https://github.com/oeg-upm/tada-qq",
         "confidence": [
             1.0
         ],
@@ -48,14 +56,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2020-06-23T12:19:20Z",
+        "excerpt": "2020-06-13T03:48:36Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2020-09-17T16:59:25Z",
+        "excerpt": "2022-01-26T08:48:37Z",
         "confidence": [
             1.0
         ],
@@ -72,44 +80,35 @@
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "OnToologyDnD",
+        "excerpt": "tada-qq",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/OnToologyDnD",
+        "excerpt": "oeg-upm/tada-qq",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/OnToologyDnD/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/tada-qq/issues",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/OnToologyDnD/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/tada-qq/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/OnToologyDnD/releases",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "topics": {
-        "excerpt": [
-            "ontology-engineering"
-        ],
+        "excerpt": "https://github.com/oeg-upm/tada-qq/releases",
         "confidence": [
             1.0
         ],
@@ -117,8 +116,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 2,
-            "date": "Tue, 05 Apr 2022 09:23:57 GMT"
+            "count": 1,
+            "date": "Thu, 28 Apr 2022 11:12:25 GMT"
         },
         "confidence": [
             1.0
@@ -128,7 +127,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:23:57 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:25 GMT"
         },
         "confidence": [
             1.0
@@ -137,9 +136,8 @@
     },
     "languages": {
         "excerpt": [
-            "Java",
-            "JavaScript",
-            "CSS"
+            "Python",
+            "Shell"
         ],
         "confidence": [
             1.0
@@ -154,7 +152,90 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/OnToologyDnD/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/tada-qq/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/tada-qq/master/scripts/run_tests.sh",
+            "https://raw.githubusercontent.com/oeg-upm/tada-qq/master/scripts/run_coverage.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v2.1.0",
+                "name": "v2.1.0",
+                "authorName": "ahmad88me",
+                "authorType": "User",
+                "body": "* Add Clusterer. Which cluster closely related numeric properties.\r\n* Add SlabMer. This class uses the clusterer to improve semantic labelling\r\n* Relevant tests are added",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/tarball/v2.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/zipball/v2.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/tada-qq/releases/tag/v2.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/tada-qq/releases/63837072",
+                "dateCreated": "2022-04-05T12:24:05Z",
+                "datePublished": "2022-04-07T09:01:39Z"
+            },
+            {
+                "tagName": "v2.0.3",
+                "name": "v2.0.3",
+                "authorName": "ahmad88me",
+                "authorType": "User",
+                "body": "Refactoring and clean ups",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/tarball/v2.0.3",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/zipball/v2.0.3",
+                "htmlUrl": "https://github.com/oeg-upm/tada-qq/releases/tag/v2.0.3",
+                "url": "https://api.github.com/repos/oeg-upm/tada-qq/releases/63283984",
+                "dateCreated": "2022-03-31T15:56:22Z",
+                "datePublished": "2022-03-31T15:58:33Z"
+            },
+            {
+                "tagName": "v2.0.2",
+                "name": "v2.0.2",
+                "authorName": "ahmad88me",
+                "authorType": "User",
+                "body": "Restructure and fix the imports for the library",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/tarball/v2.0.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/zipball/v2.0.2",
+                "htmlUrl": "https://github.com/oeg-upm/tada-qq/releases/tag/v2.0.2",
+                "url": "https://api.github.com/repos/oeg-upm/tada-qq/releases/62543390",
+                "dateCreated": "2022-03-23T07:26:40Z",
+                "datePublished": "2022-03-23T07:27:39Z"
+            },
+            {
+                "tagName": "v2.0.0",
+                "name": "v2.0.0",
+                "authorName": "ahmad88me",
+                "authorType": "User",
+                "body": "The first version of tada-qq as a library with qq approximation and semantic labelling",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/tarball/v2.0.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/zipball/v2.0.0",
+                "htmlUrl": "https://github.com/oeg-upm/tada-qq/releases/tag/v2.0.0",
+                "url": "https://api.github.com/repos/oeg-upm/tada-qq/releases/62473552",
+                "dateCreated": "2022-03-22T16:54:06Z",
+                "datePublished": "2022-03-22T16:55:32Z"
+            },
+            {
+                "tagName": "v1.0",
+                "name": "v1.0",
+                "authorName": "ahmad88me",
+                "authorType": "User",
+                "body": "This is the first release for tada-qq. It contains the followings:\r\n* **Semantic labelling** of numeric columns using qq-plot.\r\n* It also **cluster** similar numeric columns together. \r\n* Semantic labelling experiments on the datasets T2Dv2 and Olympic Games.\r\n* Clustering of numeric columns in the T2Dv2.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/tarball/v1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/zipball/v1.0",
+                "htmlUrl": "https://github.com/oeg-upm/tada-qq/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/oeg-upm/tada-qq/releases/61503498",
+                "dateCreated": "2022-03-10T14:42:34Z",
+                "datePublished": "2022-03-10T14:52:34Z"
+            }
+        ],
         "confidence": [
             1.0
         ],

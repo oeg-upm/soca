@@ -58,7 +58,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/Linkeddata.es-Code/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/Linkeddata.es-Code/issues",
         "confidence": [
             1.0
         ],
@@ -81,7 +81,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:13:27 GMT"
+            "date": "Thu, 28 Apr 2022 10:55:52 GMT"
         },
         "confidence": [
             1.0
@@ -91,7 +91,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:13:27 GMT"
+            "date": "Thu, 28 Apr 2022 10:55:52 GMT"
         },
         "confidence": [
             1.0

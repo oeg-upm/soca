@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "Morph-GFT is an extension of Morph that works with Google Fusion Table (GFT) tables mapped with R2RML Mappings and enables users to query those tables using SPARQL queries. Underhood Morph-GFT, the SPARQL queries posed by the users are translated into SQL-like queries that are supported by GFT APIs. Unlike standard relational database implementation normally used with R2RML, GFT APIs do not support join operations. SPARQL-DQP is used to join the intermediate results and then the intermediate results are translated using the R2RML mappings specified by the users.\n \n",
+            "confidence": [
+                [
+                    0.9943886958265579
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Morph-GFT"
+        },
+        {
             "excerpt": "morph-GFT is an extension of Morph that works with Google Fusion Table (GFT) tables mapped with R2RML Mappings and enables users to query those tables using SPARQL queries",
             "confidence": [
                 1.0
@@ -15,6 +25,16 @@
         ],
         "technique": "Regular expression"
     },
+    "documentation": [
+        {
+            "excerpt": "https://github.com/oeg-upm/morph-gft/wiki",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "wiki"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/morph-gft",
         "confidence": [
@@ -75,7 +95,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-gft/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-gft/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +118,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:22:13 GMT"
+            "date": "Thu, 28 Apr 2022 10:40:15 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +128,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:22:13 GMT"
+            "date": "Thu, 28 Apr 2022 10:40:15 GMT"
         },
         "confidence": [
             1.0
@@ -132,7 +152,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-gft/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/morph-gft/master/README.md",
         "confidence": [
             1.0
         ],

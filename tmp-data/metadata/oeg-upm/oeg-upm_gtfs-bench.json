@@ -4,35 +4,51 @@
             "excerpt": "We present GTFS-Madrid-Bench, **a benchmark to evaluate declarative KG construction engines** that can be used for the provision of access mechanisms to (virtual) knowledge graphs. Our proposal introduces several scenarios that aim at measuring performance and scalability as well as the query capabilities of all this kind of engines, considering their heterogeneity. The data sources used in our benchmark are derived from the [GTFS](https://developers.google.com/transit/gtfs) data files of the subway network of Madrid. They can be transformed into several formats (CSV, JSON, SQL and XML) and scaled up. The query set aims at addressing a representative number of SPARQL 1.1 features while covering usual queries that data consumers may be interested in. \n",
             "confidence": [
                 [
-                    0.995734180002838
+                    0.9963907372142609
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "The GTFS-Madrid-Bench"
         },
         {
-            "excerpt": "Additionally to the generator engine, that provides the data at desirable scales and distributions, together with corresponding mappings and queries, there are also common resources openly available to be modified or used by any practicioner or developer: \n- Folder [mappings](https://github.com/oeg-upm/gtfs-bench/tree/master/mappings) contains RML mappings for CSV, XML, JSON and RDB distributions of the input GTFS dataset, R2RML mapping for RDB and xR2RML mapping for MongoDB. It also includes CSVW annotations for the CSV distributions.\n- Folder [queries](https://github.com/oeg-upm/gtfs-bench/tree/master/queries) includes 18 queries with different levels of complexity including a representative set of SPARQL 1.1. operators. Additionally, the folder contains [11 simple queries](https://github.com/oeg-upm/gtfs-bench/tree/master/queries/simple) that will help to test the basic capabilities of virtual KG construction engines (i.e., to understand if the engine is able to translate correctly the SPARQL operators over different GTFS distributions before starting to test performance and scalability).\n \nOur experiences testing (virtual) knowledge graph engines have revealed the difficulties for setting up an infrastructure where many variables and resources are involved: databases, raw data, mappings, queries, data paths, mapping paths, databases connections, etc. For that reason, and in order to facilitate the use of the benchmark to any developer or practitioner, we provide a set of [utils](https://github.com/oeg-upm/gtfs-bench/tree/master/utils) such as docker-compose templates or evaluation bash scripts that, in our opinion, can reduce the time for preparing the testing set up.\n \n",
+            "excerpt": "Additionally to the generator engine, that provides the data at desirable scales and distributions, together with corresponding mappings and queries, there are also common resources openly available to be modified or used by any practicioner or developer: \n- Folder [mappings](https://github.com/oeg-upm/gtfs-bench/tree/master/mappings) contains RML mappings for CSV, XML, JSON and RDB distributions of the input GTFS dataset, R2RML mapping for RDB and xR2RML mapping for MongoDB. It also includes CSVW annotations for the CSV distributions.\n- Folder [queries](https://github.com/oeg-upm/gtfs-bench/tree/master/queries) includes 18 queries with different levels of complexity including a representative set of SPARQL 1.1. operators. Additionally, the folder contains [11 simple queries](https://github.com/oeg-upm/gtfs-bench/tree/master/queries/simple) that will help to test the basic capabilities of virtual KG construction engines (i.e., to understand if the engine is able to translate correctly the SPARQL operators over different GTFS distributions before starting to test performance and scalability).\n \n",
             "confidence": [
                 [
                     0.9879189402205972,
-                    0.929882483835703,
-                    0.9852131600255233
+                    0.9729854358470843
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Resources",
+            "parentHeader": [
+                "The GTFS-Madrid-Bench"
+            ]
+        },
+        {
+            "excerpt": "Our experiences testing (virtual) knowledge graph engines have revealed the difficulties for setting up an infrastructure where many variables and resources are involved: databases, raw data, mappings, queries, data paths, mapping paths, databases connections, etc. For that reason, and in order to facilitate the use of the benchmark to any developer or practitioner, we provide a set of [utils](https://github.com/oeg-upm/gtfs-bench/tree/master/utils) such as docker-compose templates or evaluation bash scripts that, in our opinion, can reduce the time for preparing the testing set up.\n \n",
+            "confidence": [
+                [
+                    0.9936312458924865
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Utils",
-            "parentHeader": "The GTFS-Madrid-Bench"
+            "parentHeader": [
+                "The GTFS-Madrid-Bench"
+            ]
         },
         {
             "excerpt": "We know that there are variables and dimensions that we did not take into account in the current version of the benchmark (e.g., transformation function defined in the mapping rules). If you are interested in collaborate with us in a new version of the benchmark, send us an email or open a new [discussion](https://github.com/oeg-upm/gtfs-bench/discussions)! \n",
             "confidence": [
                 [
-                    0.9523488226709581
+                    0.9654686167667403
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Contribute",
-            "parentHeader": "The GTFS-Madrid-Bench"
+            "parentHeader": [
+                "The GTFS-Madrid-Bench"
+            ]
         },
         {
             "excerpt": "GTFS-Madrid-Bench: A Benchmark for Knowledge Graph Construction Engines",
@@ -48,19 +64,30 @@
             "confidence": [
                 1.0
             ],
-            "technique": "Regular expression"
+            "technique": "Regular expression",
+            "doi": "https://doi.org/10.1016/j.websem.2020.100596"
         },
         {
-            "excerpt": "David Chaves-Fraga, Freddy Priyatna, Andrea Cimmino, Jhon Toledo, Edna Ruckhaus, & Oscar Corcho (2020). GTFS-Madrid-Bench: A benchmark for virtual knowledge graph access in the transport domain. Journal of Web Semantics, 65. [Online](https://doi.org/10.1016/j.websem.2020.100596) \n**Citing GTFS-Madrid-Bench**: If you used GTFS-Madrid-Bench in your work, please cite as: \n",
+            "excerpt": "**Citing GTFS-Madrid-Bench**: If you used GTFS-Madrid-Bench in your work, please cite as: \n",
             "confidence": [
                 [
-                    0.9996438303123169,
                     0.9996353576413408
                 ]
             ],
+            "technique": "Supervised classification"
+        },
+        {
+            "excerpt": "Ontology Engineering Group, October 2019 - Present\n \n",
+            "confidence": [
+                [
+                    0.9677640385174676
+                ]
+            ],
             "technique": "Supervised classification",
-            "originalHeader": "Main Publication:",
-            "parentHeader": "The GTFS-Madrid-Bench"
+            "originalHeader": "Authors",
+            "parentHeader": [
+                "The GTFS-Madrid-Bench"
+            ]
         }
     ],
     "installation": [
@@ -73,7 +100,9 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "Desirable Metrics:",
-            "parentHeader": "The GTFS-Madrid-Bench"
+            "parentHeader": [
+                "The GTFS-Madrid-Bench"
+            ]
         }
     ],
     "longTitle": {
@@ -92,7 +121,7 @@
     },
     "image": [
         {
-            "excerpt": "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master//master/misc/gtfs-demo.gif",
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/misc/gtfs-demo.gif",
             "confidence": [
                 1.0
             ],
@@ -113,7 +142,9 @@
         {
             "originalHeader": "Requirements for the use:",
             "excerpt": "To have locally installed [docker](https://docs.docker.com/engine/install/).\n\nDecide the distributions to be used for your testing. They can be:\n- Standard distributions: data sources are represented in one format (e.g., GTFS-CSV, GTFS-JSON or GTFS-SQL).\n- Custom distributions: each data source is represented in the format selected by the user (e.g., SHAPES in JSON, CALENDAR in CSV, etc.)\n\n",
-            "parentHeader": "The GTFS-Madrid-Bench",
+            "parentHeader": [
+                "The GTFS-Madrid-Bench"
+            ],
             "confidence": [
                 1
             ],
@@ -124,7 +155,9 @@
         {
             "originalHeader": "Requirements for the use:",
             "excerpt": "To have locally installed [docker](https://docs.docker.com/engine/install/).\n\nDecide the distributions to be used for your testing. They can be:\n- Standard distributions: data sources are represented in one format (e.g., GTFS-CSV, GTFS-JSON or GTFS-SQL).\n- Custom distributions: each data source is represented in the format selected by the user (e.g., SHAPES in JSON, CALENDAR in CSV, etc.)\n\n",
-            "parentHeader": "The GTFS-Madrid-Bench",
+            "parentHeader": [
+                "The GTFS-Madrid-Bench"
+            ],
             "confidence": [
                 1
             ],
@@ -160,7 +193,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-03-10T08:00:04Z",
+        "excerpt": "2022-04-07T07:30:51Z",
         "confidence": [
             1.0
         ],
@@ -181,7 +214,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/gtfs-bench/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/gtfs-bench/issues",
         "confidence": [
             1.0
         ],
@@ -219,7 +252,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 12,
-            "date": "Tue, 05 Apr 2022 09:11:02 GMT"
+            "date": "Thu, 28 Apr 2022 10:56:56 GMT"
         },
         "confidence": [
             1.0
@@ -229,7 +262,7 @@
     "forksCount": {
         "excerpt": {
             "count": 10,
-            "date": "Tue, 05 Apr 2022 09:11:02 GMT"
+            "date": "Thu, 28 Apr 2022 10:56:56 GMT"
         },
         "confidence": [
             1.0
@@ -255,21 +288,34 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/gtfs-bench/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/docker/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/utils/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        },
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/docker/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/gtfs-bench/master/docker/build.sh",
@@ -369,8 +415,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "script"
     }
 }

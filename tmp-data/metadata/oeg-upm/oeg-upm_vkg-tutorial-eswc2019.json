@@ -9,7 +9,9 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "Generating and querying (Virtual) Knowledge Graphs from heterogeneous data sources",
-            "parentHeader": "VKG2019"
+            "parentHeader": [
+                "VKG2019"
+            ]
         },
         {
             "excerpt": "Material for VKG2019 tutorial at ESWC2019",
@@ -86,7 +88,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/vkg-tutorial-eswc2019/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/vkg-tutorial-eswc2019/issues",
         "confidence": [
             1.0
         ],
@@ -123,7 +125,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 5,
-            "date": "Tue, 05 Apr 2022 09:33:04 GMT"
+            "date": "Thu, 28 Apr 2022 11:03:37 GMT"
         },
         "confidence": [
             1.0
@@ -133,7 +135,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:33:04 GMT"
+            "date": "Thu, 28 Apr 2022 11:03:37 GMT"
         },
         "confidence": [
             1.0
@@ -157,12 +159,24 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/vkg-tutorial-eswc2019/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/morph-csv/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/vkg-tutorial-eswc2019/master/Helio/decompress.sh",

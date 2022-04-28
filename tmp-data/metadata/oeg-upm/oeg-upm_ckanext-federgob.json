@@ -208,7 +208,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 27 Apr 2022 13:13:04 GMT"
+            "date": "Thu, 28 Apr 2022 10:55:18 GMT"
         },
         "confidence": [
             1.0
@@ -218,7 +218,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Wed, 27 Apr 2022 13:13:04 GMT"
+            "date": "Thu, 28 Apr 2022 10:55:18 GMT"
         },
         "confidence": [
             1.0
@@ -247,9 +247,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import ckanext-federgob"
     }
 }

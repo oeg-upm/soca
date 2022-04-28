@@ -15,22 +15,6 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://codecov.io/gh/oeg-upm/subject_column_election/branch/master/graph/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://semaphoreci.com/api/v1/ahmad88me/subject_column_election/branches/master/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/subject_column_election",
         "confidence": [
@@ -91,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/subject_column_election/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/subject_column_election/issues",
         "confidence": [
             1.0
         ],
@@ -114,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:29:32 GMT"
+            "date": "Thu, 28 Apr 2022 11:06:23 GMT"
         },
         "confidence": [
             1.0
@@ -124,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:29:32 GMT"
+            "date": "Thu, 28 Apr 2022 11:06:23 GMT"
         },
         "confidence": [
             1.0
@@ -150,21 +134,24 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/subject_column_election/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/subject_column_election/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/subject_column_election/master/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/subject_column_election/master/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/subject_column_election/master/run_docker.sh",
@@ -175,8 +162,5 @@
             1.0
         ],
         "technique": "File Exploration"
-    },
-    "inspect4py": {
-        "software_type": "service"
     }
 }

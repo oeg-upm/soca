@@ -89,7 +89,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 27 Apr 2022 12:20:28 GMT"
+            "date": "Thu, 28 Apr 2022 10:56:53 GMT"
         },
         "confidence": [
             1.0
@@ -99,7 +99,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Wed, 27 Apr 2022 12:20:28 GMT"
+            "date": "Thu, 28 Apr 2022 10:56:53 GMT"
         },
         "confidence": [
             1.0
@@ -128,9 +128,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import agora-gw"
     }
 }

@@ -1,41 +1,13 @@
 {
-    "description": [
-        {
-            "excerpt": "An online application to show the distribution of a given class/property pairs of a SPARQL endpoint \n",
-            "confidence": [
-                [
-                    0.9532646737486324
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Property Cake"
-        },
-        {
-            "excerpt": "An online application to show the distribution of a given class/property pairs of a SPARQL endpoint ",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
     "longTitle": {
-        "excerpt": "Property Cake",
+        "excerpt": "mappingpedia-engine-executions-ws",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://raw.githubusercontent.com/oeg-upm/pcake/master/property_distribution.png?raw=true",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/pcake",
+        "excerpt": "https://github.com/oeg-upm/mappingpedia-engine-executions-ws",
         "confidence": [
             1.0
         ],
@@ -56,14 +28,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2018-06-27T17:21:59Z",
+        "excerpt": "2018-06-12T15:03:39Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-01-20T19:22:49Z",
+        "excerpt": "2018-09-11T13:49:46Z",
         "confidence": [
             1.0
         ],
@@ -80,46 +52,35 @@
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "pcake",
+        "excerpt": "mappingpedia-engine-executions-ws",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/pcake",
+        "excerpt": "oeg-upm/mappingpedia-engine-executions-ws",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/pcake/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-engine-executions-ws/issues",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/pcake/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-engine-executions-ws/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/pcake/releases",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "topics": {
-        "excerpt": [
-            "distribution",
-            "sparql",
-            "visualization"
-        ],
+        "excerpt": "https://github.com/oeg-upm/mappingpedia-engine-executions-ws/releases",
         "confidence": [
             1.0
         ],
@@ -127,8 +88,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 1,
-            "date": "Tue, 05 Apr 2022 09:27:10 GMT"
+            "count": 0,
+            "date": "Thu, 28 Apr 2022 10:59:51 GMT"
         },
         "confidence": [
             1.0
@@ -137,8 +98,8 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 0,
-            "date": "Tue, 05 Apr 2022 09:27:10 GMT"
+            "count": 1,
+            "date": "Thu, 28 Apr 2022 10:59:51 GMT"
         },
         "confidence": [
             1.0
@@ -147,8 +108,7 @@
     },
     "languages": {
         "excerpt": [
-            "Python",
-            "HTML"
+            "Java"
         ],
         "confidence": [
             1.0
@@ -163,13 +123,10 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/pcake/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/mappingpedia-engine-executions-ws/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "library"
     }
 }

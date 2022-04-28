@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "This repository describes how to do a mapping between [OWL](https://www.w3.org/TR/2004/REC-owl-guide-20040210/) and [OpenAPI Specification (OAS)](http://spec.openapis.org/oas/v3.0.3). \n",
+            "confidence": [
+                [
+                    0.9403577130184724
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Mapping-OWL to OpenAPI Specification (OAS)"
+        },
+        {
             "excerpt": "A repository for describing the mapping between OWL and OAS",
             "confidence": [
                 1.0
@@ -15,6 +25,16 @@
         ],
         "technique": "Regular expression"
     },
+    "documentation": [
+        {
+            "excerpt": "https://owl-to-oas.readthedocs.io/",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "readthedocs"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/OWL-To-OAS-Specification",
         "confidence": [
@@ -75,7 +95,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/OWL-To-OAS-Specification/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/OWL-To-OAS-Specification/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +118,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:26:59 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:02 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +128,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:26:59 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:02 GMT"
         },
         "confidence": [
             1.0
@@ -123,7 +143,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/OWL-To-OAS-Specification/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/OWL-To-OAS-Specification/master/README.md",
         "confidence": [
             1.0
         ],
@@ -132,6 +152,18 @@
     "hasDocumentation": {
         "excerpt": [
             "https://github.com/oeg-upm/OWL-To-OAS-Specification/tree/master/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "https://w3id.org/example",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/OWL-To-OAS-Specification/master/examples/example.ttl"
+            }
         ],
         "confidence": [
             1.0

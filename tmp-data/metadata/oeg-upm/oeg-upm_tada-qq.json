@@ -18,30 +18,6 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "[![Build Status](https://ahmad88me.semaphoreci.com/badges/tada-qq/branches/master.svg)](https://ahmad88me.semaphoreci.com/projects/tada-qq)\n[![codecov](https://codecov.io/gh/oeg-upm/tada-qq/branch/master/graph/badge.svg?token=I9KKJBPLXY)](https://codecov.io/gh/oeg-upm/tada-qq)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6344539.svg)](https://doi.org/10.5281/zenodo.6344539) \n",
-            "confidence": [
-                [
-                    0.9999999999735394
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "tada-qq"
-        }
-    ],
-    "installation": [
-        {
-            "excerpt": "\n[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)\n[![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)\n[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/) \n",
-            "confidence": [
-                [
-                    0.902239628935452
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "tada-qq"
-        }
-    ],
     "longTitle": {
         "excerpt": "tada-qq",
         "confidence": [
@@ -52,50 +28,6 @@
     "identifier": [
         {
             "excerpt": "https://doi.org/10.5281/zenodo.6344539",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
-    "image": [
-        {
-            "excerpt": "https://img.shields.io/badge/python-3.8-blue.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/python-3.7-blue.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/python-3.6-blue.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://zenodo.org/badge/DOI/10.5281/zenodo.6344539.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://codecov.io/gh/oeg-upm/tada-qq/branch/master/graph/badge.svg?token=I9KKJBPLXY",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://ahmad88me.semaphoreci.com/badges/tada-qq/branches/master.svg",
             "confidence": [
                 1.0
             ],
@@ -162,7 +94,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/tada-qq/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/tada-qq/issues",
         "confidence": [
             1.0
         ],
@@ -185,7 +117,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:30:00 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:25 GMT"
         },
         "confidence": [
             1.0
@@ -195,7 +127,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:30:00 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:25 GMT"
         },
         "confidence": [
             1.0
@@ -220,7 +152,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/tada-qq/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/tada-qq/master/README.md",
         "confidence": [
             1.0
         ],
@@ -238,6 +170,19 @@
     },
     "releases": {
         "excerpt": [
+            {
+                "tagName": "v2.1.0",
+                "name": "v2.1.0",
+                "authorName": "ahmad88me",
+                "authorType": "User",
+                "body": "* Add Clusterer. Which cluster closely related numeric properties.\r\n* Add SlabMer. This class uses the clusterer to improve semantic labelling\r\n* Relevant tests are added",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/tarball/v2.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/zipball/v2.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/tada-qq/releases/tag/v2.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/tada-qq/releases/63837072",
+                "dateCreated": "2022-04-05T12:24:05Z",
+                "datePublished": "2022-04-07T09:01:39Z"
+            },
             {
                 "tagName": "v2.0.3",
                 "name": "v2.0.3",
@@ -295,8 +240,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "library"
     }
 }

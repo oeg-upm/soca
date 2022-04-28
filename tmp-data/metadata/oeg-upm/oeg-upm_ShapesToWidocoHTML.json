@@ -75,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/ShapesToWidocoHTML/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/ShapesToWidocoHTML/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:28:06 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:31 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:28:06 GMT"
+            "date": "Thu, 28 Apr 2022 11:12:31 GMT"
         },
         "confidence": [
             1.0
@@ -137,13 +137,22 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ShapesToWidocoHTML/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/ShapesToWidocoHTML/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "service"
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://iot.linkeddata.es/def/wot#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/ShapesToWidocoHTML/master/templates/ontology.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

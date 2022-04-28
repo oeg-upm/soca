@@ -1,7 +1,17 @@
 {
     "description": [
         {
-            "excerpt": "A simple flask service for the Software Metadata Extraction Framework",
+            "excerpt": "| Ontology        | Mapping           \n| ------------- |:-------------:| \n| Class     | TriplesMap + Simple PredicateObjectMap (rdf:type, class) | \n| Data Property     | Simple PredicateObjectMap in the TriplesMap corresponding to the class defined in the domain of the property      | \n| Object Property | Join PredicateObjectMap in the TriplesMap corresponding to the class defined in the domain of the property and where the parentTriplesMap is the TriplesMap corresponding to the class defined in the range of the property | \n \n",
+            "confidence": [
+                [
+                    0.9351811587794558
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Transforming your ontology to YARRRML mappings"
+        },
+        {
+            "excerpt": "Basic script that extracts information from the ontology to generate a YARRRML draft",
             "confidence": [
                 1.0
             ],
@@ -9,14 +19,27 @@
         }
     ],
     "longTitle": {
-        "excerpt": "SOMEF-server",
+        "excerpt": "Transforming your ontology to YARRRML mappings",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
+    "run": [
+        {
+            "originalHeader": "How to execute it",
+            "excerpt": "In order to avoid problems, we recommend that the input ontology follows RDF/XML syntax\n\n```python\npython3 -m pip install -r requirements.txt\npython3 translate.py -i ontology.xml -o mapping.yml\n```\n",
+            "parentHeader": [
+                "Transforming your ontology to YARRRML mappings"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/SOMEF-server",
+        "excerpt": "https://github.com/oeg-upm/owl2yarrrml",
         "confidence": [
             1.0
         ],
@@ -37,14 +60,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2021-03-15T17:59:03Z",
+        "excerpt": "2020-10-16T11:40:57Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2021-03-15T18:12:56Z",
+        "excerpt": "2022-03-28T11:32:26Z",
         "confidence": [
             1.0
         ],
@@ -61,35 +84,35 @@
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "SOMEF-server",
+        "excerpt": "owl2yarrrml",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/SOMEF-server",
+        "excerpt": "oeg-upm/owl2yarrrml",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/SOMEF-server/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/owl2yarrrml/issues",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/SOMEF-server/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/owl2yarrrml/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/SOMEF-server/releases",
+        "excerpt": "https://github.com/oeg-upm/owl2yarrrml/releases",
         "confidence": [
             1.0
         ],
@@ -97,8 +120,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 0,
-            "date": "Tue, 05 Apr 2022 09:29:19 GMT"
+            "count": 3,
+            "date": "Thu, 28 Apr 2022 11:16:51 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +131,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:29:19 GMT"
+            "date": "Thu, 28 Apr 2022 11:16:51 GMT"
         },
         "confidence": [
             1.0
@@ -117,8 +140,7 @@
     },
     "languages": {
         "excerpt": [
-            "Python",
-            "HTML"
+            "Python"
         ],
         "confidence": [
             1.0
@@ -133,13 +155,31 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/SOMEF-server/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/owl2yarrrml/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "service"
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v1.0",
+                "name": "v1.0",
+                "authorName": "dachafra",
+                "authorType": "User",
+                "body": "First version of the translator",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/owl2yarrrml/tarball/v1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/owl2yarrrml/zipball/v1.0",
+                "htmlUrl": "https://github.com/oeg-upm/owl2yarrrml/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/oeg-upm/owl2yarrrml/releases/52134961",
+                "dateCreated": "2021-10-27T12:11:51Z",
+                "datePublished": "2021-10-27T12:15:14Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
     }
 }

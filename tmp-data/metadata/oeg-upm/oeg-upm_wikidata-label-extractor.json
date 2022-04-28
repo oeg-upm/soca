@@ -86,7 +86,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/wikidata-label-extractor/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/wikidata-label-extractor/issues",
         "confidence": [
             1.0
         ],
@@ -109,7 +109,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:35:31 GMT"
+            "date": "Thu, 28 Apr 2022 11:21:49 GMT"
         },
         "confidence": [
             1.0
@@ -119,7 +119,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:35:31 GMT"
+            "date": "Thu, 28 Apr 2022 11:21:49 GMT"
         },
         "confidence": [
             1.0
@@ -139,21 +139,24 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/wikidata-label-extractor/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/wikidata-label-extractor/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/wikidata-label-extractor/main/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/wikidata-label-extractor/main/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/wikidata-label-extractor/main/get.sh",
@@ -163,8 +166,5 @@
             1.0
         ],
         "technique": "File Exploration"
-    },
-    "inspect4py": {
-        "software_type": "script"
     }
 }

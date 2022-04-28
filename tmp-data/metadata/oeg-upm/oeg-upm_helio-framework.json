@@ -66,7 +66,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/helio-framework/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/helio-framework/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:11:42 GMT"
+            "date": "Thu, 28 Apr 2022 11:03:22 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:11:42 GMT"
+            "date": "Thu, 28 Apr 2022 11:03:22 GMT"
         },
         "confidence": [
             1.0
@@ -133,7 +133,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/helio-framework/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/helio-framework/master/README.md",
         "confidence": [
             1.0
         ],

@@ -1,19 +1,11 @@
 {
     "description": [
         {
-            "excerpt": "This repository contains the files generated for the development of the btn100 ontology. This ontology aims to represent the Spanish Topographic Base (1:100.000 scale) from the [Spanish Institute for Geographic Information](http://www.ign.es/web/ign/portal).  \n",
+            "excerpt": "This repository contains the files generated for the development of the btn100 ontology. This ontology aims to represent the Spanish Topographic Base (1:100.000 scale) from the [Spanish Institute for Geographic Information](http://www.ign.es/web/ign/portal).  \nThe ontology file is provided as [btn100.owl](https://github.com/oeg-upm/ontology-BTN100/blob/master/btn100.owl) and it is published at [https://datos.ign.es/def/btn100](https://datos.ign.es/def/btn100). In addition, the geo-core ontology file, which represents geographic objects and is used as the core of the btn100 ontology, is provided as [geo_core.owl](https://github.com/oeg-upm/ontology-BTN100/blob/master/geo_core.owl) and it is published at [https://datos.ign.es/def/geo_core](https://datos.ign.es/def/geo_core). \nThe directories of this repository are structured as follows:\n- OnToology contains the ontology documentation files for btn100 and geo-core.\n- Diagrams contains the diagrams for the ontologies and the skos thesauri.\n- Requirements contains the Excel file which contains the requirements which are represented by the ontology.\n- Thesaurus contains the skos thesauri files in ttl format.  \n",
             "confidence": [
                 [
-                    0.9868498216486921
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "btn100-ontology"
-        },
-        {
-            "excerpt": "The directories of this repository are structured as follows:\n- OnToology contains the ontology documentation files for btn100 and geo-core.\n- Diagrams contains the diagrams for the ontologies and the skos thesauri.\n- Requirements contains the Excel file which contains the requirements which are represented by the ontology.\n- Thesaurus contains the skos thesauri files in ttl format.  \n",
-            "confidence": [
-                [
+                    0.9826620308061775,
+                    0.9778033821506558,
                     0.9463664674090287
                 ]
             ],
@@ -85,7 +77,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/ontology-BTN100/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/ontology-BTN100/issues",
         "confidence": [
             1.0
         ],
@@ -108,7 +100,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:23:49 GMT"
+            "date": "Thu, 28 Apr 2022 10:56:48 GMT"
         },
         "confidence": [
             1.0
@@ -118,7 +110,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:23:49 GMT"
+            "date": "Thu, 28 Apr 2022 10:56:48 GMT"
         },
         "confidence": [
             1.0
@@ -136,10 +128,50 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ontology-BTN100/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/ontology-BTN100/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "https://datos.ign.es/def/geo_core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/ontology-BTN100/master/geo_core.owl"
+            },
+            {
+                "uri": "https://datos.ign.es/def/btn100",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/ontology-BTN100/master/btn100.owl"
+            },
+            {
+                "uri": "https://datos.ign.es/def/geo_core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/ontology-BTN100/master/OnToology/geo_core.owl/documentation/ontology.nt"
+            },
+            {
+                "uri": "https://datos.ign.es/def/geo_core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/ontology-BTN100/master/OnToology/geo_core.owl/documentation/ontology.xml"
+            },
+            {
+                "uri": "https://datos.ign.es/def/geo_core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/ontology-BTN100/master/OnToology/geo_core.owl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "https://datos.ign.es/def/btn100",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/ontology-BTN100/master/OnToology/btn100.owl/documentation/ontology.nt"
+            },
+            {
+                "uri": "https://datos.ign.es/def/btn100",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/ontology-BTN100/master/OnToology/btn100.owl/documentation/ontology.xml"
+            },
+            {
+                "uri": "https://datos.ign.es/def/btn100",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/ontology-BTN100/master/OnToology/btn100.owl/documentation/ontology.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

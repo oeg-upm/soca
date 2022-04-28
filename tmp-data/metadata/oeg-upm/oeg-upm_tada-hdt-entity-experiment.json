@@ -8,17 +8,6 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "[![Build Status](https://semaphoreci.com/api/v1/ahmad88me/tada-hdt-entity-experiment/branches/master/badge.svg)](https://semaphoreci.com/ahmad88me/tada-hdt-entity-experiment)\n[![codecov](https://codecov.io/gh/oeg-upm/tada-hdt-entity-experiment/branch/master/graph/badge.svg)](https://codecov.io/gh/oeg-upm/tada-hdt-entity-experiment)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3732641.svg)](https://doi.org/10.5281/zenodo.3732641) \n",
-            "confidence": [
-                [
-                    0.9999999999996874
-                ]
-            ],
-            "technique": "Supervised classification"
-        }
-    ],
     "longTitle": {
         "excerpt": "tada-hdt-entity-experiment",
         "confidence": [
@@ -29,29 +18,6 @@
     "identifier": [
         {
             "excerpt": "https://doi.org/10.5281/zenodo.3732641",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
-    "image": [
-        {
-            "excerpt": "https://zenodo.org/badge/DOI/10.5281/zenodo.3732641.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://codecov.io/gh/oeg-upm/tada-hdt-entity-experiment/branch/master/graph/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://semaphoreci.com/api/v1/ahmad88me/tada-hdt-entity-experiment/branches/master/badge.svg",
             "confidence": [
                 1.0
             ],
@@ -118,7 +84,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/tada-hdt-entity-experiment/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/tada-hdt-entity-experiment/issues",
         "confidence": [
             1.0
         ],
@@ -152,7 +118,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:29:53 GMT"
+            "date": "Thu, 28 Apr 2022 11:11:07 GMT"
         },
         "confidence": [
             1.0
@@ -162,7 +128,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:29:53 GMT"
+            "date": "Thu, 28 Apr 2022 11:11:07 GMT"
         },
         "confidence": [
             1.0
@@ -190,21 +156,24 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/tada-hdt-entity-experiment/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/tada-hdt-entity-experiment/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/tada-hdt-entity-experiment/master/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/tada-hdt-entity-experiment/master/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/tada-hdt-entity-experiment/master/scripts/setup.sh",
@@ -264,8 +233,5 @@
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "script"
     }
 }

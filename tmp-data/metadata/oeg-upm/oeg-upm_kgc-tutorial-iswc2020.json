@@ -4,12 +4,14 @@
             "excerpt": "Despite the emergence of RDF knowledge bases, exposed via SPARQL endpoints or as Linked Data, formats like CSV, JSON or XML are still the most used for exposing data on the web. Some solutions have been proposed to describe and integrate these resources using declarative mapping languages (e.g. RML, CSVW, KR2RML, etc) and many of those are equipped with associated RDF generators (e.g. RMLMapper, CSVW generator, etc). The use of these technologies enables the construction of knowledge graphs in a declarative way. However, they have a steep learning curve for new users. Our aim in this tutorial is, from a practical perspective, to explain in detail the process of constructing knowledge graphs, from writing mappings to their use with suitable tools. First, we describe the mapping structure and a tool to ease writing mappings, [Mapeathor](https://morph.oeg.fi.upm.es/demo/mapeathor), showing the main guidelines for attendants to create their own mappings. Then, we present Morph-CSV, a framework for virtual knowledge graph access over tabular data. Finally, we present [Helio](http://helio.linkeddata.es/), a generator from heterogeneous data sources and publisher of Linked Data that provides unified access in real-time. \n",
             "confidence": [
                 [
-                    0.9982339377908626
+                    0.9984733578774424
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Knowledge Graph Construction Using Declarative Mapping Rules",
-            "parentHeader": "KGC2020"
+            "parentHeader": [
+                "KGC2020"
+            ]
         },
         {
             "excerpt": "Material for KGC2020 tutorial at ISWC2020",
@@ -86,7 +88,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/kgc-tutorial-iswc2020/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/kgc-tutorial-iswc2020/issues",
         "confidence": [
             1.0
         ],
@@ -109,7 +111,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 5,
-            "date": "Tue, 05 Apr 2022 09:12:52 GMT"
+            "date": "Thu, 28 Apr 2022 11:10:27 GMT"
         },
         "confidence": [
             1.0
@@ -119,7 +121,7 @@
     "forksCount": {
         "excerpt": {
             "count": 5,
-            "date": "Tue, 05 Apr 2022 09:12:52 GMT"
+            "date": "Thu, 28 Apr 2022 11:10:27 GMT"
         },
         "confidence": [
             1.0
@@ -145,12 +147,25 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/kgc-tutorial-iswc2020/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/kgc-tutorial-iswc2020/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/kgc-tutorial-iswc2020/master/helio/helio-3-plugin/morph-csv-dump/docker-compose.yml",
+                "https://raw.githubusercontent.com/oeg-upm/kgc-tutorial-iswc2020/master/morph-csv/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/kgc-tutorial-iswc2020/master/helio/pre-process.sh",
