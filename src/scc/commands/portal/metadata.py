@@ -349,13 +349,19 @@ class metadata(object):
         return None
          
     def usage(self):
-        usage = safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
+        usage_list = safe_dic(self.md,'usage')
+        usage = None
+        if usage_list:
+            usage = ''
+            for u in usage_list:
+                usage += u['excerpt'] + '\n'
+                
         run_list = safe_dic(safe_dic(self.md,'inspect4py'),'run')
         if run_list:
             if isinstance(run_list, list):
                 run = '\n'.join([ f'* {x}' for x in run_list])
             else: run =  run_list
-            run_md = '### How to use it  \n' + run
+            run_md = '---\n  ### How to use it  \n' + run
 
         else: run_md = ''
 
