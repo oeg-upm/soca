@@ -1,5 +1,7 @@
 import pathlib, sys, os
 
+__version__ = "0.0.1"
+
 # Project base path
 base_dir = str(pathlib.Path(__file__).parent.resolve())
 

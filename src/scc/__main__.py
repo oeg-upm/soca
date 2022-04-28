@@ -1,8 +1,10 @@
 import click
+from . import __version__
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
 @click.group(context_settings=CONTEXT_SETTINGS)
+@click.version_option(__version__)
 def cli():
     """
     SCC (Software Catalog Creator)\n
@@ -53,3 +55,4 @@ def card(input, output, save_as):
     """Create a stand-alone card ready to be embedded in a website"""
     from scc.commands import single_card
     single_card.create(input, output, save_as)
+
