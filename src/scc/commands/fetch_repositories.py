@@ -2,19 +2,19 @@ import os
 import requests
 import csv
 
-def fetch(input, output, type):
+def fetch(input, output, type, not_archived):
 
     open(output, 'w')
 
     if os.path.isfile(input):
         with open(input) as org_list:
             for org in org_list.readlines():
-                _fetch(org.rstrip("\n"), output, type)
+                _fetch(org.rstrip("\n"), output, type, not_archived)
     else:
-        _fetch(input, output, type)
+        _fetch(input, output, type, not_archived)
 
 
-def _fetch(name, out_path, type):
+def _fetch(name, out_path, type, not_archived):
 
     if type not in ['orgs','users']:
         raise ValueError(f'Type {type} is not supported.')
@@ -38,7 +38,8 @@ def _fetch(name, out_path, type):
                 page += 1
                 PARAMS['page'] = page
                 for repo in data_repos:
-                    writer.writerow([repo["html_url"]])
+                    if not not_archived or not repo["archived"]:
+                        writer.writerow([repo["html_url"]])
 
                 if len(data_repos) < 50:
                     cont = False

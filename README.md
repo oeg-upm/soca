@@ -14,7 +14,7 @@ Click [here](https://dakixr.github.io/scc/example/index.html) to see an interact
 Command used:  
 
 ```text
-scc fetch -i oeg-upm --org -o oeg-upm_repos.csv &&
+scc fetch -i oeg-upm --org -o oeg-upm_repos.csv -na &&
 scc extract -i oeg-upm_repos.csv -o oeg-upm_metadata -i4p &&
 scc portal -i oeg-upm_metadata -o oeg-upm_portal
 ```
@@ -89,6 +89,8 @@ First thing to do is gather all repositories pointers that we want to use. We'll
   -o, --output <path>         Output csv file  [default: repos.csv]
   --org                       Extracting from a organization  [default: True]
   --user                      Extracting from a user  [default: False]
+  -na, --not_archived         Fetch only repos that are not archived
+                              [default: False]
   -h, --help                  Show this message and exit.
 ```
 
@@ -96,13 +98,13 @@ Is important to determine if the name belongs to a user or a organization by usi
 
 Example:  
 `scc fetch -i dakixr --user`  
-`scc fetch -i oeg-upm --org -o oeg-upm_repos.csv`  
+`scc fetch -i oeg-upm --org -o oeg-upm_repos.csv --not_archived`  
 
 This command also accepts a file as input (names separated by a new-line) for ingesting multiple names at a time.  
 
 Example:  
 `scc fetch -i multiple-users.csv --user -o multiple-users_repos.csv`  
-`scc fetch -i multiple-orgs.csv --org -o multiple-orgs_repos.csv`  
+`scc fetch -i multiple-orgs.csv --org -o multiple-orgs_repos.csv --not_archived`  
 
 The output of this command is a csv file with all the repos of the selected users/orgs.
 At this moment is a good time to clean this file (remove all repos that you don't want to use).
