@@ -35,10 +35,11 @@ def fetch(input, output, repo_type, not_archived):
 @click.option('--input','-i', required=True, help="Pointers to the repositories in csv format", metavar='<csv-repos>')
 @click.option('--output','-o', default="repos-metadata", help="Dir where repositories metadata will be saved", metavar='<path>')
 @click.option('--inspect4py','-i4p', is_flag=True, help="Use inspect4py to extract additional metadata from Python repositories")
-def extract(input, output, inspect4py):
+@click.option('--verbose','-v', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not archived")
+def extract(input, output, inspect4py, verbose):
     """Fetch and save metadata from introduced repos"""
     from scc.commands import extract_metadata
-    extract_metadata.fetch(input, output, inspect4py)
+    extract_metadata.fetch(input, output, inspect4py, verbose)
 
 @cli.command()
 @click.option('--input','-i', required=True, help="Dir repositories metadata in json format", metavar='<dir-json-metadata>')
