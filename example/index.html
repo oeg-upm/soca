@@ -6,7 +6,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="cards_data.json" type="text/javascript"></script>
-<title>SCC</title>
+<title>Software Catalog</title>
+<link href="img/scc-logo.ico" rel="icon" type="image/x-icon"/>
 <link href="styles.css" rel="stylesheet"/>
 <link href="scc-card.css" rel="stylesheet"/>
 </head>
@@ -64,17 +65,17 @@
 <footer>
 <div style="height: 4rem; display: flex; flex-direction: column; justify-content: center; font-size: 14px;">
 <p id="portal-last-updated">Last updated on 28/04/2022</p>
-<p>Built with <a href="https://github.com/dakixr/scc" target="_blank">scc</a></p>
+<p>Built with <a href="https://github.com/oeg-upm/scc/" target="_blank">scc</a></p>
 </div>
 <div style="height: 4rem; flex-direction: row;">
 <a class="footer-img" href="http://fi.upm.es/" target="_blank"><img alt="FI logo" class="footer-img" src="img/fi_logo.png"/></a>
 <a class="footer-img" href="https://www.upm.es/" target="_blank"><img alt="UPM logo" class="footer-img" src="img/upm_logo.png"/></a>
-<a class="footer-img" href="https://github.com/dakixr/scc" target="_blank"><img alt="SCC" class="footer-img" src="img/scc-logo.png"/></a>
+<a class="footer-img" href="https://github.com/oeg-upm/scc/" target="_blank"><img alt="SCC" class="footer-img" src="img/scc-logo.png"/></a>
 <a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
 </div>
 </footer>
 <script>
-function add_copy_card(){btns = document.getElementsByClassName('copy-btn');for (let index = 0; index < btns.length; index++) {const element = btns[index];element.addEventListener('click', function () {console.log('copy btn!');for (let index = 0; index < cards.length; index++) {const card = cards[index];if(card.id == $(this).val()){navigator.clipboard.writeText(card.html_card_embedded);break;}}});}};
+function add_copy_card(){btns = document.getElementsByClassName('copy-btn');for (let index = 0; index < btns.length; index++) {const element = btns[index];element.addEventListener('click', function () {console.log('copy btn!');for (let index = 0; index < cards.length; index++) {const card = cards[index];if(card.id == $(this).val()){navigator.clipboard.writeText(card.html_card_embedded);break;}}});}btns = document.getElementsByClassName('copy-citation-btn');for (let index = 0; index < btns.length; index++) {const element = btns[index];element.addEventListener('click', function () {console.log('copy citation btn!');for (let index = 0; index < cards.length; index++) {const card = cards[index];if(card.id == $(this).val()){navigator.clipboard.writeText(card.citationText);break;}}});}};
 function add_tooltip(){$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});};
 function add_modals() {cards_icons_list = document.getElementsByClassName('ref-repo-icons');for(const cards_icons of cards_icons_list){for(const card_icon of cards_icons.children){const icon = card_icon.getElementsByClassName('icon')[0];const modal = card_icon.getElementsByClassName('modal')[0];const modal_content = card_icon.getElementsByClassName('modal-content')[0];const span_close = card_icon.getElementsByClassName('close')[0];if (modal != undefined){icon.addEventListener('click', () => { modal.classList.add('modal-on');});span_close.addEventListener('click', () => { modal.classList.remove('modal-on');});modal_content.addEventListener('click', (event) => { event.stopPropagation();});modal.addEventListener('click', () => { modal.classList.remove('modal-on');});}}const license = cards_icons.getElementsByClassName('ref-license')[0];if (license != undefined) {license.addEventListener('click', () => { getGithub(license);});}}const descriptions = document.getElementsByClassName('description');[].forEach.call(descriptions, function (description) {if (isOverflown(description)) {description.style.cursor="pointer";const modal = description.getElementsByClassName('modal')[0];const modal_content = description.getElementsByClassName('modal-content')[0];const span_close = description.getElementsByClassName('close')[0];if (modal != undefined){description.addEventListener('click', () => { modal.classList.add('modal-on');});span_close.addEventListener('click', () => { modal.classList.remove('modal-on');});modal_content.addEventListener('click', (event) => { event.stopPropagation();});modal.addEventListener('click', (event) => { modal.classList.remove('modal-on');event.stopPropagation();});}}});}function isOverflown(element) {return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;}function addList(element, iterable){var list = document.createElement("ol");for (let i of iterable) {let item = document.createElement("li");item.innerHTML = i.charAt(0).toUpperCase() + i.slice(1);list.appendChild(item);}element.innerHTML = '';element.appendChild(list);}async function getGithub(license){if (license.dataset.url != 'None'){const response = await fetch(license.dataset.url);const response_aux = response.clone();try {const data =  await response.json();const name = license.getElementsByClassName('ref-name')[0];const description = license.getElementsByClassName('ref-description')[0];const permissions = license.getElementsByClassName('ref-permissions')[0];const conditions = license.getElementsByClassName('ref-conditions')[0];const limitations = license.getElementsByClassName('ref-limitations')[0];name.innerHTML = await data.name;description.innerHTML = await data.description;addList(permissions, data.permissions);addList(conditions, data.conditions);addList(limitations, data.limitations);} catch (error) {const description = license.getElementsByClassName('ref-description-aux')[0];description.innerHTML = '<pre style="font-family: monospace;">'+await response_aux.text()+'</pre>';}} else console.log('No license.');}</script>
 <script src="app.js"></script>
