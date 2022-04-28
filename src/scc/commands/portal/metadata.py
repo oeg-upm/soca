@@ -308,26 +308,23 @@ class metadata(object):
         # inspect4py
         ######################
 
-        if 'inspect4py' in self.md:
+        if 'inspect4py' in self.md and "software_type" in self.md["inspect4py"]:
             return self.md["inspect4py"]["software_type"] # package, library, service, script
 
         # web and ontology
         ######################
 
-        langs = self.languages()
         ontology = safe_dic(self.md,'ontologies')
-
-        web_langs = ['html','css','javascript'] 
-        ontology_langs = ['html','css','javascript'] 
-
+        langs = self.languages()
         is_ontology = (ontology is not None)
-        is_web = True
-
-        for lang in langs:
-            if lang not in web_langs:
-                is_web = False
-            if lang not in ontology_langs:
-                is_ontology = False
+        is_web = (langs and 'html' in langs)
+        
+        if langs:
+            for lang in langs:
+                if lang not in ['html','css','javascript']:
+                    is_web = False
+                if lang not in ['html','css','javascript']:
+                    is_ontology = False
 
         if is_ontology:
             return 'ontology'
@@ -341,9 +338,14 @@ class metadata(object):
         usage = safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
         run_list = safe_dic(safe_dic(self.md,'inspect4py'),'run')
         if run_list:
-            run = '\n'.join([ f'* {x}' for x in run_list])
+            if isinstance(run_list, list):
+                run = '\n'.join([ f'* {x}' for x in run_list])
+            else: run =  run_list
             run_md = '### How to run it  \n' + run
+
         else: run_md = ''
+
+        usage = usage if usage else ''
 
         return usage + run_md if usage or run_md else None
 
