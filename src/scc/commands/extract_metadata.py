@@ -9,7 +9,7 @@ import subprocess
 import shutil
 #import traceback
 
-def fetch(repos_csv, output, use_inspect4py):
+def fetch(repos_csv, output, use_inspect4py, verbose):
 
     # Make output dir
     if not os.path.exists(output): 
@@ -27,8 +27,10 @@ def fetch(repos_csv, output, use_inspect4py):
     for repo_url in progressbar(repos_url, redirect_stdout=True):
         try:
             print(f"Extracting metadata from {repo_url}")
-            with HiddenPrints():
-                metadata = cli_get_data(0.9, False, repo_url)
+            if not verbose:
+                with HiddenPrints():
+                    metadata = cli_get_data(0.9, False, repo_url)
+            else: metadata = cli_get_data(0.9, False, repo_url)
             if not metadata:
                 print(f'ERROR: {repo_url} is down, skipping it...')
                 failed_repos.append(repo_url)
