@@ -202,7 +202,7 @@ class metadata(object):
 
                 modal_html = self.modal(
                     title = 'Status',
-                    body = '### Description  \n'+ safe_dic(status,'description') + '#### More information  \n' + f'<{safe_dic(status,"excerpt")}>'))
+                    body = '### Description  \n'+ safe_dic(status,'description') + '\n #### More information  \n' + f'<{safe_dic(status,"excerpt")}>'))
 
         installation = self.installation()
         if installation:
