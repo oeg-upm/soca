@@ -170,7 +170,18 @@ class metadata(object):
                     modal_html = self.modal(
                         title = 'Citation',
                         body = f'<div style="font-family: monospace;">{highlight(citation, ScdocLexer(), formatter)}</div>',
-                        markdown_translation=False))
+                        markdown_translation=False,
+                        extra_html=
+                        f"""
+                        <button 
+                            class="copy-citation-btn" 
+                            value="{self.repo_url()}" 
+                            style="background:url('repo_icons/copy.svg')transparent;background-repeat:no-repeat;background-size:auto;" 
+                            data-toggle="tooltip" 
+                            data-placement="right" 
+                            data-original-title="Copy citation">
+                        </button>
+                        """))
 
         identifier = self.identifier()
         if identifier:
@@ -285,7 +296,7 @@ class metadata(object):
                         {modal_html if modal_html else ''}
                     </div>"""
     
-    def modal(self, title, body, markdown_translation = True):
+    def modal(self, title, body, markdown_translation = True, extra_html = ''):
     
         if markdown_translation:
             body = mistune.html(body)
@@ -293,7 +304,10 @@ class metadata(object):
         return f"""<div class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
-                            <h2 style="margin-bottom: 1rem;">{title}</h2>
+                            <span style="display:flex;">
+                                <h2 style="margin-bottom: 1rem;">{title}</h2>
+                                {extra_html}
+                            </span>
                             <div style="margin-bottom: 1rem; overflow: auto;">{body}</div>
                         </div>
                     </div>"""
@@ -341,7 +355,7 @@ class metadata(object):
             if isinstance(run_list, list):
                 run = '\n'.join([ f'* {x}' for x in run_list])
             else: run =  run_list
-            run_md = '### How to run it  \n' + run
+            run_md = '### How to use it  \n' + run
 
         else: run_md = ''
 

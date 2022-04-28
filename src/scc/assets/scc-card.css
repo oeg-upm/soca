@@ -1,6 +1,8 @@
 .scc-card *{margin:0;box-sizing:border-box;color:#3e3e3e;font-family:Helvetica}
 .scc-card .copy-btn:active{position:relative;top:1px;background-color:#3e3e3e;color:#e0e0e0}
 .scc-card .copy-btn{margin-left: 0.3rem;border:none;height:1.1rem;width:1rem;cursor:pointer;}
+.scc-card .copy-citation-btn:active{position:relative;top:1px;background-color:#3e3e3e;color:#e0e0e0}
+.scc-card .copy-citation-btn{margin-left: 0.3rem;border:none;height:1.1rem;width:1rem;cursor:pointer;}
 .scc-card .tooltip{position:absolute;z-index:1070;display:block;font-style:normal;font-weight:400;line-height:1.42857143;line-break:auto;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;font-size:12px;opacity:0}
 .scc-card .tooltip.in{opacity:.9}
 .scc-card .tooltip.top{padding:5px 0;margin-top:-3px}
