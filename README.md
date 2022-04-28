@@ -136,11 +136,12 @@ This is the last step in the pipeline. For building the portal we need to use th
                                   [required]
   -o, --output <path>             Dir where Software Catalog Portal will be
                                   saved  [default: portal]
+  -t, --title <title>             Portal's title  [default: Software Catalog]
   -h, --help                      Show this message and exit.
 ```
 
 Example:  
-`scc portal -i oeg-upm_metadata -o dir_portal`
+`scc portal -i oeg-upm_metadata -o dir_portal --title '[Portal's title]'`
 
 If everything worked fine now a new dir should have been created with all the assets and code to deploy this portal.
 

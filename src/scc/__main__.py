@@ -44,10 +44,11 @@ def extract(input, output, inspect4py, verbose):
 @cli.command()
 @click.option('--input','-i', required=True, help="Dir repositories metadata in json format", metavar='<dir-json-metadata>')
 @click.option('--output','-o', default="portal", show_default=True, help="Dir where Software Catalog Portal will be saved", metavar='<path>')
-def portal(input, output):
+@click.option('--title','-t', default="Software Catalog", show_default=True, help="Portal's title", metavar='<title>')
+def portal(input, output, title):
     """Build a portal with a minimalistic desing"""
     from scc.commands.portal import portal
-    portal.generate(input, output)
+    portal.generate(input, output, title)
 
 @cli.command()
 @click.option('--input','-i', required=True, help="Repository URL", metavar='<url>')
