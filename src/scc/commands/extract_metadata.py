@@ -7,11 +7,12 @@ import os
 from scc import HiddenPrints
 import subprocess
 import shutil
+#import traceback
 
 def fetch(repos_csv, output, use_inspect4py):
 
     # Make output dir
-    if not os.path.exists(output):
+    if not os.path.exists(output): 
         os.makedirs(output)
     
     if os.path.isfile(repos_csv):
@@ -28,28 +29,35 @@ def fetch(repos_csv, output, use_inspect4py):
             print(f"Extracting metadata from {repo_url}")
             with HiddenPrints():
                 metadata = cli_get_data(0.9, False, repo_url)
+            if not metadata:
+                print(f'ERROR: {repo_url} is down, skipping it...')
+                failed_repos.append(repo_url)
+                continue
         except KeyboardInterrupt:
-            exit()      
+            exit()
         except:
             print(f"ERROR: Could not extract metadata from {repo_url}")
             failed_repos.append(repo_url)
-        
-        if use_inspect4py and 'languages' in metadata and 'Python' in metadata["languages"]["excerpt"]:
+
+        if use_inspect4py and 'languages' in metadata and 'Python' in metadata["languages"]:
             try:
+                metadata["inspect4py"] = {}
                 subprocess.call(
                                     f'cd {output} && git clone {repo_url} && inspect4py -i {str(repo_url).split("/")[-1]} -o inspect4py_tmp -si && cd ..', 
                                     shell = True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
                                 )
-                with open(f'{output}/inspect4py_tmp/directory_info.json') as f:
+                with open(f'{output}inspect4py_tmp/directory_info.json') as f:
                     ins4py = json.load(f)
-                shutil.rmtree(f'{output}/inspect4py_tmp', ignore_errors=False, onerror=None)
-                shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
-                metadata["inspect4py"] = {}
+
                 metadata["inspect4py"]["software_type"] = ins4py["software_type"]
                 metadata["inspect4py"]["run"] = ins4py["software_invocation"][0]["run"]
-            except:
+
+                shutil.rmtree(f'{output}/inspect4py_tmp', ignore_errors=False, onerror=None)
                 shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
-                print(f"ERROR: Could not run inspect4py for {repo_url}")
+            except:
+                #traceback.print_exc()
+                shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
+                print(f"ERROR: Could not run inspect4py for {repo_url}: Error in {'sowftware_type' if 'sowftware_type' not in metadata['inspect4py'] else ''} {'software_invocation' if 'run' not in metadata['inspect4py'] else ''}")
                 failed_repos_i4p.append(repo_url)
 
             
