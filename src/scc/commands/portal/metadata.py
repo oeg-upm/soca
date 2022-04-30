@@ -35,7 +35,8 @@ class metadata(object):
         elif repo_type == 'ontology': 
             ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
             if ontologies:
-                onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
+                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies])))
+                #onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
             return self.icon_wrapper(
                 icon_html = f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">',
                 modal_html= self.modal(
