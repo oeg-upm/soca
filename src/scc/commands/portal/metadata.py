@@ -9,10 +9,12 @@ from pygments import highlight
 from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
 import mistune
+import os
 
 class metadata(object):
 
-    def __init__(self, repo_metadata, embedded = False):
+    def __init__(self, repo_metadata_dir, repo_metadata, embedded = False):
+        self.repo_metadata_dir = os.path.abspath(repo_metadata_dir)
         self.md = repo_metadata
         self.base = 'https://github.com/dakixr/scc/raw/main/src/scc/assets/' if embedded else ''
 
@@ -228,13 +230,13 @@ class metadata(object):
 
         usage = self.usage()
         if usage:
+            has_i4p = safe_dic(safe_dic(self.md,'inspect4py'),'run')
             html += self.icon_wrapper(
                 icon_html = f"""<img src="{self.base}repo_icons/usage.png"  
                         class="repo-icon" 
                         {self.add_tooltip('bottom','Usage')}>""",
-
                 modal_html = self.modal(
-                    title = 'Usage',
+                    title = 'How to use it' if has_i4p and '### How to use it' not in usage else 'Usage' ,
                     body = usage))
 
         help = self.help()
@@ -359,9 +361,9 @@ class metadata(object):
         run_list = safe_dic(safe_dic(self.md,'inspect4py'),'run')
         if run_list:
             if isinstance(run_list, list):
-                run = '\n'.join([ f'* {x}' for x in run_list])
-            else: run =  run_list
-            run_md = '---\n  ### How to use it  \n' + run
+                run = '\n'.join([ f'* {str(x).replace(self.repo_metadata_dir,"")}' for x in run_list])
+            else: run =  run_list.replace(self.repo_metadata_dir,"")
+            run_md = '---\n  ### How to use it  \n' + run if usage else run
 
         else: run_md = ''
 

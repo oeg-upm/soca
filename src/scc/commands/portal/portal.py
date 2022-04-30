@@ -100,7 +100,7 @@ def list_owners(repo_metadata_dir):
         if filename.endswith(".json"): 
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 repo_metadata = json.load(json_metadata)
-                md = metadata.metadata(repo_metadata)
+                md = metadata.metadata(repo_metadata_dir, repo_metadata)
                 owner = md.owner()
                 if owner not in owners:
                     owners.append(owner)
