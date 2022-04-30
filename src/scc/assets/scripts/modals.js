@@ -56,6 +56,27 @@ function add_modals() {
             }
         }
     });
+    const ontologies = document.getElementsByClassName('m_ontology');
+    [].forEach.call(ontologies, function (ontology) {
+            const modal = ontology.getElementsByClassName('modal')[0];
+            const modal_content = ontology.getElementsByClassName('modal-content')[0];
+            const span_close = ontology.getElementsByClassName('close')[0];
+            if (modal != undefined){
+                ontology.addEventListener('click', () => { 
+                    modal.classList.add('modal-on');
+                });
+                span_close.addEventListener('click', () => { 
+                    modal.classList.remove('modal-on');
+                });
+                modal_content.addEventListener('click', (event) => { 
+                    event.stopPropagation();
+                });
+                modal.addEventListener('click', (event) => { 
+                    modal.classList.remove('modal-on');
+                    event.stopPropagation();
+                });
+            }
+    });
     
 }
 

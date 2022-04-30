@@ -33,7 +33,17 @@ class metadata(object):
         if repo_type == 'web': 
             return f'<img src="{self.base}repo_icons/web.png" {self.add_tooltip("left","Website")} alt="repo-type" class="repo-type">'
         elif repo_type == 'ontology': 
-            return f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">'
+            ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
+            if ontologies:
+                onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
+            return self.icon_wrapper(
+                icon_html = f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">',
+                modal_html= self.modal(
+                    title= 'Ontologies',
+                    body= onto_list
+                ),
+                other_field='class="m_ontology"'
+            )
         elif repo_type in ['package','library','service','script']:
             return f'<div class="grey-color-svg" style="display:flex;" {self.add_tooltip("left",f"Python {repo_type}")}><img src="{self.base}language_icons/python.svg" alt="repo-type" class="repo-type"></div>'
         else: return ''
