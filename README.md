@@ -91,6 +91,10 @@ First thing to do is gather all repositories pointers that we want to use. We'll
   --user                      Extracting from a user  [default: False]
   -na, --not_archived         Fetch only repos that are not archived
                               [default: False]
+  -nf, --not_forked           Fetch only repos that are not forked  [default:
+                              False]
+  -nd, --not_disabled         Fetch only repos that are not disabled
+                              [default: False]
   -h, --help                  Show this message and exit.
 ```
 

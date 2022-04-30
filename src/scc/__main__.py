@@ -25,11 +25,13 @@ def cli():
 @click.option('--org', 'repo_type', flag_value='orgs', default=True, show_default=True, help="Extracting from a organization")
 @click.option('--user', 'repo_type', flag_value='users', default=False, show_default=True, help="Extracting from a user")
 @click.option('--not_archived','-na', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not archived")
-def fetch(input, output, repo_type, not_archived):
+@click.option('--not_forked','-nf', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not forked")
+@click.option('--not_disabled','-nd', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not disabled")
+def fetch(input, output, repo_type, not_archived, not_forked, not_disabled):
     """Retreive all organization/s or user/s repositories"""
     from scc.commands import fetch_repositories
     print(not_archived)
-    fetch_repositories.fetch(input, output, repo_type, not_archived)
+    fetch_repositories.fetch(input, output, repo_type, not_archived, not_forked, not_disabled)
 
 @cli.command()
 @click.option('--input','-i', required=True, help="Pointers to the repositories in csv format", metavar='<csv-repos>')
