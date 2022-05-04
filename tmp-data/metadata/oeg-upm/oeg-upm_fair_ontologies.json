@@ -1,6 +1,26 @@
 {
     "description": [
         {
+            "excerpt": "FOOPS! is an application for validating whether a vocabulary (OWL or SKOS) conforms with the FAIR data principles. \n",
+            "confidence": [
+                [
+                    0.9691110304979386
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "OEG FAIR Ontologies Validator"
+        },
+        {
+            "excerpt": "Our [ISWC 2021 demo paper](html_client/assets/iswc_2021_demo.pdf) (**best demo award**) provides an overview of the FOOPS! service. Please cite our work as follows: \nIf you are interested in more information, check [our slides](https://www.slideshare.net/dgarijo/foops-an-ontology-pitfall-scanner-for-the-fair-principles) with the rationale of FOOPS! and the [teaser video](https://www.youtube.com/watch?v=s8FaFl8i6yQ&ab_channel=OEG-UPM) we made for ISWC 2021. \n",
+            "confidence": [
+                [
+                    0.9644959263980283,
+                    0.9670724323569315
+                ]
+            ],
+            "technique": "Supervised classification"
+        },
+        {
             "excerpt": "Code for the OEG FAIR ontologies validator",
             "confidence": [
                 1.0
@@ -21,7 +41,9 @@
         {
             "originalHeader": "Installation instructions",
             "excerpt": "The project was build and tested with JDK 11.0.11 in Ubuntu.\n\nTo create the JAR, just run:\n\n```\nmvn install\n```\non the server folder, or download the JAR from the releases page.\n",
-            "parentHeader": "OEG FAIR Ontologies Validator",
+            "parentHeader": [
+                "OEG FAIR Ontologies Validator"
+            ],
             "confidence": [
                 1
             ],
@@ -35,20 +57,20 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://raw.githubusercontent.com/oeg-upm/fair_ontologies/master/html_client/assets/foopsLogo.png",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
+    "logo": {
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/fair_ontologies/master/html_client/assets/foopsLogo.png",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
     "run": [
         {
             "originalHeader": "Running the server",
             "excerpt": "Run the following command\n\n```\njava -jar -Dserver.port=PORT fair_ontologies-0.0.1.jar\n```\n\nWhere PORT is the port you want to run the server\n\nto test the installation, just do a curl command:\n\n```\ncurl -X POST \"http://localhost:8083/assessOntology\" -H \"accept: application/json;charset=UTF-8\" -H \"Content-Type: application/json;charset=UTF-8\" -d \"{ \\\"ontologyUri\\\": \\\"https://w3id.org/okn/o/sd\\\"}\"\n```\n\nAs a result, you should see a JSON in your console, such as the one in sample.json.\n\n",
-            "parentHeader": "OEG FAIR Ontologies Validator",
+            "parentHeader": [
+                "OEG FAIR Ontologies Validator"
+            ],
             "confidence": [
                 1
             ],
@@ -58,8 +80,10 @@
     "usage": [
         {
             "originalHeader": "Demo",
-            "excerpt": "    publisher    = {CEUR-WS.org},\n    series       = {{CEUR} Workshop Proceedings},\n    volume       = 2980,\n    url          = {http://ceur-ws.org/Vol-2980/paper321.pdf}\n}\n```\nIf you are interested in more information, check [our slides](https://www.slideshare.net/dgarijo/foops-an-ontology-pitfall-scanner-for-the-fair-principles) with the rationale of FOOPS! and the [teaser video](https://www.youtube.com/watch?v=s8FaFl8i6yQ&ab_channel=OEG-UPM) we made for ISWC 2021.\n\nThe client application has been integrated from the work in https://github.com/jacobomata/FairValidator. The client would not have been possible without the work from @jacobomata\n\n## Demo\nA public demo of FOOPS! is available here: [https://w3id.org/foops/](https://w3id.org/foops/)\n",
-            "parentHeader": "OEG FAIR Ontologies Validator",
+            "excerpt": "A public demo of FOOPS! is available here: [https://w3id.org/foops/](https://w3id.org/foops/)\n",
+            "parentHeader": [
+                "OEG FAIR Ontologies Validator"
+            ],
             "confidence": [
                 1
             ],
@@ -126,7 +150,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/fair_ontologies/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/fair_ontologies/issues",
         "confidence": [
             1.0
         ],
@@ -149,7 +173,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:10:28 GMT"
+            "date": "Thu, 28 Apr 2022 16:35:04 GMT"
         },
         "confidence": [
             1.0
@@ -159,7 +183,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:10:28 GMT"
+            "date": "Thu, 28 Apr 2022 16:35:04 GMT"
         },
         "confidence": [
             1.0
@@ -186,7 +210,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/fair_ontologies/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/fair_ontologies/main/README.md",
         "confidence": [
             1.0
         ],

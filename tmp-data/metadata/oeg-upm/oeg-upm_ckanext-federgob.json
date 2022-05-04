@@ -13,62 +13,59 @@
             "excerpt": "FederGob es una extensi\u00f3n para CKAN que facilita el proceso de federaci\u00f3n con [Datos.gob.es](http://www.datos.gob.es/), el cat\u00e1logo de datos oficial de Espa\u00f1a. En concreto, el plugin presentado en esta pagina es una version modificada del plugin [original FederGob](https://github.com/jesusredondo/ckanext-federgob), que esta especialmente modificado para permitir federaci\u00f3n desde aquellas instancias del CKAN que utilicen el plugin [ckanext-dcat](https://github.com/ckan/ckanext-dcat) (el plugin ckanext-dcat causa problemas si estuviera funcionando al un\u00edsono con el plugin original de FederGob). Esta documentaci\u00f3n esta basada en la documentaci\u00f3n del plugin original. \nLa documentaci\u00f3n oficial para federar portales contra [Datos.gob.es](http://www.datos.gob.es/) es la siguiente: [manual del Federador](http://www.datos.gob.es/content/manual-de-uso-de-herramienta-federador). Es recomendable leer la documentaci\u00f3n oficial sobre c\u00f3mo se deben estructurar los metadatos: [Norma T\u00e9cnica de Interoperabilidad de Reutilizaci\u00f3n de Recursos de Informaci\u00f3n](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-2380). \nEsta extensi\u00f3n s\u00f3lo permite la federaci\u00f3n mediante metadatos representados en RDF. Se modifican los metadatos originales proporcionados por CKAN para adecuarlos a la Norma T\u00e9cnica de Interoperabilidad mencionada anteriormente. \n",
             "confidence": [
                 [
-                    0.9998543611310841,
-                    0.9999921228649551,
+                    0.9978705044722423,
+                    0.9865374311292784,
                     0.9865374311292784
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "\u00bfQu\u00e9 es FederGob?",
-            "parentHeader": "ckanext-federgob"
+            "parentHeader": [
+                "ckanext-federgob"
+            ]
         },
         {
-            "excerpt": "FederGob incluye scripts para automatizar la generaci\u00f3n de los metadatos peri\u00f3dicamente. \n1. La versi\u00f3n CKAN del cat\u00e1logo en el que se instale el plugin debe ser la 2.0 o superior (no se ha testeado con versiones anteriores). \n2. Todos los datasets del cat\u00e1logo CKAN deben tener el campo etiqueta (tag) relleno con uno de los valores que aparecen en la segunda columna de la primera tabla del anexo IV en la [Norma T\u00e9cnica de Interoperabilidad de Reutilizaci\u00f3n de Recursos de Informaci\u00f3n](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-2380). \n",
+            "excerpt": "FederGob adec\u00faa estos metadatos a los que consume el Federador de [Datos.gob.es](http://www.datos.gob.es/) (ver el anexo I en el [manual del usuario del Federador]([http://datos.gob.es/sites/default/files/federador_-_manual_de_usuario_2.docx])). Adem\u00e1s, se crean metadatos sobre el propio portal, necesarios para completar el proceso de federaci\u00f3n. \nFederGob incluye scripts para automatizar la generaci\u00f3n de los metadatos peri\u00f3dicamente. \n",
             "confidence": [
                 [
                     0.9507374082549614,
-                    0.9071552692524211,
-                    0.999994385191275
+                    0.9507374082549614
                 ]
             ],
             "technique": "Supervised classification",
-            "originalHeader": "Prerrequisitos",
-            "parentHeader": "ckanext-federgob"
+            "originalHeader": "\u00bfC\u00f3mo funciona?",
+            "parentHeader": [
+                "ckanext-federgob"
+            ]
         },
         {
-            "excerpt": "4. La primera frase de la descripci\u00f3n de cada dataset (todo lo que se encuentre antes del primer punto \".\") se utilizar\u00e1 para rellenar el campo dcat:description. Por lo tanto ser\u00eda recomendable que esta primera l\u00ednea se utilice para describir el dataset brevemente.  \n",
+            "excerpt": "1. La versi\u00f3n CKAN del cat\u00e1logo en el que se instale el plugin debe ser la 2.0 o superior (no se ha testeado con versiones anteriores). \n2. Todos los datasets del cat\u00e1logo CKAN deben tener el campo etiqueta (tag) relleno con uno de los valores que aparecen en la segunda columna de la primera tabla del anexo IV en la [Norma T\u00e9cnica de Interoperabilidad de Reutilizaci\u00f3n de Recursos de Informaci\u00f3n](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-2380). \n4. La primera frase de la descripci\u00f3n de cada dataset (todo lo que se encuentre antes del primer punto \".\") se utilizar\u00e1 para rellenar el campo dcat:description. Por lo tanto ser\u00eda recomendable que esta primera l\u00ednea se utilice para describir el dataset brevemente.  \n",
             "confidence": [
                 [
+                    0.9071552692524211,
+                    0.9981338887897753,
                     0.9802079536925298
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Prerrequisitos",
-            "parentHeader": "ckanext-federgob"
+            "parentHeader": [
+                "ckanext-federgob"
+            ]
         },
         {
-            "excerpt": "2. Este plugin funciona solo en conjunto con [ckanext-dcat](https://github.com/ckan/ckanext-dcat). Si su instancia del CKAN no necesita [ckanext-dcat](https://github.com/ckan/ckanext-dcat), debe utilizar el plugin [original FederGob](https://github.com/jesusredondo/ckanext-federgob). Los dos plugins deben ser instalados y configurados por separado.\n \n \nExisten dos maneras diferentes de instalaci\u00f3n del plugin. Si instalandolo de una manera no funciona, se puede hacer utilizando otra manera de instalaci\u00f3n.  \n1. Copia el [plugin](https://github.com/oeg-upm/ckanext-federgob) a tu carpeta `src` (normalmente es: /usr/lib/ckan/default/src/). \n",
+            "excerpt": "Existen dos maneras diferentes de instalaci\u00f3n del plugin. Si instalandolo de una manera no funciona, se puede hacer utilizando otra manera de instalaci\u00f3n.  \nAsegurarse que `federgob est\u00e1 en la lista de plugins activos del fichero de configuraci\u00f3n de CKAN y reiniciar Apache. \n",
             "confidence": [
                 [
-                    0.9921053119675043,
                     0.9737528548338414,
-                    0.9116434537713409
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "\u00bfC\u00f3mo instalar el FederGob?",
-            "parentHeader": "ckanext-federgob"
-        },
-        {
-            "excerpt": "Asegurarse que `federgob est\u00e1 en la lista de plugins activos del fichero de configuraci\u00f3n de CKAN y reiniciar Apache. \n",
-            "confidence": [
-                [
                     0.9964189199332645
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "\u00bfC\u00f3mo instalar el FederGob?",
-            "parentHeader": "ckanext-federgob"
+            "parentHeader": [
+                "ckanext-federgob"
+            ]
         },
         {
             "excerpt": "Estos pasos permiten configurar la generaci\u00f3n de los metadatos peri\u00f3dicamente. Todos los comandos tienen que correrse en la ruta: `.../ckanext-federgob/ckanext/federgob/FDG/`. \n",
@@ -79,67 +76,46 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "Configuraci\u00f3n local",
-            "parentHeader": "ckanext-federgob --- \u00bfC\u00f3mo configurar FederGob?"
+            "parentHeader": [
+                "ckanext-federgob",
+                "\u00bfC\u00f3mo configurar FederGob?"
+            ]
         },
         {
-            "excerpt": "1. **{-URL-CATALOG-}** : Es la URL del cat\u00e1logo. Por ejemplo: `http://opendata.caceres.es`. \n2. **{-URL-DATASET-}** : Es la URL base donde se encuentran todos los datasets. Normalmente esta URL toma la forma: **{-URL-CATALOG-}**/dataset. Por ejemplo: `http://opendata.caceres.es/dataset`. Otro ejemplo ser\u00eda `http://datahub.io/dataset` para `http://datahub.io`. \n",
+            "excerpt": "1. **{-URL-CATALOG-}** : Es la URL del cat\u00e1logo. Por ejemplo: `http://opendata.caceres.es`. \n2. **{-URL-DATASET-}** : Es la URL base donde se encuentran todos los datasets. Normalmente esta URL toma la forma: **{-URL-CATALOG-}**/dataset. Por ejemplo: `http://opendata.caceres.es/dataset`. Otro ejemplo ser\u00eda `http://datahub.io/dataset` para `http://datahub.io`. \n4. **{-TITLE-}** : T\u00edtulo del cat\u00e1logo. Ejemplo: `Opendata C\u00e1ceres`. \n6. {-ISSUED-} : Fecha en la que se cre\u00f3 el cat\u00e1logo, se debe utilizar el est\u00e1ndar [ISO-8601](http://www.w3.org/TR/NOTE-datetime). Por ejemplo: `2014-07-02T10:45:15`. \n7. **{-URL-PUBLISHER-}** : URL de la organizaci\u00f3n que publica los datos en el cat\u00e1logo. Tiene que ser una URL que siga el formato establecido por el NTI. Para m\u00e1s informaci\u00f3n consultar el anexo II C del [manual del Federador](http://datos.gob.es/sites/default/files/federador_-_manual_de_usuario_2.docx). Por ejemplo: `http://datos.gob.es/recurso/sector-publico/org/Organismo/L01100377`. \n8. **{-URL-LICENSE-}** : URL de la p\u00e1gina web donde se describen los t\u00e9rminos de usos del cat\u00e1logo. Por ejemplo: `http://opendata.caceres.es/terminos`. \n",
             "confidence": [
                 [
                     0.9858279336460283,
-                    0.9565981991897923
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Configurar los metadatos del portal",
-            "parentHeader": "ckanext-federgob --- \u00bfC\u00f3mo configurar FederGob? --- Configuraci\u00f3n local"
-        },
-        {
-            "excerpt": "4. **{-TITLE-}** : T\u00edtulo del cat\u00e1logo. Ejemplo: `Opendata C\u00e1ceres`. \n",
-            "confidence": [
-                [
-                    0.9813161029725735
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Configurar los metadatos del portal",
-            "parentHeader": "ckanext-federgob --- \u00bfC\u00f3mo configurar FederGob? --- Configuraci\u00f3n local"
-        },
-        {
-            "excerpt": "6. {-ISSUED-} : Fecha en la que se cre\u00f3 el cat\u00e1logo, se debe utilizar el est\u00e1ndar [ISO-8601](http://www.w3.org/TR/NOTE-datetime). Por ejemplo: `2014-07-02T10:45:15`. \n7. **{-URL-PUBLISHER-}** : URL de la organizaci\u00f3n que publica los datos en el cat\u00e1logo. Tiene que ser una URL que siga el formato establecido por el NTI. Para m\u00e1s informaci\u00f3n consultar el anexo II C del [manual del Federador](http://datos.gob.es/sites/default/files/federador_-_manual_de_usuario_2.docx). Por ejemplo: `http://datos.gob.es/recurso/sector-publico/org/Organismo/L01100377`. \n8. **{-URL-LICENSE-}** : URL de la p\u00e1gina web donde se describen los t\u00e9rminos de usos del cat\u00e1logo. Por ejemplo: `http://opendata.caceres.es/terminos`. \n",
-            "confidence": [
-                [
-                    0.9126419181843836,
-                    0.9991819958008705,
+                    0.9565981991897923,
+                    0.9813161029725735,
+                    0.9156566588472104,
+                    0.9998962688847911,
                     0.9984268409156237
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Configurar los metadatos del portal",
-            "parentHeader": "ckanext-federgob --- \u00bfC\u00f3mo configurar FederGob? --- Configuraci\u00f3n local"
+            "parentHeader": [
+                "ckanext-federgob",
+                "\u00bfC\u00f3mo configurar FederGob?",
+                "Configuraci\u00f3n local"
+            ]
         }
     ],
     "installation": [
         {
-            "excerpt": "    cd ckanext-federgob\n    sudo python setup.py develop \n",
+            "excerpt": "    cd ckanext-federgob\n    sudo python setup.py develop \n\tpip install -e \"git+https://github.com/oeg-upm/ckanext-federgob.git#egg=ckanext-federgob\" \n",
             "confidence": [
                 [
-                    0.950564357633137
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "\u00bfC\u00f3mo instalar el FederGob?",
-            "parentHeader": "ckanext-federgob"
-        },
-        {
-            "excerpt": "\tpip install -e \"git+https://github.com/oeg-upm/ckanext-federgob.git#egg=ckanext-federgob\" \n",
-            "confidence": [
-                [
+                    0.950564357633137,
                     0.9960343238036801
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "\u00bfC\u00f3mo instalar el FederGob?",
-            "parentHeader": "ckanext-federgob"
+            "parentHeader": [
+                "ckanext-federgob"
+            ]
         }
     ],
     "longTitle": {
@@ -209,7 +185,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/ckanext-federgob/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/ckanext-federgob/issues",
         "confidence": [
             1.0
         ],
@@ -232,7 +208,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:03 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:04 GMT"
         },
         "confidence": [
             1.0
@@ -242,7 +218,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:00:03 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:04 GMT"
         },
         "confidence": [
             1.0
@@ -266,13 +242,14 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ckanext-federgob/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/ckanext-federgob/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "library"
+        "software_type": "library",
+        "run": "import ckanext-federgob"
     }
 }

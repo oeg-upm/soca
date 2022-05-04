@@ -25,6 +25,16 @@
         ],
         "technique": "Regular expression"
     },
+    "documentation": [
+        {
+            "excerpt": "https://freeling-user-manual.readthedocs.io/",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "readthedocs"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/docker-freeling4",
         "confidence": [
@@ -85,7 +95,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/docker-freeling4/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/docker-freeling4/issues",
         "confidence": [
             1.0
         ],
@@ -108,7 +118,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:01 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:19 GMT"
         },
         "confidence": [
             1.0
@@ -118,7 +128,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:01 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:19 GMT"
         },
         "confidence": [
             1.0
@@ -142,19 +152,22 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/docker-freeling4/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/docker-freeling4/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/docker-freeling4/main/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    }
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/docker-freeling4/main/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ]
 }

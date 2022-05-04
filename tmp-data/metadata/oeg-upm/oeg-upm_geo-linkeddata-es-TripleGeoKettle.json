@@ -4,8 +4,8 @@
             "excerpt": "Repository where the integration of TripleGeo and GeoKettle is performed, used in the [geo.linkeddata.es](https://github.com/oeg-upm/geo.linkeddata.es-termite) project.  \nThe documentation of the project geo.linkeddata.es-TripleGeoKettle is in the [wiki](https://github.com/oeg-upm/geo.linkeddata.es-TripleGeoKettle/wiki).\n \n",
             "confidence": [
                 [
-                    0.9563870846174664,
-                    0.9117404187978974
+                    0.997416273676906,
+                    0.9906360179263853
                 ]
             ],
             "technique": "Supervised classification",
@@ -26,6 +26,16 @@
                 1.0
             ],
             "technique": "Regular expression"
+        }
+    ],
+    "documentation": [
+        {
+            "excerpt": "https://github.com/oeg-upm/geo.linkeddata.es-TripleGeoKettle/wiki",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "wiki"
         }
     ],
     "license": {
@@ -88,7 +98,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/geo.linkeddata.es-TripleGeoKettle/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/geo.linkeddata.es-TripleGeoKettle/issues",
         "confidence": [
             1.0
         ],
@@ -122,7 +132,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:10:40 GMT"
+            "date": "Thu, 28 Apr 2022 15:57:24 GMT"
         },
         "confidence": [
             1.0
@@ -132,7 +142,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:10:40 GMT"
+            "date": "Thu, 28 Apr 2022 15:57:24 GMT"
         },
         "confidence": [
             1.0
@@ -156,7 +166,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/geo.linkeddata.es-TripleGeoKettle/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/geo.linkeddata.es-TripleGeoKettle/master/README.md",
         "confidence": [
             1.0
         ],

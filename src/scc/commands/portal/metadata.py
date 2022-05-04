@@ -9,10 +9,12 @@ from pygments import highlight
 from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
 import mistune
+import os
 
 class metadata(object):
 
-    def __init__(self, repo_metadata, embedded = False):
+    def __init__(self, repo_metadata_dir, repo_metadata, embedded = False):
+        self.repo_metadata_dir = os.path.abspath(repo_metadata_dir)
         self.md = repo_metadata
         self.base = 'https://github.com/dakixr/scc/raw/main/src/scc/assets/' if embedded else ''
 
@@ -31,7 +33,18 @@ class metadata(object):
         if repo_type == 'web': 
             return f'<img src="{self.base}repo_icons/web.png" {self.add_tooltip("left","Website")} alt="repo-type" class="repo-type">'
         elif repo_type == 'ontology': 
-            return f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">'
+            ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
+            if ontologies:
+                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies])))
+                #onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
+            return self.icon_wrapper(
+                icon_html = f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">',
+                modal_html= self.modal(
+                    title= 'Ontologies',
+                    body= onto_list
+                ),
+                other_field='class="m_ontology"'
+            )
         elif repo_type in ['package','library','service','script']:
             return f'<div class="grey-color-svg" style="display:flex;" {self.add_tooltip("left",f"Python {repo_type}")}><img src="{self.base}language_icons/python.svg" alt="repo-type" class="repo-type"></div>'
         else: return ''
@@ -170,7 +183,18 @@ class metadata(object):
                     modal_html = self.modal(
                         title = 'Citation',
                         body = f'<div style="font-family: monospace;">{highlight(citation, ScdocLexer(), formatter)}</div>',
-                        markdown_translation=False))
+                        markdown_translation=False,
+                        extra_html=
+                        f"""
+                        <button 
+                            class="copy-citation-btn" 
+                            value="{self.repo_url()}" 
+                            style="background:url('repo_icons/copy.svg')transparent;background-repeat:no-repeat;background-size:auto;" 
+                            data-toggle="tooltip" 
+                            data-placement="right" 
+                            data-original-title="Copy citation">
+                        </button>
+                        """))
 
         identifier = self.identifier()
         if identifier:
@@ -191,7 +215,7 @@ class metadata(object):
 
                 modal_html = self.modal(
                     title = 'Status',
-                    body = '### Description  \n'+ safe_dic(status,'description') + '#### More information  \n' + f'<{safe_dic(status,"excerpt")}>'))
+                    body = '### Description  \n'+ safe_dic(status,'description') + '\n #### More information  \n' + f'<{safe_dic(status,"excerpt")}>'))
 
         installation = self.installation()
         if installation:
@@ -217,13 +241,13 @@ class metadata(object):
 
         usage = self.usage()
         if usage:
+            has_i4p = safe_dic(safe_dic(self.md,'inspect4py'),'run')
             html += self.icon_wrapper(
                 icon_html = f"""<img src="{self.base}repo_icons/usage.png"  
                         class="repo-icon" 
                         {self.add_tooltip('bottom','Usage')}>""",
-
                 modal_html = self.modal(
-                    title = 'Usage',
+                    title = 'How to use it' if has_i4p and '### How to use it' not in usage else 'Usage' ,
                     body = usage))
 
         help = self.help()
@@ -285,7 +309,7 @@ class metadata(object):
                         {modal_html if modal_html else ''}
                     </div>"""
     
-    def modal(self, title, body, markdown_translation = True):
+    def modal(self, title, body, markdown_translation = True, extra_html = ''):
     
         if markdown_translation:
             body = mistune.html(body)
@@ -293,7 +317,10 @@ class metadata(object):
         return f"""<div class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
-                            <h2 style="margin-bottom: 1rem;">{title}</h2>
+                            <span style="display:flex;">
+                                <h2 style="margin-bottom: 1rem;">{title}</h2>
+                                {extra_html}
+                            </span>
                             <div style="margin-bottom: 1rem; overflow: auto;">{body}</div>
                         </div>
                     </div>"""
@@ -308,46 +335,50 @@ class metadata(object):
         # inspect4py
         ######################
 
-        if 'inspect4py' in self.md:
+        if 'inspect4py' in self.md and "software_type" in self.md["inspect4py"]:
             return self.md["inspect4py"]["software_type"] # package, library, service, script
 
         # web and ontology
         ######################
 
+        ontology = safe_dic(self.md,'ontologies')
         langs = self.languages()
+        is_ontology = (ontology is not None)
+        is_web = (langs and 'html' in langs)
+        
+        if langs:
+            for lang in langs:
+                if lang not in ['html','css','javascript']:
+                    is_web = False
+                if lang not in ['html','css','javascript']:
+                    is_ontology = False
 
-        if not langs: # Most ontologies doesn't have any language
+        if is_ontology:
             return 'ontology'
-
-        web_langs = ['html','css','javascript'] 
-        ontology_langs = ['html','css','javascript'] 
-
-        is_ontology = True
-        is_web = True
-
-        for lang in langs:
-            if lang not in web_langs:
-                is_web = False
-            if lang not in ontology_langs:
-                is_ontology = False
-
-        if (is_ontology and is_web 
-                and (   
-                    'ontolog' in self.description().lower() 
-                    or 
-                    'ontolog' in self.title().lower())
-                ):
-            return 'ontology'
-              
-        return 'web' if is_web else None
+        
+        if is_web:
+            return 'web'
+        
+        return None
          
     def usage(self):
-        usage = safe_dic(safe_list(safe_dic(self.md,'usage'),0),'excerpt')
+        usage_list = safe_dic(self.md,'usage')
+        usage = None
+        if usage_list:
+            usage = ''
+            for u in usage_list:
+                usage += u['excerpt'] + '\n'
+                
         run_list = safe_dic(safe_dic(self.md,'inspect4py'),'run')
         if run_list:
-            run = '\n'.join([ f'* {x}' for x in run_list])
-            run_md = '### How to run it  \n' + run
+            if isinstance(run_list, list):
+                run = '\n'.join([ f'* {str(x).replace(self.repo_metadata_dir,"")}' for x in run_list])
+            else: run =  run_list.replace(self.repo_metadata_dir,"")
+            run_md = '---\n  ### How to use it  \n' + run if usage else run
+
         else: run_md = ''
+
+        usage = usage if usage else ''
 
         return usage + run_md if usage or run_md else None
 

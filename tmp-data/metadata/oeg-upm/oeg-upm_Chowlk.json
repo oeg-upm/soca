@@ -11,15 +11,17 @@
             "originalHeader": "Chowlk Converter"
         },
         {
-            "excerpt": "\r\nThe following command line will return the ontology in Turtle format.\r\n\r\n```bash\r\ncurl -F 'data=@/path/to/diagram.xml' https://chowlk.linkeddata.es/api\r\n```\r\n\r\nThe service will return the following dictionary:\r\n\r\nBASH2*\r\n\r\n* **ttl_data:** Contains the ontology generated from the diagram in Turtle format. It is returned in string format.\r\n* **new_namespaces:** Contains the new namespaces created for the ontology, when prefixes are founded in the model but are not declared in the namespace block in the diagram. The returned object is a dictionary with the following format: {\"prefix1\": \"namespace1\", \"prefix2\": \"namespace2\"}\r\n* **errors:** Contains the errors founded in the ontology diagram, organized by types. The following keywords can be founded: \"Concepts\", \"Arrows\", \"Rhombuses\", \"Ellipses\", \"Attributes\", \"Namespaces\", \"Metadata\", \"Hexagons\", \"Individual\". The value for these keywords is an array that may contain objects that have the following structure:\r\n\r\nBASH3*\r\n\r\n\r \n",
+            "excerpt": "Ch\u00e1vez-Feria, S., Garc\u00eda-Castro, R., Poveda-Villal\u00f3n, M. (2021). <i>Converting UML-based ontology conceptualizations to OWL with Chowlk. In ESWC (Poster and Demo Track)</i>\r\n\r\n\r\n\r \n",
             "confidence": [
                 [
-                    0.9414259833957962
+                    0.9858820526941904
                 ]
             ],
             "technique": "Supervised classification",
-            "originalHeader": "2. The API:",
-            "parentHeader": "Chowlk Converter --- How to use the tool"
+            "originalHeader": "Publications",
+            "parentHeader": [
+                "Chowlk Converter"
+            ]
         },
         {
             "excerpt": "Tool to transform an ontology diagram into OWL code.",
@@ -27,19 +29,6 @@
                 1.0
             ],
             "technique": "GitHub API"
-        }
-    ],
-    "installation": [
-        {
-            "excerpt": "```bash\r\ngit clone https://github.com/oeg-upm/Chowlk.git\r\ngit checkout webservice\r\n```\r\n\r \n",
-            "confidence": [
-                [
-                    0.9926670979372864
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Copy the project:",
-            "parentHeader": "Chowlk Converter --- How to use the tool"
         }
     ],
     "longTitle": {
@@ -60,7 +49,9 @@
         {
             "originalHeader": "Contact",
             "excerpt": "* Serge Ch\u00e1vez-Feria (serge.chavez.feria@upm.es)\r\n* Maria Poveda-Villal\u00f3n (mpoveda@fi.upm.es)\r\n",
-            "parentHeader": "Chowlk Converter",
+            "parentHeader": [
+                "Chowlk Converter"
+            ],
             "confidence": [
                 1
             ],
@@ -71,7 +62,10 @@
         {
             "originalHeader": "Requirements:",
             "excerpt": "```bash\r\npip install -r requirements.txt\r\n```\r\n\r",
-            "parentHeader": "Chowlk Converter --- How to use the tool",
+            "parentHeader": [
+                "Chowlk Converter",
+                "How to use the tool"
+            ],
             "confidence": [
                 1
             ],
@@ -82,7 +76,10 @@
         {
             "originalHeader": "To run the app locally:",
             "excerpt": "```bash\r\npython app.py\r\n```\r\n\r",
-            "parentHeader": "Chowlk Converter --- How to use the tool",
+            "parentHeader": [
+                "Chowlk Converter",
+                "How to use the tool"
+            ],
             "confidence": [
                 1
             ],
@@ -93,7 +90,57 @@
         {
             "originalHeader": "How to use the tool",
             "excerpt": "\r\nYou have several options to use this tool.\r\n\r",
-            "parentHeader": "Chowlk Converter",
+            "parentHeader": [
+                "Chowlk Converter"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "1. The web application:",
+            "excerpt": "\r\n1. Go to https://chowlk.linkeddata.es/ web application.\r\n2. Download the Chowlk template.\r\n  \r\n  * Complete version of the template:\r\n    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-complete.xml\r\n\r\n  * Lightweight version of the template:\r\n    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-lightweight.xml\r\n     \r\n3. In diagrams.net go to File > Open Library from > Device ...\r\n4. Select the library downloaded.\r\n5. Make your conceptualization using the blocks that will appear on the side bar.\r\n6. Download the diagram in xml format.\r\n7. Drag and drop your diagram in the Service dropping area and download your TTL file.\r\n\r",
+            "parentHeader": [
+                "Chowlk Converter",
+                "How to use the tool"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "2. The API:",
+            "excerpt": "\r\nThe following command line will return the ontology in Turtle format.\r\n\r\n```bash\r\ncurl -F 'data=@/path/to/diagram.xml' https://chowlk.linkeddata.es/api\r\n```\r\n\r\nThe service will return the following dictionary:\r\n\r\n```json\r\n{\r\n  \"ttl_data\": \"@prefix ns: ...\",\r\n  \"new_namespaces\": {\"ns1\": \"https://namespace1.com#\", \"ns2\": \"https://namespace2.com#\"},\r\n  \"errors\": {\"Concepts\": [{\"message\": \"Problem in text\", \"shape_id\": \"13\", \"value\": \"ns:Building Element\"}],\r\n             \"Attributes\": [{\"message\": \"Problem in cardinality\", \"shape_id\": 45, \"value\": \"ns:ifcIdentifier\"}],\r\n             \"Arrows\": [],\r\n             \"Rhombuses\": [],\r\n             \"Ellipses\": [],\r\n             \"Namespaces\": [],\r\n             \"Metadata\": [],\r\n             \"Hexagons\": [],\r\n             \"Individual\": []}\r\n}\r\n```\r\n\r\n* **ttl_data:** Contains the ontology generated from the diagram in Turtle format. It is returned in string format.\r\n* **new_namespaces:** Contains the new namespaces created for the ontology, when prefixes are founded in the model but are not declared in the namespace block in the diagram. The returned object is a dictionary with the following format: {\"prefix1\": \"namespace1\", \"prefix2\": \"namespace2\"}\r\n* **errors:** Contains the errors founded in the ontology diagram, organized by types. The following keywords can be founded: \"Concepts\", \"Arrows\", \"Rhombuses\", \"Ellipses\", \"Attributes\", \"Namespaces\", \"Metadata\", \"Hexagons\", \"Individual\". The value for these keywords is an array that may contain objects that have the following structure:\r\n\r\n```json\r\n{\r\n  \"message\": \"Some message related to the problem\",\r\n  \"shape_id\": \"An integer id that identify the problematic shape in the diagram\",\r\n  \"value\": \"the actual text related with the shape\"\r\n}\r\n```\r\n\r\n\r",
+            "parentHeader": [
+                "Chowlk Converter",
+                "How to use the tool"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Copy the project:",
+            "excerpt": "```bash\r\ngit clone https://github.com/oeg-upm/Chowlk.git\r\ngit checkout webservice\r\n```\r\n\r",
+            "parentHeader": [
+                "Chowlk Converter",
+                "How to use the tool"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "To convert a diagram:",
+            "excerpt": "\r\n* If the desired format is ttl:\r\n```bash\r\npython converter.py path/to/diagram.xml output/path/ontology.ttl --type ontology --format ttl\r\n```\r\n\r\n* If the desired format is rdf/xml:\r\n```bash\r\npython converter.py path/to/diagram.xml output/path/ontology.xml --type ontology --format xml\r\n```\r\n\r",
+            "parentHeader": [
+                "Chowlk Converter",
+                "How to use the tool"
+            ],
             "confidence": [
                 1
             ],
@@ -160,7 +207,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/Chowlk/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/Chowlk/issues",
         "confidence": [
             1.0
         ],
@@ -196,7 +243,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 08:59:41 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:56 GMT"
         },
         "confidence": [
             1.0
@@ -206,7 +253,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:59:41 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:56 GMT"
         },
         "confidence": [
             1.0
@@ -233,15 +280,438 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/Chowlk/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
+    "ontologies": {
         "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/Dockerfile"
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_9.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_8.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_8.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_19.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_24.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_18.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_9.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_union_2.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_individuals_1.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_20.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_21.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_union_1.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_individuals_2.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_23.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_22.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_23.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_individuals_2.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_union_1.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_22.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_20.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_individuals_1.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_union_2.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_21.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_19.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_8.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_9.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_18.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_24.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_9.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_8.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_5.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_16.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_7.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_13.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_12.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_6.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_17.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_4.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_6.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_15.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_4.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_10.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_11.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_5.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_14.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_7.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_subclass_1.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_3.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_10.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_disjoint_1.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_1.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_equivalence_1.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_intersection_1.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_11.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_2.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_subclass_2.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_13.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_disjoint_2.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_2.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_equivalence_2.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_3.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_intersection_2.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_12.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_1.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_equivalence_2.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_2.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_disjoint_2.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_13.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_subclass_2.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_1.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_12.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_intersection_2.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_3.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_equivalence_1.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_1.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_disjoint_1.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_10.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_subclass_1.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_3.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_2.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_11.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_intersection_1.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_10.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_4.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_15.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_6.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_7.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_14.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_5.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_11.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_13.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_7.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_16.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_5.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_4.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_relations_17.ttl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_6.owl"
+            },
+            {
+                "uri": "http://base.namespace.com#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/tests/outputs/test_attributes_12.owl"
+            },
+            {
+                "uri": "https://w3id.org/def/saref4bldg#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/output/saref4building.ttl"
+            },
+            {
+                "uri": "http://bimerr.iot.linkeddata.es/def/occupancy-profile#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/output/occupancy_profile.owl"
+            },
+            {
+                "uri": "http://bimerr.iot.linkeddata.es/def/occupancy-profile#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/output/occupancy_profile.ttl"
+            },
+            {
+                "uri": "http://bimerr.iot.linkeddata.es/def/annotated-information#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/output/aio.ttl"
+            },
+            {
+                "uri": "http://bimerr.iot.linkeddata.es/def/building#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Chowlk/webservice/output/building.ttl"
+            }
         ],
         "confidence": [
             1.0
@@ -270,6 +740,7 @@
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "library"
+        "software_type": "library",
+        "run": "import chowlk-pkg-SergeCF3006"
     }
 }

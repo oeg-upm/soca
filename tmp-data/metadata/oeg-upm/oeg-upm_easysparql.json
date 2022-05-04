@@ -10,25 +10,26 @@
     ],
     "installation": [
         {
-            "excerpt": "[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/) \n",
-            "confidence": [
-                [
-                    0.902239628935452
-                ]
+            "originalHeader": "via pip",
+            "excerpt": "```pip install easysparql```\n",
+            "parentHeader": [
+                "Install"
             ],
-            "technique": "Supervised classification",
-            "originalHeader": "easysparql"
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
         },
         {
-            "excerpt": "```pip install easysparql```\n \n",
-            "confidence": [
-                [
-                    0.999746712887969
-                ]
+            "originalHeader": "via setuptools",
+            "excerpt": "```python setup.py ```\n",
+            "parentHeader": [
+                "Install"
             ],
-            "technique": "Supervised classification",
-            "originalHeader": "via pip",
-            "parentHeader": "Install"
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
         }
     ],
     "longTitle": {
@@ -38,34 +39,20 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://img.shields.io/badge/python-3.6-blue.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://codecov.io/gh/oeg-upm/easysparql/branch/master/graph/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://ahmad88me.semaphoreci.com/badges/easysparql.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
+    "logo": {
+        "excerpt": "https://ahmad88me.semaphoreci.com/badges/easysparql.svg",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
     "run": [
         {
             "originalHeader": "Run tests",
             "excerpt": "```python -m unittest discover```\n\n",
-            "parentHeader": "Install",
+            "parentHeader": [
+                "Install"
+            ],
             "confidence": [
                 1
             ],
@@ -142,7 +129,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/easysparql/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/easysparql/issues",
         "confidence": [
             1.0
         ],
@@ -165,7 +152,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:43 GMT"
+            "date": "Thu, 28 Apr 2022 16:24:41 GMT"
         },
         "confidence": [
             1.0
@@ -175,7 +162,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:43 GMT"
+            "date": "Thu, 28 Apr 2022 16:24:41 GMT"
         },
         "confidence": [
             1.0
@@ -199,7 +186,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/easysparql/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/easysparql/master/README.md",
         "confidence": [
             1.0
         ],
@@ -318,6 +305,7 @@
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "library"
+        "software_type": "library",
+        "run": "import easysparql"
     }
 }

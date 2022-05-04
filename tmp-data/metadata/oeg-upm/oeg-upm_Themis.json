@@ -11,6 +11,16 @@
             "originalHeader": "Themis"
         },
         {
+            "excerpt": "In order to use our REST API, check our [online documentation](http://themis.linkeddata.es/swagger-ui/index.html) \n \n",
+            "confidence": [
+                [
+                    0.9272405309983818
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Using the Rest API"
+        },
+        {
             "excerpt": "Verification tool for executing test cases on one or more ontologies",
             "confidence": [
                 1.0
@@ -29,7 +39,9 @@
         {
             "originalHeader": "Example",
             "excerpt": " `java -jar themis.jar -t testsuite.ttl -o ontology.ttl -r junit`\n\n\n## Inputs\nThe command can receive the following inputs:\n* *Ontology file*: the user can add one ontology in a file, which will be loaded and its glossary of terms automatically generated\n* *Test file*: the user can add one or more tests in a file ([check here the supported tests](http://themis.linkeddata.es/tests-info.html))  written in RDF or [RDFa](https://www.w3.org/TR/rdfa-primer/) following the [VTC ontology](https://w3id.org/def/vtc#).  Moreover, Themis accepts as input a text file with a list of tests that uses the following  [Themis syntax](http://themis.linkeddata.es/tests-info.html) and that are separated by \";\" (for example, a text file that includes: \"Sensor type Class;Sensor subclassOf Device\"). The supported file formats are the following:\n  * RDFa: HTML and XML files\n  * RDF: TTL, OWL and RDF files\n  * List of tests: TXT files\n* *Glossary of terms [optional]*: the user can add a glossary of terms of the ontology to be analysed as a JSON array. If there is not glossary of terms, Themis creates one automatically with the format [Term, URI] where the fragment of the URI of each term represents the Term field. These glossary of terms is used to map each term in the test with each term in the ontology. An example of glossary of terms is the following: \n\n```\n{\n   \"OntologyNameOrKey\":[\n      {\n         \"Term\":\"Sensor\",\n         \"URI\":\"http://iot.linkeddata.es/def/core#Sensor\"\n      }\n   ]\n}\n```\n\n* *Format [optional]*: Themis will provide the result for each test. Three possible formats for the results are provided:\n  * JSON (output by default)\n  * RDFa following the  [VTC ontology](https://w3id.org/def/vtc#)\n  * JUnit (see [JUnit website](https://junit.org/junit4/) for more information about the stucture of the test report)\n",
-            "parentHeader": "Using the JAR",
+            "parentHeader": [
+                "Using the JAR"
+            ],
             "confidence": [
                 1
             ],
@@ -96,7 +108,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/Themis/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/Themis/issues",
         "confidence": [
             1.0
         ],
@@ -130,7 +142,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 4,
-            "date": "Tue, 05 Apr 2022 09:32:18 GMT"
+            "date": "Thu, 28 Apr 2022 16:17:48 GMT"
         },
         "confidence": [
             1.0
@@ -140,7 +152,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:32:18 GMT"
+            "date": "Thu, 28 Apr 2022 16:17:48 GMT"
         },
         "confidence": [
             1.0
@@ -167,7 +179,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/Themis/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/Themis/master/README.md",
         "confidence": [
             1.0
         ],

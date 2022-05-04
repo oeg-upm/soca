@@ -4,7 +4,7 @@
             "excerpt": "Repository for collaborative edition of the DELTA ontology. This ontology is being developed within the context of the [DELTA H2020 project](https://www.delta-h2020.eu/). \n",
             "confidence": [
                 [
-                    0.9787569837298525
+                    0.979359418025144
                 ]
             ],
             "technique": "Supervised classification",
@@ -16,18 +16,6 @@
                 1.0
             ],
             "technique": "GitHub API"
-        }
-    ],
-    "installation": [
-        {
-            "excerpt": "- [Ontological requirements](https://goo.gl/cmo1A6) \n",
-            "confidence": [
-                [
-                    0.9716497192916245
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "delta-ontology"
         }
     ],
     "longTitle": {
@@ -96,7 +84,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/delta-ontology/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/delta-ontology/issues",
         "confidence": [
             1.0
         ],
@@ -119,7 +107,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:00:42 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:07 GMT"
         },
         "confidence": [
             1.0
@@ -129,7 +117,7 @@
     "forksCount": {
         "excerpt": {
             "count": 4,
-            "date": "Tue, 05 Apr 2022 09:00:42 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:07 GMT"
         },
         "confidence": [
             1.0
@@ -137,10 +125,66 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/delta-ontology/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "N1b300181934b44bfb2232afaafb01c30",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/tests/testsuite.ttl/documentation/ontology.nt"
+            },
+            {
+                "uri": "Ncd3e5735cb314809bc7acf84d13703d6",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/tests/testsuite.ttl/documentation/ontology.xml"
+            },
+            {
+                "uri": "n8bcd331fd2394db2a42b08ccb7dd0392b1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/tests/testsuite.ttl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "Ncca0ed83c13a42cd9dacee8a20e17217",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/shapes/shapes.ttl/documentation/ontology.nt"
+            },
+            {
+                "uri": "Ndb1ffad0296b499d9b57ab8ee998e1ff",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/shapes/shapes.ttl/documentation/ontology.xml"
+            },
+            {
+                "uri": "nb2538ccf8e2e42cf86033c384c50101cb1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/shapes/shapes.ttl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "http://delta.linkeddata.es/def/core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/ontology/delta.owl/documentation/ontology.nt"
+            },
+            {
+                "uri": "http://delta.linkeddata.es/def/core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/ontology/delta.owl/documentation/ontology.xml"
+            },
+            {
+                "uri": "http://delta.linkeddata.es/def/core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/ontology/delta.owl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "http://delta.linkeddata.es/def/core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/ontology/delta.ttl/documentation/ontology.nt"
+            },
+            {
+                "uri": "http://delta.linkeddata.es/def/core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/ontology/delta.ttl/documentation/ontology.xml"
+            },
+            {
+                "uri": "http://delta.linkeddata.es/def/core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/ontology/delta.ttl/documentation/ontology.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

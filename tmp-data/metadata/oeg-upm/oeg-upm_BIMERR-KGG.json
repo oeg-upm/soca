@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "Knowledge Graph Generator module for the BIMERR project\n \n",
+            "confidence": [
+                [
+                    0.964444238077852
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "BIMERR-KGG"
+        },
+        {
             "excerpt": "Knowledge Graph Generator module for the BIMERR project",
             "confidence": [
                 1.0
@@ -65,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/BIMERR-KGG/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/BIMERR-KGG/issues",
         "confidence": [
             1.0
         ],
@@ -88,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:48:02 GMT"
+            "date": "Thu, 28 Apr 2022 16:23:01 GMT"
         },
         "confidence": [
             1.0
@@ -98,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:48:02 GMT"
+            "date": "Thu, 28 Apr 2022 16:23:01 GMT"
         },
         "confidence": [
             1.0
@@ -115,7 +125,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/BIMERR-KGG/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/BIMERR-KGG/master/README.md",
         "confidence": [
             1.0
         ],

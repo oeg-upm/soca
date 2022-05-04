@@ -18,18 +18,6 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "Ontology URI: [https://w3id.org/def/easytv](https://w3id.org/def/easytv) \n",
-            "confidence": [
-                [
-                    0.9919784769950174
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "easytv-onto"
-        }
-    ],
     "longTitle": {
         "excerpt": "easytv-onto",
         "confidence": [
@@ -96,7 +84,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-onto/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-onto/issues",
         "confidence": [
             1.0
         ],
@@ -119,7 +107,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:03:34 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:19 GMT"
         },
         "confidence": [
             1.0
@@ -129,7 +117,7 @@
     "forksCount": {
         "excerpt": {
             "count": 4,
-            "date": "Tue, 05 Apr 2022 09:03:34 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:19 GMT"
         },
         "confidence": [
             1.0
@@ -137,11 +125,35 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/easytv-onto/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/easytv-onto/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "https://w3id.org/def/easytv#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/easytv-onto/master/OnToology/ontology/core.ttl/documentation/ontology.nt"
+            },
+            {
+                "uri": "https://w3id.org/def/easytv#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/easytv-onto/master/OnToology/ontology/core.ttl/documentation/ontology.xml"
+            },
+            {
+                "uri": "https://w3id.org/def/easytv#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/easytv-onto/master/OnToology/ontology/core.ttl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "https://w3id.org/def/easytv#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/easytv-onto/master/ontology/core.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     },
     "releases": {
         "excerpt": [

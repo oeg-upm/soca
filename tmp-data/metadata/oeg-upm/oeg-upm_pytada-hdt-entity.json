@@ -22,17 +22,8 @@
             "confidence": [
                 1.0
             ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3764190.svg)](https://doi.org/10.5281/zenodo.3764190) \n",
-            "confidence": [
-                [
-                    0.999999999981128
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "pytada-hdt-entity"
+            "technique": "Regular expression",
+            "doi": "https://doi.org/10.5281/zenodo.3764190"
         }
     ],
     "installation": [
@@ -67,6 +58,16 @@
                 1
             ],
             "technique": "Header extraction"
+        },
+        {
+            "excerpt": "1. You need to setup the following environment variables:\n\t* `export project_dir='.'`  (or the directory of the c++ source code)\n\t* `export LC_ALL=en_US.UTF-8` (needed for mac)\n\t* `export LANG=en_US.UTF-8` (needed for mac)\n1. Generate the interface files:\n\t* `invoke copy` (only if you need to copy the source files to the current folder. If you copy the c++ files to this directory, you do not need to do it).\n\t* `invoke parser`\n\t* `invoke tnode`\n\t* `invoke graph`\n\t* `invoke entity`  \n1. Copy the python files into the package:\n\t* `cp parser.py tada_hdt_entity/`\n\t* `cp tnode.py tada_hdt_entity/`\n\t* `cp graph.py tada_hdt_entity/`\n\t* `cp entity.py tada_hdt_entity/`\n1. Update `setup.py` with the new version of the library\t\n \n",
+            "confidence": [
+                [
+                    0.9125848526144095
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "To update the python library (from the updated c++ source code library)"
         }
     ],
     "longTitle": {
@@ -79,15 +80,6 @@
     "identifier": [
         {
             "excerpt": "https://doi.org/10.5281/zenodo.3764190",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
-    "image": [
-        {
-            "excerpt": "https://zenodo.org/badge/DOI/10.5281/zenodo.3764190.svg",
             "confidence": [
                 1.0
             ],
@@ -180,7 +172,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/pytada-hdt-entity/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/pytada-hdt-entity/issues",
         "confidence": [
             1.0
         ],
@@ -203,7 +195,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:27:26 GMT"
+            "date": "Thu, 28 Apr 2022 16:22:57 GMT"
         },
         "confidence": [
             1.0
@@ -213,7 +205,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:27:26 GMT"
+            "date": "Thu, 28 Apr 2022 16:22:57 GMT"
         },
         "confidence": [
             1.0
@@ -241,21 +233,24 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/pytada-hdt-entity/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/pytada-hdt-entity/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/pytada-hdt-entity/master/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/pytada-hdt-entity/master/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/pytada-hdt-entity/master/scripts/setup.sh",
@@ -316,6 +311,7 @@
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "library"
+        "software_type": "library",
+        "run": "import UNKNOWN"
     }
 }

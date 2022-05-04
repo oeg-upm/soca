@@ -1,35 +1,11 @@
 {
     "description": [
         {
-            "excerpt": "To do so, the recommended way is to use access token \n",
-            "confidence": [
-                [
-                    0.9015665419052512
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Automatic deployment with Jarsomatic",
-            "parentHeader": "Jarsomatic --- How to use it"
-        },
-        {
             "excerpt": "An application to run specific apps when a specific file(s) are changed on a repo in GitHub",
             "confidence": [
                 1.0
             ],
             "technique": "GitHub API"
-        }
-    ],
-    "installation": [
-        {
-            "excerpt": "1. create access token [how to](https://github.com/blog/1509-personal-api-tokens)\n2. git clone https://<token>@github.com/owner/repo.git \n",
-            "confidence": [
-                [
-                    0.916033310292308
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Automatic deployment with Jarsomatic",
-            "parentHeader": "Jarsomatic --- How to use it"
         }
     ],
     "longTitle": {
@@ -39,20 +15,68 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://github.com/ahmad88me/Jarsomatic/raw/master/Jarsomatic%20Diagram.png",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
+    "logo": {
+        "excerpt": "https://github.com/ahmad88me/Jarsomatic/raw/master/Jarsomatic%20Diagram.png",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
     "usage": [
         {
             "originalHeader": "How to use it",
             "excerpt": "1. Add the url of the webhook.\n2. Add jar.cfg.\n3. After that, when ever you do a push to the master branch, if one of files you are watching is changed, then it will\nbe triggered and the command you specified will be called.\n\n",
-            "parentHeader": "Jarsomatic",
+            "parentHeader": [
+                "Jarsomatic"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "JAR Configuration file:",
+            "excerpt": "There should a configuration file per monitored JAR (should be named jar.cfg)\n```\n[DEFAULT]\nwatch: \"dir1/file1.owl\", dir2/file2.csv\ncommand: ls\n```\n\n",
+            "parentHeader": [
+                "Jarsomatic",
+                "How to use it"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Jarsomatic Configuration file:",
+            "excerpt": "The configuration file should be named *jarsomatic.cfg* and located in the top level of Jarsomatic folder\n\na sample configuration file is below\n```\n[DEFAULT]\ntmp: /tmp\n[GITHUB]\ntoken: xxxxxxxxxxxxxxxxxx\n\n```\n\n",
+            "parentHeader": [
+                "Jarsomatic",
+                "How to use it"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Automatic deployment with Jarsomatic",
+            "excerpt": "To do so, the recommended way is to use access token\n\n1. create access token [how to](https://github.com/blog/1509-personal-api-tokens)\n2. git clone https://<token>@github.com/owner/repo.git\n\n",
+            "parentHeader": [
+                "Jarsomatic",
+                "How to use it"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Deployment",
+            "excerpt": "For using wsgi you can update jarsomatic.wsgi according to your server settings\n[Apache with WSGI](http://flask.pocoo.org/docs/0.10/deploying/mod_wsgi/)\n\nOr you can use any of the deployment options mentioned in Flask official website [Here](http://flask.pocoo.org/docs/0.10/deploying/)\n\n\n\n\n",
+            "parentHeader": [
+                "Jarsomatic",
+                "How to use it"
+            ],
             "confidence": [
                 1
             ],
@@ -119,7 +143,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/Jarsomatic/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/Jarsomatic/issues",
         "confidence": [
             1.0
         ],
@@ -142,7 +166,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:12:18 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:00 GMT"
         },
         "confidence": [
             1.0
@@ -152,7 +176,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:12:18 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:00 GMT"
         },
         "confidence": [
             1.0
@@ -177,7 +201,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/Jarsomatic/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/Jarsomatic/master/README.md",
         "confidence": [
             1.0
         ],

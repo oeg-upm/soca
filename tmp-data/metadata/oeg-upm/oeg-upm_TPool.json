@@ -21,6 +21,17 @@
     ],
     "installation": [
         {
+            "originalHeader": "Why not PPool",
+            "excerpt": "If you want to have access to shared variables. But also\nnote that in Python (at least the cPython version)\ninclude a global lock that it does not run multiple \nthreads at the same time, but it is good enough if the \nbottle neck is disk IO or network. \n",
+            "parentHeader": [
+                "Install"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
             "originalHeader": "Install",
             "excerpt": "`pip install TPool`\n",
             "confidence": [
@@ -36,27 +47,14 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://codecov.io/gh/oeg-upm/TPool/branch/master/graph/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://semaphoreci.com/api/v1/ahmad88me/tpool/branches/master/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
     "usage": [
         {
             "originalHeader": "Example 1 - functions",
             "excerpt": "```\nfrom TPool.TPool import Pool\nfrom threading import Lock\n\npairs = []\n\n\ndef foo_merge(name, num, lock):\n    global pairs\n    lock.acquire()\n    pairs.append((name, num))\n    lock.release()\n\n\ndef example():\n    global pairs\n    pairs = []\n    lock = Lock()\n    local_pairs = [('A', 2), ('B', 3), ('C', 4), ('D', 5)]\n    params = []\n    for p in local_pairs:\n        param = p + (lock,)\n        params.append(param)\n    pool = Pool(max_num_of_threads=3, func=foo_merge, params_list=params)\n    pool.run()\n    print pairs\n\n\nif __name__ == \"__main__\":\n    example()\n```\n",
-            "parentHeader": "Install --- Example",
+            "parentHeader": [
+                "Install",
+                "Example"
+            ],
             "confidence": [
                 1
             ],
@@ -65,7 +63,10 @@
         {
             "originalHeader": "Example 2 - Classes",
             "excerpt": "*This is a python3 example*\n```\nfrom multiprocessing import Process, Lock, Pipe\nfrom TPool.TPool import Pool\nimport string\n\n\nclass Annotator:\n\n    def __init__(self):\n        self.gvar = \"abc: \"\n        self.data = {\n            \"abc\": 123,\n        }\n\n    def f(self, te, lock):\n        print(\"te: \"+te)\n        lock.acquire()\n        self.gvar += te+\" --\"\n        self.data[te] = \"Ok\"\n        lock.release()\n\n    def test_threads(self):\n        params_list = []\n        lock = Lock()\n        for i in range(100):\n            s = str(i)+\" \"\n            s += string.ascii_lowercase[i%26]\n            s += string.ascii_lowercase[(i+1)%26]\n            params_list.append((s, lock))\n        pool = Pool(max_num_of_threads=10, func=self.f, params_list=params_list)\n        pool.run()\n        print(\"final: \"+self.gvar)\n        print(self.data)\n\na = Annotator()\na.test_threads()\n```\n",
-            "parentHeader": "Install --- Example",
+            "parentHeader": [
+                "Install",
+                "Example"
+            ],
             "confidence": [
                 1
             ],
@@ -132,7 +133,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/TPool/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/TPool/issues",
         "confidence": [
             1.0
         ],
@@ -168,7 +169,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:32:27 GMT"
+            "date": "Thu, 28 Apr 2022 16:12:23 GMT"
         },
         "confidence": [
             1.0
@@ -178,7 +179,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:27 GMT"
+            "date": "Thu, 28 Apr 2022 16:12:23 GMT"
         },
         "confidence": [
             1.0
@@ -202,13 +203,14 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/TPool/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/TPool/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "library"
+        "software_type": "library",
+        "run": "import TPool"
     }
 }

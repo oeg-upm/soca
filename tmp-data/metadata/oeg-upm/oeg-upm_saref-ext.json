@@ -75,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/saref-ext/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/saref-ext/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:27:43 GMT"
+            "date": "Thu, 28 Apr 2022 16:03:24 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:27:43 GMT"
+            "date": "Thu, 28 Apr 2022 16:03:24 GMT"
         },
         "confidence": [
             1.0
@@ -128,10 +128,78 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/saref-ext/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "https://w3id.org/def/saref4envi",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/OnToology/SAREF4ENV/ontology/saref4envi.ttl/documentation/ontology.xml"
+            },
+            {
+                "uri": "https://w3id.org/def/saref4envi",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/OnToology/SAREF4ENV/ontology/saref4envi.ttl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "https://w3id.org/def/saref4bldg",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/OnToology/SAREF4BLD/ontology/saref4bldg.ttl/documentation/ontology.xml"
+            },
+            {
+                "uri": "https://w3id.org/def/saref4bldg",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/OnToology/SAREF4BLD/ontology/saref4bldg.ttl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "http://saref.linkeddata.es/data/bldg/example1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/OnToology/SAREF4BLD/examples/example1BLDG.ttl/documentation/ontology.xml"
+            },
+            {
+                "uri": "http://saref.linkeddata.es/data/bldg/example1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/OnToology/SAREF4BLD/examples/example1BLDG.ttl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "http://saref.linkeddata.es/data/bldg/example1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/OnToology/SAREF4BLD/examples/example1BLDGpolished.ttl/documentation/ontology.xml"
+            },
+            {
+                "uri": "http://saref.linkeddata.es/data/bldg/example1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/OnToology/SAREF4BLD/examples/example1BLDGpolished.ttl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "https://w3id.org/def/saref4envi",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/SAREF4ENV/ontology/saref4envi.ttl"
+            },
+            {
+                "uri": "http://saref.linkeddata.es/data/envi/example1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/SAREF4ENV/examples/example1ENVI-polished.ttl"
+            },
+            {
+                "uri": "http://saref.linkeddata.es/data/envi/example1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/SAREF4ENV/examples/example1ENVI.ttl"
+            },
+            {
+                "uri": "https://w3id.org/def/saref4bldg",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/SAREF4BLD/ontology/saref4bldg.ttl"
+            },
+            {
+                "uri": "http://saref.linkeddata.es/data/bldg/example1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/SAREF4BLD/examples/example1BLDG.ttl"
+            },
+            {
+                "uri": "http://saref.linkeddata.es/data/bldg/example1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/SAREF4BLD/examples/example1BLDGpolished.ttl"
+            },
+            {
+                "uri": "Nf5a501fc875e41d29a8a90d8a28d3690",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/saref-ext/master/SAREF4BLD/RawRDF/fromProtege.owl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

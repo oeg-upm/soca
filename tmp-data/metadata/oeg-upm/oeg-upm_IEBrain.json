@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "IE Brain project is about the innovation representation and business modelling.\n \n",
+            "confidence": [
+                [
+                    0.988630710525991
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "IEBrain"
+        },
+        {
             "excerpt": "IE Brain project is about connecting the AI market",
             "confidence": [
                 1.0
@@ -75,7 +85,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/IEBrain/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/IEBrain/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +108,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:12:09 GMT"
+            "date": "Thu, 28 Apr 2022 16:25:07 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +118,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:12:09 GMT"
+            "date": "Thu, 28 Apr 2022 16:25:07 GMT"
         },
         "confidence": [
             1.0
@@ -116,10 +126,50 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/IEBrain/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/IEBrain/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://www.moonshot.ceo/ontologies/def/core/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/IEBrain/master/iebrain-core.owl"
+            },
+            {
+                "uri": "http://www.moonshot.ceo/ontologies/def/actor/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/IEBrain/master/iebrain-actor.owl"
+            },
+            {
+                "uri": "http://www.moonshot.ceo/ontologies/def/core/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/IEBrain/master/OnToology/iebrain-core.owl/documentation/doc/ontology.nt"
+            },
+            {
+                "uri": "http://www.moonshot.ceo/ontologies/def/core/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/IEBrain/master/OnToology/iebrain-core.owl/documentation/doc/ontology.xml"
+            },
+            {
+                "uri": "http://www.moonshot.ceo/ontologies/def/core/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/IEBrain/master/OnToology/iebrain-core.owl/documentation/doc/ontology.ttl"
+            },
+            {
+                "uri": "http://www.moonshot.ceo/ontologies/def/actor/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/IEBrain/master/OnToology/iebrain-actor.owl/documentation/doc/ontology.nt"
+            },
+            {
+                "uri": "http://www.moonshot.ceo/ontologies/def/actor/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/IEBrain/master/OnToology/iebrain-actor.owl/documentation/doc/ontology.xml"
+            },
+            {
+                "uri": "http://www.moonshot.ceo/ontologies/def/actor/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/IEBrain/master/OnToology/iebrain-actor.owl/documentation/doc/ontology.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

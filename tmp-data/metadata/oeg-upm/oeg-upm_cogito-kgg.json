@@ -1,19 +1,10 @@
 {
     "description": [
         {
-            "excerpt": "Knowledge Graph Generator for the COGITO Project \n",
+            "excerpt": "Knowledge Graph Generator for the COGITO Project \nSELECT ?space \n",
             "confidence": [
                 [
-                    0.9777987098323366
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "cogito-kgg"
-        },
-        {
-            "excerpt": "SELECT ?space \n",
-            "confidence": [
-                [
+                    0.9777987098323366,
                     0.9254751311447194
                 ]
             ],
@@ -30,49 +21,11 @@
     ],
     "citation": [
         {
-            "excerpt": "PREFIX bot: <https://w3id.org/bot#> \n",
+            "excerpt": "PREFIX bot: <https://w3id.org/bot#> \nPREFIX bot: <https://w3id.org/bot#>\nPREFIX props: <https://w3id.org/props#>\nPREFIX cogito: <http://openmetrics.eu/openmetrics#> \nPREFIX bot: <https://w3id.org/bot#>\nPREFIX cogito: <http://openmetrics.eu/openmetrics#> \n",
             "confidence": [
                 [
-                    0.9278824608274014
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "cogito-kgg"
-        },
-        {
-            "excerpt": "PREFIX bot: <https://w3id.org/bot#>\nPREFIX props: <https://w3id.org/props#>\nPREFIX cogito: <http://openmetrics.eu/openmetrics#> \n",
-            "confidence": [
-                [
-                    0.991553275592551
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "cogito-kgg"
-        },
-        {
-            "excerpt": "PREFIX bot: <https://w3id.org/bot#> \n",
-            "confidence": [
-                [
-                    0.9278824608274014
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "cogito-kgg"
-        },
-        {
-            "excerpt": "PREFIX bot: <https://w3id.org/bot#>\nPREFIX cogito: <http://openmetrics.eu/openmetrics#> \n",
-            "confidence": [
-                [
-                    0.9243188970772274
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "cogito-kgg"
-        },
-        {
-            "excerpt": "PREFIX bot: <https://w3id.org/bot#>\nPREFIX cogito: <http://openmetrics.eu/openmetrics#> \n",
-            "confidence": [
-                [
+                    0.9278824608274014,
+                    0.991553275592551,
                     0.9243188970772274
                 ]
             ],
@@ -147,7 +100,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-kgg/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-kgg/issues",
         "confidence": [
             1.0
         ],
@@ -170,7 +123,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:11 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:07 GMT"
         },
         "confidence": [
             1.0
@@ -180,7 +133,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:11 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:07 GMT"
         },
         "confidence": [
             1.0
@@ -205,22 +158,36 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/cogito-kgg/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/cogito-kgg/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/cogito-kgg/main/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/cogito-kgg/main/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        },
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/cogito-kgg/main/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "inspect4py": {
-        "software_type": "service"
+        "software_type": "service",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/cogito-kgg/manager.py"
     }
 }

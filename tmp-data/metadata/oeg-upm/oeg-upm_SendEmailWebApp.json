@@ -11,18 +11,6 @@
             "originalHeader": "SendEmailWebApp"
         },
         {
-            "excerpt": "Properties description: \n- mail.destinatary: Is the destinatary of email formulary.  \n- mail.host.url: Is the URL of smtp server.  \n- mail.host.port: Is the port of smtp server.  \n- mail.host.user: Is the user of smtp server.  \n- mail.host.password: Is the user of smtp server.  \n- mail.ttls.enable: If smtp server have TTLs then this parameter is \"true\". Values \"false\", \"true\".   \n- mail.message.header: Is the header added to message for more info to destinatary. This param have reserved words (Replaced by webapp data):  \n-- %FULLNAME%: Fullname specified in formulary.  \n-- %IP%: The client ip that send the email.  \n-- %MESSAGE%: The specified message in formulary.  \n- server.mail.limit: Limit of messages sent by same ip in a interval.  \n- server.mail.limit.interval.hours: Time interval that clear count of emails sent.  \n- server.mail.trys.limit: Limit of captcha trys by same ip in a interval.  \n- server.mail.trys.interval.hours:  Time interval that clear count of captcha trys.  \n \nGo to target/SendEmailWebApp/WEB-INF/classes/resources/messages folder.  \nCopy ui.properties and rename it to ui_LANGUAGE-CODE_COUNTRY-CODE.properties  \n--Language-code is your language code, see the next list for search your code (ISO_639-1): https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes  \n--Country-code is your country code, see the next list for search your code: https://es.wikipedia.org/wiki/ISO_3166-1   \nEdit your new file and translate it (Not translate the keys).  \nExample lines of languaje file:  \n> key=value to translate  \n> not.change=This is a example  \n \n",
-            "confidence": [
-                [
-                    0.9931186127627445,
-                    0.9434236558327663
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "2) (Optional) add your own language pack.",
-            "parentHeader": "SendEmailWebApp --- Usage"
-        },
-        {
             "excerpt": "Webapp with formulary to send email a specified destinatary.",
             "confidence": [
                 1.0
@@ -37,90 +25,23 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
+    "documentation": [
         {
-            "excerpt": "https://img.shields.io/badge/Version-0.0.1-lightgrey.svg",
+            "excerpt": "https://github.com/oeg-upm/SendEmailWebApp/wiki",
             "confidence": [
                 1.0
             ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/build-Maven-lightgrey.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/Simple%20Captcha-1.2.1-40c4ff.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/Java%20Mail-1.5.5-40c4ff.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/Java-1.7%20or%20later-40c4ff.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/i18n%20API%3F-yes-green.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/lib-jQuery-green.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/design-Responsive-blue.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/code-JS-blue.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/code-CSS-blue.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/code-HTML-blue.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
+            "technique": "Regular expression",
+            "type": "wiki"
         }
     ],
     "requirement": [
         {
             "originalHeader": "Pre-requisites",
             "excerpt": "* Maven 3.0 or later.\n* Java 1.7 or later.\n* Tomcat 1.7 or later.\n",
-            "parentHeader": "SendEmailWebApp",
+            "parentHeader": [
+                "SendEmailWebApp"
+            ],
             "confidence": [
                 1
             ],
@@ -131,7 +52,57 @@
         {
             "originalHeader": "Usage",
             "excerpt": "1) Configure webapp.  \n2) (Optional) add your own language pack.  \n3) (Optional) add banned ips.  \n4) Deploy the webapp in a tomcat server.  \n",
-            "parentHeader": "SendEmailWebApp",
+            "parentHeader": [
+                "SendEmailWebApp"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "1) Configure Webapp.",
+            "excerpt": "Go to target/SendEmailWebApp/WEB-INF folder.  \nEdit configuration.properties and change the properties.  \nExample of configuration.properties:  \n> mail.destinatary=TO_CHANGE  \n> mail.host.url=TO_CHANGE  \n> mail.host.port=TO_CHANGE  \n> mail.host.user=TO_CHANGE  \n> mail.host.password=TO_CHANGE  \n> mail.ttls.enable=false  \n> mail.message.header=%FULLNAME% sent you, from Web=TO_CHANGE and IP=%IP%, the next message: %MESSAGE%  \n> server.mail.limit=5  \n> server.mail.limit.interval.hours=24  \n> server.mail.trys.limit=5  \n> server.mail.trys.interval.hours=1  \n\nProperties description: \n- mail.destinatary: Is the destinatary of email formulary.  \n- mail.host.url: Is the URL of smtp server.  \n- mail.host.port: Is the port of smtp server.  \n- mail.host.user: Is the user of smtp server.  \n- mail.host.password: Is the user of smtp server.  \n- mail.ttls.enable: If smtp server have TTLs then this parameter is \"true\". Values \"false\", \"true\".   \n- mail.message.header: Is the header added to message for more info to destinatary. This param have reserved words (Replaced by webapp data):  \n-- %FULLNAME%: Fullname specified in formulary.  \n-- %IP%: The client ip that send the email.  \n-- %MESSAGE%: The specified message in formulary.  \n- server.mail.limit: Limit of messages sent by same ip in a interval.  \n- server.mail.limit.interval.hours: Time interval that clear count of emails sent.  \n- server.mail.trys.limit: Limit of captcha trys by same ip in a interval.  \n- server.mail.trys.interval.hours:  Time interval that clear count of captcha trys.  \n",
+            "parentHeader": [
+                "SendEmailWebApp",
+                "Usage"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "2) (Optional) add your own language pack.",
+            "excerpt": "Go to target/SendEmailWebApp/WEB-INF/classes/resources/messages folder.  \nCopy ui.properties and rename it to ui_LANGUAGE-CODE_COUNTRY-CODE.properties  \n--Language-code is your language code, see the next list for search your code (ISO_639-1): https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes  \n--Country-code is your country code, see the next list for search your code: https://es.wikipedia.org/wiki/ISO_3166-1   \nEdit your new file and translate it (Not translate the keys).  \nExample lines of languaje file:  \n> key=value to translate  \n> not.change=This is a example  \n",
+            "parentHeader": [
+                "SendEmailWebApp",
+                "Usage"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "3) (Optional) add banned ips.",
+            "excerpt": "Go to target/SendEmailWebApp/WEB-INF/bannedIPs.txt  \nEach line is a banned ip. If you want to add comments put \"#\" character and line start.    \nExample file:\n> \\#This is a comment.  \n> \\#Each line is a banned IP.  \n> \\#Ip hacker attacks:  \n> 1.12.123.123    \n",
+            "parentHeader": [
+                "SendEmailWebApp",
+                "Usage"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "4) Deploy the webapp in a tomcat server.",
+            "excerpt": "Copy the target/SendEmailWebApp folder to a tomcat webapps folder.  \nOr compress it on a war file and deploy it by tomcat manager.  \n",
+            "parentHeader": [
+                "SendEmailWebApp",
+                "Usage"
+            ],
             "confidence": [
                 1
             ],
@@ -188,7 +159,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/SendEmailWebApp/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/SendEmailWebApp/issues",
         "confidence": [
             1.0
         ],
@@ -211,7 +182,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:28:03 GMT"
+            "date": "Thu, 28 Apr 2022 16:01:57 GMT"
         },
         "confidence": [
             1.0
@@ -221,7 +192,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:28:03 GMT"
+            "date": "Thu, 28 Apr 2022 16:01:57 GMT"
         },
         "confidence": [
             1.0
@@ -239,7 +210,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/SendEmailWebApp/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/SendEmailWebApp/master/README.md",
         "confidence": [
             1.0
         ],

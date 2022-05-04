@@ -1,4 +1,32 @@
 {
+    "description": [
+        {
+            "excerpt": "In the [openweathermap folder](./Examples/openweathermap) we can see an example of a [json file](./Examples/openweathermap/Europe-Madrid(40.4196_-3.692).json), with which the corresponding [RDF files](./RDF_Examples/openweathermap/Europe-Madrid(40.4196_-3.692).ttl) have been obtained by means of declarative mappings. \n",
+            "confidence": [
+                [
+                    0.9591021641528265
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "BIMERR OPEN-WEATHER-MAP FILES",
+            "parentHeader": [
+                "BIMERR-EPW"
+            ]
+        },
+        {
+            "excerpt": "The implementation of the code has been carried out using the [Python language](https://www.python.org/download/releases/3.0/) with the [Django library](https://www.djangoproject.com/), with which a rest service has been created with which all the tasks can be carried out in a simple way. Also, we have used [Helio](https://oeg-upm.github.io/helio/) and [RMLMapper](https://github.com/RMLio/rmlmapper-java) to achieve the transformation of the data by means of mappings to RDF format.\n \n",
+            "confidence": [
+                [
+                    0.989934897784331
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "CODE IMPLEMENTATION",
+            "parentHeader": [
+                "BIMERR-EPW"
+            ]
+        }
+    ],
     "longTitle": {
         "excerpt": "BIMERR-EPW",
         "confidence": [
@@ -66,7 +94,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-epw/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-epw/issues",
         "confidence": [
             1.0
         ],
@@ -89,7 +117,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:47:11 GMT"
+            "date": "Thu, 28 Apr 2022 16:32:37 GMT"
         },
         "confidence": [
             1.0
@@ -99,7 +127,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:47:11 GMT"
+            "date": "Thu, 28 Apr 2022 16:32:37 GMT"
         },
         "confidence": [
             1.0
@@ -126,19 +154,11 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/bimerr-epw/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/bimerr-epw/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasDocumentation": {
-        "excerpt": [
-            "https://github.com/oeg-upm/bimerr-epw/tree/master/Code/TDATA2RDFANDV/static/rest_framework/docs"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    }
+    "inspect4py": {}
 }

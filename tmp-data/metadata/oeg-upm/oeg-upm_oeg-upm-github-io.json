@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "Repository used to generate the OEG-UPM group website for development\n \n",
+            "confidence": [
+                [
+                    0.9895945189784353
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "oeg-upm.github.io"
+        },
+        {
             "excerpt": "Repository used to generate the OEG-UPM group website for development",
             "confidence": [
                 1.0
@@ -75,7 +85,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/oeg-upm.github.io/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/oeg-upm.github.io/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +108,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:23:46 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:24 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +118,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:23:46 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:24 GMT"
         },
         "confidence": [
             1.0
@@ -132,7 +142,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/oeg-upm.github.io/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/oeg-upm.github.io/master/README.md",
         "confidence": [
             1.0
         ],

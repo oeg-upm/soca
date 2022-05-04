@@ -19,18 +19,6 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "Main publication [WEBODE in a Nutshell](https://www.aaai.org/ojs/index.php/aimagazine/article/view/1717) \n",
-            "confidence": [
-                [
-                    0.9836695799641776
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "webODE"
-        }
-    ],
     "longTitle": {
         "excerpt": "webODE",
         "confidence": [
@@ -98,7 +86,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/webODE/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/webODE/issues",
         "confidence": [
             1.0
         ],
@@ -121,7 +109,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:35:12 GMT"
+            "date": "Thu, 28 Apr 2022 16:06:45 GMT"
         },
         "confidence": [
             1.0
@@ -131,7 +119,7 @@
     "forksCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:35:12 GMT"
+            "date": "Thu, 28 Apr 2022 16:06:45 GMT"
         },
         "confidence": [
             1.0
@@ -156,7 +144,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/webODE/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/webODE/master/README.md",
         "confidence": [
             1.0
         ],

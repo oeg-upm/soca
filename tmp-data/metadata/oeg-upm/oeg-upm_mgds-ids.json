@@ -75,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/mgds-ids/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/mgds-ids/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:14:46 GMT"
+            "date": "Thu, 28 Apr 2022 16:29:18 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:14:46 GMT"
+            "date": "Thu, 28 Apr 2022 16:29:18 GMT"
         },
         "confidence": [
             1.0
@@ -133,22 +133,36 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/mgds-ids/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/mgds-ids/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/mgds-ids/main/broker/nginx/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/mgds-ids/main/connector/nginx/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/mgds-ids/main/broker/docker-compose.yml",
+                "https://raw.githubusercontent.com/oeg-upm/mgds-ids/main/connector/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        },
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/mgds-ids/main/broker/nginx/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/mgds-ids/main/connector/nginx/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/mgds-ids/main/run.sh",

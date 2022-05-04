@@ -1,7 +1,30 @@
 {
     "description": [
         {
-            "excerpt": "Source code for OnToology Drag&Drop",
+            "excerpt": "OATAPI takes two ontology artefacts (a set of competency questions (CQs) and the related ontology serialization) and generates the API paths and SPARQL queries that allow these questions  to be solved. \n",
+            "confidence": [
+                [
+                    0.9422396383482898
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Ontology Artefacts to Application Programming Interface (OATAPI)"
+        },
+        {
+            "excerpt": "To detect the correspondences between terms from the CQ and the ontology serialization, OATAPI takes the label annotations of the ontology elements. These annotations must be written in English. However, when an ontology element does not have a label OATAPI will get it from its URI. \n",
+            "confidence": [
+                [
+                    0.9165614372722531
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Supported Competency Questions",
+            "parentHeader": [
+                "Ontology Artefacts to Application Programming Interface (OATAPI)"
+            ]
+        },
+        {
+            "excerpt": "Ontology Artefacts to API",
             "confidence": [
                 1.0
             ],
@@ -10,24 +33,51 @@
     ],
     "installation": [
         {
-            "excerpt": "You can run a local version using a server like Apache Tomcat. \n",
+            "excerpt": "To run OATAPI you need Python 3.7 (or a higher version). You can find the list of required packages [here](https://github.com/paoespinozarias/oatapis/blob/main/requirements.txt). \n",
             "confidence": [
                 [
-                    0.9548497701628138
+                    0.9913520356455032
                 ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "Ontology Artefacts to Application Programming Interface (OATAPI)"
         }
     ],
-    "logo": {
-        "excerpt": "https://raw.githubusercontent.com/oeg-upm/OnToologyDnD/master/WebContent/static/images/logoprop.png",
+    "longTitle": {
+        "excerpt": "Ontology Artefacts to Application Programming Interface (OATAPI)",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
+    "run": [
+        {
+            "originalHeader": "Running example",
+            "excerpt": "You can use the CQs and ontologies available at the *Data* and *Ontologies* directories from this repository. For example, you can run OATAPI with the artefacts of the Videogame ontology as follows:\n\n```\npython3 main.py -cq  \"Data/CQs-VGO.csv\" \\\n-o \"Ontologies/vgo.owl\" \\\n-r \"Output/\"\n```\n\nOr, if you prefer to provide the parameter entries via their location on the Web, you can run OATAPI as follows:\n\n```\npython3 main.py -cq  \"https://raw.githubusercontent.com/paoespinozarias/oatapi/master/Data/CQs-VGO.csv\" \\\n-o \"http://vocab.linkeddata.es/vgo\" \\\n-r \"Output/\"\n```\nAfter running OATAPI, you will get a CSV file with the results located in the *Output* directory. The file name will start with the name of the ontology. In the running example, you will obtain as a result the file *vgo-results.csv*\n",
+            "parentHeader": [
+                "Ontology Artefacts to Application Programming Interface (OATAPI)"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Running example",
+            "excerpt": "You can use the CQs and ontologies available at the *Data* and *Ontologies* directories from this repository. For example, you can run OATAPI with the artefacts of the Videogame ontology as follows:\n\n```\npython3 main.py -cq  \"Data/CQs-VGO.csv\" \\\n-o \"Ontologies/vgo.owl\" \\\n-r \"Output/\"\n```\n\nOr, if you prefer to provide the parameter entries via their location on the Web, you can run OATAPI as follows:\n\n```\npython3 main.py -cq  \"https://raw.githubusercontent.com/paoespinozarias/oatapi/master/Data/CQs-VGO.csv\" \\\n-o \"http://vocab.linkeddata.es/vgo\" \\\n-r \"Output/\"\n```\nAfter running OATAPI, you will get a CSV file with the results located in the *Output* directory. The file name will start with the name of the ontology. In the running example, you will obtain as a result the file *vgo-results.csv*\n",
+            "parentHeader": [
+                "Ontology Artefacts to Application Programming Interface (OATAPI)"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/OnToologyDnD",
+        "excerpt": "https://github.com/oeg-upm/oatapi",
         "confidence": [
             1.0
         ],
@@ -48,14 +98,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2020-06-23T12:19:20Z",
+        "excerpt": "2022-03-17T19:19:54Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2020-09-17T16:59:25Z",
+        "excerpt": "2021-12-07T08:06:06Z",
         "confidence": [
             1.0
         ],
@@ -72,44 +122,35 @@
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "OnToologyDnD",
+        "excerpt": "oatapi",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/OnToologyDnD",
+        "excerpt": "oeg-upm/oatapi",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/OnToologyDnD/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/oatapi/issues",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/OnToologyDnD/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/oatapi/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/OnToologyDnD/releases",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "topics": {
-        "excerpt": [
-            "ontology-engineering"
-        ],
+        "excerpt": "https://github.com/oeg-upm/oatapi/releases",
         "confidence": [
             1.0
         ],
@@ -117,8 +158,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 2,
-            "date": "Tue, 05 Apr 2022 09:23:57 GMT"
+            "count": 0,
+            "date": "Thu, 28 Apr 2022 16:55:23 GMT"
         },
         "confidence": [
             1.0
@@ -128,7 +169,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:23:57 GMT"
+            "date": "Thu, 28 Apr 2022 16:55:23 GMT"
         },
         "confidence": [
             1.0
@@ -137,9 +178,7 @@
     },
     "languages": {
         "excerpt": [
-            "Java",
-            "JavaScript",
-            "CSS"
+            "Python"
         ],
         "confidence": [
             1.0
@@ -154,10 +193,30 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/OnToologyDnD/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/oatapi/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://vocab.ciudadesabiertas.es/def/comercio/tejido-comercial",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/oatapi/main/Ontologies/escom.owl"
+            },
+            {
+                "uri": "http://purl.org/net/VideoGameOntology",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/oatapi/main/Ontologies/vgo.owl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "inspect4py": {
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/oatapi/main.py"
     }
 }

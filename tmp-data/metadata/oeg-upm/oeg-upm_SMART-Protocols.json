@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "The SeMAntic RepresenTation for Protocols, SMART Protocols, provides two ontology modules expressed in OWL to represent the document and workflow aspects of experimental protocols. The SMART Protocols-Document module aims to provide a structured vocabulary of concepts to represent information for reporting an experimental protocol. The SMART Protocols-Workflow module aims to provide a structured vocabulary of concepts to represent the execution of experimental protocols. The domain knowledge is modeled with the AO.\n \n",
+            "confidence": [
+                [
+                    0.9557761569461605
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "SMART-Protocols"
+        },
+        {
             "excerpt": "SMART-Protocols is an ontology to represent experimental protocols, available at http://vocab.linkeddata.es/SMARTProtocols/",
             "confidence": [
                 1.0
@@ -75,7 +85,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/SMART-Protocols/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/SMART-Protocols/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +108,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:29:10 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:08 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +118,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:29:10 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:08 GMT"
         },
         "confidence": [
             1.0
@@ -116,10 +126,30 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/SMART-Protocols/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/SMART-Protocols/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://purl.org/net/SMARTprotocol#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/SMART-Protocols/master/docProtocolV2.0.owl"
+            },
+            {
+                "uri": "http://purl.org/net/SMARTprotocol#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/SMART-Protocols/master/docWorkflow2.0.owl"
+            },
+            {
+                "uri": "http://purl.org/net/SMARTprotocol",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/SMART-Protocols/master/wfProtocolV2.0.owl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

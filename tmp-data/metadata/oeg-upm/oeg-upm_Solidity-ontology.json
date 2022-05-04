@@ -56,7 +56,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/Solidity-ontology/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/Solidity-ontology/issues",
         "confidence": [
             1.0
         ],
@@ -79,7 +79,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:29:18 GMT"
+            "date": "Thu, 28 Apr 2022 16:30:56 GMT"
         },
         "confidence": [
             1.0
@@ -89,7 +89,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:29:18 GMT"
+            "date": "Thu, 28 Apr 2022 16:30:56 GMT"
         },
         "confidence": [
             1.0
@@ -106,10 +106,34 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/Solidity-ontology/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/Solidity-ontology/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "https://w3id.org/def/SolidityOntology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Solidity-ontology/main/SolidityOntology.owl"
+            },
+            {
+                "uri": "https://w3id.org/def/SolidityOntology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Solidity-ontology/main/OnToology/SolidityOntology.owl/documentation/ontology.nt"
+            },
+            {
+                "uri": "https://w3id.org/def/SolidityOntology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Solidity-ontology/main/OnToology/SolidityOntology.owl/documentation/ontology.xml"
+            },
+            {
+                "uri": "https://w3id.org/def/SolidityOntology#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/Solidity-ontology/main/OnToology/SolidityOntology.owl/documentation/ontology.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

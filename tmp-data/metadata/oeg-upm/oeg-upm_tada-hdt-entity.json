@@ -1,7 +1,7 @@
 {
     "description": [
         {
-            "excerpt": "# tada-hdt-entity\nAdd classes to entity columns in tabular data using HDT as the knowledge source \n",
+            "excerpt": "Add classes to entity columns in tabular data using HDT as the knowledge source \n",
             "confidence": [
                 [
                     0.9429391166319174
@@ -18,18 +18,6 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3732626.svg)](https://doi.org/10.5281/zenodo.3732626) \n",
-            "confidence": [
-                [
-                    0.999999999981128
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "tada-hdt-entity"
-        }
-    ],
     "longTitle": {
         "excerpt": "tada-hdt-entity",
         "confidence": [
@@ -40,29 +28,6 @@
     "identifier": [
         {
             "excerpt": "https://doi.org/10.5281/zenodo.3732626",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
-    "image": [
-        {
-            "excerpt": "https://zenodo.org/badge/DOI/10.5281/zenodo.3732626.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://codecov.io/gh/oeg-upm/tada-hdt-entity/branch/master/graph/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://semaphoreci.com/api/v1/ahmad88me/tada-hdt-entity/branches/master/badge.svg",
             "confidence": [
                 1.0
             ],
@@ -129,7 +94,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/tada-hdt-entity/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/tada-hdt-entity/issues",
         "confidence": [
             1.0
         ],
@@ -164,7 +129,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:29:51 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:01 GMT"
         },
         "confidence": [
             1.0
@@ -174,7 +139,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:29:51 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:01 GMT"
         },
         "confidence": [
             1.0
@@ -201,21 +166,24 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/tada-hdt-entity/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/tada-hdt-entity/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/tada-hdt-entity/master/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/tada-hdt-entity/master/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/tada-hdt-entity/master/scripts/setup.sh",

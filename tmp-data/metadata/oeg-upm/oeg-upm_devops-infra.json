@@ -1,23 +1,42 @@
 {
     "description": [
         {
+            "excerpt": "The DevOps infrastructure ontology network describes the domain of DevOps infrastructure. It is published at http://w3id.org/devops-infra\n \n",
+            "confidence": [
+                [
+                    0.9345197470877948
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "DevOps Infrastructure Ontology Network"
+        },
+        {
+            "excerpt": "This ontology network aims at representing the main sets of entities and relationships used in the context of DevOps infrastructure.  \nIt is the result of a collaboration between Huawei Research Ireland and the Ontology Engineering Group at Universidad Polit\u00e9cnica de Madrid. It originally started from an analysis of the Configuration Management Databases used by Huawei Research Ireland for the management of a large part of its DevOps infrastructure, and has evolved into an ontology that may be used as a starting point for the standardisation of the representation of CMDB-related data across vendors.\n \n",
+            "confidence": [
+                [
+                    0.93776833227987,
+                    0.996847663270851
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Purpose and scope of the ontology network"
+        },
+        {
+            "excerpt": "The ontology network is published using GitHub pages. The configuration file for enabling the content negotiation on w3id.org is available [here](https://github.com/perma-id/w3id.org/tree/master/devops-infra)\n \n",
+            "confidence": [
+                [
+                    0.9701881646473614
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Content negotiation at w3id.org"
+        },
+        {
             "excerpt": "Public repository for an ontology network on DevOps infrastructure",
             "confidence": [
                 1.0
             ],
             "technique": "GitHub API"
-        }
-    ],
-    "citation": [
-        {
-            "excerpt": "[![DOI](https://zenodo.org/badge/325636796.svg)](https://zenodo.org/badge/latestdoi/325636796) \n",
-            "confidence": [
-                [
-                    0.9999959318575946
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "DevOps Infrastructure Ontology Network"
         }
     ],
     "longTitle": {
@@ -30,15 +49,6 @@
     "identifier": [
         {
             "excerpt": "https://zenodo.org/badge/latestdoi/325636796",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
-    "image": [
-        {
-            "excerpt": "https://zenodo.org/badge/325636796.svg",
             "confidence": [
                 1.0
             ],
@@ -84,7 +94,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-02-07T12:10:51Z",
+        "excerpt": "2022-04-26T13:27:12Z",
         "confidence": [
             1.0
         ],
@@ -105,7 +115,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/devops-infra/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/devops-infra/issues",
         "confidence": [
             1.0
         ],
@@ -127,8 +137,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 2,
-            "date": "Tue, 05 Apr 2022 09:00:54 GMT"
+            "count": 3,
+            "date": "Thu, 28 Apr 2022 16:29:53 GMT"
         },
         "confidence": [
             1.0
@@ -138,7 +148,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:54 GMT"
+            "date": "Thu, 28 Apr 2022 16:29:53 GMT"
         },
         "confidence": [
             1.0
@@ -157,11 +167,151 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/devops-infra/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://w3id.org/devops-infra/database",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/database/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/database",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/database/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/database",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/database/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/hardware",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/hardware/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/hardware",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/hardware/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/hardware",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/hardware/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/core/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/core/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/core",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/core/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/certificate",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/certificate/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/certificate",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/certificate/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/certificate",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/certificate/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/network",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/network/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/network",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/network/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/network",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/network/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/server",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/server/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/server",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/server/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/server",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/server/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/product",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/product/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/product",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/product/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/product",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/product/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/software",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/software/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/software",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/software/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/software",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/software/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/data-center",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/data-center/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/data-center",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/data-center/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/data-center",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/data-center/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/workflow",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/workflow/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/workflow",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/workflow/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/workflow",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/workflow/ontology.ttl"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/organisation",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/organisation/ontology.nt"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/organisation",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/organisation/ontology.xml"
+            },
+            {
+                "uri": "http://w3id.org/devops-infra/organisation",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/devops-infra/master/ontology/organisation/ontology.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     },
     "releases": {
         "excerpt": [

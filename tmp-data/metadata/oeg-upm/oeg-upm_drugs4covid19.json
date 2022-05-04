@@ -1,11 +1,33 @@
 {
     "description": [
         {
+            "excerpt": "More info in our website [drugs4covid.oeg-upm.net](https://drugs4covid.oeg-upm.net)\n \n",
+            "confidence": [
+                [
+                    0.9877704304122529
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "drugs4covid19"
+        },
+        {
             "excerpt": "Tools to extract knowledge from scientific publications on COVID-19",
             "confidence": [
                 1.0
             ],
             "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "Resources created to extract knowledge from scientific publications on COVID-19\n- Automatic annotations of drugs and diseases in research articles: http://github.com/oeg-upm/drugs4covid19-nlp\n- Vocabulary defined to support the Drugs4Covid knowledge-graph: https://github.com/oeg-upm/drugs4covid19-vocab\n- Generation and exploitation of the Drugs4Covid Knowledge-Graph: https://github.com/oeg-upm/drugs4covid19-kg\n- Citizen Science initiative to validate statements: https://github.com/oeg-upm/drugs4covid19-cs\n- Web interface: https://github.com/oeg-upm/drugs4covid19web \n",
+            "confidence": [
+                [
+                    0.991323078407842
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "drugs4covid19"
         }
     ],
     "longTitle": {
@@ -75,7 +97,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +120,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:06 GMT"
+            "date": "Thu, 28 Apr 2022 16:23:25 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +130,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:06 GMT"
+            "date": "Thu, 28 Apr 2022 16:23:25 GMT"
         },
         "confidence": [
             1.0
@@ -123,7 +145,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/drugs4covid19/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/drugs4covid19/master/README.md",
         "confidence": [
             1.0
         ],

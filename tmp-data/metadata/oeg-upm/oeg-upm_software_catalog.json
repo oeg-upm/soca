@@ -1,24 +1,35 @@
 {
+    "description": [
+        {
+            "excerpt": "The commands outlined above will re-generate the full catalog. However, it's possible to curate the list of repositories on top of which `scc` will be run on. The folder `repositories` contain an initial pass donde by scc with the full contents of the oeg organization. Simply modify the file `oeg-upm.csv` and add the repositories you are interested in. \n",
+            "confidence": [
+                [
+                    0.9290746857689661
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Creating a new version of the catalog",
+            "parentHeader": [
+                "software_catalog"
+            ]
+        },
+        {
+            "excerpt": "Catalog of software tools developed at the Ontology Engineering Group",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
     "longTitle": {
-        "excerpt": "Note ",
+        "excerpt": "software_catalog",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
-    "installation": [
-        {
-            "originalHeader": "Install libraries for Python3 ",
-            "excerpt": "# **Note** <h0>\n\n## **Install libraries for Python3** <h2>\n\nThe `requirements.txt` file should list all Python libraries that your notebooks\ndepend on, and they will be installed using:\n\n```\npip install -r requirements.txt\n```\n",
-            "parentHeader": "Note ",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        }
-    ],
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/epw2rdf",
+        "excerpt": "https://github.com/oeg-upm/software_catalog",
         "confidence": [
             1.0
         ],
@@ -39,14 +50,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2019-10-11T11:55:08Z",
+        "excerpt": "2022-04-12T13:57:46Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2019-10-29T17:03:39Z",
+        "excerpt": "2022-04-12T15:00:02Z",
         "confidence": [
             1.0
         ],
@@ -62,45 +73,36 @@
         ],
         "technique": "GitHub API"
     },
-    "description": [
-        {
-            "excerpt": "Transform weather data in EPW format to RDF",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
     "name": {
-        "excerpt": "epw2rdf",
+        "excerpt": "software_catalog",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/epw2rdf",
+        "excerpt": "oeg-upm/software_catalog",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/epw2rdf/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/software_catalog/issues",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/epw2rdf/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/software_catalog/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/epw2rdf/releases",
+        "excerpt": "https://github.com/oeg-upm/software_catalog/releases",
         "confidence": [
             1.0
         ],
@@ -109,7 +111,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:08:53 GMT"
+            "date": "Thu, 28 Apr 2022 16:55:45 GMT"
         },
         "confidence": [
             1.0
@@ -118,8 +120,8 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 2,
-            "date": "Tue, 05 Apr 2022 09:08:53 GMT"
+            "count": 0,
+            "date": "Thu, 28 Apr 2022 16:55:45 GMT"
         },
         "confidence": [
             1.0
@@ -128,7 +130,9 @@
     },
     "languages": {
         "excerpt": [
-            "Python"
+            "HTML",
+            "JavaScript",
+            "CSS"
         ],
         "confidence": [
             1.0
@@ -143,13 +147,10 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/epw2rdf/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/software_catalog/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "inspect4py": {
-        "software_type": "script"
     }
 }

@@ -1,11 +1,12 @@
 {
     "description": [
         {
-            "excerpt": "This repository is intended to collect material that supports the development of the Termlex module, a an extension proposal of OntoLex-lemon to cover the current gaps regarding the publication of terminological resources in Semantic Web formats.\nThe work started in October 2020 as part of the NexusLinguarum Action (http://nexuslinguarum.eu/), that supported the development with the founding of an short term scientific mission amongst the main institutions behind the work: UPM (Universidad Polit\u00e9cnica de Madrid) and DFKI (Deutsches Forschungszentrum f\u00fcr K\u00fcnstliche Intelligenz). \nThe repo contains the preliminary ontology in Turtle, and some use cases examples in the same format. \nThese files are support the ongoing publication to present this module. More info about the proposal can be found in the Ontology Lexica Community Group Wiki page: https://www.w3.org/community/ontolex/wiki/Terminology \n",
+            "excerpt": "This repository is intended to collect material that supports the development of the Termlex module, a an extension proposal of OntoLex-lemon to cover the current gaps regarding the publication of terminological resources in Semantic Web formats.\nThe work started in October 2020 as part of the NexusLinguarum Action (http://nexuslinguarum.eu/), that supported the development with the founding of an short term scientific mission amongst the main institutions behind the work: UPM (Universidad Polit\u00e9cnica de Madrid) and DFKI (Deutsches Forschungszentrum f\u00fcr K\u00fcnstliche Intelligenz). \nThe repo contains the preliminary ontology in Turtle, and some use cases examples in the same format. \nThese files are support the ongoing publication to present this module. More info about the proposal can be found in the Ontology Lexica Community Group Wiki page: https://www.w3.org/community/ontolex/wiki/Terminology \nDISCLAIMER: Please, note that this is a preliminary version. This vocabulary is still unofficial and needs to be discussed within the Ontolex Chairs and the community group.  \n \n",
             "confidence": [
                 [
                     0.9991934279391748,
-                    0.9279755428058719
+                    0.9279755428058719,
+                    0.9750488866376927
                 ]
             ],
             "technique": "Supervised classification",
@@ -19,15 +20,13 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://github.com/oeg-upm/termlex/blob/main/termlex_core.png",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
+    "logo": {
+        "excerpt": "https://github.com/oeg-upm/termlex/blob/main/termlex_core.png",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/termlex",
         "confidence": [
@@ -78,7 +77,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/termlex/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/termlex/issues",
         "confidence": [
             1.0
         ],
@@ -101,7 +100,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:11 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:52 GMT"
         },
         "confidence": [
             1.0
@@ -111,7 +110,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:11 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:52 GMT"
         },
         "confidence": [
             1.0
@@ -119,7 +118,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/termlex/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/termlex/main/README.md",
         "confidence": [
             1.0
         ],

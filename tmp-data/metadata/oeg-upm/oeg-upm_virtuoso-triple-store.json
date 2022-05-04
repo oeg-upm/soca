@@ -9,28 +9,58 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "Triple Store"
-        },
-        {
-            "excerpt": "1. Access the conductor as dba user, using the password during the creation of the container. \n",
-            "confidence": [
-                [
-                    0.9539075113347237
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Giving rights to insert data",
-            "parentHeader": "Triple Store --- Setting up virtuoso"
         }
     ],
     "installation": [
         {
-            "originalHeader": "Setting up virtuoso",
-            "excerpt": "The specific instructions on how to run the Virtuoso Docker are in this link:\n\nhttps://hub.docker.com/r/openlink/virtuoso-opensource-7\n",
-            "parentHeader": "Triple Store",
+            "originalHeader": "Giving rights to insert data",
+            "excerpt": "1. Access the conductor as dba user, using the password during the creation of the container.\n\n![Conductor](images/conductor.png)\n\n2. Go to System Admin tab, then to the User Accounts tab, and then to the Users tabs.\n\n![](images/users.png)\n\n3. Edit the SPARQL user.\n\n![](images/sparql_user.png)\n\n4. Give it SPARQL_UPDATE rights.\n\n![](images/sparql_update.png)\n\n5. Save it.\n",
+            "parentHeader": [
+                "Triple Store",
+                "Setting up virtuoso"
+            ],
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Instructions:",
+            "excerpt": "1. docker pull openlink/virtuoso-opensource-7\n2. mkdir my_virtdb\n3. cd my_virtdb\n4. docker run \\\n        --name my_virtdb \\\n        --env DBA_PASSWORD=mysecret \\\n        -p 1111:1111 \\\n        -p 8890:8890 \\\n        --volume 'pwd':/database \\\n        -d \\\n        openlink/virtuoso-opensource-7:latest\n\nNotes:\n\n* The 'pwd' is the directory within the files systems where the data will be located.\n\n* The -d flag will initialize it in detached mode (running in background)\n\n* The conductor can be accessed at http://localhost:8890\n\n",
+            "parentHeader": [
+                "Triple Store",
+                "Setting up virtuoso"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Setting up virtuoso",
+            "excerpt": "The specific instructions on how to run the Virtuoso Docker are in this link:\n\nhttps://hub.docker.com/r/openlink/virtuoso-opensource-7\n",
+            "parentHeader": [
+                "Triple Store"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "invocation": [
+        {
+            "excerpt": "`python select_query.py`\n \n",
+            "confidence": [
+                [
+                    0.9246227682586091
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Query data in Virtuoso",
+            "parentHeader": [
+                "Triple Store"
+            ]
         }
     ],
     "longTitle": {
@@ -42,21 +72,21 @@
     },
     "image": [
         {
-            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master//master//master//master/images/sparql_update.png",
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master/images/sparql_update.png",
             "confidence": [
                 1.0
             ],
             "technique": "Regular expression"
         },
         {
-            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master//master//master/images/sparql_user.png",
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master/images/sparql_user.png",
             "confidence": [
                 1.0
             ],
             "technique": "Regular expression"
         },
         {
-            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master//master/images/users.png",
+            "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/master/images/users.png",
             "confidence": [
                 1.0
             ],
@@ -74,7 +104,10 @@
         {
             "originalHeader": "Stopping and starting the container",
             "excerpt": "Stop container:\n\n```docker stop my_virtdb```\n\nStart container: This will run Virtuoso on the background.\n\n```docker start my_virtdb```\n",
-            "parentHeader": "Triple Store --- Setting up virtuoso",
+            "parentHeader": [
+                "Triple Store",
+                "Setting up virtuoso"
+            ],
             "confidence": [
                 1
             ],
@@ -131,7 +164,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/virtuoso-triple-store/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/virtuoso-triple-store/issues",
         "confidence": [
             1.0
         ],
@@ -154,7 +187,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:56 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:13 GMT"
         },
         "confidence": [
             1.0
@@ -164,7 +197,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:56 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:13 GMT"
         },
         "confidence": [
             1.0
@@ -181,13 +214,14 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/virtuoso-triple-store/readme.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/virtuoso-triple-store/main/readme.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "script"
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/virtuoso-triple-store/insert_query.py"
     }
 }

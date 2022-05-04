@@ -84,7 +84,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/outlinejs/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/outlinejs/issues",
         "confidence": [
             1.0
         ],
@@ -107,7 +107,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:26:58 GMT"
+            "date": "Thu, 28 Apr 2022 16:03:38 GMT"
         },
         "confidence": [
             1.0
@@ -117,7 +117,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:26:58 GMT"
+            "date": "Thu, 28 Apr 2022 16:03:38 GMT"
         },
         "confidence": [
             1.0
@@ -142,7 +142,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/outlinejs/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/outlinejs/master/README.md",
         "confidence": [
             1.0
         ],

@@ -1,17 +1,17 @@
 {
     "description": [
         {
-            "excerpt": "An online application to show the distribution of a given class/property pairs of a SPARQL endpoint \n",
+            "excerpt": "| Ontology        | Mapping           \n| ------------- |:-------------:| \n| Class     | TriplesMap + Simple PredicateObjectMap (rdf:type, class) | \n| Data Property     | Simple PredicateObjectMap in the TriplesMap corresponding to the class defined in the domain of the property      | \n| Object Property | Join PredicateObjectMap in the TriplesMap corresponding to the class defined in the domain of the property and where the parentTriplesMap is the TriplesMap corresponding to the class defined in the range of the property | \n \n",
             "confidence": [
                 [
-                    0.9532646737486324
+                    0.9351811587794558
                 ]
             ],
             "technique": "Supervised classification",
-            "originalHeader": "Property Cake"
+            "originalHeader": "Transforming your ontology to YARRRML mappings"
         },
         {
-            "excerpt": "An online application to show the distribution of a given class/property pairs of a SPARQL endpoint ",
+            "excerpt": "Basic script that extracts information from the ontology to generate a YARRRML draft",
             "confidence": [
                 1.0
             ],
@@ -19,23 +19,27 @@
         }
     ],
     "longTitle": {
-        "excerpt": "Property Cake",
+        "excerpt": "Transforming your ontology to YARRRML mappings",
         "confidence": [
             1.0
         ],
         "technique": "Regular expression"
     },
-    "image": [
+    "run": [
         {
-            "excerpt": "https://raw.githubusercontent.com/oeg-upm/pcake/master/property_distribution.png?raw=true",
-            "confidence": [
-                1.0
+            "originalHeader": "How to execute it",
+            "excerpt": "In order to avoid problems, we recommend that the input ontology follows RDF/XML syntax\n\n```python\npython3 -m pip install -r requirements.txt\npython3 translate.py -i ontology.xml -o mapping.yml\n```\n",
+            "parentHeader": [
+                "Transforming your ontology to YARRRML mappings"
             ],
-            "technique": "Regular expression"
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
         }
     ],
     "codeRepository": {
-        "excerpt": "https://github.com/oeg-upm/pcake",
+        "excerpt": "https://github.com/oeg-upm/owl2yarrrml",
         "confidence": [
             1.0
         ],
@@ -56,14 +60,14 @@
         "technique": "GitHub API"
     },
     "dateCreated": {
-        "excerpt": "2018-06-27T17:21:59Z",
+        "excerpt": "2020-10-16T11:40:57Z",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-01-20T19:22:49Z",
+        "excerpt": "2022-03-28T11:32:26Z",
         "confidence": [
             1.0
         ],
@@ -80,46 +84,35 @@
         "technique": "GitHub API"
     },
     "name": {
-        "excerpt": "pcake",
+        "excerpt": "owl2yarrrml",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "fullName": {
-        "excerpt": "oeg-upm/pcake",
+        "excerpt": "oeg-upm/owl2yarrrml",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/pcake/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/owl2yarrrml/issues",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "forksUrl": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/pcake/forks",
+        "excerpt": "https://api.github.com/repos/oeg-upm/owl2yarrrml/forks",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "downloadUrl": {
-        "excerpt": "https://github.com/oeg-upm/pcake/releases",
-        "confidence": [
-            1.0
-        ],
-        "technique": "GitHub API"
-    },
-    "topics": {
-        "excerpt": [
-            "distribution",
-            "sparql",
-            "visualization"
-        ],
+        "excerpt": "https://github.com/oeg-upm/owl2yarrrml/releases",
         "confidence": [
             1.0
         ],
@@ -127,8 +120,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 1,
-            "date": "Tue, 05 Apr 2022 09:27:10 GMT"
+            "count": 3,
+            "date": "Thu, 28 Apr 2022 16:29:24 GMT"
         },
         "confidence": [
             1.0
@@ -138,7 +131,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:27:10 GMT"
+            "date": "Thu, 28 Apr 2022 16:29:24 GMT"
         },
         "confidence": [
             1.0
@@ -147,8 +140,7 @@
     },
     "languages": {
         "excerpt": [
-            "Python",
-            "HTML"
+            "Python"
         ],
         "confidence": [
             1.0
@@ -163,13 +155,35 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/pcake/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/owl2yarrrml/main/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v1.0",
+                "name": "v1.0",
+                "authorName": "dachafra",
+                "authorType": "User",
+                "body": "First version of the translator",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/owl2yarrrml/tarball/v1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/owl2yarrrml/zipball/v1.0",
+                "htmlUrl": "https://github.com/oeg-upm/owl2yarrrml/releases/tag/v1.0",
+                "url": "https://api.github.com/repos/oeg-upm/owl2yarrrml/releases/52134961",
+                "dateCreated": "2021-10-27T12:11:51Z",
+                "datePublished": "2021-10-27T12:15:14Z"
+            }
+        ],
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "library"
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/owl2yarrrml/translate.py"
     }
 }

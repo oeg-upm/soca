@@ -20,25 +20,34 @@
     ],
     "installation": [
         {
-            "originalHeader": "Installation",
-            "excerpt": "This project is compiled with maven and there are four libraries that are not available at maven central repo.\nThese jar are in the /lib folder and must be added to your local maven repo. \n",
+            "originalHeader": "Hard way",
+            "excerpt": "Through commands: The basic comand is \n```sh\n$ mvn install:install-file -Dfile=${jarfile} -DgroupId=${group.id} -DartifactId=${lib.id} -Dversion=${version} -Dpackaging=jar\n```\n\nExample: \n```sh\n$ cd lib\n$ mvn install:install-file -Dfile=lib/babelnet-api-3.7.1.jar -DgroupId=it.uniroma1.lcl.babelnet -DartifactId=babelnet-api -Dversion=3.7.1 -Dpackaging=jar\n```\n\nThere is a .bat file and a .sh file for install all the dependencies: \n- InstallDependencies.sh\n- InstallDependencies.bat\n\n\n\n",
+            "parentHeader": [
+                "Installation"
+            ],
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "excerpt": "Using maven through the command install. The pom file contains all the instructions to install the dependencies\n```sh\n$ mvn install\n```\n \nThrough commands: The basic comand is \n```sh\n$ mvn install:install-file -Dfile=${jarfile} -DgroupId=${group.id} -DartifactId=${lib.id} -Dversion=${version} -Dpackaging=jar\n``` \nExample: \n```sh\n$ cd lib\n$ mvn install:install-file -Dfile=lib/babelnet-api-3.7.1.jar -DgroupId=it.uniroma1.lcl.babelnet -DartifactId=babelnet-api -Dversion=3.7.1 -Dpackaging=jar\n``` \n",
-            "confidence": [
-                [
-                    0.9967352554082161,
-                    0.9283289495555906,
-                    0.9673437614425766
-                ]
+            "originalHeader": "Easy way",
+            "excerpt": "Using maven through the command install. The pom file contains all the instructions to install the dependencies\n\n```sh\n$ mvn install\n```\n",
+            "parentHeader": [
+                "Installation"
             ],
-            "technique": "Supervised classification",
-            "originalHeader": "Hard way",
-            "parentHeader": "Installation"
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Installation",
+            "excerpt": "This project is compiled with maven and there are four libraries that are not available at maven central repo.\nThese jar are in the /lib folder and must be added to your local maven repo. \n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
         }
     ],
     "requirement": [
@@ -101,7 +110,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-annotator/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/easytv-annotator/issues",
         "confidence": [
             1.0
         ],
@@ -124,7 +133,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:46 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:36 GMT"
         },
         "confidence": [
             1.0
@@ -134,7 +143,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:46 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:36 GMT"
         },
         "confidence": [
             1.0
@@ -154,7 +163,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/easytv-annotator/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/easytv-annotator/master/README.md",
         "confidence": [
             1.0
         ],

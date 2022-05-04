@@ -1,45 +1,18 @@
 {
-    "description": [
-        {
-            "excerpt": "It is possible to process batches of yalms at the same time, to do that just specify as input a folder with all the yalms inside.\n \n",
-            "confidence": [
-                [
-                    0.9488029493870815
-                ]
-            ],
-            "technique": "Supervised classification"
-        },
-        {
-            "excerpt": "Python package designed to create Research Objects out of simple YAML files. Given the dataset dois, source code links and author DOIs, ya2ro will generate an HTML representation of the aggregated contents, as well as an RO-Crate with the machine-readable representation of the Research Object",
-            "confidence": [
-                1.0
-            ],
-            "technique": "GitHub API"
-        }
-    ],
+    "longTitle": {
+        "excerpt": "ya2ro",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
     "installation": [
         {
-            "originalHeader": "Test ya2ro installation",
-            "excerpt": "```bash\nya2ro --help\n```\n\nIf everything goes fine, you should see:\n\n```text\n                        ad888888b,\n                       d8\"     \"88\n                               a8P\n8b       d8 ,adPPYYba,      ,d8P\"  8b,dPPYba,  ,adPPYba,\n`8b     d8' \"\"     `Y8    a8P\"     88P'   \"Y8 a8\"     \"8a\n `8b   d8'  ,adPPPPP88  a8P'       88         8b       d8\n  `8b,d8'   88,    ,88 d8\"         88         \"8a,   ,a8\"\n    Y88'    `\"8bbdP\"Y8 88888888888 88          `\"YbbdP\"'\n    d8'\n   d8'\n_________________________________________________________\n\nusage: ya2ro [-h] (-i YALM_PATH | -l YA2RO_PREV_OUTPUT) [-o OUTPUT_DIR] [-p PROPERTIES_FILE] [-ns]\n\nHuman and machine readable input as a yaml file and create RO-Object in jsonld and/or HTML view. Run 'ya2ro -configure GITHUB_PERSONAL_ACCESS_TOKEN' this the first time to configure ya2ro\nproperly\n\noptions:\n  -h, --help            show this help message and exit\n  -i YALM_PATH, --input YALM_PATH\n                        Path of the required yaml input. Follow the documentation or the example given to see the structure of the file.\n  -l YA2RO_PREV_OUTPUT, --landing_page YA2RO_PREV_OUTPUT\n                        Path of a previous output folder using the ya2ro tool. This flag will make a landing page to make all the resources accessible.\n  -o OUTPUT_DIR, --output_directory OUTPUT_DIR\n                        Output directory.\n  -p PROPERTIES_FILE, --properties_file PROPERTIES_FILE\n                        Properties file name.\n  -ns, --no_somef       Disable SOMEF for a faster execution (software cards will not work).\n\n```\n\n---\n",
-            "parentHeader": "ya2ro --- Usage",
-            "confidence": [
-                1
+            "originalHeader": "Installation",
+            "excerpt": "To run ya2ro, please follow the next steps:\n",
+            "parentHeader": [
+                "ya2ro"
             ],
-            "technique": "Header extraction"
-        },
-        {
-            "originalHeader": "Installing through Docker",
-            "excerpt": "We provide a Dockerfile with ya2ro already installed. To run through Docker, you may build the Dockerfile provided in the repository by running:\n\n```bash\ndocker build -t ya2ro .\n```\n\nThen, to run your image just type:\n\n```bash\ndocker run -it ya2ro /bin/bash\n```\n\nAnd you will be ready to use ya2ro (see section below). If you want to have access to the results we recommend [mounting a volume](https://docs.docker.com/storage/volumes/). For example, the following command will mount the current directory as the `out` folder in the Docker image:\n\n```bash\ndocker run -it --rm -v $PWD/:/out ya2ro /bin/bash\n```\n\nIf you move any files produced by ya2ro into `/out`, then you will be able to see them in your current directory.\n",
-            "parentHeader": "ya2ro --- Installation",
-            "confidence": [
-                1
-            ],
-            "technique": "Header extraction"
-        },
-        {
-            "originalHeader": "Install from GitHub",
-            "excerpt": "```text\ngit clone https://github.com/oeg-upm/ya2ro\ncd ya2ro\npip install -e .\n```\n",
-            "parentHeader": "ya2ro --- Installation",
             "confidence": [
                 1
             ],
@@ -48,34 +21,71 @@
         {
             "originalHeader": "Install from PyPI",
             "excerpt": "```text\npip install ya2ro\n```\n",
-            "parentHeader": "ya2ro --- Installation",
+            "parentHeader": [
+                "ya2ro",
+                "Installation"
+            ],
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         },
         {
-            "originalHeader": "Installation",
-            "excerpt": "To run ya2ro, please follow the next steps:\n",
-            "parentHeader": "ya2ro",
+            "originalHeader": "Install from GitHub",
+            "excerpt": "```text\ngit clone https://github.com/oeg-upm/ya2ro\ncd ya2ro\npip install -e .\n```\n",
+            "parentHeader": [
+                "ya2ro",
+                "Installation"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Installing through Docker",
+            "excerpt": "We provide a Dockerfile with ya2ro already installed. To run through Docker, you may build the Dockerfile provided in the repository by running:\n\n```bash\ndocker build -t ya2ro .\n```\n\nThen, to run your image just type:\n\n```bash\ndocker run -it ya2ro /bin/bash\n```\n\nAnd you will be ready to use ya2ro (see section below). If you want to have access to the results we recommend [mounting a volume](https://docs.docker.com/storage/volumes/). For example, the following command will mount the current directory as the `out` folder in the Docker image:\n\n```bash\ndocker run -it --rm -v $PWD/:/out ya2ro /bin/bash\n```\n\nIf you move any files produced by ya2ro into `/out`, then you will be able to see them in your current directory.\n",
+            "parentHeader": [
+                "ya2ro",
+                "Installation"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Test ya2ro installation",
+            "excerpt": "```bash\nya2ro --help\n```\n\nIf everything goes fine, you should see:\n\n```text\n                        ad888888b,\n                       d8\"     \"88\n                               a8P\n8b       d8 ,adPPYYba,      ,d8P\"  8b,dPPYba,  ,adPPYba,\n`8b     d8' \"\"     `Y8    a8P\"     88P'   \"Y8 a8\"     \"8a\n `8b   d8'  ,adPPPPP88  a8P'       88         8b       d8\n  `8b,d8'   88,    ,88 d8\"         88         \"8a,   ,a8\"\n    Y88'    `\"8bbdP\"Y8 88888888888 88          `\"YbbdP\"'\n    d8'\n   d8'\n_________________________________________________________\n\nusage: ya2ro [-h] (-i YALM_PATH | -l YA2RO_PREV_OUTPUT) [-o OUTPUT_DIR] [-p PROPERTIES_FILE] [-ns]\n\nHuman and machine readable input as a yaml file and create RO-Object in jsonld and/or HTML view. Run 'ya2ro -configure GITHUB_PERSONAL_ACCESS_TOKEN' this the first time to configure ya2ro\nproperly\n\noptions:\n  -h, --help            show this help message and exit\n  -i YALM_PATH, --input YALM_PATH\n                        Path of the required yaml input. Follow the documentation or the example given to see the structure of the file.\n  -l YA2RO_PREV_OUTPUT, --landing_page YA2RO_PREV_OUTPUT\n                        Path of a previous output folder using the ya2ro tool. This flag will make a landing page to make all the resources accessible.\n  -o OUTPUT_DIR, --output_directory OUTPUT_DIR\n                        Output directory.\n  -p PROPERTIES_FILE, --properties_file PROPERTIES_FILE\n                        Properties file name.\n  -ns, --no_somef       Disable SOMEF for a faster execution (software cards will not work).\n\n```\n\n---\n",
+            "parentHeader": [
+                "ya2ro",
+                "Usage"
+            ],
             "confidence": [
                 1
             ],
             "technique": "Header extraction"
         }
     ],
-    "longTitle": {
-        "excerpt": "ya2ro",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "usage": [
         {
             "originalHeader": "Demo",
             "excerpt": "<https://oeg-upm.github.io/ya2ro/output/landing_page.html>\n",
-            "parentHeader": "ya2ro",
+            "parentHeader": [
+                "ya2ro"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Configure",
+            "excerpt": "Before running ya2ro, you must configure it appropriately. Please add your personal token in ya2ro properties file.  \n--> ~/ya2ro/src/ya2ro/resources/properties.yaml <--\n\nAdd a line like the following:\n\n```yaml\n# Add here your GitHub personal access token\nGITHUB_PERSONAL_ACCESS_TOKEN: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \n```\n\nya2ro will continue working if not configured, but is highly recommended to apply this setting.\n",
+            "parentHeader": [
+                "ya2ro",
+                "Usage"
+            ],
             "confidence": [
                 1
             ],
@@ -84,7 +94,78 @@
         {
             "originalHeader": "How to use",
             "excerpt": "The first thing to do is create some input for ya2ro. To create valid a yalm you should follow the documentation bellow.\n\nCreate a yalm from scratch or use one of the supplied templates. Currently ya2ro supports two formats:\n\n* paper\n* project\n\nPlease find a template for each type under the directory templates.\nOnce you have a valid yalm (proyect or paper) is time to run ya2ro.\n",
-            "parentHeader": "ya2ro --- Usage",
+            "parentHeader": [
+                "ya2ro",
+                "Usage"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Create machine and human readable content",
+            "excerpt": "It is possible to process batches of yalms at the same time, to do that just specify as input a folder with all the yalms inside.\n",
+            "parentHeader": [
+                "ya2ro",
+                "Usage",
+                "How to use"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Simple execution",
+            "excerpt": "`ya2ro -i templates`  \n\n`ya2ro -i templates/project_template.yaml`\n",
+            "parentHeader": [
+                "ya2ro",
+                "Usage",
+                "How to use",
+                "Create machine and human readable content"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "With optional arguments",
+            "excerpt": "`ya2ro -input templates --output_directory out --properties_file custom_properties.yaml`  \n\n`ya2ro -i templates -o out -p custom_properties.yaml`\n",
+            "parentHeader": [
+                "ya2ro",
+                "Usage",
+                "How to use",
+                "Create machine and human readable content"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Faster execution?",
+            "excerpt": "Use the flag --no_somef or -ns for disabling SOMEF which is the most time consuming process.\n\n`ya2ro -i templates -ns`\n\nWARNING: Software cards will no longer work on github links. Therefore you will need to manually insert the software data in the yaml file.\n",
+            "parentHeader": [
+                "ya2ro",
+                "Usage",
+                "How to use",
+                "Create machine and human readable content"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Create landing page",
+            "excerpt": "ya2ro offers the option to create a landing page where all the resources produced are easily accessible. Just indicate the folder where this resources are, for example:\n\n`ya2ro -l output`\n",
+            "parentHeader": [
+                "ya2ro",
+                "Usage",
+                "How to use"
+            ],
             "confidence": [
                 1
             ],
@@ -136,6 +217,15 @@
         ],
         "technique": "GitHub API"
     },
+    "description": [
+        {
+            "excerpt": "Python package designed to create Research Objects out of simple YAML files. Given the dataset dois, source code links and author DOIs, ya2ro will generate an HTML representation of the aggregated contents, as well as an RO-Crate with the machine-readable representation of the Research Object",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
     "name": {
         "excerpt": "ya2ro",
         "confidence": [
@@ -151,7 +241,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/ya2ro/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/ya2ro/issues",
         "confidence": [
             1.0
         ],
@@ -187,7 +277,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:35:51 GMT"
+            "date": "Thu, 28 Apr 2022 16:35:59 GMT"
         },
         "confidence": [
             1.0
@@ -197,7 +287,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:35:51 GMT"
+            "date": "Thu, 28 Apr 2022 16:35:59 GMT"
         },
         "confidence": [
             1.0
@@ -223,21 +313,24 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ya2ro/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/ya2ro/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/ya2ro/main/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/ya2ro/main/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "releases": {
         "excerpt": [
             {
@@ -273,6 +366,9 @@
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "package"
+        "software_type": "package",
+        "run": [
+            "ya2ro"
+        ]
     }
 }

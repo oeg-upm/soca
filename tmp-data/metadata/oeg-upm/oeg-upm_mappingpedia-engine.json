@@ -6,6 +6,16 @@
         ],
         "technique": "Regular expression"
     },
+    "documentation": [
+        {
+            "excerpt": "https://github.com/oeg-upm/mappingpedia-engine/wiki",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "wiki"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/mappingpedia-engine",
         "confidence": [
@@ -66,7 +76,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-engine/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/mappingpedia-engine/issues",
         "confidence": [
             1.0
         ],
@@ -89,7 +99,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:14:16 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:28 GMT"
         },
         "confidence": [
             1.0
@@ -99,7 +109,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:14:16 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:28 GMT"
         },
         "confidence": [
             1.0
@@ -127,20 +137,11 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/mappingpedia-engine/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/mappingpedia-engine/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
-    },
-    "hasDocumentation": {
-        "excerpt": [
-            "https://github.com/oeg-upm/mappingpedia-engine/tree/master/docs"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
     },
     "hasScriptFile": {
         "excerpt": [

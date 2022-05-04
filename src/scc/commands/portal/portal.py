@@ -11,7 +11,7 @@ from . import metadata
 from scc import base_dir
 
 
-def generate(repo_metadata_dir, output):
+def generate(repo_metadata_dir, output, title):
 
     copy_assets(output)
 
@@ -21,6 +21,9 @@ def generate(repo_metadata_dir, output):
 
     # Insert last updated date
     add_last_updated_date(soup)
+
+    # Insert title
+    add_title(soup, title)
 
     # Create json with cards data and metadata
     cards_data = card.cards_data_dump(repo_metadata_dir)
@@ -83,6 +86,11 @@ def add_last_updated_date(soup):
     loc = soup.find(id="portal-last-updated")
     loc.string = f"Last updated on {datetime.today().strftime('%d/%m/%Y')}"
 
+
+def add_title(soup, title):
+    loc = soup.find(id="nav-title")
+    loc.string = title
+
 def list_owners(repo_metadata_dir):
 
     owners = []
@@ -92,7 +100,7 @@ def list_owners(repo_metadata_dir):
         if filename.endswith(".json"): 
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 repo_metadata = json.load(json_metadata)
-                md = metadata.metadata(repo_metadata)
+                md = metadata.metadata(repo_metadata_dir, repo_metadata)
                 owner = md.owner()
                 if owner not in owners:
                     owners.append(owner)

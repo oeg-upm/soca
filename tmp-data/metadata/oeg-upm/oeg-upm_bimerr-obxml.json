@@ -1,4 +1,32 @@
 {
+    "description": [
+        {
+            "excerpt": "In [this folder](./Examples) we can see an example of an [xml file](./Examples/new.xml), in which from a series of transformations in another xml and later in a [json file](./Examples/new.json), a series of declarative mappings have been used to obtain the [RDF file](./RDF_Examples/new_obXML.ttl). \n",
+            "confidence": [
+                [
+                    0.9732375610574681
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "BIMERR OBXML FILES",
+            "parentHeader": [
+                "BIMERR-OBXML"
+            ]
+        },
+        {
+            "excerpt": "The implementation of the code has been carried out using the [Python language](https://www.python.org/download/releases/3.0/). Also, we have used [Helio](https://oeg-upm.github.io/helio/)) to achieve the transformation of the data by means of mappings to RDF format.\n \n",
+            "confidence": [
+                [
+                    0.989841753997618
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "CODE IMPLEMENTATION",
+            "parentHeader": [
+                "BIMERR-OBXML"
+            ]
+        }
+    ],
     "longTitle": {
         "excerpt": "BIMERR-OBXML",
         "confidence": [
@@ -66,7 +94,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-obxml/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/bimerr-obxml/issues",
         "confidence": [
             1.0
         ],
@@ -89,7 +117,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:48:32 GMT"
+            "date": "Thu, 28 Apr 2022 16:31:43 GMT"
         },
         "confidence": [
             1.0
@@ -99,7 +127,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 08:48:32 GMT"
+            "date": "Thu, 28 Apr 2022 16:31:43 GMT"
         },
         "confidence": [
             1.0
@@ -123,10 +151,11 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/bimerr-obxml/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/bimerr-obxml/main/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
-    }
+    },
+    "inspect4py": {}
 }

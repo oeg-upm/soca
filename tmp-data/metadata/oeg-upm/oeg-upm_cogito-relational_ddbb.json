@@ -49,7 +49,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-relational_ddbb/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-relational_ddbb/issues",
         "confidence": [
             1.0
         ],
@@ -72,7 +72,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:19 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:27 GMT"
         },
         "confidence": [
             1.0
@@ -82,7 +82,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:19 GMT"
+            "date": "Thu, 28 Apr 2022 16:36:27 GMT"
         },
         "confidence": [
             1.0
@@ -100,15 +100,28 @@
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/cogito-relational_ddbb/main/api/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/cogito-relational_ddbb/main/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        },
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/cogito-relational_ddbb/main/api/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/cogito-relational_ddbb/main/api/entrypoint.prod.sh",
@@ -120,6 +133,7 @@
         "technique": "File Exploration"
     },
     "inspect4py": {
-        "software_type": "service"
+        "software_type": "service",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/cogito-relational_ddbb/api/manage.py"
     }
 }

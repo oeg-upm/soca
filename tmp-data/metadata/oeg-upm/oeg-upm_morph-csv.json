@@ -4,7 +4,7 @@
             "excerpt": "Morph-CSV is an open source tool for querying tabular data sources using SPARQL. It exploits the information from the query, RML+FnO mappings and CSVW metadata to enhance the performance and completness of traditional OBDA systems (SPARQL-to-SQL translators). At this moment can be embebed in the top of any R2RML-compliant system. For detail information, watch the [introductory video about Morph-CSV](https://www.youtube.com/watch?v=bW9Wj7KUuGY). IF you have any related question on how to create RML+FnO or CSVW annotations, please ask to the [W3C Community Group on Knowledge Graph Construction](https://github.com/kg-construct/rml-questions/discussions) \n",
             "confidence": [
                 [
-                    0.9615812330206167
+                    0.9803902635206093
                 ]
             ],
             "technique": "Supervised classification",
@@ -24,7 +24,8 @@
             "confidence": [
                 1.0
             ],
-            "technique": "Regular expression"
+            "technique": "Regular expression",
+            "doi": "https://doi.org/10.3233/SW-210432"
         },
         {
             "excerpt": "**Citing Morph-CSV**: If you used Morph-CSV in your work, please cite as: \n",
@@ -43,14 +44,14 @@
         ],
         "technique": "Regular expression"
     },
+    "logo": {
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/morph-csv/master/figures/morph-csv.gif",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
     "image": [
-        {
-            "excerpt": "https://raw.githubusercontent.com/oeg-upm/morph-csv/master//master/figures/morph-csv.gif",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
         {
             "excerpt": "https://raw.githubusercontent.com/oeg-upm/morph-csv/master/figures/architecture.png?raw=true",
             "confidence": [
@@ -63,7 +64,9 @@
         {
             "originalHeader": "Acknowledgements",
             "excerpt": "The development of Morph-CSV has been supported by the Spanish national project Datos 4.0\n\n",
-            "parentHeader": "Morph-CSV",
+            "parentHeader": [
+                "Morph-CSV"
+            ],
             "confidence": [
                 1
             ],
@@ -74,7 +77,9 @@
         {
             "originalHeader": "Authors and Contact",
             "excerpt": "Ontology Engineering Group - Data Integration:\n- [David Chaves-Fraga](https://github.com/dachafra) ([dchaves@fi.upm.es](mailto:dchaves@fi.upm.es))\n- [Jhon Toledo](https://github.com/jatoledo) ([ja.toledo@upm.es](mailto:ja.toledo@upm.es))\n- [Luis Pozo](https://github.com/w0xter) ([luis.pozo@upm.es](mailto:luis.pozo@upm.es))\n",
-            "parentHeader": "Morph-CSV",
+            "parentHeader": [
+                "Morph-CSV"
+            ],
             "confidence": [
                 1
             ],
@@ -85,7 +90,21 @@
         {
             "originalHeader": "How to use it?",
             "excerpt": "First of all clone the repository:\n```bash\ngit clone https://github.com/oeg-upm/morph-csv.git\ncd morph-csv\n```\nThe best way to run Morph-CSV is using its user interface, deployable with docker*:\n```bash\n docker-compose up -d\n ```\nAn user interface as we show in the following image will be display in localhost:5000\n![Morph-csv demo](figures/morph-csv.gif \"Morph-CSV demo\")\n\nIf you prefer a CLI tool, we provide two ways to run morph-csv: using the created docker image or directly run with Python3:\n- Using docker and docker-compose*:\n    ```bash\n    docker-compose up -d\n    docker exec -it morphcsv python3 /morphcsv/morphcsv.py -c /configs/config-file.json -q /queries/query-file.rq\n    ```\n\n   \n\n- Using python3 (under a UNIX system):\n    ```bash\n    pip3 install -r requirements.txt\n    python3 morphcsv.py -c path-to-config-file.json -q path-to-query-file.rq\n    ```\n\n *If you have any local resource you want to use copy it to the corresponding shared volume (folders: data, mappings, configs or queries)\n",
-            "parentHeader": "Morph-CSV",
+            "parentHeader": [
+                "Morph-CSV"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Define your config.json file",
+            "excerpt": "The path of the data sources in CSVW and YARRRML anotations have to be the same.\n```json\n{\n  \"csvw\":\"PATH OR URL to CSVW annotations\",\n  \"yarrrml\": \"PATH OR URL TO YARRRML+FnO Mapping\"\n}\n```\n",
+            "parentHeader": [
+                "Morph-CSV",
+                "How to use it?"
+            ],
             "confidence": [
                 1
             ],
@@ -152,7 +171,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-csv/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-csv/issues",
         "confidence": [
             1.0
         ],
@@ -187,7 +206,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 8,
-            "date": "Tue, 05 Apr 2022 09:14:54 GMT"
+            "date": "Thu, 28 Apr 2022 16:17:54 GMT"
         },
         "confidence": [
             1.0
@@ -197,7 +216,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:14:54 GMT"
+            "date": "Thu, 28 Apr 2022 16:17:54 GMT"
         },
         "confidence": [
             1.0
@@ -226,21 +245,34 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-csv/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/morph-csv/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/morph-csv/master/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/morph-csv/master/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        },
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/morph-csv/master/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/morph-csv/master/bash/insertTitles.sh",
@@ -314,6 +346,7 @@
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "script"
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/morph-csv/morphcsv.py"
     }
 }

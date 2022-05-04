@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "Citizen science project to validate our AI algorithm \n \n",
+            "confidence": [
+                [
+                    0.9672112437780679
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "drugs4covid19-cs"
+        },
+        {
             "excerpt": "Citizen science project to validate our AI algorithm ",
             "confidence": [
                 1.0
@@ -75,7 +85,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19-cs/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19-cs/issues",
         "confidence": [
             1.0
         ],
@@ -107,7 +117,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:07 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:54 GMT"
         },
         "confidence": [
             1.0
@@ -117,7 +127,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:07 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:54 GMT"
         },
         "confidence": [
             1.0
@@ -142,7 +152,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/drugs4covid19-cs/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/drugs4covid19-cs/master/README.md",
         "confidence": [
             1.0
         ],

@@ -3,7 +3,9 @@
         {
             "originalHeader": "Registering a Thing Description",
             "excerpt": "In order to include a new IoT device in the ecosystem, making it interoperable, a user must register in the SPARQL endpoint that eWoT relies on a Thing Description (TD). The thing description must be stored in a named graph which name is the subject that has the type **core:Thing**. The TD must contain a specification of where ther IoT device data is, by means of the Web of Things Thing Description ontology, and also, specify how such data is translated by means of a WoT-Mapping. Find below an example of TD with the WoT-Mappings.\n",
-            "parentHeader": "eWoT",
+            "parentHeader": [
+                "eWoT"
+            ],
             "confidence": [
                 1
             ],
@@ -13,11 +15,24 @@
             "excerpt": "eWoT is an implementation that enables semantic interoperability for an IoT ecosystem. It relies on Thing Descriptions (TD) to profile the different IoT devices, and WoT-Mappings to translate their heterogeneus data into a normalised RDF modelled with a specific ontology. The ontologies endow for this purpose are the [Thing Description](http://iot.linkeddata.es/def/wot/index-en.html) and the [WoT-Mapping](http://iot.linkeddata.es/def/wot-mappings/index-en.html); nevertheless they can be extended with any other to enhance contextual information of the IoT device. \n",
             "confidence": [
                 [
-                    0.9885513232333563
+                    0.9979945757850773
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "eWoT"
+        },
+        {
+            "excerpt": "In order to transparently query the ecosystem a SPARQL query must be issued to the endpoint *http://localhost:9000/sparql*. Alternativelly, if an user navigates with the browser to the very same address a GUI will be displayed where the SPARQL query could be written and its results displayed.\n \n",
+            "confidence": [
+                [
+                    0.9046395057730255
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Issuing a SPARQL query in the ecosystem",
+            "parentHeader": [
+                "eWoT"
+            ]
         },
         {
             "excerpt": "eWoT enables semantic interoperable IoT ecosystems",
@@ -94,7 +109,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/eWoT/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/eWoT/issues",
         "confidence": [
             1.0
         ],
@@ -131,7 +146,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:10:13 GMT"
+            "date": "Thu, 28 Apr 2022 16:15:28 GMT"
         },
         "confidence": [
             1.0
@@ -141,7 +156,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:10:13 GMT"
+            "date": "Thu, 28 Apr 2022 16:15:28 GMT"
         },
         "confidence": [
             1.0
@@ -166,7 +181,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/eWoT/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/eWoT/master/README.md",
         "confidence": [
             1.0
         ],

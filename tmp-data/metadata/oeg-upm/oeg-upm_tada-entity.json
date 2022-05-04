@@ -1,26 +1,20 @@
 {
     "description": [
         {
-            "excerpt": "Tabular Data Annotation of entity columns \n",
+            "excerpt": "Tabular Data Annotation of entity columns \n## Database\nHaving a database accessible by the application is a must. The file `mysql.cnf` should include the credential.\nBelow is an example of the file content : \n```\n[client]\ndatabase = mydbname\nuser = dbuser\npassword = dbpassword\ndefault-character-set = utf8\n```\nTo user an *alternative* database engine, you might need to update the `settings.py` file \nto specify the engine of your choosing (`sqlite` is not thread-safe, we don't recommend using it).  \n",
             "confidence": [
                 [
-                    0.9956438268838141
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Invalid",
-            "parentHeader": "tada-entity --- Experiments --- SemTab"
-        },
-        {
-            "excerpt": "## Database\nHaving a database accessible by the application is a must. The file `mysql.cnf` should include the credential.\nBelow is an example of the file content : \n```\n[client]\ndatabase = mydbname\nuser = dbuser\npassword = dbpassword\ndefault-character-set = utf8\n```\nTo user an *alternative* database engine, you might need to update the `settings.py` file \nto specify the engine of your choosing (`sqlite` is not thread-safe, we don't recommend using it).  \n",
-            "confidence": [
-                [
+                    0.9956438268838141,
                     0.9412130548768608
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Invalid",
-            "parentHeader": "tada-entity --- Experiments --- SemTab"
+            "parentHeader": [
+                "tada-entity",
+                "Experiments",
+                "SemTab"
+            ]
         },
         {
             "excerpt": "Tabular Data Annotation of entity columns",
@@ -40,78 +34,32 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "ST19R1",
-            "parentHeader": "tada-entity --- Alpha analysis"
+            "parentHeader": [
+                "tada-entity",
+                "Alpha analysis"
+            ]
         }
     ],
     "installation": [
         {
-            "excerpt": "[![Build Status](https://semaphoreci.com/api/v1/ahmad88me/tada-entity/branches/master/badge.svg)](https://semaphoreci.com/ahmad88me/tada-entity)\n[![codecov](https://codecov.io/gh/oeg-upm/tada-entity/branch/master/graph/badge.svg)](https://codecov.io/gh/oeg-upm/tada-entity)\n[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/) \n",
-            "confidence": [
-                [
-                    0.9277923820229652
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "tada-entity"
-        },
-        {
-            "excerpt": "# Installation \n## Requirements\n* `virtualenv`\n* `python3`\n* `mysql`\n* `SPARQLWrapper` (using [this fork](https://github.com/syats/sparqlwrapper) as it supports self-signed certificates). \n\n## Installation steps (Linux and MacOS)\n1. Download the project \n```\ngit clone git@github.com:oeg-upm/tada-entity.git; cd tada-entity/\n```\n2. Create virtual environment \nBASH3*\n3. Install dependencies \nBASH4*\n4. create a mysql.cfg file in the same folder (see below)\n5. Setup database and apply migrations \nBASH5* \n",
+            "excerpt": "# Installation \n## Requirements\n* `virtualenv`\n* `python3`\n* `mysql`\n* `SPARQLWrapper` (using [this fork](https://github.com/syats/sparqlwrapper) as it supports self-signed certificates). \n\n## Installation steps (Linux and MacOS)\n1. Download the project \n```\ngit clone git@github.com:oeg-upm/tada-entity.git; cd tada-entity/\n```\n2. Create virtual environment \nBASH3*\n3. Install dependencies \nBASH4*\n4. create a mysql.cfg file in the same folder (see below)\n5. Setup database and apply migrations \nBASH5* \n# Run the experiments\n## Web Commons v2\n1. Create the directory `tada-entity/experiments/webcommons_v2/data` (where `tada-entity` is the project's directory.\n2. Copy the json files to that directory. The data can be found [here](http://webdatacommons.org/webtables/goldstandardV2.html).\n3. In the terminal (command line interface) go the directory `tada-entity/experiments/webcommons_v2/` using the below command (assuming you are in the directory `tada-entity`):\n```cd experiments/webcommons_v2```\n \n4. Generate the csv files using the command:\n \n\n# Environment\n## Operating Systems\n* MacOS (tested with Mojave)\n* Linux (tested with Ubuntu)\n* Windows (not tested but let us know if it works for you) \n## To run the coverage\n```sh run_coverage.sh``` \n",
             "confidence": [
                 [
                     0.9769420979004304,
-                    0.9301687332288426,
-                    0.9980313603963294
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Invalid",
-            "parentHeader": "tada-entity --- Experiments --- SemTab"
-        },
-        {
-            "excerpt": "# Run the experiments\n## Web Commons v2\n1. Create the directory `tada-entity/experiments/webcommons_v2/data` (where `tada-entity` is the project's directory.\n2. Copy the json files to that directory. The data can be found [here](http://webdatacommons.org/webtables/goldstandardV2.html).\n3. In the terminal (command line interface) go the directory `tada-entity/experiments/webcommons_v2/` using the below command (assuming you are in the directory `tada-entity`):\n```cd experiments/webcommons_v2```\n \n4. Generate the csv files using the command:\n \n",
-            "confidence": [
-                [
-                    0.9335268045776643
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Invalid",
-            "parentHeader": "tada-entity --- Experiments --- SemTab"
-        },
-        {
-            "excerpt": "\n# Environment\n## Operating Systems\n* MacOS (tested with Mojave)\n* Linux (tested with Ubuntu)\n* Windows (not tested but let us know if it works for you) \n",
-            "confidence": [
-                [
-                    0.9487072102769846
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Invalid",
-            "parentHeader": "tada-entity --- Experiments --- SemTab"
-        },
-        {
-            "excerpt": "## To run the coverage\n```sh run_coverage.sh``` \n",
-            "confidence": [
-                [
+                    0.9038667288704547,
+                    0.9980313603963294,
+                    0.93297206457625,
+                    0.9487072102769846,
                     0.9346719853914754
                 ]
             ],
             "technique": "Supervised classification",
             "originalHeader": "Invalid",
-            "parentHeader": "tada-entity --- Experiments --- SemTab"
-        }
-    ],
-    "invocation": [
-        {
-            "excerpt": "Generate diagram\n1. Manually copy the numbers to `wcv1_one_vs_cppo_title.csv`\n2. Run the following command\n```\npython docs/generate_one_cppo_diagrams.py wcv1_one_vs_cppo_title.csv wcv1_one_vs_cppo_title\n``` \n",
-            "confidence": [
-                [
-                    0.9162692643385146
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "Compare One alpha",
-            "parentHeader": "tada-entity --- Class k-fold error analysis"
+            "parentHeader": [
+                "tada-entity",
+                "Experiments",
+                "SemTab"
+            ]
         }
     ],
     "longTitle": {
@@ -121,27 +69,68 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
+    "faq": [
         {
-            "excerpt": "https://img.shields.io/badge/python-3.6-blue.svg",
-            "confidence": [
-                1.0
+            "originalHeader": "T2Dv1",
+            "excerpt": "1. Generate the alpha ranges.\n\nOriginal case\n```\npython -m experiments.wcv1_experiment experiments/wcv1_meta.csv ~/workspaces/Datasets/T2Dv1/tables_complete original alpha\n```\n\nTitle case\n```\npython -m experiments.wcv1_experiment experiments/wcv1_meta.csv ~/workspaces/Datasets/T2Dv1/tables_complete title alpha\n```\n\n2. Generate mid alpha diagrams.\n\nTitle case\n```\npython -m experiments.alpha_analysis wc1_alpha_title_case.csv  experiments/wcv1_meta.csv wcv1 --draw wcv1_alpha_mid_title --midalpha  \n```\n   \nOriginal case\n```\npython -m experiments.alpha_analysis wc1_alpha_original_case.csv  experiments/wcv1_meta.csv wcv1 --draw wcv1_alpha_mid_original --midalpha  \n```\n\n3. Generate from-to alpha diagrams.\n   \nTitle case\n\n```\npython -m experiments.alpha_analysis wc1_alpha_title_case.csv  experiments/wcv1_meta.csv wcv1 --draw wcv1_alpha_from_to_title\n```\n\nOriginal case.\n\n```\npython -m experiments.alpha_analysis wc1_alpha_original_case.csv  experiments/wcv1_meta.csv wcv1 --draw wcv1_alpha_from_to_original\n```\n",
+            "parentHeader": [
+                "tada-entity",
+                "Class k-fold error analysis",
+                "Compare One alpha"
             ],
-            "technique": "Regular expression"
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
         },
         {
-            "excerpt": "https://codecov.io/gh/oeg-upm/tada-entity/branch/master/graph/badge.svg",
-            "confidence": [
-                1.0
+            "originalHeader": "T2Dv2",
+            "excerpt": "1. Generate alpha ranges\n\nOriginal \n```\npython -m experiments.wcv2_experiment experiments/wcv2_meta.csv experiments/wcv2_subject_columns_gs.csv ~/workspaces/Datasets/T2Dv2/csv original alpha \n```\n\nTitle \n```\npython -m experiments.wcv2_experiment experiments/wcv2_meta.csv experiments/wcv2_subject_columns_gs.csv ~/workspaces/Datasets/T2Dv2/csv title alpha \n```\n\n\n1. Generate mid alpha diagrams\n   \nTitle case.\n\n```\npython -m experiments.alpha_analysis wc2_alpha_title_case.csv  experiments/wcv2_meta.csv wcv2 --draw wcv2_alpha_mid_title --midalpha\n```\n   \nOriginal case.\n\n```\npython -m experiments.alpha_analysis wc2_alpha_original_case.csv  experiments/wcv2_meta.csv wcv2 --draw wcv2_alpha_mid_original --midalpha\n```\n\n3. Generate from-to alpha diagrams\n   \nTitle case.\n\n```\npython -m experiments.alpha_analysis wc2_alpha_title_case.csv  experiments/wcv2_meta.csv wcv2 --draw wcv2_alpha_from_to_title\n```\n\nOriginal case.\n\n```\npython -m experiments.alpha_analysis wc2_alpha_original_case.csv  experiments/wcv2_meta.csv wcv2 --draw wcv2_alpha_from_to_original\n```\n\n",
+            "parentHeader": [
+                "tada-entity",
+                "Class k-fold error analysis",
+                "Compare One alpha"
             ],
-            "technique": "Regular expression"
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
         },
         {
-            "excerpt": "https://semaphoreci.com/api/v1/ahmad88me/tada-entity/branches/master/badge.svg",
-            "confidence": [
-                1.0
+            "originalHeader": "Ranges",
+            "excerpt": "Check the mean and the median for the (mid) alpha ranges per fsid\n#### T2Dv1\n\nTitle case\n```\npython -m experiments.analyse_errors_k_fold range --falpha wc1_alpha_title_case.csv --fmeta experiments/wcv1_meta.csv --dataset wcv1  \n```\n\nOriginal case\n\n```\n python -m experiments.analyse_errors_k_fold range --falpha wc1_alpha_original_case.csv --fmeta experiments/wcv1_meta.csv --dataset wcv1  \n```\n\n#### T2Dv2\n\nTitle case\n```\npython -m experiments.analyse_errors_k_fold range --falpha wc2_alpha_title_case.csv --fmeta experiments/wcv2_meta.csv --dataset wcv2 --subject-col experiments/wcv2_subject_columns_gs.csv \n```\n\nOriginal case\n```\npython -m experiments.analyse_errors_k_fold range --falpha wc2_alpha_original_case.csv --fmeta experiments/wcv2_meta.csv --dataset wcv2 --subject-col experiments/wcv2_subject_columns_gs.csv \n```\n",
+            "parentHeader": [
+                "tada-entity",
+                "Class k-fold error analysis"
             ],
-            "technique": "Regular expression"
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Diffs",
+            "excerpt": "Check the mean and the median for differences between the mean/median of the (mid) alphas for each \nclass and aggregated them per each fsid\n\n#### T2Dv1\n\nTitle case\n```\npython -m experiments.analyse_errors_k_fold sd --falpha wc1_alpha_title_case.csv --fmeta experiments/wcv1_meta.csv --dataset wcv1 \n```\n\nOriginal case\n```\npython -m experiments.analyse_errors_k_fold sd --falpha wc1_alpha_original_case.csv --fmeta experiments/wcv1_meta.csv --dataset wcv1  \n```\n\n#### T2Dv2\n\nTitle case\n```\npython -m experiments.analyse_errors_k_fold sd --falpha wc2_alpha_title_case.csv --fmeta experiments/wcv2_meta.csv --dataset wcv2  --subject-col experiments/wcv2_subject_columns_gs.csv\n```\n\nOriginal case\n```\npython -m experiments.analyse_errors_k_fold sd --falpha wc2_alpha_original_case.csv --fmeta experiments/wcv2_meta.csv --dataset wcv2 --subject-col experiments/wcv2_subject_columns_gs.csv\n```\n",
+            "parentHeader": [
+                "tada-entity",
+                "Class k-fold error analysis"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Compare One alpha",
+            "excerpt": "Compare the one computed alpha with the alpha of the files of that class\n\n\n#### T2Dv1\n\nTitle case\n```\npython -m experiments.analyse_errors_k_fold one --falpha wc1_alpha_title_case.csv --fmeta experiments/wcv1_meta.csv --dataset wcv1 --draw wcv1_compare_one_alpha_title\n```\n\nGenerate diagram\n1. Manually copy the numbers to `wcv1_one_vs_cppo_title.csv`\n2. Run the following command\n```\npython docs/generate_one_cppo_diagrams.py wcv1_one_vs_cppo_title.csv wcv1_one_vs_cppo_title\n```\n\nOriginal case\n```\npython -m experiments.analyse_errors_k_fold one --falpha wc1_alpha_original_case.csv --fmeta experiments/wcv1_meta.csv --dataset wcv1 --draw wcv1_compare_one_alpha_original\n```\n\n\n#### T2Dv2\n\nTitle case\n```\npython -m experiments.analyse_errors_k_fold one --falpha wc2_alpha_title_case.csv --fmeta experiments/wcv2_meta.csv --dataset wcv2 --draw wcv2_compare_one_alpha_title\n\n```\n\n\nOriginal case\n```\npython -m experiments.analyse_errors_k_fold one --falpha wc2_alpha_original_case.csv --fmeta experiments/wcv2_meta.csv --dataset wcv2 --draw wcv2_compare_one_alpha_original\n```\n\n",
+            "parentHeader": [
+                "tada-entity",
+                "Class k-fold error analysis"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
         }
     ],
     "codeRepository": {
@@ -204,7 +193,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/tada-entity/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/tada-entity/issues",
         "confidence": [
             1.0
         ],
@@ -227,7 +216,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:29:41 GMT"
+            "date": "Thu, 28 Apr 2022 16:11:27 GMT"
         },
         "confidence": [
             1.0
@@ -237,7 +226,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:29:41 GMT"
+            "date": "Thu, 28 Apr 2022 16:11:27 GMT"
         },
         "confidence": [
             1.0
@@ -263,7 +252,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/tada-entity/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/tada-entity/master/README.md",
         "confidence": [
             1.0
         ],
@@ -310,6 +299,7 @@
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "script"
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/tada-entity/manage.py"
     }
 }

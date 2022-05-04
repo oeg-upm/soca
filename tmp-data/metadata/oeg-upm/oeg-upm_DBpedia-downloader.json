@@ -75,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/DBpedia-downloader/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/DBpedia-downloader/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:00:35 GMT"
+            "date": "Thu, 28 Apr 2022 16:24:44 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:35 GMT"
+            "date": "Thu, 28 Apr 2022 16:24:44 GMT"
         },
         "confidence": [
             1.0
@@ -132,13 +132,14 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/DBpedia-downloader/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/DBpedia-downloader/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "script"
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/DBpedia-downloader/dbd.py"
     }
 }

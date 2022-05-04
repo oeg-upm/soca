@@ -19,7 +19,33 @@
         {
             "originalHeader": "Use",
             "excerpt": "Requirements:\n * node js\n\nInstall using `npm install`\n",
-            "parentHeader": "gtfs-csv2rdf",
+            "parentHeader": [
+                "gtfs-csv2rdf"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Command Line",
+            "excerpt": "```bash\n# First argument: path to gtfs\n# Second argument: the version of the feed\n# Third argument: the base URI\n./gtfs-csv2rdf path-to-gtfs.zip 0.1 http://data.gtfs.org/  > gtfsintriples.ttl\n```\n",
+            "parentHeader": [
+                "gtfs-csv2rdf",
+                "Use"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "As a nodejs library",
+            "excerpt": "By example:\n\n```javascript\nvar fs = require('fs');\nvar N3 = require('n3');\nvar gtfscsv2rdf = require('./lib/gtfs-csv2rdf.js');\nvar path = \"/path/to/gtfs.zip\";\nif (/(.*\\/)?(.*?)\\.zip/.exec(path)) {\n  var feedname = /(.*\\/)?(.*?)\\.zip/.exec(path)[2];\n} else {\n  throw \"Not a zip file: \" + path;\n}\n//create the writer of turtle file towards stdout\nvar streamWriter = new N3.StreamWriter({ 'gtfs': 'http://vocab.gtfs.org/terms#',\n                                         'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',\n                                         'foaf' : 'http://xmlns.com/foaf/0.1/',\n                                         'dct' : 'http://purl.org/dc/terms/',\n                                         'rdfs' : 'http://www.w3.org/2000/01/rdf-schema#',\n                                         'owl' : 'http://www.w3.org/2002/07/owl#',\n                                         'xsd' : 'http://www.w3.org/2001/XMLSchema#',\n                                         'vann' : 'http://purl.org/vocab/vann/',\n                                         'skos' : 'http://www.w3.org/2004/02/skos/core#',\n                                         'dcat' : 'http://www.w3.org/ns/dcat#'});\nstreamWriter.pipe(process.stdout);\nvar options = {\n  feedname : feedname,\n  version : \"0.1\",\n  baseuri : \"http://data.gtfs.org/\"\n};\ngtfscsv2rdf(fs.createReadStream(path), streamWriter, options);\n```\n",
+            "parentHeader": [
+                "gtfs-csv2rdf",
+                "Use"
+            ],
             "confidence": [
                 1
             ],
@@ -86,7 +112,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/gtfs-csv2rdf/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/gtfs-csv2rdf/issues",
         "confidence": [
             1.0
         ],
@@ -109,7 +135,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:11:34 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:29 GMT"
         },
         "confidence": [
             1.0
@@ -119,7 +145,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:11:34 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:29 GMT"
         },
         "confidence": [
             1.0
@@ -143,7 +169,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/gtfs-csv2rdf/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/gtfs-csv2rdf/master/README.md",
         "confidence": [
             1.0
         ],

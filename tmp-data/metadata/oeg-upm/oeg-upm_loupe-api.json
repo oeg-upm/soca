@@ -18,20 +18,15 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "[![Build Status](https://travis-ci.org/ldp4j/ldp4j.svg?branch=master)](https://travis-ci.org/ldp4j/ldp4j)\n[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/nandana/ld-sniffer/master/LICENSE)\n[![Java version](https://img.shields.io/badge/java-1.8-green.svg)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)\n[![GitHub issues](https://img.shields.io/github/issues/nandana/loupe-api.svg)](https://github.com/nandana/ld-sniffer/issues)\n[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?maxAge=2592000?style=plastic)](https://twitter.com/nandanamihindu) \n",
-            "confidence": [
-                [
-                    0.9999956473656452
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "loupe-api"
-        }
-    ],
     "longTitle": {
         "excerpt": "loupe-api",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "logo": {
+        "excerpt": "https://img.shields.io/github/issues/nandana/loupe-api.svg",
         "confidence": [
             1.0
         ],
@@ -47,27 +42,6 @@
         },
         {
             "excerpt": "https://img.shields.io/maintenance/yes/2017.svg?maxAge=2592000?style=plastic",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/github/issues/nandana/loupe-api.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/java-1.8-green.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/badge/license-Apache%202-blue.svg",
             "confidence": [
                 1.0
             ],
@@ -141,7 +115,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/loupe-api/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/loupe-api/issues",
         "confidence": [
             1.0
         ],
@@ -164,7 +138,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:13:37 GMT"
+            "date": "Thu, 28 Apr 2022 16:15:18 GMT"
         },
         "confidence": [
             1.0
@@ -174,7 +148,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:13:37 GMT"
+            "date": "Thu, 28 Apr 2022 16:15:18 GMT"
         },
         "confidence": [
             1.0
@@ -200,19 +174,22 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/loupe-api/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/loupe-api/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/loupe-api/master/src/main/docker/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    }
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/loupe-api/master/src/main/docker/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ]
 }

@@ -1,14 +1,30 @@
 {
     "description": [
         {
-            "excerpt": "Collection of RDF licensing projects. See:  \n",
+            "excerpt": "This software project is a an evalutor of ODRL expressions according to the W3C ODRL Recommendations: \n",
             "confidence": [
                 [
-                    0.9217428044965839
+                    0.9993416482055981
                 ]
             ],
             "technique": "Supervised classification",
-            "originalHeader": "licensius"
+            "originalHeader": "odrlapi Evaluator for the newest ODRL spec",
+            "parentHeader": [
+                "licensius"
+            ]
+        },
+        {
+            "excerpt": "Java API to manipulate ODRL2 expressions.\nThis API permits creating ODRL expressions in its RDF serialization by using simple Java methods.\nFor more info, see http://oeg-upm.github.io/odrlapi/\n \n",
+            "confidence": [
+                [
+                    0.924267083076401
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "jodrlapi Java library to manipulate ODRL 2.1 expressions",
+            "parentHeader": [
+                "licensius"
+            ]
         },
         {
             "excerpt": "Collection of license-related services",
@@ -28,7 +44,24 @@
             ],
             "technique": "Supervised classification",
             "originalHeader": "other projects pending to be migrated here:",
-            "parentHeader": "licensius"
+            "parentHeader": [
+                "licensius"
+            ]
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "You can see the evaluator here: http://odrlapi.appspot.com/\nThe code is here: https://github.com/oeg-upm/licensius/tree/master/odrlapi \n \n",
+            "confidence": [
+                [
+                    0.916105244971654
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "odrlapi Evaluator for the newest ODRL spec",
+            "parentHeader": [
+                "licensius"
+            ]
         }
     ],
     "longTitle": {
@@ -38,15 +71,13 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://jitpack.io/v/oeg-upm/licensius.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
+    "logo": {
+        "excerpt": "https://jitpack.io/v/oeg-upm/licensius.svg",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
     "license": {
         "excerpt": {
             "name": "MIT License",
@@ -107,7 +138,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/licensius/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/licensius/issues",
         "confidence": [
             1.0
         ],
@@ -130,7 +161,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 5,
-            "date": "Tue, 05 Apr 2022 09:13:03 GMT"
+            "date": "Thu, 28 Apr 2022 15:57:47 GMT"
         },
         "confidence": [
             1.0
@@ -140,7 +171,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:13:03 GMT"
+            "date": "Thu, 28 Apr 2022 15:57:47 GMT"
         },
         "confidence": [
             1.0
@@ -168,7 +199,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/licensius/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/licensius/master/README.md",
         "confidence": [
             1.0
         ],
@@ -177,6 +208,30 @@
     "hasDocumentation": {
         "excerpt": [
             "https://github.com/oeg-upm/licensius/tree/master/docs"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://purl.org/NET/odrl-lr#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/licensius/master/licensius-ws/src/main/webapp/def/odrl-lr.ttl"
+            },
+            {
+                "uri": "http://aims.fao.org/aos/geopolitical.owl",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/licensius/master/license-observatory/cachevocab/httpaims.fao.orgaosgeopolitical.owl"
+            },
+            {
+                "uri": "http://www.w3.org/ns/odrl/2/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/licensius/master/jodrlapi/src/main/resources/odrl22.ttl"
+            },
+            {
+                "uri": "http://www.w3.org/ns/odrl/2/",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/licensius/master/jodrlapi/src/main/resources/odrl21.ttl"
+            }
         ],
         "confidence": [
             1.0

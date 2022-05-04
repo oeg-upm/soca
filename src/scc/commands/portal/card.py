@@ -16,11 +16,12 @@ def cards_data_dump(repo_metadata_dir):
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 print(f"Creating card for '{filename}'")
                 repo_metadata = json.load(json_metadata)
-                md = metadata.metadata(repo_metadata)
+                md = metadata.metadata(repo_metadata_dir, repo_metadata)
+                citations = md.citations()
                 cards_data.append({
                     'id': md.repo_url(),
-                    'html_card': html_view(repo_metadata, False),
-                    'html_card_embedded': html_view(repo_metadata, True),
+                    'html_card': html_view(repo_metadata_dir, repo_metadata, False),
+                    'html_card_embedded': html_view(repo_metadata_dir, repo_metadata, True),
                     'name': md.title(),
                     'recently_updated': md.last_update_days(),
                     'stargazersCount': md.stars(),
@@ -30,7 +31,8 @@ def cards_data_dump(repo_metadata_dir):
                     'license': md.license() is not None,
                     'readmeUrl': md.readme() is not None,
                     'hasExecutableNotebook': md.notebook() is not None,
-                    'citation': md.citations() is not None,
+                    'citation': citations is not None,
+                    'citationText': citations[0] if citations is not None else None,
                     'paper': md.paper() is not None,
                     'hasBuildFile': md.docker() is not None,
                     'installation': md.installation() is not None,
@@ -51,10 +53,10 @@ def cards_data_dump(repo_metadata_dir):
     return cards_data
 
 
-def html_view(repo_metadata, embedded, minify=True):
+def html_view(repo_metadata_dir, repo_metadata, embedded, minify=True):
 
     s = styles.styles()
-    md = metadata.metadata(repo_metadata, embedded)
+    md = metadata.metadata(repo_metadata_dir, repo_metadata, embedded)
     sc = scripts.scripts()
 
     html_card = f"""

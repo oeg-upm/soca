@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "This repository is an aggregator for all the ontologies developed during the project.\n \n",
+            "confidence": [
+                [
+                    0.9963427353366681
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "vicinity-ontologies"
+        },
+        {
             "excerpt": "Ontologies developed during the VICINITY European project about IoT and related domains.",
             "confidence": [
                 1.0
@@ -65,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/vicinity-ontologies/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/vicinity-ontologies/issues",
         "confidence": [
             1.0
         ],
@@ -88,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:32:54 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:16 GMT"
         },
         "confidence": [
             1.0
@@ -98,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:32:54 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:16 GMT"
         },
         "confidence": [
             1.0
@@ -106,7 +116,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/vicinity-ontologies/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/vicinity-ontologies/master/README.md",
         "confidence": [
             1.0
         ],

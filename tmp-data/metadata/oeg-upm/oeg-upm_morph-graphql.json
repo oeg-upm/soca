@@ -12,7 +12,9 @@
         {
             "originalHeader": "Installation Instructions",
             "excerpt": "With Node:\n1. ```git clone https://github.com/oeg-upm/morph-graphql```\n2. ```cd morph-graphql```\n3. ```cd javascript```\n4. ```cd rdb```\n5. ```npm install```\n6. ```node app.js```\n\nWith docker:\n1. ```docker run -d -p 8082:8082 --name mapping-translator oegdataintegration/mapping-translator:1.0```\n\n",
-            "parentHeader": "morph-GraphQL (DEPRECATED)",
+            "parentHeader": [
+                "morph-GraphQL (DEPRECATED)"
+            ],
             "confidence": [
                 1
             ],
@@ -26,11 +28,23 @@
         ],
         "technique": "Regular expression"
     },
+    "documentation": [
+        {
+            "excerpt": "https://github.com/oeg-upm/morph-graphql/wiki",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "wiki"
+        }
+    ],
     "run": [
         {
             "originalHeader": "Running",
             "excerpt": "visit ```http://127.0.0.1:8082/```\n\n",
-            "parentHeader": "morph-GraphQL (DEPRECATED)",
+            "parentHeader": [
+                "morph-GraphQL (DEPRECATED)"
+            ],
             "confidence": [
                 1
             ],
@@ -41,7 +55,10 @@
         {
             "originalHeader": "Example Starwars:",
             "excerpt": "Translating mappings online for Javascript and a set of CSV files (assuming that you have npm and node or docker installed)\n- https://github.com/oeg-upm/morph-graphql/tree/master/examples/starwars\n",
-            "parentHeader": "morph-GraphQL (DEPRECATED) --- Examples",
+            "parentHeader": [
+                "morph-GraphQL (DEPRECATED)",
+                "Examples"
+            ],
             "confidence": [
                 1
             ],
@@ -50,7 +67,10 @@
         {
             "originalHeader": "EXAMPLE LinGBM Benchmark:",
             "excerpt": "Translating mappings online for Javascript and LinGBM benchmark dataset (assuming that you have npm and node or docker installed)\n- https://github.com/oeg-upm/morph-graphql/tree/master/examples/LinGBM\n",
-            "parentHeader": "morph-GraphQL (DEPRECATED) --- Examples",
+            "parentHeader": [
+                "morph-GraphQL (DEPRECATED)",
+                "Examples"
+            ],
             "confidence": [
                 1
             ],
@@ -117,7 +137,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/morph-graphql/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/morph-graphql/issues",
         "confidence": [
             1.0
         ],
@@ -151,7 +171,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 8,
-            "date": "Tue, 05 Apr 2022 09:22:15 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:28 GMT"
         },
         "confidence": [
             1.0
@@ -161,7 +181,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:22:15 GMT"
+            "date": "Thu, 28 Apr 2022 16:07:28 GMT"
         },
         "confidence": [
             1.0
@@ -192,23 +212,26 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/morph-graphql/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/morph-graphql/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/morph-graphql/master/examples/LinGBM/output/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/morph-graphql/master/javascript/rdb/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/morph-graphql/master/javascript/rdb/transformers/javascript/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/morph-graphql/master/examples/LinGBM/output/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/morph-graphql/master/javascript/rdb/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/morph-graphql/master/javascript/rdb/transformers/javascript/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/morph-graphql/master/examples/LinGBM/setup.sh",

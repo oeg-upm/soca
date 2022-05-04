@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "This repository contains all types of material that we consider useful for the management and usage of the W3C Semantic Sensor Network Ontology\n \n",
+            "confidence": [
+                [
+                    0.982033135318823
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "ssn-resource-center"
+        },
+        {
             "excerpt": "This repository contains all types of material that we consider useful for the management and usage of the W3C Semantic Sensor Network Ontology",
             "confidence": [
                 1.0
@@ -15,6 +25,16 @@
         ],
         "technique": "Regular expression"
     },
+    "documentation": [
+        {
+            "excerpt": "https://github.com/oeg-upm/ssn-resource-center/wiki",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "type": "wiki"
+        }
+    ],
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/ssn-resource-center",
         "confidence": [
@@ -75,7 +95,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/ssn-resource-center/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/ssn-resource-center/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +118,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:29:27 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:00 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +128,7 @@
     "forksCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:29:27 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:00 GMT"
         },
         "confidence": [
             1.0
@@ -123,7 +143,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/ssn-resource-center/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/ssn-resource-center/master/README.md",
         "confidence": [
             1.0
         ],

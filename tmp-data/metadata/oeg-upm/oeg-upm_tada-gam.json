@@ -18,18 +18,6 @@
             "technique": "GitHub API"
         }
     ],
-    "citation": [
-        {
-            "excerpt": "[![Build Status](https://semaphoreci.com/api/v1/ahmad88me/tada-gam/branches/master/badge.svg)](https://semaphoreci.com/ahmad88me/tada-gam)\n[![codecov](https://codecov.io/gh/oeg-upm/tada-gam/branch/master/graph/badge.svg)](https://codecov.io/gh/oeg-upm/tada-gam)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3545624.svg)](https://doi.org/10.5281/zenodo.3545624) \n",
-            "confidence": [
-                [
-                    0.9999999999876081
-                ]
-            ],
-            "technique": "Supervised classification",
-            "originalHeader": "tada-gam"
-        }
-    ],
     "installation": [
         {
             "originalHeader": "Install (Mac and Ubuntu)",
@@ -43,7 +31,7 @@
             "excerpt": "```\ngit submodule foreach git pull origin master\n```\n[source](https://stackoverflow.com/questions/5828324/update-git-submodule-to-latest-commit-on-origin) \n",
             "confidence": [
                 [
-                    0.9635741876217658
+                    0.9177454271676186
                 ]
             ],
             "technique": "Supervised classification",
@@ -60,29 +48,6 @@
     "identifier": [
         {
             "excerpt": "https://doi.org/10.5281/zenodo.3545624",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
-    "image": [
-        {
-            "excerpt": "https://zenodo.org/badge/DOI/10.5281/zenodo.3545624.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://codecov.io/gh/oeg-upm/tada-gam/branch/master/graph/badge.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://semaphoreci.com/api/v1/ahmad88me/tada-gam/branches/master/badge.svg",
             "confidence": [
                 1.0
             ],
@@ -109,10 +74,58 @@
             "technique": "Header extraction"
         }
     ],
+    "run": [
+        {
+            "originalHeader": "T2Dv2",
+            "excerpt": "1. Download and locate the data automatically (see above) or manually like here\n    1. Download the data from the official [website](http://webdatacommons.org/webtables/goldstandard.html)\n    1. Locate the downloaded data into `experiments/t2dv2/data`\n    1. Replace the file `experiments/t2dv2/data/classes_GS.csv` with `experiments/t2dv2/classes_GS.fixed`\nand rename it to `classes_GS.csv`.\n1. In the terminal, go to the directory of the application \n1. Activate the virtual environment `source .venv/bin/activate`\n1. Go to the experiment directory `cd experiments/t2dv2`\n1. Run the labeling task `python label_experiment.py start --sample all` (note that this will \nuse docker-compose and will startup the instances, automatically)\n1. In another window, run this command `python label_experiment.py collect --sample all`. This \nwill collect the data from the instances, so in case the experiment has been interrupted or\nstopped, it will resume (to resume, start from step 4).\n1. Once the experiment is done, you can compute the results `python label_experiment.py results --sample all` (it will fetch them from the combine instances) \n1. Show the scores `python label_experiment.py show --sample all` (precision, recall, and F1)\n\n*note: for sample `all`, it will run normally, for sample `10`, it will take the top 10 values from each subject column only*\n",
+            "parentHeader": [
+                "To run the experiments",
+                "Subject Column Detection"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "T2D-TAIPAN",
+            "excerpt": "The T2D set used in the TAIPAN \n1. In the terminal, go to the directory of the application\n1. Activate the virtual environment `source .venv/bin/activate`\n1. Go to Taipan experiment directory `cd experiments/taipan`\n1. Download and preprocess `python preprocessing.py` (you must have `wget` installed)\n1. Run the experiment `python experiment.py`\n1. The scores will be located in `data/scores.csv`\n",
+            "parentHeader": [
+                "To run the experiments",
+                "Subject Column Detection"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
     "usage": [
         {
             "originalHeader": "Usage",
             "excerpt": "To use this tool, we need to talk with the `captain.py`. It manages the \nother resources and assign tasks and data. Although it can be done\ndirectly, but you need to understand how the flow works.\n",
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Step1: Startup the services",
+            "excerpt": "```\npython captain.py up --services score=3 combine=2\n```\nIn this command we are running 3 instances of the `score` service and\n2 instance of `combine`. You can adjust that to meet your needs \n",
+            "parentHeader": [
+                "Usage"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Step2: Label columns",
+            "excerpt": "```\npython captain.py label --files local_data/data.csv --sample all\n```\nYou can specify as much files are you want. You can also make use of \nthe wild card like that `local_data/*.csv`.\nThis can be executed multiple times without the need to restart or \nrebuild the services\n\n\n*arguments*:\n```\nusage: label_experiment.py [-h] [--alpha ALPHA] [--fname FNAME]\n                           [--sample {all,10}]\n                           {start,results,show,collect,single}\n\nCaptain to look after the processes\n\npositional arguments:\n  {start,results,show,collect,single}\n                        \"start\": To start the experiment \"collect\": To collect\n                        the results from the running combine instances\n                        \"results\": To compute the collected results (to be run\n                        after the \"collect\" option) \"show\": To show the\n                        computed results (to be run after the \"results\"\n                        option) \"single\": To show the results for a single\n                        file with a given alpha (to be run after the\n                        \"collect\")\n\noptional arguments:\n  -h, --help            show this help message and exit\n  --alpha ALPHA         The alpha to be used (only for single option)\n  --fname FNAME         The file name the results will be computed for (only\n                        for single option)\n  --sample {all,10}     The sampling method\n```\n",
+            "parentHeader": [
+                "Usage"
+            ],
             "confidence": [
                 1
             ],
@@ -179,7 +192,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/tada-gam/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/tada-gam/issues",
         "confidence": [
             1.0
         ],
@@ -202,7 +215,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:29:47 GMT"
+            "date": "Thu, 28 Apr 2022 16:12:10 GMT"
         },
         "confidence": [
             1.0
@@ -212,7 +225,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:29:47 GMT"
+            "date": "Thu, 28 Apr 2022 16:12:10 GMT"
         },
         "confidence": [
             1.0
@@ -238,12 +251,24 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/tada-gam/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/tada-gam/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
     },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/tada-gam/master/docker-compose.yml"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker compose file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/tada-gam/master/run_tests.sh",
@@ -276,6 +301,7 @@
         "technique": "GitHub API"
     },
     "inspect4py": {
-        "software_type": "script"
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/tada-gam/captain.py"
     }
 }

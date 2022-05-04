@@ -58,7 +58,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19web/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/drugs4covid19web/issues",
         "confidence": [
             1.0
         ],
@@ -90,7 +90,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:01:26 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:36 GMT"
         },
         "confidence": [
             1.0
@@ -100,7 +100,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:01:26 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:36 GMT"
         },
         "confidence": [
             1.0

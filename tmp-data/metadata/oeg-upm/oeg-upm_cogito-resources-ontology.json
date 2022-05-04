@@ -77,7 +77,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/cogito-resources-ontology/issues",
         "confidence": [
             1.0
         ],
@@ -100,7 +100,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:22 GMT"
+            "date": "Thu, 28 Apr 2022 16:35:33 GMT"
         },
         "confidence": [
             1.0
@@ -110,7 +110,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:00:22 GMT"
+            "date": "Thu, 28 Apr 2022 16:35:33 GMT"
         },
         "confidence": [
             1.0
@@ -118,11 +118,31 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/cogito-resources-ontology/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/cogito-resources-ontology/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "https://cogito.iot.linkeddata.es/def/resource#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-resources-ontology/master/documentation/ontology.nt"
+            },
+            {
+                "uri": "https://cogito.iot.linkeddata.es/def/resource#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-resources-ontology/master/documentation/ontology.ttl"
+            },
+            {
+                "uri": "https://cogito.iot.linkeddata.es/def/resource#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-resources-ontology/master/ontology/ontology.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     },
     "releases": {
         "excerpt": [

@@ -1,10 +1,12 @@
 {
     "description": [
         {
-            "excerpt": "Project designed to create and browse Research Objects following the W3C LDP protocol and using LDP4J (http://www.ldp4j.org/#/).\nThe project consists on a client for easily creating ROs and a connector to handle the requests to LDP.\nThis is a work in progress. \n",
+            "excerpt": "Project designed to create and browse Research Objects following the W3C LDP protocol and using LDP4J (http://www.ldp4j.org/#/).\nThe project consists on a client for easily creating ROs and a connector to handle the requests to LDP.\nThis is a work in progress. \nCurrently supported: Creation of simple ROs, RO description and RO browisng.  \nCurrently working on: Adding folders, handling of Zip files, improvements to the client html (see issues).\n \n",
             "confidence": [
                 [
-                    0.9951199567657814
+                    0.9951199567657814,
+                    0.9445091095805453,
+                    0.9109487270658827
                 ]
             ],
             "technique": "Supervised classification",
@@ -28,22 +30,18 @@
     "repoStatus": {
         "excerpt": "https://www.repostatus.org/#concept",
         "description": "Concept \u2013 Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.",
+        "confidence": [
+            1.0
+        ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://www.repostatus.org/badges/latest/concept.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
     "usage": [
         {
             "originalHeader": "Demo",
             "excerpt": "A live demo is available at http://purl.org/net/ldp4ro\n\nThis work has been supported by the DrInventor project (http://drinventor.eu/)\n",
-            "parentHeader": "LDP4RO",
+            "parentHeader": [
+                "LDP4RO"
+            ],
             "confidence": [
                 1
             ],
@@ -109,7 +107,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/LDP4RO/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/LDP4RO/issues",
         "confidence": [
             1.0
         ],
@@ -132,7 +130,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Tue, 05 Apr 2022 09:13:01 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:04 GMT"
         },
         "confidence": [
             1.0
@@ -142,7 +140,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:13:01 GMT"
+            "date": "Thu, 28 Apr 2022 15:54:04 GMT"
         },
         "confidence": [
             1.0
@@ -162,7 +160,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/LDP4RO/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/LDP4RO/master/README.md",
         "confidence": [
             1.0
         ],

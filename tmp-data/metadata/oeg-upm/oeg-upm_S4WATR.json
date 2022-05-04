@@ -1,6 +1,15 @@
 {
     "description": [
         {
+            "excerpt": "This repository contains the code and documentation generated for the SAREF extension for Water is published at https://w3id.org/def/S4WATR.\n \n",
+            "confidence": [
+                [
+                    0.9730618687155158
+                ]
+            ],
+            "technique": "Supervised classification"
+        },
+        {
             "excerpt": "Water Ontology",
             "confidence": [
                 1.0
@@ -58,7 +67,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/S4WATR/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/S4WATR/issues",
         "confidence": [
             1.0
         ],
@@ -81,7 +90,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:27:38 GMT"
+            "date": "Thu, 28 Apr 2022 16:15:45 GMT"
         },
         "confidence": [
             1.0
@@ -91,7 +100,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Tue, 05 Apr 2022 09:27:38 GMT"
+            "date": "Thu, 28 Apr 2022 16:15:45 GMT"
         },
         "confidence": [
             1.0
@@ -108,10 +117,46 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/S4WATR/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/S4WATR/master/README.md",
         "confidence": [
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "https://w3id.org/def/S4WATR",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/S4WATR/master/S4Water.owl"
+            },
+            {
+                "uri": "Nc4bf2322a9b34a66933b0ed87ffa2a13",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/S4WATR/master/OnToology/Test/testsuite.ttl/documentation/ontology.nt"
+            },
+            {
+                "uri": "Na51d4ceea47040279153ce89fc086663",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/S4WATR/master/OnToology/Test/testsuite.ttl/documentation/ontology.xml"
+            },
+            {
+                "uri": "n922c63fc779f445abf4c7bf67a4fc6bcb1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/S4WATR/master/OnToology/Test/testsuite.ttl/documentation/ontology.ttl"
+            },
+            {
+                "uri": "https://w3id.org/def/S4WATR",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/S4WATR/master/OnToology/S4Water.owl/documentation/ontology.nt"
+            },
+            {
+                "uri": "https://w3id.org/def/S4WATR",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/S4WATR/master/OnToology/S4Water.owl/documentation/ontology.xml"
+            },
+            {
+                "uri": "https://w3id.org/def/S4WATR",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/S4WATR/master/OnToology/S4Water.owl/documentation/ontology.ttl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

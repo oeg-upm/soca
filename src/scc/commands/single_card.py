@@ -30,4 +30,4 @@ def create(repo_url, output, save_as):
         print(f"ERROR: The save_as '{save_as}' format is not supported.")
         quit()
 
-    print(f'✅ Card generated correctaly and saved in: {os.path.abspath(output)}')
+    print(f'✅ Card generated correctly and saved in: {os.path.abspath(output)}')

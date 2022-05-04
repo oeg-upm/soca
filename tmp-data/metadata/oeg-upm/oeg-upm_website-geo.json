@@ -75,7 +75,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/website-geo/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/website-geo/issues",
         "confidence": [
             1.0
         ],
@@ -98,7 +98,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:35:19 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:23 GMT"
         },
         "confidence": [
             1.0
@@ -108,7 +108,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Tue, 05 Apr 2022 09:35:19 GMT"
+            "date": "Thu, 28 Apr 2022 16:02:23 GMT"
         },
         "confidence": [
             1.0
@@ -129,7 +129,7 @@
         "technique": "GitHub API"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/website-geo/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/website-geo/master/README.md",
         "confidence": [
             1.0
         ],
@@ -142,17 +142,20 @@
         ],
         "technique": "File Exploration"
     },
-    "hasBuildFile": {
-        "excerpt": [
-            "https://raw.githubusercontent.com/oeg-upm/website-geo/master/gis-worker/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/website-geo/master/portal/Dockerfile",
-            "https://raw.githubusercontent.com/oeg-upm/website-geo/master/portal-mailer/Dockerfile"
-        ],
-        "confidence": [
-            1.0
-        ],
-        "technique": "File Exploration"
-    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/oeg-upm/website-geo/master/gis-worker/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/website-geo/master/portal/Dockerfile",
+                "https://raw.githubusercontent.com/oeg-upm/website-geo/master/portal-mailer/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
     "hasScriptFile": {
         "excerpt": [
             "https://raw.githubusercontent.com/oeg-upm/website-geo/master/gis-worker/gis_worker_run/docker.sh",
@@ -165,6 +168,7 @@
         "technique": "File Exploration"
     },
     "inspect4py": {
-        "software_type": "service"
+        "software_type": "service",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/website-geo/portal/portal.py"
     }
 }

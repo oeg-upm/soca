@@ -1,6 +1,16 @@
 {
     "description": [
         {
+            "excerpt": "In this repository we are providing links on the contributions that the Spanish academic community can provide in order to apply Artificial Intelligence techniques over the COVID-19 Open Research Dataset (CORD-19), as well as encouraging all to contribute to this voluntary initiative.\n \n",
+            "confidence": [
+                [
+                    0.9782455393939762
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "covid19"
+        },
+        {
             "excerpt": "Contributions to analyze the COVID-19 Open Research Dataset (CORD-19)",
             "confidence": [
                 1.0
@@ -87,7 +97,7 @@
         "technique": "GitHub API"
     },
     "issueTracker": {
-        "excerpt": "https://api.github.com/repos/oeg-upm/covid19/issues{/number}",
+        "excerpt": "https://api.github.com/repos/oeg-upm/covid19/issues",
         "confidence": [
             1.0
         ],
@@ -120,7 +130,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Tue, 05 Apr 2022 09:00:33 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:19 GMT"
         },
         "confidence": [
             1.0
@@ -130,7 +140,7 @@
     "forksCount": {
         "excerpt": {
             "count": 5,
-            "date": "Tue, 05 Apr 2022 09:00:33 GMT"
+            "date": "Thu, 28 Apr 2022 16:20:19 GMT"
         },
         "confidence": [
             1.0
@@ -157,7 +167,7 @@
         "technique": "File Exploration"
     },
     "readmeUrl": {
-        "excerpt": "https://github.com/oeg-upm/covid19/README.md",
+        "excerpt": "https://raw.githubusercontent.com/oeg-upm/covid19/master/README.md",
         "confidence": [
             1.0
         ],
