@@ -1,8 +1,8 @@
 
-# Software Catalog Creator
+# Software Catalog Creator (soca)
 [![Project Status: Active: The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-<img src="doc/images/scc-logo.png" alt="logo" width="200"/>'
+<img src="doc/images/soca-logo.png" alt="logo" width="200"/>'
 
 A python package that given an organization/user name, it will create a software catalog for browsing all repositories or just a single repository in a minimalist card.
 
