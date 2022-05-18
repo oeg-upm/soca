@@ -447,7 +447,14 @@ class metadata(object):
         return safe_dic(safe_list(safe_dic(self.md,'installation'),0),'excerpt')
 
     def docker(self):
-        return safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
+
+        hasBuildFile_list = safe_dic(self.md,'hasBuildFile')
+        
+        if not hasBuildFile_list:
+            return None
+
+        return [safe_dic(d,'excerpt')[0] for d in hasBuildFile_list]
+
 
     def citations(self):
         all_citations = safe_dic(self.md,'citation')
