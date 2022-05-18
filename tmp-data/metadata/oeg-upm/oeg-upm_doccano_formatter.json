@@ -109,7 +109,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:35:51 GMT"
+            "date": "Wed, 18 May 2022 07:14:57 GMT"
         },
         "confidence": [
             1.0
@@ -119,7 +119,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:35:51 GMT"
+            "date": "Wed, 18 May 2022 07:14:57 GMT"
         },
         "confidence": [
             1.0
@@ -149,8 +149,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/doccano_formatter/doccano_formatter.py"
-    }
+    "inspect4py": {}
 }

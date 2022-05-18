@@ -1,13 +1,17 @@
 {
     "description": [
         {
-            "excerpt": "# [Helio Materialiser](https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users)\n### **Creators:** [Andrea Cimmino](https://scholar.google.es/citations?user=_6U9WMcAAAAJ&hl=es&oi=ao) and [Ra\u00fal Garc\u00eda Castro](http://www.garcia-castro.com/)\n \n",
+            "excerpt": "### **Creators:** [Andrea Cimmino](https://scholar.google.es/citations?user=_6U9WMcAAAAJ&hl=es&oi=ao) and [Ra\u00fal Garc\u00eda Castro](http://www.garcia-castro.com/)\n \n",
             "confidence": [
                 [
                     0.908925214220865
                 ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "**Creators:** <a href=\"https://scholar.google.es/citations?user=_6U9WMcAAAAJ&amp;hl=es&amp;oi=ao\">Andrea Cimmino</a> and <a href=\"http://www.garcia-castro.com/\">Ra\u00fal Garc\u00eda Castro</a>",
+            "parentHeader": [
+                "<a href=\"https://github.com/oeg-upm/helio/wiki/Helio-Materialiser-for-Users\">Helio Materialiser</a>"
+            ]
         },
         {
             "excerpt": "Helio materialiser allows to generate RDF from heterogeneous sources of data. The generated RDF can be accessed (retrieving the dataset, accessing a resource, or solving a SPARQL query) or it can be injected automatically by Helio into an existing triple store. Furthermore, the RDF can be generated synchronously under demand, or asynchronously with a timer.",
@@ -107,7 +111,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:24:46 GMT"
+            "date": "Wed, 18 May 2022 06:55:42 GMT"
         },
         "confidence": [
             1.0
@@ -117,7 +121,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:24:46 GMT"
+            "date": "Wed, 18 May 2022 06:55:42 GMT"
         },
         "confidence": [
             1.0

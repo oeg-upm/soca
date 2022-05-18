@@ -50,7 +50,7 @@
             "originalHeader": "Examples",
             "excerpt": "Some [queries](https://github.com/repository-name/blob/master/examples/queries.md) will be performed in a\nSPARQL endpoint to test and exemplify its operability.\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -128,7 +128,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:29:59 GMT"
+            "date": "Wed, 18 May 2022 07:05:26 GMT"
         },
         "confidence": [
             1.0
@@ -138,7 +138,7 @@
     "forksCount": {
         "excerpt": {
             "count": 3,
-            "date": "Thu, 28 Apr 2022 16:29:59 GMT"
+            "date": "Wed, 18 May 2022 07:05:26 GMT"
         },
         "confidence": [
             1.0

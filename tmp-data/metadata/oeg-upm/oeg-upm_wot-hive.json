@@ -12,6 +12,17 @@
             "originalHeader": "WoT Hive API"
         },
         {
+            "excerpt": "WoT Hive is an implementation of a . This implementation is compliant with the standard specification but aims at providing enriched features thanks to the usage of other W3C standards related to Semantic Web technologies. \n**Checkout our ** \n**Temporally the functionality that introduces the registration information in the Things has been disable (version 0.2.0 and above). Also, at the light of a new update in the  and therefore it is strongly recomended to disable this kind of validation.** \n",
+            "confidence": [
+                [
+                    0.9973986120216852,
+                    0.9571345502582065,
+                    0.9917362106429107
+                ]
+            ],
+            "technique": "Supervised classification"
+        },
+        {
             "excerpt": "The WoT Hive an implementation of a WoT Directory described in the W3C WoT Discovery standard",
             "confidence": [
                 1.0
@@ -27,7 +38,7 @@
                 "Jar quick start"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -73,7 +84,7 @@
                 "WoT Hive API"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -86,7 +97,7 @@
                 "Jar quick start"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -96,7 +107,7 @@
             "originalHeader": "Docker quick start",
             "excerpt": "Copy this receipt in a *docker-compose.yml* file\n\n```yaml\nversion: '2'\nservices:\n  triplestore:\n    image: acimmino/auroral-fuseky:latest\n    environment:\n     ADMIN_PASSWORD: pw123\n    volumes:\n    - triplestore:/fuseki\n    ports:\n      - '3030:3030'\n  wothive:\n    image: acimmino/wot-hive:auroral-dev\n    # volumes:\n    # - ./configuration.json:/usr/src/wothive/configuration.json\n    ports:\n      - '9000:9000'\nvolumes:\n  triplestore:\n```\n\nRun the docker command\n\n```bash\ndocker-compose up\n```\n\n\n[OPTIONAL] Uncomment wothive volume to bind your own configuration file for the wothive. Default file is configured to connect the fuseki service running in the docker-compose network.\n\n[OPTIONAL 2] If you want to change the fuseki service location (Move outside docker for instance), you can change the configuration of the wothive also via API. A `POST` request must be sent to `/configuration/triplestore` containing the in the body the following JSON. This \n\n```json\n{\n    \"updateEnpoint\": \"http://triplestore:3030/sparql\",\n    \"queryEnpoint\": \"http://triplestore:3030/sparql\",\n    \"queryUsingGET\": true\n}\n```\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -184,7 +195,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 7,
-            "date": "Thu, 28 Apr 2022 16:35:16 GMT"
+            "date": "Wed, 18 May 2022 07:14:06 GMT"
         },
         "confidence": [
             1.0
@@ -194,7 +205,7 @@
     "forksCount": {
         "excerpt": {
             "count": 5,
-            "date": "Thu, 28 Apr 2022 16:35:16 GMT"
+            "date": "Wed, 18 May 2022 07:14:06 GMT"
         },
         "confidence": [
             1.0

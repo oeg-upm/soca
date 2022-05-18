@@ -30,7 +30,7 @@
                 "Jarsomatic"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -42,7 +42,7 @@
                 "How to use it"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -54,7 +54,7 @@
                 "How to use it"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -66,7 +66,7 @@
                 "How to use it"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -78,7 +78,7 @@
                 "How to use it"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -166,7 +166,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:02:00 GMT"
+            "date": "Wed, 18 May 2022 06:12:35 GMT"
         },
         "confidence": [
             1.0
@@ -176,7 +176,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:02:00 GMT"
+            "date": "Wed, 18 May 2022 06:12:35 GMT"
         },
         "confidence": [
             1.0
@@ -228,7 +228,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "script without main"
-    }
+    "inspect4py": {}
 }

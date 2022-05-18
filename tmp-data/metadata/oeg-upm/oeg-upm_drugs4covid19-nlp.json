@@ -49,7 +49,7 @@
             "originalHeader": "Quick Start",
             "excerpt": "To run this..:\n\n```shell\n$ docker-compose up\n```\n\nA keyword-oriented search can be performed at our [search-engine](https://bio-nlp-dashboard.netlify.app).\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -137,7 +137,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:23:06 GMT"
+            "date": "Wed, 18 May 2022 06:52:37 GMT"
         },
         "confidence": [
             1.0
@@ -147,7 +147,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:23:06 GMT"
+            "date": "Wed, 18 May 2022 06:52:37 GMT"
         },
         "confidence": [
             1.0
@@ -193,8 +193,5 @@
         "technique": "File Exploration",
         "format": "jupyter notebook"
     },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/drugs4covid19-nlp/code/python/annotate-paragraphs.py"
-    }
+    "inspect4py": {}
 }

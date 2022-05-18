@@ -100,7 +100,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 16:35:39 GMT"
+            "date": "Wed, 18 May 2022 07:14:41 GMT"
         },
         "confidence": [
             1.0
@@ -110,7 +110,7 @@
     "forksCount": {
         "excerpt": {
             "count": 4,
-            "date": "Thu, 28 Apr 2022 16:35:39 GMT"
+            "date": "Wed, 18 May 2022 07:14:41 GMT"
         },
         "confidence": [
             1.0
@@ -126,6 +126,14 @@
     },
     "ontologies": {
         "excerpt": [
+            {
+                "uri": "Neaf28154b69a4773bbe5479b1a162031",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/auroral-core-ontology/master/OnToology/tests/testsuite.ttl/documentation/ontology.nt"
+            },
+            {
+                "uri": "n0c89221567654c22b4c0686eb446fddab1",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/auroral-core-ontology/master/OnToology/tests/testsuite.ttl/documentation/ontology.ttl"
+            },
             {
                 "uri": "https://auroral.iot.linkeddata.es/def/core#",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/auroral-core-ontology/master/OnToology/ontology/auroral-core.ttl/documentation/ontology.nt"

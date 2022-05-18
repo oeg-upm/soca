@@ -30,7 +30,7 @@
             "originalHeader": "Ontology Documentation",
             "excerpt": "The ontology is documented here: http://vocab.linkeddata.es/SMARTProtocols/\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -108,7 +108,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 15:54:08 GMT"
+            "date": "Wed, 18 May 2022 05:32:33 GMT"
         },
         "confidence": [
             1.0
@@ -118,7 +118,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 15:54:08 GMT"
+            "date": "Wed, 18 May 2022 05:32:33 GMT"
         },
         "confidence": [
             1.0

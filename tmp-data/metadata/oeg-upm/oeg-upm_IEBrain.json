@@ -30,7 +30,7 @@
             "originalHeader": "Technical documentation",
             "excerpt": "* IEBrain core Ontology: [IEBrain](https://w3id.org/def/iebrain \"IEBrain\")\n* IEBrainActor Ontology: [IEBrain Actor](https://w3id.org/def/iebrainactor \"IEBrainActor\")\n\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -108,7 +108,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:25:07 GMT"
+            "date": "Wed, 18 May 2022 06:56:12 GMT"
         },
         "confidence": [
             1.0
@@ -118,7 +118,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 16:25:07 GMT"
+            "date": "Wed, 18 May 2022 06:56:12 GMT"
         },
         "confidence": [
             1.0

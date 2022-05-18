@@ -67,7 +67,7 @@
                 "Vocabulary development"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -81,7 +81,7 @@
                 "Vocabulary development"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -170,7 +170,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 4,
-            "date": "Thu, 28 Apr 2022 16:29:19 GMT"
+            "date": "Wed, 18 May 2022 07:04:01 GMT"
         },
         "confidence": [
             1.0
@@ -180,7 +180,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 16:29:19 GMT"
+            "date": "Wed, 18 May 2022 07:04:01 GMT"
         },
         "confidence": [
             1.0

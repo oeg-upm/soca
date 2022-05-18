@@ -53,7 +53,7 @@
                 "Chowlk Converter"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -67,7 +67,7 @@
                 "How to use the tool"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -81,7 +81,7 @@
                 "How to use the tool"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -94,7 +94,7 @@
                 "Chowlk Converter"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -106,7 +106,7 @@
                 "How to use the tool"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -118,7 +118,7 @@
                 "How to use the tool"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -130,7 +130,7 @@
                 "How to use the tool"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -142,7 +142,7 @@
                 "How to use the tool"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -243,7 +243,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Thu, 28 Apr 2022 16:20:56 GMT"
+            "date": "Wed, 18 May 2022 06:52:15 GMT"
         },
         "confidence": [
             1.0
@@ -253,7 +253,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:20:56 GMT"
+            "date": "Wed, 18 May 2022 06:52:15 GMT"
         },
         "confidence": [
             1.0
@@ -739,8 +739,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import chowlk-pkg-SergeCF3006"
-    }
+    "inspect4py": {}
 }

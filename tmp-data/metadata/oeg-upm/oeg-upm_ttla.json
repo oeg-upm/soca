@@ -99,7 +99,7 @@
                 "Run the experiments"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -112,7 +112,7 @@
                 "Run the experiments"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -123,7 +123,7 @@
                 "Run the experiments"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -134,7 +134,7 @@
                 "Tests"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -232,7 +232,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:11:21 GMT"
+            "date": "Wed, 18 May 2022 06:33:03 GMT"
         },
         "confidence": [
             1.0
@@ -242,7 +242,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:11:21 GMT"
+            "date": "Wed, 18 May 2022 06:33:03 GMT"
         },
         "confidence": [
             1.0
@@ -307,8 +307,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "service",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/ttla/app.py"
-    }
+    "inspect4py": {}
 }

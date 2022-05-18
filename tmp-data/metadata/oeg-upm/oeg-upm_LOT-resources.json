@@ -56,7 +56,7 @@
                 "LOT-resources"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -67,7 +67,7 @@
                 "LOT-resources"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -155,7 +155,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Thu, 28 Apr 2022 16:25:10 GMT"
+            "date": "Wed, 18 May 2022 06:56:15 GMT"
         },
         "confidence": [
             1.0
@@ -165,7 +165,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 16:25:10 GMT"
+            "date": "Wed, 18 May 2022 06:56:15 GMT"
         },
         "confidence": [
             1.0

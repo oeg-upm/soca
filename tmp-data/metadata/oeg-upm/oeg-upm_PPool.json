@@ -23,7 +23,7 @@
             "originalHeader": "Install",
             "excerpt": "```\npip install PPool\n```\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -35,19 +35,12 @@
         ],
         "technique": "Regular expression"
     },
-    "logo": {
-        "excerpt": "https://badge.fury.io/py/PPool.svg",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "usage": [
         {
             "originalHeader": "Example",
             "excerpt": "```\nfrom PPool.Pool import Pool\nparams = [('A', 2),('B', 3),('C', 4), ('D', 5)]\n\ndef foo(name, num):\n    print(name+str(num))\n\npool = Pool(max_num_of_processes=3, func=foo, params_list=params)\n\npool.run()\n```\n\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -144,7 +137,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:07:17 GMT"
+            "date": "Wed, 18 May 2022 06:23:01 GMT"
         },
         "confidence": [
             1.0
@@ -154,7 +147,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:07:17 GMT"
+            "date": "Wed, 18 May 2022 06:23:01 GMT"
         },
         "confidence": [
             1.0
@@ -184,8 +177,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import PPool"
-    }
+    "inspect4py": {}
 }

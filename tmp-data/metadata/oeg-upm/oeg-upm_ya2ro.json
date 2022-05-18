@@ -6,6 +6,23 @@
         ],
         "technique": "Regular expression"
     },
+    "identifier": [
+        {
+            "excerpt": "https://zenodo.org/badge/latestdoi/407588137",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "repoStatus": {
+        "excerpt": "https://www.repostatus.org/#active:",
+        "description": "Active: The project has reached a stable, usable state and is being actively developed.",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
     "installation": [
         {
             "originalHeader": "Installation",
@@ -14,7 +31,7 @@
                 "ya2ro"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -26,7 +43,7 @@
                 "Installation"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -38,7 +55,7 @@
                 "Installation"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -50,19 +67,19 @@
                 "Installation"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
         {
             "originalHeader": "Test ya2ro installation",
-            "excerpt": "```bash\nya2ro --help\n```\n\nIf everything goes fine, you should see:\n\n```text\n                        ad888888b,\n                       d8\"     \"88\n                               a8P\n8b       d8 ,adPPYYba,      ,d8P\"  8b,dPPYba,  ,adPPYba,\n`8b     d8' \"\"     `Y8    a8P\"     88P'   \"Y8 a8\"     \"8a\n `8b   d8'  ,adPPPPP88  a8P'       88         8b       d8\n  `8b,d8'   88,    ,88 d8\"         88         \"8a,   ,a8\"\n    Y88'    `\"8bbdP\"Y8 88888888888 88          `\"YbbdP\"'\n    d8'\n   d8'\n_________________________________________________________\n\nusage: ya2ro [-h] (-i YALM_PATH | -l YA2RO_PREV_OUTPUT) [-o OUTPUT_DIR] [-p PROPERTIES_FILE] [-ns]\n\nHuman and machine readable input as a yaml file and create RO-Object in jsonld and/or HTML view. Run 'ya2ro -configure GITHUB_PERSONAL_ACCESS_TOKEN' this the first time to configure ya2ro\nproperly\n\noptions:\n  -h, --help            show this help message and exit\n  -i YALM_PATH, --input YALM_PATH\n                        Path of the required yaml input. Follow the documentation or the example given to see the structure of the file.\n  -l YA2RO_PREV_OUTPUT, --landing_page YA2RO_PREV_OUTPUT\n                        Path of a previous output folder using the ya2ro tool. This flag will make a landing page to make all the resources accessible.\n  -o OUTPUT_DIR, --output_directory OUTPUT_DIR\n                        Output directory.\n  -p PROPERTIES_FILE, --properties_file PROPERTIES_FILE\n                        Properties file name.\n  -ns, --no_somef       Disable SOMEF for a faster execution (software cards will not work).\n\n```\n\n---\n",
+            "excerpt": "```bash\nya2ro --help\n```\n\nIf everything goes fine, you should see:\n\n```text\n                        ad888888b,\n                       d8\"     \"88\n                               a8P\n8b       d8 ,adPPYYba,      ,d8P\"  8b,dPPYba,  ,adPPYba,\n`8b     d8' \"\"     `Y8    a8P\"     88P'   \"Y8 a8\"     \"8a\n `8b   d8'  ,adPPPPP88  a8P'       88         8b       d8\n  `8b,d8'   88,    ,88 d8\"         88         \"8a,   ,a8\"\n    Y88'    `\"8bbdP\"Y8 88888888888 88          `\"YbbdP\"'\n    d8'\n   d8'\n_________________________________________________________\n\nusage: ya2ro [-h] (-i YAML_PATH | -l YA2RO_PREV_OUTPUT) [-o OUTPUT_DIR] [-p PROPERTIES_FILE] [-ns]\n\nHuman and machine readable input as a yaml file and create RO-Object in jsonld and/or HTML view. Run 'ya2ro -configure GITHUB_PERSONAL_ACCESS_TOKEN' this the first time to configure ya2ro\nproperly\n\noptions:\n  -h, --help            show this help message and exit\n  -i YAML_PATH, --input YAML_PATH\n                        Path of the required yaml input. Follow the documentation or the example given to see the structure of the file.\n  -l YA2RO_PREV_OUTPUT, --landing_page YA2RO_PREV_OUTPUT\n                        Path of a previous output folder using the ya2ro tool. This flag will make a landing page to make all the resources accessible.\n  -o OUTPUT_DIR, --output_directory OUTPUT_DIR\n                        Output directory.\n  -p PROPERTIES_FILE, --properties_file PROPERTIES_FILE\n                        Properties file name.\n  -ns, --no_somef       Disable SOMEF for a faster execution (software cards will not work).\n\n```\n\n---\n",
             "parentHeader": [
                 "ya2ro",
                 "Usage"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -75,7 +92,7 @@
                 "ya2ro"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -87,32 +104,32 @@
                 "Usage"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
         {
             "originalHeader": "How to use",
-            "excerpt": "The first thing to do is create some input for ya2ro. To create valid a yalm you should follow the documentation bellow.\n\nCreate a yalm from scratch or use one of the supplied templates. Currently ya2ro supports two formats:\n\n* paper\n* project\n\nPlease find a template for each type under the directory templates.\nOnce you have a valid yalm (proyect or paper) is time to run ya2ro.\n",
+            "excerpt": "The first thing to do is create some input for ya2ro. To create valid a yaml you should follow the documentation bellow.\n\nCreate a yaml from scratch or use one of the supplied templates. Currently ya2ro supports two formats:\n\n* paper\n* project\n\nPlease find a template for each type under the directory templates.\nOnce you have a valid yaml (project or paper) is time to run ya2ro.\n",
             "parentHeader": [
                 "ya2ro",
                 "Usage"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
         {
             "originalHeader": "Create machine and human readable content",
-            "excerpt": "It is possible to process batches of yalms at the same time, to do that just specify as input a folder with all the yalms inside.\n",
+            "excerpt": "It is possible to process batches of yamls at the same time, to do that just specify as input a folder with all the yamls inside.\n",
             "parentHeader": [
                 "ya2ro",
                 "Usage",
                 "How to use"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -126,7 +143,7 @@
                 "Create machine and human readable content"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -140,7 +157,7 @@
                 "Create machine and human readable content"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -154,7 +171,7 @@
                 "Create machine and human readable content"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -167,7 +184,7 @@
                 "How to use"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -277,7 +294,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:35:59 GMT"
+            "date": "Wed, 18 May 2022 07:15:08 GMT"
         },
         "confidence": [
             1.0
@@ -287,7 +304,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:35:59 GMT"
+            "date": "Wed, 18 May 2022 07:15:08 GMT"
         },
         "confidence": [
             1.0
@@ -334,6 +351,19 @@
     "releases": {
         "excerpt": [
             {
+                "tagName": "0.0.2",
+                "name": "ya2ro 0.0.2: Software metadata extraction integration",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release integrates software extraction features for analyzing repos and creating useful cards.\r\n\r\n**Full Changelog**: https://github.com/oeg-upm/ya2ro/compare/0.0.1...0.0.2",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/ya2ro/tarball/0.0.2",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/ya2ro/zipball/0.0.2",
+                "htmlUrl": "https://github.com/oeg-upm/ya2ro/releases/tag/0.0.2",
+                "url": "https://api.github.com/repos/oeg-upm/ya2ro/releases/66904021",
+                "dateCreated": "2022-05-07T16:27:52Z",
+                "datePublished": "2022-05-15T15:32:20Z"
+            },
+            {
                 "tagName": "0.0.1",
                 "name": "ya2ro 0.0.1: First official release",
                 "authorName": "dgarijo",
@@ -365,10 +395,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "package",
-        "run": [
-            "ya2ro"
-        ]
-    }
+    "inspect4py": {}
 }

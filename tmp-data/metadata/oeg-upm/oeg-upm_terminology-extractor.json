@@ -52,7 +52,7 @@
                 "To install"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -64,7 +64,7 @@
                 "To install"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -84,7 +84,7 @@
                 "Terminology Extractor. Spanish Extension of JATE 2.0"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -162,7 +162,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:09:33 GMT"
+            "date": "Wed, 18 May 2022 06:28:16 GMT"
         },
         "confidence": [
             1.0
@@ -172,7 +172,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:09:33 GMT"
+            "date": "Wed, 18 May 2022 06:28:16 GMT"
         },
         "confidence": [
             1.0
@@ -233,8 +233,5 @@
         ],
         "technique": "File Exploration"
     },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/terminology-extractor/solr-5.3.0/example/films/film_data_generator.py"
-    }
+    "inspect4py": {}
 }

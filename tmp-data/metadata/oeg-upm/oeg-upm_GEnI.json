@@ -37,7 +37,7 @@
             "originalHeader": "\ud83d\udcc4 How to cite GEnI",
             "excerpt": "TBD \n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -47,7 +47,7 @@
             "originalHeader": "\ud83d\udd8a Description of the system",
             "excerpt": "GEnI is an explainability framework, which feeds from [PyKeen](https://github.com/pykeen/pykeen) embeddings and predictions. Its **goal** is to provide **explainations and insights** for the entity predictions made by KGE models. For that purpose, a three-phase, sequential workflow is followed, which ranges from the most general feasible explaination (rules) to the most specific (influential facts detection). \n![Overview of the GEnI workflow](https://github.com/oeg-upm/GEnI/blob/main/figs/overview.png)",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -64,7 +64,7 @@
             "originalHeader": "\ud83e\udd14 How to use GEnI",
             "excerpt": "First, you should clone this GitHub repository as follows:\n\n    git clone https://github.com/oeg-upm/GEnI.git\n    \nOnce you have clone the repo, set up a clean Python 3.9 environment, either using conda or venv. Install the required packages as follows:\n\n    pip install -r requirements.txt\n\n**WARNING\u203c\ufe0f** If you are NOT working in a Linux environment, you may have some issues with the packages **jax** and **jaxlib**, which are dependencies for the package **fuzzy-c-means**. The easiest workaround this issue is to uninstall these three packages, and make a clean install of fuzzy-c-means for your operative system as described in [the documentation of fuzzy-c-means](https://pypi.org/project/fuzzy-c-means/). After this, you everything should run smoothly.\n\nAs you can see in the figure above, GEnI comprises two main stages: embedding and prediction generation, and prediction explaination. While the second stage is performed intrinsically by GEnI, the first stage is external and is fully supported by PyKeen. \n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -75,7 +75,7 @@
                 "\ud83e\udd14 How to use GEnI"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -86,7 +86,7 @@
                 "\ud83e\udd14 How to use GEnI"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -98,7 +98,7 @@
                 "\ud83d\udcac Using GEnI to explain predictions"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -110,7 +110,7 @@
                 "\ud83d\udcac Using GEnI to explain predictions"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -188,7 +188,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:35:45 GMT"
+            "date": "Wed, 18 May 2022 07:14:48 GMT"
         },
         "confidence": [
             1.0
@@ -198,7 +198,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:35:45 GMT"
+            "date": "Wed, 18 May 2022 07:14:48 GMT"
         },
         "confidence": [
             1.0
@@ -230,8 +230,5 @@
         ],
         "technique": "File Exploration"
     },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/GEnI/generate_pykeen_embeddings.py"
-    }
+    "inspect4py": {}
 }

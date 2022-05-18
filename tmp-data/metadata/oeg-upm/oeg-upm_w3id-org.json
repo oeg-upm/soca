@@ -40,13 +40,6 @@
         ],
         "technique": "Regular expression"
     },
-    "logo": {
-        "excerpt": "https://travis-ci.org/perma-id/w3id.org.svg",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "codeRepository": {
         "excerpt": "https://github.com/oeg-upm/w3id.org",
         "confidence": [
@@ -120,7 +113,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 15:54:06 GMT"
+            "date": "Wed, 18 May 2022 05:32:30 GMT"
         },
         "confidence": [
             1.0
@@ -130,7 +123,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 15:54:06 GMT"
+            "date": "Wed, 18 May 2022 05:32:30 GMT"
         },
         "confidence": [
             1.0

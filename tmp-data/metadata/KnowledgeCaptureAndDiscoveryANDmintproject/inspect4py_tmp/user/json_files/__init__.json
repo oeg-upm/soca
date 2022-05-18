@@ -1,0 +1,1 @@
+{"file": {"path": "/Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/wings-importer/importer/user/__init__.py", "fileNameBase": "__init__", "extension": "py", "doc": {"short_description": "The user module.", "full": "The user module."}}, "dependencies": [{"import": "views", "type": "internal"}], "is_test": false}

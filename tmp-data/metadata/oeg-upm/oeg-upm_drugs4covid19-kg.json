@@ -134,7 +134,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:20:27 GMT"
+            "date": "Wed, 18 May 2022 06:51:29 GMT"
         },
         "confidence": [
             1.0
@@ -144,7 +144,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:20:27 GMT"
+            "date": "Wed, 18 May 2022 06:51:29 GMT"
         },
         "confidence": [
             1.0
@@ -221,8 +221,5 @@
         ],
         "technique": "File Exploration"
     },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/drugs4covid19-kg/scripts/normalization-twocolumns.py"
-    }
+    "inspect4py": {}
 }

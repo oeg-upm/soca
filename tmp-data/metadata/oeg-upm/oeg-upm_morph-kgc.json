@@ -1,6 +1,15 @@
 {
     "description": [
         {
+            "excerpt": "**Morph-KGC** is an engine that constructs **** and **** knowledge graphs from heterogeneous data sources with the ****, **** and **** mapping languages. Morph-KGC is built on top of  and it leverages *mapping partitions* to significantly reduce execution times and memory consumption for large data sources. \n",
+            "confidence": [
+                [
+                    0.9919846513172077
+                ]
+            ],
+            "technique": "Supervised classification"
+        },
+        {
             "excerpt": "Powerful RDF Knowledge Graph Generation with [R2]RML Mappings",
             "confidence": [
                 1.0
@@ -24,42 +33,12 @@
         ],
         "technique": "Regular expression"
     },
-    "image": [
-        {
-            "excerpt": "https://img.shields.io:/pypi/status/morph-kgc?",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/pypi/pyversions/morph-kgc.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/pypi/v/morph-kgc?style=flat",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/pypi/l/morph-kgc.svg",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        }
-    ],
     "documentation": [
         {
             "originalHeader": "Documentation",
             "excerpt": "**[Read the documentation](https://morph-kgc.readthedocs.io/en/latest/documentation/)**.\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -77,7 +56,7 @@
             "originalHeader": "Contributors",
             "excerpt": "See the full list of contributors **[here](https://github.com/oeg-upm/morph-kgc/graphs/contributors)**.\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -95,9 +74,9 @@
     "usage": [
         {
             "originalHeader": "Getting Started",
-            "excerpt": "**[PyPi](https://pypi.org/project/morph-kgc/)** is the fastest way to install Morph-KGC:\n```\npip install morph-kgc\n```\n\nWe recommend to use **[virtual environments](https://docs.python.org/3/library/venv.html#)** to install Morph-KGC.\n\nTo run the engine via **command line** you just need to execute the following:\n```\npython3 -m morph_kgc config.ini\n```\n\nCheck the **[documentation](https://morph-kgc.readthedocs.io/en/latest/documentation/#configuration)** to can see how to generate the configuration **INI file**. **[Here](https://github.com/oeg-upm/morph-kgc/blob/main/examples/configuration-file/default_config.ini)** you can also see an example INI file.\n\nIt is also possible to run Morph-KGC as a **library** with **[RDFlib](https://rdflib.readthedocs.io)** and **[Oxigraph](https://oxigraph.org/pyoxigraph)**:\n```python\nimport morph_kgc\n\n# generate the triples and load them to an RDFlib graph\ng_rdflib = morph_kgc.materialize('/path/to/config.ini')\n# work with the RDFlib graph\nq_res = g_rdflib.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# generate the triples and load them to Oxigraph\ng_oxigraph = morph_kgc.materialize_oxigraph('/path/to/config.ini')\n# work with Oxigraph\nq_res = graph.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# the methods above also accept the config as a string\nconfig = \"\"\"\n            [DataSource1]\n            mappings=/path/to/mapping/mapping_file.rml.ttl\n            db_url=mysql+pymysql://user:password@localhost:3306/db_name\n         \"\"\"\ng_rdflib = morph_kgc.materialize(config)\n```\n",
+            "excerpt": "**[PyPi](https://pypi.org/project/morph-kgc/)** is the fastest way to install Morph-KGC:\n```\npip install morph-kgc\n```\n\nWe recommend to use **[virtual environments](https://docs.python.org/3/library/venv.html#)** to install Morph-KGC.\n\nTo run the engine via **command line** you just need to execute the following:\n```\npython3 -m morph_kgc config.ini\n```\n\nCheck the **[documentation](https://morph-kgc.readthedocs.io/en/latest/documentation/#configuration)** to can see how to generate the configuration **INI file**. **[Here](https://github.com/oeg-upm/morph-kgc/blob/main/examples/configuration-file/default_config.ini)** you can also see an example INI file.\n\nIt is also possible to run Morph-KGC as a **library** with **[RDFLib](https://rdflib.readthedocs.io)** and **[Oxigraph](https://oxigraph.org/pyoxigraph)**:\n```python\nimport morph_kgc\n\n# generate the triples and load them to an RDFLib graph\ng_rdflib = morph_kgc.materialize('/path/to/config.ini')\n# work with the RDFLib graph\nq_res = g_rdflib.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# generate the triples and load them to Oxigraph\ng_oxigraph = morph_kgc.materialize_oxigraph('/path/to/config.ini')\n# work with Oxigraph\nq_res = graph.query(' SELECT DISTINCT ?classes WHERE { ?s a ?classes } ')\n\n# the methods above also accept the config as a string\nconfig = \"\"\"\n            [DataSource1]\n            mappings: /path/to/mapping/mapping_file.rml.ttl\n            db_url: mysql+pymysql://user:password@localhost:3306/db_name\n         \"\"\"\ng_rdflib = morph_kgc.materialize(config)\n```\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -131,7 +110,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-04-28T14:35:29Z",
+        "excerpt": "2022-05-17T20:52:06Z",
         "confidence": [
             1.0
         ],
@@ -191,8 +170,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 44,
-            "date": "Thu, 28 Apr 2022 16:29:28 GMT"
+            "count": 48,
+            "date": "Wed, 18 May 2022 07:04:12 GMT"
         },
         "confidence": [
             1.0
@@ -201,8 +180,8 @@
     },
     "forksCount": {
         "excerpt": {
-            "count": 4,
-            "date": "Thu, 28 Apr 2022 16:29:28 GMT"
+            "count": 6,
+            "date": "Wed, 18 May 2022 07:04:12 GMT"
         },
         "confidence": [
             1.0
@@ -243,6 +222,32 @@
     },
     "releases": {
         "excerpt": [
+            {
+                "tagName": "2.1.1",
+                "name": "2.1.1",
+                "authorName": "ArenasGuerreroJulian",
+                "authorType": "User",
+                "body": "Solving #62.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-kgc/tarball/2.1.1",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-kgc/zipball/2.1.1",
+                "htmlUrl": "https://github.com/oeg-upm/morph-kgc/releases/tag/2.1.1",
+                "url": "https://api.github.com/repos/oeg-upm/morph-kgc/releases/66230154",
+                "dateCreated": "2022-05-06T13:44:21Z",
+                "datePublished": "2022-05-06T13:46:37Z"
+            },
+            {
+                "tagName": "2.1.0",
+                "name": "2.1.0",
+                "authorName": "ArenasGuerreroJulian",
+                "authorType": "User",
+                "body": "- Support for attributes in XPath.\r\n- Support for remote JSON and XML files.\r\n- Support for remote mapping files.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/morph-kgc/tarball/2.1.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/morph-kgc/zipball/2.1.0",
+                "htmlUrl": "https://github.com/oeg-upm/morph-kgc/releases/tag/2.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/morph-kgc/releases/65941787",
+                "dateCreated": "2022-05-03T16:22:46Z",
+                "datePublished": "2022-05-03T16:47:07Z"
+            },
             {
                 "tagName": "2.0.1",
                 "name": "2.0.1",
@@ -496,8 +501,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import morph_kgc"
-    }
+    "inspect4py": {}
 }

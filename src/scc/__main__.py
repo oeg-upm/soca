@@ -30,7 +30,6 @@ def cli():
 def fetch(input, output, repo_type, not_archived, not_forked, not_disabled):
     """Retreive all organization/s or user/s repositories"""
     from scc.commands import fetch_repositories
-    print(not_archived)
     fetch_repositories.fetch(input, output, repo_type, not_archived, not_forked, not_disabled)
 
 @cli.command()

@@ -15,7 +15,7 @@
                 "Outputs"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -28,7 +28,7 @@
                 "github-action-pretty-yarrrml2rml"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -116,7 +116,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:55:42 GMT"
+            "date": "Wed, 18 May 2022 07:43:57 GMT"
         },
         "confidence": [
             1.0
@@ -126,7 +126,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:55:42 GMT"
+            "date": "Wed, 18 May 2022 07:43:57 GMT"
         },
         "confidence": [
             1.0

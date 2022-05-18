@@ -43,7 +43,7 @@
                 "Using the JAR"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -142,7 +142,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 4,
-            "date": "Thu, 28 Apr 2022 16:17:48 GMT"
+            "date": "Wed, 18 May 2022 06:47:46 GMT"
         },
         "confidence": [
             1.0
@@ -152,7 +152,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:17:48 GMT"
+            "date": "Wed, 18 May 2022 06:47:46 GMT"
         },
         "confidence": [
             1.0

@@ -11,7 +11,7 @@
             "originalHeader": "Transforming your ontology to YARRRML mappings"
         },
         {
-            "excerpt": "Basic script that extracts information from the ontology to generate a YARRRML draft",
+            "excerpt": "Basic script that extracts information from the ontology to generate a YARRRML template",
             "confidence": [
                 1.0
             ],
@@ -33,7 +33,7 @@
                 "Transforming your ontology to YARRRML mappings"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -67,7 +67,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-03-28T11:32:26Z",
+        "excerpt": "2022-05-05T12:42:51Z",
         "confidence": [
             1.0
         ],
@@ -121,7 +121,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Thu, 28 Apr 2022 16:29:24 GMT"
+            "date": "Wed, 18 May 2022 07:04:06 GMT"
         },
         "confidence": [
             1.0
@@ -131,7 +131,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:29:24 GMT"
+            "date": "Wed, 18 May 2022 07:04:06 GMT"
         },
         "confidence": [
             1.0
@@ -182,8 +182,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/owl2yarrrml/translate.py"
-    }
+    "inspect4py": {}
 }

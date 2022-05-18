@@ -27,7 +27,7 @@
                 "Install"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -35,7 +35,7 @@
             "originalHeader": "Install",
             "excerpt": "`pip install TPool`\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -56,7 +56,7 @@
                 "Example"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -68,7 +68,7 @@
                 "Example"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -169,7 +169,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:12:23 GMT"
+            "date": "Wed, 18 May 2022 06:34:38 GMT"
         },
         "confidence": [
             1.0
@@ -179,7 +179,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:12:23 GMT"
+            "date": "Wed, 18 May 2022 06:34:38 GMT"
         },
         "confidence": [
             1.0
@@ -209,8 +209,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import TPool"
-    }
+    "inspect4py": {}
 }

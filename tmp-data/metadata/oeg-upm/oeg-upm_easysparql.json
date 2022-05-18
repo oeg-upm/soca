@@ -16,7 +16,7 @@
                 "Install"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -27,20 +27,13 @@
                 "Install"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
     ],
     "longTitle": {
         "excerpt": "easysparql",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
-    "logo": {
-        "excerpt": "https://ahmad88me.semaphoreci.com/badges/easysparql.svg",
         "confidence": [
             1.0
         ],
@@ -54,7 +47,7 @@
                 "Install"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -64,7 +57,7 @@
             "originalHeader": "Example",
             "excerpt": "```\nfrom easysparql import easysparql\n\nDBPEDIA_ENDPOINT = \"https://dbpedia.org/sparql\"\n\nalbert_uri = \"http://dbpedia.org/resource/Albert_Einstein\"\nalbert_name = \"Albert Einstein\"\nscientist = \"http://dbpedia.org/ontology/Scientist\"\nfoaf_name = \"http://xmlns.com/foaf/0.1/name\"\n\n\nclasses = easysparql.get_classes(albert_uri, DBPEDIA_ENDPOINT)\n\nentities = easysparql.get_entities(albert_name, DBPEDIA_ENDPOINT, \"@en\")\n\nparents = easysparql.get_parents_of_class(scientist, DBPEDIA_ENDPOINT)\n\nquery = \"select distinct ?Concept where {[] a ?Concept} LIMIT 100\"\nresults = easysparql.run_query(query, DBPEDIA_ENDPOINT)\n\nsubjects = easysparql.get_subjects(class_uri=scientist, endpoint=DBPEDIA_ENDPOINT)\n\nproperties = easysparql.get_properties_of_subject(subject_uri=albert_uri, endpoint=DBPEDIA_ENDPOINT)\n\na =  [\"1.2\",\"2\",\"4\",\"3\",3,6,\"a\",\"b\", \"ccc\", \"1jasdf\"]\nnums = easysparql.get_numerics_from_list(a, 0.5)\n\n```\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -152,7 +145,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:24:41 GMT"
+            "date": "Wed, 18 May 2022 06:55:36 GMT"
         },
         "confidence": [
             1.0
@@ -162,7 +155,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:24:41 GMT"
+            "date": "Wed, 18 May 2022 06:55:36 GMT"
         },
         "confidence": [
             1.0
@@ -304,8 +297,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import easysparql"
-    }
+    "inspect4py": {}
 }

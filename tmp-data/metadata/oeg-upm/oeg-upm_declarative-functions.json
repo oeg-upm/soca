@@ -34,7 +34,7 @@
                 "Definitions of declarative transformation functions using the Functions Ontology"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -122,7 +122,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:18:24 GMT"
+            "date": "Wed, 18 May 2022 06:48:52 GMT"
         },
         "confidence": [
             1.0
@@ -132,7 +132,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:18:24 GMT"
+            "date": "Wed, 18 May 2022 06:48:52 GMT"
         },
         "confidence": [
             1.0
