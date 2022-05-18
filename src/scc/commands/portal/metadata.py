@@ -21,9 +21,9 @@ class metadata(object):
     # Assets ####################################################
     def logo(self):
         logo = safe_dic(safe_dic(self.md,'logo'),'excerpt')
-        if logo:
-            if str(logo).startswith('https://github'):
-                logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+        #if logo:
+            #if str(logo).startswith('https://github'):
+                #logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
         return logo if logo else f"{self.base}img/github-default.svg"
 
     def html_repo_type(self):
