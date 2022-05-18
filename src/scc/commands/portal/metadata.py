@@ -486,7 +486,13 @@ class metadata(object):
         return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt') if self.n_releases() > 0 else None
 
     def notebook(self):
-        return safe_dic(safe_dic(self.md,'hasExecutableNotebook'),'excerpt')
+        exe_l = safe_dic(safe_dic(self.md,'executableExample'),'excerpt')
+        exe_l = exe_l if exe_l else []
+        exe = [ x[1] for x in exe_l ]
+        note = safe_dic(safe_dic(self.md,'hasExecutableNotebook'),'excerpt')
+        note = note if note else []
+        notebooks = exe+note 
+        return notebooks if len(notebooks)>0 else None 
 
     def readme(self):
         return safe_dic(safe_dic(self.md,'readmeUrl'),'excerpt')
