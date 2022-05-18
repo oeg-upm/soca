@@ -35,7 +35,7 @@ class metadata(object):
         elif repo_type == 'ontology': 
             ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
             if ontologies:
-                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies if 'http' in x])))
+                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies if 'http' in safe_dic(x,"uri")])))
                 #onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
             return self.icon_wrapper(
                 icon_html = f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">',
@@ -341,21 +341,18 @@ class metadata(object):
         # web and ontology
         ######################
 
-        ontology = safe_dic(self.md,'ontologies')
+        if (safe_dic(self.md,'ontologies') is not None):
+            return 'ontology'
+
         langs = self.languages()
-        is_ontology = (ontology is not None)
         is_web = (langs and 'html' in langs)
         
         if langs:
             for lang in langs:
                 if lang not in ['html','css','javascript']:
                     is_web = False
-                if lang not in ['html','css','javascript']:
-                    is_ontology = False
-
-        if is_ontology:
-            return 'ontology'
-        
+                #if lang not in ['html','css','javascript']:
+                    #is_ontology = False
         if is_web:
             return 'web'
         
