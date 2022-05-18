@@ -28,7 +28,7 @@ def cli():
 @click.option('--not_forked','-nf', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not forked")
 @click.option('--not_disabled','-nd', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not disabled")
 def fetch(input, output, repo_type, not_archived, not_forked, not_disabled):
-    """Retreive all organization/s or user/s repositories"""
+    """Retrieve all organization/s or user/s repositories"""
     from scc.commands import fetch_repositories
     fetch_repositories.fetch(input, output, repo_type, not_archived, not_forked, not_disabled)
 
@@ -47,7 +47,7 @@ def extract(input, output, inspect4py, verbose):
 @click.option('--output','-o', default="portal", show_default=True, help="Dir where Software Catalog Portal will be saved", metavar='<path>')
 @click.option('--title','-t', default="Software Catalog", show_default=True, help="Portal's title", metavar='<title>')
 def portal(input, output, title):
-    """Build a portal with a minimalistic desing"""
+    """Build a portal with a minimalist design"""
     from scc.commands.portal import portal
     portal.generate(input, output, title)
 

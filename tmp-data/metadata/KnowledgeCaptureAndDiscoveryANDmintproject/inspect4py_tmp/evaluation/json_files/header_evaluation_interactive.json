@@ -1,1 +1,0 @@
-{"file": {"path": "/Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/somef/src/somef/evaluation/header_evaluation_interactive.py", "fileNameBase": "header_evaluation_interactive", "extension": "py"}, "dependencies": [{"import": "os", "type": "external"}], "body": {"calls": ["print", "print", "print"]}, "is_test": false}

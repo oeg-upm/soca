@@ -21,9 +21,9 @@ class metadata(object):
     # Assets ####################################################
     def logo(self):
         logo = safe_dic(safe_dic(self.md,'logo'),'excerpt')
-        if logo:
-            if str(logo).startswith('https://github'):
-                logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+        #if logo:
+            #if str(logo).startswith('https://github'):
+                #logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
         return logo if logo else f"{self.base}img/github-default.svg"
 
     def html_repo_type(self):
@@ -35,7 +35,7 @@ class metadata(object):
         elif repo_type == 'ontology': 
             ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
             if ontologies:
-                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies])))
+                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies if 'http' in safe_dic(x,"uri")])))
                 #onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
             return self.icon_wrapper(
                 icon_html = f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">',
@@ -263,12 +263,15 @@ class metadata(object):
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
+            mk_list = "\n".join([f'* <{d}>' for d in hasDocumentation])
             html += self.icon_wrapper(
-                icon_html = f"""<a href="{hasDocumentation}" target="_blank" class="repo-icon">
-                            <img src="{self.base}repo_icons/documentation.png" 
-                            class="repo-icon" 
-                            {self.add_tooltip('bottom','Documentation')}>
-                        </a>""")
+                icon_html = f"""<img src="{self.base}repo_icons/documentation.png" 
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom',"Documentation")}>""",
+
+                modal_html = self.modal(
+                    title = 'Documentation',
+                    body = mk_list))
 
         acknowledgement =  self.acknowledgement()
         if acknowledgement:
@@ -341,21 +344,18 @@ class metadata(object):
         # web and ontology
         ######################
 
-        ontology = safe_dic(self.md,'ontologies')
+        if (safe_dic(self.md,'ontologies') is not None):
+            return 'ontology'
+
         langs = self.languages()
-        is_ontology = (ontology is not None)
         is_web = (langs and 'html' in langs)
         
         if langs:
             for lang in langs:
                 if lang not in ['html','css','javascript']:
                     is_web = False
-                if lang not in ['html','css','javascript']:
-                    is_ontology = False
-
-        if is_ontology:
-            return 'ontology'
-        
+                #if lang not in ['html','css','javascript']:
+                    #is_ontology = False
         if is_web:
             return 'web'
         
@@ -438,16 +438,37 @@ class metadata(object):
         return safe_dic(safe_list(safe_dic(self.md,'acknowledgement'),0),'excerpt')
 
     def hasDocumentation(self):
-        return safe_list(safe_dic(safe_dic(self.md,'hasDocumentation'),'excerpt'),0)
+        hasDocumentation = safe_dic(self.md,'hasDocumentation')
+        documentation = safe_dic(self.md,'documentation')
+        h,d = [],[]
+        if hasDocumentation:
+            h = [safe_dic(d,'excerpt') for d in hasDocumentation]
+        if documentation:
+            d = [safe_dic(d,'excerpt') for d in documentation]
+        doc = [ x for x in h+d if x ]
+        return doc if len(doc)>0 else None
 
     def requirements(self):
-        return safe_dic(safe_list(safe_dic(self.md,'requirement'),0),'excerpt')
+        reqs = safe_dic(self.md,'requirement')
+        if not reqs:
+            return None
+        return "\n".join([safe_dic(d,'excerpt') for d in reqs])
 
     def installation(self):
-        return safe_dic(safe_list(safe_dic(self.md,'installation'),0),'excerpt')
+        inst = safe_dic(self.md,'installation')
+        if not inst:
+            return None
+        return "\n".join([safe_dic(d,'excerpt') for d in inst])
 
     def docker(self):
-        return safe_dic(safe_dic(self.md,'hasBuildFile'),'excerpt')
+
+        hasBuildFile_list = safe_dic(self.md,'hasBuildFile')
+        
+        if not hasBuildFile_list:
+            return None
+
+        return [safe_dic(d,'excerpt')[0] for d in hasBuildFile_list]
+
 
     def citations(self):
         all_citations = safe_dic(self.md,'citation')

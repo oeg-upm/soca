@@ -7,7 +7,7 @@ import os
 from scc import HiddenPrints
 import subprocess
 import shutil
-#import traceback
+import traceback
 
 def fetch(repos_csv, output, use_inspect4py, verbose):
 
@@ -50,7 +50,7 @@ def fetch(repos_csv, output, use_inspect4py, verbose):
                                     f'cd {output} && git clone {repo_url} && inspect4py -i {str(repo_url).split("/")[-1]} -o inspect4py_tmp -si && cd ..', 
                                     shell = True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
                                 )
-                with open(f'{output}inspect4py_tmp/directory_info.json') as f:
+                with open(f'{output}/inspect4py_tmp/directory_info.json') as f:
                     ins4py = json.load(f)
 
                 metadata["inspect4py"]["software_type"] = ins4py["software_type"]
@@ -61,6 +61,7 @@ def fetch(repos_csv, output, use_inspect4py, verbose):
             except:
                 shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
                 print(f"ERROR: Could not run inspect4py for {repo_url}: Error in {'sowftware_type' if 'sowftware_type' not in metadata['inspect4py'] else ''} {'software_invocation' if 'run' not in metadata['inspect4py'] else ''}")
+                traceback.print_exc()
                 failed_repos_i4p.append(repo_url)
 
             
