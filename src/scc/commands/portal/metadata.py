@@ -263,12 +263,15 @@ class metadata(object):
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
+            mk_list = "\n".join([f'* <{d}>' for d in hasDocumentation])
             html += self.icon_wrapper(
-                icon_html = f"""<a href="{hasDocumentation}" target="_blank" class="repo-icon">
-                            <img src="{self.base}repo_icons/documentation.png" 
-                            class="repo-icon" 
-                            {self.add_tooltip('bottom','Documentation')}>
-                        </a>""")
+                icon_html = f"""<img src="{self.base}repo_icons/documentation.png" 
+                        class="repo-icon" 
+                        {self.add_tooltip('bottom',"Documentation")}>""",
+
+                modal_html = self.modal(
+                    title = 'Documentation',
+                    body = mk_list))
 
         acknowledgement =  self.acknowledgement()
         if acknowledgement:
@@ -435,7 +438,15 @@ class metadata(object):
         return safe_dic(safe_list(safe_dic(self.md,'acknowledgement'),0),'excerpt')
 
     def hasDocumentation(self):
-        return safe_list(safe_dic(safe_dic(self.md,'hasDocumentation'),'excerpt'),0)
+        hasDocumentation = safe_dic(self.md,'hasDocumentation')
+        documentation = safe_dic(self.md,'documentation')
+        h,d = [],[]
+        if hasDocumentation:
+            h = [safe_dic(d,'excerpt') for d in hasDocumentation]
+        if documentation:
+            d = [safe_dic(d,'excerpt') for d in documentation]
+        doc = [ x for x in h+d if x ]
+        return doc if len(doc)>0 else None
 
     def requirements(self):
         return safe_dic(safe_list(safe_dic(self.md,'requirement'),0),'excerpt')
