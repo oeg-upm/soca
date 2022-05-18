@@ -5,7 +5,7 @@ body{background-color:#e0e0e0 !important}
 #searchBar{font-size:16px;padding: 0 1rem;border:0;flex:auto;border-radius:1rem;background:#e9e9e9;box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff; height: 3rem;}
 footer{width:100%;padding:1rem 1.5rem;margin-top:auto;display:flex;justify-content:space-between;background:#e9e9e9;box-shadow:5px 5px 10px #bebebe,-5px -5px 10px #fff}
 .footer-img{height:3.2rem}.flex-center{display:flex}
-#myCards{min-height:78.5vh;max-width:1600px;display:flex;align-content:flex-start;flex-wrap:wrap;flex-direction:row;justify-content:center;margin:2rem auto}
+#myCards{position:relative;min-height:78.5vh;max-width:1600px;display:flex;align-content:flex-start;flex-wrap:wrap;flex-direction:row;justify-content:center;margin:2rem auto}
 #nav-title{margin-right: 0.8rem;}
 .filter-includes-box, .sort-box {border-radius: 5px;background: #e0e0e0;box-shadow:  5px 5px 10px #c3c3c3,-5px -5px 10px #fdfdfd;}
 .repo-icon-filter{height: 1.3rem;padding: 0.2rem;}

@@ -15,6 +15,7 @@ let current_page = 1;
 let cards_per_page = 12;
 
 // References
+const myCards = document.getElementById('myCards');
 const searchBar = document.getElementById('searchBar');
 
 const acknowledgement = document.getElementById('acknowledgement');
@@ -373,15 +374,9 @@ const displayCards = (cards) => {
     } else {
         cards_page = cards.slice(start, end);
     }
+
     
-
-    const htmlString = cards_page
-        .map((card) => {
-            return card.html_card;
-        })
-        .join('');
-
-    document.getElementById('myCards').innerHTML = htmlString;
+    myCards.innerHTML = cards_page.map((card) => { return card.html_card; }).join('');
     
     // Update extra functionality
     add_tooltip();
