@@ -4,6 +4,7 @@ import os
 from progressbar import progressbar
 from somef.cli import cli_get_data
 import os
+from os import path
 from scc import HiddenPrints
 import subprocess
 import shutil
@@ -46,15 +47,27 @@ def fetch(repos_csv, output, use_inspect4py, verbose):
         if use_inspect4py and 'languages' in metadata and 'Python' in metadata["languages"]["excerpt"]:
             try:
                 metadata["inspect4py"] = {}
-                subprocess.call(
+                if verbose:
+                    subprocess.call(
                                     f'cd {output} && git clone {repo_url} && inspect4py -i {str(repo_url).split("/")[-1]} -o inspect4py_tmp -si && cd ..', 
-                                    shell = True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
+                                    shell = True
                                 )
-                with open(f'{output}/inspect4py_tmp/directory_info.json') as f:
-                    ins4py = json.load(f)
+                else:
+                    subprocess.call(
+                                        f'cd {output} && git clone {repo_url} && inspect4py -i {str(repo_url).split("/")[-1]} -o inspect4py_tmp -si && cd ..', 
+                                        shell = True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
+                                    )
+                if path.exists(f'{output}/inspect4py_tmp/directory_info.json'):        
+                    with open(f'{output}/inspect4py_tmp/directory_info.json') as f:
+                        ins4py = json.load(f)
 
-                metadata["inspect4py"]["software_type"] = ins4py["software_type"]
-                metadata["inspect4py"]["run"] = ins4py["software_invocation"][0]["run"]
+                    if 'software_type' in ins4py:
+                        metadata["inspect4py"]["software_type"] = ins4py["software_type"]
+
+                    if ('software_invocation' in ins4py 
+                        and isinstance(ins4py["software_invocation"],list)
+                        and 'run' in ins4py["software_invocation"][0]):
+                        metadata["inspect4py"]["run"] = ins4py["software_invocation"][0]["run"]
 
                 shutil.rmtree(f'{output}/inspect4py_tmp', ignore_errors=False, onerror=None)
                 shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
