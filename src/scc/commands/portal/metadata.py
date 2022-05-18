@@ -449,10 +449,16 @@ class metadata(object):
         return doc if len(doc)>0 else None
 
     def requirements(self):
-        return safe_dic(safe_list(safe_dic(self.md,'requirement'),0),'excerpt')
+        reqs = safe_dic(self.md,'requirement')
+        if not reqs:
+            return None
+        return "\n".join([safe_dic(d,'excerpt') for d in reqs])
 
     def installation(self):
-        return safe_dic(safe_list(safe_dic(self.md,'installation'),0),'excerpt')
+        inst = safe_dic(self.md,'installation')
+        if not inst:
+            return None
+        return "\n".join([safe_dic(d,'excerpt') for d in inst])
 
     def docker(self):
 
