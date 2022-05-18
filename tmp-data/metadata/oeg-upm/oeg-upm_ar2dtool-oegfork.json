@@ -72,7 +72,7 @@
             "originalHeader": "Acknowledgements",
             "excerpt": "- In this work we use the GraphViz Java API developed by Laszlo Szathmary (https://github.com/jabbalaci) for generating the diagramas from DOT files https://github.com/jabbalaci/graphviz-java-api\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -160,7 +160,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:29:14 GMT"
+            "date": "Wed, 18 May 2022 07:03:54 GMT"
         },
         "confidence": [
             1.0
@@ -170,7 +170,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:29:14 GMT"
+            "date": "Wed, 18 May 2022 07:03:54 GMT"
         },
         "confidence": [
             1.0

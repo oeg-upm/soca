@@ -1,0 +1,1 @@
+{"file": {"path": "/Users/dakixr/Desktop/github/scc/tmp-data/metadata/LinkedEarth/ec_workshops_py/exercises/solution_04_02.py", "fileNameBase": "solution_04_02", "extension": "py"}, "dependencies": [{"import": "pandas", "alias": "pd", "type": "external"}], "body": {"calls": ["pandas.read_csv", "nino_slice.plot"], "store_vars_calls": {"df": "pd.read_csv"}}, "is_test": false}

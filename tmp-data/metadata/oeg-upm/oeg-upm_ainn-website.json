@@ -23,7 +23,7 @@
             "originalHeader": "Run the app (whenever you start the app)",
             "excerpt": "``` \ncd $HOME/ainn-website/\nsource <(curl -s https://raw.githubusercontent.com/oeg-upm/ainn-website/master/startup.sh)\n```\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -33,7 +33,7 @@
             "originalHeader": "Run the app (whenever you start the app)",
             "excerpt": "``` \ncd $HOME/ainn-website/\nsource <(curl -s https://raw.githubusercontent.com/oeg-upm/ainn-website/master/startup.sh)\n```\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -111,7 +111,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:07:14 GMT"
+            "date": "Wed, 18 May 2022 06:22:58 GMT"
         },
         "confidence": [
             1.0
@@ -121,7 +121,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:07:14 GMT"
+            "date": "Wed, 18 May 2022 06:22:58 GMT"
         },
         "confidence": [
             1.0

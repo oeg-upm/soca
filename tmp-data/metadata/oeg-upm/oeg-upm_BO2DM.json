@@ -33,7 +33,7 @@
                 "BIMERR to Data Model Converter (BO2DM)"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -111,7 +111,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:20:03 GMT"
+            "date": "Wed, 18 May 2022 06:50:57 GMT"
         },
         "confidence": [
             1.0
@@ -121,7 +121,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:20:03 GMT"
+            "date": "Wed, 18 May 2022 06:50:57 GMT"
         },
         "confidence": [
             1.0
@@ -204,8 +204,5 @@
         ],
         "technique": "File Exploration"
     },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/BO2DM/source/converter.py"
-    }
+    "inspect4py": {}
 }

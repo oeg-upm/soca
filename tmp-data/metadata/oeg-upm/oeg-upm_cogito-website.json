@@ -89,7 +89,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:30:54 GMT"
+            "date": "Wed, 18 May 2022 07:06:58 GMT"
         },
         "confidence": [
             1.0
@@ -99,7 +99,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:30:54 GMT"
+            "date": "Wed, 18 May 2022 07:06:58 GMT"
         },
         "confidence": [
             1.0
@@ -150,12 +150,12 @@
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/def/resources/ontology.ttl"
             },
             {
-                "uri": "https://cogito.iot.linkeddata.es/def/construction#",
-                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/def/construction/ontology.nt"
+                "uri": "https://cogito.iot.linkeddata.es/def/facility#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/def/facility/ontology.nt"
             },
             {
-                "uri": "https://cogito.iot.linkeddata.es/def/construction#",
-                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/def/construction/ontology.ttl"
+                "uri": "https://cogito.iot.linkeddata.es/def/facility#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/def/facility/ontology.ttl"
             },
             {
                 "uri": "https://cogito.iot.linkeddata.es/def/process#",
@@ -167,19 +167,19 @@
             },
             {
                 "uri": "https://cogito.iot.linkeddata.es/def/process#",
-                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/ontologies/construction-process-ontology.ttl"
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/ontologies/process_ontology.ttl"
             },
             {
                 "uri": "https://cogito.iot.linkeddata.es/quality#",
-                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/ontologies/quality-ontology.ttl"
-            },
-            {
-                "uri": "https://cogito.iot.linkeddata.es/def/construction#",
-                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/ontologies/construction-ontology.ttl"
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/ontologies/quality_ontology.ttl"
             },
             {
                 "uri": "https://cogito.iot.linkeddata.es/def/resource#",
-                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/ontologies/ontology.ttl"
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/ontologies/resources_ontology.ttl"
+            },
+            {
+                "uri": "https://cogito.iot.linkeddata.es/def/facility#",
+                "file_url": "https://raw.githubusercontent.com/oeg-upm/cogito-website/main/ontologies/facility_ontology.ttl"
             }
         ],
         "confidence": [

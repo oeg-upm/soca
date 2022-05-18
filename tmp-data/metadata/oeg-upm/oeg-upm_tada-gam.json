@@ -23,7 +23,7 @@
             "originalHeader": "Install (Mac and Ubuntu)",
             "excerpt": "1. Download the application via `git` or the web interface of github (make sure to include the submodules as well e.g., `git clone --recursive https://github.com/oeg-upm/tada-gam.git`)\n1. using the terminal, go to project directory `cd /home/ubuntu/tada-gam` (if `/home/ubuntu/` was your download location)\n1. Create virtual environment`virtualenv -p /usr/bin/python2.7 .venv` (you need to have virtualenv installed)\n1. Activate the virtual environment `source .venv/bin/activate`\n1. Install dependencies via pip `pip install -r requirements.txt ` \n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -59,7 +59,7 @@
             "originalHeader": "Download T2Dv2 experimental data via command line",
             "excerpt": "*This follows the install step* it is only needed if you want to run the experiments \n1. Go to the experiment url using the terminal `cd experiments/t2dv2/data`\n1. Download T2Dv2 data via wget `wget http://webdatacommons.org/webtables/extended_instance_goldstandard.tar.gz`\n1. Extract the downloaded file `tar -xvzf extended_instance_goldstandard.tar.gz`\n1. Delete the archive (optional) `rm extended_instance_goldstandard.tar.gz`\n1. Overwrite the gold standard with the fixed one`cp ../classes_GS.fixed classes_GS.csv`\n1. Generate CSV copy from the JSON\n    1. In the terminal, go to the directory of the application `cd ../../..`\n    1. Activate the virtual environment `source .venv/bin/activate`\n    1. Go to t2dv2 directory `cd experiments/t2dv2/`\n    1. Generate CSV copy `python preprocessing.py`\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -69,7 +69,7 @@
             "originalHeader": "requirements",
             "excerpt": "* `docker`\n* `docker-compose`\n* `python 2.7`\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -83,7 +83,7 @@
                 "Subject Column Detection"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -95,7 +95,7 @@
                 "Subject Column Detection"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -105,7 +105,7 @@
             "originalHeader": "Usage",
             "excerpt": "To use this tool, we need to talk with the `captain.py`. It manages the \nother resources and assign tasks and data. Although it can be done\ndirectly, but you need to understand how the flow works.\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -116,7 +116,7 @@
                 "Usage"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -127,7 +127,7 @@
                 "Usage"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -215,7 +215,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:12:10 GMT"
+            "date": "Wed, 18 May 2022 06:34:24 GMT"
         },
         "confidence": [
             1.0
@@ -225,7 +225,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:12:10 GMT"
+            "date": "Wed, 18 May 2022 06:34:24 GMT"
         },
         "confidence": [
             1.0
@@ -300,8 +300,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/tada-gam/captain.py"
-    }
+    "inspect4py": {}
 }

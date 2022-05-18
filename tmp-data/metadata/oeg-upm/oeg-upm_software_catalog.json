@@ -111,7 +111,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 16:55:45 GMT"
+            "date": "Wed, 18 May 2022 07:43:59 GMT"
         },
         "confidence": [
             1.0
@@ -121,7 +121,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:55:45 GMT"
+            "date": "Wed, 18 May 2022 07:43:59 GMT"
         },
         "confidence": [
             1.0
@@ -132,7 +132,8 @@
         "excerpt": [
             "HTML",
             "JavaScript",
-            "CSS"
+            "CSS",
+            "Shell"
         ],
         "confidence": [
             1.0
@@ -152,5 +153,14 @@
             1.0
         ],
         "technique": "GitHub API"
+    },
+    "hasScriptFile": {
+        "excerpt": [
+            "https://raw.githubusercontent.com/oeg-upm/software_catalog/main/repositories/rdf_star_mapping/process_somef_repos.sh"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
     }
 }

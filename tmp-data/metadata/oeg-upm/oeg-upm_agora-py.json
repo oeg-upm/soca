@@ -250,7 +250,7 @@
                 "agora-py"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -264,7 +264,7 @@
                 "Path extraction from vocabularies"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -304,7 +304,7 @@
                 "agora-py"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -377,7 +377,7 @@
                 "Web of Data"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -390,7 +390,7 @@
                 "agora-py"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -402,7 +402,7 @@
                 "Getting Started"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -414,7 +414,7 @@
                 "Getting Started"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -426,7 +426,7 @@
                 "Getting Started"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -440,7 +440,7 @@
                 "Path extraction from vocabularies"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -540,7 +540,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:03:04 GMT"
+            "date": "Wed, 18 May 2022 06:14:05 GMT"
         },
         "confidence": [
             1.0
@@ -550,7 +550,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:03:04 GMT"
+            "date": "Wed, 18 May 2022 06:14:05 GMT"
         },
         "confidence": [
             1.0
@@ -583,8 +583,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import agora-py"
-    }
+    "inspect4py": {}
 }

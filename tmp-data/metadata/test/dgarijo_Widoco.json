@@ -1,0 +1,990 @@
+{
+    "description": [
+        {
+            "originalHeader": "Description",
+            "excerpt": "WIDOCO helps you to publish and create an enriched and customized documentation of your ontology, by following a series of steps in a wizard. We extend the LODE framework by Silvio Peroni to describe the classes, properties and data properties of the ontology, the OOPS! webservice by Mar\u00eda Poveda to print an evaluation and the Licensius service by Victor Rodriguez Doncel to determine the license URI and title being used. In addition, we use WebVowl to visualize the ontology and have extended Bubastis to show a complete changelog between different versions of your ontology.\n\nFeatures of WIDOCO:\n* Automatic documentation of the terms in your ontology (based on [LODE](http://www.essepuntato.it/lode/)). Now you can use Markdown on your class descriptions (see [example](doc/gallery/index.html))\n* Automatic annotation in JSON-LD snippets of the html produced.\n* Association of a provenance page which includes the history of your vocabulary (W3C PROV-O compliant).\n* Metadata extraction from the ontology plus the means to complete it on the fly when generating your ontology. Check the [best practice document](http://dgarijo.github.io/Widoco/doc/bestPractices/index-en.html) to know more about the terms recognized by WIDOCO.\n* Guidelines on the main sections that your document should have and how to complete them.\n* Integration with diagram creators ([WebVOWL](http://vowl.visualdataweb.org/webvowl/)).\n* Automatic changelog of differences between the actual and the previous version of the ontology (based on [Bubastis](http://www.ebi.ac.uk/efo/bubastis/)).\n* Separation of the sections of your html page so you can write them independently and replace only those needed.\n* Content negotiation and serialization of your ontology according to [W3C best practices](https://www.w3.org/TR/swbp-vocab-pub/)\n* Evaluation reports of your ontology (using the [OOPS! web service](http://oops.linkeddata.es/))\n* Integration with license metadata services ([Licensius](http://licensius.com/)) to automatically describe the license used in your ontology.\n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "excerpt": "WIDOCO helps you to publish and create an enriched and customized documentation of your ontology automatically, by following a series of steps in a GUI. \n",
+            "confidence": [
+                [
+                    0.935680720359103
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
+        },
+        {
+            "excerpt": "For a complete list of the current improvements and next features, check the [project open issues](https://github.com/dgarijo/Widoco/issues) and [milestones](https://github.com/dgarijo/Widoco/milestones) in the repository.\n \n",
+            "confidence": [
+                [
+                    0.991003792550711
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Current improvements",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)"
+            ]
+        },
+        {
+            "excerpt": "Contributions to address any of the current issues are welcome. In order to push your contribution, just **push your pull request to the develop branch**. The master branch has only the code associated to the latest release.\n \n",
+            "confidence": [
+                [
+                    0.9702231144410863
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "Contribution guidelines",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)"
+            ]
+        },
+        {
+            "excerpt": "Wizard for documenting ontologies. WIDOCO is a step by step generator of HTML templates with the documentation of your ontology. It uses the LODE environment to create part of the template.",
+            "confidence": [
+                1.0
+            ],
+            "technique": "GitHub API"
+        }
+    ],
+    "citation": [
+        {
+            "excerpt": "title: \"WIDOCO: A Wizard for documenting ontologies\"\nlicense: Apache-2.0\nauthors:\n  - family-names: Garijo\n    given-names: Daniel\n    orcid: \"http://orcid.org/0000-0003-0454-7145\"\ncff-version: 1.2.0\nmessage: \"If you use this software, please cite both the article from preferred-citation and the software itself.\"\npreferred-citation:\n  authors:\n    - family-names: Garijo\n      given-names: Daniel\n  title: \"WIDOCO: A wizard for documenting ontologies\"\n  type: article\n  year: 2017\n  doi: 10.1007/978-3-319-68204-4_9\nidentifiers:\n  - description: \"Collection of archived snapshots for WIDOCO\"\n    type: doi\n    value: 10.5281/zenodo.591294",
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "citation file format"
+        },
+        {
+            "excerpt": "@inproceedings{garijo2017widoco,\n  title={WIDOCO: a wizard for documenting ontologies},\n  author={Garijo, Daniel},\n  booktitle={International Semantic Web Conference},\n  pages={94--102},\n  year={2017},\n  organization={Springer, Cham},\n  doi = {10.1007/978-3-319-68204-4_9},\n  funding = {USNSF ICER-1541029, NIH 1R01GM117097-01},\n  url={http://dgarijo.com/papers/widoco-iswc2017.pdf}\n}",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression",
+            "doi": "https://doi.org/10.1007/978-3-319-68204-4_9"
+        },
+        {
+            "excerpt": "**Author**: Daniel Garijo Verdejo (@dgarijo) \n",
+            "confidence": [
+                [
+                    0.9818894004866677
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "WIzard for DOCumenting Ontologies (WIDOCO)"
+        },
+        {
+            "excerpt": "**Citing WIDOCO**: If you used WIDOCO in your work, please cite the ISWC 2017 paper: https://iswc2017.semanticweb.org/paper-138 \n",
+            "confidence": [
+                [
+                    0.9999994954002028
+                ]
+            ],
+            "technique": "Supervised classification"
+        }
+    ],
+    "longTitle": {
+        "excerpt": "WIzard for DOCumenting Ontologies (WIDOCO)",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "identifier": [
+        {
+            "excerpt": "https://zenodo.org/badge/latestdoi/11427075",
+            "confidence": [
+                1.0
+            ],
+            "technique": "Regular expression"
+        }
+    ],
+    "repoStatus": {
+        "excerpt": "https://www.repostatus.org/#active",
+        "description": "Active \u2013 The project has reached a stable, usable state and is being actively developed.",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "logo": {
+        "excerpt": "https://raw.githubusercontent.com/dgarijo/Widoco/master/src/main/resources/logo/logo2.png",
+        "confidence": [
+            1.0
+        ],
+        "technique": "Regular expression"
+    },
+    "documentation": [
+        {
+            "originalHeader": "Browser issues (Why can't I see the generated documentation / visualization?)",
+            "excerpt": "WIDOCO separates the contents of different sections in HTML files, which are then loaded in the `index.html` file. WIDOCO was designed this way because it's easier to edit your introduction or description sections independently without being all aggregated together in a huge HTML document.  **When all the contents generated by WIDOCO are stored in a server, you will be able to see the documentation of your ontology using any browser**. However, if you open the `index.html` file **on your local browser**, you may see a document missing most of the sections in your documentation. This happens because browsers don't allow loading separate content when opening a file locally for security reasons. If you want to explore how your ontology would look locally, you have two options:\n\n* a) Execute WIDOCO with the `-uniteSections` flag; or select the option `add al sections in a single document` in the \"load sections\" step in the WIDOCO GUI. This will make all the sections of WIDOCO to be in the `index.html`; and you will be able to see it in your browser. Note that the **LODE visualization will not be available** when exploring your ontology locally.\n* b) Create a local server: Set up a local server (e.g., using XAMPP or Tomcat) and serve the files WIDOCO generates (in the `htdocs` folder for Apache servers).\n\nIf you place the files generated by WIDOCO in a server and access them via its URL (for example, a Github page), you should be able to see your documentation appropriately.\n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "download": [
+        {
+            "originalHeader": "Downloading the executable",
+            "excerpt": "To download WIDOCO, you need to download a JAR executable file. Check the latest release for more details: (https://github.com/dgarijo/WIDOCO/releases/latest).\n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "requirement": [
+        {
+            "originalHeader": "Importing WIDOCO as a dependency",
+            "excerpt": "Just add the dependency and repository to your `pom.xml` file as follows. See the [WIDOCO JitPack](https://jitpack.io/#dgarijo/Widoco) page to find alternative means to incorporate WIDOCO to your project.\n\n```xml\n<dependencies>\n  <dependency>\n      <groupId>com.github.dgarijo</groupId>\n      <artifactId>Widoco</artifactId>\n      <version>v1.4.16</version>\n  </dependency>\n</dependencies>\n\n[ ... ]\n\n<repositories>\n\t<repository>\n\t    <id>jitpack.io</id>\n\t    <url>https://jitpack.io</url>\n\t</repository>\n</repositories>\n```\n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Requirements",
+            "excerpt": "You will need Java 1.8 or higher (SDK 1.8 or JRE 8) for WIDOCO to work\nOtherwise, you will probably experience an \"Unsupported major.minor version 52.0\" exception when executing the JAR file.\n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "usage": [
+        {
+            "originalHeader": "Examples",
+            "excerpt": "Examples of the features of WIDOCO can be seen on [the gallery](http://dgarijo.github.io/Widoco/doc/gallery/)\n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "GUI Tutorial",
+            "excerpt": "A tutorial explaining the main features of the GUI can be found [here](http://dgarijo.github.io/Widoco/doc/tutorial/)    \n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "JAR execution",
+            "excerpt": "Download the latest `.jar` [WIDOCO available release](https://github.com/dgarijo/WIDOCO/releases/latest) (it will be something like `widoco-VERSION-jar-with-dependencies.jar`). Then just double click the `.jar` file.\n\nYou may also execute WIDOCO through the command line. Usage:\n```bash\njava -jar widoco-VERSION-jar-with-dependencies.jar [OPTIONS]\n```\n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)",
+                "How to use WIDOCO"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Docker execution",
+            "excerpt": "First build the image using the `Dockerfile` in project folder:\n\n```bash\ndocker build -t dgarijo/widoco .\n```\n\nYou can now execute WIDOCO through the command line. Usage:\n\n```bash\ndocker run -ti --rm dgarijo/widoco [OPTIONS]\n```\n\nIf you want to share data between the Docker Container and your Host, for instance to load a local ontology file (from PATH), you will need to mount the container\nwith host directories. For instance:\n\n```bash\ndocker run -ti --rm \\\n  -v `pwd`/test:/usr/local/widoco/in \\\n  -v `pwd`/target/generated-doc:/usr/local/widoco/out \\\n  dgarijo/widoco -ontFile in/bne.ttl -outFolder out -rewriteAll\n```\n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)",
+                "How to use WIDOCO"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        },
+        {
+            "originalHeader": "Options",
+            "excerpt": "`-ontFile PATH`  [required (unless -ontURI is used)]: Load a local ontology file (from PATH) to document. This option is incompatible with -ontURI\n\n`-ontURI  URI`   [required (unless -ontFile is used)]: Load an ontology to document from its URI. This option is incompatible with -ontFile\n\n`-outFolder folderName`: Specifies the name of the folder where to save the documentation. By default is 'myDocumentation'\n\n`-confFile PATH`: Load your own configuration file for the ontology metadata. Incompatible with -getOntologyMetadata\n\n`-getOntologyMetadata`: Extract ontology metadata from the given ontology\n\n`-oops`: Create an html page with the evaluation from the OOPS service (http://oops.linkeddata.es/)\n\n`-rewriteAll`: Replace any existing files when documenting an ontology (e.g., from a previous execution)\n\n`-crossRef`: ONLY generate the overview and cross reference sections. The index document will NOT be generated. The htaccess, provenance page, etc., will not be generated unless requested by other flags. This flag is intended to be used only after a first version of the documentation exists.\n\n`-saveConfig PATH`: Save a configuration file on PATH with the properties of a given ontology\n\n`-useCustomStyle`: Export the documentation using alternate css files (by Daniel Vila).\n\n`-lang LANG1-LANG2`: Generate documentation in multiple languages (separated by \"-\"). Note that if the language is not supported, the system will load the labels in english. For example: en-pt-es\n\n`-includeImportedOntologies`: Indicates whether the terms of the imported ontologies of the current ontology should be documented as well or not.\n\n`-htaccess`: Create a bundle for publication ready to be deployed on your Apache server.\n\n`-webVowl`: Create a visualization based on WebVowl (http://vowl.visualdataweb.org/webvowl/index.html#) in the documentation.\n\n`-licensius`: Use the Licensius web services (http://licensius.com/apidoc/index.html) to retrieve license metadata. Only works if the -getOntologyMetadata  flag is enabled.\n\n`-ignoreIndividuals`: Individuals will not be included in the documentation.\n\n`-includeAnnotationProperties`: Include annotation properties defined in your ontology in the documentation (by default they are not included)\n\n`-analytics CODE`: Add a code snippet for Google analytics to track your HTML documentation. You need to add your CODE next to the flag. For example: UA-1234\n\n`-doNotDisplaySerializations`: The serializations of the ontology will not be displayed.\n\n`-displayDirectImportsOnly`: Only those imported ontologies that are directly imported in the ontology being documented.\n\n`-rewriteBase PATH`: Change the default rewrite base path. The default value is \"/\". This flag can only be used with the htaccess option.\n\n`-excludeIntroduction`: Skip the introduction section in the documentation.\n\n`-uniteSections`: Write all HTML sections into a single HTML document.\n\n`-noPlaceHolderText`: Do not add any placeholder text (this will remove intro, abstract (if empty) and description sections).\n\n`--help`: Shows a help message and exits.\n\n",
+            "parentHeader": [
+                "WIzard for DOCumenting Ontologies (WIDOCO)",
+                "How to use WIDOCO"
+            ],
+            "confidence": [
+                1
+            ],
+            "technique": "Header extraction"
+        }
+    ],
+    "codeRepository": {
+        "excerpt": "https://github.com/dgarijo/Widoco",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "owner": {
+        "excerpt": "dgarijo",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "ownerType": {
+        "excerpt": "User",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateCreated": {
+        "excerpt": "2013-07-15T15:51:51Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "dateModified": {
+        "excerpt": "2022-04-29T18:48:55Z",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "license": {
+        "excerpt": {
+            "name": "Other",
+            "url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/LICENSE"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "name": {
+        "excerpt": "Widoco",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "fullName": {
+        "excerpt": "dgarijo/Widoco",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "issueTracker": {
+        "excerpt": "https://api.github.com/repos/dgarijo/Widoco/issues",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksUrl": {
+        "excerpt": "https://api.github.com/repos/dgarijo/Widoco/forks",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "downloadUrl": {
+        "excerpt": "https://github.com/dgarijo/Widoco/releases",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "topics": {
+        "excerpt": [
+            "documentation",
+            "metadata",
+            "ontology",
+            "ontology-diagram",
+            "ontology-evaluation",
+            "wizard"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "stargazersCount": {
+        "excerpt": {
+            "count": 172,
+            "date": "Wed, 04 May 2022 14:46:06 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "forksCount": {
+        "excerpt": {
+            "count": 64,
+            "date": "Wed, 04 May 2022 14:46:06 GMT"
+        },
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "languages": {
+        "excerpt": [
+            "Java",
+            "XSLT",
+            "CSS",
+            "JavaScript",
+            "HTML",
+            "Dockerfile"
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "licenseText": {
+        "excerpt": "b'                                 Apache License\\n                           Version 2.0, January 2004\\n                        http://www.apache.org/licenses/\\n\\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\\n\\n   1. Definitions.\\n\\n      \"License\" shall mean the terms and conditions for use, reproduction,\\n      and distribution as defined by Sections 1 through 9 of this document.\\n\\n      \"Licensor\" shall mean the copyright owner or entity authorized by\\n      the copyright owner that is granting the License.\\n\\n      \"Legal Entity\" shall mean the union of the acting entity and all\\n      other entities that control, are controlled by, or are under common\\n      control with that entity. For the purposes of this definition,\\n      \"control\" means (i) the power, direct or indirect, to cause the\\n      direction or management of such entity, whether by contract or\\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\\n      outstanding shares, or (iii) beneficial ownership of such entity.\\n\\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\\n      exercising permissions granted by this License.\\n\\n      \"Source\" form shall mean the preferred form for making modifications,\\n      including but not limited to software source code, documentation\\n      source, and configuration files.\\n\\n      \"Object\" form shall mean any form resulting from mechanical\\n      transformation or translation of a Source form, including but\\n      not limited to compiled object code, generated documentation,\\n      and conversions to other media types.\\n\\n      \"Work\" shall mean the work of authorship, whether in Source or\\n      Object form, made available under the License, as indicated by a\\n      copyright notice that is included in or attached to the work\\n      (an example is provided in the Appendix below).\\n\\n      \"Derivative Works\" shall mean any work, whether in Source or Object\\n      form, that is based on (or derived from) the Work and for which the\\n      editorial revisions, annotations, elaborations, or other modifications\\n      represent, as a whole, an original work of authorship. For the purposes\\n      of this License, Derivative Works shall not include works that remain\\n      separable from, or merely link (or bind by name) to the interfaces of,\\n      the Work and Derivative Works thereof.\\n\\n      \"Contribution\" shall mean any work of authorship, including\\n      the original version of the Work and any modifications or additions\\n      to that Work or Derivative Works thereof, that is intentionally\\n      submitted to Licensor for inclusion in the Work by the copyright owner\\n      or by an individual or Legal Entity authorized to submit on behalf of\\n      the copyright owner. For the purposes of this definition, \"submitted\"\\n      means any form of electronic, verbal, or written communication sent\\n      to the Licensor or its representatives, including but not limited to\\n      communication on electronic mailing lists, source code control systems,\\n      and issue tracking systems that are managed by, or on behalf of, the\\n      Licensor for the purpose of discussing and improving the Work, but\\n      excluding communication that is conspicuously marked or otherwise\\n      designated in writing by the copyright owner as \"Not a Contribution.\"\\n\\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\\n      on behalf of whom a Contribution has been received by Licensor and\\n      subsequently incorporated within the Work.\\n\\n   2. Grant of Copyright License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      copyright license to reproduce, prepare Derivative Works of,\\n      publicly display, publicly perform, sublicense, and distribute the\\n      Work and such Derivative Works in Source or Object form.\\n\\n   3. Grant of Patent License. Subject to the terms and conditions of\\n      this License, each Contributor hereby grants to You a perpetual,\\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\\n      (except as stated in this section) patent license to make, have made,\\n      use, offer to sell, sell, import, and otherwise transfer the Work,\\n      where such license applies only to those patent claims licensable\\n      by such Contributor that are necessarily infringed by their\\n      Contribution(s) alone or by combination of their Contribution(s)\\n      with the Work to which such Contribution(s) was submitted. If You\\n      institute patent litigation against any entity (including a\\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\\n      or a Contribution incorporated within the Work constitutes direct\\n      or contributory patent infringement, then any patent licenses\\n      granted to You under this License for that Work shall terminate\\n      as of the date such litigation is filed.\\n\\n   4. Redistribution. You may reproduce and distribute copies of the\\n      Work or Derivative Works thereof in any medium, with or without\\n      modifications, and in Source or Object form, provided that You\\n      meet the following conditions:\\n\\n      (a) You must give any other recipients of the Work or\\n          Derivative Works a copy of this License; and\\n\\n      (b) You must cause any modified files to carry prominent notices\\n          stating that You changed the files; and\\n\\n      (c) You must retain, in the Source form of any Derivative Works\\n          that You distribute, all copyright, patent, trademark, and\\n          attribution notices from the Source form of the Work,\\n          excluding those notices that do not pertain to any part of\\n          the Derivative Works; and\\n\\n      (d) If the Work includes a \"NOTICE\" text file as part of its\\n          distribution, then any Derivative Works that You distribute must\\n          include a readable copy of the attribution notices contained\\n          within such NOTICE file, excluding those notices that do not\\n          pertain to any part of the Derivative Works, in at least one\\n          of the following places: within a NOTICE text file distributed\\n          as part of the Derivative Works; within the Source form or\\n          documentation, if provided along with the Derivative Works; or,\\n          within a display generated by the Derivative Works, if and\\n          wherever such third-party notices normally appear. The contents\\n          of the NOTICE file are for informational purposes only and\\n          do not modify the License. You may add Your own attribution\\n          notices within Derivative Works that You distribute, alongside\\n          or as an addendum to the NOTICE text from the Work, provided\\n          that such additional attribution notices cannot be construed\\n          as modifying the License.\\n\\n      You may add Your own copyright statement to Your modifications and\\n      may provide additional or different license terms and conditions\\n      for use, reproduction, or distribution of Your modifications, or\\n      for any such Derivative Works as a whole, provided Your use,\\n      reproduction, and distribution of the Work otherwise complies with\\n      the conditions stated in this License.\\n\\n   5. Submission of Contributions. Unless You explicitly state otherwise,\\n      any Contribution intentionally submitted for inclusion in the Work\\n      by You to the Licensor shall be under the terms and conditions of\\n      this License, without any additional terms or conditions.\\n      Notwithstanding the above, nothing herein shall supersede or modify\\n      the terms of any separate license agreement you may have executed\\n      with Licensor regarding such Contributions.\\n\\n   6. Trademarks. This License does not grant permission to use the trade\\n      names, trademarks, service marks, or product names of the Licensor,\\n      except as required for reasonable and customary use in describing the\\n      origin of the Work and reproducing the content of the NOTICE file.\\n\\n   7. Disclaimer of Warranty. Unless required by applicable law or\\n      agreed to in writing, Licensor provides the Work (and each\\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\\n      implied, including, without limitation, any warranties or conditions\\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\\n      PARTICULAR PURPOSE. You are solely responsible for determining the\\n      appropriateness of using or redistributing the Work and assume any\\n      risks associated with Your exercise of permissions under this License.\\n\\n   8. Limitation of Liability. In no event and under no legal theory,\\n      whether in tort (including negligence), contract, or otherwise,\\n      unless required by applicable law (such as deliberate and grossly\\n      negligent acts) or agreed to in writing, shall any Contributor be\\n      liable to You for damages, including any direct, indirect, special,\\n      incidental, or consequential damages of any character arising as a\\n      result of this License or out of the use or inability to use the\\n      Work (including but not limited to damages for loss of goodwill,\\n      work stoppage, computer failure or malfunction, or any and all\\n      other commercial damages or losses), even if such Contributor\\n      has been advised of the possibility of such damages.\\n\\n   9. Accepting Warranty or Additional Liability. While redistributing\\n      the Work or Derivative Works thereof, You may choose to offer,\\n      and charge a fee for, acceptance of support, warranty, indemnity,\\n      or other liability obligations and/or rights consistent with this\\n      License. However, in accepting such obligations, You may act only\\n      on Your own behalf and on Your sole responsibility, not on behalf\\n      of any other Contributor, and only if You agree to indemnify,\\n      defend, and hold each Contributor harmless for any liability\\n      incurred by, or claims asserted against, such Contributor by reason\\n      of your accepting any such warranty or additional liability.\\n\\n   END OF TERMS AND CONDITIONS\\n\\n   APPENDIX: How to apply the Apache License to your work.\\n\\n      To apply the Apache License to your work, attach the following\\n      boilerplate notice, with the fields enclosed by brackets \"{}\"\\n      replaced with your own identifying information. (Don\\'t include\\n      the brackets!)  The text should be enclosed in the appropriate\\n      comment syntax for the file format. We also recommend that a\\n      file or class name and description of purpose be included on the\\n      same \"printed page\" as the copyright notice for easier\\n      identification within third-party archives.\\n\\n   Copyright 2018 Daniel Garijo\\n\\n   Licensed under the Apache License, Version 2.0 (the \"License\");\\n   you may not use this file except in compliance with the License.\\n   You may obtain a copy of the License at\\n\\n       http://www.apache.org/licenses/LICENSE-2.0\\n\\n   Unless required by applicable law or agreed to in writing, software\\n   distributed under the License is distributed on an \"AS IS\" BASIS,\\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\\n   See the License for the specific language governing permissions and\\n   limitations under the License.\\n'",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "readmeUrl": {
+        "excerpt": "https://raw.githubusercontent.com/dgarijo/Widoco/master/README.md",
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    },
+    "contributingGuidelines": {
+        "excerpt": "Contribution guidelines\nContributions to address any of the current issues are welcome. In order to push your contribution, just push your pull request to the develop branch. The master branch has only the code associated to the latest release.",
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "hasBuildFile": [
+        {
+            "excerpt": [
+                "https://raw.githubusercontent.com/dgarijo/Widoco/master/Dockerfile"
+            ],
+            "confidence": [
+                1.0
+            ],
+            "technique": "File Exploration",
+            "format": "Docker file"
+        }
+    ],
+    "ontologies": {
+        "excerpt": [
+            {
+                "uri": "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/test/otalex.owl"
+            },
+            {
+                "uri": "http://datos.bne.es/def/",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/test/bne.ttl"
+            },
+            {
+                "uri": "http://geo.linkeddata.es/ontology/",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/test/geolinkeddata.owl"
+            },
+            {
+                "uri": "http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD1",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/test/IFC4_ADD1.ttl"
+            },
+            {
+                "uri": "https://w3id.org/games/spec/coil#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/test/coil.owl"
+            },
+            {
+                "uri": "http://data.businessgraph.io/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/test/business.ttl"
+            },
+            {
+                "uri": "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/otalex.owl"
+            },
+            {
+                "uri": "http://data.businessgraph.io/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/ebg-ontology_edited.ttl"
+            },
+            {
+                "uri": "http://purl.org/net/p-plan#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/p-plan.owl"
+            },
+            {
+                "uri": "http://datos.bne.es/def/",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/bne.ttl"
+            },
+            {
+                "uri": "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/NBAMovementsv2%20-%20copia.owl"
+            },
+            {
+                "uri": "https://w3id.org/def/System",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/System.owl"
+            },
+            {
+                "uri": "http://linguistic.linkeddata.es/def/retele-share",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/retele.ttl"
+            },
+            {
+                "uri": "http://geo.linkeddata.es/ontology/",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/geolinkeddata.owl"
+            },
+            {
+                "uri": "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/contaminacion-acustica",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/contaminacion-acustica.owl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/instrument.ttl"
+            },
+            {
+                "uri": "http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD1",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/IFC4_ADD1.ttl"
+            },
+            {
+                "uri": "http://disk-project.org/ontology/disk",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/disk.ttl"
+            },
+            {
+                "uri": "http://www.w3.org/ns/oa#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/oa.ttl"
+            },
+            {
+                "uri": "http://purl.oclc.org/NET/ssnx/ssn",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/ssn.owl"
+            },
+            {
+                "uri": "https://w3id.org/def/Tissue",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/Tissue.ttl"
+            },
+            {
+                "uri": "http://iot.linkeddata.es/def/wot#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/wot.ttl"
+            },
+            {
+                "uri": "http://www.semanticweb.org/bravyto/ontologies/2016/9/Charity-Organization",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/charity_org_rdf_new.owl"
+            },
+            {
+                "uri": "http://schema.org/",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/schema_sample.ttl"
+            },
+            {
+                "uri": "http://purl.org/net/SMARTprotocol#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/smartProtocol.owl"
+            },
+            {
+                "uri": "http://ontosoft.org/software",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/ontosoft-v1.0.owl"
+            },
+            {
+                "uri": "http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD1",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/IFC4_ADD1_wrongImport.ttl"
+            },
+            {
+                "uri": "https://w3id.org/def/saref4envi",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/saref4envi.ttl"
+            },
+            {
+                "uri": "http://linguistic.linkeddata.es/def/retele-share",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/retele-share.owl"
+            },
+            {
+                "uri": "https://w3id.org/games/spec/coil#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/coil.owl"
+            },
+            {
+                "uri": "http://www.semanticweb.org/davidchaves/ontologies/2015/11/NBAMovements",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/NBAMovementsv2.owl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/diff/coreNew.ttl"
+            },
+            {
+                "uri": "https://w3id.org/games/spec/coil#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/diff/coilNew.owl"
+            },
+            {
+                "uri": "https://w3id.org/games/spec/coil#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/diff/coilOld.owl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/diff/coreOld.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/LinkedEarth/sensor.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/LinkedEarth/observation.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/LinkedEarth/archive.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/LinkedEarth/instrument.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/LinkedEarth/inferredVariables.ttl"
+            },
+            {
+                "uri": "http://linked.earth/ontology#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/LinkedEarth/core.ttl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/roevo",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/RO/roevo.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/roterms#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/RO/roterms.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/wf4ever",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/RO/wf4ever.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/wfdesc",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/RO/wfdesc.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/ro",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/RO/ro.owl"
+            },
+            {
+                "uri": "http://purl.org/wf4ever/wfprov",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/RO/wfprov.owl"
+            },
+            {
+                "uri": "http://disk-project.org/ontology/disk",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/doc/benchmark/Disk/disk.ttl"
+            },
+            {
+                "uri": "http://purl.org/net/p-plan#",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/src/test/resources/p-plan.owl"
+            },
+            {
+                "uri": "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento",
+                "file_url": "https://raw.githubusercontent.com/dgarijo/Widoco/master/src/test/resources/alo.owl"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "File Exploration"
+    },
+    "releases": {
+        "excerpt": [
+            {
+                "tagName": "v1.4.17",
+                "name": "WIDOCO 1.4.17: Update OOPS! Web service. GitHub actions",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version fixes OOPS! (newest URL) and sets up GitHub actions so users with different versions of Java can use Widoco.\r\n\r\n## What's Changed\r\n* update readme and pom with proper versions by @dgarijo in https://github.com/dgarijo/Widoco/pull/502\r\n* switch import fonts to always use https scheme by @renefritze in https://github.com/dgarijo/Widoco/pull/509\r\n* [ci] setup gh actions + dependabot by @renefritze in https://github.com/dgarijo/Widoco/pull/507\r\n* Github actions set up by @renefritze  by @dgarijo in https://github.com/dgarijo/Widoco/pull/512\r\n\r\n## New Contributors\r\n* @renefritze made their first contribution in https://github.com/dgarijo/Widoco/pull/509\r\n\r\n**Full Changelog**: https://github.com/dgarijo/Widoco/compare/v1.4.16...v1.4.17",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.17",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.17",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.17",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/64724790",
+                "dateCreated": "2022-04-19T10:57:14Z",
+                "datePublished": "2022-04-19T11:10:33Z"
+            },
+            {
+                "tagName": "v1.4.16",
+                "name": "WIDOCO 1.4.16: Support for German and Dutch",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO includes support for German and Dutch (thanks to Flores Bakker), extraction of metadata from local authors and organizations URIs (if you describe authors and their organizations in your ontology, WIDOCO will automatically detect it) and additional support for adding images in your documentation.\r\n \r\n## What's Changed\r\n* Fix/duplicate namespace declarations by @pmcb55 in https://github.com/dgarijo/Widoco/pull/471\r\n* Only show legend entries if relevant by @pmcb55 in https://github.com/dgarijo/Widoco/pull/472\r\n* Dockerize project by @ccamel in https://github.com/dgarijo/Widoco/pull/479\r\n* Support for adding images with GUI by @dgarijo in https://github.com/dgarijo/Widoco/pull/492\r\n* Fix #262 by @dgarijo in https://github.com/dgarijo/Widoco/pull/493\r\n* German translation by @JohnnyMoonlight in https://github.com/dgarijo/Widoco/pull/494\r\n* Support for it and de by @dgarijo in https://github.com/dgarijo/Widoco/pull/495\r\n* Fix #498 by @engapa in https://github.com/dgarijo/Widoco/pull/500\r\n\r\n## New Contributors\r\n* @ccamel made their first contribution in https://github.com/dgarijo/Widoco/pull/479\r\n* @JohnnyMoonlight made their first contribution in https://github.com/dgarijo/Widoco/pull/494\r\n* @engapa made their first contribution in https://github.com/dgarijo/Widoco/pull/500\r\n\r\n**Full Changelog**: https://github.com/dgarijo/Widoco/compare/v1.4.15...v1.4.16",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.16",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.16",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.16",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/62144298",
+                "dateCreated": "2022-03-17T21:38:26Z",
+                "datePublished": "2022-03-17T22:13:15Z"
+            },
+            {
+                "tagName": "v1.4.15",
+                "name": "WIDOCO 1.4.15: Major bug fixes",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release addresses the following problems:\r\n- fixed return types for jsonld and rdf (#454)\r\n- fixed small caps issue for case sensitivity files in Unix (#455)\r\n- fix wrong metadata in prefix (#453) \r\n- Incorporated previous prereleases fixes.\r\n\r\nAll bugs fixed in this release can be found [here](https://github.com/dgarijo/Widoco/milestone/2?closed=1)",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.15",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.15",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.15",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/45273016",
+                "dateCreated": "2021-06-26T11:29:58Z",
+                "datePublished": "2021-06-26T11:39:10Z"
+            },
+            {
+                "tagName": "v1.4.15_1",
+                "name": "WIDOCO 1.4.15_1 (pre-release): Namespace prefixes fixes and WebVowl update",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This pre-release fixes issues regarding namespace prefixes (now they will be rad directly from the ontology instead of using LODE); it updates WebVOWL to the latest version (which let's you change the settings in your visualization)\r\n\r\nMore information on the addressed issues can be seen in: https://github.com/dgarijo/Widoco/milestone/2?closed=1",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.15_1",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.15_1",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.15_1",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/35216684",
+                "dateCreated": "2020-12-14T04:07:24Z",
+                "datePublished": "2020-12-14T04:18:58Z"
+            },
+            {
+                "tagName": "v1.4.15_0",
+                "name": "WIDOCO 1.4.15 (pre-release): Bug fixes and FAQ",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "(This is a pre-relase. For more information about the next release see https://github.com/dgarijo/Widoco/milestone/2)\r\nThis pre-release of WIDOCO fixes some bugs and adds a FAQ for common questions posted as issues. In particular, this solves:\r\n- External links will now open in another window instead of appearing dotted.\r\n- Fixed issue that made the index not be generated when including all the sections in a single html.\r\n- Added a FAQ explaining why by default the documentation cannot be seen locally.\r\n- Added a FAQ regarding how to use markdown on class definitions.\r\n- Error with a missing path when the CLI was run, which resulted in the /sections folder not being generated.\r\n- Fixed a typo in acknowledgments \r\n- Fixed typo in schema.org snippet.\r\n- Fixed a few URLs from http -> https",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.15_0",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.15_0",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.15_0",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/28719056",
+                "dateCreated": "2020-07-19T22:55:20Z",
+                "datePublished": "2020-07-19T23:11:42Z"
+            },
+            {
+                "tagName": "v1.4.14",
+                "name": "WIDOCO 1.4.14: Multiple updates and bug fixes",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO updates some of the web services used:\r\n * Updated a comprehensive --help command.\r\n * Reviewed metadata properties (added incompatibleWith)\r\n * Removed JENA dependencies (now only OWLAPI is used)\r\n * Unified logging (now only SLF4J is used).\r\n * Fixed pointers in WIDOCO guidelines.\r\n * Updated OOPS! webservice call.\r\n * Fixed invalid ttl file when generating the provenance of a documentation.",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.14",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.14",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.14",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/26848705",
+                "dateCreated": "2020-05-25T03:55:27Z",
+                "datePublished": "2020-05-25T04:02:40Z"
+            },
+            {
+                "tagName": "v1.4.13",
+                "name": "WIDOCO 1.4.13: Linking evaluation in documentation",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO removes a few of unused dependencies and, if desired, shows a link to the OOPS! evaluation generated in the documentation. Before, this link had to be added manually. \r\n\r\nThanks to @HaydarAk for the suggestions on how to show it in the main page.\r\n\r\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.13",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.13",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.13",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/22775882",
+                "dateCreated": "2020-01-12T22:19:15Z",
+                "datePublished": "2020-01-12T22:25:11Z"
+            },
+            {
+                "tagName": "v1.4.12",
+                "name": "WIDOCO 1.4.12: Big fixes and new configurations",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO addresses the following issues (thanks to @pmcb55 for his contributions!!)\r\n * #354: The page would display centered in the visualization instead of the element loaded.\r\n * #362: Upgraded to latest version of OWL API\r\n * #361: Allowed adding a \"-uniteAllSections\" flag that will print all sections on the same document. Hence, dynamic loading will be removed.\r\n * Tidying up PROV rendering.\r\n * Small typo fixes in the default html ",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.12",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.12",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.12",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/21002818",
+                "dateCreated": "2019-10-27T03:41:36Z",
+                "datePublished": "2019-10-27T03:56:44Z"
+            },
+            {
+                "tagName": "v1.4.11",
+                "name": "WIDOCO 1.4.11: Better logging and bug fixes",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO integrates the pull requests from @seralf to improve logging and simplify dependencies.\r\nIn addition, it addresses the following issues:\r\n * #344: Now double \"#\" errors have been removed from changelog.\r\n * #350: Fixed an issue in which the references would overwrite the main section ",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.11",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.11",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.11",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/17596778",
+                "dateCreated": "2019-05-26T23:51:42Z",
+                "datePublished": "2019-05-26T23:55:13Z"
+            },
+            {
+                "tagName": "v1.4.10",
+                "name": "WIDOCO 1.4.10: Pull requests, updates and bug fixes",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO incorporates pull requests from @seralf  and @jgeluk (updating to the latest version of WebVowl) and fixes the following issues:\r\n* #333 Now if there is an error in one of the imports the application will continue running instead of failing.\r\n* #217 Now the changelog can be expanded and collapsed, which makes it easier to navigate\r\n* #313 A link will be added in the index page if provided in the config file (using contextURI=\"YOUR URL\")\r\n* #339 Now WIDOCO will generate the folders four your htaccess file as well.\r\n\r\nIn addition, now the base encoding is UTF-8.",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.10",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.10",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.10",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/17029600",
+                "dateCreated": "2019-04-29T00:26:07Z",
+                "datePublished": "2019-04-29T00:31:54Z"
+            },
+            {
+                "tagName": "v1.4.9",
+                "name": "WIDOCO 1.4.9: Supporting schema.org",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO addresses the following:\r\n* #274: Now WIDOCO will include the domain and range if you use schema:domainIncludes and schema:rangeIncludes to declare it in your object properties or data properties with . Note that WIDOCO still does not support plain rdf:Property.\r\n* Reduced the level of logging",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.9",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.9",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.9",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/15737608",
+                "dateCreated": "2019-02-24T00:23:18Z",
+                "datePublished": "2019-02-24T00:30:33Z"
+            },
+            {
+                "tagName": "v1.4.8",
+                "name": "WIDOCO 1.4.8: Logging and automated citation",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release of WIDOCO includes:\r\n* Fixes from @jgeluk to do proper logging.\r\n* Fix #264: now an automated citation will be produced for your ontology by default (if the appropriate metadata is there: creators, revision, and URL (this version)\r\n* JenaCatalogIRIMapper now supports Jena's ont-policy.rdf file to resolve imports with local files\r\n* Fixed #321, now WIDOCO uses a more recent version of OWL API \r\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.8",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.8",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.8",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/15474861",
+                "dateCreated": "2019-02-11T03:30:12Z",
+                "datePublished": "2019-02-11T03:38:13Z"
+            },
+            {
+                "tagName": "v1.4.7",
+                "name": "WIDOCO 1.4.7: Dependency and bug fixes",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release of WIDOCO fixes the following issues:\r\n* #305: Now when you launch WIDOCO without parameters, the console will also show a description of the tool and will explain how to run it. \r\n* #309 Removed the absolute layout dependency that prevented WIDOCO JAR from being run.\r\n* #311 Now the publisher will show on the GUI correctly (before it would only if it had a URL)\r\n* #314: Added an html tag around the external sections so the browser won't complain\r\n* #316 Fixed the generation of the table of contents so \"back to TOC\" wouldn't appear\r\n* #317 Fixed the GUI so the \"Imported ontologies\" label appears as imported and not \"extended\"\r\nIt also removes the restlet dependency, which had a vulnerability and was not used anymore.",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.7",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.7",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.7",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/13944540",
+                "dateCreated": "2018-11-12T03:27:02Z",
+                "datePublished": "2018-11-12T03:42:29Z"
+            },
+            {
+                "tagName": "v1.4.6",
+                "name": "WIDOCO 1.4.6: Tutorial and bug fixes",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO includes the following updates:\r\n* Updated the OWL2Vowl library to the latest version (old library was producing errors in some ontologies)\r\n* Included a tutorial (http://dgarijo.github.io/Widoco/doc/tutorial/) describing the GUI step by step and all its functionality\r\n* Added support for selecting ontologies in JSON\r\n* Added contributing guidelines into readme.md\r\n* Fixed namespaces when selecting documentation in several languages\r\n* Now it's possible to edit the rewrite base path in the .htaccess file.\r\n* Fixed a typo in the .htaccess for serving json\r\n* Fixed an encoding problem when showing french labels.\r\n* @kartgk fixed an error with the import closure of ontologies (in case not all imports of imported ontologies wanted to be displayed)\r\n* Added the correct version numbers to pom file.\r\n* Fixed an issue in lang cs that made the table of namespaces not to show correctly",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.6",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.6",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.6",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/13019723",
+                "dateCreated": "2018-09-21T08:03:14Z",
+                "datePublished": "2018-09-21T08:19:40Z"
+            },
+            {
+                "tagName": "v1.4.5",
+                "name": "WIDOCO 1.4.5: Updated WebVowl and support for Czech",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO includes the following updates:\r\n* Updated webVowl to version 1.1.2 (latest)\r\n* Allowed disabling showing ontology serializations (-doNotDisplaySerializations flag). Both in the console and GUI\r\n* Added support for Czech localization (also in GUI)\r\n\r\nThanks to Petr Kremen for contributing with the Czech localization",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.5",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.5",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.5",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/12049594",
+                "dateCreated": "2018-07-23T07:15:14Z",
+                "datePublished": "2018-07-23T07:23:58Z"
+            },
+            {
+                "tagName": "v1.4.4",
+                "name": "WIDOCO 1.4.4: Added support for Google Analytics",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of WIDOCO allows to add a Google Analytics code to track the traffic received in one of the pages. WIDOCO assumes you have a UA code. You can use it on the GUI, through a config file or in the command line by adding `-analytics yourcode`\r\n\r\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.4",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.4",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.4",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/11300894",
+                "dateCreated": "2018-06-04T01:12:31Z",
+                "datePublished": "2018-06-04T01:17:34Z"
+            },
+            {
+                "tagName": "v1.4.3",
+                "name": "WIDOCO 1.4.3: Bug Fixes and support for french",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release fixes the following issues:\r\n* Added support for french (thanks to Maxime Lefrancois)\r\n* When imported ontologies had characters like \"<\" they were not showing.\r\n* Added JSON-LD serialization for ontologies automatically\r\n* When annotation properties have blank nodes, they will now be ignored instead of failing\r\n* Updated contributor list\r\n* Blank nodes are now absent from the provenance page.\r\n* Fixed default language when restarting WIDOCO.\r\n* Fixed the language form (now french can be selected, and it has the proper icons)\r\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.3",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.3",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.3",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/10556972",
+                "dateCreated": "2018-04-16T05:17:23Z",
+                "datePublished": "2018-04-16T05:23:25Z"
+            },
+            {
+                "tagName": "v1.4.2",
+                "name": "WIDOCO 1.4.2: Small fixes and merged contributions",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release includes the latest contributions to the project:\r\n* Fixes in HTML\r\n* Fixes in how OOPS! is called\r\nAlso, now the license name is the URI if no name is provided (and URI is) instead of \"license name goes here\", and the java encoding has been included in the pom file to prevent UTF-8 errors in compilation.",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.2",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.2",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.2",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/9846306",
+                "dateCreated": "2018-02-27T02:55:24Z",
+                "datePublished": "2018-02-27T03:02:50Z"
+            },
+            {
+                "tagName": "v1.4.1",
+                "name": "WIDOCO 1.4.1: Metadata support and major bug fixes",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "WIDOCO now will comply with most of the terms listed in https://w3id.org/widoco/bestPractices. A few of them are still unsopported (e.g., rdfs:seeAlso) and will be added in next releases.\r\n\r\nIn this version, I have added support for all the deprecation terms in LODE, as well as support for skos:prefLabel and  better recognition of some of the terms when the range can be a String or a resource.\r\n\r\nChanges:\r\n* Now the examples have a \"pre\" label, so if they include rdf text or json text they show properly.\r\n* A pointer to the guidelines has been added in the interface\r\n* When invoking the program using command line, the default behavior is to load the properties from the ontology. Only if a config file is provided, the properties won't be loaded. There is still a flag, which I have preferred to leave for possible legacy issues.\r\n* Markup is now recognized in all sections\r\n* The diagram is now optional (by default it was always produced in older versions)\r\n* This release also includes a doc folder with guidelines on the metadata properties to use, a benchmark of ontologies used for testing, a gallery with what WIDOCO can accomplish and a summary of projects that have adopted WIDOCO.\r\n\r\nBug fixes: \r\n* Changed the pom file with another plugin for creating the JAR, because some of the RIO parsers  were not creating the appropriate serializations of the ontology.\r\n* Added robustness when the changelog was created. If a wrong URI is provided, then the changelog will not be created.\r\n* Changed how the ontology is chosen so there won't be errors in MAC systems.\r\n* Fixed some of the language tags.\r\n* Polished some errors related to the interface.",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.1",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.1",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.1",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/6527938",
+                "dateCreated": "2017-05-28T10:17:58Z",
+                "datePublished": "2017-05-28T18:46:39Z"
+            },
+            {
+                "tagName": "v1.4.0",
+                "name": "WIDOCO 1.4.0: Inline visualization diagrams",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release removes the external dependency to WebVowl, and creates a visualization that can be seen in the ontology document itself (overview section). In addition, the following changes have been made:\r\n * Migrated the framework to use a recent version of OWL API (hence the size of the JAR)\r\n * Bug fixes in meta data (more to come in future releases)\r\n * Made WIDOCO more robust to errors\r\n * Published a benchmark of ontologies used to test WIDOCO. If you want us to try a new one, just open an issue!\r\n * Published a draft of the best practices for ontology annotation (currently under work). These are meant\r\n * Published  a showcase gallery with examples of WIDOCO's features\r\n * Published a report on the known usages by WIDOCO. \r\n\r\n![webvowl](https://cloud.githubusercontent.com/assets/1520666/26068984/54eff946-3954-11e7-81b8-c72db0bd93bb.png)\r\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.4.0",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.4.0",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.4.0",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/6390471",
+                "dateCreated": "2017-05-13T23:26:12Z",
+                "datePublished": "2017-05-15T16:53:34Z"
+            },
+            {
+                "tagName": "v1.3.1",
+                "name": "Widoco 1.3.1: Bug fixes and metadata enrichment",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release fixes several issues and extends LODE to accept more metadata options for defining terms and adding examples.\r\n* Fixed an issue with the changelog that produced an empty bullet when the domain or range of a property was an union or intersection.\r\n* Added tests with different ontologies that help inspecting whether a new change leads to errors or not.\r\n* Extended LODE to accept: prov:definition, vann:example, obo:definition (with the appropriate class name), obo:usageExample, vaem:rationale, skos:definition and terms:source.\r\n* Extended Widoco to accept terms:bibliographicCitation, bibo:status, bibo:doi and owl:backwardsCompatibleWith\r\n* If an error is produced while generating the changelog or the evaluation reports, the section is not generated. Before, an empty section would remain.\r\n* Fixed table of contents not being translated.\r\n* When generating the documentation of an ontology, if it imports another ontology that cannot be imported for any reason, Widoco will ignore the import instead of failing.\r\n* Added the possibility to ignore namedIndividuals when generating the documentation through console.\r\n\r\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.3.1",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.3.1",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.3.1",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/5951267",
+                "dateCreated": "2017-04-03T00:33:14Z",
+                "datePublished": "2017-04-03T00:48:48Z"
+            },
+            {
+                "tagName": "v1.3.0",
+                "name": "Widoco 1.3.0: Automated changelog section",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version of Widoco creates an automated changelog section of your ontology. For all classes, properties and data properties, Widoco will calculate the new changes, additions and deletions and present them in a human-readable manner. In order to benefit from this feature, you just have to annotate your ontology with the URI of the previous version. You can use owl:priorVersion, dc:replaces or prov:wasRevisionOf to annotate your ontology (Widoco will only consider one file to compare against).\r\n\r\nAdditional improvements:\r\n* RDF-a annotations are replaced with JSON-LD snippets. The page is just annotated with schema.org. The rdf-a annotations made it difficult to maintain, and the structured extraction tool provided by Google did not work. With the JSON-LD snippet everything is clearer. The provenance of the page itself is published separately.\r\n* Now it is possible to generate ONLY the cross reference section of an ontology.\r\n* Bug fix that led to errors when opening some ontologies like OBI\r\n\r\nOverview sample of the changelog:\r\n![overview](https://cloud.githubusercontent.com/assets/1520666/23640611/ac4407f6-02a3-11e7-8a88-b597ba740721.png)\r\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.3.0",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.3.0",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.3.0",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/5659212",
+                "dateCreated": "2017-03-07T03:06:28Z",
+                "datePublished": "2017-03-07T03:17:36Z"
+            },
+            {
+                "tagName": "v1.2.3",
+                "name": "Widoco 1.2.3: [Bug fix] Licensius is optional",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "The Licensius web service has been unstable lately. This led to long waits from the server, even with a timer on the request. Therefore retrieving the license using this service is now optional and loading metadata properties from the ontology is faster.\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.2.3",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.2.3",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.2.3",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/4659138",
+                "dateCreated": "2016-11-15T03:11:37Z",
+                "datePublished": "2016-11-15T03:17:26Z"
+            },
+            {
+                "tagName": "v1.2.2",
+                "name": "Widoco 1.2.2: Major bug fixes and improvements",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version fixes the following issues/improvements:\n- 188: lang separator doesn't work on unix systems. Changed \";\" to \"-\" as separator\n- 189: return a non-zero value if there are problems generating the doc\n- 151: text area in the table should be bigger \n- 177: Ability to provide authors institution URI in the config \n- 155: allow possibility of adding Zenodo URI (DOI) \n- 132: could improve placeholder text\n- 174: Dynamic sections \n- 170: Check why isDefinedBy is not recognized sometimes\n- 171: Separate configuration from vocabulary metadata \n\nIn addition, I have fixed the custom style CSS, saving the publisher in the config file, producing an alt in images to avoid broken images when no connection is available and  issues with the consistency in sections and back to toc titles.\n\nFinally, the toc will be now dynamic, so it will get updated if new headers with class \"list\" are added to the document.\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.2.2",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.2.2",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.2.2",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/3832172",
+                "dateCreated": "2016-08-07T20:39:13Z",
+                "datePublished": "2016-08-07T20:49:16Z"
+            },
+            {
+                "tagName": "v1.2.1",
+                "name": "Widoco 1.2.1: Interface bug fixes",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "In this release a couple of bugs have been fixed.\nFirst, a bug that froze the program after hitting the \"back\" button, once the ontology properties had been loaded.\nAnother bug fix is that now \"publisher\" will not appear if it's not filled in the .properties file.\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.2.1",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.2.1",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.2.1",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/3701886",
+                "dateCreated": "2016-07-20T16:54:43Z",
+                "datePublished": "2016-07-20T16:58:10Z"
+            },
+            {
+                "tagName": "v1.2.0",
+                "name": "Widoco 1.2.0: Extended metadata enrichment",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This version automatically extracts the properties \"publisher\" and \"versionIRI\" from the ontology. In addition, it adds a link to webVowl and fixes some minor issues.\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.2.0",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.2.0",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.2.0",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/3683077",
+                "dateCreated": "2016-07-18T16:47:41Z",
+                "datePublished": "2016-07-18T16:52:10Z"
+            },
+            {
+                "tagName": "v1.1.1",
+                "name": "Widoco1.1.1: Integration with Licensius is back online",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release contains the time outs for using Licensius (for retrieveing license names from the ontology) and OOPS! (for evaluation)\nIn addition, it also fixes some small issued with content negotiation when loading Prot\u00e9g\u00e9. By default, the .htaccess file will serve rdf/xml when asking for \\* / \\* and turtle when asking for text/*\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.1.1",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.1.1",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.1.1",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/3673322",
+                "dateCreated": "2016-07-16T15:53:39Z",
+                "datePublished": "2016-07-16T15:59:49Z"
+            },
+            {
+                "tagName": "v1.1.0",
+                "name": "Content negotiation bundle",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "Now Widoco can create a content negotiation bundle that helps you deploy your vocabulary on your server. In addition, now different serializations of a vocabulary are saved locally, in order to facilitate users pointing to them.\n\nNote: due to time outs in Licensius, it is disabled in this version\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.1.0",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.1.0",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.1.0",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/3599226",
+                "dateCreated": "2016-07-06T15:57:53Z",
+                "datePublished": "2016-07-06T16:01:06Z"
+            },
+            {
+                "tagName": "v1.0.0",
+                "name": "First stable release of Widoco",
+                "authorName": "dgarijo",
+                "authorType": "User",
+                "body": "This release fixes multiple bugs from the earlier release, and allows customizing a label on the side with the current status of the document.\n\nThis version also improves how an ontology is loaded, applying content negotiation when necessary.\n",
+                "tarballUrl": "https://api.github.com/repos/dgarijo/Widoco/tarball/v1.0.0",
+                "zipballUrl": "https://api.github.com/repos/dgarijo/Widoco/zipball/v1.0.0",
+                "htmlUrl": "https://github.com/dgarijo/Widoco/releases/tag/v1.0.0",
+                "url": "https://api.github.com/repos/dgarijo/Widoco/releases/3263232",
+                "dateCreated": "2016-05-19T16:43:03Z",
+                "datePublished": "2016-05-19T16:49:39Z"
+            }
+        ],
+        "confidence": [
+            1.0
+        ],
+        "technique": "GitHub API"
+    }
+}

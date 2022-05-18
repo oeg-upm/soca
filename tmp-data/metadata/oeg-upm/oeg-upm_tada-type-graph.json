@@ -109,7 +109,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:12:15 GMT"
+            "date": "Wed, 18 May 2022 06:34:29 GMT"
         },
         "confidence": [
             1.0
@@ -119,7 +119,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:12:15 GMT"
+            "date": "Wed, 18 May 2022 06:34:29 GMT"
         },
         "confidence": [
             1.0
@@ -159,7 +159,5 @@
         ],
         "technique": "File Exploration"
     },
-    "inspect4py": {
-        "software_type": "script without main"
-    }
+    "inspect4py": {}
 }

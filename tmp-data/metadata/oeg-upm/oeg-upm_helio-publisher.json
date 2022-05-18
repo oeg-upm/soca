@@ -1,13 +1,17 @@
 {
     "description": [
         {
-            "excerpt": "# [Helio Publisher](https://github.com/oeg-upm/helio/wiki/Helio-Publisher)\n### **Creators:** [Andrea Cimmino](https://scholar.google.es/citations?user=_6U9WMcAAAAJ&hl=es&oi=ao) and [Ra\u00fal Garc\u00eda Castro](http://www.garcia-castro.com/)\n \n",
+            "excerpt": "### **Creators:** [Andrea Cimmino](https://scholar.google.es/citations?user=_6U9WMcAAAAJ&hl=es&oi=ao) and [Ra\u00fal Garc\u00eda Castro](http://www.garcia-castro.com/)\n \n",
             "confidence": [
                 [
                     0.908925214220865
                 ]
             ],
-            "technique": "Supervised classification"
+            "technique": "Supervised classification",
+            "originalHeader": "**Creators:** <a href=\"https://scholar.google.es/citations?user=_6U9WMcAAAAJ&amp;hl=es&amp;oi=ao\">Andrea Cimmino</a> and <a href=\"http://www.garcia-castro.com/\">Ra\u00fal Garc\u00eda Castro</a>",
+            "parentHeader": [
+                "<a href=\"https://github.com/oeg-upm/helio/wiki/Helio-Publisher\">Helio Publisher</a>"
+            ]
         },
         {
             "excerpt": "Helio publisher enables a Linked Data service providing a Web layer for interacting with the Helio integrator API. In other words, the publisher provides a REST API, and a set of HTML views, for reading the RDF of a resource, the whole RDF produced underneath, and enables a SPARQL endpoint. Additionally, although Helio already provides the HTML views, a user can manage the existing views and define new views. The views created by the user can have RDF embedded, and thus, publish RDFa documents.",
@@ -107,7 +111,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:25:02 GMT"
+            "date": "Wed, 18 May 2022 06:56:05 GMT"
         },
         "confidence": [
             1.0
@@ -117,7 +121,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:25:02 GMT"
+            "date": "Wed, 18 May 2022 06:56:05 GMT"
         },
         "confidence": [
             1.0

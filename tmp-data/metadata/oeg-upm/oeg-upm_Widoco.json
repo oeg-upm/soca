@@ -4,7 +4,7 @@
             "originalHeader": "Description",
             "excerpt": "WIDOCO helps you to publish and create an enriched and customized documentation of your ontology, by following a series of steps in a wizard. We extend the LODE framework by Silvio Peroni to describe the classes, properties and data properties of the ontology, the OOPS! webservice by Mar\u00eda Poveda to print an evaluation and the Licensius service by Victor Rodriguez Doncel to determine the license URI and title being used. In addition, we use WebVowl to visualize the ontology and have extended Bubastis to show a complete changelog between different versions of your ontology.\n\nFeatures of WIDOCO:\n* Automatic documentation of the terms in your ontology (based on [LODE](http://www.essepuntato.it/lode/))\n* Automatic annotation in JSON-LD snippets of the html produced.\n* Association of a provenance page which includes the history of your vocabulary (W3C PROV-O compliant).\n* Metadata extraction from the ontology plus the means to complete it on the fly when generating your ontology. Check the [best practice document](http://dgarijo.github.io/Widoco/doc/bestPractices/index-en.html) to know more about the terms recognized by WIDOCO.\n* Guidelines on the main sections that your document should have and how to complete them.\n* Integration with diagram creators ([WebVOWL](http://vowl.visualdataweb.org/webvowl/)).\n* Automatic changelog of differences between the actual and the previous version of the ontology (based on [Bubastis](http://www.ebi.ac.uk/efo/bubastis/)).\n* Separation of the sections of your html page so you can write them independently and replace only those needed.\n* Content negotiation and serialization of your ontology according to W3C best practices\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -105,7 +105,7 @@
             "originalHeader": "Browser issues (Why can't I see the generated documentation / visualization?)",
             "excerpt": "The result of executing WIDOCO is an HTML file. We have successfully tested it in Mozilla, IE, Safari and Chrome.  **When the page is stored in a server, WIDOCO's HTML  works correctly in all browsers**. If you view the file **on your local browser**, we recommend you to use Mozilla Firefox, Safari or Internet Explorer. Google Chrome will not show the contents correctly, as it doesn't allow  XMLHttpRequest without HTTP. If you want to view the page locally with Google Chrome you have two possibilities:\n\na) Place the file in a server and access it via its URL (for example, put it in dropbox and access through its public url, or on a Github page).\n\nb) Execute Chrome with the following commands (Thanks to Alejandro Fernandez Carrera):\n\n(WIN) chrome.exe --allow-file-access-from-files,\n\n(OSX) open /Applications/Google\\ Chrome.app/ --args --allow-file-access-from-files\n\n(UNX) /usr/bin/google-chrome --allow-file-access-from-files\n\t",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -115,7 +115,7 @@
             "originalHeader": "Requirements",
             "excerpt": "You will need Java 1.8 or higher (SDK 1.8 or JRE 8) for WIDOCO to work\nOtherwise, you will probably experience an \"Unsupported major.minor version 52.0\" exception when executing the JAR file.\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -125,7 +125,7 @@
             "originalHeader": "Examples",
             "excerpt": "Examples of the features of WIDOCO can be seen on [the gallery](http://dgarijo.github.io/Widoco/doc/gallery/)\t\n\t",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -133,7 +133,7 @@
             "originalHeader": "Tutorial",
             "excerpt": "A tutorial explaining the main features of the GUI can be found [here](http://dgarijo.github.io/Widoco/doc/tutorial/)    \n    ",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -141,7 +141,7 @@
             "originalHeader": "How to use WIDOCO",
             "excerpt": "Download all the files of the \"JAR\" folder into the same folder. Then just double click the .jar file.\n\nNow you can execute WIDOCO through the console. Usage:\n\n\tjava -jar widoco-VERSION-jar-with-dependencies.jar [-ontFile file] or [-ontURI uri] [-outFolder folderName] [-confFile propertiesFile] or [-getOntologyMetadata] [-oops] [-rewriteAll] [-crossRef] [-saveConfig configOutFile] [-useCustomStyle] [-lang lang1-lang2] [-includeImportedOntologies] [-htaccess] [-webVowl] [-licensius] [-ignoreIndividuals] [-analytics analyticsCode] [-doNotDisplaySerializations][-displayDirectImportsOnly] [-rewriteBase rewriteBasePath] [-excludeIntroduction] [-uniteSections]\n\nThe `ontFile` and `ontURI` options allow you to choose the ontology file or ontology URI of your ontology.\n\nThe `-outFolder` option specifies where you want to place the output.\n\nThe `-confFile` allows you to choose your own configuration file for the ontology metadata. However you can tell WIDOCO to try to extract some of the metadata from the ontology with getOntologyMetadata.\n\nThe `-oops` flag creates an html page with the evaluation from the OOPS service (http://oops.linkeddata.es/)\n\nThe `-rewriteAll` option will tell WIDOCO to rewrite files if the new generate files are replacing existing files. Otherwise the tool will promt a window asking the user.\n\nThe `-crossRef` option will ONLY generate the overview and cross reference sections. The index document will NOT be generated. The htaccess, provenance page, etc., will not be generated unless requested by other flags. This flag in intended to be used only after a first version of the documentation exists.\n\nThe `-saveConfig` option allows you to save a configuration file on the \"configOutFile\" route with the properties of a given ontology.\n\nThe `-useCustomStyle` option allows exporting the documentation using alternate css files (thanks to Daniel Vila).\n\nThe `-lang` option allows showing the languages in which the documentation will be published (separated by \"-\"). Note that if the language is not supported, the system will load the labels in english. For example: en-pt-es\n\nThe `-includeImportedOntologies` flag indicates whether the terms of the imported ontologies of the current ontology should be documented as well or not.\n\nThe `-htaccess` flag creates a bundle for publication ready to be deployed on your apache server.\n\nThe `-webVowl` flag provides a link to a visualization based on WebVowl (http://vowl.visualdataweb.org/webvowl/index.html#).\n\nThe `-licensius` flag uses the Licensius web services (http://licensius.com/apidoc/index.html) to retrieve license metadata. Only works if the `-getOntologyMetadata` flag is enabled.\n\nThe `-ignoreIndividuals` flag allows you to ignore the named individuals in the ontology.\n\nThe `-includeAnnotationProperties` flag will include annotation properties defined in your ontology (by default they are not included)\n\nThe `-analytics` flag will add a code snippet for Google analytics to track your page. You need to add your code next to it. For example: UA-1234\n\nThe `-doNotDisplaySerializations` flag allows not displaying available serializations of the ontology.\n\nThe `-displayDirectImportsOnly` flag allows displaying only those imported ontologies that are directly imported in the ontology being documented.\n\nThe `-rewriteBase` flag allows changing the default rewrite base path (until the documentation folder). By default it is \"/\".\n\nThe `-excludeIntroduction` flag skips adding an introduction section.\n\nThe `-uniteSections` includes all sections in the same HTML document.\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -229,7 +229,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:19:52 GMT"
+            "date": "Wed, 18 May 2022 06:50:46 GMT"
         },
         "confidence": [
             1.0
@@ -239,7 +239,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:19:52 GMT"
+            "date": "Wed, 18 May 2022 06:50:46 GMT"
         },
         "confidence": [
             1.0

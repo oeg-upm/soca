@@ -1,0 +1,1 @@
+{"file": {"path": "/Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/somef-web/sm2kgweb.py", "fileNameBase": "sm2kgweb", "extension": "py"}, "dependencies": [{"from_module": "app", "import": "create_app", "type": "external"}], "body": {"calls": ["app.create_app"], "store_vars_calls": {"app": "create_app"}}, "is_test": false}

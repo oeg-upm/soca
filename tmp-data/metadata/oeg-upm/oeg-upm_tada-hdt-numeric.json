@@ -30,7 +30,7 @@
             "originalHeader": "Run tests",
             "excerpt": "`make; make test`\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -38,7 +38,7 @@
             "originalHeader": "Run tests with Docker",
             "excerpt": "`sh scripts/run_tests_in_docker.sh`\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -141,7 +141,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:23:23 GMT"
+            "date": "Wed, 18 May 2022 06:54:08 GMT"
         },
         "confidence": [
             1.0
@@ -151,7 +151,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:23:23 GMT"
+            "date": "Wed, 18 May 2022 06:54:08 GMT"
         },
         "confidence": [
             1.0

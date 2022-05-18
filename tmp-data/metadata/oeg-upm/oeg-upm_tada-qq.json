@@ -117,7 +117,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:23:44 GMT"
+            "date": "Wed, 18 May 2022 06:54:33 GMT"
         },
         "confidence": [
             1.0
@@ -127,7 +127,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:23:44 GMT"
+            "date": "Wed, 18 May 2022 06:54:33 GMT"
         },
         "confidence": [
             1.0
@@ -170,6 +170,19 @@
     },
     "releases": {
         "excerpt": [
+            {
+                "tagName": "v2.2.0",
+                "name": "v2.2.0",
+                "authorName": "ahmad88me",
+                "authorType": "User",
+                "body": "Add pref (slabel vs clus). Before the only option was slabel preference.",
+                "tarballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/tarball/v2.2.0",
+                "zipballUrl": "https://api.github.com/repos/oeg-upm/tada-qq/zipball/v2.2.0",
+                "htmlUrl": "https://github.com/oeg-upm/tada-qq/releases/tag/v2.2.0",
+                "url": "https://api.github.com/repos/oeg-upm/tada-qq/releases/66001868",
+                "dateCreated": "2022-05-04T10:01:07Z",
+                "datePublished": "2022-05-04T10:03:07Z"
+            },
             {
                 "tagName": "v2.1.0",
                 "name": "v2.1.0",
@@ -241,8 +254,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "library",
-        "run": "import tada-qq"
-    }
+    "inspect4py": {}
 }

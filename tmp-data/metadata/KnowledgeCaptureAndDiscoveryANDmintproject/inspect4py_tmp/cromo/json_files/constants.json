@@ -1,0 +1,1 @@
+{"file": {"path": "/Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/cromo/src/cromo/constants.py", "fileNameBase": "constants", "extension": "py"}, "functions": {"getLocalName": {"args": ["id"], "min_max_lineno": {"min_lineno": 19, "max_lineno": 21}, "calls": ["id.replace"]}}, "is_test": false}

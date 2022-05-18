@@ -14,7 +14,7 @@
                 "oeg-web"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -26,7 +26,7 @@
                 "Project setup"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -38,7 +38,7 @@
                 "Project setup"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -50,7 +50,7 @@
                 "Project setup"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -62,7 +62,7 @@
                 "Project setup"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -76,7 +76,7 @@
                 "Project setup"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -172,7 +172,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:02:17 GMT"
+            "date": "Wed, 18 May 2022 06:13:00 GMT"
         },
         "confidence": [
             1.0
@@ -182,7 +182,7 @@
     "forksCount": {
         "excerpt": {
             "count": 19,
-            "date": "Thu, 28 Apr 2022 16:02:17 GMT"
+            "date": "Wed, 18 May 2022 06:13:00 GMT"
         },
         "confidence": [
             1.0

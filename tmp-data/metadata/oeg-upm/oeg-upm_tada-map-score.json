@@ -30,7 +30,7 @@
             "originalHeader": "Run",
             "excerpt": "To run the application with docker, you can \nrun the script `run_docker.sh`\n\n*Note: there is only one database that is used for both, testing and live.*",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -118,7 +118,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:12:18 GMT"
+            "date": "Wed, 18 May 2022 06:34:31 GMT"
         },
         "confidence": [
             1.0
@@ -128,7 +128,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:12:18 GMT"
+            "date": "Wed, 18 May 2022 06:34:31 GMT"
         },
         "confidence": [
             1.0
@@ -184,8 +184,5 @@
         ],
         "technique": "File Exploration"
     },
-    "inspect4py": {
-        "software_type": "service",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/tada-map-score/app.py"
-    }
+    "inspect4py": {}
 }

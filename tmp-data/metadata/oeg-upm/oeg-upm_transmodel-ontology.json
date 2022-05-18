@@ -62,7 +62,7 @@
             "originalHeader": "Examples",
             "excerpt": "There will be some [queries](#) will be performed in a SPARQL endpoint to test and exemplify its operability. That's awesome!\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -151,7 +151,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 7,
-            "date": "Thu, 28 Apr 2022 16:12:26 GMT"
+            "date": "Wed, 18 May 2022 06:34:41 GMT"
         },
         "confidence": [
             1.0
@@ -161,7 +161,7 @@
     "forksCount": {
         "excerpt": {
             "count": 5,
-            "date": "Thu, 28 Apr 2022 16:12:26 GMT"
+            "date": "Wed, 18 May 2022 06:34:41 GMT"
         },
         "confidence": [
             1.0
@@ -259,39 +259,39 @@
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/ontology/tm-authorities.owl/documentation/ontology.ttl"
             },
             {
-                "uri": "Na903f35b15af468fa653225ac45541c3",
+                "uri": "N4ba12b685f37427f82970a101e3d6cae",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/kos/facilities.ttl/documentation/ontology.nt"
             },
             {
-                "uri": "Nacba4bcb38b84ebea5e31902041e0b88",
+                "uri": "Nca7a6bad685345e4bd56f93d01ea30ab",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/kos/facilities.ttl/documentation/ontology.xml"
             },
             {
-                "uri": "n7000e822877c419d9cdada37c06f5745b1",
+                "uri": "n26588c8dd47c4b779f2235dcbca769cab1",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/kos/facilities.ttl/documentation/ontology.ttl"
             },
             {
-                "uri": "N5e983c7e35714d3eb5f0375377397317",
+                "uri": "Ncfcd32a36577485d8481569c4742a425",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/kos/organisations/organisation-type.ttl/documentation/ontology.nt"
             },
             {
-                "uri": "Na5a4668a28ff41e68ab655fcf4eac56e",
+                "uri": "Nac114809affe43e289532b9bc846e6c1",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/kos/organisations/organisation-type.ttl/documentation/ontology.xml"
             },
             {
-                "uri": "nfcfa29ff75704a67be1de9223b4faa13b1",
+                "uri": "nc3f8fe367d7044369f9a6992b00319c9b1",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/kos/organisations/organisation-type.ttl/documentation/ontology.ttl"
             },
             {
-                "uri": "N258025ee82e94a91b1a25efa1a33714d",
+                "uri": "Nee98b57b65b5455090891efca9e98366",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/kos/journeys/daytype-properties-of-day.ttl/documentation/ontology.nt"
             },
             {
-                "uri": "N9de2a138d5944f23a52103f6ef85f432",
+                "uri": "N1428e1339427485e9c7562ef69301f46",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/kos/journeys/daytype-properties-of-day.ttl/documentation/ontology.xml"
             },
             {
-                "uri": "nb26399de100c4056aba2ebbb0dece117b1",
+                "uri": "n00fa20b0151e4a3cb2d847282a8758b4b1",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/transmodel-ontology/master/OnToology/kos/journeys/daytype-properties-of-day.ttl/documentation/ontology.ttl"
             },
             {

@@ -1,6 +1,15 @@
 {
     "description": [
         {
+            "excerpt": "Steps to deploy your maven artifact in your github project: \n",
+            "confidence": [
+                [
+                    0.920502945242395
+                ]
+            ],
+            "technique": "Supervised classification"
+        },
+        {
             "excerpt": "Personal Maven Repository",
             "confidence": [
                 1.0
@@ -13,7 +22,7 @@
             "originalHeader": "6) In any project that uses this library, you must include the reference to this repository:",
             "excerpt": "```xml\n<repositories>\n    <repository>\n        <id>PROJECT-NAME-mvn-repo</id>\n        <url>https://raw.github.com/USERNAME/PROJECT-NAME/mvn-repo/</url>\n        <snapshots>\n            <enabled>true</enabled>\n            <updatePolicy>always</updatePolicy>\n        </snapshots>\n    </repository>\n</repositories>\n```\nThat's all!!\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -23,7 +32,7 @@
             "originalHeader": "2) Get a personal access token from Github.",
             "excerpt": "Enter in Github: `Settings/Applications/Personal access tokens` and click on `Generate New Token`.  ",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -31,7 +40,7 @@
             "originalHeader": "6) In any project that uses this library, you must include the reference to this repository:",
             "excerpt": "```xml\n<repositories>\n    <repository>\n        <id>PROJECT-NAME-mvn-repo</id>\n        <url>https://raw.github.com/USERNAME/PROJECT-NAME/mvn-repo/</url>\n        <snapshots>\n            <enabled>true</enabled>\n            <updatePolicy>always</updatePolicy>\n        </snapshots>\n    </repository>\n</repositories>\n```\nThat's all!!\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -109,7 +118,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 15:54:21 GMT"
+            "date": "Wed, 18 May 2022 05:32:51 GMT"
         },
         "confidence": [
             1.0
@@ -119,7 +128,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 15:54:21 GMT"
+            "date": "Wed, 18 May 2022 05:32:51 GMT"
         },
         "confidence": [
             1.0

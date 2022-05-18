@@ -82,7 +82,7 @@
                 "Outputs"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -95,7 +95,7 @@
                 "github-action-morph-kgc"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -197,7 +197,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 4,
-            "date": "Thu, 28 Apr 2022 16:55:21 GMT"
+            "date": "Wed, 18 May 2022 07:43:06 GMT"
         },
         "confidence": [
             1.0
@@ -207,7 +207,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 16:55:21 GMT"
+            "date": "Wed, 18 May 2022 07:43:06 GMT"
         },
         "confidence": [
             1.0

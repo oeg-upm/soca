@@ -1,4 +1,16 @@
 {
+    "description": [
+        {
+            "excerpt": "# JSONPath-to-SPARQL \n",
+            "confidence": [
+                [
+                    0.9693233393948762
+                ]
+            ],
+            "technique": "Supervised classification",
+            "originalHeader": "JSONPath-to-SPARQL"
+        }
+    ],
     "longTitle": {
         "excerpt": "JSONPath-to-SPARQL",
         "confidence": [
@@ -89,7 +101,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:36:06 GMT"
+            "date": "Wed, 18 May 2022 07:15:16 GMT"
         },
         "confidence": [
             1.0
@@ -99,7 +111,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:36:06 GMT"
+            "date": "Wed, 18 May 2022 07:15:16 GMT"
         },
         "confidence": [
             1.0

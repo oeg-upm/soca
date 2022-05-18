@@ -29,7 +29,7 @@
                 "1 - Install Astrea"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -41,7 +41,7 @@
                 "1 - Install Astrea"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -52,7 +52,7 @@
                 "Astrea"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -73,7 +73,7 @@
                 "1 - Install Astrea"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -86,7 +86,7 @@
                 "Astrea"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -120,7 +120,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-02-05T21:44:39Z",
+        "excerpt": "2022-05-09T08:30:58Z",
         "confidence": [
             1.0
         ],
@@ -173,8 +173,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 5,
-            "date": "Thu, 28 Apr 2022 16:15:48 GMT"
+            "count": 7,
+            "date": "Wed, 18 May 2022 06:43:45 GMT"
         },
         "confidence": [
             1.0
@@ -184,7 +184,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 16:15:48 GMT"
+            "date": "Wed, 18 May 2022 06:43:45 GMT"
         },
         "confidence": [
             1.0

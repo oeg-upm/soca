@@ -1,0 +1,1 @@
+{"file": {"path": "/Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/sosen/text_embeddings/csv_to_kgtk_prefix.py", "fileNameBase": "csv_to_kgtk_prefix", "extension": "py"}, "dependencies": [{"import": "sys", "type": "external"}], "is_test": true}

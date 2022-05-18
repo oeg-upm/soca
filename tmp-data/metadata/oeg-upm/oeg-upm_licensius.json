@@ -71,13 +71,6 @@
         ],
         "technique": "Regular expression"
     },
-    "logo": {
-        "excerpt": "https://jitpack.io/v/oeg-upm/licensius.svg",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "license": {
         "excerpt": {
             "name": "MIT License",
@@ -161,7 +154,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 5,
-            "date": "Thu, 28 Apr 2022 15:57:47 GMT"
+            "date": "Wed, 18 May 2022 05:40:45 GMT"
         },
         "confidence": [
             1.0
@@ -171,7 +164,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 15:57:47 GMT"
+            "date": "Wed, 18 May 2022 05:40:45 GMT"
         },
         "confidence": [
             1.0

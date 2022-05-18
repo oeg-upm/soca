@@ -60,7 +60,7 @@
             "originalHeader": "Ontology network requirements",
             "excerpt": "The list of requirements of the ontology network is available [here](https://github.com/oeg-upm/devops-infra/blob/master/Requirements.xlsx). New requirements or issues can be submitted in [here](https://github.com/oeg-upm/devops-infra/issues)\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -94,7 +94,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-04-26T13:27:12Z",
+        "excerpt": "2022-05-05T12:22:37Z",
         "confidence": [
             1.0
         ],
@@ -137,8 +137,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 3,
-            "date": "Thu, 28 Apr 2022 16:29:53 GMT"
+            "count": 4,
+            "date": "Wed, 18 May 2022 07:05:20 GMT"
         },
         "confidence": [
             1.0
@@ -148,7 +148,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:29:53 GMT"
+            "date": "Wed, 18 May 2022 07:05:20 GMT"
         },
         "confidence": [
             1.0

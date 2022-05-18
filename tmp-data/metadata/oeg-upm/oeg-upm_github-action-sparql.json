@@ -117,7 +117,7 @@
                 "SPARQL-Validator"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -151,7 +151,7 @@
         "technique": "GitHub API"
     },
     "dateModified": {
-        "excerpt": "2022-04-24T18:37:28Z",
+        "excerpt": "2022-05-10T14:49:04Z",
         "confidence": [
             1.0
         ],
@@ -204,8 +204,8 @@
     },
     "stargazersCount": {
         "excerpt": {
-            "count": 5,
-            "date": "Thu, 28 Apr 2022 16:55:18 GMT"
+            "count": 6,
+            "date": "Wed, 18 May 2022 07:43:04 GMT"
         },
         "confidence": [
             1.0
@@ -215,7 +215,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:55:18 GMT"
+            "date": "Wed, 18 May 2022 07:43:04 GMT"
         },
         "confidence": [
             1.0

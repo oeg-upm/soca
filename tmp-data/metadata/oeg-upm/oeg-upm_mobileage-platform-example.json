@@ -116,7 +116,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:06:43 GMT"
+            "date": "Wed, 18 May 2022 06:21:44 GMT"
         },
         "confidence": [
             1.0
@@ -126,7 +126,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:06:43 GMT"
+            "date": "Wed, 18 May 2022 06:21:44 GMT"
         },
         "confidence": [
             1.0
@@ -157,8 +157,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "service",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/mobileage-platform-example/main.py"
-    }
+    "inspect4py": {}
 }

@@ -1,0 +1,1 @@
+{"file": {"path": "/Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/sosen/text_embeddings/convert_to_glove.py", "fileNameBase": "convert_to_glove", "extension": "py"}, "dependencies": [{"import": "sys", "type": "external"}], "body": {"calls": ["print"]}, "is_test": false}

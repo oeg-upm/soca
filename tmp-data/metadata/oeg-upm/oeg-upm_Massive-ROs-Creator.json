@@ -11,7 +11,7 @@
             "originalHeader": "Description:",
             "excerpt": "Massive ROs Creator is a python program that, given a group of search parameters, navigates to the Norwegian Research Data Archive (NIRD), realizes an advanced search and recovers data from the resources obtained by this search.\nThe program is set to insert this data into ROs in the ROHub platform. A functionality that will be added in posterior versions.\nThe program uses automated web navigation in the local machine where it is being excuted.\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -31,7 +31,7 @@
                 "Requirements:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -44,7 +44,7 @@
                 "Requirements:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -55,7 +55,7 @@
                 "Requirements:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -66,7 +66,7 @@
                 "Requirements:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -79,7 +79,7 @@
                 "Requirements:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -90,7 +90,7 @@
                 "Requirements:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -100,7 +100,7 @@
             "originalHeader": "How to use Massive-ROs-Creator?",
             "excerpt": "After fulfilling the requirements' mentioned before, please follow the next steps to excute the program:\n\n1. Download a local version of the project in your machine\n2. Modify entery parameters in the script called \"SearchEngine.py\" to match your search (domain, field....)\n3. Fill in the variable PATH with the local absolute path of your ChromeDriver in both SearchEngine.py and WebScraper.py scripts\n4. In your terminal navigate to your project folder then type and excute the next command: \\\n`py SearchEngine.py`\n5. A json file called \"ToScrape.json\" is created in your project folder. This file contains the IDs of the resourses matching the anterior search and their respective titles.\n6. In your terminal, supposing that you are still in the project's folder, type and excute the next command: \\\n`py WebScraper.py`\n7. 5. A json file called \"ROs.json\" is created in you project folder. This file contains the data of the resources recovered after navegating  the search results one by one.\n8. To be continued\n\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -188,7 +188,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:36:21 GMT"
+            "date": "Wed, 18 May 2022 07:15:35 GMT"
         },
         "confidence": [
             1.0
@@ -198,7 +198,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:36:21 GMT"
+            "date": "Wed, 18 May 2022 07:15:35 GMT"
         },
         "confidence": [
             1.0
@@ -231,8 +231,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/Massive-ROs-Creator/WebScraper.py"
-    }
+    "inspect4py": {}
 }

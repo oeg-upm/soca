@@ -27,7 +27,7 @@
                 "Valkyr-IE-Gate"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -47,7 +47,7 @@
                 "Valkyr-IE-Gate"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -59,7 +59,7 @@
                 "Requirements"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -72,7 +72,7 @@
                 "Valkyr-IE-Gate"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -83,7 +83,7 @@
                 "Valkyr-IE-Gate"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -161,7 +161,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:34:35 GMT"
+            "date": "Wed, 18 May 2022 07:12:45 GMT"
         },
         "confidence": [
             1.0
@@ -171,7 +171,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:34:35 GMT"
+            "date": "Wed, 18 May 2022 07:12:45 GMT"
         },
         "confidence": [
             1.0

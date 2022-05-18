@@ -13,13 +13,6 @@
                 1.0
             ],
             "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&amp;label=Star&amp;maxAge=2592000",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
         }
     ],
     "contact": [
@@ -31,7 +24,7 @@
                 "Usage"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -41,7 +34,7 @@
             "originalHeader": "Java API for Thing Descriptions of WoT (JDTs)",
             "excerpt": "[![Version](https://img.shields.io/badge/Version-0.2.2-orange)](https://github.com/oeg-upm/wot-jtd/releases)] [![Maven Central](https://img.shields.io/badge/Maven%20Central-v0.2.2-green)](https://search.maven.org/search?q=g:%22es.upm.fi.oeg%22%20AND%20a:%22wot-jtd%22) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://github.com/oeg-upm/wot-jtd/stargazers)\n\nThe JDT is an ORM implementation of the current [Thing Description](https://www.w3.org/TR/wot-thing-description/) model standardised by the [W3C Web of Things group](https://www.w3.org/WoT/). The current features are:\n * Serialise:\n\t * Serialise any Thing Description as a Java Object, i.e., a JDT\n\t * Serialise a JDT from a JSON-LD framed document\n\t * Serialise a JDT from a set of RDF triples\n * Round trip-translation:\n\t * Translate from a JSON-LD framed document into a set of equivalent RDF triples\n\t * Translate a set of RDF triples into its equivalent JSON-LD framed document\n * Validation \n\t * Validate a JTD using [SHACL shapes](https://www.w3.org/TR/shacl/)\n\t * Validate a JTD using [JSON schema](https://json-schema.org/)  **(coming soon)**\n\t * Validate a JTD according to the [restrictions specified in the standard](https://www.w3.org/TR/wot-thing-description/)  **(coming soon)**\n\n\nIf you have any feedback or feature suggestion, please let us know posting an issue with the label <span style=\"color:#EFA914\">**feedback**</span>\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -52,7 +45,7 @@
                 "Java API for Thing Descriptions of WoT (JDTs)"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -63,7 +56,7 @@
                 "Java API for Thing Descriptions of WoT (JDTs)"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -75,7 +68,7 @@
                 "Usage"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -88,7 +81,7 @@
                 "Serialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -101,7 +94,7 @@
                 "Serialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -114,7 +107,7 @@
                 "Serialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -127,7 +120,7 @@
                 "Serialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -140,7 +133,7 @@
                 "Deserialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -153,7 +146,7 @@
                 "Deserialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -166,7 +159,7 @@
                 "JDT validation"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -186,7 +179,7 @@
                 "Java API for Thing Descriptions of WoT (JDTs)"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -200,7 +193,7 @@
                 "Usage"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -214,7 +207,7 @@
                 "Usage"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -227,7 +220,7 @@
                 "Serialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -240,7 +233,7 @@
                 "Serialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -253,7 +246,7 @@
                 "Serialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -266,7 +259,7 @@
                 "Serialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -279,7 +272,7 @@
                 "Deserialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -292,7 +285,7 @@
                 "Deserialisation of JTDs:"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -305,7 +298,7 @@
                 "JDT validation"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -405,7 +398,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 12,
-            "date": "Thu, 28 Apr 2022 16:29:46 GMT"
+            "date": "Wed, 18 May 2022 07:05:12 GMT"
         },
         "confidence": [
             1.0
@@ -415,7 +408,7 @@
     "forksCount": {
         "excerpt": {
             "count": 3,
-            "date": "Thu, 28 Apr 2022 16:29:46 GMT"
+            "date": "Wed, 18 May 2022 07:05:12 GMT"
         },
         "confidence": [
             1.0

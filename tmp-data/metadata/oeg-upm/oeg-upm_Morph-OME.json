@@ -1,6 +1,15 @@
 {
     "description": [
         {
+            "excerpt": "An Online Mapping Editor to generate R2RML, RML, and YARRRML without writing a single line.\nIt also supports automatic suggestions of the subject and property columns using \nthe APIs of . \n",
+            "confidence": [
+                [
+                    0.9868307138813188
+                ]
+            ],
+            "technique": "Supervised classification"
+        },
+        {
             "excerpt": "Online Mapping Editor",
             "confidence": [
                 1.0
@@ -13,7 +22,7 @@
             "originalHeader": "To cite",
             "excerpt": "```\n@software{alobaid_ahmad_2020_3764202,\n  author       = {Alobaid, Ahmad and\n                  Corcho, Oscar},\n  title        = {OME},\n  month        = apr,\n  year         = 2020,\n  publisher    = {Zenodo},\n  doi          = {10.5281/zenodo.3764202},\n  url          = {https://doi.org/10.5281/zenodo.3764202}\n}\n```\n\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -24,6 +33,17 @@
             ],
             "technique": "Regular expression",
             "doi": "https://doi.org/10.5281/zenodo.3764202"
+        }
+    ],
+    "installation": [
+        {
+            "excerpt": "\n# How to install it locally\n1. Create virtual environment  (recommended by not required) e.g. ```virtualenv -p /usr/bin/python2.7 .venv```\n1. Access the virtual environment using `source .venv/bin/activate`\n1. Install pip \n1. Install requirements BASH2*\n1. Set `TADA_HOST` to the url of the pytada_hdt_entity host. For example (`export TADA_HOST=\"http://127.0.0.1:5001/`)\n1. Run the application BASH3*\n1. Open the browser to the url  \n",
+            "confidence": [
+                [
+                    0.9817223381636894
+                ]
+            ],
+            "technique": "Supervised classification"
         }
     ],
     "longTitle": {
@@ -155,7 +175,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 6,
-            "date": "Thu, 28 Apr 2022 16:07:23 GMT"
+            "date": "Wed, 18 May 2022 06:23:10 GMT"
         },
         "confidence": [
             1.0
@@ -165,7 +185,7 @@
     "forksCount": {
         "excerpt": {
             "count": 2,
-            "date": "Thu, 28 Apr 2022 16:07:23 GMT"
+            "date": "Wed, 18 May 2022 06:23:10 GMT"
         },
         "confidence": [
             1.0
@@ -269,8 +289,5 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {
-        "software_type": "service",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/Morph-OME/app.py"
-    }
+    "inspect4py": {}
 }

@@ -25,30 +25,9 @@
         ],
         "technique": "Regular expression"
     },
-    "logo": {
-        "excerpt": "https://img.shields.io/github/issues/nandana/loupe-api.svg",
-        "confidence": [
-            1.0
-        ],
-        "technique": "Regular expression"
-    },
     "image": [
         {
             "excerpt": "https://raw.githubusercontent.com/nandana/loupe-api/master/src/main/resources/img/api-docs.png",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://img.shields.io/maintenance/yes/2017.svg?maxAge=2592000?style=plastic",
-            "confidence": [
-                1.0
-            ],
-            "technique": "Regular expression"
-        },
-        {
-            "excerpt": "https://travis-ci.org/ldp4j/ldp4j.svg?branch=master",
             "confidence": [
                 1.0
             ],
@@ -138,7 +117,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:15:18 GMT"
+            "date": "Wed, 18 May 2022 06:42:57 GMT"
         },
         "confidence": [
             1.0
@@ -148,7 +127,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:15:18 GMT"
+            "date": "Wed, 18 May 2022 06:42:57 GMT"
         },
         "confidence": [
             1.0

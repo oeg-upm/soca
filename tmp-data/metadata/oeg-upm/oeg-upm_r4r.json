@@ -116,7 +116,7 @@
             "originalHeader": "How to Cite R4R",
             "excerpt": "We kindly ask that any published research making use of the R4R framework cites our paper listed below:\n\nBadenes-Olmedo, C., Espinoza-Arias, P., Corcho, O.: R4R: Template-based REST API Framework for RDF Knowledge Graphs. In: ISWC 2021: 20th International Semantic Web Conference. Demo Track. CEUR Workshop Proceedings.\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -208,7 +208,7 @@
             "originalHeader": "Acknowledgments",
             "excerpt": "This research was supported by the Spanish national project Datos 4.0, and by the European Union's Horizon 2020 research and innovation programme under grant agreement No 780247: [TheyBuyForYou](http://theybuyforyou.eu).\n",
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -221,7 +221,7 @@
                 "Restful-API for RDF data (r4r)"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -309,7 +309,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:12:53 GMT"
+            "date": "Wed, 18 May 2022 06:36:38 GMT"
         },
         "confidence": [
             1.0
@@ -319,7 +319,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Thu, 28 Apr 2022 16:12:53 GMT"
+            "date": "Wed, 18 May 2022 06:36:38 GMT"
         },
         "confidence": [
             1.0
