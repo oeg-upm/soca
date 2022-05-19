@@ -112,7 +112,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 18 May 2022 05:18:51 GMT"
+            "date": "Wed, 18 May 2022 21:38:49 GMT"
         },
         "confidence": [
             1.0
@@ -122,7 +122,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 18 May 2022 05:18:51 GMT"
+            "date": "Wed, 18 May 2022 21:38:49 GMT"
         },
         "confidence": [
             1.0
@@ -338,5 +338,8 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "library",
+        "run": "import topoflow"
+    }
 }

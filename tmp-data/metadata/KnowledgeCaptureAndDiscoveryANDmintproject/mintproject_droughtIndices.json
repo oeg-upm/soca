@@ -179,7 +179,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 10,
-            "date": "Wed, 18 May 2022 05:17:32 GMT"
+            "date": "Wed, 18 May 2022 21:37:01 GMT"
         },
         "confidence": [
             1.0
@@ -189,7 +189,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Wed, 18 May 2022 05:17:32 GMT"
+            "date": "Wed, 18 May 2022 21:37:01 GMT"
         },
         "confidence": [
             1.0
@@ -300,5 +300,8 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/droughtIndices/DataTransformation/regrid_to_csv.py"
+    }
 }

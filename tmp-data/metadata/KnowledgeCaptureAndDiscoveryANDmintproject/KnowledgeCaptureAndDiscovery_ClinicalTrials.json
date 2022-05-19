@@ -72,7 +72,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 18 May 2022 05:05:27 GMT"
+            "date": "Wed, 18 May 2022 21:21:50 GMT"
         },
         "confidence": [
             1.0
@@ -82,7 +82,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 18 May 2022 05:05:27 GMT"
+            "date": "Wed, 18 May 2022 21:21:50 GMT"
         },
         "confidence": [
             1.0
@@ -115,5 +115,8 @@
             "format": "Docker file"
         }
     ],
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "service",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/ClinicalTrials/comparison-application-main/middleware/api.py"
+    }
 }

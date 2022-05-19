@@ -232,7 +232,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 18 May 2022 06:33:03 GMT"
+            "date": "Thu, 19 May 2022 10:09:52 GMT"
         },
         "confidence": [
             1.0
@@ -242,7 +242,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 18 May 2022 06:33:03 GMT"
+            "date": "Thu, 19 May 2022 10:09:52 GMT"
         },
         "confidence": [
             1.0
@@ -307,5 +307,8 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "service",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/ttla/app.py"
+    }
 }

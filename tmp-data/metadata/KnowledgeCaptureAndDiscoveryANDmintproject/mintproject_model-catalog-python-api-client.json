@@ -197,7 +197,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 2,
-            "date": "Wed, 18 May 2022 05:12:01 GMT"
+            "date": "Wed, 18 May 2022 21:31:05 GMT"
         },
         "confidence": [
             1.0
@@ -207,7 +207,7 @@
     "forksCount": {
         "excerpt": {
             "count": 1,
-            "date": "Wed, 18 May 2022 05:12:01 GMT"
+            "date": "Wed, 18 May 2022 21:31:05 GMT"
         },
         "confidence": [
             1.0
@@ -652,5 +652,8 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "library",
+        "run": "import modelcatalog-api"
+    }
 }
