@@ -29,7 +29,7 @@ def fetch(repos_csv, output, use_inspect4py, verbose):
     for repo_url in progressbar(repos_url, redirect_stdout=True):
 
         ##################################################################
-        # SOMEF
+        # somef
 
         try:
             print(f"Extracting metadata from {repo_url}")
@@ -53,19 +53,26 @@ def fetch(repos_csv, output, use_inspect4py, verbose):
         # inspect4py
 
         if use_inspect4py and 'languages' in metadata and 'Python' in metadata["languages"]["excerpt"]:
+
             try:
+                git_clone_dir = f'{str(repo_url).split("/")[-1]}'
                 metadata["inspect4py"] = {}
+
                 if verbose:
                     subprocess.call(
-                                    f'cd {output} && git clone {repo_url} && inspect4py -i {str(repo_url).split("/")[-1]} -o inspect4py_tmp -si && cd ..', 
+                                    f'cd {output} && git clone {repo_url} && inspect4py -i {git_clone_dir} -o inspect4py_tmp -si && cd ..', 
                                     shell = True
                                 )
                 else:
                     subprocess.call(
-                                        f'cd {output} && git clone {repo_url} && inspect4py -i {str(repo_url).split("/")[-1]} -o inspect4py_tmp -si && cd ..', 
+                                        f'cd {output} && git clone {repo_url} && inspect4py -i {git_clone_dir} -o inspect4py_tmp -si && cd ..', 
                                         shell = True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
                                     )
-                if path.exists(f'{output}/inspect4py_tmp/directory_info.json'):        
+
+                git_clone_dir = f'{output}/' + git_clone_dir
+
+                if path.exists(f'{output}/inspect4py_tmp/directory_info.json'):
+
                     with open(f'{output}/inspect4py_tmp/directory_info.json') as f:
                         ins4py = json.load(f)
 
@@ -77,40 +84,54 @@ def fetch(repos_csv, output, use_inspect4py, verbose):
                         and 'run' in ins4py["software_invocation"][0]):
                         metadata["inspect4py"]["run"] = ins4py["software_invocation"][0]["run"]
 
-                shutil.rmtree(f'{output}/inspect4py_tmp', ignore_errors=False, onerror=None)
-                shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
+                else: print(f'ERROR: inspect4py did not create "{output}/inspect4py_tmp/directory_info.json" file. NO python metadata extracted.')
+                
+                if path.exists(f'{output}/inspect4py_tmp'):
+                    shutil.rmtree(f'{output}/inspect4py_tmp', ignore_errors=False, onerror=None)
+
+                if path.exists(git_clone_dir):   
+                    shutil.rmtree(git_clone_dir, ignore_errors=False, onerror=None)
+
             except KeyboardInterrupt:
-                shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
+
+                if path.exists(git_clone_dir):   
+                    shutil.rmtree(git_clone_dir, ignore_errors=False, onerror=None)
+                    
                 exit()
+
             except:
-                shutil.rmtree(f'{output}/{str(repo_url).split("/")[-1]}', ignore_errors=False, onerror=None)
-                print(f"ERROR: Could not run inspect4py for {repo_url}: Error in {'sowftware_type' if 'sowftware_type' not in metadata['inspect4py'] else ''} {'software_invocation' if 'run' not in metadata['inspect4py'] else ''}")
+
+                if path.exists(git_clone_dir):   
+                    shutil.rmtree(git_clone_dir, ignore_errors=False, onerror=None)
+
+                print(f"ERROR: Could not run inspect4py for {repo_url}")
                 traceback.print_exc()
                 failed_repos_i4p.append(repo_url)
+        
 
-            ##################################################################
-            # How to add more metadata extraction tools
-            # 1. Extract metadata and save it into json file, se below.
-            # 2. Use that extracted metadata in metadata.py
-            #
-            #    Ultimately, the metadata should be present in 'def html_repo_icons(self)'
-            #    But is highly encouraged to use the helper function such as self.notebook(), self.docker(), etc,
-            #    to extract the metadata from the .json created in this file.
+        ##################################################################
+        # How to add more metadata extraction tools
+        # 1. Extract metadata and save it into json file, se below.
+        # 2. Use that extracted metadata in metadata.py
+        #
+        #    Ultimately, the metadata should be present in 'def html_repo_icons(self)'
+        #    But is highly encouraged to use the helper function such as self.notebook(), self.docker(), etc,
+        #    to extract the metadata from the .json created in this file.
 
-            # if flag_tool selected:
-            #   try:
-            #       result = run_tool()
-            #       metadata['tool_name'] = result
-            #   except KeyboardInterrupt:
-            #       exit()
-            #   except:
-            #       traceback.print_exc()
-            #       print(f"ERROR: Could not run XX tool for {repo_url}")
-            #       failed_repos.append(repo_url)
-            #       continue
-            #
+        # if flag_tool selected:
+        #   try:
+        #       result = run_tool()
+        #       metadata['tool_name'] = result
+        #   except KeyboardInterrupt:
+        #       exit()
+        #   except:
+        #       traceback.print_exc()
+        #       print(f"ERROR: Could not run XX tool for {repo_url}")
+        #       failed_repos.append(repo_url)
+        #       continue
+        #
 
-
+        # Save metadata
         repo_full_name = (repo_url[19:]).replace("/", "_").replace(".","-")
         with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
             json.dump(metadata, repo_metadata, indent = 4)
