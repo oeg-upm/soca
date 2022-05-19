@@ -110,7 +110,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Wed, 18 May 2022 04:52:05 GMT"
+            "date": "Wed, 18 May 2022 21:08:23 GMT"
         },
         "confidence": [
             1.0
@@ -120,7 +120,7 @@
     "forksCount": {
         "excerpt": {
             "count": 5,
-            "date": "Wed, 18 May 2022 04:52:05 GMT"
+            "date": "Wed, 18 May 2022 21:08:23 GMT"
         },
         "confidence": [
             1.0
@@ -608,5 +608,8 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "library",
+        "run": "import wings-labkey-integration"
+    }
 }

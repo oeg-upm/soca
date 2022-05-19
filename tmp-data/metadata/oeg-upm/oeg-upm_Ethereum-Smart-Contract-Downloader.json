@@ -33,7 +33,7 @@
                 "Ethereum-Smart-Contract-Downloader"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -45,7 +45,7 @@
                 "Quick Start"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -57,7 +57,7 @@
                 "Quick Start"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -69,7 +69,7 @@
                 "Quick Start"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         },
@@ -81,7 +81,7 @@
                 "Quick Start"
             ],
             "confidence": [
-                1
+                1.0
             ],
             "technique": "Header extraction"
         }
@@ -169,7 +169,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:36:41 GMT"
+            "date": "Thu, 19 May 2022 11:07:04 GMT"
         },
         "confidence": [
             1.0
@@ -179,7 +179,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Thu, 28 Apr 2022 16:36:41 GMT"
+            "date": "Thu, 19 May 2022 11:07:04 GMT"
         },
         "confidence": [
             1.0

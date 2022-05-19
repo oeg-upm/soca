@@ -155,7 +155,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 4,
-            "date": "Wed, 18 May 2022 05:24:12 GMT"
+            "date": "Wed, 18 May 2022 21:46:31 GMT"
         },
         "confidence": [
             1.0
@@ -165,7 +165,7 @@
     "forksCount": {
         "excerpt": {
             "count": 4,
-            "date": "Wed, 18 May 2022 05:24:12 GMT"
+            "date": "Wed, 18 May 2022 21:46:31 GMT"
         },
         "confidence": [
             1.0
@@ -514,5 +514,10 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "package",
+        "run": [
+            "mic"
+        ]
+    }
 }

@@ -266,7 +266,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 24,
-            "date": "Wed, 18 May 2022 06:35:26 GMT"
+            "date": "Thu, 19 May 2022 10:11:54 GMT"
         },
         "confidence": [
             1.0
@@ -276,7 +276,7 @@
     "forksCount": {
         "excerpt": {
             "count": 7,
-            "date": "Wed, 18 May 2022 06:35:26 GMT"
+            "date": "Thu, 19 May 2022 10:11:54 GMT"
         },
         "confidence": [
             1.0
@@ -415,5 +415,8 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "library",
+        "run": "import mapeathor"
+    }
 }

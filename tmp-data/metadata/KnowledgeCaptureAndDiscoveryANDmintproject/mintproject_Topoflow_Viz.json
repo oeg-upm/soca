@@ -158,7 +158,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 18 May 2022 05:17:17 GMT"
+            "date": "Wed, 18 May 2022 21:36:39 GMT"
         },
         "confidence": [
             1.0
@@ -168,7 +168,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 18 May 2022 05:17:17 GMT"
+            "date": "Wed, 18 May 2022 21:36:39 GMT"
         },
         "confidence": [
             1.0
@@ -232,5 +232,8 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/Topoflow_Viz/topo_viz.py"
+    }
 }

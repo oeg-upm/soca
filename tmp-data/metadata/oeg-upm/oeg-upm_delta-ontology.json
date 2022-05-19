@@ -107,7 +107,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 1,
-            "date": "Wed, 18 May 2022 06:22:50 GMT"
+            "date": "Thu, 19 May 2022 09:52:21 GMT"
         },
         "confidence": [
             1.0
@@ -117,7 +117,7 @@
     "forksCount": {
         "excerpt": {
             "count": 4,
-            "date": "Wed, 18 May 2022 06:22:50 GMT"
+            "date": "Thu, 19 May 2022 09:52:21 GMT"
         },
         "confidence": [
             1.0
@@ -134,27 +134,27 @@
     "ontologies": {
         "excerpt": [
             {
-                "uri": "Ne676576a839741618cfb22aa474ee462",
+                "uri": "N185b308209c9470090501d213c916c1e",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/tests/testsuite.ttl/documentation/ontology.nt"
             },
             {
-                "uri": "N609c8c0c419a4d9f919ad27435e2653a",
+                "uri": "Nd72cc22e2420447db5631a32a11a1293",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/tests/testsuite.ttl/documentation/ontology.xml"
             },
             {
-                "uri": "n52542a0b429f41e1b86c2cfccd3c6b0ab1",
+                "uri": "n1da9337616534903a5c1d4d224a5bb94b1",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/tests/testsuite.ttl/documentation/ontology.ttl"
             },
             {
-                "uri": "N2654e40c2b12446e9dfda3bbe3fecb35",
+                "uri": "Nb6cc0130eac84c339a9a893d3e6e84ca",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/shapes/shapes.ttl/documentation/ontology.nt"
             },
             {
-                "uri": "Nea0165b8c56140ada8580ac287cb2e32",
+                "uri": "N762c80f602764842a54acf3755d27419",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/shapes/shapes.ttl/documentation/ontology.xml"
             },
             {
-                "uri": "ne6e000d3a2624910b0f0afb00234210db1",
+                "uri": "nfaced2c76b654c359f3df47b382d8f43b1",
                 "file_url": "https://raw.githubusercontent.com/oeg-upm/delta-ontology/master/OnToology/shapes/shapes.ttl/documentation/ontology.ttl"
             },
             {

@@ -1,1 +1,0 @@
-{"file": {"path": "/Users/dakixr/Desktop/github/scc/tmp-data/metadata/LinkedEarth/ec_workshops_py/exercises/exc_03_01.py", "fileNameBase": "exc_03_01", "extension": "py"}, "dependencies": [{"import": "________", "alias": "np", "type": "external"}], "body": {"calls": ["________._______", "print", "print"], "store_vars_calls": {"time": "np._______"}}, "is_test": false}

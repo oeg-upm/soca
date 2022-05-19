@@ -123,7 +123,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 3,
-            "date": "Wed, 18 May 2022 05:04:20 GMT"
+            "date": "Wed, 18 May 2022 21:20:35 GMT"
         },
         "confidence": [
             1.0
@@ -133,7 +133,7 @@
     "forksCount": {
         "excerpt": {
             "count": 6,
-            "date": "Wed, 18 May 2022 05:04:20 GMT"
+            "date": "Wed, 18 May 2022 21:20:35 GMT"
         },
         "confidence": [
             1.0
@@ -191,5 +191,8 @@
         "technique": "File Exploration",
         "format": "jupyter notebook"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/SMA/cluster_analysis/cluster.py"
+    }
 }

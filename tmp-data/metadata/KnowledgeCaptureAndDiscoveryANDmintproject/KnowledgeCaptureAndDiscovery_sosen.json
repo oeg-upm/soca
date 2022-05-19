@@ -218,7 +218,7 @@
     "stargazersCount": {
         "excerpt": {
             "count": 4,
-            "date": "Wed, 18 May 2022 05:02:12 GMT"
+            "date": "Wed, 18 May 2022 21:18:31 GMT"
         },
         "confidence": [
             1.0
@@ -228,7 +228,7 @@
     "forksCount": {
         "excerpt": {
             "count": 0,
-            "date": "Wed, 18 May 2022 05:02:12 GMT"
+            "date": "Wed, 18 May 2022 21:18:31 GMT"
         },
         "confidence": [
             1.0
@@ -338,5 +338,8 @@
         ],
         "technique": "GitHub API"
     },
-    "inspect4py": {}
+    "inspect4py": {
+        "software_type": "script",
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/sosen/sosen/data_to_graph.py"
+    }
 }
