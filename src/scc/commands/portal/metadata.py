@@ -45,9 +45,7 @@ class metadata(object):
                 ),
                 other_field='class="m_ontology"'
             )
-        elif repo_type in ['package','library','service','script']:
-            return f'<div class="grey-color-svg" style="display:flex;" {self.add_tooltip("left",f"Python {repo_type}")}><img src="{self.base}language_icons/python.svg" alt="repo-type" class="repo-type"></div>'
-        else: return ''
+        return f'<div class="grey-color-svg" style="display:flex;" {self.add_tooltip("left",f"Python {repo_type}")}><img src="{self.base}language_icons/python.svg" alt="repo-type" class="repo-type"></div>'
 
     def icon_star(self):
         return f"{self.base}repo_icons/star.png"
