@@ -1,7 +1,7 @@
 import unittest
 from unittest import TestCase, mock
 
-class test_scc(TestCase):
+class test_soca(TestCase):
     pass
 
 if __name__ == '__main__':

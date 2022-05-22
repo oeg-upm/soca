@@ -246,6 +246,6 @@
     },
     "inspect4py": {
         "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/FloodSeverityIndex/FloodSeverityIndex.py"
+        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/FloodSeverityIndex/FloodSeverityIndex.py"
     }
 }

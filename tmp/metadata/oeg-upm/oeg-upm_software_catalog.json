@@ -1,7 +1,7 @@
 {
     "description": [
         {
-            "excerpt": "The commands outlined above will re-generate the full catalog. However, it's possible to curate the list of repositories on top of which `scc` will be run on. The folder `repositories` contain an initial pass donde by scc with the full contents of the oeg organization. Simply modify the file `oeg-upm.csv` and add the repositories you are interested in. \n",
+            "excerpt": "The commands outlined above will re-generate the full catalog. However, it's possible to curate the list of repositories on top of which `soca` will be run on. The folder `repositories` contain an initial pass donde by soca with the full contents of the oeg organization. Simply modify the file `oeg-upm.csv` and add the repositories you are interested in. \n",
             "confidence": [
                 [
                     0.9290746857689661
