@@ -224,6 +224,6 @@
     },
     "inspect4py": {
         "software_type": "service",
-        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/oeg-upm/OnToology-view-mock/app.py"
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp/metadata/oeg-upm/OnToology-view-mock/app.py"
     }
 }

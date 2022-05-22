@@ -235,6 +235,6 @@
     },
     "inspect4py": {
         "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/P4ML-UI/dsbox-profiling/dsbox/datapreprocessing/profiler/data_profile.py"
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/P4ML-UI/dsbox-profiling/dsbox/datapreprocessing/profiler/data_profile.py"
     }
 }

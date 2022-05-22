@@ -133,6 +133,6 @@
     },
     "inspect4py": {
         "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/WikiSatellites/Crime Dataset properties/generate_nodes.py"
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/WikiSatellites/Crime Dataset properties/generate_nodes.py"
     }
 }
