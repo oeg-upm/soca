@@ -134,8 +134,9 @@ class metadata(object):
                     title = 'License',
                     body = self.html_license(license),
                     markdown_translation=False),
-                    other_field=f'class="ref-license" data-url="{safe_dic(license,"url")}"'
-                    )
+                other_field = f'data-url="{safe_dic(license,"url")}"',
+                extra_class = 'ref-license' 
+                )
         
         notebook = self.notebook()
         if notebook:
@@ -307,8 +308,8 @@ class metadata(object):
         """Supported placements: ['bottom', 'up', 'right', 'left']"""
         return f'''data-toggle="tooltip" data-placement="{placement}" title="{tooltip_text}" alt="{tooltip_text}"'''
     
-    def icon_wrapper(self, icon_html, modal_html = None, other_field = None):
-        return f"""<div {other_field if other_field else ''} style="cursor: pointer;">
+    def icon_wrapper(self, icon_html, modal_html = None, other_field = None, extra_class = None):
+        return f"""<div {other_field if other_field else ''} class="icon-wrapper{' '+extra_class if extra_class else ''}">
                         <div class="icon">{icon_html}</div>
                         {modal_html if modal_html else ''}
                     </div>"""

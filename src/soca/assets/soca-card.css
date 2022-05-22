@@ -30,6 +30,8 @@
 .soca-card .float-right{justify-content: flex-end;}
 .soca-card .grey-color-svg{filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);}
 .soca-card .title:hover{text-decoration: underline;}
+.soca-card .ref-repo-icons{flex-wrap: wrap;}
+.soca-card .icon-wrapper {cursor: pointer; width: 2rem; display: flex; align-items: center; justify-content: center;}
 .highlight *{font-family: monospace; font-size: large;}
 .modal {display: none;position: fixed;z-index: 1;padding-top: 20vh;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4);}
 .modal-content {background-color: #e0e0e0;margin: auto;padding: 20px;border: 0px;width: 90%;max-width: 40rem;border-radius: 1rem;}
