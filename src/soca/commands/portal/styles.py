@@ -1,4 +1,4 @@
-from scc import base_dir
+from soca import base_dir
 
 def singleton(class_):
     instances = {}
@@ -12,7 +12,7 @@ def singleton(class_):
 class styles(object):
 
 	def __init__(self):
-		with open(f"{base_dir}/assets/scc-card.css") as f_rules:
+		with open(f"{base_dir}/assets/soca-card.css") as f_rules:
 			self.rules = ''.join(f_rules.readlines())
 
 

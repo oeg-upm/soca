@@ -1,6 +1,6 @@
-from scc.commands.portal import card
+from soca.commands.portal import card
 from somef.cli import cli_get_data
-from scc import HiddenPrints
+from soca import HiddenPrints
 import traceback
 import os
 from html2image import Html2Image

@@ -1,4 +1,4 @@
-from scc import base_dir
+from soca import base_dir
 from pathlib import Path
 from os import listdir
 from os.path import isfile, join
@@ -16,7 +16,7 @@ class metadata(object):
     def __init__(self, repo_metadata_dir, repo_metadata, embedded = False):
         self.repo_metadata_dir = os.path.abspath(repo_metadata_dir)
         self.md = repo_metadata
-        self.base = 'https://github.com/dakixr/scc/raw/main/src/scc/assets/' if embedded else ''
+        self.base = 'https://github.com/dakixr/soca/raw/main/src/soca/assets/' if embedded else ''
 
     # Assets ####################################################
     def logo(self):
@@ -52,6 +52,9 @@ class metadata(object):
 
     def icon_releases(self):
         return f"{self.base}repo_icons/releases.png"
+
+    def html_description(self):
+        return f'<span>{mistune.html(self.description())}</span>'
 
     def html_languages(self):
 
@@ -337,7 +340,7 @@ class metadata(object):
         ######################
 
         if 'inspect4py' in self.md and "software_type" in self.md["inspect4py"]:
-            return self.md["inspect4py"]["software_type"] # package, library, service, script
+            return self.md["inspect4py"]["software_type"]
 
         # web and ontology
         ######################
@@ -523,7 +526,8 @@ class metadata(object):
             if not description:
                 description = 'No description available yet.'
 
-        return f'<span>{mistune.html(description)}</span>'
+        return description
+    
 
     def license(self):
         return safe_dic(safe_dic(self.md,'license'),'excerpt')

@@ -5,7 +5,7 @@ from progressbar import progressbar
 from somef.cli import cli_get_data
 import os
 from os import path
-from scc import HiddenPrints
+from soca import HiddenPrints
 import subprocess
 import shutil
 import traceback

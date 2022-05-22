@@ -9,8 +9,8 @@ from somef import __version__ as somef_version
 from . import card
 from . import scripts
 from . import metadata
-from scc import base_dir
-from scc import __version__
+from soca import base_dir
+from soca import __version__
 
 
 def generate(repo_metadata_dir, output, title):
@@ -76,7 +76,7 @@ def copy_assets(output):
     shutil.copy(f"{base_dir}/assets/app.js", f"{output}")
 
     # Copy css files
-    shutil.copy(f"{base_dir}/assets/scc-card.css", f"{output}")
+    shutil.copy(f"{base_dir}/assets/soca-card.css", f"{output}")
     shutil.copy(f"{base_dir}/assets/styles.css", f"{output}")
 
     # Copy About page
@@ -88,7 +88,7 @@ def add_last_updated_date(soup):
     loc = soup.find(id="portal-last-updated")
     loc.string = f"Last updated on {datetime.today().strftime('%d/%m/%Y')}"
     loc = soup.find(id="portal-versions")
-    loc.append(BeautifulSoup(f"Created with <a href=\"https://github.com/oeg-upm/scc/\" target=\"_blank\">scc</a> {__version__} and <a href=\"https://github.com/KnowledgeCaptureAndDiscovery/somef\" target=\"_blank\">somef</a> {somef_version}"
+    loc.append(BeautifulSoup(f"Created with <a href=\"https://github.com/oeg-upm/soca/\" target=\"_blank\">soca</a> {__version__} and <a href=\"https://github.com/KnowledgeCaptureAndDiscovery/somef\" target=\"_blank\">somef</a> {somef_version}"
         ,'html.parser'))
     
 

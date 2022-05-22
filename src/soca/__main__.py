@@ -7,7 +7,7 @@ CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 @click.version_option(__version__)
 def cli():
     """
-    SCC (Software Catalog Creator)\n
+    SOCA (Software Catalog Creator)\n
     Automatically generates a searchable portal for every repository of an organization/s or user/s, which is easy to host.\n
 
     Usage:
@@ -29,7 +29,7 @@ def cli():
 @click.option('--not_disabled','-nd', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not disabled")
 def fetch(input, output, repo_type, not_archived, not_forked, not_disabled):
     """Retrieve all organization/s or user/s repositories"""
-    from scc.commands import fetch_repositories
+    from soca.commands import fetch_repositories
     fetch_repositories.fetch(input, output, repo_type, not_archived, not_forked, not_disabled)
 
 @cli.command()
@@ -39,7 +39,7 @@ def fetch(input, output, repo_type, not_archived, not_forked, not_disabled):
 @click.option('--verbose','-v', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not archived")
 def extract(input, output, inspect4py, verbose):
     """Fetch and save metadata from introduced repos"""
-    from scc.commands import extract_metadata
+    from soca.commands import extract_metadata
     extract_metadata.fetch(input, output, inspect4py, verbose)
 
 @cli.command()
@@ -48,7 +48,7 @@ def extract(input, output, inspect4py, verbose):
 @click.option('--title','-t', default="Software Catalog", show_default=True, help="Portal's title", metavar='<title>')
 def portal(input, output, title):
     """Build a portal with a minimalist design"""
-    from scc.commands.portal import portal
+    from soca.commands.portal import portal
     portal.generate(input, output, title)
 
 @cli.command()
@@ -58,6 +58,6 @@ def portal(input, output, title):
 @click.option('--png', 'save_as', flag_value='png', default=False, show_default=True, help="Save card as a png")
 def card(input, output, save_as):
     """Create a stand-alone card ready to be embedded in a website"""
-    from scc.commands import single_card
+    from soca.commands import single_card
     single_card.create(input, output, save_as)
 

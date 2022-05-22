@@ -347,6 +347,6 @@
     },
     "inspect4py": {
         "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/morph-csv/morphcsv.py"
+        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/oeg-upm/morph-csv/morphcsv.py"
     }
 }

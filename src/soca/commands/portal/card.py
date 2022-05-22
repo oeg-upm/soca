@@ -60,7 +60,7 @@ def html_view(repo_metadata_dir, repo_metadata, embedded, minify=True):
     sc = scripts.scripts()
 
     html_card = f"""
-    <article class="scc-card" id="{md.repo_url()}">
+    <article class="soca-card" id="{md.repo_url()}">
         <div class="card-row">
             <div class="card-col">
                 <div class="flex-horizontal">
@@ -69,7 +69,7 @@ def html_view(repo_metadata_dir, repo_metadata, embedded, minify=True):
                     </a>
                     {md.copy_btn()}
                 </div>
-                <div class="description">{md.description()}{md.modal(md.title(), md.description())}</div>
+                <div class="description">{md.html_description()}{md.modal(title = md.title(), body = md.html_description())}</div>
             </div>
             <div>
                 <div style="min-height: 6rem;display: flex;align-items: center;justify-content: center;">

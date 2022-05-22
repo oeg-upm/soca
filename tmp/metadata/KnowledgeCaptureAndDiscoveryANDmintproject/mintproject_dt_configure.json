@@ -142,6 +142,6 @@
     ],
     "inspect4py": {
         "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/dt_configure/topoflow_climate.py"
+        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/dt_configure/topoflow_climate.py"
     }
 }

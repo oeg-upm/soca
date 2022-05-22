@@ -313,6 +313,6 @@
     },
     "inspect4py": {
         "software_type": "service",
-        "run": "python /Users/dakixr/Desktop/github/scc/tmp-data/metadata/oeg-upm/DeltaCimApp/Experimentation/reflect/reflect.py"
+        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/oeg-upm/DeltaCimApp/Experimentation/reflect/reflect.py"
     }
 }

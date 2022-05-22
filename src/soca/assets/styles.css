@@ -44,6 +44,6 @@ footer{width:100%;padding:1rem 1.5rem;margin-top:auto;display:flex;justify-conte
     .navbar{width: 28rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; margin: auto; padding-bottom: 0.5rem;}
     .filters{height: 5.30rem;}
     .owner-dropdown{ margin: auto; }
-    .scc-card { min-width: 28rem !important; }
+    .soca-card { min-width: 28rem !important; }
 
 }
