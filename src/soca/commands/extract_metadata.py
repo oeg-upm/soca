@@ -10,7 +10,7 @@ import subprocess
 import shutil
 import traceback
 
-def fetch(repos_csv, output, use_inspect4py, verbose):
+def extract(repos_csv, output, use_inspect4py, verbose):
 
     # Make output dir
     if not os.path.exists(output): 

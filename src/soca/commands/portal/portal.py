@@ -13,19 +13,13 @@ from soca import base_dir
 from soca import __version__
 
 
-def generate(repo_metadata_dir, output, title):
+def generate(repo_metadata_dir, output, title, favicon):
 
     copy_assets(output)
 
     # Load html template
     with open(f"{base_dir}/assets/template.html") as template:
         soup = BeautifulSoup(template.read(), features="html.parser")
-
-    # Insert last updated date
-    add_last_updated_date(soup)
-
-    # Insert title
-    add_title(soup, title)
 
     # Create json with cards data and metadata
     cards_data = card.cards_data_dump(repo_metadata_dir)
@@ -50,7 +44,15 @@ def generate(repo_metadata_dir, output, title):
 			</select>
         """, 'html.parser')
         owner_filter.append(html_parsed)
-        
+
+    # Insert last updated date
+    add_last_updated_date(soup)
+
+    # Insert title
+    add_title(soup, title)
+
+    # Insert favicon
+    add_favicon(soup, favicon, output)
 
     # Save index.html
     with open(f"{output}/index.html", "w") as index:
@@ -73,14 +75,14 @@ def copy_assets(output):
     copy_tree(f"{base_dir}/assets/repo_icons", f"{output}/repo_icons")
 
     # Copy app.js
-    shutil.copy(f"{base_dir}/assets/app.js", f"{output}")
+    shutil.copy(f"{base_dir}/assets/app.js", output)
 
     # Copy css files
-    shutil.copy(f"{base_dir}/assets/soca-card.css", f"{output}")
-    shutil.copy(f"{base_dir}/assets/styles.css", f"{output}")
+    shutil.copy(f"{base_dir}/assets/soca-card.css", output)
+    shutil.copy(f"{base_dir}/assets/styles.css", output)
 
     # Copy About page
-    shutil.copy(f"{base_dir}/assets/about.html", f"{output}")
+    shutil.copy(f"{base_dir}/assets/about.html", output)
     
 
 
@@ -95,6 +97,18 @@ def add_last_updated_date(soup):
 def add_title(soup, title):
     loc = soup.find(id="nav-title")
     loc.string = title
+
+def add_favicon(soup, favicon, output):
+    # if is not the default ico copy it
+    if favicon != 'img/soca-logo.ico':
+        if os.path.exists(favicon):
+            shutil.copy(favicon, f"{output}/img")
+        else:
+            print(f"ERROR: The favicon '{favicon}' does not exist. Falling back to default one.")
+            return
+    
+    favicon_loc = soup.find("link", rel="icon")
+    favicon_loc['href'] = f"/img/{favicon}"
 
 def list_owners(repo_metadata_dir):
 

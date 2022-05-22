@@ -146,6 +146,8 @@ This is the last step in the pipeline. For building the portal we need to use th
   -o, --output <path>             Dir where Software Catalog Portal will be
                                   saved  [default: portal]
   -t, --title <title>             Portal's title  [default: Software Catalog]
+  -fi, --favicon <path-icon.ico>  Portal's favicon  [default: img/soca-
+                                  logo.ico]
   -h, --help                      Show this message and exit.
 ```
 
