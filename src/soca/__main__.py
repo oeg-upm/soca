@@ -46,7 +46,7 @@ def extract(input, output, inspect4py, verbose):
 @click.option('--input','-i', required=True, help="Dir repositories metadata in json format", metavar='<dir-json-metadata>')
 @click.option('--output','-o', default="portal", show_default=True, help="Dir where Software Catalog Portal will be saved", metavar='<path>')
 @click.option('--title','-t', default="Software Catalog", show_default=True, help="Portal's title", metavar='<title>')
-@click.option('--favicon','-fi', default="img/soca-logo.ico", show_default=True, help="Portal's favicon", metavar='<path-icon.ico>')
+@click.option('--favicon','-fi', default="soca-logo.ico", show_default=True, help="Portal's favicon", metavar='<path-icon.ico>')
 def portal(input, output, title, favicon):
     """Build a portal with a minimalist design"""
     from soca.commands.portal import portal
