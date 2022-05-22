@@ -589,11 +589,10 @@ class citation_parser(object):
         if self.doi_paper:
             self.doi_paper = self.doi_paper.group(1)
         
-        self.title_paper = re.search('title[ ]*=[ ]*{(.*)}', citation)
+        self.title_paper = re.search('title[ ]*=[ "]*{(.*)}', citation)
         if self.title_paper:
             self.title_paper = self.title_paper.group(1)
 
-        if self.doi_paper and not self.link_paper:
-            if self.doi_paper and 'http' not in self.doi_paper:
-                self.link_paper = 'https://www.doi.org/' + self.doi_paper
-            else: self.link_paper = self.doi_paper
+        if self.doi_paper and 'http' not in self.doi_paper:
+            self.doi_paper = 'https://www.doi.org/' + self.doi_paper
+            self.link_paper = self.doi_paper

@@ -100,7 +100,7 @@ def add_title(soup, title):
 
 def add_favicon(soup, favicon, output):
     # if is not the default ico copy it
-    if favicon != 'img/soca-logo.ico':
+    if favicon != 'soca-logo.ico':
         if os.path.exists(favicon):
             shutil.copy(favicon, f"{output}/img")
         else:
