@@ -16,7 +16,7 @@ def create(repo_url, output, save_as):
         print(f"ERROR: Could not extract metadata from {repo_url}")
         exit()
         
-    card_view = card.html_view(metadata, embedded=True)
+    card_view = card.html_view('', metadata, embedded=True)
 
     if save_as == 'html':
         with open(f'{output}.html', "w+") as index:
