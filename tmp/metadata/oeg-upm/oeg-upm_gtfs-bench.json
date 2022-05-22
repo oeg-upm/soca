@@ -418,6 +418,6 @@
     },
     "inspect4py": {
         "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/oeg-upm/gtfs-bench/utils/evaluate.py"
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp/metadata/oeg-upm/gtfs-bench/utils/evaluate.py"
     }
 }

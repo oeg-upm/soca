@@ -121,6 +121,6 @@
     },
     "inspect4py": {
         "software_type": "library",
-        "run": "import /Users/dakixr/Desktop/github/soca/env-soca/bin/python: can't open file '/Users/dakixr/Desktop/github/soca/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/wings-importer/setup.py': [Errno 2] No such file or directory"
+        "run": "import /Users/dakixr/Desktop/github/soca/env-soca/bin/python: can't open file '/Users/dakixr/Desktop/github/scc/tmp/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/wings-importer/setup.py': [Errno 2] No such file or directory"
     }
 }

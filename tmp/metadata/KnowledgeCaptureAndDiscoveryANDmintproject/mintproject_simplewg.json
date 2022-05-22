@@ -306,6 +306,6 @@
     },
     "inspect4py": {
         "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/simplewg/WGEN_to_FLDAS.py"
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/simplewg/WGEN_to_FLDAS.py"
     }
 }

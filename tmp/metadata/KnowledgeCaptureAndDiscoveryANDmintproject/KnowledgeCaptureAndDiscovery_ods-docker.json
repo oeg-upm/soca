@@ -218,6 +218,6 @@
     },
     "inspect4py": {
         "software_type": "script",
-        "run": "python /Users/dakixr/Desktop/github/soca/tmp-data/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/ods-docker/scripts/extract_csvs.py"
+        "run": "python /Users/dakixr/Desktop/github/scc/tmp/metadata/KnowledgeCaptureAndDiscoveryANDmintproject/ods-docker/scripts/extract_csvs.py"
     }
 }
