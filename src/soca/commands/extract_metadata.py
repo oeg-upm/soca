@@ -28,6 +28,11 @@ def extract(repos_csv, output, use_inspect4py, verbose):
     print("It may take a while... Depends on repository size and Github API limitations.")
     for repo_url in progressbar(repos_url, redirect_stdout=True):
 
+        try:
+            git_clone_dir = f'{output}/' + str(repo_url).split("/")[-1]
+        except:
+            continue
+
         ##################################################################
         # somef
 
@@ -35,8 +40,8 @@ def extract(repos_csv, output, use_inspect4py, verbose):
             print(f"Extracting metadata from {repo_url}")
             if not verbose:
                 with HiddenPrints():
-                    metadata = cli_get_data(0.9, False, repo_url)
-            else: metadata = cli_get_data(0.9, False, repo_url)
+                    metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
+            else: metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
             if not metadata:
                 print(f'ERROR: {repo_url} is down, skipping it...')
                 failed_repos.append(repo_url)
@@ -55,21 +60,18 @@ def extract(repos_csv, output, use_inspect4py, verbose):
         if use_inspect4py and 'languages' in metadata and 'Python' in metadata["languages"]["excerpt"]:
 
             try:
-                git_clone_dir = f'{str(repo_url).split("/")[-1]}'
                 metadata["inspect4py"] = {}
 
                 if verbose:
                     subprocess.call(
-                                    f'cd {output} && git clone {repo_url} && inspect4py -i {git_clone_dir} -o inspect4py_tmp -si && cd ..', 
+                                    f'inspect4py -i {git_clone_dir} -o {output}/inspect4py_tmp -si', 
                                     shell = True
                                 )
                 else:
                     subprocess.call(
-                                        f'cd {output} && git clone {repo_url} && inspect4py -i {git_clone_dir} -o inspect4py_tmp -si && cd ..', 
+                                        f'inspect4py -i {git_clone_dir} -o {output}/inspect4py_tmp -si', 
                                         shell = True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT
                                     )
-
-                git_clone_dir = f'{output}/' + git_clone_dir
 
                 if path.exists(f'{output}/inspect4py_tmp/directory_info.json'):
 
