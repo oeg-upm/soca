@@ -266,7 +266,7 @@ class metadata(object):
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
             if len(hasDocumentation) > 1:
-                mk_list = "\n".join([f'* <{d}>' for d in hasDocumentation])
+                mk_list = "\n".join([f'* <{d}>' if ('http' in d and not ' ' in d) else f'* {d}' for d in hasDocumentation])
                 html += self.icon_wrapper(
                     icon_html = f"""<img src="{self.base}repo_icons/documentation.png" 
                             class="repo-icon" 
