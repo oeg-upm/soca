@@ -34,7 +34,7 @@ footer{width:100%;padding:1rem 1.5rem;margin-top:auto;display:flex;justify-conte
 .tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}
 .sort-filter-icon{width: 1rem;}
 .row-filters{display: flex;}
-.owner-dropdown{padding: 0 1rem;margin-left: 1rem;border:0;border-radius:0.5rem;background:#e9e9e9;box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff; height: 1.5rem;width: 15rem;display: flex;}
+.owner-dropdown{padding: 0 1rem;margin-left: 1rem;border:0;border-radius:0.5rem;background:#e9e9e9;box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff; height: 1.5rem;width: 18rem;display: flex;}
 .grey-color-svg{filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);}
 @media only screen and (max-width: 1378px) { .navbar-inside{ width: 60rem; } }
 @media only screen and (max-width: 944px) { 

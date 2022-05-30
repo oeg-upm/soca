@@ -265,15 +265,23 @@ class metadata(object):
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
-            mk_list = "\n".join([f'* <{d}>' for d in hasDocumentation])
-            html += self.icon_wrapper(
-                icon_html = f"""<img src="{self.base}repo_icons/documentation.png" 
-                        class="repo-icon" 
-                        {self.add_tooltip('bottom',"Documentation")}>""",
+            if len(hasDocumentation) > 1:
+                mk_list = "\n".join([f'* <{d}>' if ('http' in d and not ' ' in d) else f'* {d}' for d in hasDocumentation])
+                html += self.icon_wrapper(
+                    icon_html = f"""<img src="{self.base}repo_icons/documentation.png" 
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom',"Documentation")}>""",
 
-                modal_html = self.modal(
-                    title = 'Documentation',
-                    body = mk_list))
+                    modal_html = self.modal(
+                        title = 'Documentation',
+                        body = mk_list))
+            else:
+                html += self.icon_wrapper(
+                        icon_html = f"""<a href="{hasDocumentation[0]}" target="_blank" class="repo-icon">
+                                <img src="{self.base}repo_icons/documentation.png" 
+                                class="repo-icon" 
+                                {self.add_tooltip('bottom','Documentation')}>
+                            </a>""")
 
         acknowledgement =  self.acknowledgement()
         if acknowledgement:
@@ -589,11 +597,10 @@ class citation_parser(object):
         if self.doi_paper:
             self.doi_paper = self.doi_paper.group(1)
         
-        self.title_paper = re.search('title[ ]*=[ ]*{(.*)}', citation)
+        self.title_paper = re.search('title[ ]*=[ "]*{(.*)}', citation)
         if self.title_paper:
             self.title_paper = self.title_paper.group(1)
 
-        if self.doi_paper and not self.link_paper:
-            if self.doi_paper and 'http' not in self.doi_paper:
-                self.link_paper = 'https://www.doi.org/' + self.doi_paper
-            else: self.link_paper = self.doi_paper
+        if self.doi_paper and 'http' not in self.doi_paper:
+            self.doi_paper = 'https://www.doi.org/' + self.doi_paper
+            self.link_paper = self.doi_paper

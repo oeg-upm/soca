@@ -37,5 +37,5 @@
 .modal-content {background-color: #e0e0e0;margin: auto;padding: 20px;border: 0px;width: 90%;max-width: 40rem;border-radius: 1rem;}
 .modal-on{display: block;}
 .close {color: #3e3e3e;float: right;font-size: 28px;font-weight: bold;position: relative;bottom: 0.8rem;}
-.close:hover, .close:focus {  color: #000;  text-decoration: none;  cursor: pointer;}
-.soca-card .repo-type{height: 1.4rem; margin-left: 0.2rem; margin-right: 0.2rem;}
+.close:hover, .close:focus {  color: #000;  text-decoration: none; cursor: pointer;}
+.soca-card .repo-type{height: 1.4rem; margin-left: 0.2rem; margin-right: 0.2rem; cursor: pointer;}
