@@ -3,6 +3,7 @@ import json
 import os
 from progressbar import progressbar
 from somef.cli import cli_get_data
+#TODO: remove this import
 import os
 from os import path
 from soca import HiddenPrints
@@ -21,6 +22,9 @@ def extract(repos_csv, output, use_inspect4py, verbose):
             repos_url = [c[0] for c in csv.reader(repos, delimiter=',')]
     else:
         repos_url = str(repos_csv).split(",")
+
+
+    
 
     failed_repos = []
     failed_repos_i4p = []
