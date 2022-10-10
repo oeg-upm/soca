@@ -9,7 +9,8 @@ from . import scripts
 def cards_data_dump(repo_metadata_dir):
 
     cards_data = []
-
+#TODO change
+    #add possible "final release"
     for file in os.listdir(os.fsencode(repo_metadata_dir)):
         filename = os.fsdecode(file)
         if filename.endswith(".json"): 

@@ -3,7 +3,6 @@ import json
 import os
 from progressbar import progressbar
 from somef.cli import cli_get_data
-#TODO: remove this import
 import os
 from os import path
 from soca import HiddenPrints
