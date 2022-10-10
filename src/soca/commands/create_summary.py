@@ -17,12 +17,12 @@ output = {}
 def reset_dict():
  #   output['timestamp'] = datetime.now()+""
     output['has_documentation'] = 0
-    output['identifiers'] = {'num_doi': 0, 'num_pid': 0}
+    output['identifiers'] = {'num_doi': 0, 'num_pid': 0, 'num_without_identifier': 0}
     output['readme'] = {'EMPTY': 0, 'OK': 0, 'GOOD': 0, 'GREAT': 0}
-    output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0}
+    output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0, 'MISSING': 0}
     output['releases'] = {'IN PROGRESS': 0, 'UPDATED': 0}
     output['has_citation'] = 0
-    output['releases'] = {'IN PROGRESS': 0, 'UPDATED':0}
+    output['releases'] = {'IN PROGRESS': 0, 'UPDATED': 0}
 
 reset_dict()
 
@@ -42,25 +42,30 @@ def create_summary_dir(self):
     else:
         print("summary directory already exists")
 
-
-
 #function that return true if given good practice is found
-def __has_doi(json_obj):
-    if "doi.org" in json_obj['html_card_embedded']:
-        return True
-def __has_pid(json_obj):
-    if "zenodo" or "Zenodo" in json_obj['html_card_embedded']:
-        return True
 
-def __has_MIT(json_obj):
+def __findId(json_obj):
+    if json_obj['identifier']:
+        if "doi.org" in json_obj['html_card']:
+            output['identifiers']["num_doi"] = output['identifiers']["num_doi"] + 1
+        if "zenodo" or "Zenodo" in json_obj['html_card']:
+            output['identifiers']["num_pid"] = output['identifiers']["num_pid"] + 1
+    else:
+        output['identifiers']['num_without_identifier'] = output['identifiers']['num_without_identifier'] + 1
+
+
+
+def __findLicense(json_obj):
     if "License: Apache" in json_obj['html_card_embedded']:
-        return True
-def __has_APACHE(json_obj):
-    if "License: MIT" in json_obj['html_card_embedded']:
-        return True
-def __has_GPL(json_obj):
-    if "License: GPL" in json_obj['html_card_embedded']:
-        return True
+        return "APACHE"
+    elif "License: MIT" in json_obj['html_card_embedded']:
+        return "MIT"
+    elif "License: GPL" in json_obj['html_card_embedded']:
+        return "GPL"
+    elif "License: Other" in json_obj['html_card_embedded']:
+        return "OTHER"
+    else:
+        return "MISSING"
 
 #function given a json object will give readme score OK, GOOD, GREAT, EMPTY
 #TODO clean UP
@@ -104,25 +109,15 @@ def create_summary():
         for item in json_array:
             if item['hasDocumentation']:
                 output['has_documentation'] = output['has_documentation']+1
-            if item['identifier']:
-                if __has_doi(item):
-                    output['identifiers']['num_doi'] = output['identifiers']['num_doi'] + 1
-                if __has_pid(item):
-                    output['identifiers']['num_pid'] = output['identifiers']['num_pid'] + 1
-            if item['license']:
-                if __has_MIT(item):
-                    output['licenses']['MIT'] = output['licenses']['MIT'] + 1
-                elif __has_APACHE(item):
-                    output['licenses']['APACHE'] = output['licenses']['APACHE'] + 1
-                elif __has_GPL(item):
-                    output['licenses']['GPL'] = output['licenses']['GPL'] + 1
-                else:
-                    output['licenses']['OTHER'] = output['licenses']['OTHER'] + 1
-
-            output['readme'][readme_score(item)]=output['readme'][readme_score(item)] + 1
             if item['citation']:
                 output['has_citation'] = output['has_citation']+1
-
+            #finds licenses
+            output['licenses'][__findLicense(item)] = output['licenses'][__findLicense(item)] + 1
+            #finds identifiers
+            __findId(item)
+            #gives readme evaluation
+            output['readme'][readme_score(item)] = output['readme'][readme_score(item)] + 1
+        #saves dictionary to json file
         with open(directory+"/"+org+"sample.json", 'w+') as out_file:
             json.dump(output, out_file, sort_keys=True, indent=4,
                       ensure_ascii=False)

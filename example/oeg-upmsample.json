@@ -3,13 +3,15 @@
     "has_documentation": 28,
     "identifiers": {
         "num_doi": 10,
-        "num_pid": 14
+        "num_pid": 14,
+        "num_without_identifier": 232
     },
     "licenses": {
-        "APACHE": 11,
+        "APACHE": 116,
         "GPL": 0,
-        "MIT": 116,
-        "OTHER": 17
+        "MISSING": 109,
+        "MIT": 11,
+        "OTHER": 10
     },
     "readme": {
         "EMPTY": 21,
