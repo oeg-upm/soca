@@ -118,8 +118,8 @@ def create_summary():
                     output['licenses']['GPL'] = output['licenses']['GPL'] + 1
                 else:
                     output['licenses']['OTHER'] = output['licenses']['OTHER'] + 1
-            if item['readmeUrl']:
-                output['readme'][readme_score(item)]=output['readme'][readme_score(item)] + 1
+
+            output['readme'][readme_score(item)]=output['readme'][readme_score(item)] + 1
             if item['citation']:
                 output['has_citation'] = output['has_citation']+1
 
