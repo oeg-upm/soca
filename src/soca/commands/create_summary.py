@@ -1,7 +1,6 @@
+
 import json
 import os
-from datetime import datetime
-from os import path
 
 #TODO fix: change to variable path
 directory = "/home/two_play2nd/git/soca_Miguel_Arroyo_TFG/example"
@@ -123,10 +122,10 @@ def create_summary():
                 output['readme'][readme_score(item)]=output['readme'][readme_score(item)] + 1
             if item['citation']:
                 output['has_citation'] = output['has_citation']+1
-        
-        with open(directory+"/"+org+"sample.json", "w+") as outfile:
-            json.dump(output, outfile)
-        
+
+        with open(directory+"/"+org+"sample.json", 'w+') as out_file:
+            json.dump(output, out_file, sort_keys=True, indent=4,
+                      ensure_ascii=False)
         reset_dict()
 
 

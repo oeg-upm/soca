@@ -1,1 +1,24 @@
-{"has_documentation": 28, "identifiers": {"num_doi": 10, "num_pid": 14}, "readme": {"EMPTY": 0, "OK": 210, "GOOD": 15, "GREAT": 0}, "licenses": {"APACHE": 11, "MIT": 116, "GPL": 0, "OTHER": 17}, "releases": {"IN PROGRESS": 0, "UPDATED": 0}, "has_citation": 8}
+{
+    "has_citation": 8,
+    "has_documentation": 28,
+    "identifiers": {
+        "num_doi": 10,
+        "num_pid": 14
+    },
+    "licenses": {
+        "APACHE": 11,
+        "GPL": 0,
+        "MIT": 116,
+        "OTHER": 17
+    },
+    "readme": {
+        "EMPTY": 0,
+        "GOOD": 15,
+        "GREAT": 0,
+        "OK": 210
+    },
+    "releases": {
+        "IN PROGRESS": 0,
+        "UPDATED": 0
+    }
+}
