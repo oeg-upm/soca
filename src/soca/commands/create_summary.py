@@ -18,7 +18,7 @@ def reset_dict():
  #   output['timestamp'] = datetime.now()+""
     output['has_documentation'] = 0
     output['identifiers'] = {'num_doi': 0, 'num_pid': 0, 'num_without_identifier': 0}
-    output['readme'] = {'EMPTY': 0, 'OK': 0, 'GOOD': 0, 'GREAT': 0}
+    output['readme'] = {'Level 1': 0, 'Level 2': 0, 'Level 3': 0, 'Level 4': 0}
     output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0, 'MISSING': 0}
     output['releases'] = {'IN PROGRESS': 0, 'UPDATED': 0}
     output['has_citation'] = 0
