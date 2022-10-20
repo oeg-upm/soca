@@ -18,7 +18,7 @@ def reset_dict():
  #   output['timestamp'] = datetime.now()+""
     output['has_documentation'] = 0
     output['identifiers'] = {'num_doi': 0, 'num_pid': 0, 'num_without_identifier': 0}
-    output['readme'] = {'Level 1': 0, 'Level 2': 0, 'Level 3': 0, 'Level 4': 0}
+    output['readme'] = {'Level 0': 0, 'Level 1': 0, 'Level 2': 0, 'Level 3': 0}
     output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0, 'MISSING': 0}
     output['releases'] = {'IN PROGRESS': 0, 'UPDATED': 0}
     output['has_citation'] = 0
@@ -73,7 +73,7 @@ def readme_score(json_obj):
     score = 0
     #if no readme return EMPTY
     if not json_obj['readmeUrl']:
-        return "EMPTY"
+        return "Level 0"
     else:
         if json_obj['installation']:
             score +=1
@@ -87,11 +87,11 @@ def readme_score(json_obj):
             score +=1
 
     if score > 3:
-        return "GREAT"
+        return "Level 3"
     if score > 2:
-        return "GOOD"
+        return "Level 2"
     if score <= 2:
-        return "OK"
+        return "Level 1"
 
 #function that opens array of jsons given the organisation
 def __open_Json(dir):

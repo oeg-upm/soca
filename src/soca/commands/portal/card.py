@@ -30,6 +30,7 @@ def cards_data_dump(repo_metadata_dir):
                     'languages': md.languages(),
                     'description': md.description(),
                     'license': md.license() is not None,
+                    'licenseType':md.license()['name'],
                     'readmeUrl': md.readme() is not None,
                     'hasExecutableNotebook': md.notebook() is not None,
                     'citation': citations is not None,
