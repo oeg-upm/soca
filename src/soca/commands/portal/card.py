@@ -42,6 +42,7 @@ def cards_data_dump(repo_metadata_dir):
                     'help': md.help() is not None,
                     'hasDocumentation': md.hasDocumentation() is not None,
                     'identifier': md.identifier() is not None,
+                    'identifierLink': md.identifier()['excerpt'],
                     'repoStatus': md.status() is not None,
                     'acknowledgement': md.acknowledgement() is not None,
                     'downloadUrl': md.downloadUrl() is not None,
