@@ -1,4 +1,4 @@
-
+from datetime import date, datetime
 import json
 import os
 
@@ -13,16 +13,21 @@ output = {}
 
 #output['timestamp'] = datetime.now()+""
 
+def __json_serial(obj):
+    """JSON serializer for objects not serializable by default json code"""
+
+    if isinstance(obj, (datetime, date)):
+        return obj.isoformat()
+    raise TypeError ("Type %s not serializable" % type(obj))
 
 def reset_dict():
- #   output['timestamp'] = datetime.now()+""
+    output['timestamp'] = __json_serial(datetime.now())
     output['has_documentation'] = 0
     output['identifiers'] = {'num_doi': 0, 'num_pid': 0, 'num_without_identifier': 0}
     output['readme'] = {'Level 0': 0, 'Level 1': 0, 'Level 2': 0, 'Level 3': 0}
     output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0, 'MISSING': 0}
-    output['releases'] = {'IN PROGRESS': 0, 'UPDATED': 0}
     output['has_citation'] = 0
-    output['releases'] = {'IN PROGRESS': 0, 'UPDATED': 0}
+    output['released'] = {'<2 MONTHS': 0, 'LONGER': 0}
 
 reset_dict()
 
@@ -54,18 +59,27 @@ def __findId(json_obj):
         output['identifiers']['num_without_identifier'] = output['identifiers']['num_without_identifier'] + 1
 
 
-
+#TODO testing on the acceptance will break
 def __findLicense(json_obj):
-    if "License: Apache" in json_obj['html_card_embedded']:
-        return "APACHE"
-    elif "License: MIT" in json_obj['html_card_embedded']:
-        return "MIT"
-    elif "License: GPL" in json_obj['html_card_embedded']:
-        return "GPL"
-    elif "License: Other" in json_obj['html_card_embedded']:
-        return "OTHER"
-    else:
+    if not json_obj['license']:
         return "MISSING"
+    else:
+        return {
+            'Apache License 2.0': "APACHE",
+            'MIT License': "MIT",
+            'GNU General Public License v3.0': 'GPL',
+            'Other': 'OTHER',
+            '_': "MISSING",
+        }[json_obj['license_type']]
+
+#TODO change recently updated to a more fitting name: Days last update?
+def __last_update(json_obj):
+    if json_obj['recently_updated'] > 60:
+        return "LONGER"
+    else:
+        return "<2 MONTHS"
+
+
 
 #function given a json object will give readme score OK, GOOD, GREAT, EMPTY
 #TODO clean UP
@@ -103,7 +117,8 @@ def __open_Json(dir):
 #function to create summary for each organisation
 def create_summary():
     #updates the list of organisations 
-    find_organisations()
+    #find_organisations()
+    __listOrg = (["testMig"])
     for org in __listOrg:
         json_array = __open_Json(org)
         for item in json_array:
@@ -117,6 +132,8 @@ def create_summary():
             __findId(item)
             #gives readme evaluation
             output['readme'][readme_score(item)] = output['readme'][readme_score(item)] + 1
+            #release time
+            output['released'][__last_update(item)] = output['released'][__last_update(item)]+1
         #saves dictionary to json file
         with open(directory+"/"+org+"sample.json", 'w+') as out_file:
             json.dump(output, out_file, sort_keys=True, indent=4,

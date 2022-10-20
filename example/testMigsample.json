@@ -1,0 +1,27 @@
+{
+    "has_citation": 0,
+    "has_documentation": 0,
+    "identifiers": {
+        "num_doi": 0,
+        "num_pid": 0,
+        "num_without_identifier": 1
+    },
+    "licenses": {
+        "APACHE": 0,
+        "GPL": 0,
+        "MISSING": 0,
+        "MIT": 0,
+        "OTHER": 1
+    },
+    "readme": {
+        "Level 0": 0,
+        "Level 1": 0,
+        "Level 2": 1,
+        "Level 3": 0
+    },
+    "released": {
+        "<2 MONTHS": 1,
+        "LONGER": 0
+    },
+    "timestamp": "2022-10-20T16:02:58.623617"
+}
