@@ -23,7 +23,6 @@ def __json_serial(obj):
     raise TypeError ("Type %s not serializable" % type(obj))
 
 def reset_dict():
-    output['timestamp'] = __json_serial(datetime.now())
     output['has_documentation'] = 0
     output['identifiers'] = {'num_doi': 0, 'num_pid': 0, 'num_without_identifier': 0}
     output['readme'] = {'Level 0': 0, 'Level 1': 0, 'Level 2': 0, 'Level 3': 0}
@@ -33,6 +32,7 @@ def reset_dict():
     output['_soca_version'] = soca_ver
     output['_somef_version'] = somef_ver
     output['_org_name'] = ""
+    output['_timestamp'] = __json_serial(datetime.now())
 
 reset_dict()
 
@@ -54,12 +54,12 @@ def create_summary_dir(self):
 
 #function that return true if given good practice is found
 
+#TODO look into correct identifiers
 def __findId(json_obj):
-    if json_obj['identifier']:
-        if "doi.org" in json_obj['html_card']:
-            output['identifiers']["num_doi"] = output['identifiers']["num_doi"] + 1
-        if "zenodo" or "Zenodo" in json_obj['html_card']:
-            output['identifiers']["num_pid"] = output['identifiers']["num_pid"] + 1
+    if json_obj['hasIdentifier']:
+        if "doi.org" in json_obj['identifierLink']:
+            output['identifiers']['num_doi'] = output['identifiers']['num_doi'] + 1
+
     else:
         output['identifiers']['num_without_identifier'] = output['identifiers']['num_without_identifier'] + 1
 
@@ -75,7 +75,7 @@ def __findLicense(json_obj):
             'GNU General Public License v3.0': 'GPL',
             'Other': 'OTHER',
             '_': "MISSING",
-        }[json_obj['license_type']]
+        }[json_obj['licenseName']]
 
 #TODO change soca output: recently updated to a more fitting name: Days last update?
 def __last_update(json_obj):
