@@ -2,7 +2,6 @@ from datetime import date, datetime
 import json
 import os
 from src.soca import __version__ as soca_ver
-#TODO
 from somef import __version__ as somef_ver
 
 #TODO fix: change to variable path
@@ -31,8 +30,9 @@ def reset_dict():
     output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0, 'MISSING': 0}
     output['has_citation'] = 0
     output['released'] = {'<2 MONTHS': 0, 'LONGER': 0}
-    output['z_soca_version'] = soca_ver
-    output['z_somef_version'] = somef_ver
+    output['_soca_version'] = soca_ver
+    output['_somef_version'] = somef_ver
+    output['_org_name'] = ""
 
 reset_dict()
 
@@ -77,7 +77,7 @@ def __findLicense(json_obj):
             '_': "MISSING",
         }[json_obj['license_type']]
 
-#TODO change recently updated to a more fitting name: Days last update?
+#TODO change soca output: recently updated to a more fitting name: Days last update?
 def __last_update(json_obj):
     if json_obj['recently_updated'] > 60:
         return "LONGER"
@@ -90,7 +90,7 @@ def __last_update(json_obj):
 #TODO clean UP
 def readme_score(json_obj):
     score = 0
-    #if no readme return EMPTY
+    #if no readme return EMPTY/level 0
     if not json_obj['readmeUrl']:
         return "Level 0"
     else:
@@ -139,6 +139,8 @@ def create_summary():
             output['readme'][readme_score(item)] = output['readme'][readme_score(item)] + 1
             #release time
             output['released'][__last_update(item)] = output['released'][__last_update(item)]+1
+            #adds org_name
+            output['_org_name'] = item['owner']
         #saves dictionary to json file
         with open(directory+"/"+org+"sample.json", 'w+') as out_file:
             json.dump(output, out_file, sort_keys=True, indent=4,

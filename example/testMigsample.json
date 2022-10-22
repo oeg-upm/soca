@@ -1,4 +1,7 @@
 {
+    "_org_name": "Str3am786",
+    "_soca_version": "0.0.1",
+    "_somef_version": "0.8.2",
     "has_citation": 0,
     "has_documentation": 0,
     "identifiers": {
@@ -23,7 +26,5 @@
         "<2 MONTHS": 1,
         "LONGER": 0
     },
-    "timestamp": "2022-10-22T18:02:35.352137",
-    "z_soca_version": "0.0.1",
-    "z_somef_version": "0.8.2"
+    "timestamp": "2022-10-22T18:31:29.098109"
 }
