@@ -3,10 +3,10 @@ import json
 import os
 from src.soca import __version__ as soca_ver
 #TODO
-#from somef import __version__ as somef_ver
+from somef import __version__ as somef_ver
 
 #TODO fix: change to variable path
-directory = "/home/two_play2nd/git/soca_Miguel_Arroyo_TFG/example"
+directory = "/home/arroyo/git/soca_Miguel_Arroyo_TFG/example"
 __listOrg = list()
 
 #IMPORTANT used to create json
@@ -32,7 +32,7 @@ def reset_dict():
     output['has_citation'] = 0
     output['released'] = {'<2 MONTHS': 0, 'LONGER': 0}
     output['z_soca_version'] = soca_ver
-    #output['z_somef_version'] = somef_ver
+    output['z_somef_version'] = somef_ver
 
 reset_dict()
 

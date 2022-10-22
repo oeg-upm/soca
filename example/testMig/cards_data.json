@@ -15,7 +15,7 @@
         ],
         "description": "Software Catalog Creator. A repository that given an organization URL, it will create a software catalog for browsing all repositories",
         "license": true,
-        "license_type": "Apache License 2.0'",
+        "license_type": "Apache License 2.0",
         "readmeUrl": true,
         "hasExecutableNotebook": false,
         "citation": false,
