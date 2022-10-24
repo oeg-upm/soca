@@ -15,6 +15,7 @@ def cli():
     1. (fetch) Fetch all repos from the desired organization/s\n
     2. (extract) Extract all metadata for every repo\n
     3. (portal) Generate a searchable portal for all the retrieved data\n
+    4. (summary) Create a summary from the portal information
 
     """
     pass 
@@ -61,4 +62,12 @@ def card(input, output, save_as):
     """Create a stand-alone card ready to be embedded in a website"""
     from soca.commands import single_card
     single_card.create(input, output, save_as)
+
+@cli.command()
+@click.option('--input','-i', required=True, help="portal cards_data.json", metavar='<path>')
+@click.option('--output','-o', default="card", show_default=True, help="Output file where the json will be saved", metavar='<path>')
+def summary(input,output):
+    """Create a summary of good practices from generated card data"""
+    from soca.commands import create_summary
+    create_summary.create_summary(input,output)
 

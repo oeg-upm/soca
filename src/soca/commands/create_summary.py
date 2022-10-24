@@ -1,23 +1,12 @@
 from datetime import date, datetime
 import json
 import os
-from src.soca import __version__ as soca_ver
+from soca import __version__ as soca_ver
 from somef import __version__ as somef_ver
 
-#TODO fix: change to variable path
-directory = "/home/arroyo/git/soca_Miguel_Arroyo_TFG/example"
-__listOrg = list()
-
-#IMPORTANT used to create json
 output = {}
-#TODO CLEANUP
-#model of output json
-
-#output['timestamp'] = datetime.now()+""
-
 def __json_serial(obj):
     """JSON serializer for objects not serializable by default json code"""
-
     if isinstance(obj, (datetime, date)):
         return obj.isoformat()
     raise TypeError ("Type %s not serializable" % type(obj))
@@ -34,32 +23,14 @@ def reset_dict():
     output['_org_name'] = ""
     output['_timestamp'] = __json_serial(datetime.now())
 
-reset_dict()
-
-#function to return list of available organisations
-
-def find_organisations():
-    for dir in os.listdir(directory):
-        if dir not in __listOrg and os.path.isdir(directory+"/"+dir):
-            __listOrg.append(dir)
 
 
-#function to create directory named summary to save summaries if doesnt exist already
-def create_summary_dir(self):
-    if not os.path.exists(directory+"/summary"):
-        os.makedirs(directory+"/summary")
-        print("summary directory created")
-    else:
-        print("summary directory already exists")
-
-#function that return true if given good practice is found
-
+#functions below to identify good practices
 #TODO look into correct identifiers
 def __findId(json_obj):
     if json_obj['hasIdentifier']:
         if "doi.org" in json_obj['identifierLink']:
             output['identifiers']['num_doi'] = output['identifiers']['num_doi'] + 1
-
     else:
         output['identifiers']['num_without_identifier'] = output['identifiers']['num_without_identifier'] + 1
 
@@ -70,7 +41,7 @@ def __findLicense(json_obj):
         return "MISSING"
     else:
         return {
-            'Apache License 2.0': "APACHE",
+            'Apache License 2.0': 'APACHE',
             'MIT License': "MIT",
             'GNU General Public License v3.0': 'GPL',
             'Other': 'OTHER',
@@ -83,8 +54,6 @@ def __last_update(json_obj):
         return "LONGER"
     else:
         return "<2 MONTHS"
-
-
 
 #function given a json object will give readme score OK, GOOD, GREAT, EMPTY
 #TODO clean UP
@@ -113,41 +82,49 @@ def readme_score(json_obj):
         return "Level 1"
 
 #function that opens array of jsons given the organisation
-def __open_Json(dir):
-    file_dir = directory + "/" + dir + "/" + "cards_data.json"
-    with open(file_dir) as json_file:
-        data = json.load(json_file)
-        return data
+def __open_Json(directory):
+        if os.path.isfile(directory):
+            with open(directory) as json_file:
+                data = json.load(json_file)
+            return data
+        else:
+            raise Exception("please provide path to cards_json file")
+            return
+
 
 #function to create summary for each organisation
-def create_summary():
-    #updates the list of organisations 
-    #find_organisations()
-    __listOrg = (["testMig"])
-    for org in __listOrg:
-        json_array = __open_Json(org)
+def create_summary(directory_org_data,outFile):
+    #prepares dictionary to create json
+    reset_dict()
+    #updates the list of organisations
+    if not os.path.exists(outFile):
+        os.makedirs(outFile)
+    json_array = __open_Json(directory_org_data)
+    try:
         for item in json_array:
             if item['hasDocumentation']:
-                output['has_documentation'] = output['has_documentation']+1
+                output['has_documentation'] = output['has_documentation'] + 1
             if item['citation']:
-                output['has_citation'] = output['has_citation']+1
-            #finds licenses
+                output['has_citation'] = output['has_citation'] + 1
+                # finds licenses
             output['licenses'][__findLicense(item)] = output['licenses'][__findLicense(item)] + 1
-            #finds identifiers
+            # finds identifiers
             __findId(item)
-            #gives readme evaluation
+            # gives readme evaluation
             output['readme'][readme_score(item)] = output['readme'][readme_score(item)] + 1
-            #release time
-            output['released'][__last_update(item)] = output['released'][__last_update(item)]+1
-            #adds org_name
+            # release time
+            output['released'][__last_update(item)] = output['released'][__last_update(item)] + 1
+            # adds org_name
             output['_org_name'] = item['owner']
-        #saves dictionary to json file
-        with open(directory+"/"+org+"sample.json", 'w+') as out_file:
+        # saves dictionary to json file
+        with open(outFile + "/" + item['owner'] + "_summary.json", 'w+') as out_file:
             json.dump(output, out_file, sort_keys=True, indent=4,
                       ensure_ascii=False)
-        reset_dict()
+            print(outFile)
+            print(out_file)
+    except:
+        breakpoint()
+        print("please provide correct file")
+        exit(2)
 
 
-
-
-create_summary()
