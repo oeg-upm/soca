@@ -65,7 +65,7 @@ def card(input, output, save_as):
 
 @cli.command()
 @click.option('--input','-i', required=True, help="portal cards_data.json", metavar='<path>')
-@click.option('--output','-o', default="card", show_default=True, help="Output file where the json will be saved", metavar='<path>')
+@click.option('--output','-o', default="summary", show_default=True, help="Output file where the json will be saved", metavar='<path>')
 def summary(input,output):
     """Create a summary of good practices from generated card data"""
     from soca.commands import create_summary
