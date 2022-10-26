@@ -88,7 +88,7 @@ def __open_Json(directory):
                 data = json.load(json_file)
             return data
         else:
-            raise Exception("please provide path to cards_json file")
+            raise Exception("please provide a correct path to cards_json file")
             return
 
 
@@ -97,10 +97,11 @@ def create_summary(directory_org_data,outFile):
     #prepares dictionary to create json
     reset_dict()
     #updates the list of organisations
-    if not os.path.exists(outFile):
-        os.makedirs(outFile)
-    json_array = __open_Json(directory_org_data)
     try:
+        if not os.path.exists(outFile):
+            os.makedirs(outFile)
+        json_array = __open_Json(directory_org_data)
+
         for item in json_array:
             if item['hasDocumentation']:
                 output['has_documentation'] = output['has_documentation'] + 1
@@ -122,9 +123,8 @@ def create_summary(directory_org_data,outFile):
                       ensure_ascii=False)
             print(outFile)
             print(out_file)
-    except:
-        breakpoint()
-        print("please provide correct file")
-        exit(2)
+    except Exception as e:
+        print(str(e))
+        return
 
 
