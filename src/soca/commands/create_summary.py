@@ -98,10 +98,10 @@ def create_summary(directory_org_data,outFile):
     reset_dict()
     #updates the list of organisations
     try:
+
+        json_array = __open_Json(directory_org_data)
         if not os.path.exists(outFile):
             os.makedirs(outFile)
-        json_array = __open_Json(directory_org_data)
-
         for item in json_array:
             if item['hasDocumentation']:
                 output['has_documentation'] = output['has_documentation'] + 1
