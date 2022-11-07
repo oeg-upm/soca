@@ -29,13 +29,18 @@ def reset_dict():
 #TODO look into correct identifiers
 def __findId(json_obj):
     if json_obj['hasIdentifier']:
+        #follows assumption that doi.org -> hasPid
         if "doi.org" in json_obj['identifierLink']:
+            output['identifiers']['num_pid'] = output['identifiers']['num_pid'] + 1
+        elif "zenodo" or "Zenodo" in json_obj['identifierLink']:
             output['identifiers']['num_doi'] = output['identifiers']['num_doi'] + 1
+
     else:
         output['identifiers']['num_without_identifier'] = output['identifiers']['num_without_identifier'] + 1
 
 
 #TODO testing on the acceptance will break
+#TODO change to switch case when updated to python 3.10
 def __findLicense(json_obj):
     if not json_obj['license']:
         return "MISSING"
@@ -107,7 +112,7 @@ def create_summary(directory_org_data,outFile):
                 output['has_documentation'] = output['has_documentation'] + 1
             if item['citation']:
                 output['has_citation'] = output['has_citation'] + 1
-                # finds licenses
+            # finds licenses
             output['licenses'][__findLicense(item)] = output['licenses'][__findLicense(item)] + 1
             # finds identifiers
             __findId(item)
