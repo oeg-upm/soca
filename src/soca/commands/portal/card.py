@@ -30,6 +30,7 @@ def cards_data_dump(repo_metadata_dir):
                     'languages': md.languages(),
                     'description': md.description(),
                     'license': md.license() is not None,
+                    'licenseName': md.license()['name'] if md.license() is not None else None,
                     'readmeUrl': md.readme() is not None,
                     'hasExecutableNotebook': md.notebook() is not None,
                     'citation': citations is not None,
@@ -41,7 +42,8 @@ def cards_data_dump(repo_metadata_dir):
                     'usage': md.usage() is not None,
                     'help': md.help() is not None,
                     'hasDocumentation': md.hasDocumentation() is not None,
-                    'identifier': md.identifier() is not None,
+                    'hasIdentifier': md.identifier() is not None,
+                    'identifierLink': md.identifier()['excerpt'] if md.identifier() is not None else None,
                     'repoStatus': md.status() is not None,
                     'acknowledgement': md.acknowledgement() is not None,
                     'downloadUrl': md.downloadUrl() is not None,
@@ -49,6 +51,7 @@ def cards_data_dump(repo_metadata_dir):
                     'isWeb': md.repo_type() == 'web',
                     'owner': md.owner()
                 })
+
     print('-'*80)
 
     return cards_data

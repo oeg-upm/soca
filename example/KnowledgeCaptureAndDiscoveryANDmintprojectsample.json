@@ -14,10 +14,10 @@
         "OTHER": 2
     },
     "readme": {
-        "EMPTY": 12,
-        "GOOD": 14,
-        "GREAT": 0,
-        "OK": 149
+        "Level 0": 12,
+        "Level 1": 149,
+        "Level 2": 14,
+        "Level 3": 0
     },
     "releases": {
         "IN PROGRESS": 0,
