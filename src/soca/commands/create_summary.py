@@ -3,6 +3,7 @@ import json
 import os
 from soca import __version__ as soca_ver
 from somef import __version__ as somef_ver
+from .upload_summary import upload_summary
 
 output = {}
 def __json_serial(obj):
@@ -98,7 +99,7 @@ def __open_Json(directory):
 
 
 #function to create summary for each organisation
-def create_summary(directory_org_data,outFile):
+def create_summary(directory_org_data,outFile, want2Upload):
     #prepares dictionary to create json
     reset_dict()
     #updates the list of organisations
@@ -128,7 +129,14 @@ def create_summary(directory_org_data,outFile):
                       ensure_ascii=False)
             print(outFile)
             print(out_file)
+
+        if(want2Upload):
+            upload_summary(output)
+
+
+
     except Exception as e:
+        print("error create_summary")
         print(str(e))
         return
 
