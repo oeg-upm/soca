@@ -170,7 +170,7 @@ User must decide whether or not to upload (default = false), or to create JSON f
   -U, --upload                    Will upload file to influxdb
 ```
 Example
-`soca summary -i cards_data.json -o test '`
+`soca summary -i cards_data.json -o test`
 
 ### Create a stand-alone card
 
