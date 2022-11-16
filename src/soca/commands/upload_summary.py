@@ -6,7 +6,7 @@ from influxdb_client import Point
 
 #token for Auth
 mytoken = 'G9tlsRl1J-dYeOYp5OkWGNOSipEmbeN3gyp0wBbxDp6KRSZ-1foOkdTbhj8rkhN7Onj7CV105OYAQqAvr4C8-w=='
-#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
+#
 bucket = "my-bucket"
 #Setup database
 client = InfluxDBClient(url="http://localhost:8086", token=mytoken, org="test1")
