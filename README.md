@@ -161,6 +161,7 @@ If everything worked fine now a new dir should have been created with all the as
 ### Summary
 SOCA now allows to produce a summary json of a given cards_data.json created by the previous portal step.
 User must decide whether or not to upload (default = false), or to create JSON file for output summary
+For building the summary we need to use the command `summary`
 ```
   -i, --input <dir-json-metadata>
                                   Dir repositories metadata in json format
@@ -170,7 +171,7 @@ User must decide whether or not to upload (default = false), or to create JSON f
   -U, --upload                    Will upload file to influxdb
 ```
 Example
-`soca summary -i cards_data.json -o test`
+`soca summary -i cards_data.json -o test '`
 
 ### Create a stand-alone card
 
@@ -198,4 +199,3 @@ Example:
 ### Styling the portal
 
 In case you want to change the default style of the portal, SOCA decouples the .css files from the code-base. So in the resulting portal directory there will be two .css files are available for further tinkering and styling to everyone needs.
-
