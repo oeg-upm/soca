@@ -71,6 +71,7 @@ Usage: soca [OPTIONS] COMMAND [ARGS]...
   1. (fetch) Fetch all repos from the desired organization/s
   2. (extract) Extract all metadata for every repo
   3. (portal) Generate a searchable portal for all the retrieved data
+  4. (summary) Create a summary from the portal information
 
 Options:
   -h, --help  Show this message and exit.
@@ -80,6 +81,7 @@ Commands:
   extract  Fetch and save metadata from introduced repos
   portal   Build a portal with a minimalist design
   fetch    Retrieve all organization/s or user/s repositories
+  summary  Create a summary of good practices from portal card data
 ```
 
 In order to use SOCA you will need to follow the next steps:  
@@ -156,6 +158,20 @@ Example:
 
 If everything worked fine now a new dir should have been created with all the assets and code to deploy this portal.
 
+### Summary
+SOCA now allows to produce a summary json of a given cards_data.json created by the previous portal step.
+User must decide whether or not to upload (default = false), or to create JSON file for output summary
+```
+  -i, --input <dir-json-metadata>
+                                  Dir repositories metadata in json format
+                                  [required]
+  -o, --output <path>             Dir where Software Catalog Portal will be
+                                  saved  [default: summary]
+  -U, --upload                    Will upload file to influxdb
+```
+Example
+`soca summary -i cards_data.json -o test '`
+
 ### Create a stand-alone card
 
 SOCA also gives the option to create a single card in one of two different formats:
@@ -182,3 +198,4 @@ Example:
 ### Styling the portal
 
 In case you want to change the default style of the portal, SOCA decouples the .css files from the code-base. So in the resulting portal directory there will be two .css files are available for further tinkering and styling to everyone needs.
+
