@@ -6,7 +6,7 @@ from influxdb_client import Point
 
 #token for Auth
 mytoken = 'G9tlsRl1J-dYeOYp5OkWGNOSipEmbeN3gyp0wBbxDp6KRSZ-1foOkdTbhj8rkhN7Onj7CV105OYAQqAvr4C8-w=='
-
+#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
 bucket = "my-bucket"
 #Setup database
 client = InfluxDBClient(url="http://localhost:8086", token=mytoken, org="test1")
@@ -38,7 +38,8 @@ def reset_database_dict():
     database['fields']['num_with_citation'] = 0
     database['fields']['release_more_twoMon'] = 0
     database['fields']['release_less_twoMon'] = 0
-    database['fields']['timestamp'] = unix_timestamp
+    database['fields']['timestamp'] = 0
+    #database['fields']['time_upload'] =
 
 def summaryToDatabase(summary_output):
     #tags
@@ -58,6 +59,10 @@ def summaryToDatabase(summary_output):
     database['fields']['num_with_citation'] = summary_output['has_citation']
     database['fields']['release_more_twoMon'] = summary_output['released']['LONGER']
     database['fields']['release_less_twoMon'] = summary_output['released']['<2 MONTHS']
+    #TODO check if this is correct way to do it
+    auxdate = datetime.strptime(summary_output['_timestamp'],'%Y-%m-%dT%H:%M:%S.%f')
+    influxdate = auxdate.strftime('%Y-%m-%dT%H:%M:%SZ')
+    database['fields']['timestamp'] = influxdate
 
 
 
