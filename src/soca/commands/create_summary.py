@@ -123,6 +123,8 @@ def create_summary(directory_org_data,outFile, want2Upload):
             output['released'][__last_update(item)] = output['released'][__last_update(item)] + 1
             # adds org_name
             output['_org_name'] = item['owner']
+
+
         # saves dictionary to json file
         with open(outFile + "/" + item['owner'] + "_summary.json", 'w+') as out_file:
             json.dump(output, out_file, sort_keys=True, indent=4,
@@ -132,7 +134,8 @@ def create_summary(directory_org_data,outFile, want2Upload):
 
         if(want2Upload):
             upload_summary(output)
-
+        if(not want2Upload):
+            print("mega pinga")
 
 
     except Exception as e:
