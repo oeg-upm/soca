@@ -23,6 +23,7 @@ def reset_dict():
     output['_somef_version'] = somef_ver
     output['_org_name'] = ""
     output['_timestamp'] = __json_serial(datetime.now())
+    output['num_repos'] = 0
 
 
 
@@ -103,6 +104,8 @@ def create_summary(directory_org_data,outFile, want2Upload):
     #prepares dictionary to create json
     reset_dict()
     #updates the list of organisations
+
+
     try:
 
         json_array = __open_Json(directory_org_data)
@@ -123,6 +126,7 @@ def create_summary(directory_org_data,outFile, want2Upload):
             output['released'][__last_update(item)] = output['released'][__last_update(item)] + 1
             # adds org_name
             output['_org_name'] = item['owner']
+            output['num_repos'] =+ 1
 
 
         # saves dictionary to json file

@@ -30,6 +30,7 @@ def reset_database_dict():
     database['fields']['num_doi'] = 0
     database['fields']['num_pid'] = 0
     database['fields']['num_withoutId'] = 0
+    database['measurement'] = "licenses"
     database['fields']['num_Apache'] = 0
     database['fields']['num_GPL'] = 0
     database['fields']['num_MIT'] = 0
@@ -39,9 +40,12 @@ def reset_database_dict():
     database['fields']['release_more_twoMon'] = 0
     database['fields']['release_less_twoMon'] = 0
     database['fields']['timestamp'] = 0
+    #TODO placeholder
+    database['fields']['num_repos'] = 0
     #database['fields']['time_upload'] =
 
 def summaryToDatabase(summary_output):
+
     #tags
     database['tags']['org_name'] = summary_output['_org_name']
     database['tags']['soca_ver'] = summary_output['_soca_version']
@@ -59,6 +63,12 @@ def summaryToDatabase(summary_output):
     database['fields']['num_with_citation'] = summary_output['has_citation']
     database['fields']['release_more_twoMon'] = summary_output['released']['LONGER']
     database['fields']['release_less_twoMon'] = summary_output['released']['<2 MONTHS']
+    #TODO licences sum
+    #TODO readme scores
+    #TODO sum of readmes
+    #TODO placeholder
+    database['fields']['num_repos'] = summary_output['num_repos']
+
     #TODO check if this is correct way to do it
     auxdate = datetime.strptime(summary_output['_timestamp'],'%Y-%m-%dT%H:%M:%S.%f')
     influxdate = auxdate.strftime('%Y-%m-%dT%H:%M:%SZ')
