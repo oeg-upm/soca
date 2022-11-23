@@ -22,6 +22,7 @@ def reset_dict():
     output['_soca_version'] = soca_ver
     output['_somef_version'] = somef_ver
     output['_org_name'] = ""
+    #TODO look into portal date/time
     output['_timestamp'] = __json_serial(datetime.now())
     output['num_repos'] = 0
 
@@ -45,15 +46,22 @@ def __findId(json_obj):
 #TODO change to switch case when updated to python 3.10
 def __findLicense(json_obj):
     if not json_obj['license']:
+        print(json_obj['license'])
         return "MISSING"
     else:
-        return {
-            'Apache License 2.0': 'APACHE',
-            'MIT License': "MIT",
-            'GNU General Public License v3.0': 'GPL',
-            'Other': 'OTHER',
-            '_': "MISSING",
-        }[json_obj['licenseName']]
+        print("he llegao a find license")
+        print(json_obj['license'])
+        print(json_obj['license'])
+        if(json_obj['licenseName'] == 'Apache License 2.0'):
+            return "APACHE"
+        elif(json_obj['licenseName'] == 'MIT License'):
+            return "MIT"
+        elif(json_obj['licenseName'] == 'GNU General Public License v3.0' ):
+            return "GPL"
+        elif(json_obj['licenseName'] == 'Other'):
+            return "OTHER"
+        else:
+            return "MISSING"
 
 #TODO change soca output: recently updated to a more fitting name: Days last update?
 def __last_update(json_obj):
@@ -144,6 +152,9 @@ def create_summary(directory_org_data,outFile, want2Upload):
 
     except Exception as e:
         print("error create_summary")
+        print(item['id'])
+        print(item['license'])
+        print(item['licenseName'])
         print(str(e))
         return
 

@@ -19,6 +19,7 @@ def cards_data_dump(repo_metadata_dir):
                 repo_metadata = json.load(json_metadata)
                 md = metadata.metadata(repo_metadata_dir, repo_metadata)
                 citations = md.citations()
+                print(md.identifier())
                 cards_data.append({
                     'id': md.repo_url(),
                     'html_card': html_view(repo_metadata_dir, repo_metadata, False),
@@ -43,7 +44,7 @@ def cards_data_dump(repo_metadata_dir):
                     'help': md.help() is not None,
                     'hasDocumentation': md.hasDocumentation() is not None,
                     'hasIdentifier': md.identifier() is not None,
-                    'identifierLink': md.identifier()['excerpt'] if md.identifier() is not None else None,
+                    'identifierLink': md.identifier() if md.identifier() is not None else None,
                     'repoStatus': md.status() is not None,
                     'acknowledgement': md.acknowledgement() is not None,
                     'downloadUrl': md.downloadUrl() is not None,

@@ -30,7 +30,6 @@ def reset_database_dict():
     database['fields']['num_doi'] = 0
     database['fields']['num_pid'] = 0
     database['fields']['num_withoutId'] = 0
-    database['measurement'] = "licenses"
     database['fields']['num_Apache'] = 0
     database['fields']['num_GPL'] = 0
     database['fields']['num_MIT'] = 0
@@ -39,7 +38,7 @@ def reset_database_dict():
     database['fields']['num_with_citation'] = 0
     database['fields']['release_more_twoMon'] = 0
     database['fields']['release_less_twoMon'] = 0
-    database['fields']['timestamp'] = 0
+    #database['fields']['timestamp'] = 0
     #TODO placeholder
     database['fields']['num_repos'] = 0
     #database['fields']['time_upload'] =
@@ -72,7 +71,7 @@ def summaryToDatabase(summary_output):
     #TODO check if this is correct way to do it
     auxdate = datetime.strptime(summary_output['_timestamp'],'%Y-%m-%dT%H:%M:%S.%f')
     influxdate = auxdate.strftime('%Y-%m-%dT%H:%M:%SZ')
-    database['fields']['timestamp'] = influxdate
+    database['_time'] = "2019-09-11T00:00:00Z"
 
 
 
