@@ -18,6 +18,8 @@ def reset_dict():
     output['readme'] = {'Level 0': 0, 'Level 1': 0, 'Level 2': 0, 'Level 3': 0}
     output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0, 'MISSING': 0}
     output['has_citation'] = 0
+    output['no_citation'] = 0
+    output['CFF_file'] = 0
     output['released'] = {'<2 MONTHS': 0, 'LONGER': 0}
     output['_soca_version'] = soca_ver
     output['_somef_version'] = somef_ver
@@ -46,12 +48,8 @@ def __findId(json_obj):
 #TODO change to switch case when updated to python 3.10
 def __findLicense(json_obj):
     if not json_obj['license']:
-        print(json_obj['license'])
         return "MISSING"
     else:
-        print("he llegao a find license")
-        print(json_obj['license'])
-        print(json_obj['license'])
         if(json_obj['licenseName'] == 'Apache License 2.0'):
             return "APACHE"
         elif(json_obj['licenseName'] == 'MIT License'):
@@ -124,6 +122,9 @@ def create_summary(directory_org_data,outFile, want2Upload):
                 output['has_documentation'] = output['has_documentation'] + 1
             if item['citation']:
                 output['has_citation'] = output['has_citation'] + 1
+            #TODO citation recognition
+            else:
+                output['no_citation'] = output['no_citation'] + 1
             # finds licenses
             output['licenses'][__findLicense(item)] = output['licenses'][__findLicense(item)] + 1
             # finds identifiers
@@ -146,15 +147,10 @@ def create_summary(directory_org_data,outFile, want2Upload):
 
         if(want2Upload):
             upload_summary(output)
-        if(not want2Upload):
-            print("mega pinga")
 
 
     except Exception as e:
         print("error create_summary")
-        print(item['id'])
-        print(item['license'])
-        print(item['licenseName'])
         print(str(e))
         return
 

@@ -36,11 +36,20 @@ def reset_database_dict():
     database['fields']['num_Other'] = 0
     database['fields']['num_Missing'] = 0
     database['fields']['num_with_citation'] = 0
+    database['fields']['num_no_citation'] = 0
     database['fields']['release_more_twoMon'] = 0
     database['fields']['release_less_twoMon'] = 0
+    #TODO readme
+    database['fields']['readme_score_0'] = 0
+    database['fields']['readme_score_1'] = 0
+    database['fields']['readme_score_2'] = 0
+    database['fields']['readme_score_3'] = 0
+
+
     #database['fields']['timestamp'] = 0
     #TODO placeholder
     database['fields']['num_repos'] = 0
+    database['fields']['num_CFF'] = 0
     #database['fields']['time_upload'] =
 
 def summaryToDatabase(summary_output):
@@ -60,10 +69,15 @@ def summaryToDatabase(summary_output):
     database['fields']['num_Other'] = summary_output['licenses']['OTHER']
     database['fields']['num_Missing'] = summary_output['licenses']['MISSING']
     database['fields']['num_with_citation'] = summary_output['has_citation']
+    database['fields']['num_no_citation'] = summary_output['no_citation']
     database['fields']['release_more_twoMon'] = summary_output['released']['LONGER']
     database['fields']['release_less_twoMon'] = summary_output['released']['<2 MONTHS']
     #TODO licences sum
     #TODO readme scores
+    database['fields']['readme_score_0'] = summary_output['readme']['Level 0']
+    database['fields']['readme_score_1'] = summary_output['readme']['Level 1']
+    database['fields']['readme_score_2'] = summary_output['readme']['Level 2']
+    database['fields']['readme_score_3'] = summary_output['readme']['Level 3']
     #TODO sum of readmes
     #TODO placeholder
     database['fields']['num_repos'] = summary_output['num_repos']
@@ -71,7 +85,7 @@ def summaryToDatabase(summary_output):
     #TODO check if this is correct way to do it
     auxdate = datetime.strptime(summary_output['_timestamp'],'%Y-%m-%dT%H:%M:%S.%f')
     influxdate = auxdate.strftime('%Y-%m-%dT%H:%M:%SZ')
-    database['_time'] = "2019-09-11T00:00:00Z"
+    database['timestamp'] = "2019-09-11T00:00:00Z"
 
 
 
