@@ -135,7 +135,7 @@ def create_summary(directory_org_data,outFile, want2Upload):
             output['released'][__last_update(item)] = output['released'][__last_update(item)] + 1
             # adds org_name
             output['_org_name'] = item['owner']
-            output['num_repos'] =+ 1
+            output['num_repos'] += 1
 
 
         # saves dictionary to json file
