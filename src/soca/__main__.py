@@ -66,8 +66,9 @@ def card(input, output, save_as):
 @cli.command()
 @click.option('--input','-i', required=True, help="portal cards_data.json", metavar='<path>')
 @click.option('--output','-o', default="summary", show_default=True, help="Output file where the json will be saved", metavar='<path>')
-def summary(input,output):
-    """Create a summary of good practices from generated card data"""
+@click.option('--upload', '-U', is_flag=True, default = False, help="Will upload file to influxdb")
+def summary(input,output,upload):
+    """Create a summary of good practices from generated card data with possibility to upload"""
     from soca.commands import create_summary
-    create_summary.create_summary(input,output)
+    create_summary.create_summary(input,output,upload)
 

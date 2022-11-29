@@ -3,6 +3,7 @@ import json
 import os
 from soca import __version__ as soca_ver
 from somef import __version__ as somef_ver
+from .upload_summary import upload_summary
 
 output = {}
 def __json_serial(obj):
@@ -17,11 +18,15 @@ def reset_dict():
     output['readme'] = {'Level 0': 0, 'Level 1': 0, 'Level 2': 0, 'Level 3': 0}
     output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0, 'MISSING': 0}
     output['has_citation'] = 0
+    output['no_citation'] = 0
+    output['CFF_file'] = 0
     output['released'] = {'<2 MONTHS': 0, 'LONGER': 0}
     output['_soca_version'] = soca_ver
     output['_somef_version'] = somef_ver
     output['_org_name'] = ""
+    #TODO look into portal date/time
     output['_timestamp'] = __json_serial(datetime.now())
+    output['num_repos'] = 0
 
 
 
@@ -45,13 +50,16 @@ def __findLicense(json_obj):
     if not json_obj['license']:
         return "MISSING"
     else:
-        return {
-            'Apache License 2.0': 'APACHE',
-            'MIT License': "MIT",
-            'GNU General Public License v3.0': 'GPL',
-            'Other': 'OTHER',
-            '_': "MISSING",
-        }[json_obj['licenseName']]
+        if(json_obj['licenseName'] == 'Apache License 2.0'):
+            return "APACHE"
+        elif(json_obj['licenseName'] == 'MIT License'):
+            return "MIT"
+        elif(json_obj['licenseName'] == 'GNU General Public License v3.0' ):
+            return "GPL"
+        elif(json_obj['licenseName'] == 'Other'):
+            return "OTHER"
+        else:
+            return "MISSING"
 
 #TODO change soca output: recently updated to a more fitting name: Days last update?
 def __last_update(json_obj):
@@ -98,10 +106,12 @@ def __open_Json(directory):
 
 
 #function to create summary for each organisation
-def create_summary(directory_org_data,outFile):
+def create_summary(directory_org_data,outFile, want2Upload):
     #prepares dictionary to create json
     reset_dict()
     #updates the list of organisations
+
+
     try:
 
         json_array = __open_Json(directory_org_data)
@@ -112,6 +122,9 @@ def create_summary(directory_org_data,outFile):
                 output['has_documentation'] = output['has_documentation'] + 1
             if item['citation']:
                 output['has_citation'] = output['has_citation'] + 1
+            #TODO citation recognition
+            else:
+                output['no_citation'] = output['no_citation'] + 1
             # finds licenses
             output['licenses'][__findLicense(item)] = output['licenses'][__findLicense(item)] + 1
             # finds identifiers
@@ -122,13 +135,22 @@ def create_summary(directory_org_data,outFile):
             output['released'][__last_update(item)] = output['released'][__last_update(item)] + 1
             # adds org_name
             output['_org_name'] = item['owner']
+            output['num_repos'] += 1
+
+
         # saves dictionary to json file
         with open(outFile + "/" + item['owner'] + "_summary.json", 'w+') as out_file:
             json.dump(output, out_file, sort_keys=True, indent=4,
                       ensure_ascii=False)
             print(outFile)
             print(out_file)
+
+        if(want2Upload):
+            upload_summary(output)
+
+
     except Exception as e:
+        print("error create_summary")
         print(str(e))
         return
 
