@@ -67,7 +67,8 @@ Usage: soca [OPTIONS] COMMAND [ARGS]...
   organization/s or user/s, which is easy to host.
 
   Usage:
-
+  
+  =. (Configure) Create configuration file for database etc
   1. (fetch) Fetch all repos from the desired organization/s
   2. (extract) Extract all metadata for every repo
   3. (portal) Generate a searchable portal for all the retrieved data
@@ -77,11 +78,12 @@ Options:
   -h, --help  Show this message and exit.
 
 Commands:
-  card     Create a stand-alone card ready to be embedded in a website
-  extract  Fetch and save metadata from introduced repos
-  portal   Build a portal with a minimalist design
-  fetch    Retrieve all organization/s or user/s repositories
-  summary  Create a summary of good practices from portal card data
+  card        Create a stand-alone card ready to be embedded in a website
+  Configure   This creates a ~/.soca/configure.ini file
+  extract     Fetch and save metadata from introduced repos
+  portal      Build a portal with a minimalist design
+  fetch       Retrieve all organization/s or user/s repositories
+  summary     Create a summary of good practices from portal card data
 ```
 
 In order to use SOCA you will need to follow the next steps:  
