@@ -1,4 +1,6 @@
 import click
+import os
+from pathlib import Path
 from . import __version__
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
@@ -11,14 +13,36 @@ def cli():
     Automatically generates a searchable portal for every repository of an organization/s or user/s, which is easy to host.\n
 
     Usage:
-
+    =. (Configure) Create configuration file for database etc
     1. (fetch) Fetch all repos from the desired organization/s\n
     2. (extract) Extract all metadata for every repo\n
     3. (portal) Generate a searchable portal for all the retrieved data\n
     4. (summary) Create a summary from the portal information
 
     """
-    pass 
+    pass
+
+#TODO
+@cli.command()
+def configure():
+    """This creates a ~/.soca/configure.ini file"""
+    #TODO
+    click.echo("no clue what I should say here")
+    url = click.prompt("URL to database",default = "")
+    bucket = click.prompt("Bucket", default = "")
+    token = click.prompt("Token", default = "")
+    username = click.prompt("user", default = "")
+    password = click.prompt("password",default="")
+    try:
+        from soca.commands import create_config
+
+        create_config.create_config(url,bucket,token,username,password)
+        click.secho(f"Success", fg="green")
+    except Exception as e:
+        click.secho(f"Error: "+str(e),fg="red")
+        exit(1)
+
+
 
 @cli.command()
 @click.option('--input','-i', required=True, help="Organization or user name", metavar='<name-or-path>')

@@ -1,15 +1,29 @@
 from influxdb_client import InfluxDBClient
 from influxdb_client.client.write_api import SYNCHRONOUS
 from datetime import datetime
+from configparser import ConfigParser
+from pathlib import Path
+import os
 
 from influxdb_client import Point
 
-#token for Auth
-mytoken = 'G9tlsRl1J-dYeOYp5OkWGNOSipEmbeN3gyp0wBbxDp6KRSZ-1foOkdTbhj8rkhN7Onj7CV105OYAQqAvr4C8-w=='
-#
-bucket = "my-bucket"
+config_obj = ConfigParser()
+home = str(Path("~").expanduser())
+try:
+    config_obj.read(home+"/.soca/config.ini")
+    print(home+"/.soca/config.ini")
+    url = config_obj["DATABASE"]["host"]
+    mytoken = config_obj["DATABASE"]["token"]
+    bucket = config_obj["DATABASE"]["bucket"]
+except Exception as e:
+    print(str(e))
+    exit(1)
+
+
+
+
 #Setup database
-client = InfluxDBClient(url="http://localhost:8086", token=mytoken, org="test1")
+client = InfluxDBClient(url=url, token=mytoken, org="test1")
 write_api = client.write_api(write_options=SYNCHRONOUS)
 query_api = client.query_api()
 
@@ -20,6 +34,11 @@ unix_timestamp = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 #dict to upload the files
 database = {}
 def reset_database_dict():
+    """Function that ensures the dictionary that will be uploaded to influx is created and empty
+    Returns
+    -------
+    Nothing
+    """
     database['measurement'] = "test3"
     database['tags'] = {}
     database['tags']['org_name'] = ""
@@ -53,7 +72,12 @@ def reset_database_dict():
     #database['fields']['time_upload'] =
 
 def summaryToDatabase(summary_output):
-
+    """Function that takes the "output" dictionary from create_summary.py and equates it to influxdb database.
+        database dictionary now has all values from "output" dictionary
+    Returns
+    -------
+    Nothing
+    """
     #tags
     database['tags']['org_name'] = summary_output['_org_name']
     database['tags']['soca_ver'] = summary_output['_soca_version']
@@ -81,15 +105,22 @@ def summaryToDatabase(summary_output):
     #TODO sum of readmes
     #TODO placeholder
     database['fields']['num_repos'] = summary_output['num_repos']
+    
 
+    #TODO verificar
     #TODO check if this is correct way to do it
     auxdate = datetime.strptime(summary_output['_timestamp'],'%Y-%m-%dT%H:%M:%S.%f')
     influxdate = auxdate.strftime('%Y-%m-%dT%H:%M:%SZ')
-    database['timestamp'] = "2019-09-11T00:00:00Z"
+    database['timestamp'] = influxdate
 
 
 
 def upload_summary(dictionary):
+    """Function that uploads a given dictionary to predefined influxdb database.
+    Returns
+    -------
+    Nothing
+    """
     reset_database_dict()
     summaryToDatabase(dictionary)
     try:

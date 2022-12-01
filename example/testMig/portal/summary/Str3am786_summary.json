@@ -1,8 +1,9 @@
 {
+    "CFF_file": 0,
     "_org_name": "Str3am786",
     "_soca_version": "0.0.1",
     "_somef_version": "0.8.2",
-    "_timestamp": "2022-11-17T01:13:51.170151",
+    "_timestamp": "2022-12-01T01:26:46.131483",
     "has_citation": 0,
     "has_documentation": 0,
     "identifiers": {
@@ -17,6 +18,7 @@
         "MIT": 0,
         "OTHER": 0
     },
+    "no_citation": 1,
     "num_repos": 1,
     "readme": {
         "Level 0": 0,
