@@ -43,7 +43,13 @@ git clone https://github.com/dakixr/soca
 cd soca
 pip install -e .
 ```
+## Install from DockerFile
 
+```text
+git clone https://github.com/dakixr/soca
+cd soca
+docker build -t [INSERT_NAME] .
+```
 Highly recommended step:  
 
 ```text
