@@ -1,6 +1,8 @@
 FROM python:3.9
 WORKDIR /soca
-COPY pyproject.toml .
+RUN mkdir src
+COPY pyproject.toml pyproject.toml
+COPY setup.cfg setup.cfg
 COPY ./src ./src
 RUN pip3 install -e .
-CMD [ "python", "./__main__.py" ]
+CMD [ "python", "./src/soca/__main__.py" ]
