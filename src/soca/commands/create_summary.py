@@ -51,6 +51,7 @@ def __findId(json_obj):
 
 
 #TODO change to switch case when updated to python 3.10
+#TODO try except with dictionary
 def __findLicense(json_obj):
     """Function that looks for the name of the license within the cards_data.json (json_obj)
     Returns
@@ -162,8 +163,11 @@ def create_summary(directory_org_data,outFile, want2Upload):
         with open(outFile + "/" + item['owner'] + "_summary.json", 'w+') as out_file:
             json.dump(output, out_file, sort_keys=True, indent=4,
                       ensure_ascii=False)
-            print(outFile)
-            print(out_file)
+            #console outputs
+            print("Creating: "+ outFile + "/" + item['owner'] + "_summary.json in current directory")
+            #print(out_file)
+            print('\033[92m', "Success", '\033[0m')
+            print("========")
 
         if(want2Upload):
             upload_summary(output)

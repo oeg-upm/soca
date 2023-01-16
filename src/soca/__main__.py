@@ -26,17 +26,17 @@ def cli():
 @cli.command()
 def configure():
     """This creates a ~/.soca/configure.ini file"""
-    #TODO
-    click.echo("no clue what I should say here")
-    url = click.prompt("URL to database",default = "")
-    bucket = click.prompt("Bucket", default = "")
+    #TODO defaults check
+    url = click.prompt("URL to database",default = "http://localhost:8086")
+    bucket = click.prompt("Bucket", default = "my-bucket")
     token = click.prompt("Token", default = "")
-    username = click.prompt("user", default = "")
-    password = click.prompt("password",default="")
+    if len(token) == 0:
+        click.echo("No token given, please enter token or press enter")
+        token = click.prompt("Token", default = "")
     try:
         from soca.commands import create_config
 
-        create_config.create_config(url,bucket,token,username,password)
+        create_config.create_config(url,bucket,token)
         click.secho(f"Success", fg="green")
     except Exception as e:
         click.secho(f"Error: "+str(e),fg="red")

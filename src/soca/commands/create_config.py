@@ -45,7 +45,7 @@ def update_config():
     """
     return
 
-def create_config(url,bucket,token,username,password):
+def create_config(url,bucket,token):
     """Function that creates the configuration file
     Returns
     -------
@@ -58,10 +58,8 @@ def create_config(url,bucket,token,username,password):
     config.set('DATABASE','bucket',bucket)
     #TODO look into adding option to soca -Upload
     #config.set('DATABASE',org,)
-    #confi.set('DATABSE',measurement)
-    config.add_section("USERINFO")
-    config.set('USERINFO','user',username)
-    config.set('USERINFO','password',password)
+    #config.set('DATABASE',measurement)
+
     home = str(Path("~").expanduser())
     if not os.path.isdir(home+"/.soca"):
         try:
