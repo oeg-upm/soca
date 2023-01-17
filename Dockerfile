@@ -6,5 +6,4 @@ COPY setup.cfg setup.cfg
 COPY ./src ./src
 RUN pip3 install -e .
 WORKDIR /soca/src/soca
-RUN ls
-CMD [ "python", "__main__.py" ]
+CMD [ "soca", "-h" ]

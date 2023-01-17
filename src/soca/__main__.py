@@ -1,7 +1,7 @@
 import click
 import os
 from pathlib import Path
-from __init__ import __version__
+from . import __version__
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
