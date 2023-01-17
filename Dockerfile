@@ -5,4 +5,6 @@ COPY pyproject.toml pyproject.toml
 COPY setup.cfg setup.cfg
 COPY ./src ./src
 RUN pip3 install -e .
-CMD [ "python", "./src/soca/__main__.py" ]
+WORKDIR /soca/src/soca
+RUN ls
+CMD [ "python", "__main__.py" ]
