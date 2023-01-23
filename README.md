@@ -43,16 +43,6 @@ git clone https://github.com/dakixr/soca
 cd soca
 pip install -e .
 ```
-## Install from DockerFile
-
-```text
-git clone https://github.com/dakixr/soca
-cd soca
-```
-Before executing the step below please ensure the files within ./soca/configFiles are modified for your use case.
-```text
-docker build -t [INSERT_NAME] .
-```
 Highly recommended step:  
 
 ```text
@@ -64,6 +54,17 @@ And you will be asked to provide the following:
 * A GitHub authentication token [**optional, leave blank if not used**], which SOMEF uses to retrieve metadata from GitHub. If you don't include an authentication token, you can still use SOMEF. However, you may be limited to a series of requests per hour. For more information, see [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
 
 * The path to the trained classifiers (pickle files). If you have your own classifiers, you can provide them here. Otherwise, you can leave it blank
+## Install from DockerFile
+
+```text
+git clone https://github.com/dakixr/soca
+cd soca
+```
+Before executing the step below please ensure the files within ./soca/configFiles are modified for your use case.
+```text
+docker build -t [INSERT_NAME] .
+```
+Ensure ./soca/.somef/config.json file is in accordance with your system
 
 ## Usage
 
