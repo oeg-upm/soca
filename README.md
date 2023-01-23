@@ -49,6 +49,9 @@ Before executing the steps below please ensure the files in configFiles are modi
 ```text
 git clone https://github.com/dakixr/soca
 cd soca
+```
+Before executing the step below please ensure the files within ./soca/configFiles are modified for your use case.
+```text
 docker build -t [INSERT_NAME] .
 ```
 Highly recommended step:  
