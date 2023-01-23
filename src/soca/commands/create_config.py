@@ -36,14 +36,6 @@ def get_config():
         #sys.exit("Error: Please provide a config.json file or run somef configure.")
 
     return config_obj
-#TODO DELETE?
-def update_config():
-    """Function that retrieves the configuration file and updates it
-    Returns
-    -------
-    NEW config object
-    """
-    return
 
 def create_config(url,bucket,token):
     """Function that creates the configuration file
