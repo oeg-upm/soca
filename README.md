@@ -45,6 +45,7 @@ pip install -e .
 ```
 ## Install from DockerFile
 
+Before executing the steps below please ensure the files in configFiles are modified for your use case.
 ```text
 git clone https://github.com/dakixr/soca
 cd soca
