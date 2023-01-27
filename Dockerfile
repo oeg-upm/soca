@@ -1,4 +1,5 @@
 FROM python:3.9
+ENV IN_DOCKER yes
 WORKDIR /home
 COPY ./configFiles/.soca    ./.soca
 COPY ./configFiles/.somef ./.somef

@@ -8,7 +8,11 @@ import os
 from influxdb_client import Point
 
 config_obj = ConfigParser()
-home = str(Path("~").expanduser())
+
+if os.getenv("IN_DOCKER") == "yes":
+    home = "/home"
+else:
+    home = str(Path("~").expanduser())
 try:
     config_obj.read(home+"/.soca/config.ini")
     url = config_obj["DATABASE"]["host"]

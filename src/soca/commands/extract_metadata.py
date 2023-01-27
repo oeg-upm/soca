@@ -2,7 +2,10 @@ import csv
 import json
 import os
 from progressbar import progressbar
-from somef.cli import cli_get_data
+if os.getenv("IN_DOCKER") == "yes":
+    from somef.somef_cli import cli_get_data
+else:
+    from somef.cli import cli_get_data
 import os
 from os import path
 from soca import HiddenPrints
