@@ -2,11 +2,7 @@ import csv
 import json
 import os
 from progressbar import progressbar
-
-if os.getenv("IN_DOCKER") == "yes":
-    from somef.somef_cli import cli_get_data
-else:
-    from somef.cli import cli_get_data
+from somef.cli import cli_get_data
 
 import os
 from os import path
