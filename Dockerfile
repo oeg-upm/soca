@@ -9,7 +9,6 @@ COPY pyproject.toml pyproject.toml
 COPY setup.cfg setup.cfg
 COPY ./installer.sh ./installer.sh
 COPY ./src ./src
-COPY ./demo ./demo
 RUN pip3 install -e .
 RUN python -m nltk.downloader wordnet
 RUN python -m nltk.downloader omw-1.4
