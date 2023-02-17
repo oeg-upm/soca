@@ -1,0 +1,33 @@
+{
+    "CFF_file": 0,
+    "_org_name": "oeg-upm",
+    "_soca_version": "0.0.1",
+    "_somef_version": "0.8.2",
+    "_timestamp": "2023-02-17T16:12:18.907406",
+    "has_citation": 0,
+    "has_documentation": 9,
+    "identifiers": {
+        "num_doi": 0,
+        "num_pid": 0,
+        "num_without_identifier": 24
+    },
+    "licenses": {
+        "APACHE": 6,
+        "GPL": 0,
+        "MISSING": 12,
+        "MIT": 2,
+        "OTHER": 4
+    },
+    "no_citation": 24,
+    "num_repos": 24,
+    "readme": {
+        "Level 0": 2,
+        "Level 1": 21,
+        "Level 2": 1,
+        "Level 3": 0
+    },
+    "released": {
+        "<2 MONTHS": 2,
+        "LONGER": 22
+    }
+}

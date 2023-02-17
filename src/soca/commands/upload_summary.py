@@ -16,6 +16,7 @@ try:
     url = config_obj["DATABASE"]["host"]
     mytoken = config_obj["DATABASE"]["token"]
     bucket = config_obj["DATABASE"]["bucket"]
+    org = config_obj["DATABASE"]["org"]
 except Exception as e:
     print(str(e))
     exit(1)
@@ -24,7 +25,7 @@ except Exception as e:
 
 
 #Setup database
-client = InfluxDBClient(url=url, token=mytoken, org="test1")
+client = InfluxDBClient(url=url, token=mytoken, org=org)
 write_api = client.write_api(write_options=SYNCHRONOUS)
 query_api = client.query_api()
 

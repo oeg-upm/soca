@@ -29,6 +29,7 @@ def configure():
     #TODO defaults check
     url = click.prompt("URL to database",default = "http://localhost:8086")
     bucket = click.prompt("Bucket", default = "my-bucket")
+    org = click.prompt("Organisation",default = "test1")
     token = click.prompt("Token", default = "")
     if len(token) == 0:
         click.echo("No token given, please enter token or press enter")
@@ -36,7 +37,7 @@ def configure():
     try:
         from soca.commands import create_config
 
-        create_config.create_config(url,bucket,token)
+        create_config.create_config(url,bucket,token,org)
         click.secho(f"Success", fg="green")
     except Exception as e:
         click.secho(f"Error: "+str(e),fg="red")

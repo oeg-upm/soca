@@ -37,7 +37,7 @@ def get_config():
 
     return config_obj
 
-def create_config(url,bucket,token):
+def create_config(url,bucket,token,org):
     """Function that creates the configuration file
     Returns
     -------
@@ -48,6 +48,7 @@ def create_config(url,bucket,token):
     config.set('DATABASE','host',url)
     config.set('DATABASE','token',token)
     config.set('DATABASE','bucket',bucket)
+    config.set('DATABASE', 'org', org)
     #TODO look into adding option to soca -Upload
     #config.set('DATABASE',org,)
     #config.set('DATABASE',measurement)
