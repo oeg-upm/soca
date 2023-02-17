@@ -50,9 +50,10 @@ def extract(repos_csv, output, use_inspect4py, verbose):
                 continue
         except KeyboardInterrupt:
             exit()
-        except:
+        except Exception as e:
             # traceback.print_exc()
             print(f"ERROR: Could not extract metadata from {repo_url}")
+            print(str(e))
             failed_repos.append(repo_url)
             continue
 

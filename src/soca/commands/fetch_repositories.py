@@ -50,7 +50,7 @@ def _fetch(name, out_path, type, not_archived, not_forked, not_disabled):
 
                 if len(data_repos) < 50:
                     cont = False
-            except Exception as e: 
-                print(f"ERROR: '{type} {name}' does not exist.")
+            except Exception as e:
+                print(str(e))
+                print(f"ERROR: '{type} {name}'")
                 return
-
