@@ -69,7 +69,7 @@ docker build -t [INSERT_NAME] .
 Depending on your needs you may also may need to run the following command:
 
 ```text
-docker compose up
+docker-compose up
 ```
 This will initialise the grafana and influxdb within a docker network. This may be required if you wish to visualise the soca summary
 ## Usage
