@@ -39,23 +39,39 @@ soca card https://github.com/oeg-upm/soca --png
 ## Install from GitHub
 
 ```text
-git clone https://github.com/dakixr/soca
+git clone https://github.com/oeg-upm/soca
 cd soca
 pip install -e .
 ```
-
 Highly recommended step:  
 
 ```text
 somef configure
 ```
+Alternatively you may run the installer.sh file which will also configure SOMEF, just edit it to it for your needs.
 
 And you will be asked to provide the following:
 
 * A GitHub authentication token [**optional, leave blank if not used**], which SOMEF uses to retrieve metadata from GitHub. If you don't include an authentication token, you can still use SOMEF. However, you may be limited to a series of requests per hour. For more information, see [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
 
 * The path to the trained classifiers (pickle files). If you have your own classifiers, you can provide them here. Otherwise, you can leave it blank
+## Install from DockerFile
 
+```text
+git clone https://github.com/oeg-upm/soca
+cd soca
+```
+Soca comes with a installer.sh file which will automatically run the SOCA and SOMEF configure commands. Please edit it in accordance to your needs.
+Once this has been done you may execute the following command:
+```text
+docker build -t [INSERT_NAME] .
+```
+Depending on your needs you may also may need to run the following command:
+
+```text
+docker compose up
+```
+This will initialise the grafana and influxdb within a docker network. This may be required if you wish to visualise the soca summary
 ## Usage
 
 ```text
@@ -67,7 +83,8 @@ Usage: soca [OPTIONS] COMMAND [ARGS]...
   organization/s or user/s, which is easy to host.
 
   Usage:
-
+  
+  =. (Configure) Create configuration file for database etc
   1. (fetch) Fetch all repos from the desired organization/s
   2. (extract) Extract all metadata for every repo
   3. (portal) Generate a searchable portal for all the retrieved data
@@ -77,11 +94,12 @@ Options:
   -h, --help  Show this message and exit.
 
 Commands:
-  card     Create a stand-alone card ready to be embedded in a website
-  extract  Fetch and save metadata from introduced repos
-  portal   Build a portal with a minimalist design
-  fetch    Retrieve all organization/s or user/s repositories
-  summary  Create a summary of good practices from portal card data
+  card        Create a stand-alone card ready to be embedded in a website
+  configure   This creates a ~/.soca/configure.ini file
+  extract     Fetch and save metadata from introduced repos
+  portal      Build a portal with a minimalist design
+  fetch       Retrieve all organization/s or user/s repositories
+  summary     Create a summary of good practices from portal card data
 ```
 
 In order to use SOCA you will need to follow the next steps:  

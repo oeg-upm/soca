@@ -7,10 +7,15 @@ from .upload_summary import upload_summary
 
 output = {}
 def __json_serial(obj):
-    """JSON serializer for objects not serializable by default json code"""
+    """JSON serializer for objects not serializable by default json code
+    Returns
+    -------
+    serialized obj
+
+    """
     if isinstance(obj, (datetime, date)):
         return obj.isoformat()
-    raise TypeError ("Type %s not serializable" % type(obj))
+    raise TypeError("Type %s not serializable" % type(obj))
 
 def reset_dict():
     output['has_documentation'] = 0
@@ -33,6 +38,7 @@ def reset_dict():
 #functions below to identify good practices
 #TODO look into correct identifiers
 def __findId(json_obj):
+    """JSON finds ID within the dictionary and adds 1 to number in output"""
     if json_obj['hasIdentifier']:
         #follows assumption that doi.org -> hasPid
         if "doi.org" in json_obj['identifierLink']:
@@ -44,9 +50,14 @@ def __findId(json_obj):
         output['identifiers']['num_without_identifier'] = output['identifiers']['num_without_identifier'] + 1
 
 
-#TODO testing on the acceptance will break
 #TODO change to switch case when updated to python 3.10
+#TODO try except with dictionary
 def __findLicense(json_obj):
+    """Function that looks for the name of the license within the cards_data.json (json_obj)
+    Returns
+    -------
+    Usable string within the "output dictionary"
+    """
     if not json_obj['license']:
         return "MISSING"
     else:
@@ -63,6 +74,11 @@ def __findLicense(json_obj):
 
 #TODO change soca output: recently updated to a more fitting name: Days last update?
 def __last_update(json_obj):
+    """Function that looks how many days since last update: "recently_updated" within the cards_data.json (json_obj)
+    Returns
+    -------
+    Usable string within the "output dictionary"
+    """
     if json_obj['recently_updated'] > 60:
         return "LONGER"
     else:
@@ -71,6 +87,12 @@ def __last_update(json_obj):
 #function given a json object will give readme score OK, GOOD, GREAT, EMPTY
 #TODO clean UP
 def readme_score(json_obj):
+    """Function that returns the readme score counting how many good practices are met
+        within the cards_data.json (json_obj)
+    Returns
+    -------
+    Usable string within the "output dictionary"
+    """
     score = 0
     #if no readme return EMPTY/level 0
     if not json_obj['readmeUrl']:
@@ -107,11 +129,10 @@ def __open_Json(directory):
 
 #function to create summary for each organisation
 def create_summary(directory_org_data,outFile, want2Upload):
+
     #prepares dictionary to create json
     reset_dict()
     #updates the list of organisations
-
-
     try:
 
         json_array = __open_Json(directory_org_data)
@@ -142,8 +163,11 @@ def create_summary(directory_org_data,outFile, want2Upload):
         with open(outFile + "/" + item['owner'] + "_summary.json", 'w+') as out_file:
             json.dump(output, out_file, sort_keys=True, indent=4,
                       ensure_ascii=False)
-            print(outFile)
-            print(out_file)
+            #console outputs
+            print("Creating: "+ outFile + "/" + item['owner'] + "_summary.json in current directory")
+            #print(out_file)
+            print('\033[92m', "Success", '\033[0m')
+            print("========")
 
         if(want2Upload):
             upload_summary(output)
