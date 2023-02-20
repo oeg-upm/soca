@@ -14,4 +14,4 @@ RUN pip3 install -e .
 RUN python -m nltk.downloader wordnet
 RUN python -m nltk.downloader omw-1.4
 RUN ./installer.sh
-CMD ./container_run.sh
+CMD /bin/bash
