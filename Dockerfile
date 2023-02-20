@@ -1,8 +1,5 @@
 FROM python:3.9
 ENV IN_DOCKER yes
-WORKDIR /root
-COPY ./configFiles/.soca    ./.soca
-COPY ./configFiles/.somef ./.somef
 WORKDIR /soca
 RUN mkdir src
 COPY pyproject.toml pyproject.toml
