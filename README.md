@@ -39,7 +39,7 @@ soca card https://github.com/oeg-upm/soca --png
 ## Install from GitHub
 
 ```text
-git clone https://github.com/dakixr/soca
+git clone https://github.com/oeg-upm/soca
 cd soca
 pip install -e .
 ```
@@ -48,6 +48,7 @@ Highly recommended step:
 ```text
 somef configure
 ```
+Alternatively you may run the installer.sh file which will also configure SOMEF, just edit it to it for your needs.
 
 And you will be asked to provide the following:
 
@@ -57,15 +58,20 @@ And you will be asked to provide the following:
 ## Install from DockerFile
 
 ```text
-git clone https://github.com/dakixr/soca
+git clone https://github.com/oeg-upm/soca
 cd soca
 ```
-Before executing the step below please ensure the files within ./soca/configFiles are modified for your use case.
+Soca comes with a installer.sh file which will automatically run the SOCA and SOMEF configure commands. Please edit it in accordance to your needs.
+Once this has been done you may execute the following command:
 ```text
 docker build -t [INSERT_NAME] .
 ```
-Ensure ./soca/.somef/config.json file is in accordance with your system
+Depending on your needs you may also may need to run the following command:
 
+```text
+docker compose up
+```
+This will initialise the grafana and influxdb within a docker network. This may be required if you wish to visualise the soca summary
 ## Usage
 
 ```text
@@ -89,7 +95,7 @@ Options:
 
 Commands:
   card        Create a stand-alone card ready to be embedded in a website
-  Configure   This creates a ~/.soca/configure.ini file
+  configure   This creates a ~/.soca/configure.ini file
   extract     Fetch and save metadata from introduced repos
   portal      Build a portal with a minimalist design
   fetch       Retrieve all organization/s or user/s repositories
