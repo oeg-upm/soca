@@ -34,6 +34,7 @@ unix_timestamp = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
 #=================
 #dict to upload the files
+#TODO may need to update "_measurement"
 database = {}
 def reset_database_dict():
     """Function that ensures the dictionary that will be uploaded to influx is created and empty
@@ -41,7 +42,7 @@ def reset_database_dict():
     -------
     Nothing
     """
-    database['measurement'] = "test3"
+    database['measurement'] = "SOCA_Summary"
     database['tags'] = {}
     database['tags']['org_name'] = ""
     database['tags']['soca_ver'] = 0
