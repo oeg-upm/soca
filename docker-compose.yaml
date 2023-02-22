@@ -4,14 +4,19 @@ services:
   influxdb:
     image: influxdb
     restart: always
+    hostname: influx
     ports:
       - "8086:8086"
     networks:
       - socaNet
     environment:
-      - INFLUXDB_DB=grafana
-      - INFLUXDB_ADMIN_USER=admin
-      - INFLUXDB_ADMIN_PASSWORD=pass
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_DB=grafana
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=pingaMax
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=mytoken
+      - DOCKER_INFLUXDB_INIT_ORG=org_name
+      - DOCKER_INFLUXDB_INIT_BUCKET=my-bucket
     volumes:
       - influxdb_data:/var/lib/influxdb
 
@@ -20,12 +25,13 @@ services:
     ports:
       - "3000:3000"
     restart: always
+    hostname: grafana
     networks:
       - socaNet
     depends_on:
       - influxdb
     environment:
-      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource,grafana-worldmap-panel, snuids-radar-panel
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource,grafana-worldmap-panel,  snuids-radar-panel
       - GF_AUTH_DISABLE_LOGIN_FORM=true
       - GF_AUTH_ANONYMOUS_ENABLED=true
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
