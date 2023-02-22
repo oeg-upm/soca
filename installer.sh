@@ -7,13 +7,13 @@ token=""
 #
 #SOCA Configuration
 #database Host URL
-host=""
+host="http://influx:8086"
 #database Bucket
-bucket=""
+bucket="my-bucket"
 #database Organisation
-org=""
+org="org_name"
 #database Token
-databaseToken=""
+databaseToken="wU0f32FuDEbEUXiKs2rKA-vlifTbO02hLB1v49hvwXWyVYLyPzyyBoBX8AT5LXuGRjZQcHn5ukp6GXnEkOriNA=="
 #######################
 echo -e "${token}\n\n\n\n" | somef configure
 #
