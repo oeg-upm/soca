@@ -90,7 +90,7 @@ To do so please execute the following:
 ``` 
 influx v1 dbrp create --db [Bucket Name] -rp 0 --bucket-id [Bucket-id]
 ```
-You may also need to create a v1 authentication:
+You also need to create a v1 authentication:
 ```
 influx v1 auth create \
   --read-bucket [Bucket-id] \
@@ -107,7 +107,15 @@ docker build -t [INSERT_NAME] .
 Once the container has been built you may execute the SOCA container by running the following:
 ```
 docker run -it --network [network influx is running on] [container name]
+
 ```
+##SOCA-Dash 
+Once this has been done you may create a grafana dashboard using SOCA-Dash.json.
+You will need to have connected the grafana to the influx database. To do so you will need to use the previously created influx token.
+You must create a influxQL data source. Due to version 2.0 you will need to add a header containing "Authorisation" or "Authorization" and the value being the influx token. For the database value put the bucket name; for the login we recommend the admin login credentials or the user you created the v1 authorisation with.
+
+Once the datasource has been added it's as easy as importing the soca dash json file to the grafana and using the influxQL data source for all options.
+
 
 ## Usage
 
