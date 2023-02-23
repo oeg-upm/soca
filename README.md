@@ -61,17 +61,54 @@ And you will be asked to provide the following:
 git clone https://github.com/oeg-upm/soca
 cd soca
 ```
-Soca comes with a installer.sh file which will automatically run the SOCA and SOMEF configure commands. Please edit it in accordance to your needs.
-Once this has been done you may execute the following command:
+Soca comes with a installer.sh file which will automatically run the SOCA and SOMEF configure commands. Please edit it in accordance to your needs. 
+The installer.sh file is necessary for the docker installation process
+
+```
+docker compose up
+```
+Docker compose up starts the grafana and the influxdb within their own container. It also creates its own network: "socaNet"
+You may want to list the containers you have/running:
+```
+docker ps -a
+```
+If you wish to access the influx container to generate a token you will first need to enter the container:
+```
+docker run exec -it [influx container id] /bin/bash
+```
+This starts an bash shell for the container. Remember, the container must be running at the time of executing this command.
+
+Once within the container you will need to generate a influx token. The following command will generate a token, you may change the token flags to your needs. Once this command returns a token please copy this into the installer.sh file "databaseToken"
+For more information please visit: https://docs.influxdata.com/influxdb/cloud/reference/cli/influx/auth/create/
+To generate a token:
+```
+influx auth create -o [organistation name] --access-all
+```
+
+SOCA-Dash requires influxQL to work to ensure a connection within grafana. 
+To do so please execute the following:
+``` 
+influx v1 dbrp create --db [Bucket Name] -rp 0 --bucket-id [Bucket-id]
+```
+You may also need to create a v1 authentication:
+```
+influx v1 auth create \
+  --read-bucket [Bucket-id] \
+  --write-bucket [Bucket-id] \
+  --username admin
+ ```
+Once the influx has been setup and token copied to installer.sh you may feel free to exit the container.
+
+Now we need to build the SOCA container, please ensure you are within the github directory when executing this command:
+Remember, container_run.sh will create a summary for the oeg-upm group, modify to your needs and desires. More information can be found within USAGE
 ```text
 docker build -t [INSERT_NAME] .
 ```
-Depending on your needs you may also may need to run the following command:
-
-```text
-docker-compose up
+Once the container has been built you may execute the SOCA container by running the following:
 ```
-This will initialise the grafana and influxdb within a docker network. This may be required if you wish to visualise the soca summary
+docker run -it --network [network influx is running on] [container name]
+```
+
 ## Usage
 
 ```text
