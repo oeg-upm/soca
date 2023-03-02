@@ -43,35 +43,115 @@ git clone https://github.com/oeg-upm/soca
 cd soca
 pip install -e .
 ```
-Highly recommended step:  
+Highly recommended steps:  
 
 ```text
 somef configure
 ```
-Alternatively you may run the installer.sh file which will also configure SOMEF, just edit it to it for your needs.
+Alternatively you may run the _installer.sh_ file which will also configure SOMEF, just edit it to it for your needs.
 
 And you will be asked to provide the following:
 
 * A GitHub authentication token [**optional, leave blank if not used**], which SOMEF uses to retrieve metadata from GitHub. If you don't include an authentication token, you can still use SOMEF. However, you may be limited to a series of requests per hour. For more information, see [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
 
 * The path to the trained classifiers (pickle files). If you have your own classifiers, you can provide them here. Otherwise, you can leave it blank
+
+### InfluxDB setup
+For SOCA-Dash to work you will need to have a working version of influx 2.+ as well as grafana on your machine. SOCA-Dash needs two datasources and requires tokens to be able to access the influxDB datasources.
+For more information please visit: https://docs.influxdata.com/influxdb/cloud/reference/cli/influx/auth/create/
+
+To generate a token:
+```
+influx auth create -o [organistation name] --access-all
+```
+
+SOCA-Dash requires influxQL datasource connection within grafana. 
+To ensure that influx 2.+ allows influxQL queries execute the following:
+``` 
+influx v1 dbrp create --db [Bucket Name] -rp 0 --bucket-id [Bucket-id]
+```
+You also need to create a v1 authentication:
+```
+influx v1 auth create \
+  --read-bucket [Bucket-id] \
+  --write-bucket [Bucket-id] \
+  --username admin
+ ```
+Once the influx has been setup and token created please ensure that SOCA is using said token. Now is a good time to execute the SOCA configure command. Or edit the ./_installer.sh_ file to your needs and executing the script.
+
 ## Install from DockerFile
 
 ```text
 git clone https://github.com/oeg-upm/soca
 cd soca
 ```
-Soca comes with a installer.sh file which will automatically run the SOCA and SOMEF configure commands. Please edit it in accordance to your needs.
-Once this has been done you may execute the following command:
+SOCA comes with a _installer.sh_ file which will automatically run the SOCA and SOMEF configure commands. Please edit it in accordance to your needs. 
+The _installer.sh_ file is necessary for the docker installation process
+
+```
+docker compose up
+```
+Docker compose up starts the grafana and the influxdb within their own container. It also creates its own network: "socaNet"
+You may want to list the containers you have/running:
+```
+docker ps -a
+```
+If you wish to access the influx container to generate a token you will first need to enter the container:
+```
+docker run exec -it [influx container id] /bin/bash
+```
+This starts an bash shell for the container. Remember, the container must be running at the time of executing this command.
+
+Once within the container you will need to generate a influx token. The following command will generate a token, you may change the token flags to your needs. Once this command returns a token please copy this into the _installer.sh_ file "databaseToken"
+For more information please visit: https://docs.influxdata.com/influxdb/cloud/reference/cli/influx/auth/create/
+
+To generate a token:
+```
+influx auth create -o [organistation name] --access-all
+```
+
+SOCA-Dash requires influxQL datasource connection within grafana. 
+To ensure that influx 2.+ allows influxQL queries execute the following:
+``` 
+influx v1 dbrp create --db [Bucket Name] -rp 0 --bucket-id [Bucket-id]
+```
+You also need to create a v1 authentication:
+```
+influx v1 auth create \
+  --read-bucket [Bucket-id] \
+  --write-bucket [Bucket-id] \
+  --username admin
+ ```
+Once the influx has been setup and token copied to _installer.sh_ you may feel free to exit the container.
+
+Now we need to build the SOCA container, please ensure you are within the github directory when executing this command:
+Remember, container_run.sh will create a summary for the oeg-upm group, modify to your needs and desires. More information can be found within USAGE
 ```text
 docker build -t [INSERT_NAME] .
 ```
-Depending on your needs you may also may need to run the following command:
-
-```text
-docker compose up
+Once the container has been built you may execute the SOCA container by running the following:
 ```
-This will initialise the grafana and influxdb within a docker network. This may be required if you wish to visualise the soca summary
+docker run -it --network [network influx is running on] [container name]
+
+```
+## SOCA-Dash 
+Once the grafana, influx and soca have been set up correctly you can create a grafana dashboard by importing SOCA-Dash.json. This will allow you to visualise the Summary being uploaded to the influxDB. 
+
+You will require to have created 2 influxDB datasources, one for flux queries and another for influxQL. The following are two examples on how to do so.
+
+<img src="doc/images/fluxDataSource.png" alt="fluxDatasource" width="250"/>
+For the token use the one previously created.
+
+For the influxQL follow the example provided below.
+
+<img src="doc/images/fluxQL_Headers.png" alt="influxQL_Datasource" width="250"/>
+
+Here you can see you must create custom headers. Key being "Authorization" and the key being the same token used for the flux datasource. 
+
+<img src="doc/images/influxQL_login.png" alt="influxQLDatasource_login" width="250"/>
+
+For the login please use the login created during the influx v1 auth create. For the rest add your org_name and bucket name. If you have used the SOCA defaults you can just copy the image
+
 ## Usage
 
 ```text

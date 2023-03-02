@@ -1,4 +1,67 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_INFLUXQL",
+      "label": "InfluxQL",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "influxdb",
+      "pluginName": "InfluxDB"
+    },
+    {
+      "name": "DS_INFLUXDB",
+      "label": "InfluxDB",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "influxdb",
+      "pluginName": "InfluxDB"
+    }
+  ],
+  "__elements": {},
+  "__requires": [
+    {
+      "type": "panel",
+      "id": "bargauge",
+      "name": "Bar gauge",
+      "version": ""
+    },
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "9.3.6"
+    },
+    {
+      "type": "datasource",
+      "id": "influxdb",
+      "name": "InfluxDB",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "piechart",
+      "name": "Pie chart",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "snuids-radar-panel",
+      "name": "Radar Graph",
+      "version": "1.5.1"
+    },
+    {
+      "type": "panel",
+      "id": "text",
+      "name": "Text",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "timeseries",
+      "name": "Time series",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -24,14 +87,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 3,
+  "id": null,
   "links": [],
   "liveNow": false,
   "panels": [
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "2BXZdaD4z"
+        "uid": "${DS_INFLUXQL}"
       },
       "description": "# Aggregate Repositories\n#### Barchart\nThe Bar chart represents how many repositories are within your organization at a given time.\n\n#### Line graph\nYellow line graph is which % of repositories meet up with the best practices criteria. 100% representing that all repositories meet all best practices criteria",
       "fieldConfig": {
@@ -127,27 +190,14 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "2BXZdaD4z"
+            "uid": "${DS_INFLUXQL}"
           },
-          "groupBy": [
-            {
-              "params": [
-                "1d"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "none"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "test3",
-          "orderByTime": "ASC",
+          "groupBy": [],
+          "measurement": "SOCA_Summary",
+          "orderByTime": "DESC",
           "policy": "default",
-          "query": "from(bucket: \"my-bucket\")\n  |> range(start: -1y, stop: 1mo)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"test3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"percentageGoodPrac\" or r[\"_field\"] == \"num_repos\")\n  |> filter(fn: (r) => r[\"org_name\"] == \"${organisation}\")\n  |> filter(fn: (r) => r[\"soca_ver\"] == \"${SOCA_Version}\")\n  |> filter(fn: (r) => r[\"somef_ver\"] == \"${SOMEF_Version}\")\n  |> aggregateWindow(every: v.windowPeriod, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
-          "rawQuery": true,
+          "query": "from(bucket: \"my-bucket\")\n  |> range(start: -1y, stop: now() )\n  |> filter(fn: (r) => r[\"_measurement\"] == \"test3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"percentageGoodPrac\" or r[\"_field\"] == \"num_repos\")\n  |> filter(fn: (r) => r[\"org_name\"] == \"${organisation}\")\n  |> filter(fn: (r) => r[\"soca_ver\"] == \"${SOCA_Version}\")\n  |> filter(fn: (r) => r[\"somef_ver\"] == \"${SOMEF_Version}\")\n  |> aggregateWindow(every: 1mo, fn: last, createEmpty: false)\n  |> yield(name: \"last\")",
+          "rawQuery": false,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -157,35 +207,38 @@
                   "num_repos"
                 ],
                 "type": "field"
-              },
+              }
+            ],
+            [
               {
-                "params": [],
-                "type": "last"
+                "params": [
+                  "percentageGoodPrac"
+                ],
+                "type": "field"
               }
             ]
           ],
           "tags": [
             {
               "key": "org_name",
-              "operator": "=",
-              "value": "oeg-upm"
+              "operator": "=~",
+              "value": "/^$organisation$/"
             },
             {
               "condition": "AND",
               "key": "soca_ver",
-              "operator": "=",
-              "value": "0.0.1"
+              "operator": "=~",
+              "value": "/^$SOCA_Version$/"
             },
             {
               "condition": "AND",
               "key": "somef_ver",
-              "operator": "=",
-              "value": "0.8.2"
+              "operator": "=~",
+              "value": "/^$SOMEF_Version$/"
             }
           ]
         }
       ],
-      "timeFrom": "1y",
       "title": "Aggregate Number of Repositories",
       "transformations": [],
       "type": "timeseries"
@@ -193,7 +246,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "W1oBv-D4z"
+        "uid": "${DS_INFLUXDB}"
       },
       "description": "",
       "gridPos": {
@@ -212,14 +265,14 @@
         "content": "# Aggregate Repositories\n#### Barchart\nThe Bar chart represents how many repositories are within your organization at a given time.\n\n#### Line graph\nYellow line graph is which % of repositories meet up with the best practices criteria. 100% representing that all repositories meet all best practices criteria",
         "mode": "markdown"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.3.6",
       "title": "Aggregate Repositories",
       "type": "text"
     },
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "pUHkvHd4z"
+        "uid": "${DS_INFLUXQL}"
       },
       "description": "# Spider Diagram\n\nHere we want to represent a quick overview of strengths/weaknesses of the organisation in question\n\nThe fuller the diagram is the better. \nWe try to show:\n* Num of repos with licenses (any)\n* Num of repos with Citation\n* Num of repos with readme_score 0\n* Num of repos with readme_score 1\n* Num of repos with readme_score 2\n* Num of repos with readme_score 3\n* Release less than 2 Months ago",
       "gridPos": {
@@ -249,15 +302,15 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "groupBy": [],
           "hide": false,
-          "measurement": "test3",
+          "measurement": "SOCA_Summary",
           "orderByTime": "ASC",
           "policy": "default",
           "query": "SELECT \"sum_licenses\", \"readme_score_0\", \"readme_score_1\", \"readme_score_2\", \"readme_score_3\", \"num_with_citation\", \"release_less_twoMon\" FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/  AND \"somef_ver\" =~ /^$SOMEF_Version$/ ) AND $timeFilter",
-          "rawQuery": true,
+          "rawQuery": false,
           "refId": "suma_liceas",
           "resultFormat": "table",
           "select": [
@@ -321,20 +374,20 @@
           "tags": [
             {
               "key": "org_name",
-              "operator": "=",
-              "value": "oeg-upm"
+              "operator": "=~",
+              "value": "/^$organisation$/"
             },
             {
               "condition": "AND",
               "key": "soca_ver",
-              "operator": "=",
-              "value": "0.0.1"
+              "operator": "=~",
+              "value": "/^$SOCA_Version$/"
             },
             {
               "condition": "AND",
               "key": "somef_ver",
-              "operator": "=",
-              "value": "0.8.2"
+              "operator": "=~",
+              "value": "/^$SOMEF_Version$/"
             }
           ]
         }
@@ -354,7 +407,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "W1oBv-D4z"
+        "uid": "${DS_INFLUXDB}"
       },
       "gridPos": {
         "h": 9,
@@ -372,14 +425,14 @@
         "content": "# Web Diagram\n\nHere we want to represent a quick overview of strengths/weaknesses of the organisation in question\n\nThe fuller the diagram is the better. \nWe try to show:\n* Num of repos with licenses (any)\n* Num of repos with Citation\n* Num of repos with readme_score 0\n* Num of repos with readme_score 1\n* Num of repos with readme_score 2\n* Num of repos with readme_score 3\n* Release less than 2 Months ago",
         "mode": "markdown"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.3.6",
       "title": "Web Diagram",
       "type": "text"
     },
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "pUHkvHd4z"
+        "uid": "${DS_INFLUXQL}"
       },
       "description": "# Readme Scoring\n\nReadme: gives a score on best practices:\n\n#### Best practices taken into consideration (score policy):\n\n* Installation -> +1\n* Acknowledgement -> +1\n* Requirement -> +1\n* Description -> +1\n#### Counts the above if true and gives the following scores:\n* Level 0: no readme\n* Level 1: score <=2\n* Level 2: score >2 <3\n* Level 3 score >3\n",
       "fieldConfig": {
@@ -476,12 +529,12 @@
         "showUnfilled": true,
         "text": {}
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "groupBy": [
             {
@@ -500,7 +553,7 @@
           "measurement": "test3",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"readme_score_0\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/  AND \"somef_ver\" =~ /^$SOMEF_Version$/ ) AND $timeFilter GROUP BY time($__interval) fill(none)",
+          "query": "SELECT last(\"readme_score_0\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/  AND \"somef_ver\" =~ /^$SOMEF_Version$/ ) AND $timeFilter GROUP BY time($__interval) fill(none)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -541,7 +594,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "groupBy": [
             {
@@ -561,7 +614,7 @@
           "measurement": "test3",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"readme_score_1\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/  AND \"somef_ver\" =~ /^$SOMEF_Version$/ ) AND $timeFilter GROUP BY time($__interval) fill(none)",
+          "query": "SELECT last(\"readme_score_1\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/  AND \"somef_ver\" =~ /^$SOMEF_Version$/ ) AND $timeFilter GROUP BY time($__interval) fill(none)",
           "rawQuery": true,
           "refId": "B",
           "resultFormat": "time_series",
@@ -602,10 +655,10 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "hide": false,
-          "query": "SELECT last(\"readme_score_2\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/  AND \"somef_ver\" =~ /^$SOMEF_Version$/ ) AND $timeFilter GROUP BY time($__interval) fill(none)",
+          "query": "SELECT last(\"readme_score_2\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/  AND \"somef_ver\" =~ /^$SOMEF_Version$/ ) AND $timeFilter GROUP BY time($__interval) fill(none)",
           "rawQuery": true,
           "refId": "C",
           "resultFormat": "time_series"
@@ -613,10 +666,10 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "hide": false,
-          "query": "SELECT last(\"readme_score_3\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/  AND \"somef_ver\" =~ /^$SOMEF_Version$/ ) AND $timeFilter GROUP BY time($__interval) fill(none)",
+          "query": "SELECT last(\"readme_score_3\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/  AND \"somef_ver\" =~ /^$SOMEF_Version$/ ) AND $timeFilter GROUP BY time($__interval) fill(none)",
           "rawQuery": true,
           "refId": "D",
           "resultFormat": "time_series"
@@ -628,7 +681,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "W1oBv-D4z"
+        "uid": "${DS_INFLUXDB}"
       },
       "description": "Still underworks",
       "gridPos": {
@@ -647,14 +700,14 @@
         "content": "# Readme Scoring\n\nReadme: gives a score on best practices:\n\n#### Best practices taken into consideration (score policy):\n\n* Installation -> +1\n* Acknowledgement -> +1\n* Requirement -> +1\n* Description -> +1\n#### Counts the above if true and gives the following scores:\n* Level 0: no readme\n* Level 1: score <=2\n* Level 2: score >2 <3\n* Level 3 score >3\n",
         "mode": "markdown"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.3.6",
       "title": "README Scoring",
       "type": "text"
     },
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "pUHkvHd4z"
+        "uid": "${DS_INFLUXQL}"
       },
       "description": "Shows the % of licenses used within the whole organisation.",
       "fieldConfig": {
@@ -765,7 +818,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "groupBy": [
             {
@@ -785,7 +838,7 @@
           "measurement": "test3",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"num_GPL\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time($interval) fill(none)",
+          "query": "SELECT last(\"num_GPL\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time($interval) fill(none)",
           "rawQuery": true,
           "refId": "GPL",
           "resultFormat": "time_series",
@@ -826,7 +879,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "groupBy": [
             {
@@ -852,7 +905,7 @@
           "measurement": "test3",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"num_MIT\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d), \"org_name\" fill(none)",
+          "query": "SELECT last(\"num_MIT\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d), \"org_name\" fill(none)",
           "rawQuery": true,
           "refId": "MIT",
           "resultFormat": "logs",
@@ -893,10 +946,10 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "hide": false,
-          "query": "SELECT last(\"num_Missing\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d), \"org_name\" fill(none)",
+          "query": "SELECT last(\"num_Missing\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d), \"org_name\" fill(none)",
           "rawQuery": true,
           "refId": "Missing",
           "resultFormat": "time_series"
@@ -904,10 +957,10 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "hide": false,
-          "query": "SELECT last(\"num_Other\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/  AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d), \"org_name\" fill(previous)",
+          "query": "SELECT last(\"num_Other\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/  AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d), \"org_name\" fill(previous)",
           "rawQuery": true,
           "refId": "Other",
           "resultFormat": "time_series"
@@ -915,10 +968,10 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "hide": false,
-          "query": "SELECT last(\"num_Apache\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/  AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d), \"org_name\" fill(previous)",
+          "query": "SELECT last(\"num_Apache\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/  AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d), \"org_name\" fill(previous)",
           "rawQuery": true,
           "refId": "Apache",
           "resultFormat": "table"
@@ -930,7 +983,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "W1oBv-D4z"
+        "uid": "${DS_INFLUXDB}"
       },
       "description": "",
       "gridPos": {
@@ -949,14 +1002,14 @@
         "content": "# Licences Piechart\n\n#### Shows the % of licenses used within the whole organisation.\n\nWe consider:\n\n##### With license\n* Apache 2.0 license\n* GNU General Public license\n* MIT license\n* Other if the repository has a license but does not fit in the ones above\n##### Without license\n* Missing meaning we could not find any licenses in the repository \n\n",
         "mode": "markdown"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.3.6",
       "title": "Licences Piechart",
       "type": "text"
     },
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "2BXZdaD4z"
+        "uid": "${DS_INFLUXQL}"
       },
       "description": "# Number of repositories with Identifiers\n\n#### Counts the number of repositories with\n\n* Persistent Identifiers\n* Digital Object Identifiers\n* No Identifiers\n\n### Warning\nStill in beta and works under assumption doi.org -> hasPid",
       "fieldConfig": {
@@ -970,8 +1023,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1040,12 +1092,12 @@
         },
         "showUnfilled": false
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "2BXZdaD4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "groupBy": [
             {
@@ -1062,7 +1114,7 @@
             }
           ],
           "hide": false,
-          "measurement": "test3",
+          "measurement": "SOCA_Summary",
           "orderByTime": "ASC",
           "policy": "default",
           "query": "from(bucket: \"my-bucket\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"test3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"num_doi\")\n  |> filter(fn: (r) => r[\"org_name\"] == \"${organisation}\")\n  |> filter(fn: (r) => r[\"soca_ver\"] == \"${SOCA_Version}\")\n  |> filter(fn: (r) => r[\"somef_ver\"] == \"${SOMEF_Version}\")\n  |> last()\n  |> yield(name: \"last\")",
@@ -1085,40 +1137,130 @@
           "tags": [
             {
               "key": "org_name",
-              "operator": "=",
-              "value": "oeg-upm"
+              "operator": "=~",
+              "value": "/^$organisation$/"
             },
             {
               "condition": "AND",
               "key": "soca_ver",
-              "operator": "=",
-              "value": "0.0.1"
+              "operator": "=~",
+              "value": "/^$SOCA_Version$/"
             },
             {
               "condition": "AND",
               "key": "somef_ver",
-              "operator": "=",
-              "value": "0.8.2"
+              "operator": "=~",
+              "value": "/^$SOMEF_Version$/"
             }
           ]
         },
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "2BXZdaD4z"
+            "uid": "${DS_INFLUXQL}"
           },
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "none"
+              ],
+              "type": "fill"
+            }
+          ],
           "hide": false,
+          "measurement": "SOCA_Summary",
+          "orderByTime": "ASC",
+          "policy": "default",
           "query": "from(bucket: \"my-bucket\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"test3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"num_pid\")\n  |> filter(fn: (r) => r[\"org_name\"] == \"${organisation}\")\n  |> filter(fn: (r) => r[\"soca_ver\"] == \"${SOCA_Version}\")\n  |> filter(fn: (r) => r[\"somef_ver\"] == \"${SOMEF_Version}\")\n  |>last()\n  |> yield(name: \"last\")",
-          "refId": "B"
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "num_pid"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "soca_ver",
+              "operator": "=~",
+              "value": "/^$SOCA_Version$/"
+            }
+          ]
         },
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "2BXZdaD4z"
+            "uid": "${DS_INFLUXQL}"
           },
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "none"
+              ],
+              "type": "fill"
+            }
+          ],
           "hide": false,
+          "measurement": "SOCA_Summary",
+          "orderByTime": "ASC",
+          "policy": "default",
           "query": "from(bucket: \"my-bucket\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"test3\")\n  |> filter(fn: (r) => r[\"_field\"] == \"num_withoutId\")\n  |> filter(fn: (r) => r[\"org_name\"] == \"${organisation}\")\n  |> filter(fn: (r) => r[\"soca_ver\"] == \"${SOCA_Version}\")\n  |> filter(fn: (r) => r[\"somef_ver\"] == \"${SOMEF_Version}\")\n  |> last()\n  |> yield(name: \"last\")",
-          "refId": "C"
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "num_withoutId"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "org_name",
+              "operator": "=~",
+              "value": "/^$organisation$/"
+            },
+            {
+              "condition": "AND",
+              "key": "soca_ver",
+              "operator": "=~",
+              "value": "/^$SOCA_Version$/"
+            },
+            {
+              "condition": "AND",
+              "key": "somef_ver",
+              "operator": "=~",
+              "value": "/^$SOMEF_Version$/"
+            }
+          ]
         }
       ],
       "title": "Repositories with Identifiers",
@@ -1128,7 +1270,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "W1oBv-D4z"
+        "uid": "${DS_INFLUXDB}"
       },
       "gridPos": {
         "h": 8,
@@ -1146,14 +1288,14 @@
         "content": "# Number of repositories with Identifiers\n\n#### Counts the number of repositories with\n\n* Persistent Identifiers\n* Digital Object Identifiers\n* No Identifiers\n\n### Warning\nStill in beta and works under assumption doi.org -> hasPid",
         "mode": "markdown"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.3.6",
       "title": "Number of Identifiers",
       "type": "text"
     },
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "pUHkvHd4z"
+        "uid": "${DS_INFLUXQL}"
       },
       "description": "# Number of repositories with Citation\n\n#### Counts the number of repositories with\n\n* No Citation\n* A Citation\n* CFF file",
       "fieldConfig": {
@@ -1167,8 +1309,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -1235,12 +1376,12 @@
         "showUnfilled": true,
         "text": {}
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "groupBy": [
             {
@@ -1259,7 +1400,7 @@
           "measurement": "test3",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"num_no_citation\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d) fill(none)",
+          "query": "SELECT last(\"num_no_citation\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d) fill(none)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "table",
@@ -1300,7 +1441,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "groupBy": [
             {
@@ -1320,7 +1461,7 @@
           "measurement": "test3",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"num_with_citation\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d) fill(none)",
+          "query": "SELECT last(\"num_with_citation\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d) fill(none)",
           "rawQuery": true,
           "refId": "B",
           "resultFormat": "table",
@@ -1361,7 +1502,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "pUHkvHd4z"
+            "uid": "${DS_INFLUXQL}"
           },
           "groupBy": [
             {
@@ -1381,7 +1522,7 @@
           "measurement": "test3",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT last(\"num_CFF\") FROM \"test3\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d) fill(none)",
+          "query": "SELECT last(\"num_CFF\") FROM \"SOCA_Summary\" WHERE (\"org_name\" =~ /^$organisation$/ AND \"soca_ver\" =~ /^$SOCA_Version$/ AND \"somef_ver\" =~ /^$SOMEF_Version$/) AND $timeFilter GROUP BY time(1d) fill(none)",
           "rawQuery": true,
           "refId": "C",
           "resultFormat": "table",
@@ -1426,7 +1567,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "W1oBv-D4z"
+        "uid": "${DS_INFLUXDB}"
       },
       "gridPos": {
         "h": 8,
@@ -1444,12 +1585,12 @@
         "content": "# Number of repositories with Citation\n\n#### Counts the number of repositories with\n\n* No Citation\n* A Citation\n* CFF file",
         "mode": "markdown"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.3.6",
       "targets": [
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "W1oBv-D4z"
+            "uid": "${DS_INFLUXDB}"
           },
           "query": "",
           "refId": "A"
@@ -1466,14 +1607,10 @@
   "templating": {
     "list": [
       {
-        "current": {
-          "selected": false,
-          "text": "LinkedEarth",
-          "value": "LinkedEarth"
-        },
+        "current": {},
         "datasource": {
           "type": "influxdb",
-          "uid": "pUHkvHd4z"
+          "uid": "${DS_INFLUXQL}"
         },
         "definition": "SHOW TAG VALUES WITH KEY = \"org_name\"",
         "description": "Returns the list of organisations available",
@@ -1490,14 +1627,10 @@
         "type": "query"
       },
       {
-        "current": {
-          "selected": false,
-          "text": "0.0.1",
-          "value": "0.0.1"
-        },
+        "current": {},
         "datasource": {
           "type": "influxdb",
-          "uid": "pUHkvHd4z"
+          "uid": "${DS_INFLUXQL}"
         },
         "definition": "SHOW TAG VALUES WITH KEY = \"soca_ver\"",
         "description": "Able to choose the SOCA version",
@@ -1514,14 +1647,10 @@
         "type": "query"
       },
       {
-        "current": {
-          "selected": false,
-          "text": "0.8.2",
-          "value": "0.8.2"
-        },
+        "current": {},
         "datasource": {
           "type": "influxdb",
-          "uid": "pUHkvHd4z"
+          "uid": "${DS_INFLUXQL}"
         },
         "definition": "SHOW TAG VALUES WITH KEY = \"somef_ver\"",
         "hide": 0,
@@ -1535,17 +1664,55 @@
         "skipUrlSync": false,
         "sort": 0,
         "type": "query"
+      },
+      {
+        "auto": false,
+        "auto_count": 30,
+        "auto_min": "10s",
+        "current": {
+          "selected": false,
+          "text": "28d",
+          "value": "28d"
+        },
+        "hide": 0,
+        "name": "1month",
+        "options": [
+          {
+            "selected": true,
+            "text": "28d",
+            "value": "28d"
+          }
+        ],
+        "query": "28d",
+        "queryValue": "",
+        "refresh": 2,
+        "skipUrlSync": false,
+        "type": "interval"
       }
     ]
   },
   "time": {
-    "from": "2021-07-18T04:44:58.627Z",
-    "to": "2023-07-18T04:44:58.627Z"
+    "from": "now-1h",
+    "to": "now"
   },
-  "timepicker": {},
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d",
+      "28d"
+    ]
+  },
   "timezone": "",
-  "title": "use this",
-  "uid": "eJo4zqK4z",
-  "version": 19,
+  "title": "grafana_Dash",
+  "uid": "uzIflkx4z",
+  "version": 1,
   "weekStart": ""
 }
