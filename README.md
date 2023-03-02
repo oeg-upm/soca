@@ -43,7 +43,7 @@ git clone https://github.com/oeg-upm/soca
 cd soca
 pip install -e .
 ```
-Highly recommended step:  
+Highly recommended steps:  
 
 ```text
 somef configure
@@ -55,6 +55,30 @@ And you will be asked to provide the following:
 * A GitHub authentication token [**optional, leave blank if not used**], which SOMEF uses to retrieve metadata from GitHub. If you don't include an authentication token, you can still use SOMEF. However, you may be limited to a series of requests per hour. For more information, see [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
 
 * The path to the trained classifiers (pickle files). If you have your own classifiers, you can provide them here. Otherwise, you can leave it blank
+
+### InfluxDB setup
+For SOCA-Dash to work you will need to have a working version of influx 2.+ as well as grafana on your machine. SOCA-Dash needs two datasources and requires tokens to be able to access the influxDB datasources.
+For more information please visit: https://docs.influxdata.com/influxdb/cloud/reference/cli/influx/auth/create/
+
+To generate a token:
+```
+influx auth create -o [organistation name] --access-all
+```
+
+SOCA-Dash requires influxQL to work to ensure a connection within grafana. 
+To do so please execute the following:
+``` 
+influx v1 dbrp create --db [Bucket Name] -rp 0 --bucket-id [Bucket-id]
+```
+You also need to create a v1 authentication:
+```
+influx v1 auth create \
+  --read-bucket [Bucket-id] \
+  --write-bucket [Bucket-id] \
+  --username admin
+ ```
+Once the influx has been setup and token created please ensure that SOCA is using said token for the summary function. Now is a good time to execute the SOCA configure command.
+
 ## Install from DockerFile
 
 ```text
@@ -80,6 +104,7 @@ This starts an bash shell for the container. Remember, the container must be run
 
 Once within the container you will need to generate a influx token. The following command will generate a token, you may change the token flags to your needs. Once this command returns a token please copy this into the installer.sh file "databaseToken"
 For more information please visit: https://docs.influxdata.com/influxdb/cloud/reference/cli/influx/auth/create/
+
 To generate a token:
 ```
 influx auth create -o [organistation name] --access-all
@@ -110,12 +135,22 @@ docker run -it --network [network influx is running on] [container name]
 
 ```
 ## SOCA-Dash 
-Once this has been done you may create a grafana dashboard using SOCA-Dash.json.
-You will need to have connected the grafana to the influx database. To do so you will need to use the previously created influx token.
-You must create a influxQL data source. Due to version 2.0 you will need to add a header containing "Authorisation" or "Authorization" and the value being the influx token. For the database value put the bucket name; for the login we recommend the admin login credentials or the user you created the v1 authorisation with.
+Once the grafana, influx and soca have been set up correctly you can create a grafana dashboard by importing SOCA-Dash.json. This will allow you to visualise the Summary being uploaded to the influxDB. 
 
-Once the datasource has been added it's as easy as importing the soca dash json file to the grafana and using the influxQL data source for all options.
+You will require to have created 2 influxDB datasources, one for flux queries and another for influxQL. The following are two examples on how to do so.
 
+<img src="doc/images/fluxDataSource.png" alt="fluxDatasource" width="150"/>
+For the token use the one previously created.
+
+For the influxQL follow the example provided below.
+
+<img src="doc/images/fluxQL_Headers.png" alt="influxQL_Datasource" width="150"/>
+
+Here you can see you must create custom headers. Key being "Authorization" and the key being the same token used for the flux datasource. 
+
+<img src="doc/images/influxQL_login.png" alt="influxQLDatasource_login" width="150"/>
+
+For the login please use the login created during the influx v1 auth create. For the rest add your org_name and bucket name. If you have used the SOCA defaults you can just copy the image
 
 ## Usage
 
