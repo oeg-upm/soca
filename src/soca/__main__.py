@@ -1,4 +1,6 @@
 import click
+import os
+from pathlib import Path
 from . import __version__
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
@@ -10,14 +12,38 @@ def cli():
     SOCA (Software Catalog Creator)\n
     Automatically generates a searchable portal for every repository of an organization/s or user/s, which is easy to host.\n
 
-    Usage:
-
+    Usage:\n
+    =. (Configure) Create configuration file for database etc\n
     1. (fetch) Fetch all repos from the desired organization/s\n
     2. (extract) Extract all metadata for every repo\n
     3. (portal) Generate a searchable portal for all the retrieved data\n
+    4. (summary) Create a summary from the portal information
 
     """
-    pass 
+    pass
+
+#TODO
+@cli.command()
+def configure():
+    """This creates a ~/.soca/configure.ini file"""
+    #TODO defaults check
+    url = click.prompt("URL to database",default = "http://localhost:8086")
+    bucket = click.prompt("Bucket", default = "my-bucket")
+    org = click.prompt("Organisation",default = "test1")
+    token = click.prompt("Token", default = "")
+    if len(token) == 0:
+        click.echo("No token given, please enter token or press enter")
+        token = click.prompt("Token", default = "")
+    try:
+        from soca.commands import create_config
+
+        create_config.create_config(url,bucket,token,org)
+        click.secho(f"Success", fg="green")
+    except Exception as e:
+        click.secho(f"Error: "+str(e),fg="red")
+        exit(1)
+
+
 
 @cli.command()
 @click.option('--input','-i', required=True, help="Organization or user name", metavar='<name-or-path>')
@@ -61,4 +87,13 @@ def card(input, output, save_as):
     """Create a stand-alone card ready to be embedded in a website"""
     from soca.commands import single_card
     single_card.create(input, output, save_as)
+
+@cli.command()
+@click.option('--input','-i', required=True, help="portal cards_data.json", metavar='<path>')
+@click.option('--output','-o', default="summary", show_default=True, help="Output file where the json will be saved", metavar='<path>')
+@click.option('--upload', '-U', is_flag=True, default = False, help="Will upload file to influxdb")
+def summary(input,output,upload):
+    """Create a summary of good practices from generated card data with possibility to upload"""
+    from soca.commands import create_summary
+    create_summary.create_summary(input,output,upload)
 

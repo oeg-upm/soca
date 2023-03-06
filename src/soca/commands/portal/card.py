@@ -9,7 +9,8 @@ from . import scripts
 def cards_data_dump(repo_metadata_dir):
 
     cards_data = []
-
+#TODO change
+    #add possible "final release"
     for file in os.listdir(os.fsencode(repo_metadata_dir)):
         filename = os.fsdecode(file)
         if filename.endswith(".json"): 
@@ -18,6 +19,7 @@ def cards_data_dump(repo_metadata_dir):
                 repo_metadata = json.load(json_metadata)
                 md = metadata.metadata(repo_metadata_dir, repo_metadata)
                 citations = md.citations()
+                print(md.identifier())
                 cards_data.append({
                     'id': md.repo_url(),
                     'html_card': html_view(repo_metadata_dir, repo_metadata, False),
@@ -29,10 +31,15 @@ def cards_data_dump(repo_metadata_dir):
                     'languages': md.languages(),
                     'description': md.description(),
                     'license': md.license() is not None,
+                    'licenseName': md.license()['name'] if md.license() is not None else None,
                     'readmeUrl': md.readme() is not None,
                     'hasExecutableNotebook': md.notebook() is not None,
-                    'citation': citations is not None,
-                    'citationText': citations[0] if citations is not None else None,
+                    'citation':{
+                        'cff': citations['cff'] if 'cff' in citations else None,
+                        'bibtex': citations['bibtex'] if 'bibtex' in citations else None,
+                        'citation': citations['citation'] if 'citation' in citations else None,
+                    } if citations is not None else None,
+                    'citationText': citations['citation'] if citations is not None else None,
                     'paper': md.paper() is not None,
                     'hasBuildFile': md.docker() is not None,
                     'installation': md.installation() is not None,
@@ -40,7 +47,8 @@ def cards_data_dump(repo_metadata_dir):
                     'usage': md.usage() is not None,
                     'help': md.help() is not None,
                     'hasDocumentation': md.hasDocumentation() is not None,
-                    'identifier': md.identifier() is not None,
+                    'hasIdentifier': md.identifier() is not None,
+                    'identifierLink': md.identifier() if md.identifier() is not None else None,
                     'repoStatus': md.status() is not None,
                     'acknowledgement': md.acknowledgement() is not None,
                     'downloadUrl': md.downloadUrl() is not None,
@@ -48,6 +56,7 @@ def cards_data_dump(repo_metadata_dir):
                     'isWeb': md.repo_type() == 'web',
                     'owner': md.owner()
                 })
+
     print('-'*80)
 
     return cards_data
