@@ -98,18 +98,14 @@ def summaryToDatabase(summary_output):
     database['fields']['num_no_citation'] = summary_output['no_citation']
     database['fields']['release_more_twoMon'] = summary_output['released']['LONGER']
     database['fields']['release_less_twoMon'] = summary_output['released']['<2 MONTHS']
-    #TODO licenses sum this is a "dirty" way but keeps the database lightweight and portable
+    #licenses sum this is a "dirty" way but keeps the database lightweight and portable
     database['fields']['sum_licenses'] = summary_output['num_repos'] - summary_output['licenses']['MISSING']
-    database['fields']['test'] =    summary_output['licenses']['MIT'] + \
-                                    summary_output['licenses']['GPL'] + \
-                                    summary_output['licenses']['APACHE'] + \
-                                    summary_output['licenses']['OTHER']
-    #TODO readme scores
+    #readme scores
     database['fields']['readme_score_0'] = summary_output['readme']['Level 0']
     database['fields']['readme_score_1'] = summary_output['readme']['Level 1']
     database['fields']['readme_score_2'] = summary_output['readme']['Level 2']
     database['fields']['readme_score_3'] = summary_output['readme']['Level 3']
-    #TODO sum of readmes
+    #sum of readmes
     database['fields']['sum_readme'] = summary_output['num_repos'] - summary_output['readme']['Level 0']
 
     #TODO placeholder
@@ -122,8 +118,7 @@ def summaryToDatabase(summary_output):
         database['fields']['release_less_twoMon']
 
     database['fields']['percentageGoodPrac'] = round((x/(database['fields']['num_repos']*5)) *database['fields']['num_repos'])
-    #TODO verificar
-    #TODO check if this is correct way to do it
+
     auxdate = datetime.strptime(summary_output['_timestamp'],'%Y-%m-%dT%H:%M:%S.%f')
     influxdate = auxdate.strftime('%Y-%m-%dT%H:%M:%SZ')
     database['timestamp'] = influxdate

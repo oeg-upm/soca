@@ -90,5 +90,5 @@ def _fetch(name, out_path, type, not_archived, not_forked, not_disabled):
                    cont = False
            except Exception as e:
                print(str(e))
-               #print(f"ERROR: '{type} {name}' does not exist.")
+               print(f"ERROR: '{type} {name}'")
                return

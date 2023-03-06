@@ -23,8 +23,8 @@ def reset_dict():
     output['readme'] = {'Level 0': 0, 'Level 1': 0, 'Level 2': 0, 'Level 3': 0}
     output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0, 'MISSING': 0}
     output['has_citation'] = 0
-    output['no_citation'] = 0
     output['CFF_file'] = 0
+    output['no_citation'] = 0
     output['released'] = {'<2 MONTHS': 0, 'LONGER': 0}
     output['_soca_version'] = soca_ver
     output['_somef_version'] = somef_ver
@@ -45,13 +45,10 @@ def __findId(json_obj):
             output['identifiers']['num_pid'] = output['identifiers']['num_pid'] + 1
         elif "zenodo" or "Zenodo" in json_obj['identifierLink']:
             output['identifiers']['num_doi'] = output['identifiers']['num_doi'] + 1
-
     else:
         output['identifiers']['num_without_identifier'] = output['identifiers']['num_without_identifier'] + 1
 
 
-#TODO change to switch case when updated to python 3.10
-#TODO try except with dictionary
 def __findLicense(json_obj):
     """Function that looks for the name of the license within the cards_data.json (json_obj)
     Returns
@@ -61,16 +58,17 @@ def __findLicense(json_obj):
     if not json_obj['license']:
         return "MISSING"
     else:
-        if(json_obj['licenseName'] == 'Apache License 2.0'):
-            return "APACHE"
-        elif(json_obj['licenseName'] == 'MIT License'):
-            return "MIT"
-        elif(json_obj['licenseName'] == 'GNU General Public License v3.0' ):
-            return "GPL"
-        elif(json_obj['licenseName'] == 'Other'):
-            return "OTHER"
-        else:
-            return "MISSING"
+        match json_obj['licenseName']:
+            case 'Apache License 2.0':
+                return "APACHE"
+            case 'MIT License':
+                return "MIT"
+            case 'GNU General Public License v3.0':
+                return "GPL"
+            case 'Other':
+                return "OTHER"
+            case _:
+                return "MISSING"
 
 #TODO change soca output: recently updated to a more fitting name: Days last update?
 def __last_update(json_obj):
@@ -116,6 +114,20 @@ def readme_score(json_obj):
     if score <= 2:
         return "Level 1"
 
+def __findCitation(json_obj):
+    """Function that counts the number of repositories per citation
+    Returns
+    -------
+    Nothing
+    """
+    if json_obj['citation']:
+        output['has_citation'] +=1
+        if json_obj['citation']['cff']:
+            output['CFF_file'] +=1
+    else:
+        output['no_citation'] += 1
+
+
 #function that opens array of jsons given the organisation
 def __open_Json(directory):
         if os.path.isfile(directory):
@@ -141,11 +153,8 @@ def create_summary(directory_org_data,outFile, want2Upload):
         for item in json_array:
             if item['hasDocumentation']:
                 output['has_documentation'] = output['has_documentation'] + 1
-            if item['citation']:
-                output['has_citation'] = output['has_citation'] + 1
-            #TODO citation recognition
-            else:
-                output['no_citation'] = output['no_citation'] + 1
+            #citation
+            __findCitation(item)
             # finds licenses
             output['licenses'][__findLicense(item)] = output['licenses'][__findLicense(item)] + 1
             # finds identifiers

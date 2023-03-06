@@ -20,7 +20,7 @@ class metadata(object):
 
     # Assets ####################################################
     def logo(self):
-        logo = safe_dic(safe_dic(self.md,'logo'),'excerpt')
+        logo = safe_dic(safe_dic(safe_dic(safe_list(self.md,'logo'),0),'result'),'value')
         #if logo:
             #if str(logo).startswith('https://github'):
                 #logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
@@ -33,8 +33,10 @@ class metadata(object):
         if repo_type == 'web': 
             return f'<img src="{self.base}repo_icons/web.png" {self.add_tooltip("left","Website")} alt="repo-type" class="repo-type">'
         elif repo_type == 'ontology': 
-            ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
+            #ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
+            ontologies = safe_dic(self.md,'ontologies')
             if ontologies:
+                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies if 'http' in safe_dic(x,"uri")])))
                 onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies if 'http' in safe_dic(x,"uri")])))
                 #onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
             return self.icon_wrapper(
@@ -172,7 +174,7 @@ class metadata(object):
                                 class="repo-icon" 
                                 {self.add_tooltip('bottom',paper.title_paper)}>
                         </a>""")
-
+        #TODO check ScdocLexer
         citations = self.citations()
         if citations:
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
@@ -217,7 +219,8 @@ class metadata(object):
 
                 modal_html = self.modal(
                     title = 'Status',
-                    body = '### Description  \n'+ safe_dic(status,'description') + '\n #### More information  \n' + f'<{safe_dic(status,"excerpt")}>'))
+                    body = '### Description  \n'+ safe_dic(safe_dic(safe_list(status,0),'result'),'description')
+                           + '\n #### More information  \n' + f'<{safe_dic(safe_dic(safe_list(status,0),"result"),"value")}>'))
 
         installation = self.installation()
         if installation:
@@ -341,8 +344,9 @@ class metadata(object):
 
     # Metadata ##################################################
     def last_release(self):
-        return self.releases()[0]["tagName"] if self.n_releases() != 0 else ''
-        
+        return safe_dic(safe_dic(self.releases()[0],'result'),'name') if self.n_releases() !=0 else ''
+
+    #TODO
     def repo_type(self):
 
         # inspect4py
@@ -370,15 +374,15 @@ class metadata(object):
             return 'web'
         
         return None
-         
+
     def usage(self):
         usage_list = safe_dic(self.md,'usage')
         usage = None
         if usage_list:
             usage = ''
             for u in usage_list:
-                usage += u['excerpt'] + '\n'
-                
+                usage += u['result']['value'] + '\n'
+        #TODO
         run_list = safe_dic(safe_dic(self.md,'inspect4py'),'run')
         if run_list:
             if isinstance(run_list, list):
@@ -392,10 +396,11 @@ class metadata(object):
 
         return usage + run_md if usage or run_md else None
 
+#TODO cannot find correct implementation
     def help(self):
-        support = safe_dic(safe_list(safe_dic(self.md,'support'),0),'excerpt')
-        faq = safe_dic(safe_list(safe_dic(self.md,'faq'),0),'excerpt')
-        supportChannels = safe_dic(safe_list(safe_dic(self.md,'supportChannels'),0),'excerpt')
+        support = safe_dic(safe_dic(safe_list(safe_dic(self.md,'support'),0),'result'),'value')
+        faq = safe_dic(safe_dic(safe_list(safe_dic(self.md,'faq'),0),'result'),'value')
+        supportChannels = safe_dic(safe_dic(safe_list(safe_dic(self.md,'supportChannels'),0),'result'),'value')
 
         support_md = ('### Support  \n' + support) if support else ''
         faq_md = ('### FAQ  \n' + faq) if faq else ''
@@ -424,101 +429,68 @@ class metadata(object):
                    title="Last updated on: {self.last_update().strftime('%d-%m-%Y')}">
                    </div>"""
 
-    def paper(self):
-        citations = self.citations()
-        p = []
-        if citations:
-            
-            for cita in citations:
-
-                c = citation_parser(cita)
-                
-                if c.link_paper and 'zenodo' not in c.link_paper:
-                    p.append(c)
-
-        return p if len(p) > 0 else None
         
     def identifier(self):
-        return safe_dic(safe_list(safe_dic(self.md,'identifier'),0),'excerpt')
-    
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'identifier'),0),'result'),'value')
     def status(self):
-        return safe_dic(self.md,'repoStatus')
+        return safe_dic(self.md,'repository_status')
+
 
     def acknowledgement(self):
-        return safe_dic(safe_list(safe_dic(self.md,'acknowledgement'),0),'excerpt')
+        return safe_dic(safe_list(safe_dic(self.md,'acknowlegement'),0),'value')
 
     def hasDocumentation(self):
-        hasDocumentation = safe_dic(self.md,'hasDocumentation')
-        documentation = safe_dic(self.md,'documentation')
-        h,d = [],[]
-        if hasDocumentation:
-            h = [safe_dic(d,'excerpt') for d in hasDocumentation]
-        if documentation:
-            d = [safe_dic(d,'excerpt') for d in documentation]
-        doc = [ x for x in h+d if x ]
-        return doc if len(doc)>0 else None
+        docList = safe_dic(self.md, 'documentation')
+        return docList if docList else None
 
     def requirements(self):
-        reqs = safe_dic(self.md,'requirement')
+
+        reqs = safe_dic(self.md,'requirements')
         if not reqs:
             return None
-        return "\n".join([safe_dic(d,'excerpt') for d in reqs])
+        return "\n".join([safe_dic(safe_dic(d,'result'),'value') for d in reqs])
 
     def installation(self):
         inst = safe_dic(self.md,'installation')
         if not inst:
             return None
-        return "\n".join([safe_dic(d,'excerpt') for d in inst])
-
+        return "\n".join([safe_dic(safe_dic(d,'result'),'value') for d in inst])
     def docker(self):
 
-        hasBuildFile_list = safe_dic(self.md,'hasBuildFile')
+        hasBuildFileList = safe_dic(self.md,'has_build_file')
         
-        if not hasBuildFile_list:
+        if not hasBuildFileList:
             return None
 
-        return [safe_dic(d,'excerpt')[0] for d in hasBuildFile_list]
+        return [safe_dic(safe_dic(d,'result'),'value') for d in hasBuildFileList]
 
-
-    def citations(self):
-        all_citations = safe_dic(self.md,'citation')
-
-        if not all_citations:
-            return None
-
-        citations = []
-        for c in all_citations:
-            if c['technique'] == 'Regular expression':
-                citations.append(c['excerpt'])
-        return citations if len(citations) > 0 else None
         
     def downloadUrl(self):
-        return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt') if self.n_releases() > 0 else None
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'download_url'),0),'result'),'value') \
+            if self.n_releases() > 0 else None
 
+    #TODO change name to something more self explanatory
     def notebook(self):
-        exe_l = safe_dic(safe_dic(self.md,'executableExample'),'excerpt')
+        exe_l = safe_dic(self.md,'executable_example')
         exe_l = exe_l if exe_l else []
-        exe = [ x[1] for x in exe_l ]
-        note = safe_dic(safe_dic(self.md,'hasExecutableNotebook'),'excerpt')
-        note = note if note else []
-        notebooks = exe+note 
-        return notebooks if len(notebooks)>0 else None 
+        exe = [ x['result']['value'] for x in exe_l ]
+        return exe if len(exe)>0 else None
 
     def readme(self):
-        return safe_dic(safe_dic(self.md,'readmeUrl'),'excerpt')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'readme_url'),0),'result'),'value')
 
     def languages(self):
-        langs = safe_dic(safe_dic(self.md,'languages'),'excerpt')
+        langs = safe_dic(self.md,'programming_languages')
         if not langs:
             return None
-        return [str(lang).lower() for lang in langs]
+        return [str(safe_dic(safe_dic(lang,'result'),'value')).lower() for lang in langs]
 
     def repo_url(self):
-        return safe_dic(safe_dic(self.md,'codeRepository'),'excerpt')
+        return safe_dic(safe_list(safe_dic(safe_dic(self.md,'code_repository'),0),'result'),'value')
             
     def title(self):
-        return safe_dic(safe_dic(self.md,'name'),'excerpt')
-        
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'name'),0),'result'),'value')
+    #TODO find new
     def description(self):
 
         all_descriptions = safe_dic(self.md,'description')
@@ -527,11 +499,11 @@ class metadata(object):
         if all_descriptions:
             for d in all_descriptions:
                 if safe_dic(d,'technique') == 'GitHub API':
-                    description = safe_dic(d,'excerpt')
+                    description = safe_dic(safe_dic(d,'result'),'value')
                     break
 
         if not description:
-            description = safe_dic(safe_list(all_descriptions,0),'excerpt')
+            description = safe_dic(safe_dic(safe_list(all_descriptions,0),'result'),'value')
             if not description:
                 description = 'No description available yet.'
 
@@ -539,38 +511,87 @@ class metadata(object):
     
 
     def license(self):
-        return safe_dic(safe_dic(self.md,'license'),'excerpt')
+        return safe_dic(safe_list(safe_dic(self.md,'license'),0),'result')
 
     def last_update(self):
-        date_modified_str = safe_dic(safe_dic(self.md,'dateModified'),'excerpt')[:-1]
+        result = safe_dic(safe_list(safe_dic(self.md,'date_updated'),0),'result')
+        date_modified_str = of_correctType(result,'Date')[:-1]
         date_modified = datetime.strptime(date_modified_str, '%Y-%m-%dT%H:%M:%S')
-
         return date_modified
-    
+
     def last_update_days(self):
-        date_of_extraction_str = safe_dic(safe_dic(safe_dic(self.md,'stargazersCount'),'excerpt'),'date')[:-4]
-        date_of_extraction = datetime.strptime(date_of_extraction_str, '%a, %d %b %Y %H:%M:%S') 
+        date_of_extraction_str = safe_dic(safe_dic(self.md,'somef_provenance'),'date')[:]
+        date_of_extraction = datetime.strptime(date_of_extraction_str, '%Y-%m-%d %H:%M:%S')
         last_update = self.last_update()
         return (date_of_extraction - last_update).days
 
+
     def stars(self):
-        return safe_dic(safe_dic(safe_dic(self.md,'stargazersCount'),'excerpt'),'count')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'stargazers_count'),0),'result'),'value')
     
     def n_releases(self):
-        rel = safe_dic(safe_dic(self.md,'releases'),'excerpt')
+        rel = safe_dic(self.md,'releases')
         return len(rel) if rel is not None else 0
 
     def releases(self):
-        return safe_dic(safe_dic(self.md,'releases'),'excerpt')
+        return safe_dic(self.md,'releases')
     
     def url_releases(self):
-        return safe_dic(safe_dic(self.md,'downloadUrl'),'excerpt')
+        return safe_dic(self.md,'download_url')
     
     def url_stars(self):
         return self.repo_url()+'/stargazers'
 
     def owner(self):
-        return safe_dic(safe_dic(self.md,'owner'),'excerpt')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'owner'),0),'result'),'value')
+
+
+
+    #TODO awaiting SOMEF update
+    #IMPORTANT !!!!! ASSUMES only 1 CFF per repo
+    #USE SOMEF as example it lists SOMEF CFF then WIDOCO then SOMEF then CAPTUM
+    def citations(self):
+        all_citations = safe_dic(self.md,'citation')
+
+        if not all_citations:
+            return None
+
+        citations = {'bibtex': [], 'citation': []}
+
+        for c in all_citations:
+            try:
+                type = c['result']['format']
+            except:
+                try:
+                    if c['result']['type'] == 'Text_excerpt':
+                        citations['citation'].append(c['result']['value'])
+                except:
+                    continue
+            match type:
+                case 'cff':
+                    citations['cff'] = c['result']['value']
+                case 'bibtex':
+                    citations['bibtex'] = c['result']['value']
+
+                case _:
+                    next()
+        return citations if len(citations) > 0 else None
+    #TODO ask dani about this paper function. \
+    # Originally citations Took the ver8 somef "regular expression" output and would create a list of excerpts
+
+    def paper(self):
+        citations = safe_dic(self.citations(),'citation')
+        p = []
+        if citations:
+            for cita in citations:
+
+                c = citation_parser(cita)
+
+                if c.link_paper and 'zenodo' not in c.link_paper:
+                    p.append(c)
+
+        return p if len(p) > 0 else None
+
     
 # Aux ##########################################################
 
@@ -585,6 +606,11 @@ def safe_list(list, i):
         return list[i]
     except:
         return None
+def of_correctType(result, ofType):
+    if safe_dic(result, 'type') == ofType:
+        return safe_dic(result, 'value')
+    else:
+        raise Exception("not of correct %s type" % ofType)
 
 class citation_parser(object):
 

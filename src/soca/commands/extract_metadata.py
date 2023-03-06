@@ -2,7 +2,7 @@ import csv
 import json
 import os
 from progressbar import progressbar
-from somef.cli import cli_get_data
+from somef.somef_cli import cli_get_data
 
 
 import os
@@ -14,6 +14,15 @@ import traceback
 
 
 def extract(repos_csv, output, use_inspect4py, verbose):
+    """
+    @Param repos_csv: input file from the fetch command, A list of github urls
+    @Param output: defined output file
+    @Param use_inspect4py: Bool to indicate desire to use inspect4py
+    @Param verbose: Bool to choose whether or not to Fetch only repos that are not archived
+
+    Returns:
+    @return: folder with a json file per repo url within repos.csv
+    """
     # Make output dir
     if not os.path.exists(output):
         os.makedirs(output)
@@ -42,9 +51,11 @@ def extract(repos_csv, output, use_inspect4py, verbose):
             print(f"Extracting metadata from {repo_url}")
             if not verbose:
                 with HiddenPrints():
-                    metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
+                    #metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
+                    metadata = cli_get_data(0.9, False, repo_url, None, False, False, False, keep_tmp=git_clone_dir)
             else:
-                metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
+                #metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
+                metadata = cli_get_data(0.9, False, repo_url, None, False, False, False, keep_tmp=git_clone_dir)
             if not metadata:
                 print(f'ERROR: {repo_url} is down, skipping it...')
                 failed_repos.append(repo_url)
@@ -61,10 +72,11 @@ def extract(repos_csv, output, use_inspect4py, verbose):
         ##################################################################
         # inspect4py
 
-        if use_inspect4py and 'languages' in metadata and 'Python' in metadata["languages"]["excerpt"]:
-
+        if use_inspect4py and 'programming_languages' in metadata.results\
+                and any(lang['result']['value'] == "Python" for lang in metadata.results['programming_languages']):
+            print("hello")
             try:
-                metadata["inspect4py"] = {}
+                metadata.results["inspect4py"] = {}
 
                 if verbose:
                     subprocess.call(
@@ -83,12 +95,12 @@ def extract(repos_csv, output, use_inspect4py, verbose):
                         ins4py = json.load(f)
 
                     if 'software_type' in ins4py:
-                        metadata["inspect4py"]["software_type"] = ins4py["software_type"]
+                        metadata.results["inspect4py"]["software_type"] = ins4py["software_type"]
 
                     if ('software_invocation' in ins4py
                             and isinstance(ins4py["software_invocation"], list)
                             and 'run' in ins4py["software_invocation"][0]):
-                        metadata["inspect4py"]["run"] = ins4py["software_invocation"][0]["run"]
+                        metadata.results["inspect4py"]["run"] = ins4py["software_invocation"][0]["run"]
 
                 else:
                     print(
@@ -141,7 +153,7 @@ def extract(repos_csv, output, use_inspect4py, verbose):
         # Save metadata
         repo_full_name = (repo_url[19:]).replace("/", "_").replace(".", "-")
         with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
-            json.dump(metadata, repo_metadata, indent=4)
+            json.dump(metadata.results, repo_metadata, indent=4)
 
     if len(failed_repos_i4p) > 0:
         print("ERROR: inspect4py could not be ran in the following repo/s:")
@@ -155,4 +167,3 @@ def extract(repos_csv, output, use_inspect4py, verbose):
 
     print(
         f"\n✅ Successfully extracted metadata from ({len(repos_url) - len(failed_repos)}/{len(repos_url)}) repositories.")
-

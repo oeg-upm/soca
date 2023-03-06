@@ -12,8 +12,8 @@ def cli():
     SOCA (Software Catalog Creator)\n
     Automatically generates a searchable portal for every repository of an organization/s or user/s, which is easy to host.\n
 
-    Usage:
-    =. (Configure) Create configuration file for database etc
+    Usage:\n
+    =. (Configure) Create configuration file for database etc\n
     1. (fetch) Fetch all repos from the desired organization/s\n
     2. (extract) Extract all metadata for every repo\n
     3. (portal) Generate a searchable portal for all the retrieved data\n
