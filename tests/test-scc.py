@@ -353,12 +353,12 @@ class test_metadata_py(TestCase):
         self.assertIsNone(empty.notebook())
     #TODO
     def test_html_repo_icons(self):
-#        path = Path(__file__).parent / "json_files" / "somef9.json"
-#        with path.open() as f:
-#            somef9jayson = json.load(f)
-#        f.close()
-#        somef9 = md.metadata(path, somef9jayson)
-#        somef9.html_repo_icons()
+        path = Path(__file__).parent / "json_files" / "somef9.json"
+        with path.open() as f:
+            somef9jayson = json.load(f)
+        f.close()
+        somef9 = md.metadata(path, somef9jayson)
+        somef9.html_repo_icons()
         pass
 
 if __name__ == '__main__':

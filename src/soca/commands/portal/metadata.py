@@ -178,7 +178,9 @@ class metadata(object):
         citations = self.citations()
         if citations:
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
-            for citation in citations:
+            for citation in citations.values():
+                if isinstance(citation, list):
+                    citation = citation[0]
                 html += self.icon_wrapper(
                     icon_html = f"""<img src="{self.base}repo_icons/citation.png" 
                                 class="repo-icon" 
@@ -547,7 +549,7 @@ class metadata(object):
 
 
 
-    #TODO awaiting SOMEF update
+    #TODO awaiting SOMEF update and ask Dani
     #IMPORTANT !!!!! ASSUMES only 1 CFF per repo
     #USE SOMEF as example it lists SOMEF CFF then WIDOCO then SOMEF then CAPTUM
     def citations(self):
@@ -556,10 +558,11 @@ class metadata(object):
         if not all_citations:
             return None
 
-        citations = {'bibtex': [], 'citation': []}
+        citations = { 'citation': []}
 
         for c in all_citations:
             try:
+                type = ""
                 type = c['result']['format']
             except:
                 try:
@@ -572,9 +575,8 @@ class metadata(object):
                     citations['cff'] = c['result']['value']
                 case 'bibtex':
                     citations['bibtex'] = c['result']['value']
-
                 case _:
-                    next()
+                    continue
         return citations if len(citations) > 0 else None
     #TODO ask dani about this paper function. \
     # Originally citations Took the ver8 somef "regular expression" output and would create a list of excerpts
