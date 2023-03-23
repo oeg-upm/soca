@@ -7,6 +7,7 @@ from datetime import datetime
 import soca.commands.portal.metadata as md
 #from ..src.soca.commands.portal.metadata import metadata as m
 import soca.commands.extract_metadata as ex
+import soca.commands.create_summary as summary
 
 
 
@@ -26,6 +27,19 @@ ver8 = md.metadata(path4, ver8)
 
 class test_soca(TestCase):
     pass
+
+class test_createSummary_py(TestCase):
+
+    pass
+
+class test_uploadSummary_py(TestCase):
+
+    def test_summaryToDatabase(self):
+        path = Path(__file__).parent / "json_files" / "cards_data.json"
+        with path.open() as f:
+            data = json.load(f)
+        f.close()
+        summary.create_summary(path,"summary",True)
 
 class test_extract_metadata_py(TestCase):
 
