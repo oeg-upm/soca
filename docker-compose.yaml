@@ -36,6 +36,7 @@ services:
       - GF_AUTH_ANONYMOUS_ENABLED=true
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
       - GF_AUTH_ANONYMOUS_ORG_NAME=Main Org.
+      - GF_SECURITY_ALLOW_EMBEDDING=true
       - GF_SERVER_ROOT_URL=http://localhost:3000
       - GF_DATABASE_HOST=influxdb:8086
       - GF_DATABASE_PORT=8086

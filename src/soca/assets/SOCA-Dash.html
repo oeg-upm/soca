@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>SOCA-Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="soca-card.css">
+<style>
+.container {
+	display: grid;
+	grid-gap: 20px;
+	border: 10px solid var(--yellow);
+	grid-template-columns: repeat(3, 200px);
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+	<div class="navbar-insideAlt">
+	  <a href="index.html" style="line-height: 4rem; text-decoration: none;">
+		<img src="img/back_arrow.svg" style="height: 4rem; float: left;">
+		<span style="font-weight: bold;">Back</span>
+	  </a>      
+	  <h2 id="nav-title" style="text-align: center; margin: 0 auto;">SOCA Dashboard</h2>  
+	</div>
+  </nav>
+<br>
+<br>
+<style>
+	/* Add any necessary CSS styling here */
+	.grid {
+	  display: grid;
+	  grid-template-columns: 1fr repeat(5, minmax(0, 1fr));
+	  grid-template-rows: repeat(2, minmax(0, 1fr));
+	  gap: 10px; /* Optional gap between grid cells */
+	}
+	.full-width {
+	  grid-column: 1 / -1;
+	}
+  </style>
+</head>
+<body>
+  <div class="grid">
+	<div class="full-width">
+		<iframe src="http://localhost:3000/d-solo/FX3TNka4k/prototype?orgId=1&from=1679067240404&to=1679672040404&theme=light&panelId=40" width="100%" height="300" frameborder="0"></iframe>
+	</div>
+	<div>Grid 2</div>
+	<div>Grid 3</div>
+	<div>Grid 4</div>
+	<div>Grid 5</div>
+	<div>Grid 6</div>
+	<div>Grid 7</div>
+	<div>Grid 8</div>
+  </div>
+</grid-container>	
+<footer>
+	<div style="height: 4rem; display: flex; flex-direction: column; justify-content: center">
+		<p>Built with <a href="https://github.com/oeg-upm/soca" target="_blank">soca</a></p>
+	</div>
+	<div style="height: 4rem; flex-direction: row;">
+		<a class="footer-img" href="http://fi.upm.es/" target="_blank"><img alt="FI logo" class="footer-img" src="img/fi_logo.png"/></a>
+		<a class="footer-img" href="https://www.upm.es/" target="_blank"><img alt="UPM logo" class="footer-img" src="img/upm_logo.png"/></a>
+		<a href="https://oeg.fi.upm.es/" target="_blank"><img alt="OEG logo" class="footer-img" src="img/oeg_logo.gif"/></a>
+	</div>
+</footer>
+</body>
+</html>
