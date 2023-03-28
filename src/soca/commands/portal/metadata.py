@@ -36,8 +36,7 @@ class metadata(object):
             #ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
             ontologies = safe_dic(self.md,'ontologies')
             if ontologies:
-                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies if 'http' in safe_dic(x,"uri")])))
-                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies if 'http' in safe_dic(x,"uri")])))
+                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(safe_dic(x,"result"),"value")}>' for x in ontologies if 'http' in safe_dic(safe_dic(x,"result"),"value")])))
                 #onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
             return self.icon_wrapper(
                 icon_html = f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">',
@@ -539,7 +538,7 @@ class metadata(object):
         return safe_dic(self.md,'releases')
     
     def url_releases(self):
-        return safe_dic(self.md,'download_url')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'download_url'),0),'result'),'value')
     
     def url_stars(self):
         return self.repo_url()+'/stargazers'
