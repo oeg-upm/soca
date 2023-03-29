@@ -36,8 +36,7 @@ class metadata(object):
             #ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
             ontologies = safe_dic(self.md,'ontologies')
             if ontologies:
-                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies if 'http' in safe_dic(x,"uri")])))
-                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(x,"uri")}>' for x in ontologies if 'http' in safe_dic(x,"uri")])))
+                onto_list = '\n'.join(list(dict.fromkeys([ f'* <{safe_dic(safe_dic(x,"result"),"value")}>' for x in ontologies if 'http' in safe_dic(safe_dic(x,"result"),"value")])))
                 #onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
             return self.icon_wrapper(
                 icon_html = f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left","Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">',
@@ -178,7 +177,9 @@ class metadata(object):
         citations = self.citations()
         if citations:
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
-            for citation in citations:
+            for citation in citations.values():
+                if isinstance(citation, list):
+                    citation = citation[0]
                 html += self.icon_wrapper(
                     icon_html = f"""<img src="{self.base}repo_icons/citation.png" 
                                 class="repo-icon" 
@@ -269,7 +270,14 @@ class metadata(object):
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
             if len(hasDocumentation) > 1:
-                mk_list = "\n".join([f'* <{d}>' if ('http' in d and not ' ' in d) else f'* {d}' for d in hasDocumentation])
+                #mk_list = "\n".join([f'* <{d}>' if ('http' in d and not ' ' in d) else f'* {d}' for d in hasDocumentation])
+                mk_list = "\n".join([
+                    f'* <{safe_dic(safe_dic(d, "result"), "value")}>' if (
+                                'http' in safe_dic(safe_dic(d, "result"), "value") and ' ' not in safe_dic(
+                            safe_dic(d, "result"), "value"))
+                    else f'* {safe_dic(safe_dic(d, "result"), "value")}' for d in hasDocumentation
+                ])
+
                 html += self.icon_wrapper(
                     icon_html = f"""<img src="{self.base}repo_icons/documentation.png" 
                             class="repo-icon" 
@@ -537,7 +545,7 @@ class metadata(object):
         return safe_dic(self.md,'releases')
     
     def url_releases(self):
-        return safe_dic(self.md,'download_url')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'download_url'),0),'result'),'value')
     
     def url_stars(self):
         return self.repo_url()+'/stargazers'
@@ -546,8 +554,6 @@ class metadata(object):
         return safe_dic(safe_dic(safe_list(safe_dic(self.md,'owner'),0),'result'),'value')
 
 
-
-    #TODO awaiting SOMEF update
     #IMPORTANT !!!!! ASSUMES only 1 CFF per repo
     #USE SOMEF as example it lists SOMEF CFF then WIDOCO then SOMEF then CAPTUM
     def citations(self):
@@ -556,10 +562,11 @@ class metadata(object):
         if not all_citations:
             return None
 
-        citations = {'bibtex': [], 'citation': []}
+        citations = { 'citation': []}
 
         for c in all_citations:
             try:
+                type = ""
                 type = c['result']['format']
             except:
                 try:
@@ -572,9 +579,8 @@ class metadata(object):
                     citations['cff'] = c['result']['value']
                 case 'bibtex':
                     citations['bibtex'] = c['result']['value']
-
                 case _:
-                    next()
+                    continue
         return citations if len(citations) > 0 else None
     #TODO ask dani about this paper function. \
     # Originally citations Took the ver8 somef "regular expression" output and would create a list of excerpts

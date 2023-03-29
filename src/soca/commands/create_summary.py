@@ -6,6 +6,11 @@ from somef import __version__ as somef_ver
 from .upload_summary import upload_summary
 
 output = {}
+def safe_dic(dic, key):
+    try:
+        return dic[key]
+    except:
+        return None
 def __json_serial(obj):
     """JSON serializer for objects not serializable by default json code
     Returns
@@ -21,6 +26,12 @@ def reset_dict():
     output['has_documentation'] = 0
     output['identifiers'] = {'num_doi': 0, 'num_pid': 0, 'num_without_identifier': 0}
     output['readme'] = {'Level 0': 0, 'Level 1': 0, 'Level 2': 0, 'Level 3': 0}
+    output['num_no_readme'] = 0
+    output['num_with_readme'] = 0
+    output['num_with_description'] = 0
+    output['num_with_acknowledgement'] = 0
+    output['num_with_installation'] = 0
+    output['num_with_requirement'] = 0
     output['licenses'] = {'APACHE': 0, 'MIT': 0, 'GPL': 0, 'OTHER': 0, 'MISSING': 0}
     output['has_citation'] = 0
     output['CFF_file'] = 0
@@ -28,10 +39,9 @@ def reset_dict():
     output['released'] = {'<2 MONTHS': 0, 'LONGER': 0}
     output['_soca_version'] = soca_ver
     output['_somef_version'] = somef_ver
-    output['_org_name'] = ""
-    #TODO look into portal date/time
     output['_timestamp'] = __json_serial(datetime.now())
     output['num_repos'] = 0
+    output['language_count'] = {}
 
 
 
@@ -100,10 +110,8 @@ def readme_score(json_obj):
             score +=1
         if json_obj['acknowledgement']:
             score +=1
-        #TODO
         if json_obj['requirement']:
             score +=1
-        #TODO
         if json_obj['description'] is not None:
             score +=1
 
@@ -113,6 +121,27 @@ def readme_score(json_obj):
         return "Level 2"
     if score <= 2:
         return "Level 1"
+
+def __readme_analysis(json_obj):
+    """Function that checks if readme exists and counts the number of practices
+        Good practices taken into consideration: installation, acknowledgement, requirement, description
+        Returns
+        ---------
+        Nothing
+        """
+    if not json_obj['readmeUrl']:
+        output['num_no_readme'] += 1
+    else:
+        output['num_with_readme'] +=1
+        if json_obj['installation']:
+            output['num_with_installation'] +=1
+        if json_obj['acknowledgement']:
+            output['num_with_acknowledgment'] +=1
+        if json_obj['requirement']:
+            output['num_with_requirement'] +=1
+        if json_obj['description']:
+            output['num_with_description'] +=1
+
 
 def __findCitation(json_obj):
     """Function that counts the number of repositories per citation
@@ -126,6 +155,21 @@ def __findCitation(json_obj):
             output['CFF_file'] +=1
     else:
         output['no_citation'] += 1
+
+def __languages(json_obj):
+    try:
+        for language in json_obj['languages']:
+            if language in output['language_count']:
+                output['language_count'][language] += 1
+            else:
+                output['language_count'][language] = 1
+    except:
+        if 'ERROR' in output['language_count']:
+            output['language_count']['ERROR'].append(json_obj['id'])
+        else:
+            output['language_count']['ERROR'] = []
+            output['language_count']['ERROR'].append(json_obj['id'])
+
 
 
 #function that opens array of jsons given the organisation
@@ -160,13 +204,14 @@ def create_summary(directory_org_data,outFile, want2Upload):
             # finds identifiers
             __findId(item)
             # gives readme evaluation
-            output['readme'][readme_score(item)] = output['readme'][readme_score(item)] + 1
+            __readme_analysis(item)
             # release time
             output['released'][__last_update(item)] = output['released'][__last_update(item)] + 1
             # adds org_name
             output['_org_name'] = item['owner']
             output['num_repos'] += 1
-
+            #licenses
+            __languages(item)
 
         # saves dictionary to json file
         with open(outFile + "/" + item['owner'] + "_summary.json", 'w+') as out_file:
