@@ -10,6 +10,7 @@ from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
 import mistune
 import os
+#from cffconvert.cli import cli as cff2bibcli
 
 class metadata(object):
 
@@ -177,19 +178,26 @@ class metadata(object):
         citations = self.citations()
         if citations:
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
-            for citation in citations.values():
-                if isinstance(citation, list):
-                    citation = citation[0]
-                html += self.icon_wrapper(
-                    icon_html = f"""<img src="{self.base}repo_icons/citation.png" 
-                                class="repo-icon" 
-                                {self.add_tooltip('bottom',f"Citation")}>""",
-
-                    modal_html = self.modal(
-                        title = 'Citation',
-                        body = f'<div style="font-family: monospace;">{highlight(citation, ScdocLexer(), formatter)}</div>',
-                        markdown_translation=False,
-                        extra_html=
+            #TODO once fixed turn to if, elif, else  so that it prioritises CFF (converted to bibtex format)
+            if 'cff' in citations:
+                #TODO
+                pass
+            if 'bibtex' in citations:
+                citation = citations['bibtex']
+            else:
+                try:
+                    citation = citations['citation'][0]
+                except Exception as e:
+                    print(str(e))
+            html += self.icon_wrapper(
+                icon_html = f"""<img src="{self.base}repo_icons/citation.png" 
+                            class="repo-icon" 
+                            {self.add_tooltip('bottom',f"Citation")}>""",
+                modal_html = self.modal(
+                    title = 'Citation',
+                    body = f'<div style="font-family: monospace;">{highlight(citation, ScdocLexer(), formatter)}</div>',
+                    markdown_translation=False,
+                    extra_html=
                         f"""
                         <button 
                             class="copy-citation-btn" 
@@ -582,7 +590,7 @@ class metadata(object):
                 case _:
                     continue
         return citations if len(citations) > 0 else None
-    #TODO ask dani about this paper function. \
+
     # Originally citations Took the ver8 somef "regular expression" output and would create a list of excerpts
 
     def paper(self):

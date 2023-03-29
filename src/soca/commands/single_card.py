@@ -1,5 +1,5 @@
 from soca.commands.portal import card
-from somef.cli import cli_get_data
+from somef.somef_cli import cli_get_data
 from soca import HiddenPrints
 import traceback
 import os
