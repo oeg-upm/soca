@@ -368,13 +368,13 @@ class metadata(object):
         # inspect4py
         ######################
 
-        if 'inspect4py' in self.md and "software_type" in self.md["inspect4py"]:
+        if 'inspect4py' in self.md.results() and "software_type" in self.md.results()["inspect4py"]:
             return self.md["inspect4py"]["software_type"]
 
         # web and ontology
         ######################
 
-        if (safe_dic(self.md,'ontologies') is not None):
+        if (safe_dic(self.md.results,'ontologies') is not None):
             return 'ontology'
 
         langs = self.languages()
