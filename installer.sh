@@ -15,7 +15,7 @@ org=""
 #database Token
 databaseToken=""
 #######################
-echo -e "${token}\n\n\n\n" | somef configure
+echo -e "${token}\n\n\n\n\n" | somef configure
 #
 if [ -z "$databaseToken" ]; then
   databaseToken="\n"
