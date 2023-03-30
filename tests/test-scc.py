@@ -360,6 +360,14 @@ class test_metadata_py(TestCase):
         somef9 = md.metadata(path5, somef9jayson)
         #print(somef9.repo_type())
         pass
+    def test_repo_type(self):
+        path5 = Path(__file__).parent / "json_files" / "somef9.json"
+        with path5.open() as f:
+            somef9jayson = json.load(f)
+        f.close()
+        somef9 = md.metadata(path5, somef9jayson)
+        kek = somef9.html_repo_type()
+        print(kek)
     #TODO
     def test_html_repo_icons(self):
 #        path = Path(__file__).parent / "json_files" / "somef9.json"
