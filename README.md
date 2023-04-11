@@ -1,7 +1,7 @@
 
 # Software Catalog Creator (soca)
 
-[![Project Status: Active: The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![DOI](https://zenodo.org/badge/402041422.svg)](https://zenodo.org/badge/latestdoi/402041422) [![PyPI](https://badge.fury.io/py/soca.svg)](https://badge.fury.io/py/soca) [![Project Status: Active: The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 <img src="doc/images/soca-logo.png" alt="logo" width="150"/>
 
