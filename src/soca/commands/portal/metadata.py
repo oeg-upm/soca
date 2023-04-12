@@ -176,14 +176,12 @@ class metadata(object):
                         </a>""")
         #TODO check ScdocLexer
         citations = self.citations()
-        print(citations)
         if citations:
             citation = "No Citation Indicated"
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
             #TODO once fixed turn to if, elif, else  so that it prioritises CFF (converted to bibtex format)
-            # if 'cff' in citations:
-            #     print(1)
-            #     pass
+            if 'cff' in citations:
+                 pass
             if 'bibtex' in citations:
                 citation = citations['bibtex']
             else:
@@ -191,7 +189,6 @@ class metadata(object):
                     citation = citations['citation'][0]
                 except Exception as e:
                     print(str(e))
-            print(citation)
             html += self.icon_wrapper(
                 icon_html = f"""<img src="{self.base}repo_icons/citation.png" 
                             class="repo-icon" 
