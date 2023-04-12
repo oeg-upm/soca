@@ -2,12 +2,12 @@
     "somef_provenance": {
         "somef_version": "0.9.3",
         "somef_schema_version": "1.0.0",
-        "date": "2023-03-30 23:21:46"
+        "date": "2023-04-11 14:19:04"
     },
     "code_repository": [
         {
             "result": {
-                "value": "https://github.com/Str3am786/soca_Miguel_Arroyo_TFG",
+                "value": "https://github.com/oeg-upm/soca",
                 "type": "Url"
             },
             "confidence": 1,
@@ -17,8 +17,8 @@
     "owner": [
         {
             "result": {
-                "value": "Str3am786",
-                "type": "User"
+                "value": "oeg-upm",
+                "type": "Organization"
             },
             "confidence": 1,
             "technique": "GitHub_API"
@@ -27,7 +27,7 @@
     "date_created": [
         {
             "result": {
-                "value": "2022-09-05T10:19:40Z",
+                "value": "2021-09-01T11:49:16Z",
                 "type": "Date"
             },
             "confidence": 1,
@@ -37,7 +37,7 @@
     "date_updated": [
         {
             "result": {
-                "value": "2022-10-04T09:03:11Z",
+                "value": "2022-08-04T21:36:34Z",
                 "type": "Date"
             },
             "confidence": 1,
@@ -63,7 +63,7 @@
             },
             "confidence": 1,
             "technique": "file_exploration",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/LICENSE"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/LICENSE"
         },
         {
             "result": {
@@ -72,7 +72,7 @@
             },
             "confidence": 1,
             "technique": "file_exploration",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/tests/repos-metadata/somefTester/Str3am786_somefTester/somefTester-main/LICENSE"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/tests/repos-metadata/somefTester/Str3am786_somefTester/somefTester-main/LICENSE"
         }
     ],
     "description": [
@@ -96,13 +96,13 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         }
     ],
     "name": [
         {
             "result": {
-                "value": "soca_Miguel_Arroyo_TFG",
+                "value": "soca",
                 "type": "String"
             },
             "confidence": 1,
@@ -112,7 +112,7 @@
     "full_name": [
         {
             "result": {
-                "value": "Str3am786/soca_Miguel_Arroyo_TFG",
+                "value": "oeg-upm/soca",
                 "type": "String"
             },
             "confidence": 1,
@@ -122,7 +122,7 @@
     "issue_tracker": [
         {
             "result": {
-                "value": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/issues",
+                "value": "https://api.github.com/repos/oeg-upm/soca/issues",
                 "type": "Url"
             },
             "confidence": 1,
@@ -132,7 +132,7 @@
     "forks_url": [
         {
             "result": {
-                "value": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/forks",
+                "value": "https://api.github.com/repos/oeg-upm/soca/forks",
                 "type": "Url"
             },
             "confidence": 1,
@@ -142,7 +142,7 @@
     "stargazers_count": [
         {
             "result": {
-                "value": 0,
+                "value": 5,
                 "type": "Number"
             },
             "confidence": 1,
@@ -152,7 +152,7 @@
     "keywords": [
         {
             "result": {
-                "value": "",
+                "value": "software, software-engineering, software-metadata",
                 "type": "String"
             },
             "confidence": 1,
@@ -162,7 +162,7 @@
     "forks_count": [
         {
             "result": {
-                "value": 0,
+                "value": 3,
                 "type": "Number"
             },
             "confidence": 1,
@@ -172,7 +172,7 @@
     "download_url": [
         {
             "result": {
-                "value": "https://github.com/Str3am786/soca_Miguel_Arroyo_TFG/releases",
+                "value": "https://github.com/oeg-upm/soca/releases",
                 "type": "Url"
             },
             "confidence": 1,
@@ -195,7 +195,7 @@
                 "value": "Python",
                 "name": "Python",
                 "type": "Programming_language",
-                "size": 82364
+                "size": 82044
             },
             "confidence": 1,
             "technique": "GitHub_API"
@@ -245,21 +245,21 @@
         {
             "result": {
                 "type": "Release",
-                "value": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/releases/94223400",
-                "tag": "v0.0.1",
-                "name": "SOCA 0.0.1",
+                "value": "https://api.github.com/repos/oeg-upm/soca/releases/97472243",
+                "tag": "0.0.1",
+                "name": "SOCA 0.0.1: First release with portal and analytics",
                 "author": {
-                    "name": "Str3am786",
+                    "name": "dgarijo",
                     "type": "User"
                 },
-                "description": "Release of SOCA portal and SOCA-Dashboard.\r\nPython 3.9  and somef 0.8 dependency\r\n\r\nPackages used: somef 0.8.2, requests, bs4, htmlmin, progressbar2,    mistune    Pygments    html2image    inspect4py    click    influxdb-client    configparser    DateTime    pathlib    nltk\r\n \r\n",
-                "tarball_url": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/tarball/v0.0.1",
-                "zipball_url": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/zipball/v0.0.1",
-                "html_url": "https://github.com/Str3am786/soca_Miguel_Arroyo_TFG/releases/tag/v0.0.1",
-                "url": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/releases/94223400",
-                "release_id": 94223400,
-                "date_created": "2022-10-04T09:02:55Z",
-                "date_published": "2023-03-02T11:39:32Z"
+                "description": "This version is a first release of the soca framework, which includes the main portal and analytics features.\r\n\r\n## New Contributors\r\n* @dakixr made their first contribution in https://github.com/oeg-upm/soca/pull/14\r\n* @Str3am786 made their first contribution in https://github.com/oeg-upm/soca/pull/95\r\n\r\n**Full Changelog**: https://github.com/oeg-upm/soca/commits/0.0.1",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/soca/tarball/0.0.1",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/soca/zipball/0.0.1",
+                "html_url": "https://github.com/oeg-upm/soca/releases/tag/0.0.1",
+                "url": "https://api.github.com/repos/oeg-upm/soca/releases/97472243",
+                "release_id": 97472243,
+                "date_created": "2023-03-30T10:27:02Z",
+                "date_published": "2023-03-30T12:30:38Z"
             },
             "confidence": 1,
             "technique": "GitHub_API"
@@ -268,7 +268,7 @@
     "readme_url": [
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md",
                 "type": "Url"
             },
             "confidence": 1,
@@ -278,19 +278,19 @@
     "has_build_file": [
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/Dockerfile",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/Dockerfile",
                 "type": "Url",
                 "format": "dockerfile"
             },
             "confidence": 1,
             "technique": "file_exploration",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/Dockerfile"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/Dockerfile"
         }
     ],
     "has_script_file": [
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/container_run.sh",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/container_run.sh",
                 "type": "Url"
             },
             "confidence": 1,
@@ -298,7 +298,7 @@
         },
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/installer.sh",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/installer.sh",
                 "type": "Url"
             },
             "confidence": 1,
@@ -308,7 +308,7 @@
     "acknowledgement": [
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/src/soca/assets/repo_icons/acknowledgement.png",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/src/soca/assets/repo_icons/acknowledgement.png",
                 "type": "Url"
             },
             "confidence": 1,
@@ -316,7 +316,7 @@
         },
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/example/LinkedEarth/repo_icons/acknowledgement.png",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/example/LinkedEarth/repo_icons/acknowledgement.png",
                 "type": "Url"
             },
             "confidence": 1,
@@ -324,7 +324,7 @@
         },
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/example/KnowledgeCaptureAndDiscoveryANDmintproject/repo_icons/acknowledgement.png",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/example/KnowledgeCaptureAndDiscoveryANDmintproject/repo_icons/acknowledgement.png",
                 "type": "Url"
             },
             "confidence": 1,
@@ -332,7 +332,7 @@
         },
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/example/oeg-upm/repo_icons/acknowledgement.png",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/example/oeg-upm/repo_icons/acknowledgement.png",
                 "type": "Url"
             },
             "confidence": 1,
@@ -351,7 +351,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         }
     ],
     "installation": [
@@ -366,7 +366,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -380,7 +380,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -393,7 +393,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         }
     ],
     "usage": [
@@ -408,7 +408,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -422,7 +422,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -436,7 +436,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -450,7 +450,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -464,7 +464,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -478,11 +478,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/soca_3.10/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         }
-    ],
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /home/2play/git/soca_Miguel_Arroyo_TFG/tests/repos-metadata/soca_Miguel_Arroyo_TFG/Str3am786_soca_Miguel_Arroyo_TFG/soca_Miguel_Arroyo_TFG-soca_3.10/src/soca/__init__.py"
-    }
+    ]
 }
