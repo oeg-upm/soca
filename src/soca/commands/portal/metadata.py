@@ -10,6 +10,7 @@ from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
 import mistune
 import os
+from cffconvert import Citation
 #from cffconvert.cli import cli as cff2bibcli
 
 class metadata(object):
@@ -127,7 +128,6 @@ class metadata(object):
 
         license = self.license()
         if license:
-            print(license)
             html += self.icon_wrapper(
                 icon_html = f"""<img src="{self.base}repo_icons/license.png" 
                             class="repo-icon"
@@ -182,12 +182,14 @@ class metadata(object):
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
             #TODO once fixed turn to if, elif, else  so that it prioritises CFF (converted to bibtex format)
             if 'cff' in citations:
-                 pass
+                cite = Citation(cffstr=safe_dic(citations,"cff"))
+                citation = cite.as_bibtex()
             if 'bibtex' in citations:
-                citation = citations['bibtex']
+                citation = safe_dic(citations,"bibtex")
             else:
                 try:
-                    citation = citations['citation'][0]
+                    #citation = citations['citation'][0]
+                    citation = safe_list(safe_dic(citations,citation),0)
                 except Exception as e:
                     print(str(e))
             html += self.icon_wrapper(
