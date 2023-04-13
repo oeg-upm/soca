@@ -10,7 +10,7 @@ from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
 import mistune
 import os
-from cffconvert import Citation
+#from cffconvert import Citation
 #from cffconvert.cli import cli as cff2bibcli
 
 class metadata(object):
@@ -183,11 +183,11 @@ class metadata(object):
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
             #TODO once fixed turn to if, elif, else  so that it prioritises CFF (converted to bibtex format)
             if 'cff' in citations:
-                try:
-                    cite = Citation(cffstr=safe_dic(citations,"cff"))
-                    citation = cite.as_bibtex()
-                except:
-                    pass
+                # try:
+                #     cite = Citation(cffstr=safe_dic(citations,"cff"))
+                #     citation = cite.as_bibtex()
+                # except:
+                pass
             if 'bibtex' in citations:
                 citation = safe_dic(citations,"bibtex")
             else:
