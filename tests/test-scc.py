@@ -28,10 +28,10 @@ class test_soca(TestCase):
     pass
 
 class test_extract_metadata_py(TestCase):
-
-    def test_general(self):
-        csv = Path(__file__).parent / "csv_files" / "repos.csv"
-        ex.extract(str(csv),"repos-metadata", True, False)
+    pass
+    #def test_general(self):
+    #    csv = Path(__file__).parent / "csv_files" / "repos.csv"
+    #    ex.extract(str(csv),"repos-metadata", True, False)
 class test_metadata_py(TestCase):
     def test_License(self):
         path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"

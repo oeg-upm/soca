@@ -128,6 +128,7 @@ class metadata(object):
 
         license = self.license()
         if license:
+
             html += self.icon_wrapper(
                 icon_html = f"""<img src="{self.base}repo_icons/license.png" 
                             class="repo-icon"
@@ -182,14 +183,17 @@ class metadata(object):
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
             #TODO once fixed turn to if, elif, else  so that it prioritises CFF (converted to bibtex format)
             if 'cff' in citations:
-                cite = Citation(cffstr=safe_dic(citations,"cff"))
-                citation = cite.as_bibtex()
+                try:
+                    cite = Citation(cffstr=safe_dic(citations,"cff"))
+                    citation = cite.as_bibtex()
+                except:
+                    pass
             if 'bibtex' in citations:
                 citation = safe_dic(citations,"bibtex")
             else:
                 try:
-                    #citation = citations['citation'][0]
-                    citation = safe_list(safe_dic(citations,citation),0)
+                    citation = citations['citation'][0]
+                    #citation = safe_list(safe_dic(citations,citation),0)
                 except Exception as e:
                     print(str(e))
             html += self.icon_wrapper(
@@ -299,7 +303,7 @@ class metadata(object):
                         body = mk_list))
             else:
                 html += self.icon_wrapper(
-                        icon_html = f"""<a href="{hasDocumentation[0]}" target="_blank" class="repo-icon">
+                        icon_html = f"""<a href="{safe_list(hasDocumentation,0)}" target="_blank" class="repo-icon">
                                 <img src="{self.base}repo_icons/documentation.png" 
                                 class="repo-icon" 
                                 {self.add_tooltip('bottom','Documentation')}>
@@ -363,7 +367,16 @@ class metadata(object):
 
     # Metadata ##################################################
     def last_release(self):
-        return safe_dic(safe_dic(self.releases()[0],'result'),'name') if self.n_releases() !=0 else ''
+        if self.n_releases() != 0:
+            if not safe_dic(safe_dic(safe_list(self.releases(),0),'result'),'name'):
+                if (tag:=safe_dic(safe_dic(safe_list(self.releases(),0),'result'),'tag')):
+                    return tag
+                else:
+                    return "Missing Descriptors"
+            return safe_dic(safe_dic(safe_list(self.releases(),0),'result'),'name')
+        else:
+            return ''
+        #return safe_dic(safe_dic(safe_list(self.releases(),0),'result'),'name') if self.n_releases() != 0 else ''
 
     #TODO
     def repo_type(self):
@@ -527,10 +540,25 @@ class metadata(object):
                 description = 'No description available yet.'
 
         return description
-    
 
     def license(self):
-        return safe_dic(safe_list(safe_dic(self.md,'license'),0),'result')
+        license = safe_dic(safe_list(safe_dic(self.md, 'license'), 0), 'result')
+        if (typ := safe_dic(license, "type")) and (typ == "File_dump"):
+            self._find_license_name(license)
+            return license
+        else:
+            return license
+
+    def _find_license_name(self, license):
+        find_name = safe_dic(license, "value")
+        if 'Apache' in find_name:
+            license['name'] = 'Apache License 2.0'
+        elif 'MIT' in find_name:
+            license['name'] = 'MIT License'
+        elif 'GPL' in find_name:
+            license['name'] = 'GNU General Public License v3.0'
+        else:
+            license['name'] = 'Other'
 
     def last_update(self):
         result = safe_dic(safe_list(safe_dic(self.md,'date_updated'),0),'result')
