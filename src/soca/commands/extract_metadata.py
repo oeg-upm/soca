@@ -58,7 +58,8 @@ def extract(repos_csv, output, use_inspect4py, verbose):
                 #metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
                 metadata = cli_get_data(0.9, False, repo_url, None, False, False, False, keep_tmp=git_clone_dir)
             if not metadata:
-                print(f'ERROR: {repo_url} is down, skipping it...')
+                #print(f'ERROR: {repo_url} is down, skipping it...')
+                print(f'ERROR: unable to extract from {repo_url}, skipping it...')
                 failed_repos.append(repo_url)
                 continue
         except KeyboardInterrupt:
