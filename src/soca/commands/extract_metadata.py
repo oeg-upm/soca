@@ -75,7 +75,6 @@ def extract(repos_csv, output, use_inspect4py, verbose):
 
         if use_inspect4py and 'programming_languages' in metadata.results\
                 and any(lang['result']['value'] == "Python" for lang in metadata.results['programming_languages']):
-            print("hello")
             try:
                 metadata.results["inspect4py"] = {}
 
