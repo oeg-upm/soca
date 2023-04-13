@@ -127,10 +127,11 @@ class metadata(object):
 
         license = self.license()
         if license:
+            print(license)
             html += self.icon_wrapper(
                 icon_html = f"""<img src="{self.base}repo_icons/license.png" 
                             class="repo-icon"
-                            {self.add_tooltip('bottom',f'License: {license["name"]}')}>
+                            {self.add_tooltip('bottom',f'License: {safe_dic(license,"name")}')}>
                             """,
                 modal_html= self.modal(
                     title = 'License',
