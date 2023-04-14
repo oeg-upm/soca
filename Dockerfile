@@ -11,6 +11,6 @@ RUN pip3 install -e .
 RUN python -m nltk.downloader wordnet
 RUN python -m nltk.downloader omw-1.4
 RUN python -m nltk.downloader punkt
-RUN python -m ntlk.downloader stopwords 
+RUN python -m nltk.downloader stopwords
 RUN ./installer.sh
 CMD ./container_run.sh
