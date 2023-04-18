@@ -10,6 +10,7 @@ from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
 import mistune
 import os
+import validators
 #from cffconvert import Citation
 #from cffconvert.cli import cli as cff2bibcli
 
@@ -286,10 +287,10 @@ class metadata(object):
         if hasDocumentation:
             if len(hasDocumentation) > 1:
                 #mk_list = "\n".join([f'* <{d}>' if ('http' in d and not ' ' in d) else f'* {d}' for d in hasDocumentation])
+
                 mk_list = "\n".join([
                     f'* <{safe_dic(safe_dic(d, "result"), "value")}>' if (
-                                 safe_dic(safe_dic(d, "result"), "value").startswith("http") and ' ' not in safe_dic(
-                            safe_dic(d, "result"), "value"))
+                                 validators.url((safe_dic(d, "result"), "value")))
                     else f'* {safe_dic(safe_dic(d, "result"), "value")}' for d in hasDocumentation
                 ])
 
@@ -303,7 +304,7 @@ class metadata(object):
                         body = mk_list))
             else:
                 doc = safe_dic(safe_dic(safe_list(hasDocumentation,0),'result'),'value')
-                if doc.startswith("http") :
+                if validators.url(doc):
                     html += self.icon_wrapper(
                         icon_html=f"""<a href="{doc}" target="_blank" class="repo-icon">
                                                     <img src="{self.base}repo_icons/documentation.png" 
