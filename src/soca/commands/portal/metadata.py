@@ -288,7 +288,7 @@ class metadata(object):
                 #mk_list = "\n".join([f'* <{d}>' if ('http' in d and not ' ' in d) else f'* {d}' for d in hasDocumentation])
                 mk_list = "\n".join([
                     f'* <{safe_dic(safe_dic(d, "result"), "value")}>' if (
-                                'http' in safe_dic(safe_dic(d, "result"), "value") and ' ' not in safe_dic(
+                                 safe_dic(safe_dic(d, "result"), "value").startswith("http") and ' ' not in safe_dic(
                             safe_dic(d, "result"), "value"))
                     else f'* {safe_dic(safe_dic(d, "result"), "value")}' for d in hasDocumentation
                 ])
@@ -302,12 +302,24 @@ class metadata(object):
                         title = 'Documentation',
                         body = mk_list))
             else:
-                html += self.icon_wrapper(
-                        icon_html = f"""<a href="{safe_list(hasDocumentation,0)}" target="_blank" class="repo-icon">
-                                <img src="{self.base}repo_icons/documentation.png" 
+                doc = safe_dic(safe_dic(safe_list(hasDocumentation,0),'result'),'value')
+                if doc.startswith("http") :
+                    html += self.icon_wrapper(
+                        icon_html=f"""<a href="{doc}" target="_blank" class="repo-icon">
+                                                    <img src="{self.base}repo_icons/documentation.png" 
+                                                    class="repo-icon" 
+                                                    {self.add_tooltip('bottom', 'Documentation')}>
+                                                </a>""")
+                else:
+                    html += self.icon_wrapper(
+                        icon_html=f"""<img src="{self.base}repo_icons/documentation.png" 
                                 class="repo-icon" 
-                                {self.add_tooltip('bottom','Documentation')}>
-                            </a>""")
+                                {self.add_tooltip('bottom', 'Documentation')}>""",
+
+                        modal_html=self.modal(
+                            title='Documentation',
+                            body=f'{doc}'))
+
 
         acknowledgement =  self.acknowledgement()
         if acknowledgement:

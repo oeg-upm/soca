@@ -377,6 +377,15 @@ class test_metadata_py(TestCase):
         somef9 = md.metadata(path, somef9jayson)
         somef9.html_repo_icons()
         pass
+    def test_r4r(self):
+        path = Path(__file__).parent / "json_files" / "oeg-upm_r4r.json"
+        with path.open() as f:
+            r4rjayson = json.load(f)
+        f.close()
+        r4r = md.metadata(path, r4rjayson)
+        r4r.html_repo_icons()
+        pass
+
 
 if __name__ == '__main__':
     unittest.main()
