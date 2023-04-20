@@ -558,9 +558,11 @@ class metadata(object):
         license = safe_dic(safe_list(safe_dic(self.md, 'license'), 0), 'result')
         if (typ := safe_dic(license, "type")) and (typ == "File_dump"):
             self._find_license_name(license)
+
             return license
         else:
             return license
+
 
     def _find_license_name(self, license):
         find_name = safe_dic(license, "value")
