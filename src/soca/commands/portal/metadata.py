@@ -10,7 +10,6 @@ from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
 import mistune
 import os
-import validators
 #from cffconvert import Citation
 #from cffconvert.cli import cli as cff2bibcli
 
@@ -290,7 +289,7 @@ class metadata(object):
 
                 mk_list = "\n".join([
                     f'* <{safe_dic(safe_dic(d, "result"), "value")}>' if (
-                                 validators.url((safe_dic(d, "result"), "value")))
+                                 self._is_valid_url(safe_dic(safe_dic(d, "result"), "value")))
                     else f'* {safe_dic(safe_dic(d, "result"), "value")}' for d in hasDocumentation
                 ])
 
@@ -304,7 +303,7 @@ class metadata(object):
                         body = mk_list))
             else:
                 doc = safe_dic(safe_dic(safe_list(hasDocumentation,0),'result'),'value')
-                if validators.url(doc):
+                if self._is_valid_url(doc):
                     html += self.icon_wrapper(
                         icon_html=f"""<a href="{doc}" target="_blank" class="repo-icon">
                                                     <img src="{self.base}repo_icons/documentation.png" 
@@ -347,6 +346,16 @@ class metadata(object):
                 )
 
         return html
+
+    def _is_valid_url(self,url):
+        """Private function to check if a string is a valid URL."""
+        import re
+
+        # Regular expression to match a valid URL
+        url_regex = re.compile(r"^https?://[^\s/$.?#].[^\s]*$")
+
+        # Check if the input string matches the URL regex
+        return bool(url_regex.match(url))
 
     # HTML helper ##################################################
 

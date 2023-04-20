@@ -378,7 +378,7 @@ class test_metadata_py(TestCase):
         somef9.html_repo_icons()
         pass
     def test_r4r(self):
-        path = Path(__file__).parent / "json_files" / "oeg-upm_r4r.json"
+        path = Path(__file__).parent / "json_files" / "oeg-upm_awesome-semantic-web.json"
         with path.open() as f:
             r4rjayson = json.load(f)
         f.close()
