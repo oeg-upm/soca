@@ -96,7 +96,7 @@ def summaryToDatabase(summary_output):
         'num_MIT': summary_output['licenses']['MIT'],
         'num_Other': summary_output['licenses']['OTHER'],
         'num_Missing': summary_output['licenses']['MISSING'],
-        'sum_licenses': summary_output['num_repos'] - summary_output['licenses']['MISSING'],
+        'sum_licenses': summary_output['licenses']['APACHE'] + summary_output['licenses']['GPL'] + summary_output['licenses']['MIT'] + summary_output['licenses']['OTHER'],
         'num_with_citation': summary_output['has_citation'],
         'num_no_citation': summary_output['no_citation'],
         'release_more_twoMon': summary_output['released']['LONGER'],
