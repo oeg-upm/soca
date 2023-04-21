@@ -491,7 +491,7 @@ class metadata(object):
 
 
     def acknowledgement(self):
-        return safe_dic(safe_list(safe_dic(self.md,'acknowlegement'),0),'value')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'acknowledgement'),0),'result'),'value')
 
     def hasDocumentation(self):
         docList = safe_dic(self.md, 'documentation')

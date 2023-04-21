@@ -177,7 +177,8 @@ class test_metadata_py(TestCase):
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.citations())
     def test_paper(self):
-        path = Path(__file__).parent / "json_files"  / "somef9.json"
+        #path = Path(__file__).parent / "json_files" / "somef9.json"
+        path = Path(__file__).parent / "json_files" / "widoco_9_test.json"
         with path.open() as f:
             data = json.load(f)
         f.close()
@@ -189,7 +190,7 @@ class test_metadata_py(TestCase):
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.paper())
     def test_title(self):
-        path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
+        path = Path(__file__).parent / "json_files"  / "oeg-upm_r4r.json"
         with path.open() as f:
             data = json.load(f)
         f.close()
