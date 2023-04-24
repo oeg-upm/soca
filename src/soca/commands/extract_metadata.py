@@ -8,6 +8,7 @@ from soca import HiddenPrints
 import subprocess
 import shutil
 import traceback
+import datetime
 
 import requests
 import pprint
@@ -156,8 +157,12 @@ def extract(repos_csv, output, use_inspect4py, verbose):
         #
 
         # Save metadata
+        # repo_full_name = (repo_url[19:]).replace("/", "_").replace(".", "-")
+        # with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
+        #     json.dump(metadata.results, repo_metadata, indent=4)
         repo_full_name = (repo_url[19:]).replace("/", "_").replace(".", "-")
-        with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
+        today = datetime.date.today().strftime("%Y-%m-%d")
+        with open(f"{output}/{repo_full_name}_{today}.json", 'w') as repo_metadata:
             json.dump(metadata.results, repo_metadata, indent=4)
 
     if len(failed_repos_i4p) > 0:

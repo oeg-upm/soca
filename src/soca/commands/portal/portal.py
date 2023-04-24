@@ -116,7 +116,7 @@ def list_owners(repo_metadata_dir):
 
     for file in os.listdir(os.fsencode(repo_metadata_dir)):
         filename = os.fsdecode(file)
-        if filename.endswith(".json"): 
+        if filename.endswith(".json"):
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 repo_metadata = json.load(json_metadata)
                 md = metadata.metadata(repo_metadata_dir, repo_metadata)
@@ -125,5 +125,18 @@ def list_owners(repo_metadata_dir):
                     owners.append(owner)
 
     return owners
+
+    # repo_full_name = (repo_url[19:]).replace("/", "_").replace(".", "-")
+    # today = datetime.date.today().strftime("%Y-%m-%d")
+    #
+    # for file in os.listdir(os.fsencode(repo_metadata_dir)):
+    #     filename = os.fsdecode(file)
+    #     if filename.endswith(f"_{today}.json"):
+    #         with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
+    #             repo_metadata = json.load(json_metadata)
+    #             md = metadata.metadata(repo_metadata_dir, repo_metadata)
+    #             owner = md.owner()
+    #             if owner not in owners:
+    #                 owners.append(owner)
 
 
