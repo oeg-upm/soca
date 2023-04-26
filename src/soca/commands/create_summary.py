@@ -136,7 +136,7 @@ def __readme_analysis(json_obj):
         if json_obj['installation']:
             output['num_with_installation'] +=1
         if json_obj['acknowledgement']:
-            output['num_with_acknowledgment'] +=1
+            output['num_with_acknowledgement'] +=1
         if json_obj['requirement']:
             output['num_with_requirement'] +=1
         if json_obj['description']:
