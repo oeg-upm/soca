@@ -1,3 +1,4 @@
+import os
 import unittest
 from unittest import TestCase, mock
 import json
@@ -5,6 +6,7 @@ from pathlib import Path
 from datetime import datetime
 
 import soca.commands.portal.metadata as md
+import soca.commands.create_summary as summary
 #from ..src.soca.commands.portal.metadata import metadata as m
 import soca.commands.extract_metadata as ex
 
@@ -124,8 +126,13 @@ class test_metadata_py(TestCase):
         pass
 
     def test_last_release(self):
-
         pass
+    def test_no_last_release(self):
+        mT = json.loads('{"emtpy":"mT"}')
+        path = Path("doesntExist")
+        empty = md.metadata(path, mT)
+        self.assertEquals('',empty.last_release())
+
     def test_logo(self):
         path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
         with path.open() as f:
@@ -177,8 +184,8 @@ class test_metadata_py(TestCase):
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.citations())
     def test_paper(self):
-        #path = Path(__file__).parent / "json_files" / "somef9.json"
-        path = Path(__file__).parent / "json_files" / "widoco_9_test.json"
+        path = Path(__file__).parent / "json_files" / "somef9.json"
+        #path = Path(__file__).parent / "json_files" / "widoco_9_test.json"
         with path.open() as f:
             data = json.load(f)
         f.close()
@@ -379,13 +386,25 @@ class test_metadata_py(TestCase):
         somef9.html_repo_icons()
         pass
     def test_r4r(self):
-        path = Path(__file__).parent / "json_files" / "oeg-upm_awesome-semantic-web.json"
+        path = Path(__file__).parent / "json_files" / "oeg-upm_r4r.json"
         with path.open() as f:
             r4rjayson = json.load(f)
         f.close()
         r4r = md.metadata(path, r4rjayson)
         r4r.html_repo_icons()
         pass
+
+    def test_ontolgy(self):
+        path = Path(__file__).parent / "json_files" / "ontologytest.json"
+        with path.open() as f:
+            ontojayson = json.load(f)
+        f.close()
+        summary.create_summary(path,"summary",False)
+        path2 = Path(__file__).parent/ "summary"
+        dir = os.listdir(path2)
+        if len(dir) == 0:
+            os.rmdir(path2)
+            pass
 
 
 if __name__ == '__main__':

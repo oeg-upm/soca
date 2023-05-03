@@ -195,6 +195,10 @@ def create_summary(directory_org_data,outFile, want2Upload):
         if not os.path.exists(outFile):
             os.makedirs(outFile)
         for item in json_array:
+            if safe_dic(item,'isOntology') or len(safe_dic(item,'ontologies')) > 0:
+                languages = safe_dic(item,'languages')
+                if any(lang.lower() in ['html', 'turtle', 'owl', 'rdf', 'rml'] for lang in languages):
+                    continue
             if item['hasDocumentation']:
                 output['has_documentation'] = output['has_documentation'] + 1
             #citation

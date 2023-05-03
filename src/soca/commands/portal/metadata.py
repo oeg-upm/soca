@@ -644,7 +644,9 @@ class metadata(object):
                     citations['bibtex'] = c['result']['value']
                 case _:
                     continue
-        return citations if len(citations) > 0 else None
+        #return citations if len(citations) > 0 else None
+        test = len(citations)
+        return citations if bool(citations) else None
 
     # Originally citations Took the ver8 somef "regular expression" output and would create a list of excerpts
 
