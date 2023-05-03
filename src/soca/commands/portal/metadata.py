@@ -498,7 +498,6 @@ class metadata(object):
         return docList if docList else None
 
     def requirements(self):
-
         reqs = safe_dic(self.md,'requirements')
         if not reqs:
             return None
@@ -577,10 +576,13 @@ class metadata(object):
         find_name = safe_dic(license, "value")
         if 'Apache' in find_name:
             license['name'] = 'Apache License 2.0'
+            license['url'] = 'https://api.github.com/licenses/apache-2.0'
         elif 'MIT' in find_name:
             license['name'] = 'MIT License'
+            license['url'] = 'https://api.github.com/licenses/MIT'
         elif 'GPL' in find_name:
             license['name'] = 'GNU General Public License v3.0'
+            license['url'] = 'https://api.github.com/licenses/gpl-3.0'
         else:
             license['name'] = 'Other'
 
