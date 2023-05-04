@@ -65,6 +65,7 @@ def reset_database_dict():
     database['fields']['readme_score_2'] = 0
     database['fields']['readme_score_3'] = 0
     database['fields']['num_repos'] = 0
+    database['fields']['num_ontologies'] = 0
     database['fields']['num_CFF'] = 0
 
 
@@ -107,6 +108,7 @@ def summaryToDatabase(summary_output):
         'readme_score_3': summary_output['readme']['Level 3'],
         'sum_readme': summary_output['num_repos'] - summary_output['readme']['Level 0'],
         'num_repos': summary_output['num_repos'],
+        'num_ontologies': summary_output['num_ontologies'],
         'num_no_readme': summary_output['num_no_readme'],
         'num_with_readme': summary_output['num_with_readme'],
         'num_with_description': summary_output['num_with_description'],

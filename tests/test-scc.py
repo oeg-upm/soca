@@ -6,34 +6,44 @@ from pathlib import Path
 from datetime import datetime
 
 import soca.commands.portal.metadata as md
+import soca.commands.portal.portal as portal
 import soca.commands.create_summary as summary
 #from ..src.soca.commands.portal.metadata import metadata as m
 import soca.commands.extract_metadata as ex
 
 
-
-
-
-
-path4 = Path(__file__).parent / "json_files"  / "ver8.json"
-with path4.open() as f:
-    ver8 = json.load(f)
-f.close()
-ver8 = md.metadata(path4, ver8)
-######
-
-
-
-
-
 class test_soca(TestCase):
     pass
 
-class test_extract_metadata_py(TestCase):
+class test_pipeline_metadata_py(TestCase):
     pass
-    #def test_general(self):
-    #    csv = Path(__file__).parent / "csv_files" / "repos.csv"
-    #    ex.extract(str(csv),"repos-metadata", True, False)
+        #TODO create a full pipeline for testing extract -> portal -> summary and test the summary numbers
+#    def test_general(self):
+        #csv = Path(__file__).parent / "csv_files" / "repos.csv"
+        #ex.extract(str(csv),"repos-metadata", True, False)
+        #portal.generate("repos-metadata", "portal", "Software Catalog", "soca-logo.ico")
+        #summary.create_summary("portal/cards_data.json")
+
+    # def delete_directory(path):
+    #     """Deletes a directory and all files within it.
+    #
+    #     Args:
+    #         path (str): The path of the directory to be deleted.
+    #     """
+    #     # Check if the path exists and is a directory
+    #     if os.path.exists(path) and os.path.isdir(path):
+    #         # Iterate through all files in the directory and delete them
+    #         for file in os.listdir(path):
+    #             file_path = os.path.join(path, file)
+    #             if os.path.isfile(file_path):
+    #                 os.remove(file_path)
+    #             elif os.path.isdir(file_path):
+    #                 # Recursively delete any subdirectories
+    #                 delete_directory(file_path)
+    #         # Remove the directory itself
+    #         os.rmdir(path)
+    #     else:
+    #         print(f"The directory {path} does not exist or is not a directory.")
 class test_metadata_py(TestCase):
     def test_License(self):
         path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
