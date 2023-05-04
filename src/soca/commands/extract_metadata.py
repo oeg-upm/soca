@@ -1,16 +1,17 @@
 import csv
 import json
 import os
+from os import path
 from progressbar import progressbar
 from somef.somef_cli import cli_get_data
-
-
-import os
-from os import path
 from soca import HiddenPrints
 import subprocess
 import shutil
 import traceback
+import datetime
+
+import requests
+import pprint
 
 
 def extract(repos_csv, output, use_inspect4py, verbose):
@@ -51,20 +52,26 @@ def extract(repos_csv, output, use_inspect4py, verbose):
             print(f"Extracting metadata from {repo_url}")
             if not verbose:
                 with HiddenPrints():
-                    #metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
-                    metadata = cli_get_data(0.9, False, repo_url, None, False, False, False, keep_tmp=git_clone_dir)
+                    metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
+                    #metadata = cli_get_data(0.9, False, repo_url, None, False, False, False, keep_tmp=git_clone_dir)
+                    
             else:
-                #metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
-                metadata = cli_get_data(0.9, False, repo_url, None, False, False, False, keep_tmp=git_clone_dir)
+                metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
+                #metadata = cli_get_data(0.9, False, repo_url, None, False, False, False, keep_tmp=git_clone_dir)
             if not metadata:
-                print(f'ERROR: {repo_url} is down, skipping it...')
+                #print(f'ERROR: {repo_url} is down, skipping it...')
+                print(f'ERROR: unable to extract from {repo_url}, skipping it...')
                 failed_repos.append(repo_url)
                 continue
         except KeyboardInterrupt:
             exit()
         except Exception as e:
             # traceback.print_exc()
-            print(f"ERROR: Could not extract metadata from {repo_url}")
+            try:
+                continue
+            except:
+                print(f"ERROR: Could not extract metadata from {repo_url}")
+                continue
             print(str(e))
             failed_repos.append(repo_url)
             continue
@@ -74,7 +81,6 @@ def extract(repos_csv, output, use_inspect4py, verbose):
 
         if use_inspect4py and 'programming_languages' in metadata.results\
                 and any(lang['result']['value'] == "Python" for lang in metadata.results['programming_languages']):
-            print("hello")
             try:
                 metadata.results["inspect4py"] = {}
 
@@ -151,8 +157,12 @@ def extract(repos_csv, output, use_inspect4py, verbose):
         #
 
         # Save metadata
+        # repo_full_name = (repo_url[19:]).replace("/", "_").replace(".", "-")
+        # with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
+        #     json.dump(metadata.results, repo_metadata, indent=4)
         repo_full_name = (repo_url[19:]).replace("/", "_").replace(".", "-")
-        with open(f"{output}/{repo_full_name}.json", 'w') as repo_metadata:
+        today = datetime.date.today().strftime("%Y-%m-%d")
+        with open(f"{output}/{repo_full_name}_{today}.json", 'w') as repo_metadata:
             json.dump(metadata.results, repo_metadata, indent=4)
 
     if len(failed_repos_i4p) > 0:
@@ -167,3 +177,14 @@ def extract(repos_csv, output, use_inspect4py, verbose):
 
     print(
         f"\n✅ Successfully extracted metadata from ({len(repos_url) - len(failed_repos)}/{len(repos_url)}) repositories.")
+
+#This function is to enable the extraction of sufficient information for the creation of a card of a repository without
+#readme
+#This is due to somef not generating any json if the repository does not have a readme
+#This may be fixed in future as there is an issue open. Hence TODO
+
+# def _no_readme():
+#     try:
+#         next
+#     except Exception as e:
+#         print(str(e))

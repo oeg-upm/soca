@@ -41,6 +41,7 @@ def reset_dict():
     output['_somef_version'] = somef_ver
     output['_timestamp'] = __json_serial(datetime.now())
     output['num_repos'] = 0
+    output['num_ontologies']= 0
     output['language_count'] = {}
 
 
@@ -136,7 +137,7 @@ def __readme_analysis(json_obj):
         if json_obj['installation']:
             output['num_with_installation'] +=1
         if json_obj['acknowledgement']:
-            output['num_with_acknowledgment'] +=1
+            output['num_with_acknowledgement'] +=1
         if json_obj['requirement']:
             output['num_with_requirement'] +=1
         if json_obj['description']:
@@ -195,22 +196,32 @@ def create_summary(directory_org_data,outFile, want2Upload):
         if not os.path.exists(outFile):
             os.makedirs(outFile)
         for item in json_array:
+            is_ontology = safe_dic(item, 'isOntology')
+            ontologies_dict = safe_dic(item, 'ontologies')
+            if is_ontology or (ontologies_dict is not None and len(ontologies_dict) > 0):
+                languages = safe_dic(item,'languages')
+                if not languages:
+                    output['num_ontologies'] += 1
+                    continue
+                elif any(lang.lower() in ['html', 'turtle', 'owl', 'rdf', 'rml'] for lang in languages):
+                    output['num_ontologies'] += 1
+                    continue
             if item['hasDocumentation']:
                 output['has_documentation'] = output['has_documentation'] + 1
             #citation
             __findCitation(item)
             # finds licenses
-            output['licenses'][__findLicense(item)] = output['licenses'][__findLicense(item)] + 1
+            output['licenses'][__findLicense(item)] += 1
             # finds identifiers
             __findId(item)
             # gives readme evaluation
             __readme_analysis(item)
             # release time
-            output['released'][__last_update(item)] = output['released'][__last_update(item)] + 1
+            output['released'][__last_update(item)] += 1
             # adds org_name
             output['_org_name'] = item['owner']
             output['num_repos'] += 1
-            #licenses
+            #Counts Languages used
             __languages(item)
 
         # saves dictionary to json file

@@ -29,7 +29,7 @@ def configure():
     #TODO defaults check
     url = click.prompt("URL to database",default = "http://localhost:8086")
     bucket = click.prompt("Bucket", default = "my-bucket")
-    org = click.prompt("Organisation",default = "test1")
+    org = click.prompt("Organisation",default = "org_name")
     token = click.prompt("Token", default = "")
     if len(token) == 0:
         click.echo("No token given, please enter token or press enter")

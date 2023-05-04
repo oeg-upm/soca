@@ -13,7 +13,7 @@ def cards_data_dump(repo_metadata_dir):
     #add possible "final release"
     for file in os.listdir(os.fsencode(repo_metadata_dir)):
         filename = os.fsdecode(file)
-        if filename.endswith(".json"): 
+        if filename.endswith(".json"):
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 print(f"Creating card for '{filename}'")
                 repo_metadata = json.load(json_metadata)

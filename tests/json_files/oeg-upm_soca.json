@@ -2,12 +2,12 @@
     "somef_provenance": {
         "somef_version": "0.9.3",
         "somef_schema_version": "1.0.0",
-        "date": "2023-03-29 17:42:20"
+        "date": "2023-04-11 14:19:04"
     },
     "code_repository": [
         {
             "result": {
-                "value": "https://github.com/Str3am786/soca_Miguel_Arroyo_TFG",
+                "value": "https://github.com/oeg-upm/soca",
                 "type": "Url"
             },
             "confidence": 1,
@@ -17,8 +17,8 @@
     "owner": [
         {
             "result": {
-                "value": "Str3am786",
-                "type": "User"
+                "value": "oeg-upm",
+                "type": "Organization"
             },
             "confidence": 1,
             "technique": "GitHub_API"
@@ -27,7 +27,7 @@
     "date_created": [
         {
             "result": {
-                "value": "2022-09-05T10:19:40Z",
+                "value": "2021-09-01T11:49:16Z",
                 "type": "Date"
             },
             "confidence": 1,
@@ -37,7 +37,7 @@
     "date_updated": [
         {
             "result": {
-                "value": "2022-10-04T09:03:11Z",
+                "value": "2022-08-04T21:36:34Z",
                 "type": "Date"
             },
             "confidence": 1,
@@ -63,7 +63,16 @@
             },
             "confidence": 1,
             "technique": "file_exploration",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/LICENSE"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2023 Str3am786\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/tests/repos-metadata/somefTester/Str3am786_somefTester/somefTester-main/LICENSE"
         }
     ],
     "description": [
@@ -74,12 +83,26 @@
             },
             "confidence": 1,
             "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "SOCA now allows to produce a summary json of a given cards_data.json created by the previous portal step.\nUser must decide whether or not to upload (default = false), or to create JSON file for output summary\nFor building the summary we need to use the command `summary`\n```\n  -i, --input <dir-json-metadata>\n                                  Dir repositories metadata in json format\n                                  [required]\n  -o, --output <path>             Dir where Software Catalog Portal will be\n                                  saved  [default: summary]\n  -U, --upload                    Will upload file to influxdb\n```\nExample\n`soca summary -i cards_data.json -o test '`\n",
+                "type": "Text_excerpt",
+                "original_header": "Summary",
+                "parent_header": [
+                    "Software Catalog Creator (soca)",
+                    "Usage"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         }
     ],
     "name": [
         {
             "result": {
-                "value": "soca_Miguel_Arroyo_TFG",
+                "value": "soca",
                 "type": "String"
             },
             "confidence": 1,
@@ -89,7 +112,7 @@
     "full_name": [
         {
             "result": {
-                "value": "Str3am786/soca_Miguel_Arroyo_TFG",
+                "value": "oeg-upm/soca",
                 "type": "String"
             },
             "confidence": 1,
@@ -99,7 +122,7 @@
     "issue_tracker": [
         {
             "result": {
-                "value": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/issues",
+                "value": "https://api.github.com/repos/oeg-upm/soca/issues",
                 "type": "Url"
             },
             "confidence": 1,
@@ -109,7 +132,7 @@
     "forks_url": [
         {
             "result": {
-                "value": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/forks",
+                "value": "https://api.github.com/repos/oeg-upm/soca/forks",
                 "type": "Url"
             },
             "confidence": 1,
@@ -119,7 +142,7 @@
     "stargazers_count": [
         {
             "result": {
-                "value": 0,
+                "value": 5,
                 "type": "Number"
             },
             "confidence": 1,
@@ -129,7 +152,7 @@
     "keywords": [
         {
             "result": {
-                "value": "",
+                "value": "software, software-engineering, software-metadata",
                 "type": "String"
             },
             "confidence": 1,
@@ -139,7 +162,7 @@
     "forks_count": [
         {
             "result": {
-                "value": 0,
+                "value": 3,
                 "type": "Number"
             },
             "confidence": 1,
@@ -149,7 +172,7 @@
     "download_url": [
         {
             "result": {
-                "value": "https://github.com/Str3am786/soca_Miguel_Arroyo_TFG/releases",
+                "value": "https://github.com/oeg-upm/soca/releases",
                 "type": "Url"
             },
             "confidence": 1,
@@ -162,7 +185,17 @@
                 "value": "HTML",
                 "name": "HTML",
                 "type": "Programming_language",
-                "size": 74378
+                "size": 85858
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 82044
             },
             "confidence": 1,
             "technique": "GitHub_API"
@@ -179,20 +212,30 @@
         },
         {
             "result": {
-                "value": "Python",
-                "name": "Python",
+                "value": "CSS",
+                "name": "CSS",
                 "type": "Programming_language",
-                "size": 56088
+                "size": 36664
             },
             "confidence": 1,
             "technique": "GitHub_API"
         },
         {
             "result": {
-                "value": "CSS",
-                "name": "CSS",
+                "value": "Shell",
+                "name": "Shell",
                 "type": "Programming_language",
-                "size": 36664
+                "size": 749
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 358
             },
             "confidence": 1,
             "technique": "GitHub_API"
@@ -202,21 +245,21 @@
         {
             "result": {
                 "type": "Release",
-                "value": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/releases/94223400",
-                "tag": "v0.0.1",
-                "name": "SOCA 0.0.1",
+                "value": "https://api.github.com/repos/oeg-upm/soca/releases/97472243",
+                "tag": "0.0.1",
+                "name": "SOCA 0.0.1: First release with portal and analytics",
                 "author": {
-                    "name": "Str3am786",
+                    "name": "dgarijo",
                     "type": "User"
                 },
-                "description": "Release of SOCA portal and SOCA-Dashboard.\r\nPython 3.9  and somef 0.8 dependency\r\n\r\nPackages used: somef 0.8.2, requests, bs4, htmlmin, progressbar2,    mistune    Pygments    html2image    inspect4py    click    influxdb-client    configparser    DateTime    pathlib    nltk\r\n \r\n",
-                "tarball_url": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/tarball/v0.0.1",
-                "zipball_url": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/zipball/v0.0.1",
-                "html_url": "https://github.com/Str3am786/soca_Miguel_Arroyo_TFG/releases/tag/v0.0.1",
-                "url": "https://api.github.com/repos/Str3am786/soca_Miguel_Arroyo_TFG/releases/94223400",
-                "release_id": 94223400,
-                "date_created": "2022-10-04T09:02:55Z",
-                "date_published": "2023-03-02T11:39:32Z"
+                "description": "This version is a first release of the soca framework, which includes the main portal and analytics features.\r\n\r\n## New Contributors\r\n* @dakixr made their first contribution in https://github.com/oeg-upm/soca/pull/14\r\n* @Str3am786 made their first contribution in https://github.com/oeg-upm/soca/pull/95\r\n\r\n**Full Changelog**: https://github.com/oeg-upm/soca/commits/0.0.1",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/soca/tarball/0.0.1",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/soca/zipball/0.0.1",
+                "html_url": "https://github.com/oeg-upm/soca/releases/tag/0.0.1",
+                "url": "https://api.github.com/repos/oeg-upm/soca/releases/97472243",
+                "release_id": 97472243,
+                "date_created": "2023-03-30T10:27:02Z",
+                "date_published": "2023-03-30T12:30:38Z"
             },
             "confidence": 1,
             "technique": "GitHub_API"
@@ -225,7 +268,37 @@
     "readme_url": [
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/README.md",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/Dockerfile"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/container_run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/installer.sh",
                 "type": "Url"
             },
             "confidence": 1,
@@ -235,7 +308,7 @@
     "acknowledgement": [
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/src/soca/assets/repo_icons/acknowledgement.png",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/src/soca/assets/repo_icons/acknowledgement.png",
                 "type": "Url"
             },
             "confidence": 1,
@@ -243,7 +316,7 @@
         },
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/example/LinkedEarth/repo_icons/acknowledgement.png",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/example/LinkedEarth/repo_icons/acknowledgement.png",
                 "type": "Url"
             },
             "confidence": 1,
@@ -251,7 +324,7 @@
         },
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/example/KnowledgeCaptureAndDiscoveryANDmintproject/repo_icons/acknowledgement.png",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/example/KnowledgeCaptureAndDiscoveryANDmintproject/repo_icons/acknowledgement.png",
                 "type": "Url"
             },
             "confidence": 1,
@@ -259,7 +332,7 @@
         },
         {
             "result": {
-                "value": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/example/oeg-upm/repo_icons/acknowledgement.png",
+                "value": "https://raw.githubusercontent.com/oeg-upm/soca/main/example/oeg-upm/repo_icons/acknowledgement.png",
                 "type": "Url"
             },
             "confidence": 1,
@@ -278,13 +351,13 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         }
     ],
     "installation": [
         {
             "result": {
-                "value": "```text\ngit clone https://github.com/dakixr/soca\ncd soca\npip install -e .\n```\n\nHighly recommended step:  \n\n```text\nsomef configure\n```\n\nAnd you will be asked to provide the following:\n\n* A GitHub authentication token [**optional, leave blank if not used**], which SOMEF uses to retrieve metadata from GitHub. If you don't include an authentication token, you can still use SOMEF. However, you may be limited to a series of requests per hour. For more information, see [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)\n\n* The path to the trained classifiers (pickle files). If you have your own classifiers, you can provide them here. Otherwise, you can leave it blank\n",
+                "value": "```text\ngit clone https://github.com/oeg-upm/soca\ncd soca\npip install -e .\n```\nHighly recommended steps:  \n\n```text\nsomef configure\n```\nAlternatively you may run the _installer.sh_ file which will also configure SOMEF, just edit it to it for your needs.\n\nAnd you will be asked to provide the following:\n\n* A GitHub authentication token [**optional, leave blank if not used**], which SOMEF uses to retrieve metadata from GitHub. If you don't include an authentication token, you can still use SOMEF. However, you may be limited to a series of requests per hour. For more information, see [https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)\n\n* The path to the trained classifiers (pickle files). If you have your own classifiers, you can provide them here. Otherwise, you can leave it blank\n",
                 "type": "Text_excerpt",
                 "original_header": "Install from GitHub",
                 "parent_header": [
@@ -293,13 +366,40 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
+        },
+        {
+            "result": {
+                "value": "For SOCA-Dash to work you will need to have a working version of influx 2.+ as well as grafana on your machine. SOCA-Dash needs two datasources and requires tokens to be able to access the influxDB datasources.\nFor more information please visit: https://docs.influxdata.com/influxdb/cloud/reference/cli/influx/auth/create/\n\nTo generate a token:\n```\ninflux auth create -o [organistation name] --access-all\n```\n\nSOCA-Dash requires influxQL datasource connection within grafana. \nTo ensure that influx 2.+ allows influxQL queries execute the following:\n``` \ninflux v1 dbrp create --db [Bucket Name] -rp 0 --bucket-id [Bucket-id]\n```\nYou also need to create a v1 authentication:\n```\ninflux v1 auth create \\\n  --read-bucket [Bucket-id] \\\n  --write-bucket [Bucket-id] \\\n  --username admin\n ```\nOnce the influx has been setup and token created please ensure that SOCA is using said token. Now is a good time to execute the SOCA configure command. Or edit the ./_installer.sh_ file to your needs and executing the script.\n",
+                "type": "Text_excerpt",
+                "original_header": "InfluxDB setup",
+                "parent_header": [
+                    "Software Catalog Creator (soca)",
+                    "Install from GitHub"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
+        },
+        {
+            "result": {
+                "value": "```text\ngit clone https://github.com/oeg-upm/soca\ncd soca\n```\nSOCA comes with a _installer.sh_ file which will automatically run the SOCA and SOMEF configure commands. Please edit it in accordance to your needs. \nThe _installer.sh_ file is necessary for the docker installation process\n\n```\ndocker compose up\n```\nDocker compose up starts the grafana and the influxdb within their own container. It also creates its own network: \"socaNet\"\nYou may want to list the containers you have/running:\n```\ndocker ps -a\n```\nIf you wish to access the influx container to generate a token you will first need to enter the container:\n```\ndocker run exec -it [influx container id] /bin/bash\n```\nThis starts an bash shell for the container. Remember, the container must be running at the time of executing this command.\n\nOnce within the container you will need to generate a influx token. The following command will generate a token, you may change the token flags to your needs. Once this command returns a token please copy this into the _installer.sh_ file \"databaseToken\"\nFor more information please visit: https://docs.influxdata.com/influxdb/cloud/reference/cli/influx/auth/create/\n\nTo generate a token:\n```\ninflux auth create -o [organistation name] --access-all\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install from DockerFile",
+                "parent_header": [
+                    "Software Catalog Creator (soca)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         }
     ],
     "usage": [
         {
             "result": {
-                "value": "```text\nUsage: soca [OPTIONS] COMMAND [ARGS]...\n\n  SOCA (Software Catalog Creator)\n\n  Automatically generates a searchable portal for every repository of an\n  organization/s or user/s, which is easy to host.\n\n  Usage:\n\n  1. (fetch) Fetch all repos from the desired organization/s\n  2. (extract) Extract all metadata for every repo\n  3. (portal) Generate a searchable portal for all the retrieved data\n\nOptions:\n  -h, --help  Show this message and exit.\n\nCommands:\n  card     Create a stand-alone card ready to be embedded in a website\n  extract  Fetch and save metadata from introduced repos\n  portal   Build a portal with a minimalist design\n  fetch    Retrieve all organization/s or user/s repositories\n```\n\nIn order to use SOCA you will need to follow the next steps:  \n",
+                "value": "```text\nUsage: soca [OPTIONS] COMMAND [ARGS]...\n\n  SOCA (Software Catalog Creator)\n\n  Automatically generates a searchable portal for every repository of an\n  organization/s or user/s, which is easy to host.\n\n  Usage:\n  \n  =. (Configure) Create configuration file for database etc\n  1. (fetch) Fetch all repos from the desired organization/s\n  2. (extract) Extract all metadata for every repo\n  3. (portal) Generate a searchable portal for all the retrieved data\n  4. (summary) Create a summary from the portal information\n\nOptions:\n  -h, --help  Show this message and exit.\n\nCommands:\n  card        Create a stand-alone card ready to be embedded in a website\n  configure   This creates a ~/.soca/configure.ini file\n  extract     Fetch and save metadata from introduced repos\n  portal      Build a portal with a minimalist design\n  fetch       Retrieve all organization/s or user/s repositories\n  summary     Create a summary of good practices from portal card data\n```\n\nIn order to use SOCA you will need to follow the next steps:  \n",
                 "type": "Text_excerpt",
                 "original_header": "Usage",
                 "parent_header": [
@@ -308,7 +408,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -322,7 +422,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -336,7 +436,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -350,7 +450,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
@@ -364,11 +464,11 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         },
         {
             "result": {
-                "value": "In case you want to change the default style of the portal, SOCA decouples the .css files from the code-base. So in the resulting portal directory there will be two .css files are available for further tinkering and styling to everyone needs.\n",
+                "value": "In case you want to change the default style of the portal, SOCA decouples the .css files from the code-base. So in the resulting portal directory there will be two .css files are available for further tinkering and styling to everyone needs.\n\n",
                 "type": "Text_excerpt",
                 "original_header": "Styling the portal",
                 "parent_header": [
@@ -378,11 +478,7 @@
             },
             "confidence": 1,
             "technique": "header_analysis",
-            "source": "https://raw.githubusercontent.com/Str3am786/soca_Miguel_Arroyo_TFG/main/README.md"
+            "source": "https://raw.githubusercontent.com/oeg-upm/soca/main/README.md"
         }
-    ],
-    "inspect4py": {
-        "software_type": "script",
-        "run": "python /home/2play/git/soca_Miguel_Arroyo_TFG/tests/repos-metadata/soca_Miguel_Arroyo_TFG/Str3am786_soca_Miguel_Arroyo_TFG/soca_Miguel_Arroyo_TFG-main/src/soca/__init__.py"
-    }
+    ]
 }

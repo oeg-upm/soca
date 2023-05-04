@@ -1,3 +1,4 @@
+import os
 import unittest
 from unittest import TestCase, mock
 import json
@@ -5,33 +6,44 @@ from pathlib import Path
 from datetime import datetime
 
 import soca.commands.portal.metadata as md
+import soca.commands.portal.portal as portal
+import soca.commands.create_summary as summary
 #from ..src.soca.commands.portal.metadata import metadata as m
 import soca.commands.extract_metadata as ex
-
-
-
-
-
-
-path4 = Path(__file__).parent / "json_files"  / "ver8.json"
-with path4.open() as f:
-    ver8 = json.load(f)
-f.close()
-ver8 = md.metadata(path4, ver8)
-######
-
-
-
 
 
 class test_soca(TestCase):
     pass
 
-class test_extract_metadata_py(TestCase):
+class test_pipeline_metadata_py(TestCase):
+    pass
+        #TODO create a full pipeline for testing extract -> portal -> summary and test the summary numbers
+#    def test_general(self):
+        #csv = Path(__file__).parent / "csv_files" / "repos.csv"
+        #ex.extract(str(csv),"repos-metadata", True, False)
+        #portal.generate("repos-metadata", "portal", "Software Catalog", "soca-logo.ico")
+        #summary.create_summary("portal/cards_data.json")
 
-    def test_general(self):
-        csv = Path(__file__).parent / "csv_files" / "repos.csv"
-        ex.extract(str(csv),"repos-metadata", True, False)
+    # def delete_directory(path):
+    #     """Deletes a directory and all files within it.
+    #
+    #     Args:
+    #         path (str): The path of the directory to be deleted.
+    #     """
+    #     # Check if the path exists and is a directory
+    #     if os.path.exists(path) and os.path.isdir(path):
+    #         # Iterate through all files in the directory and delete them
+    #         for file in os.listdir(path):
+    #             file_path = os.path.join(path, file)
+    #             if os.path.isfile(file_path):
+    #                 os.remove(file_path)
+    #             elif os.path.isdir(file_path):
+    #                 # Recursively delete any subdirectories
+    #                 delete_directory(file_path)
+    #         # Remove the directory itself
+    #         os.rmdir(path)
+    #     else:
+    #         print(f"The directory {path} does not exist or is not a directory.")
 class test_metadata_py(TestCase):
     def test_License(self):
         path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
@@ -39,8 +51,17 @@ class test_metadata_py(TestCase):
             data = json.load(f)
         f.close()
         meta = md.metadata(path, data)
-        pass
-    #TODO
+        lic = meta.license()
+        self.assertEqual(lic['value'],'https://api.github.com/licenses/apache-2.0')
+    def test_License_fileExploration(self):
+        path = Path(__file__).parent / "json_files"  / "epw2rdf-contents.json"
+        with path.open() as f:
+            data = json.load(f)
+        f.close()
+        meta = md.metadata(path, data)
+        lic = meta.license()
+        self.assertEqual(lic['name'], 'MIT License')
+
     def test_noLicense(self):
         mT = json.loads('{"emtpy":"mT"}')
         path = Path("doesntExist")
@@ -93,11 +114,12 @@ class test_metadata_py(TestCase):
         meta = md.metadata(path, data)
         rel =  data['releases']
         self.assertEqual(meta.n_releases(),len(rel))
-    #TODO
-    def no_releases(self):
+
+    def test_no_releases(self):
         mT = json.loads('{"emtpy":"mT"}')
         path = Path("doesntExist")
         empty = md.metadata(path, mT)
+        self.assertEqual(0, empty.n_releases())
         pass
     def test_downloadUrl(self):
         path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
@@ -115,17 +137,26 @@ class test_metadata_py(TestCase):
         meta = md.metadata(path, data)
         url = data['readme_url'][0]['result']['value']
         self.assertEqual(meta.readme(),url)
-    #TODO
+
     def test_no_readme(self):
         mT = json.loads('{"emtpy":"mT"}')
         path = Path("doesntExist")
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.readme())
-        pass
 
     def test_last_release(self):
+        path = Path(__file__).parent / "json_files" / "widoco_9_test.json"
+        with path.open() as f:
+            data = json.load(f)
+        f.close()
+        meta = md.metadata(path, data)
+        self.assertEqual(meta.last_release(), 'WIDOCO 1.4.17: Update OOPS! Web service. GitHub actions')
+    def test_no_last_release(self):
+        mT = json.loads('{"emtpy":"mT"}')
+        path = Path("doesntExist")
+        empty = md.metadata(path, mT)
+        self.assertEquals('',empty.last_release())
 
-        pass
     def test_logo(self):
         path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
         with path.open() as f:
@@ -157,27 +188,27 @@ class test_metadata_py(TestCase):
         with path2.open() as f:
             logo = json.load(f)
         f.close()
-
         plain = md.metadata(path2, logo)
         self.assertIsNone(plain.hasDocumentation())
-    #TODO
+
     def test_citations(self):
         path = Path(__file__).parent / "json_files"  / "somef9.json"
         with path.open() as f:
             data = json.load(f)
         f.close()
         meta = md.metadata(path, data)
-        pen = meta.citations()
-        print(pen['citation'])
+        cite = meta.citations()
+        if len(cite) > 0:
+            pass
 
-        pass
     def test_noCitation(self):
         mT = json.loads('{"emtpy":"mT"}')
         path = Path("doesntExist")
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.citations())
     def test_paper(self):
-        path = Path(__file__).parent / "json_files"  / "somef9.json"
+        path = Path(__file__).parent / "json_files" / "somef9.json"
+        #path = Path(__file__).parent / "json_files" / "widoco_9_test.json"
         with path.open() as f:
             data = json.load(f)
         f.close()
@@ -189,16 +220,18 @@ class test_metadata_py(TestCase):
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.paper())
     def test_title(self):
-        path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
+        path = Path(__file__).parent / "json_files"  / "oeg-upm_r4r.json"
         with path.open() as f:
             data = json.load(f)
         f.close()
         meta = md.metadata(path, data)
         title = data['name'][0]['result']['value']
         self.assertEquals(title,meta.title())
-    #TODO
     def test_noTitle(self):
-        pass
+        mT = json.loads('{"emtpy":"mT"}')
+        path = Path("doesntExist")
+        empty = md.metadata(path, mT)
+        self.assertIsNone(empty.title())
     def test_owner(self):
         path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
         with path.open() as f:
@@ -255,26 +288,42 @@ class test_metadata_py(TestCase):
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.identifier())
 
-    #TODO
     def test_requirements(self):
-        pass
+        path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
+        with path.open() as f:
+            data = json.load(f)
+        f.close()
+        meta = md.metadata(path, data)
+        self.assertIsNotNone(meta.requirements())
+
     def test_noRequirements(self):
         mT = json.loads('{"emtpy":"mT"}')
         path = Path("doesntExist")
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.requirements())
-    #TODO
     def test_docker(self):
-        pass
+        path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
+        with path.open() as f:
+            data = json.load(f)
+        f.close()
+        meta = md.metadata(path, data)
+        dock = meta.docker()
+        self.assertGreater(len(meta.docker()),0)
     def test_noDocker(self):
         mT = json.loads('{"emtpy":"mT"}')
         path = Path("doesntExist")
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.docker())
 
-    #TODO
     def test_installation(self):
-        pass
+        path = Path(__file__).parent / "json_files"  / "somef9.json"
+        with path.open() as f:
+            data = json.load(f)
+        f.close()
+        meta = md.metadata(path, data)
+        install = meta.installation()
+        self.assertIsNotNone(install)
+
 
     def test_noInstallation(self):
         path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
@@ -298,7 +347,7 @@ class test_metadata_py(TestCase):
         path = Path("doesntExist")
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.languages())
-    #TODO
+
     def test_copy_btn(self):
         #print(meta.copy_btn())
         path = Path(__file__).parent / "json_files"  / "widoco_9_test.json"
@@ -323,13 +372,13 @@ class test_metadata_py(TestCase):
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.status())
 
-    #TODO
     def test_usage(self):
         path5 = Path(__file__).parent / "json_files" / "somef9.json"
         with path5.open() as f:
             somef9jayson = json.load(f)
         f.close()
         somef9 = md.metadata(path5, somef9jayson)
+        self.assertIsNotNone(somef9.usage())
         #print(somef9.usage())
         pass
     def test_noUsage(self):
@@ -351,15 +400,53 @@ class test_metadata_py(TestCase):
         path = Path("doesntExist")
         empty = md.metadata(path, mT)
         self.assertIsNone(empty.notebook())
-    #TODO
-    def test_html_repo_icons(self):
-#        path = Path(__file__).parent / "json_files" / "somef9.json"
-#        with path.open() as f:
-#            somef9jayson = json.load(f)
-#        f.close()
-#        somef9 = md.metadata(path, somef9jayson)
-#        somef9.html_repo_icons()
+        
+    def test_repo_type(self):
+        path5 = Path(__file__).parent / "json_files" / "somef9.json"
+        with path5.open() as f:
+            somef9jayson = json.load(f)
+        f.close()
+        somef9 = md.metadata(path5, somef9jayson)
+        #print(somef9.repo_type())
         pass
+    def test_repo_type(self):
+        path5 = Path(__file__).parent / "json_files" / "somef9.json"
+        with path5.open() as f:
+            somef9jayson = json.load(f)
+        f.close()
+        somef9 = md.metadata(path5, somef9jayson)
+        kek = somef9.html_repo_type()
+        print(kek)
+
+    def test_html_repo_icons(self):
+        path = Path(__file__).parent / "json_files" / "oeg-upm_soca.json"
+        with path.open() as f:
+            somef9jayson = json.load(f)
+        f.close()
+        somef9 = md.metadata(path, somef9jayson)
+        somef9.html_repo_icons()
+        pass
+    def test_r4r(self):
+        path = Path(__file__).parent / "json_files" / "oeg-upm_r4r.json"
+        with path.open() as f:
+            r4rjayson = json.load(f)
+        f.close()
+        r4r = md.metadata(path, r4rjayson)
+        r4r.html_repo_icons()
+        pass
+
+    def test_ontology(self):
+        path = Path(__file__).parent / "json_files" / "ontologytest.json"
+        with path.open() as f:
+            ontojayson = json.load(f)
+        f.close()
+        summary.create_summary(path,"summary",False)
+        path2 = Path(__file__).parent/ "summary"
+        dir = os.listdir(path2)
+        if len(dir) == 0:
+            os.rmdir(path2)
+            pass
+
 
 if __name__ == '__main__':
     unittest.main()

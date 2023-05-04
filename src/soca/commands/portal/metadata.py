@@ -10,6 +10,7 @@ from pygments.lexers.scdoc import ScdocLexer
 from pygments.formatters import HtmlFormatter
 import mistune
 import os
+#from cffconvert import Citation
 #from cffconvert.cli import cli as cff2bibcli
 
 class metadata(object):
@@ -127,10 +128,11 @@ class metadata(object):
 
         license = self.license()
         if license:
+
             html += self.icon_wrapper(
                 icon_html = f"""<img src="{self.base}repo_icons/license.png" 
                             class="repo-icon"
-                            {self.add_tooltip('bottom',f'License: {license["name"]}')}>
+                            {self.add_tooltip('bottom',f'License: {safe_dic(license,"name")}')}>
                             """,
                 modal_html= self.modal(
                     title = 'License',
@@ -177,16 +179,21 @@ class metadata(object):
         #TODO check ScdocLexer
         citations = self.citations()
         if citations:
+            citation = "No Citation Indicated"
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
             #TODO once fixed turn to if, elif, else  so that it prioritises CFF (converted to bibtex format)
             if 'cff' in citations:
-                #TODO
+                # try:
+                #     cite = Citation(cffstr=safe_dic(citations,"cff"))
+                #     citation = cite.as_bibtex()
+                # except:
                 pass
             if 'bibtex' in citations:
-                citation = citations['bibtex']
+                citation = safe_dic(citations,"bibtex")
             else:
                 try:
                     citation = citations['citation'][0]
+                    #citation = safe_list(safe_dic(citations,citation),0)
                 except Exception as e:
                     print(str(e))
             html += self.icon_wrapper(
@@ -279,10 +286,10 @@ class metadata(object):
         if hasDocumentation:
             if len(hasDocumentation) > 1:
                 #mk_list = "\n".join([f'* <{d}>' if ('http' in d and not ' ' in d) else f'* {d}' for d in hasDocumentation])
+
                 mk_list = "\n".join([
                     f'* <{safe_dic(safe_dic(d, "result"), "value")}>' if (
-                                'http' in safe_dic(safe_dic(d, "result"), "value") and ' ' not in safe_dic(
-                            safe_dic(d, "result"), "value"))
+                                 self._is_valid_url(safe_dic(safe_dic(d, "result"), "value")))
                     else f'* {safe_dic(safe_dic(d, "result"), "value")}' for d in hasDocumentation
                 ])
 
@@ -295,12 +302,24 @@ class metadata(object):
                         title = 'Documentation',
                         body = mk_list))
             else:
-                html += self.icon_wrapper(
-                        icon_html = f"""<a href="{hasDocumentation[0]}" target="_blank" class="repo-icon">
-                                <img src="{self.base}repo_icons/documentation.png" 
+                doc = safe_dic(safe_dic(safe_list(hasDocumentation,0),'result'),'value')
+                if self._is_valid_url(doc):
+                    html += self.icon_wrapper(
+                        icon_html=f"""<a href="{doc}" target="_blank" class="repo-icon">
+                                                    <img src="{self.base}repo_icons/documentation.png" 
+                                                    class="repo-icon" 
+                                                    {self.add_tooltip('bottom', 'Documentation')}>
+                                                </a>""")
+                else:
+                    html += self.icon_wrapper(
+                        icon_html=f"""<img src="{self.base}repo_icons/documentation.png" 
                                 class="repo-icon" 
-                                {self.add_tooltip('bottom','Documentation')}>
-                            </a>""")
+                                {self.add_tooltip('bottom', 'Documentation')}>""",
+
+                        modal_html=self.modal(
+                            title='Documentation',
+                            body=f'{doc}'))
+
 
         acknowledgement =  self.acknowledgement()
         if acknowledgement:
@@ -327,6 +346,16 @@ class metadata(object):
                 )
 
         return html
+
+    def _is_valid_url(self,url):
+        """Private function to check if a string is a valid URL."""
+        import re
+
+        # Regular expression to match a valid URL
+        url_regex = re.compile(r"^https?://[^\s/$.?#].[^\s]*$")
+
+        # Check if the input string matches the URL regex
+        return bool(url_regex.match(url))
 
     # HTML helper ##################################################
 
@@ -360,7 +389,16 @@ class metadata(object):
 
     # Metadata ##################################################
     def last_release(self):
-        return safe_dic(safe_dic(self.releases()[0],'result'),'name') if self.n_releases() !=0 else ''
+        if self.n_releases() != 0:
+            if not safe_dic(safe_dic(safe_list(self.releases(),0),'result'),'name'):
+                if (tag:=safe_dic(safe_dic(safe_list(self.releases(),0),'result'),'tag')):
+                    return tag
+                else:
+                    return "Missing Descriptors"
+            return safe_dic(safe_dic(safe_list(self.releases(),0),'result'),'name')
+        else:
+            return ''
+        #return safe_dic(safe_dic(safe_list(self.releases(),0),'result'),'name') if self.n_releases() != 0 else ''
 
     #TODO
     def repo_type(self):
@@ -453,14 +491,13 @@ class metadata(object):
 
 
     def acknowledgement(self):
-        return safe_dic(safe_list(safe_dic(self.md,'acknowlegement'),0),'value')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md,'acknowledgement'),0),'result'),'value')
 
     def hasDocumentation(self):
         docList = safe_dic(self.md, 'documentation')
         return docList if docList else None
 
     def requirements(self):
-
         reqs = safe_dic(self.md,'requirements')
         if not reqs:
             return None
@@ -524,10 +561,30 @@ class metadata(object):
                 description = 'No description available yet.'
 
         return description
-    
 
     def license(self):
-        return safe_dic(safe_list(safe_dic(self.md,'license'),0),'result')
+        license = safe_dic(safe_list(safe_dic(self.md, 'license'), 0), 'result')
+        if (typ := safe_dic(license, "type")) and (typ == "File_dump"):
+            self._find_license_name(license)
+
+            return license
+        else:
+            return license
+
+
+    def _find_license_name(self, license):
+        find_name = safe_dic(license, "value")
+        if 'Apache' in find_name:
+            license['name'] = 'Apache License 2.0'
+            license['url'] = 'https://api.github.com/licenses/apache-2.0'
+        elif 'MIT' in find_name:
+            license['name'] = 'MIT License'
+            license['url'] = 'https://api.github.com/licenses/MIT'
+        elif 'GPL' in find_name:
+            license['name'] = 'GNU General Public License v3.0'
+            license['url'] = 'https://api.github.com/licenses/gpl-3.0'
+        else:
+            license['name'] = 'Other'
 
     def last_update(self):
         result = safe_dic(safe_list(safe_dic(self.md,'date_updated'),0),'result')
@@ -589,7 +646,9 @@ class metadata(object):
                     citations['bibtex'] = c['result']['value']
                 case _:
                     continue
-        return citations if len(citations) > 0 else None
+        #return citations if len(citations) > 0 else None
+        test = len(citations)
+        return citations if bool(citations) else None
 
     # Originally citations Took the ver8 somef "regular expression" output and would create a list of excerpts
 

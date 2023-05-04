@@ -270,7 +270,7 @@ function search() {
                 && ((state_citation)? card.citation : true)
                 && ((state_docker)? card.hasBuildFile : true)
                 && ((state_documentation)? card.hasDocumentation : true)
-                && ((state_identifier)? card.identifier : true) 
+                && ((state_identifier)? card.hasIdentifier : true)
                 && ((state_status)? card.repoStatus : true) 
                 && ((state_download)? card.downloadUrl : true)
                 && ((state_license)? card.license : true)
