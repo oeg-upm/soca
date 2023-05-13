@@ -564,9 +564,8 @@ class metadata(object):
 
     def license(self):
         license = safe_dic(safe_list(safe_dic(self.md, 'license'), 0), 'result')
-        if (typ := safe_dic(license, "type")) and (typ == "File_dump"):
+        if (typ := safe_dic(license, "type")) and ((typ == "File_dump") or (typ == "Text_excerpt")):
             self._find_license_name(license)
-
             return license
         else:
             return license
@@ -683,7 +682,7 @@ def of_correctType(result, ofType):
     if safe_dic(result, 'type') == ofType:
         return safe_dic(result, 'value')
     else:
-        raise Exception("not of correct %s type" % ofType)
+        raise Exception("not of correct %s type" %ofType)
 
 class citation_parser(object):
 
