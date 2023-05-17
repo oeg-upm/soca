@@ -18,7 +18,7 @@ class metadata(object):
     def __init__(self, repo_metadata_dir, repo_metadata, embedded = False):
         self.repo_metadata_dir = os.path.abspath(repo_metadata_dir)
         self.md = repo_metadata
-        self.base = 'https://github.com/dakixr/soca/raw/main/src/soca/assets/' if embedded else ''
+        self.base = 'https://github.com/oeg-upm/soca/tree/main/src/soca/assets' if embedded else ''
 
     # Assets ####################################################
     def logo(self):
