@@ -684,6 +684,7 @@ def of_correctType(result, ofType):
     else:
         raise Exception("not of correct %s type" %ofType)
 
+
 class citation_parser(object):
 
     def __init__(self, citation) -> None:

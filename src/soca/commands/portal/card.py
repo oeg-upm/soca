@@ -9,6 +9,7 @@ from . import scripts
 def cards_data_dump(repo_metadata_dir):
 
     cards_data = []
+    failed_cards = []
 #TODO change
     #add possible "final release"
     for file in os.listdir(os.fsencode(repo_metadata_dir)):
@@ -18,9 +19,9 @@ def cards_data_dump(repo_metadata_dir):
                 print(f"Creating card for '{filename}'")
                 repo_metadata = json.load(json_metadata)
                 md = metadata.metadata(repo_metadata_dir, repo_metadata)
-                citations = md.citations()
-                print(md.identifier())
-                cards_data.append({
+                try:
+                    citations = md.citations()
+                    cards_data.append({
                     'id': md.repo_url(),
                     'html_card': html_view(repo_metadata_dir, repo_metadata, False),
                     'html_card_embedded': html_view(repo_metadata_dir, repo_metadata, True),
@@ -56,10 +57,13 @@ def cards_data_dump(repo_metadata_dir):
                     'isWeb': md.repo_type() == 'web',
                     'owner': md.owner()
                 })
-
+                except:
+                    print("ERROR")
+                    print(filename)
+                    print("=======")
+                    failed_cards.append(filename)
     print('-'*80)
-
-    return cards_data
+    return [cards_data,failed_cards]
 
 
 def html_view(repo_metadata_dir, repo_metadata, embedded, minify=True):
