@@ -36,6 +36,7 @@ def generate(repo_metadata_dir, output, title, favicon):
                 with open(f"{output}/" + log_file, "w") as log:
                     for repo_name in failed_cards:
                         log.write(repo_name + "\n")
+                        print(f"✅ Log file saved in: {os.path.abspath(output)}/failed_repos.log")
             except:
                 Exception("Failed to write Log file")
         else:
