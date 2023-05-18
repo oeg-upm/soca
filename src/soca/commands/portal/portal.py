@@ -21,12 +21,26 @@ def generate(repo_metadata_dir, output, title, favicon):
     with open(f"{base_dir}/assets/template.html") as template:
         soup = BeautifulSoup(template.read(), features="html.parser")
 
+    cards_and_failed = card.cards_data_dump(repo_metadata_dir)
+    cards_data = cards_and_failed[0]
+    failed_cards = cards_and_failed[1]
     # Create json with cards data and metadata
-    cards_data = card.cards_data_dump(repo_metadata_dir)
     with open(f"{output}/cards_data.json", "w") as cards_data_json:
         json.dump(cards_data ,fp=cards_data_json, indent=4)
         print(f"✅ A total of {len(cards_data)} cards saved in: {os.path.abspath(output)}/cards_data.json")
-
+        #if there are failed cards:
+        if (num_failed:=len(failed_cards))>0:
+            print('\033[91m' + f"There has been {num_failed} repositories that have failed while creating a card. Check log file" + '\033[0m')
+            try:
+                log_file = "failed_repos.log"
+                with open(f"{output}/" + log_file, "w") as log:
+                    for repo_name in failed_cards:
+                        log.write(repo_name + "\n")
+                        print(f"✅ Log file saved in: {os.path.abspath(output)}/failed_repos.log")
+            except:
+                Exception("Failed to write Log file")
+        else:
+            print("With no failures!")
     # Insert extra scripts
     sc = scripts.scripts()
     soup.body.script.string = sc.function_copy_card() + sc.function_tooltip() + sc.functions_modals()
