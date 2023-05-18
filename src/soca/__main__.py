@@ -63,10 +63,11 @@ def fetch(input, output, repo_type, not_archived, not_forked, not_disabled):
 @click.option('--output','-o', default="repos-metadata", help="Dir where repositories metadata will be saved", metavar='<path>')
 @click.option('--inspect4py','-i4p', is_flag=True, help="Use inspect4py to extract additional metadata from Python repositories")
 @click.option('--verbose','-v', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not archived")
-def extract(input, output, inspect4py, verbose):
+@click.option('--keep','-k', flag_value=True, default=False, show_default=True, help="Keep or not previous output directory")
+def extract(input, output, inspect4py, verbose, keep):
     """Fetch and save metadata from introduced repos"""
     from soca.commands import extract_metadata
-    extract_metadata.extract(input, output, inspect4py, verbose)
+    extract_metadata.extract(input, output, inspect4py, verbose, keep)
 
 @cli.command()
 @click.option('--input','-i', required=True, help="Dir repositories metadata in json format", metavar='<dir-json-metadata>')
