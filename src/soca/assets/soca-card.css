@@ -19,7 +19,7 @@
 .soca-card .tooltip.bottom-right .tooltip-arrow{top:0;left:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}
 .soca-card .tooltip-inner{max-width:200px;padding:3px 8px;color:#e0e0e0;text-align:center;background-color:#3e3e3e;border-radius:4px}
 .soca-card .tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}
-.soca-card {display: flex; flex-direction: column; justify-content: space-between; line-height: 1.42857143; margin: 0.2rem; min-width: 28rem; max-width: 28rem; min-height: 15rem; max-height: 15rem; padding: 1.3rem; border-radius: 19px; background-color: #e0e0e0; box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;}
+.soca-card {display: flex; flex-direction: column; justify-content: space-between; line-height: 1.42857143; margin: 0.2rem; min-width: 28rem; max-width: 28rem; min-height: 15rem; max-height: 20rem; padding: 1.3rem; border-radius: 19px; background-color: #e0e0e0; box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;}
 .soca-card .repo-logo{width: 5.5rem;}
 .soca-card .description{text-align: justify; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 6; line-clamp: 6; -webkit-box-orient: vertical;}
 .soca-card .recently-updated{width: 1.4rem; height: 1.4rem; border-radius: 50%; margin-left: auto; margin-right: 0.1rem; background-color: #3e3e3e;}
