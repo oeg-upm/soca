@@ -1,4 +1,4 @@
-from soca import base_dir
+from src.soca import base_dir
 from pathlib import Path
 from os import listdir
 from os.path import isfile, join
@@ -183,12 +183,14 @@ class metadata(object):
             formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
             #TODO once fixed turn to if, elif, else  so that it prioritises CFF (converted to bibtex format)
             if 'cff' in citations:
+                citation = safe_dic(citations,"cff")
+                if citation:
+                    citation.replace("`","")
                 # try:
                 #     cite = Citation(cffstr=safe_dic(citations,"cff"))
                 #     citation = cite.as_bibtex()
                 # except:
-                pass
-            if 'bibtex' in citations:
+            elif 'bibtex' in citations:
                 citation = safe_dic(citations,"bibtex")
             else:
                 try:
