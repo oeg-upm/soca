@@ -1,4 +1,4 @@
-from src.soca import base_dir
+from ... import base_dir
 from pathlib import Path
 from os import listdir
 from os.path import isfile, join

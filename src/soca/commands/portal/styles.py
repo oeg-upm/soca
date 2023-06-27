@@ -1,4 +1,4 @@
-from src.soca import base_dir
+from ... import base_dir
 
 def singleton(class_):
     instances = {}
