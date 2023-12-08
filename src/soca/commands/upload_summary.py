@@ -91,7 +91,7 @@ def summaryToDatabase(summary_output):
         'num_doi': summary_output['identifiers']['num_pid'],
         'num_pid': summary_output['identifiers']['num_pid'],
         'num_withoutId': summary_output['identifiers']['num_without_identifier'],
-        'num_withId': summary_output['identifiers']['num_pid'] +summary_output['identifiers']['num_pid'],
+        'num_withId': summary_output['identifiers']['num_pid'] +summary_output['identifiers']['num_doi'],
         'num_Apache': summary_output['licenses']['APACHE'],
         'num_GPL': summary_output['licenses']['GPL'],
         'num_MIT': summary_output['licenses']['MIT'],

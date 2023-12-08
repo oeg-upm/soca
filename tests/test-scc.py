@@ -5,11 +5,11 @@ import json
 from pathlib import Path
 from datetime import datetime
 
-import soca.commands.portal.metadata as md
-import soca.commands.portal.portal as portal
-import soca.commands.create_summary as summary
+import src.soca.commands.portal.metadata as md
+import src.soca.commands.portal.portal as portal
+import src.soca.commands.create_summary as summary
 #from ..src.soca.commands.portal.metadata import metadata as m
-import soca.commands.extract_metadata as ex
+import src.soca.commands.extract_metadata as ex
 
 
 class test_soca(TestCase):
@@ -435,6 +435,9 @@ class test_metadata_py(TestCase):
         r4r.html_repo_icons()
         pass
 
+
+
+    #TODO move into its own class, for summary testing
     def test_ontology(self):
         path = Path(__file__).parent / "json_files" / "ontologytest.json"
         with path.open() as f:
@@ -446,6 +449,29 @@ class test_metadata_py(TestCase):
         if len(dir) == 0:
             os.rmdir(path2)
             pass
+    
+    #Tests for issues/repos that cause problems metadata.py
+
+    def test_issue111(self):
+        """This is to test CFF extraction"""
+        path = Path(__file__).parent / "json_files" / "issue_111_mapeathor.json"
+        with path.open() as f:
+            mapjayson = json.load(f)
+        f.close()
+        meta = md.metadata(path, mapjayson)
+        result = meta.citations()
+        assert(result['cff'])
+    def test_issue111_2(self):
+        """Mapeathor test to see if the card is built properly"""
+        path = Path(__file__).parent / "json_files" / "issue_111_mapeathor.json"
+        with path.open() as f:
+            mapjayson = json.load(f)
+        f.close()
+        meta = md.metadata(path, mapjayson)
+        res = meta.html_repo_icons()
+        result = "cff-version: 1.0.0" in res
+        self.assertTrue(result)
+
 
 
 if __name__ == '__main__':

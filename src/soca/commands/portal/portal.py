@@ -9,8 +9,7 @@ from somef import __version__ as somef_version
 from . import card
 from . import scripts
 from . import metadata
-from soca import base_dir
-from soca import __version__
+from ... import base_dir, __version__
 
 
 def generate(repo_metadata_dir, output, title, favicon):

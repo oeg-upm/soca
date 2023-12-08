@@ -1,7 +1,7 @@
 from datetime import date, datetime
 import json
 import os
-from soca import __version__ as soca_ver
+from .. import __version__ as soca_ver
 from somef import __version__ as somef_ver
 from .upload_summary import upload_summary
 
