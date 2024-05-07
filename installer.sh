@@ -13,16 +13,10 @@ bucket=""
 #database Organisation
 org=""
 #database Token
-databaseToken=""
+databaseToken="\n"
 #######################
 echo -e "${token}\n\n\n\n\n" | somef configure
 #
-if [ -z "$databaseToken" ]; then
-  databaseToken="\n"
-fi
 echo "${databaseToken}"
 socaCnf="${host}\n${bucket}\n${org}\n${databaseToken}\n"
 echo -e "${socaCnf}" | soca configure
-
-
-
