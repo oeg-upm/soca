@@ -12,5 +12,6 @@ RUN python -m nltk.downloader wordnet
 RUN python -m nltk.downloader omw-1.4
 RUN python -m nltk.downloader punkt
 RUN python -m nltk.downloader stopwords
-RUN ./installer.sh
-CMD ./container_run.sh
+RUN sh installer.sh
+#CMD echo -e "dfjhdjfhdjfhjdfhjdfh \n\n\n\n\n" | somef configure
+#CMD ./container_run.sh
