@@ -24,7 +24,8 @@ class Metadata(object):
 
     # Assets ####################################################
     def logo(self):
-        logo = safe_dic(safe_dic(safe_dic(safe_list(self.md, 'logo'), 0), 'result'), 'value')
+        logo = safe_dic(
+            safe_dic(safe_dic(safe_list(self.md.results, 'logo'), 0), 'result'), 'value')
         # if logo:
         # if str(logo).startswith('https://github'):
         # logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
@@ -37,8 +38,8 @@ class Metadata(object):
         if repo_type == 'web':
             return f'<img src="{self.base}repo_icons/web.png" {self.add_tooltip("left", "Website")} alt="repo-type" class="repo-type">'
         elif repo_type == 'ontology':
-            # ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
-            ontologies = safe_dic(self.md, 'ontologies')
+            # ontologies = safe_dic(safe_dic(self.md.results,'ontologies'),'excerpt')
+            ontologies = safe_dic(self.md.results, 'ontologies')
             if ontologies:
                 onto_list = '\n'.join(list(dict.fromkeys(
                     [f'* <{safe_dic(safe_dic(x, "result"), "value")}>' for x in ontologies if
@@ -268,7 +269,7 @@ class Metadata(object):
 
         usage = self.usage()
         if usage:
-            has_i4p = safe_dic(safe_dic(self.md, 'inspect4py'), 'run')
+            has_i4p = safe_dic(safe_dic(self.md.results, 'inspect4py'), 'run') # TODO:  inspect4py & run are not keys in the new Results class
             html += self.icon_wrapper(
                 icon_html=f"""<img src="{self.base}repo_icons/usage.png"  
                         class="repo-icon" 
@@ -406,16 +407,15 @@ class Metadata(object):
     # TODO
     def repo_type(self):
 
-        # inspect4py
         ######################
 
-        if 'inspect4py' in self.md and "software_type" in self.md["inspect4py"]:
-            return self.md["inspect4py"]["software_type"]
+        if "type" in self.md.results.keys():
+            return self.md.results["type"]
 
         # web and ontology
         ######################
 
-        if (safe_dic(self.md, 'ontologies') is not None):
+        if (safe_dic(self.md.results, 'ontologies') is not None):
             return 'ontology'
 
         langs = self.languages()
@@ -433,14 +433,14 @@ class Metadata(object):
         return None
 
     def usage(self):
-        usage_list = safe_dic(self.md, 'usage')
+        usage_list = safe_dic(self.md.results, 'usage')
         usage = None
         if usage_list:
             usage = ''
             for u in usage_list:
                 usage += u['result']['value'] + '\n'
-        # TODO
-        run_list = safe_dic(safe_dic(self.md, 'inspect4py'), 'run')
+        
+        run_list = safe_dic(safe_dic(self.md.results, 'inspect4py'), 'run') # TODO:  inspect4py & run are not keys in the new Results class
         if run_list:
             if isinstance(run_list, list):
                 run = '\n'.join(
@@ -458,9 +458,12 @@ class Metadata(object):
 
     # TODO cannot find correct implementation
     def help(self):
-        support = safe_dic(safe_dic(safe_list(safe_dic(self.md, 'support'), 0), 'result'), 'value')
-        faq = safe_dic(safe_dic(safe_list(safe_dic(self.md, 'faq'), 0), 'result'), 'value')
-        supportChannels = safe_dic(safe_dic(safe_list(safe_dic(self.md, 'supportChannels'), 0), 'result'), 'value')
+        support = safe_dic(safe_dic(
+            safe_list(safe_dic(self.md.results, 'support'), 0), 'result'), 'value')
+        faq = safe_dic(
+            safe_dic(safe_list(safe_dic(self.md.results, 'faq'), 0), 'result'), 'value')
+        supportChannels = safe_dic(safe_dic(
+            safe_list(safe_dic(self.md.results, 'supportChannels'), 0), 'result'), 'value')
 
         support_md = ('### Support  \n' + support) if support else ''
         faq_md = ('### FAQ  \n' + faq) if faq else ''
@@ -491,33 +494,33 @@ class Metadata(object):
                    </div>"""
 
     def identifier(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'identifier'), 0), 'result'), 'value')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md.results, 'identifier'), 0), 'result'), 'value')
 
     def status(self):
-        return safe_dic(self.md, 'repository_status')
+        return safe_dic(self.md.results, 'repository_status')
 
     def acknowledgement(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'acknowledgement'), 0), 'result'), 'value')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md.results, 'acknowledgement'), 0), 'result'), 'value')
 
     def hasDocumentation(self):
-        docList = safe_dic(self.md, 'documentation')
+        docList = safe_dic(self.md.results, 'documentation')
         return docList if docList else None
 
     def requirements(self):
-        reqs = safe_dic(self.md, 'requirements')
+        reqs = safe_dic(self.md.results, 'requirements')
         if not reqs:
             return None
         return "\n".join([safe_dic(safe_dic(d, 'result'), 'value') for d in reqs])
 
     def installation(self):
-        inst = safe_dic(self.md, 'installation')
+        inst = safe_dic(self.md.results, 'installation')
         if not inst:
             return None
         return "\n".join([safe_dic(safe_dic(d, 'result'), 'value') for d in inst])
 
     def docker(self):
 
-        hasBuildFileList = safe_dic(self.md, 'has_build_file')
+        hasBuildFileList = safe_dic(self.md.results, 'has_build_file')
 
         if not hasBuildFileList:
             return None
@@ -525,35 +528,35 @@ class Metadata(object):
         return [safe_dic(safe_dic(d, 'result'), 'value') for d in hasBuildFileList]
 
     def downloadUrl(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'download_url'), 0), 'result'), 'value') \
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md.results, 'download_url'), 0), 'result'), 'value') \
             if self.n_releases() > 0 else None
 
     # TODO change name to something more self explanatory
     def notebook(self):
-        exe_l = safe_dic(self.md, 'executable_example')
+        exe_l = safe_dic(self.md.results, 'executable_example')
         exe_l = exe_l if exe_l else []
         exe = [x['result']['value'] for x in exe_l]
         return exe if len(exe) > 0 else None
 
     def readme(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'readme_url'), 0), 'result'), 'value')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md.results, 'readme_url'), 0), 'result'), 'value')
 
     def languages(self):
-        langs = safe_dic(self.md, 'programming_languages')
+        langs = safe_dic(self.md.results, 'programming_languages')
         if not langs:
             return None
         return [str(safe_dic(safe_dic(lang, 'result'), 'value')).lower() for lang in langs]
 
     def repo_url(self):
-        return safe_dic(safe_list(safe_dic(safe_dic(self.md, 'code_repository'), 0), 'result'), 'value')
+        return safe_dic(safe_list(safe_dic(safe_dic(self.md.results, 'code_repository'), 0), 'result'), 'value')
 
     def title(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'name'), 0), 'result'), 'value')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md.results, 'name'), 0), 'result'), 'value')
 
     # TODO find new
     def description(self):
 
-        all_descriptions = safe_dic(self.md, 'description')
+        all_descriptions = safe_dic(self.md.results, 'description')
 
         description = None
         if all_descriptions:
@@ -563,14 +566,16 @@ class Metadata(object):
                     break
 
         if not description:
-            description = safe_dic(safe_dic(safe_list(all_descriptions, 0), 'result'), 'value')
+            description = safe_dic(
+                safe_dic(safe_list(all_descriptions, 0), 'result'), 'value')
             if not description:
                 description = 'No description available yet.'
 
         return description
 
     def license(self):
-        license = safe_dic(safe_list(safe_dic(self.md, 'license'), 0), 'result')
+        license = safe_dic(
+            safe_list(safe_dic(self.md.results, 'license'), 0), 'result')
         if (typ := safe_dic(license, "type")) and ((typ == "File_dump") or (typ == "Text_excerpt")):
             self._find_license_name(license)
             return license
@@ -592,40 +597,44 @@ class Metadata(object):
             license['name'] = 'Other'
 
     def last_update(self):
-        result = safe_dic(safe_list(safe_dic(self.md, 'date_updated'), 0), 'result')
+        result = safe_dic(
+            safe_list(safe_dic(self.md.results, 'date_updated'), 0), 'result')
         date_modified_str = of_correctType(result, 'Date')[:-1]
-        date_modified = datetime.strptime(date_modified_str, '%Y-%m-%dT%H:%M:%S')
+        date_modified = datetime.strptime(
+            date_modified_str, '%Y-%m-%dT%H:%M:%S')
         return date_modified
 
     def last_update_days(self):
-        date_of_extraction_str = safe_dic(safe_dic(self.md, 'somef_provenance'), 'date')[:]
-        date_of_extraction = datetime.strptime(date_of_extraction_str, '%Y-%m-%d %H:%M:%S')
+        date_of_extraction_str = safe_dic(
+            safe_dic(self.md.results, 'somef_provenance'), 'date')[:]
+        date_of_extraction = datetime.strptime(
+            date_of_extraction_str, '%Y-%m-%d %H:%M:%S')
         last_update = self.last_update()
         return (date_of_extraction - last_update).days
 
     def stars(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'stargazers_count'), 0), 'result'), 'value')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md.results, 'stargazers_count'), 0), 'result'), 'value')
 
     def n_releases(self):
-        rel = safe_dic(self.md, 'releases')
+        rel = safe_dic(self.md.results, 'releases')
         return len(rel) if rel is not None else 0
 
     def releases(self):
-        return safe_dic(self.md, 'releases')
+        return safe_dic(self.md.results, 'releases')
 
     def url_releases(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'download_url'), 0), 'result'), 'value')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md.results, 'download_url'), 0), 'result'), 'value')
 
     def url_stars(self):
         return self.repo_url() + '/stargazers'
 
     def owner(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'owner'), 0), 'result'), 'value')
+        return safe_dic(safe_dic(safe_list(safe_dic(self.md.results, 'owner'), 0), 'result'), 'value')
 
     # IMPORTANT !!!!! ASSUMES only 1 CFF per repo
     # USE SOMEF as example it lists SOMEF CFF then WIDOCO then SOMEF then CAPTUM
     def citations(self):
-        all_citations = safe_dic(self.md, 'citation')
+        all_citations = safe_dic(self.md.results, 'citation')
 
         if not all_citations:
             return None
