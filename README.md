@@ -17,16 +17,16 @@ Click [here](https://oeg-upm.github.io/soca/example/LinkedEarth/index.html) to s
 
 Command used:  
 
-```text
-soca fetch -i oeg-upm --org -o oeg-upm_repos.csv -na &&
-soca extract -i oeg-upm_repos.csv -o oeg-upm_metadata -i4p &&
+```bash
+soca fetch -i oeg-upm --org -o oeg-upm_repos.csv -na
+soca extract -i oeg-upm_repos.csv -o oeg-upm_metadata -i4p
 soca portal -i oeg-upm_metadata -o oeg-upm_portal
 ```
 
 This is an example of a single card using the command:  
 
-```text
-soca card https://github.com/oeg-upm/soca --png
+```bash
+soca card -i https://github.com/oeg-upm/soca --png
 ```
 
 <img src="doc/images/soca-card.png" alt="soca-card" width="600"/>
@@ -34,18 +34,18 @@ soca card https://github.com/oeg-upm/soca --png
 ## Requirements
 
 * Git
-* Python 3.9
+* Python 3.10
 
 ## Install from GitHub
 
-```text
+```bash
 git clone https://github.com/oeg-upm/soca
 cd soca
 pip install -e .
 ```
 Highly recommended steps:  
 
-```text
+```bash
 somef configure
 ```
 Alternatively you may run the _installer.sh_ file which will also configure SOMEF, just edit it to it for your needs.
@@ -81,7 +81,7 @@ Once the influx has been setup and token created please ensure that SOCA is usin
 
 ## Install from DockerFile
 
-```text
+```bash
 git clone https://github.com/oeg-upm/soca
 cd soca
 ```
@@ -126,14 +126,16 @@ Once the influx has been setup and token copied to _installer.sh_ you may feel f
 
 Now we need to build the SOCA container, please ensure you are within the github directory when executing this command:
 Remember, container_run.sh will create a summary for the oeg-upm group, modify to your needs and desires. More information can be found within USAGE
-```text
+
+```bash
 docker build -t [INSERT_NAME] .
 ```
 Once the container has been built you may execute the SOCA container by running the following:
-```
-docker run -it --network [network influx is running on] [container name]
 
+```bash
+docker run -it --network [network influx is running on] [container name]
 ```
+
 ## SOCA-Dash 
 Once the grafana, influx and soca have been set up correctly you can create a grafana dashboard by importing SOCA-Dash.json. This will allow you to visualise the Summary being uploaded to the influxDB. 
 
