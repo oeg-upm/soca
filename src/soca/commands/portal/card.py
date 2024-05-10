@@ -57,9 +57,10 @@ def cards_data_dump(repo_metadata_dir):
                     'isWeb': md.repo_type() == 'web',
                     'owner': md.owner()
                 })
-                except:
+                except Exception as e:
                     print("ERROR")
                     print(filename)
+                    print(e)
                     print("=======")
                     failed_cards.append(filename)
     print('-'*80)
@@ -68,7 +69,8 @@ def cards_data_dump(repo_metadata_dir):
 
 def html_view(repo_metadata_dir, repo_metadata, embedded, minify=True):
     s = styles.styles()
-    md = Metadata(repo_metadata_dir, repo_metadata.results, embedded)
+    metadata = repo_metadata.results if 'results' in repo_metadata else repo_metadata
+    md = Metadata(repo_metadata_dir, metadata, embedded)
     sc = scripts.scripts()
 
     html_card = f"""

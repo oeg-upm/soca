@@ -629,7 +629,6 @@ class Metadata(object):
         return self.repo_url() + '/stargazers'
 
     def owner(self):
-        print(self.md.keys())
         return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'owner'), 0), 'result'), 'value')
 
     # IMPORTANT !!!!! ASSUMES only 1 CFF per repo
