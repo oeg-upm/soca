@@ -8,7 +8,7 @@ from somef import __version__ as somef_version
 
 from . import card
 from . import scripts
-from . import metadata
+from .metadata import Metadata
 from ... import base_dir, __version__
 
 
@@ -132,7 +132,7 @@ def list_owners(repo_metadata_dir):
         if filename.endswith(".json"):
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 repo_metadata = json.load(json_metadata)
-                md = metadata.metadata(repo_metadata_dir, repo_metadata)
+                md = Metadata(repo_metadata_dir, repo_metadata)
                 owner = md.owner()
                 if owner not in owners:
                     owners.append(owner)
@@ -147,7 +147,7 @@ def list_owners(repo_metadata_dir):
     #     if filename.endswith(f"_{today}.json"):
     #         with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
     #             repo_metadata = json.load(json_metadata)
-    #             md = metadata.metadata(repo_metadata_dir, repo_metadata)
+    #             md = Metadata(repo_metadata_dir, repo_metadata)
     #             owner = md.owner()
     #             if owner not in owners:
     #                 owners.append(owner)

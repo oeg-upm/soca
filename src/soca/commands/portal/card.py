@@ -2,7 +2,7 @@ import os
 import json
 import htmlmin
 
-from . import metadata
+from .metadata import Metadata
 from . import styles
 from . import scripts
 
@@ -18,7 +18,7 @@ def cards_data_dump(repo_metadata_dir):
             with open(f"{repo_metadata_dir}/{filename}") as json_metadata:
                 print(f"Creating card for '{filename}'")
                 repo_metadata = json.load(json_metadata)
-                md = metadata.metadata(repo_metadata_dir, repo_metadata)
+                md = Metadata(repo_metadata_dir, repo_metadata)
                 try:
                     citations = md.citations()
                     cards_data.append({
@@ -69,7 +69,7 @@ def cards_data_dump(repo_metadata_dir):
 def html_view(repo_metadata_dir, repo_metadata, embedded, minify=True):
 
     s = styles.styles()
-    md = metadata.metadata(repo_metadata_dir, repo_metadata, embedded)
+    md = Metadata(repo_metadata_dir, repo_metadata, embedded)
     sc = scripts.scripts()
 
     html_card = f"""

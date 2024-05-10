@@ -15,7 +15,7 @@ import os
 # from cffconvert import Citation
 # from cffconvert.cli import cli as cff2bibcli
 
-class metadata(object):
+class Metadata(object):
 
     def __init__(self, repo_metadata_dir, repo_metadata, embedded=False):
         self.repo_metadata_dir = os.path.abspath(repo_metadata_dir)
@@ -182,7 +182,8 @@ class metadata(object):
         citations = self.citations()
         if citations:
             citation = "No Citation Indicated"
-            formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
+            formatter = HtmlFormatter(
+                linenos=False, full=True, style='friendly')
             # TODO once fixed turn to if, elif, else  so that it prioritises CFF (converted to bibtex format)
             if 'bibtex' in citations:
                 citation = safe_dic(citations, "bibtex")
@@ -208,8 +209,7 @@ class metadata(object):
                     title='Citation',
                     body=f'<div style="font-family: monospace;">{highlight(citation, ScdocLexer(), formatter)}</div>',
                     markdown_translation=False,
-                    extra_html=
-                    f"""
+                    extra_html=f"""
                         <button 
                             class="copy-citation-btn" 
                             value="{self.repo_url()}" 
@@ -239,7 +239,9 @@ class metadata(object):
 
                 modal_html=self.modal(
                     title='Status',
-                    body='### Description  \n' + safe_dic(safe_dic(safe_list(status, 0), 'result'), 'description')
+                    body='### Description  \n' +
+                    safe_dic(safe_dic(safe_list(status, 0),
+                             'result'), 'description')
                          + '\n #### More information  \n' + f'<{safe_dic(safe_dic(safe_list(status, 0), "result"), "value")}>'))
 
         installation = self.installation()
@@ -306,7 +308,8 @@ class metadata(object):
                         title='Documentation',
                         body=mk_list))
             else:
-                doc = safe_dic(safe_dic(safe_list(hasDocumentation, 0), 'result'), 'value')
+                doc = safe_dic(
+                    safe_dic(safe_list(hasDocumentation, 0), 'result'), 'value')
                 if self._is_valid_url(doc):
                     html += self.icon_wrapper(
                         icon_html=f"""<a href="{doc}" target="_blank" class="repo-icon">
@@ -440,7 +443,8 @@ class metadata(object):
         run_list = safe_dic(safe_dic(self.md, 'inspect4py'), 'run')
         if run_list:
             if isinstance(run_list, list):
-                run = '\n'.join([f'* {str(x).replace(self.repo_metadata_dir, "")}' for x in run_list])
+                run = '\n'.join(
+                    [f'* {str(x).replace(self.repo_metadata_dir, "")}' for x in run_list])
             else:
                 run = run_list.replace(self.repo_metadata_dir, "")
             run_md = '---\n  ### How to use it  \n' + run if usage else run
@@ -460,7 +464,8 @@ class metadata(object):
 
         support_md = ('### Support  \n' + support) if support else ''
         faq_md = ('### FAQ  \n' + faq) if faq else ''
-        supportChannels_md = ('### Support Channels  \n' + supportChannels) if supportChannels else ''
+        supportChannels_md = ('### Support Channels  \n' +
+                              supportChannels) if supportChannels else ''
 
         return support_md + faq_md + supportChannels_md if support or faq or supportChannels else None
 
@@ -656,7 +661,7 @@ class metadata(object):
         if citations:
             for cita in citations:
 
-                c = citation_parser(cita)
+                c = CitationParser(cita)
 
                 if c.link_paper and 'zenodo' not in c.link_paper:
                     p.append(c)
@@ -687,7 +692,7 @@ def of_correctType(result, ofType):
         raise Exception("not of correct %s type" % ofType)
 
 
-class citation_parser(object):
+class CitationParser(object):
 
     def __init__(self, citation) -> None:
         self.link_paper = re.search('url[ ]*=[ ]*{(.*)}', citation)
