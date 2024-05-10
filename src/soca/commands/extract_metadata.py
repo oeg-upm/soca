@@ -14,16 +14,16 @@ import requests
 import pprint
 
 
-def extract(repos_csv, output, use_inspect4py, verbose, keep):
+def extract(repos_txt_file, output, use_inspect4py, verbose, keep):
     """
-    @Param repos_csv: input file from the fetch command, A list of github urls
+    @Param repos_txt_file: input file from the fetch command, A list of github urls
     @Param output: defined output file
     @Param use_inspect4py: Bool to indicate desire to use inspect4py
     @Param verbose: Bool to choose whether or not to Fetch only repos that are not archived
     @Param keep: Bool to choose whether or not to wipe the output directory. If false it will delete
 
     Returns:
-    @return: folder with a json file per repo url within repos.csv
+    @return: folder with a json file per repo url within repos
     """
     # Deletes repo if it exists. Ensures no merging of abandoned json files.
     if os.path.exists(output) and not keep:
@@ -32,12 +32,11 @@ def extract(repos_csv, output, use_inspect4py, verbose, keep):
     elif not os.path.exists(output):
         os.makedirs(output)
 
-
-    if os.path.isfile(repos_csv):
-        with open(repos_csv) as repos:
-            repos_url = [c[0] for c in csv.reader(repos, delimiter=',')]
+    if os.path.isfile(repos_txt_file):
+        with open(repos_txt_file) as repos_file:
+            repos_url = [line.strip() for line in repos_file.readlines()]
     else:
-        repos_url = str(repos_csv).split(",")
+        repos_url = str(repos_txt_file).split(",")
 
     failed_repos = []
     failed_repos_i4p = []
