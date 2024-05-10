@@ -67,9 +67,8 @@ def cards_data_dump(repo_metadata_dir):
 
 
 def html_view(repo_metadata_dir, repo_metadata, embedded, minify=True):
-
     s = styles.styles()
-    md = Metadata(repo_metadata_dir, repo_metadata, embedded)
+    md = Metadata(repo_metadata_dir, repo_metadata.results, embedded)
     sc = scripts.scripts()
 
     html_card = f"""
