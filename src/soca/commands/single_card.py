@@ -9,8 +9,8 @@ def create(repo_url, output, save_as):
 
     try:
         print(f"Extracting metadata from {repo_url}. It may take a while... (depends on repository size).")
-        with HiddenPrints():
-                metadata = cli_get_data(0.9, False, repo_url)
+        metadata = cli_get_data(0.9, False, repo_url)
+        # with HiddenPrints():
     except Exception:
         traceback.print_exc()
         print(f"ERROR: Could not extract metadata from {repo_url}")

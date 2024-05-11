@@ -15,7 +15,7 @@ import os
 # from cffconvert import Citation
 # from cffconvert.cli import cli as cff2bibcli
 
-class metadata(object):
+class Metadata(object):
 
     def __init__(self, repo_metadata_dir, repo_metadata, embedded=False):
         self.repo_metadata_dir = os.path.abspath(repo_metadata_dir)
@@ -24,7 +24,8 @@ class metadata(object):
 
     # Assets ####################################################
     def logo(self):
-        logo = safe_dic(safe_dic(safe_dic(safe_list(self.md, 'logo'), 0), 'result'), 'value')
+        logo = safe_dic(
+            safe_dic(safe_dic(safe_list(self.md, 'logo'), 0), 'result'), 'value')
         # if logo:
         # if str(logo).startswith('https://github'):
         # logo = logo.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
@@ -182,7 +183,8 @@ class metadata(object):
         citations = self.citations()
         if citations:
             citation = "No Citation Indicated"
-            formatter = HtmlFormatter(linenos=False, full=True, style='friendly')
+            formatter = HtmlFormatter(
+                linenos=False, full=True, style='friendly')
             # TODO once fixed turn to if, elif, else  so that it prioritises CFF (converted to bibtex format)
             if 'bibtex' in citations:
                 citation = safe_dic(citations, "bibtex")
@@ -208,8 +210,7 @@ class metadata(object):
                     title='Citation',
                     body=f'<div style="font-family: monospace;">{highlight(citation, ScdocLexer(), formatter)}</div>',
                     markdown_translation=False,
-                    extra_html=
-                    f"""
+                    extra_html=f"""
                         <button 
                             class="copy-citation-btn" 
                             value="{self.repo_url()}" 
@@ -239,7 +240,9 @@ class metadata(object):
 
                 modal_html=self.modal(
                     title='Status',
-                    body='### Description  \n' + safe_dic(safe_dic(safe_list(status, 0), 'result'), 'description')
+                    body='### Description  \n' +
+                    safe_dic(safe_dic(safe_list(status, 0),
+                             'result'), 'description')
                          + '\n #### More information  \n' + f'<{safe_dic(safe_dic(safe_list(status, 0), "result"), "value")}>'))
 
         installation = self.installation()
@@ -266,7 +269,7 @@ class metadata(object):
 
         usage = self.usage()
         if usage:
-            has_i4p = safe_dic(safe_dic(self.md, 'inspect4py'), 'run')
+            has_i4p = safe_dic(safe_dic(self.md, 'inspect4py'), 'run') # TODO:  inspect4py & run are not keys in the new Results class
             html += self.icon_wrapper(
                 icon_html=f"""<img src="{self.base}repo_icons/usage.png"  
                         class="repo-icon" 
@@ -306,7 +309,8 @@ class metadata(object):
                         title='Documentation',
                         body=mk_list))
             else:
-                doc = safe_dic(safe_dic(safe_list(hasDocumentation, 0), 'result'), 'value')
+                doc = safe_dic(
+                    safe_dic(safe_list(hasDocumentation, 0), 'result'), 'value')
                 if self._is_valid_url(doc):
                     html += self.icon_wrapper(
                         icon_html=f"""<a href="{doc}" target="_blank" class="repo-icon">
@@ -403,11 +407,10 @@ class metadata(object):
     # TODO
     def repo_type(self):
 
-        # inspect4py
         ######################
 
-        if 'inspect4py' in self.md and "software_type" in self.md["inspect4py"]:
-            return self.md["inspect4py"]["software_type"]
+        if "type" in self.md.keys():
+            return self.md["type"]
 
         # web and ontology
         ######################
@@ -436,11 +439,12 @@ class metadata(object):
             usage = ''
             for u in usage_list:
                 usage += u['result']['value'] + '\n'
-        # TODO
-        run_list = safe_dic(safe_dic(self.md, 'inspect4py'), 'run')
+        
+        run_list = safe_dic(safe_dic(self.md, 'inspect4py'), 'run') # TODO:  inspect4py & run are not keys in the new Results class
         if run_list:
             if isinstance(run_list, list):
-                run = '\n'.join([f'* {str(x).replace(self.repo_metadata_dir, "")}' for x in run_list])
+                run = '\n'.join(
+                    [f'* {str(x).replace(self.repo_metadata_dir, "")}' for x in run_list])
             else:
                 run = run_list.replace(self.repo_metadata_dir, "")
             run_md = '---\n  ### How to use it  \n' + run if usage else run
@@ -454,13 +458,17 @@ class metadata(object):
 
     # TODO cannot find correct implementation
     def help(self):
-        support = safe_dic(safe_dic(safe_list(safe_dic(self.md, 'support'), 0), 'result'), 'value')
-        faq = safe_dic(safe_dic(safe_list(safe_dic(self.md, 'faq'), 0), 'result'), 'value')
-        supportChannels = safe_dic(safe_dic(safe_list(safe_dic(self.md, 'supportChannels'), 0), 'result'), 'value')
+        support = safe_dic(safe_dic(
+            safe_list(safe_dic(self.md, 'support'), 0), 'result'), 'value')
+        faq = safe_dic(
+            safe_dic(safe_list(safe_dic(self.md, 'faq'), 0), 'result'), 'value')
+        supportChannels = safe_dic(safe_dic(
+            safe_list(safe_dic(self.md, 'supportChannels'), 0), 'result'), 'value')
 
         support_md = ('### Support  \n' + support) if support else ''
         faq_md = ('### FAQ  \n' + faq) if faq else ''
-        supportChannels_md = ('### Support Channels  \n' + supportChannels) if supportChannels else ''
+        supportChannels_md = ('### Support Channels  \n' +
+                              supportChannels) if supportChannels else ''
 
         return support_md + faq_md + supportChannels_md if support or faq or supportChannels else None
 
@@ -558,14 +566,16 @@ class metadata(object):
                     break
 
         if not description:
-            description = safe_dic(safe_dic(safe_list(all_descriptions, 0), 'result'), 'value')
+            description = safe_dic(
+                safe_dic(safe_list(all_descriptions, 0), 'result'), 'value')
             if not description:
                 description = 'No description available yet.'
 
         return description
 
     def license(self):
-        license = safe_dic(safe_list(safe_dic(self.md, 'license'), 0), 'result')
+        license = safe_dic(
+            safe_list(safe_dic(self.md, 'license'), 0), 'result')
         if (typ := safe_dic(license, "type")) and ((typ == "File_dump") or (typ == "Text_excerpt")):
             self._find_license_name(license)
             return license
@@ -587,14 +597,18 @@ class metadata(object):
             license['name'] = 'Other'
 
     def last_update(self):
-        result = safe_dic(safe_list(safe_dic(self.md, 'date_updated'), 0), 'result')
+        result = safe_dic(
+            safe_list(safe_dic(self.md, 'date_updated'), 0), 'result')
         date_modified_str = of_correctType(result, 'Date')[:-1]
-        date_modified = datetime.strptime(date_modified_str, '%Y-%m-%dT%H:%M:%S')
+        date_modified = datetime.strptime(
+            date_modified_str, '%Y-%m-%dT%H:%M:%S')
         return date_modified
 
     def last_update_days(self):
-        date_of_extraction_str = safe_dic(safe_dic(self.md, 'somef_provenance'), 'date')[:]
-        date_of_extraction = datetime.strptime(date_of_extraction_str, '%Y-%m-%d %H:%M:%S')
+        date_of_extraction_str = safe_dic(
+            safe_dic(self.md, 'somef_provenance'), 'date')[:]
+        date_of_extraction = datetime.strptime(
+            date_of_extraction_str, '%Y-%m-%d %H:%M:%S')
         last_update = self.last_update()
         return (date_of_extraction - last_update).days
 
@@ -656,7 +670,7 @@ class metadata(object):
         if citations:
             for cita in citations:
 
-                c = citation_parser(cita)
+                c = CitationParser(cita)
 
                 if c.link_paper and 'zenodo' not in c.link_paper:
                     p.append(c)
@@ -687,7 +701,7 @@ def of_correctType(result, ofType):
         raise Exception("not of correct %s type" % ofType)
 
 
-class citation_parser(object):
+class CitationParser(object):
 
     def __init__(self, citation) -> None:
         self.link_paper = re.search('url[ ]*=[ ]*{(.*)}', citation)
