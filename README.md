@@ -62,7 +62,7 @@ For more information please visit: https://docs.influxdata.com/influxdb/cloud/re
 
 To generate a token:
 ```
-influx auth create -o [organistation name] --access-all
+influx auth create -o [organistation name] --all-access
 ```
 
 SOCA-Dash requires influxQL datasource connection within grafana. 
