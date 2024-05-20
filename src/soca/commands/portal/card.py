@@ -69,7 +69,7 @@ def cards_data_dump(repo_metadata_dir):
 
 def html_view(repo_metadata_dir, repo_metadata, embedded, minify=True):
     s = styles.styles()
-    metadata = repo_metadata.results if 'results' in repo_metadata else repo_metadata
+    metadata = repo_metadata.results if not isinstance(repo_metadata, dict) else repo_metadata
     md = Metadata(repo_metadata_dir, metadata, embedded)
     sc = scripts.scripts()
 
