@@ -25,7 +25,7 @@ def _fetch(name, out_path, type, not_archived, not_forked, not_disabled):
     print(f"Fetching repositories from {type} {name}:")
 
     URL = f"https://api.github.com/{type}/{name}/repos"
-    page_size = 50
+    page_size = 100 #antes 50, pero soporta el doble, 1 request menos a githubapi
     page = 1
     PARAMS = {'per_page': page_size, 'page': page}
     # TOKEN

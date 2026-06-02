@@ -39,3 +39,53 @@
 .close {color: #3e3e3e;float: right;font-size: 28px;font-weight: bold;position: relative;bottom: 0.8rem;}
 .close:hover, .close:focus {  color: #000;  text-decoration: none; cursor: pointer;}
 .soca-card .repo-type{height: 1.4rem; margin-left: 0.2rem; margin-right: 0.2rem; cursor: pointer;}
+
+.soca-card .repo-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.repo-owner {
+  background-color: #eef3ff;
+  color: #2c5cc5;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+
+.soca-card .modal-content p {
+  margin: 0.6rem 0;
+}
+
+.soca-card .modal-content ul,
+.soca-card .modal-content ol {
+  margin: 0.6rem 0;
+  padding-left: 1.4rem;
+}
+
+.soca-card .modal-content pre {
+  margin: 0.8rem 0;
+  padding: 0.8rem;
+  background: #f7f7f7;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: pre;
+  line-height: 1.35;
+}
+
+.soca-card .modal-content pre,
+.soca-card .modal-content pre *,
+.soca-card .modal-content code {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.soca-card .modal-content :not(pre) > code {
+  background: #f7f7f7;
+  padding: 0.1rem 0.25rem;
+  border-radius: 4px;
+}

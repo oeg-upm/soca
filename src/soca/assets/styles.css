@@ -15,7 +15,45 @@ footer{width:100%;padding:1rem 1.5rem;margin-top:auto;display:flex;justify-conte
 .sort, .filter-includes{display: flex; margin-right: 1rem; flex-wrap: wrap; justify-content: center;}
 .sort{justify-content: center; display: flex; width: 100%;}
 .filter-includes-box{width: 1.8rem;height: 1.8rem;margin:0.2rem;display: flex;align-items: center;justify-content: center;cursor: pointer;}
-.filters-wrapper{display: flex;flex-wrap: wrap;min-height: 3.5rem;justify-content: center; max-width: 60rem; margin: auto;justify-content: space-between;position: relative;left: 0.5rem;}
+
+.filters-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    min-height: 3.5rem;
+    max-width: 90rem;
+    margin: auto;
+    position: relative;
+    left: 0.5rem;
+}
+
+.sort{
+    justify-content: center;
+    display: flex;
+    width: auto;
+    flex: 0 0 auto;
+}
+
+#owner-filter{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+.owner-dropdown{
+    padding: 0 1rem;
+    margin-left: 0.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background:#e9e9e9;
+    box-shadow:inset 5px 5px 10px #bebebe,inset -5px -5px 10px #fff;
+    height: 1.5rem;
+    width: 18rem;
+    display: flex;
+}
 .tooltip{position:absolute;z-index:1070;display:block;font-style:normal;font-weight:400;line-height:1.42857143;line-break:auto;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;font-size:12px;opacity:0}
 .tooltip.in{opacity:.9}
 .tooltip.top{padding:5px 0;margin-top:-3px}
@@ -47,3 +85,6 @@ footer{width:100%;padding:1rem 1.5rem;margin-top:auto;display:flex;justify-conte
     .soca-card { min-width: 28rem !important; }
 
 }
+
+
+

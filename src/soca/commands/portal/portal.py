@@ -12,9 +12,130 @@ from .metadata import Metadata
 from ... import base_dir, __version__
 
 
+#######################Embebido de dashboards
+
+#funcion para insertar de env link dashverse
+def add_dashverse_link(soup, target=None):
+    import os
+
+
+    DASHBOARD_ORG_PAGE = "dashboard-org.html"
+    DASHBOARD_REPO_PAGE = "dashboard-repo.html"
+    
+    link_org = soup.find(id="dashverse-org-link")
+    link_user = soup.find(id="dashverse-user-link")
+    
+    if link_org and DASHBOARD_ORG_PAGE:
+        link_org["href"] = DASHBOARD_ORG_PAGE
+
+    if link_user and DASHBOARD_REPO_PAGE:
+        link_user["href"] = DASHBOARD_REPO_PAGE
+            
+            
+# generación e archivos html del portal
+from pathlib import Path
+import os
+
+def create_embedded_dashboard_pages(portal_output_dir):
+    portal_output_dir = Path(portal_output_dir)
+
+    # URL pública que ve el navegador para cargar Superset
+    superset_public_url = os.getenv("SUPERSET_PUBLIC_DOMAIN", "http://host.docker.internal:8088")
+
+    org_dashboard_id = os.getenv("DASHBOARD_ORG_EMBED_ID", "")
+    repo_dashboard_id = os.getenv("DASHBOARD_REPO_EMBED_ID", "")
+
+    create_dashboard_page(
+        output_file=portal_output_dir / "dashboard-org.html",
+        title="SQOO Organization Dashboard",
+        dashboard_ref=org_dashboard_id,
+        superset_domain=superset_public_url,
+    )
+
+    create_dashboard_page(
+        output_file=portal_output_dir / "dashboard-repo.html",
+        title="SQOO Repository Dashboard",
+        dashboard_ref=repo_dashboard_id,
+        superset_domain=superset_public_url,
+    )
+
+
+def dashboard_url(superset_domain, dashboard_ref):
+    dashboard_ref = (dashboard_ref or "").strip()
+    if dashboard_ref.startswith("http://") or dashboard_ref.startswith("https://"):
+        base_url = dashboard_ref
+    else:
+        superset_domain = (superset_domain or "http://host.docker.internal:8088").rstrip("/")
+        base_url = f"{superset_domain}/superset/dashboard/{dashboard_ref.strip('/')}/"
+
+    separator = "&" if "?" in base_url else "?"
+    return f"{base_url}{separator}standalone=2"
+
+
+def create_dashboard_page(output_file, title, dashboard_ref, superset_domain):
+    iframe_src = dashboard_url(superset_domain, dashboard_ref)
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{title}</title>
+
+  <style>
+    body {{
+      margin: 0;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }}
+
+    header {{
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      box-sizing: border-box;
+    }}
+
+    header a {{
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }}
+
+    .dashboard-frame {{
+      width: 100vw;
+      height: calc(100vh - 50px);
+      border: none;
+      display: block;
+    }}
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">← Back to Software Catalog</a>
+  </header>
+
+  <iframe
+    class="dashboard-frame"
+    src="{iframe_src}"
+    title="{title}"
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
+"""
+
+    output_file.write_text(html, encoding="utf-8")
+#####################################################3
+
 def generate(repo_metadata_dir, output, title, favicon):
 
+
+        
     copy_assets(output)
+    portal_cache_version = datetime.utcnow().strftime("%Y%m%d%H%M%S%f")
 
     # Load html template
     with open(f"{base_dir}/assets/template.html") as template:
@@ -52,7 +173,7 @@ def generate(repo_metadata_dir, output, title, favicon):
         html_parsed = BeautifulSoup(f"""
         <div data-toggle="tooltip" data-placement="bottom" title="Filter by User/Organization"><img src="repo_icons/owner.svg" class="sort-filter-icon grey-color-svg"/></div>
 			<select id="owner" class="owner-dropdown">
-				<option value="all">All</option>
+				<option value="all">All orgs</option>
                 {l}
 			</select>
         """, 'html.parser')
@@ -66,6 +187,17 @@ def generate(repo_metadata_dir, output, title, favicon):
 
     # Insert favicon
     add_favicon(soup, favicon, output)
+    
+    # insertar links dashverse
+    create_embedded_dashboard_pages(output)
+    add_dashverse_link(soup)
+
+    app_script = soup.find("script", src=lambda src: src and src.startswith("app.js"))
+    if app_script:
+        version_script = soup.new_tag("script")
+        version_script.string = f'window.SOCA_PORTAL_VERSION = "{portal_cache_version}";'
+        app_script.insert_before(version_script)
+        app_script["src"] = f"app.js?v={portal_cache_version}"
 
     # Save index.html
     with open(f"{output}/index.html", "w") as index:
