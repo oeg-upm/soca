@@ -2,9 +2,11 @@
 <html>
 <head>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="cards_data.json" type="text/javascript"></script>
 <title>Software Catalog</title>
 <link rel="icon" type="image/x-icon" href="img/soca-logo.ico">
 <link rel="stylesheet" href="styles.css"></styles>
@@ -16,9 +18,9 @@
 		<h2 id="nav-title">Software Catalog</h2>
 		<input id="searchBar" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
 		<div data-toggle="tooltip" data-placement="right" title="About page"><a href="about.html"><img src="img/help.png" class="grey-color-svg" style="height: 2rem; margin-left: 1rem;"></a></div>
-		<div data-toggle="tooltip" data-placement="right" title="SOCA Dashboard Analytics"><a href="https://dashboards-software.oeg.fi.upm.es/d/FX3TNka4k/prototype?orgId=1&from=now-6M&to=now&var-organisation=oeg-upm&var-SOCA_Version=0.0.3&var-SOMEF_Version=0.9.3&kiosk" target="_blank"><img src="img/statIcon.svg" class="grey-color-svg" style="height: 2rem; margin-left: 1rem;"></a></div>
+		<div data-toggle="tooltip" data-placement="right" title="SOCA Dashboard Analytics (ORG)"><a id="dashverse-org-link" href="#" target="_blank"><img src="img/statIcon-org.svg" class="grey-color-svg" style="height: 2rem; margin-left: 1rem;"></a></div>
+		<div data-toggle="tooltip" data-placement="right" title="SOCA Dashboard Analytics (user)"><a id="dashverse-user-link" href="#" target="_blank"><img src="img/statIcon-user.svg" class="grey-color-svg" style="height: 2rem; margin-left: 1rem;"></a></div>
 	</div>
-	
 	<div class="filters-wrapper">
 		<div class="filters">
 			<div data-toggle="tooltip" data-placement="bottom" title="Sort"><img src="img/sort.svg" class="sort-filter-icon"/></div>
@@ -51,13 +53,28 @@
 					<div class="filter-includes-box" id="download" data-toggle="tooltip" data-placement="bottom" title="Filter by download"><img class="repo-icon-filter" src="repo_icons/download.png"/></div>
 					<div class="filter-includes-box" id="web" data-toggle="tooltip" data-placement="bottom" title="Filter by web"><img class="repo-icon-filter" src="repo_icons/web.png"/></div>
 					<div class="filter-includes-box" id="ontology" data-toggle="tooltip" data-placement="bottom" title="Filter by ontology"><img class="repo-icon-filter" src="repo_icons/ontology.png"/></div>
-				</div>
+                    <div class="filter-includes-box" id="isSoftware" data-toggle="tooltip" data-placement="bottom" title="Filter by software">
+                    <img class="repo-icon-filter" src="repo_icons/software.png"/>
+                    </div>
+                </div>
 			</div>
 		</div>
 		<div id="owner-filter" class="filters">
 		</div>
 	</div>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="myCards">
 </div>

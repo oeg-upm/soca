@@ -58,6 +58,25 @@ def fetch(input, output, repo_type, not_archived, not_forked, not_disabled):
     from soca.commands import fetch_repositories
     fetch_repositories.fetch(input, output, repo_type, not_archived, not_forked, not_disabled)
 
+
+
+
+
+#cli extraccion 1 repo
+@cli.command()
+@click.option('--input','-i', required=True, help="GitHub repo URL", metavar='<URL>')
+@click.option('--output','-o', default="repos-metadata", help="Dir where repositories metadata will be saved", metavar='<path>')
+@click.option('--verbose','-v', flag_value=True, default=False, show_default=True, help="Fetch only repos that are not archived")
+def extract_1_repo(input, output, verbose):
+    """Fetch and save metadata from introduced repo"""
+    from soca.commands import extract_metadata
+    extract_metadata.extract_1_repo(input, output, verbose)
+    
+    
+    
+    
+    
+    
 @cli.command()
 @click.option('--input','-i', required=True, help="Pointers to the repositories in csv format", metavar='<csv-repos>')
 @click.option('--output','-o', default="repos-metadata", help="Dir where repositories metadata will be saved", metavar='<path>')

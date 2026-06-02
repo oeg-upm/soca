@@ -14,6 +14,52 @@ import requests
 import pprint
 
 
+# extracción de 1 repo para diversos workers
+def extract_1_repo(repo_url, output, verbose):
+
+    if not os.path.exists(output):
+        os.makedirs(output, exist_ok=True)
+    
+    # intenta clonar o excepcion de que no pudo
+    try:
+        git_clone_dir = f'{output}/' + str(repo_url).split("/")[-1]
+    except Exception as e:
+        print("Couldn't clone GitHub repository: ", str(e))
+        
+    try:
+        print(f"Extracting metadata from {repo_url}")
+        if not verbose:
+            with HiddenPrints():
+                metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
+                #metadata = cli_get_data(0.9, False, repo_url, None, False, False, False, keep_tmp=git_clone_dir)
+                    
+        else:
+            metadata = cli_get_data(0.9, False, repo_url, keep_tmp=git_clone_dir)
+            #metadata = cli_get_data(0.9, False, repo_url, None, False, False, False, keep_tmp=git_clone_dir)
+        if not metadata:
+            #print(f'ERROR: {repo_url} is down, skipping it...')
+            print(f'ERROR: unable to extract from {repo_url}, skipping it...')
+            return
+        # guardar json metadatos
+        repo_full_name = (repo_url[19:]).replace("/", "_").replace(".", "-")
+        today = datetime.date.today().strftime("%Y-%m-%d")
+        with open(f"{output}/{repo_full_name}_{today}.json", 'w') as repo_metadata:
+            json.dump(metadata.results, repo_metadata, indent=4)
+            
+            
+    except KeyboardInterrupt:
+        exit()
+    except Exception as e:
+        print(f"ERROR: Could not extract metadata from {repo_url}")
+        print(str(e))
+        
+        
+        
+
+
+
+        
+
 def extract(repos_txt_file, output, use_inspect4py, verbose, keep):
     """
     @Param repos_txt_file: input file from the fetch command, A list of github urls
