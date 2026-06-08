@@ -198,37 +198,42 @@ class Metadata(object):
         codemeta_status = record.get("codemeta_status")
         issue_url = record.get("issue_url") or record.get("previous_issue_url")
 
-        # Si no hay codemeta, no mostramos 0/0 porque sería engañoso
         if codemeta_status == "missing":
-            label = "No CodeMeta metadata available"
+            label = "No CodeMeta file"
         else:
             label = f"{pitfalls_count} pitfalls / {warnings_count} warnings"
 
-        help_text = "click to open the related GitHub issue"
-
         if issue_url:
-            report_text = f"""
-            <a href="{issue_url}" target="_blank" rel="noopener noreferrer"
-            style="text-decoration: underline;">
-                {label}
-                <span style="font-size:0.9em; color:#555;">
-                    ({help_text})
-                </span>
-            </a>
+            issue_link_html = f"""
+            <div style="margin-top:4px; font-size:0.9em;">
+                <a href="{issue_url}" target="_blank" rel="noopener noreferrer"
+                style="text-decoration: underline;">
+                    Open to see GitHub issue
+                </a>
+            </div>
             """
         else:
-            report_text = f"""
-            {label}
-            <span style="font-size:0.9em; color:#555;">
-                (no related GitHub issue available)
-            </span>
+            issue_link_html = """
+            <div style="margin-top:4px; font-size:0.9em; color:#555;">
+                No related GitHub issue available
+            </div>
             """
 
         return f"""
-    <div style="margin-top:8px;">
-        <b>sw-metadata-bot report:</b> {report_text}
-    </div>
-    """
+        <div style="margin-top:8px;">
+            <b>Metadata report:</b> {label}
+            <span style="margin-left:10px;">
+                --&gt; <a href="https://github.com/SoftwareUnderstanding/RsMetaCheck"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="text-decoration: underline;">
+                    RSMetaCheck
+                </a>
+            </span>
+
+            {issue_link_html}
+        </div>
+        """
 ######################################################################################
     #agrupacion de tipos de requirements
     def group_requirement_files(self, reqs):
@@ -250,7 +255,7 @@ class Metadata(object):
             if "requirements" in filename:
                 key = "Source requirements.txt"
             elif filename == "pyproject.toml":
-                key = "Source Poetry"
+                key = "Source software configuration file"
             elif filename == "codemeta.json":
                 key = "Source codemeta"
             elif filename == "readme.md":
@@ -976,11 +981,7 @@ class Metadata(object):
         if installation:
 
             md_text = ""
-            source = installation[0].get("source")
-            if source:
-                filename = source.split("/")[-1]
-                github_url = self.raw_to_github_url(source)
-                md_text += f"**[Source {filename}]({github_url})** \n\n"
+            source_item = next((i for i in installation if self.metadata_item_source_name(i)), installation[0])
             for item in installation:
                 # header de la instalacion
                 header = safe_dic(safe_dic(item, "result"), "original_header")
@@ -1003,7 +1004,8 @@ class Metadata(object):
                 modal_html=self.modal(
                     title='Installation',
                     body=md_text,                
-                    markdown_translation=True     
+                    markdown_translation=True,
+                    footer_html=self.source_footer_html(source_item)
                 )
             )
 
@@ -1023,7 +1025,7 @@ class Metadata(object):
         
         # propio agrupando requirements
         raw_requirements = self.requirements()
-        
+
         grouped_reqs = self.group_requirement_files(raw_requirements)
         if grouped_reqs:
             body = """
@@ -1032,47 +1034,63 @@ class Metadata(object):
                 overflow:auto;
                 display:block;
             ">
+                <p style="margin-top:0; margin-bottom:12px;">
+                    We found the following installation methods:
+                </p>
             """
 
             for filetype, items in grouped_reqs.items():
 
-
                 for r in items:
-
                     source = r.get("source")
                     value = safe_dic(safe_dic(r, "result"), "value")
 
-                    filename = source.split("/")[-1].lower() if source else ""
+                    if not source:
+                        continue
 
-                    #  README mostrar contenido
+                    filename = source.split("/")[-1].lower()
+
+                    # README: mostrar el contenido detectado y la fuente al final,
+                    # alineada a la derecha y en cursiva.
                     if "readme.md" in filename and value:
-
                         html_md = mistune.html(value).replace("<p>", "").replace("</p>", "")
-                        source_link = self.source_anchor("source README.md", source)
+                        source_link = self.source_anchor("source: README.md", source)
+
                         body += f"""
                         <div style="
-                                background:#f7f7f7;
-                                padding:10px;
-                                border-radius:6px;
-                                font-size:0.9em;
-                                margin-bottom:10px;
+                            background:#f7f7f7;
+                            padding:10px;
+                            border-radius:6px;
+                            font-size:0.9em;
+                            margin-bottom:12px;
+                        ">
+                            {html_md}
+
+                            <div style="
+                                text-align:right;
+                                font-style:italic;
+                                margin-top:0.75rem;
                             ">
-                            {html_md} ({source_link})
+                                {source_link}
+                            </div>
                         </div>
                         """
 
-                    #  resto link normal
+                    # Resto de ficheros: mostrar solo el path, sin "(source ...)"
                     else:
                         display = self.get_repo_relative_path(source)
                         github_url = self.raw_to_github_url(source)
-                        source_label = filetype.lower()
-                        link_text = f"{display} ({source_label})"
+
                         body += f"""
-                        <a href="{github_url}" target="_blank">{escape(link_text)}</a><br>
+                        <div style="margin-bottom:8px;">
+                            • <a href="{escape(github_url, quote=True)}" target="_blank">
+                                {escape(display)}
+                            </a>
+                        </div>
                         """
 
-                body += "<br>"
             body += "</div>"
+
             html += self.icon_wrapper(
                 icon_html=f"""<img src="{self.base}repo_icons/requirements.png"  
                         class="repo-icon" 
@@ -1099,7 +1117,8 @@ class Metadata(object):
                         {self.add_tooltip('bottom', 'Usage')}>""",
                 modal_html=self.modal(
                     title='How to use it' if has_i4p and '### How to use it' not in usage else 'Usage',
-                    body=usage))
+                    body=usage,
+                    footer_html=self.source_footer_html_for_items(safe_dic(self.md, 'usage'))))
 
         help = self.help()
         if help:
@@ -1110,7 +1129,12 @@ class Metadata(object):
 
                 modal_html=self.modal(
                     title='Help',
-                    body=help))
+                    body=help,
+                    footer_html=self.source_footer_html_for_items([
+                        safe_list(safe_dic(self.md, 'support'), 0),
+                        safe_list(safe_dic(self.md, 'faq'), 0),
+                        safe_list(safe_dic(self.md, 'supportChannels'), 0),
+                    ])))
 
         hasDocumentation = self.hasDocumentation()
         if hasDocumentation:
@@ -1183,43 +1207,62 @@ class Metadata(object):
         if (rsfc_report_md and rsfc_score) or sw_bot_html:
 
             body_parts = []
-            tooltip_parts = []
+            tooltip_summary_parts = []
 
             if rsfc_report_md and rsfc_score:
                 passed, total = rsfc_score
                 score_text = f"{passed}/{total} checks"
 
+                # Resumen RSFC para el tooltip
+                tooltip_summary_parts.append(f"{passed}/{total}")
+
                 report_html = mistune.html(rsfc_report_md)
 
-                tooltip_parts.append(f"RSFC: {score_text}")
-
                 body_parts.append(f"""
-        <b>RSFC FAIRness report:</b> {score_text}<br>
+                <b>FAIR report (by rsfc):</b> {score_text}
+                <span style="margin-left:10px;">
+                    --&gt; <a href="https://github.com/oeg-upm/rsfc" target="_blank" rel="noopener noreferrer">
+                        RSFC
+                    </a>
+                </span><br><br>
 
-        <details>
-            <summary style="cursor:pointer;">Show RSFC report</summary>
+                <details>
+                    <summary style="cursor:pointer;">Show RSFC report</summary>
 
-            <div style="
-                margin-top:8px;
-                max-height:500px;
-                overflow:auto;
-                padding:8px;
-                background:#f7f7f7;
-                border-radius:6px;
-            ">
-                {report_html}
-            </div>
-        </details>
-        """)
+                    <div style="
+                        margin-top:8px;
+                        max-height:500px;
+                        overflow:auto;
+                        padding:8px;
+                        background:#f7f7f7;
+                        border-radius:6px;
+                    ">
+                        {report_html}
+                    </div>
+                </details>
+                """)
 
             if sw_bot_html:
-                tooltip_parts.append("sw-metadata-bot available")
+                sw_bot_data = self.sw_metadata_bot_latest_record()
+                issue_count = 0
+
+                if sw_bot_data:
+                    record = sw_bot_data["record"]
+                    issue_url = record.get("issue_url") or record.get("previous_issue_url")
+
+                    if issue_url:
+                        issue_count = 1
+
+                issue_label = "issue" if issue_count == 1 else "issues"
+                tooltip_summary_parts.append(f"{issue_count} {issue_label}")
+
                 body_parts.append(sw_bot_html)
 
             body = "<hr>".join(body_parts)
 
-            tooltip = " | ".join(tooltip_parts) if tooltip_parts else "Quality report"
-
+            tooltip_summary = ", ".join(tooltip_summary_parts)
+            tooltip = f"Quality report ({tooltip_summary})" if tooltip_summary else "Quality report"
+            
             html += self.icon_wrapper(
                 icon_html=f"""<img src="{self.base}repo_icons/quality.png" 
                         class="repo-icon" 
@@ -1264,7 +1307,7 @@ class Metadata(object):
 
 
 
-    def modal(self, title, body, markdown_translation=True, extra_html=''):
+    def modal(self, title, body, markdown_translation=True, extra_html='', footer_html=''):
 
         if markdown_translation:
             body = mistune.html(body)
@@ -1277,6 +1320,7 @@ class Metadata(object):
                                 {extra_html}
                             </span>
                             <div style="margin-bottom: 1rem; overflow: auto;">{body}</div>
+                            {footer_html}
                         </div>
                     </div>"""
 
@@ -1352,20 +1396,39 @@ class Metadata(object):
         text = f"<strong>{escape(label)}</strong>" if bold else escape(label)
         return f'<a href="{escape(github_url, quote=True)}" target="_blank">{text}</a>'
 
-    def source_markdown(self, item):
-        source_name = self.metadata_item_source_name(item)
-        source_url = self.metadata_item_source_url(item)
-        if source_name and source_url:
-            return f"**[source {source_name}]({source_url})**\n\n"
-        return f"**source {source_name}**\n\n" if source_name else ''
+    def source_footer_html(self, item=None, source=None):
+        source_name = self.metadata_item_source_name(item) if item else None
+        source_url = self.metadata_item_source_url(item) if item else None
+        if source and not source_name:
+            source_path = urlparse(source).path if '://' in source else source
+            source_name = unquote(os.path.basename(source_path.rstrip('/'))) or source
+            source_url = self.raw_to_github_url(source)
+        if not source_name:
+            return ''
+        label = f"source: {source_name}"
+        if source_url:
+            source = f'<a href="{escape(source_url, quote=True)}" target="_blank">{escape(label)}</a>'
+        else:
+            source = escape(label)
+        return f'<div style="text-align:right; font-style:italic;">{source}</div>'
+
+    def source_footer_html_for_items(self, items):
+        footers = ''
+        seen_sources = set()
+        for item in items or []:
+            source_name = self.metadata_item_source_name(item)
+            source_url = self.metadata_item_source_url(item)
+            source_key = source_url or source_name
+            if source_key and source_key not in seen_sources:
+                footers += self.source_footer_html(item)
+                seen_sources.add(source_key)
+        return footers
 
     def usage(self):
         usage_list = safe_dic(self.md, 'usage')
         usage = None
         if usage_list:
             usage = ''
-            source_item = next((u for u in usage_list if self.metadata_item_source_name(u)), usage_list[0])
-            usage += self.source_markdown(source_item)
             '''
             for u in usage_list:
                 usage += u['result']['value'] + '\n'
@@ -1409,10 +1472,9 @@ class Metadata(object):
         faq = self.metadata_item_value(faq_item)
         supportChannels = self.metadata_item_value(supportChannels_item)
 
-        support_md = (self.source_markdown(support_item) + '### Support  \n' + support) if support else ''
-        faq_md = (self.source_markdown(faq_item) + '### FAQ  \n' + faq) if faq else ''
-        supportChannels_md = (self.source_markdown(supportChannels_item) + '### Support Channels  \n' +
-                              supportChannels) if supportChannels else ''
+        support_md = ('### Support  \n' + support + '\n\n') if support else ''
+        faq_md = ('### FAQ  \n' + faq + '\n\n') if faq else ''
+        supportChannels_md = ('### Support Channels  \n' + supportChannels + '\n\n') if supportChannels else ''
 
         return support_md + faq_md + supportChannels_md if support or faq or supportChannels else None
 
@@ -1646,8 +1708,11 @@ class Metadata(object):
         return (date_of_extraction - last_update).days
 
     def stars(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'stargazers_count'), 0), 'result'), 'value')
-
+        value = safe_dic(safe_dic(safe_list(safe_dic(self.md, 'stargazers_count'), 0), 'result'), 'value')
+        if value is None or value == "" or str(value).lower() == "none":
+            return 0
+        return value
+    
     def n_releases(self):
         rel = safe_dic(self.md, 'releases')
         return len(rel) if rel is not None else 0
