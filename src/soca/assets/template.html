@@ -18,8 +18,8 @@
 		<h2 id="nav-title">Software Catalog</h2>
 		<input id="searchBar" placeholder="Search for repositories..." title="Type in a repository" type="text"/>
 		<div data-toggle="tooltip" data-placement="right" title="About page"><a href="about.html"><img src="img/help.png" class="grey-color-svg" style="height: 2rem; margin-left: 1rem;"></a></div>
-		<div data-toggle="tooltip" data-placement="right" title="SOCA Dashboard Analytics (ORG)"><a id="dashverse-org-link" href="#" target="_blank"><img src="img/statIcon-org.svg" class="grey-color-svg" style="height: 2rem; margin-left: 1rem;"></a></div>
-		<div data-toggle="tooltip" data-placement="right" title="SOCA Dashboard Analytics (user)"><a id="dashverse-user-link" href="#" target="_blank"><img src="img/statIcon-user.svg" class="grey-color-svg" style="height: 2rem; margin-left: 1rem;"></a></div>
+		<div data-toggle="tooltip" data-placement="right" title="Organization analytics dashboard"><a id="dashverse-org-link" href="#" target="_blank"><img src="img/statIcon-org.svg" class="grey-color-svg" style="height: 2rem; margin-left: 1rem;"></a></div>
+		<div data-toggle="tooltip" data-placement="right" title="User analytics dashboard"><a id="dashverse-user-link" href="#" target="_blank"><img src="img/statIcon-user.svg" class="grey-color-svg" style="height: 2rem; margin-left: 1rem;"></a></div>
 	</div>
 	<div class="filters-wrapper">
 		<div class="filters">
@@ -77,6 +77,10 @@
 
 
 <div id="myCards">
+  <div id="portal-loading" class="portal-loading" role="status" aria-live="polite">
+    <div class="portal-spinner" aria-hidden="true"></div>
+    <p>Loading software catalog...</p>
+  </div>
 </div>
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">

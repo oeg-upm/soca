@@ -1,0 +1,1307 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.11.2",
+        "somef_schema_version": "1.0.0",
+        "date": "2026-07-30 13:25:59"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/SoftwareUnderstanding/sw-metadata-bot",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SoftwareUnderstanding/sw-metadata-bot",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SoftwareUnderstanding/sw-metadata-bot",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "SoftwareUnderstanding",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2025-12-15T11:31:30Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "2025-12-15",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2026-07-08T14:42:56Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "2026-07-08",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://spdx.org/licenses/MIT",
+                "spdx_id": "MIT",
+                "identifier": "https://spdx.org/licenses/MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT",
+                "type": "File_dump",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://spdx.org/licenses/MIT"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2025 Software Understanding\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://spdx.org/licenses/MIT",
+                "identifier": "https://spdx.org/licenses/MIT"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "https://spdx.org/licenses/MIT",
+                "type": "License",
+                "identifier": "https://spdx.org/licenses/MIT",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "MIT",
+                "spdx_id": "MIT",
+                "name": "MIT License",
+                "type": "License"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "See [LICENSE](LICENSE) file.",
+                "type": "Text_excerpt",
+                "original_header": "\ud83d\udcdd License",
+                "parent_header": [
+                    "sw-metadata-bot"
+                ]
+            },
+            "confidence": 1.0,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A repository to keep the code of the RSMetaCheck bot for pushing issues with existing repository metadata",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "A repository to keep the code of the RSMetaCheck bot for pushing issues with existing repository metadata",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Metadata quality bot for software repositories, leveraging metacheck for analysis and GitHub/GitLab APIs for issue management.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "sw-metadata-bot",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "sw-metadata-bot",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "SoftwareUnderstanding/sw-metadata-bot",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 2,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "homepage": [
+        {
+            "result": {
+                "value": "https://softwareunderstanding.github.io/sw-metadata-bot/",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SoftwareUnderstanding/sw-metadata-bot",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 286006
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 2317
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 557
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "name": "Python",
+                "value": "Python",
+                "type": "Programming_language",
+                "version": "3"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/349561735",
+                "tag": "v0.5.3",
+                "name": "0.5.3",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed (v0.5.0 -> v0.5.3)\r\n* ci: add converter codemeta to zenodo by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/135\r\n* Build(deps): bump the minor-patch group across 1 directory with 6 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/137\r\n* Add zenodo convert action by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/142\r\n* add optional parameter introduced in rsmetacheck wrapper by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/143\r\n* Rsmetacheck 0.3.3 and fix rsmetacheck fail on warning and pitfall by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/145\r\n* Build(deps): bump actions/checkout from 6 to 7 in the actions group across 1 directory by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/140\r\n* Build(deps): bump the minor-patch group with 4 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/141\r\n* Add link feedback issue by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/147\r\n* fix: handles gilab nested group url by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/148\r\n* Prerelease 0.5.1 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/146\r\n* ci: fix upload zenodo pipeline by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/149\r\n* ci: remove zenodo.yml and fix ci for release in zenodo by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/150\r\n* Build(deps): bump the minor-patch group with 3 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/152\r\n* Add zenodo test connection by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/151\r\n* bump version to 0.5.2 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/153\r\n* Fix publish ci by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/154\r\n* doc: bump version for release by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/157\r\n\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.5.0...v0.5.3",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.5.3",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.5.3",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.5.3",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/349561735",
+                "release_id": 349561735,
+                "date_created": "2026-07-06T13:04:38Z",
+                "date_published": "2026-07-06T13:06:06Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/348121389",
+                "tag": "v0.5.2",
+                "name": "0.5.2",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "0.5.1 has been skipped due to PyPi upload failed\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.5.0..v0.5.2",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.5.2",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.5.2",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.5.2",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/348121389",
+                "release_id": 348121389,
+                "date_created": "2026-07-02T15:05:15Z",
+                "date_published": "2026-07-02T15:08:03Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/333583037",
+                "tag": "v0.5.0",
+                "name": "v0.5.0",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n\r\nThe configuration file is now read using Pydantic to validate the fields and handle the export with explicit values. This improves the reliability of the configuration file and has been used to fix the \"unsubscribe\" bug. \r\nThis is a breaking change as it requires to update the configuration file used to run the analysis.\r\n\r\nIf a repo in the list is not handled correctly, it should now not break the loop and the rest of the repos should be handled correctly both in publish and run-analysis stages.\r\n\r\nRSmetacheck action is now used on this repo on every pull request.\r\n\r\n* Fix unsubscribe update config by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/129\r\n* fix: handle one repo failing causing the whole loop to break by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/131\r\n* ci: add rsmetacheck action by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/132\r\n* Bump rsmetacheck version by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/133\r\n\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.4.3...v0.5.0",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.5.0",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.5.0",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.5.0",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/333583037",
+                "release_id": 333583037,
+                "date_created": "2026-06-03T08:40:26Z",
+                "date_published": "2026-06-03T08:47:34Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/317817540",
+                "tag": "v0.4.3",
+                "name": "v0.4.3",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "\r\nThis release includes some patches discovered while beta testing the bot behaviour on SoftwareUnderstanding group\r\n\r\n## What's Changed\r\n* Fix W004 issue #108 for testing phase by @Anas-Elhounsri in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/109\r\n* Fix for #108, pyproject wheel version added by @Anas-Elhounsri in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/110\r\n* fix: w004  by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/111\r\n* Fix w002 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/112\r\n* Build(deps): bump the minor-patch group with 2 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/113\r\n* fix #115 unsubscribe + add bypass commit id flag by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/117\r\n* fix: #116 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/118\r\n* Bump version to 0.4.3 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/119\r\n\r\n## New Contributors\r\n* @Anas-Elhounsri made their first contribution in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/109\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.4.2...v0.4.3",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.4.3",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.4.3",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.4.3",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/317817540",
+                "release_id": 317817540,
+                "date_created": "2026-05-05T13:04:06Z",
+                "date_published": "2026-05-05T13:20:56Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/313956425",
+                "tag": "v0.4.2",
+                "name": "v0.4.2",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* adds custom.css to have mermaid diagram full width by @vuillaut in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/92\r\n* feat: revised issue template to  by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/95\r\n* Build(deps): bump actions/upload-pages-artifact from 4 to 5 in the actions group by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/96\r\n* Build(deps): update setuptools[test] requirement from <82.0.0 to <83.0.0 by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/80\r\n* doc: fix Zenodo DOI badge in README by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/98\r\n* Build(deps): bump the minor-patch group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/97\r\n* update package dependancy rsmetacheck to 0.3.0 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/104\r\n* Suggest codemeta if missing by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/102\r\n* Remove unused by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/105\r\n* Update version patch 0.4.2 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/106\r\n\r\n## New Contributors\r\n* @vuillaut made their first contribution in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/92\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.4.1...v0.4.2",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.4.2",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.4.2",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.4.2",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/313956425",
+                "release_id": 313956425,
+                "date_created": "2026-04-27T09:08:10Z",
+                "date_published": "2026-04-27T09:09:03Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/307146801",
+                "tag": "v0.4.1",
+                "name": "v0.4.1",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* fix: remove labels in gitlab and github apis (publish errors) by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/84\r\n* feat: add possibility to rerun failed published only by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/85\r\n* Git lookup use token by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/82\r\n* Build(deps): bump the minor-patch group with 3 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/79\r\n* 0.4.1 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/86\r\n* feat: add README.md in the files updated by the script by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/87\r\n\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.4.0...v0.4.1",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.4.1",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.4.1",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.4.1",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/307146801",
+                "release_id": 307146801,
+                "date_created": "2026-04-09T15:35:02Z",
+                "date_published": "2026-04-09T15:44:49Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/306621595",
+                "tag": "v0.4.0",
+                "name": "v0.4.0",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Relative path by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/75\r\n* Build(deps): bump the actions group with 5 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/72\r\n* Build(deps-dev): bump setuptools from 81.0.0 to 82.0.1 by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/73\r\n* Add zenodo by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/77\r\n\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.3.2...v0.4.0",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.4.0",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.4.0",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.4.0",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/306621595",
+                "release_id": 306621595,
+                "date_created": "2026-04-08T14:21:26Z",
+                "date_published": "2026-04-08T14:22:13Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/304258241",
+                "tag": "v0.3.2",
+                "name": "v0.3.2",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* add docker container creation by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/67\r\n* Fix rsmetacheck pypi by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/68\r\n* update diagram decision to consider closing opened issue if no more p\u2026 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/69\r\n* V0.3.2 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/71\r\n\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.3.1...v0.3.2",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.3.2",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.3.2",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.3.2",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/304258241",
+                "release_id": 304258241,
+                "date_created": "2026-04-01T15:14:51Z",
+                "date_published": "2026-04-01T15:16:43Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/303668776",
+                "tag": "v0.3.1",
+                "name": "v0.3.1",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Update doc by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/61\r\n* Fix doc mermaid by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/65\r\n\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.3.0...v0.3.1",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.3.1",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.3.1",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.3.1",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/303668776",
+                "release_id": 303668776,
+                "date_created": "2026-03-31T11:58:28Z",
+                "date_published": "2026-03-31T12:03:34Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/301899665",
+                "tag": "v0.3.0",
+                "name": "v0.3.0",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Issue management by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/51\r\n* Repo centered by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/58\r\n* Build(deps): bump the minor-patch group across 1 directory with 4 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/57\r\n* Build(deps): bump the actions group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/59\r\n\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.1.4...v0.3.0",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.3.0",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.3.0",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.3.0",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/301899665",
+                "release_id": 301899665,
+                "date_created": "2026-03-26T14:23:12Z",
+                "date_published": "2026-03-26T14:30:40Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/293592250",
+                "tag": "v0.1.4",
+                "name": "v0.1.4",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Add GitHub action by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/17\r\n* Build(deps-dev): bump the minor-patch group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/18\r\n* Build(deps): bump actions/upload-artifact from 4 to 6 by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/22\r\n* Build(deps): bump actions/checkout from 4 to 6 by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/21\r\n* Clean Bot behaviour and action by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/33\r\n* Improve issue creation by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/37\r\n* Fix 34 by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/39\r\n\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.1.3...v0.1.4",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.1.4",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.1.4",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.1.4",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/293592250",
+                "release_id": 293592250,
+                "date_created": "2026-03-05T16:55:37Z",
+                "date_published": "2026-03-05T16:56:43Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/278690578",
+                "tag": "v0.1.3",
+                "name": "v0.1.3",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Add Github actions for CI by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/8\r\n* Build(deps): bump actions/upload-pages-artifact from 3 to 4 by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/9\r\n* Build(deps): bump actions/checkout from 4 to 6 by @dependabot[bot] in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/10\r\n* Add FAIR elements by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/11\r\n* Prepare release pypi by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/12\r\n\r\n## New Contributors\r\n* @dependabot[bot] made their first contribution in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/9\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.1.1...0.1.3",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.1.3",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.1.3",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.1.3",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/278690578",
+                "release_id": 278690578,
+                "date_created": "2026-01-30T09:09:45Z",
+                "date_published": "2026-01-21T16:05:50Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/277467686",
+                "tag": "v0.1.1",
+                "name": "v0.1.1",
+                "author": {
+                    "name": "francoto",
+                    "type": "User"
+                },
+                "description": "## What's Changed\r\n* Fix beta test feedbacks by @francoto in https://github.com/SoftwareUnderstanding/sw-metadata-bot/pull/7\r\n\r\n\r\n**Full Changelog**: https://github.com/SoftwareUnderstanding/sw-metadata-bot/compare/v0.1.0...v0.1.1",
+                "tarball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/tarball/v0.1.1",
+                "zipball_url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/zipball/v0.1.1",
+                "html_url": "https://github.com/SoftwareUnderstanding/sw-metadata-bot/releases/tag/v0.1.1",
+                "url": "https://api.github.com/repos/SoftwareUnderstanding/sw-metadata-bot/releases/277467686",
+                "release_id": 277467686,
+                "date_created": "2026-01-19T11:14:57Z",
+                "date_published": "2026-01-16T16:59:48Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "version": [
+        {
+            "result": {
+                "value": "0.5.4.dev1",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "0.5.4.dev1",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "0.5.4.dev1",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "0.5.4.dev1",
+                "type": "Release",
+                "tag": "0.5.4.dev1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "title": "sw-metadata-bot",
+                "author": [
+                    {
+                        "type": "Agent",
+                        "name": "Tom Fran\u00c3\u00a7ois",
+                        "family_name": "Fran\u00c3\u00a7ois",
+                        "given_name": "Tom",
+                        "url": "https://orcid.org/0000-0001-5226-3089"
+                    }
+                ],
+                "url": "https://w3id.org/codemetasoft/",
+                "type": "SoftwareApplication",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "value": "10.5281/zenodo.19468976"
+                    },
+                    {
+                        "type": "swh",
+                        "value": "swh:1:dir:9f3d474c040158cc675e8db135767e0d2d3fba7b"
+                    }
+                ],
+                "format": "cff",
+                "value": "cff-version: 1.2.0\ntitle: sw-metadata-bot\nmessage: If you use this software, please cite it using the metadata from this file.\ntype: software\nauthors:\n- given-names: Tom\n  family-names: Fran\u00c3\u00a7ois\n  email: tom.francois@lapp.in2p3.fr\n  orcid: https://orcid.org/0000-0001-5226-3089\n  affiliation: Univ. Savoie Mont-Blanc, CNRS, LAPP\nidentifiers:\n- type: doi\n  value: 10.5281/zenodo.19468976\n- type: swh\n  value: swh:1:dir:9f3d474c040158cc675e8db135767e0d2d3fba7b\nrepository-code: https://github.com/SoftwareUnderstanding/sw-metadata-bot\nurl: https://w3id.org/codemetasoft/\nabstract: A repository to keep the code of the RSMetaCheck bot for pushing issues\n  with existing repository metadata\nkeywords:\n- metadata\n- codemeta\n- bot\n- software\nlicense: MIT\nversion: 0.5.4.dev1\ndate-released: 2026-07-08\n",
+                "datePublished": "2026"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/CITATION.cff"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing Guide\n\nDeveloper and maintainer steps to install, configure, and run sw-metadata-bot.\n\n## What the bot does\n\n- Run pitfalls detection using [RSMetaCheck package](https://github.com/SoftwareUnderstanding/RsMetaCheck)\n- Handle analysis for multiple repositories\n- Create repository centric output subfolders\n\n## Prerequisites\n\n- Python 3.10, 3.11, or 3.12\n- Git (``git`` executable available on ``PATH``)\n- GitHub or GitLab personal access token with permission to create issues\n- Optional: [`uv`](https://docs.astral.sh/uv) (recommended)\n\nGit is a system dependency used for repository commit lookup\n(``git ls-remote`` fallback) and is not installed through ``pyproject.toml``.\n\n## Install\n\n### Use the package CLI\n\nAfter cloning this project, set up the python environnment with uv:\n\n```bash\nuv sync\n```\n\nThis will create the virtual environnment, download the dependencies and build the package locally.\n\n### Use this package as dependency\n\nWith `uv` (recommended):\n\n```bash\nuv add sw-metadata-bot\n```\n\nOr with pip\nWith `pip`:\n\n```bash\npip install sw-metadata-bot\n```\n\nThe package metadata also exposes standard extras for release builds:\n\n```bash\npip install \"sw-metadata-bot[docs]\"\npip install \"sw-metadata-bot[test]\"\npip install \"sw-metadata-bot[dev]\"\n```\n\n## Configure authentication\n\nExport your tokens (only set what you need):\n\n```bash\nexport GITHUB_API_TOKEN=ghp_xxxxxxxxxxxx      # GitHub.com\nexport GITLAB_API_TOKEN=glpat_xxxxxxxxxxxx    # GitLab.com\n```\n\nConvenient one-liner to load a `.env` file:\n\n```bash\nset -a; source .env; set +a\n```\n\nExample `.env`:\n\n```bash\nGITHUB_API_TOKEN=ghp_xxxxxxxxxxxx\nGITLAB_API_TOKEN=glpat_xxxxxxxxxxxx\n```\n\n## Run complete pipeline\n\n### Create configuration file\n\nThe pipeline now uses a single configuration file as its source of truth for:\n\n- repository list `\"repositories\"`\n- custom issue message `\"custom_message\"`\n- inline opt-outs `\"opt_outs\"`\n- output root `\"root_dir\"`\n- run name `\"run_name\"`\n- default snapshot-tag format `\"snapshot_tag_format\"`\n\nExample config:\n\n```json\n{\n  \"repositories\": [\n    \"https://github.com/SoftwareUnderstanding/sw-metadata-bot\",\n    \"https://github.com/SoftwareUnderstanding/RsMetaCheck\"\n  ],\n  \"issues\": {\n    \"custom_message\": \"This is a issue created for testing purposes. Several metadata issues were identified and could be addressed.\",\n    \"opt_outs\": [\n    ]\n  },\n  \"outputs\": {\n    \"root_dir\": \"assets\",\n    \"run_name\": \"example_run\",\n    \"snapshot_tag_format\": \"%Y%m%d\"\n  }\n}\n```\n\n`opt-out` lists the repositories for which issues won't be submitted but the repository is still analysed and part of the result outputs.\n\n### Run analysis\n\nTo run the bot, start with analysis.\n\n```bash\nuv run sw-metadata-bot run-analysis \\\n  --config-file assets/ossr_list_url.json\n```\n\nYou can override the generated snapshot tag when needed.\n\n```bash\nuv run sw-metadata-bot run-analysis \\\n  --config-file <path_to_your_config.json> \\\n  --snapshot-tag <example_suffix>\n```\n\nOutput structure using the example config file provided:\n\n```text\nassets/\n\u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac example_run/\n  \u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac <snapshot_tag>/\n    \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac analysis_results.json\n    \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac config.json\n    \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac run_report.json\n    \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac github_com_softwareunderstanding_sw_metadata_bot/\n    \u00e2\u201d\u201a   \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac issue_report.md\n    \u00e2\u201d\u201a   \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac pitfall.jsonld\n    \u00e2\u201d\u201a   \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac report.json\n    \u00e2\u201d\u201a   \u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac somef_output.json\n    \u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac github_com_softwareunderstanding_rsmetacheck/\n      \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac issue_report.md\n      \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac pitfall.jsonld\n      \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac report.json\n      \u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac somef_output.json\n```\n\n- `assets/`: output root selected by `\"root_dir\": \"assets\"` in the config.\n- `example_run/`: run namespace selected by `\"run_name\": \"example_run\"`; this keeps outputs from different campaigns separated.\n- `<snapshot_tag>/`: one analysis snapshot folder, usually generated from `\"snapshot_tag_format\": \"%Y%m%d\"` unless you override it with `--snapshot-tag`.\n- `analysis_results.json`: global analysis summary for the full run, including the repositories that were evaluated and metadata such as commit identifiers.\n- `config.json`: a copy of the effective configuration used for this snapshot, stored for reproducibility.\n- `run_report.json`: top-level decision report for the whole batch, with counters and one record per repository.\n- `github_com_softwareunderstanding_sw_metadata_bot/`: per-repository folder for `https://github.com/SoftwareUnderstanding/sw-metadata-bot`; repository URLs are sanitized to lowercase folder names.\n- `github_com_softwareunderstanding_rsmetacheck/`: per-repository folder for `https://github.com/SoftwareUnderstanding/RsMetaCheck`; it contains the same artifact set as the other repository folder.\n- `issue_report.md`: human-readable markdown report that can be reviewed before publication and reused as issue content.\n- `pitfall.jsonld`: raw RSMetacheck JSON-LD output for the repository, including detected checks and evidence.\n- `report.json`: machine-readable per-repository report summarizing findings, action/decision, identifiers, and links to generated artifacts.\n- `somef_output.json`: raw SOMEF metadata extraction output used as input for the analysis pipeline.\n\nThe exact repository folder names depend on the repository URLs in your config, but the files created inside each repository folder follow this same pattern.\n\n### Publish\n\nIf you want to submit the analysis to the actual repositories, you can publish from an existing analysis snapshot (no new analysis is generated):\n\n```bash\nuv run sw-metadata-bot publish \\\n  --analysis-root outputs/ossr/<snapshot_tag>\n```\n\nThis requires setting up environment variables `GITHUB_API_TOKEN` / `GITLAB_API_TOKEN` with working tokens.\nWe recommend creating a `.env` file.\nYou can use the `uv run sw-metadata-bot verify-tokens` command to test them after set up.\n\n## Troubleshooting\n\n- **Auth failed / 401**: Check `GITHUB_API_TOKEN` / `GITLAB_API_TOKEN` are exported and valid.\n- **403 / 404 on issue creation**: You need write/triage permissions on the repository. Test with repos you own first.\n- **Platform not supported**: Repo must be GitHub or GitLab (self-hosted GitLab is auto-detected).\n- **Review before posting**: Inspect snapshot reports after `run-analysis`, then run `publish` on the selected analysis root.\n- **Publish failed because of transient API issues**: Fix the cause (for example wait for rate-limit reset or refresh token), then rerun publish with retry mode:\n\n```bash\nuv run sw-metadata-bot publish \\\n  --analysis-root outputs/ossr/<snapshot_tag> \\\n  --retry-failed\n```\n\nAlready posted records remain skipped for idempotency; retry mode only re-attempts eligible failed records.\n\n## CI test policy\n\nThe CI intentionally separates deterministic unit tests from real GitLab integration tests:\n\n- Unit tests are always blocking and run on every PR/push.\n- GitLab integration tests are conditional and run only on `main`, scheduled runs, or manual dispatch.\n- Integration tests require `GITLAB_API_TOKEN` to be configured in GitHub repository secrets.\n\nThis keeps contributor PRs stable while still validating live GitLab API behavior regularly.\n\n### Run tests locally\n\nRun default (unit) suite:\n\n```bash\nuv run pytest -m \"not integration_gitlab\"\n```\n\nRun GitLab integration tests (requires token):\n\n```bash\nexport GITLAB_API_TOKEN=glpat_xxxxxxxxxxxx\nuv run pytest --run-integration-gitlab -m \"integration_gitlab\"\n```\n\n## CI test policy\n\nThe CI intentionally separates deterministic unit tests from real GitLab integration tests:\n\n- Unit tests are always blocking and run on every PR/push.\n- GitLab integration tests are conditional and run only on `main`, scheduled runs, or manual dispatch.\n- Integration tests require `GITLAB_API_TOKEN` to be configured in GitHub repository secrets.\n\nThis keeps contributor PRs stable while still validating live GitLab API behavior regularly.\n\n### Run tests locally\n\nRun default (unit) suite:\n\n```bash\nuv run pytest -m \"not integration_gitlab\"\n```\n\nRun GitLab integration tests (requires token):\n\n```bash\nexport GITLAB_API_TOKEN=glpat_xxxxxxxxxxxx\nuv run pytest --run-integration-gitlab -m \"integration_gitlab\"\n```\n\n## Supported platforms\n\n- GitHub.com\n- Gitlab.com\n\nSelf-hosted GitLab instances are supported when you provide a token for the target host (not been tested yet).\nRun the bot against your own organization or repositories where you have permission to open and manage issues.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/CONTRIBUTING.md"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml",
+                "type": "Url",
+                "format": "pyproject.toml"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "copyright_holder": [
+        {
+            "result": {
+                "value": "Software Understanding",
+                "type": "Agent",
+                "year": "2025"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/LICENSE"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "value": "SoftwareSourceCode",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.95953539463446,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9063158477215655,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9008541542904104,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9182084691853337,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9242038123122107,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9270201602949296,
+            "technique": "supervised_classification"
+        }
+    ],
+    "contributor": [
+        {
+            "result": {
+                "value": "Thomas Vuillaume",
+                "name": "Thomas Vuillaume",
+                "type": "Agent",
+                "given_name": "Thomas",
+                "last_name": "Vuillaume",
+                "email": "thomas.vuillaume@lapp.in2p3.fr",
+                "affiliation": "Univ. Savoie Mont-Blanc, CNRS, LAPP"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Daniel Garijo",
+                "name": "Daniel Garijo",
+                "type": "Agent",
+                "given_name": "Daniel",
+                "last_name": "Garijo",
+                "email": "daniel.garijo@upm.es",
+                "affiliation": "Universidad Polit\u00e9cnica de Madrid "
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Anas El Hounsri",
+                "name": "Anas El Hounsri",
+                "type": "Agent",
+                "given_name": "Anas",
+                "last_name": "El Hounsri",
+                "email": "a.elhounsri@upm.es",
+                "affiliation": "Universidad Polit\u00e9cnica de Madrid "
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        }
+    ],
+    "date_published": [
+        {
+            "result": {
+                "value": "2026-01-16",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": [
+                    "codemeta",
+                    "bot",
+                    "software",
+                    "metadata"
+                ],
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "codemeta",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "metadata",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "bot",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "quality software",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "development_status": [
+        {
+            "result": {
+                "value": "active",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        }
+    ],
+    "author": [
+        {
+            "result": {
+                "value": "Software Understanding",
+                "type": "Agent",
+                "identifier": "https://github.com/SoftwareUnderstanding"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Tom Fran\u00e7ois",
+                "type": "Agent",
+                "email": "tom.francois@lapp.in2p3.fr",
+                "affiliation": "Univ. Savoie Mont-Blanc, CNRS, LAPP",
+                "identifier": "https://orcid.org/0000-0001-5226-3089"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "name": "Tom Fran\u00e7ois",
+                "email": "tom.francois@lapp.in2p3.fr",
+                "type": "Agent",
+                "value": "Tom Fran\u00e7ois"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "click>=8.3.1",
+                "name": "click",
+                "version": ">=8.3.1",
+                "type": "SoftwareDependency"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "rsmetacheck>=0.2.1",
+                "name": "rsmetacheck",
+                "version": ">=0.2.1",
+                "type": "SoftwareDependency"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "python-dotenv>=1.0.0",
+                "name": "python-dotenv",
+                "version": ">=1.0.0",
+                "type": "SoftwareDependency"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "requests>=2.32.5",
+                "name": "requests",
+                "version": ">=2.32.5",
+                "type": "SoftwareDependency"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "click>=8.3.1",
+                "name": "click",
+                "version": ">=8.3.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "rsmetacheck>=0.3.3",
+                "name": "rsmetacheck",
+                "version": ">=0.3.3",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "python-dotenv>=1.0.0",
+                "name": "python-dotenv",
+                "version": ">=1.0.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "requests>=2.32.5",
+                "name": "requests",
+                "version": ">=2.32.5",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "setuptools[test]<83.0.0",
+                "name": "setuptools[test]",
+                "version": "<83.0.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pydantic>=2.13.4",
+                "name": "pydantic",
+                "version": ">=2.13.4",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "setuptools>=69",
+                "name": "setuptools",
+                "version": ">=69",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "wheel>= 0.47.0, <0.48.0",
+                "name": "wheel",
+                "version": ">= 0.47.0, <0.48.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "runtime_platform": [
+        {
+            "result": {
+                "value": "Python 3.11, Python 3.12",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Python>=3.11,<3.13",
+                "name": "Python",
+                "version": ">=3.11,<3.13",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/ossr_analysis.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/update_version_package.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_package_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "package_id": [
+        {
+            "result": {
+                "value": "sw-metadata-bot",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/pyproject.toml"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "```md\n### [P002](https://w3id.org/rsmetacheck/catalog/#P002)\n**Evidence:** P002 detected: LICENSE file contains unreplaced template placeholders\n\n**Suggestion:** Update the copyright section with accurate names, organizations, and the current year. Personalizing this section ensures clarity and legal accuracy.\n```\n\n",
+                "type": "Text_excerpt",
+                "original_header": "Example Issues You Might See",
+                "parent_header": [
+                    "sw-metadata-bot",
+                    "\ud83d\udccb What This Bot Does"
+                ]
+            },
+            "confidence": 0.8,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md"
+        }
+    ],
+    "run": [
+        {
+            "result": {
+                "value": "See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and usage instructions.\n\nThe pipeline is config driven: one JSON file defines the repository list, issue message, inline opt-outs, and output layout.\n\nSupported platforms:\n\n- \u2705 GitHub.com\n- \u2705 Gitlab.com\n\nThe bot is handling self-hosted gitlab platform but requires providing a token to this server (and not gitlab.com).\n\n",
+                "type": "Text_excerpt",
+                "original_header": "\ud83d\udee0\ufe0f For Maintainers Running This Bot",
+                "parent_header": [
+                    "sw-metadata-bot"
+                ]
+            },
+            "confidence": 0.8,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.19468976"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://archive.softwareheritage.org/swh:1:rev:fc64150edf2e35f045cf3858d81b00ca6e7f6e68"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "sw-metadata-bot"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md"
+        }
+    ],
+    "images": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/coverage.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/interrogate_badge.svg"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SoftwareUnderstanding/sw-metadata-bot/main/README.md"
+        }
+    ]
+}

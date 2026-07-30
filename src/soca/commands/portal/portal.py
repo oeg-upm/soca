@@ -47,14 +47,14 @@ def create_embedded_dashboard_pages(portal_output_dir):
 
     create_dashboard_page(
         output_file=portal_output_dir / "dashboard-org.html",
-        title="SQOO Organization Dashboard",
+        title="Organization analytics dashboard",
         dashboard_ref=org_dashboard_id,
         superset_domain=superset_public_url,
     )
 
     create_dashboard_page(
         output_file=portal_output_dir / "dashboard-repo.html",
-        title="SQOO Repository Dashboard",
+        title="User analytics dashboard",
         dashboard_ref=repo_dashboard_id,
         superset_domain=superset_public_url,
     )
@@ -266,7 +266,7 @@ def list_owners(repo_metadata_dir):
                 repo_metadata = json.load(json_metadata)
                 md = Metadata(repo_metadata_dir, repo_metadata)
                 owner = md.owner()
-                if owner not in owners:
+                if owner and owner not in owners:
                     owners.append(owner)
 
     return owners

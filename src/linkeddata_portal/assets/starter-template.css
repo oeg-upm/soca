@@ -1,0 +1,26 @@
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.linkeddata-card-title {
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.panel-body > a > img {
+  display: block;
+  max-width: 100%;
+  max-height: 220px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}

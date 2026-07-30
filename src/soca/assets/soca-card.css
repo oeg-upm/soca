@@ -1,4 +1,8 @@
-.soca-card *{margin:0;box-sizing:border-box;color:#3e3e3e;font-family:Helvetica}
+.soca-card * {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
 .soca-card .copy-btn:active{position:relative;top:1px;background-color:#3e3e3e;color:#e0e0e0}
 .soca-card .copy-btn{margin-left: 0.3rem;border:none;height:1.1rem;width:1rem;cursor:pointer;}
 .soca-card .copy-citation-btn:active{position:relative;top:1px;background-color:#3e3e3e;color:#e0e0e0}
@@ -19,42 +23,200 @@
 .soca-card .tooltip.bottom-right .tooltip-arrow{top:0;left:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#3e3e3e}
 .soca-card .tooltip-inner{max-width:200px;padding:3px 8px;color:#e0e0e0;text-align:center;background-color:#3e3e3e;border-radius:4px}
 .soca-card .tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}
-.soca-card {display: flex; flex-direction: column; justify-content: space-between; line-height: 1.42857143; margin: 0.2rem; min-width: 28rem; max-width: 28rem; min-height: 15rem; max-height: 20rem; padding: 1.3rem; border-radius: 19px; background-color: #e0e0e0; box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;}
+.soca-card {
+    position: relative;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    line-height: 1.5;
+    margin: 0.55rem;
+
+    min-width: 28rem;
+    max-width: 28rem;
+    min-height: 15rem;
+    height: auto;
+    max-height: none;
+
+    padding: 1.3rem;
+
+    color: var(--text-primary);
+    background-color: var(--surface-background);
+
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--accent-color);
+    border-radius: 16px;
+
+    box-shadow: var(--shadow-soft);
+
+    transition:
+        top 0.18s ease,
+        box-shadow 0.18s ease,
+        border-color 0.18s ease;
+}
+
+.soca-card:hover {
+    top: -5px;
+    border-color: #aebfcd;
+    box-shadow:
+        0 14px 30px rgba(44, 58, 72, 0.18),
+        0 3px 8px rgba(44, 58, 72, 0.08);
+}
+
 .soca-card .repo-logo{width: 5.5rem;}
-.soca-card .description{text-align: justify; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 6; line-clamp: 6; -webkit-box-orient: vertical;}
+.soca-card .description {
+  color: #586674;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  text-align: left;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
 .soca-card .recently-updated{width: 1.4rem; height: 1.4rem; border-radius: 50%; margin-left: auto; margin-right: 0.1rem; background-color: #3e3e3e;}
 .soca-card .repo-icon{height: 1.1rem; margin-left: 0.2rem; margin-right: 0.2rem;}
-.soca-card .card-row{display: flex; flex-direction: row; justify-content: space-between;}
+.soca-card .card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
 .soca-card .card-col{width: 72%;}
 .soca-card .flex-horizontal{display: flex; align-items: center; flex-direction: row;}
 .soca-card .float-right{justify-content: flex-end;}
 .soca-card .grey-color-svg{filter: brightness(0) saturate(100%) invert(26%) sepia(0%) saturate(9%) hue-rotate(190deg) brightness(93%) contrast(100%);}
-.soca-card .title:hover{text-decoration: underline;}
-.soca-card .ref-repo-icons{flex-wrap: wrap;}
-.soca-card .icon-wrapper {cursor: pointer; width: 2rem; display: flex; align-items: center; justify-content: center;}
+.soca-card .ref-repo-icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.15rem;
+
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+
+    border-top: 1px solid var(--border-color, #dfe5eb);
+}
+.soca-card .icon-wrapper {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.soca-card .icon-wrapper:hover {
+    background-color: var(--accent-background);
+    box-shadow: inset 0 0 0 1px var(--header-border);
+}
 .highlight *{font-family: monospace; font-size: large;}
-.modal {display: none;position: fixed;z-index: 1;padding-top: 20vh;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;background-color: rgb(0,0,0);background-color: rgba(0,0,0,0.4); cursor: default;}
-.modal-content {background-color: #e0e0e0;margin: auto;padding: 20px;border: 0px;width: 90%;max-width: 40rem;border-radius: 1rem;}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+
+    padding-top: 12vh;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    background-color: rgba(24, 32, 43, 0.48);
+    backdrop-filter: blur(2px);
+
+    cursor: default;
+}
+.modal-content {
+    background-color: var(--surface-background, #ffffff);
+    margin: auto;
+    padding: 1.5rem;
+
+    width: 90%;
+    max-width: 40rem;
+
+    border: 1px solid var(--border-color, #dfe5eb);
+    border-radius: 16px;
+
+    box-shadow: 0 18px 50px rgba(25, 35, 48, 0.22);
+}
 .modal-on{display: block;}
 .close {color: #3e3e3e;float: right;font-size: 28px;font-weight: bold;position: relative;bottom: 0.8rem;}
 .close:hover, .close:focus {  color: #000;  text-decoration: none; cursor: pointer;}
 .soca-card .repo-type{height: 1.4rem; margin-left: 0.2rem; margin-right: 0.2rem; cursor: pointer;}
 
 .soca-card .repo-header {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+
+    margin: 0 0 0.85rem 0;
+    padding: 0.75rem 0.85rem;
+
+    background: linear-gradient(
+        90deg,
+        #e5eef7 0%,
+        #f4f7fa 100%
+    );
+
+    border: 1px solid #c8d5e0;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 10px;
+
+    box-shadow: 0 2px 7px rgba(44, 58, 72, 0.10);
 }
 
+.soca-card .title,
+.soca-card .title a {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration: none;
+}
+
+.soca-card .title:hover,
+.soca-card .title a:hover {
+    color: var(--accent-hover);
+    text-decoration: none;
+}
 .repo-owner {
-  background-color: #eef3ff;
-  color: #2c5cc5;
-  padding: 3px 8px;
-  border-radius: 999px;
-  font-size: 10px;
-  font-weight: 600;
-  white-space: nowrap;
-  transition: background-color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+
+    padding: 4px 10px;
+
+    background-color: #ffffff;
+    color: var(--accent-color);
+
+    border: 1px solid #c9daeb;
+    border-radius: 999px;
+
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.repo-owner:hover {
+    color: var(--accent-hover);
+    background-color: #f7fbff;
+    border-color: var(--accent-color);
 }
 
 
@@ -88,4 +250,280 @@
   background: #f7f7f7;
   padding: 0.1rem 0.25rem;
   border-radius: 4px;
+}
+
+.soca-card .modal-content > span:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+
+    border-bottom: 2px solid var(--header-border);
+}
+
+.soca-card .modal-content > span:nth-of-type(2) h2 {
+    color: var(--text-primary);
+    margin: 0 !important;
+}
+
+/* Botón desplegable del informe */
+.soca-card .quality-details {
+    margin-top: 1rem;
+}
+
+.soca-card .quality-details > summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.7rem 0.9rem;
+
+    color: var(--accent-hover);
+    background: var(--accent-background);
+
+    border: 1px solid var(--header-border);
+    border-radius: 8px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    list-style: none;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+/*************quality********************************/
+.soca-card .quality-details > summary:hover {
+    background: #dce9f5;
+    border-color: var(--accent-color);
+}
+
+.soca-card .quality-details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.soca-card .quality-details > summary::before {
+    content: "\25B8";
+    font-size: 0.85rem;
+    transition: transform 0.2s ease;
+}
+
+.soca-card .quality-details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.soca-card .rsfc-report {
+    margin-top: 0.8rem;
+    padding: 1.25rem 1.4rem;
+
+    color: var(--text-primary);
+    background: #fbfcfd;
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    font-size: 0.92rem;
+    line-height: 1.55;
+
+    overflow-x: auto;
+}
+.soca-card .rsfc-report h1 {
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.6rem;
+
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--accent-background);
+
+    font-size: 1.55rem;
+    line-height: 1.25;
+}
+
+.soca-card .rsfc-report h2 {
+    margin: 1.4rem 0 0.65rem;
+
+    color: var(--accent-hover);
+
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.soca-card .rsfc-report h3 {
+    margin: 1.1rem 0 0.5rem;
+
+    color: var(--text-primary);
+
+    font-size: 1.05rem;
+    line-height: 1.3;
+}
+
+.soca-card .rsfc-report h4,
+.soca-card .rsfc-report h5,
+.soca-card .rsfc-report h6 {
+    margin: 0.9rem 0 0.4rem;
+    font-size: 0.95rem;
+}
+.soca-card .rsfc-report p {
+    margin: 0.55rem 0;
+    color: var(--text-secondary);
+}
+
+.soca-card .rsfc-report ul,
+.soca-card .rsfc-report ol {
+    margin: 0.6rem 0 0.9rem;
+    padding-left: 1.5rem;
+}
+
+.soca-card .rsfc-report li {
+    margin: 0.3rem 0;
+    line-height: 1.5;
+}
+
+.soca-card .rsfc-report strong {
+    color: var(--text-primary);
+}
+.soca-card .rsfc-report a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    overflow-wrap: anywhere;
+}
+
+.soca-card .rsfc-report a:hover {
+    color: var(--accent-hover);
+}
+
+.soca-card .rsfc-report code {
+    padding: 0.1rem 0.3rem;
+
+    color: #32475a;
+    background: #edf2f6;
+
+    border: 1px solid #dce4eb;
+    border-radius: 4px;
+
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.88em;
+}
+
+.soca-card .rsfc-report pre {
+    margin: 0.8rem 0;
+    padding: 1rem;
+
+    background: #f2f5f7;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.soca-card .rsfc-report pre code {
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+.soca-card .rsfc-report table {
+    width: 100%;
+    margin: 1rem 0;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    font-size: 0.85rem;
+    line-height: 1.4;
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.soca-card .rsfc-report th {
+    padding: 0.7rem 0.8rem;
+
+    color: var(--text-primary);
+    background: var(--accent-background);
+
+    border-bottom: 1px solid var(--header-border);
+
+    font-weight: 700;
+    text-align: left;
+}
+
+.soca-card .rsfc-report td {
+    padding: 0.65rem 0.8rem;
+
+    background: #ffffff;
+    border-bottom: 1px solid #e7ebef;
+
+    vertical-align: top;
+}
+
+.soca-card .rsfc-report tr:last-child td {
+    border-bottom: 0;
+}
+
+.soca-card .rsfc-report tbody tr:hover td {
+    background: #f5f8fa;
+}
+/* Encabezado de cada indicador del informe RSFC */
+.soca-card .rsfc-report h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+
+    margin: 1.4rem 0 0.75rem;
+    padding: 0.65rem 0.8rem;
+
+    color: var(--accent-hover);
+    background: linear-gradient(
+        90deg,
+        var(--accent-background) 0%,
+        #f8fafc 100%
+    );
+
+    border: 1px solid var(--header-border);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 8px;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+    overflow-wrap: anywhere;
+}
+
+
+.modal-content {
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    margin-bottom: 1rem;
+    padding-right: 0.4rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* Título de cada proceso dentro de un indicador RSFC */
+.soca-card .rsfc-report h4 {
+    display: block;
+
+    margin: 1rem 0 0.65rem;
+    padding: 0.45rem 0.7rem;
+
+    color: #34495e;
+    background-color: #f3f7fb;
+
+    border-left: 3px solid #7fa6cc;
+    border-radius: 0 6px 6px 0;
+
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.35;
 }

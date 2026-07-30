@@ -1,0 +1,576 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.11.2",
+        "somef_schema_version": "1.0.0",
+        "date": "2026-07-30 13:26:06"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/EVERSE-ResearchSoftware/QualityPipelines",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "EVERSE-ResearchSoftware",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2025-03-27T10:27:24Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2026-07-27T13:29:41Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://spdx.org/licenses/MIT",
+                "spdx_id": "MIT",
+                "identifier": "https://spdx.org/licenses/MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT",
+                "type": "File_dump",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://spdx.org/licenses/MIT"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2025 EVERSE\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://spdx.org/licenses/MIT",
+                "identifier": "https://spdx.org/licenses/MIT"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/LICENSE"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "EVERSE Software Quality Pipelines",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "EVERSE Research Software Quality Indicators",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "QualityPipelines",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "EVERSE-ResearchSoftware/QualityPipelines",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 12,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 10,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "homepage": [
+        {
+            "result": {
+                "value": "http://everse.software/QualityPipelines/",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "https://github.com/EVERSE-ResearchSoftware/QualityPipelines",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/EVERSE-ResearchSoftware/QualityPipelines/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 121526
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Makefile",
+                "name": "Makefile",
+                "type": "Programming_language",
+                "size": 996
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/releases/334794555",
+                "tag": "v0.2.0",
+                "name": "v0.2.0",
+                "author": {
+                    "name": "kaygraf",
+                    "type": "User"
+                },
+                "description": "v0.2.0 of resqui - a tool and framework for software quality pipelines by EVERSE\r\n\r\n- Split out GitHub action to https://github.com/EVERSE-ResearchSoftware/resqui-github-action\r\n- Reorganised documentation:\r\n  - base information stays in [/README.md](https://github.com/EVERSE-ResearchSoftware/QualityPipelines/blob/main/README.md)\r\n  - in-depth information at [GitHub page](https://everse.software/QualityPipelines/how-to/custom-configuration)\r\n- Included tests\r\n- Add check that result of a quality tool exists\r\n- Add check for GitHub token",
+                "tarball_url": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/tarball/v0.2.0",
+                "zipball_url": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/zipball/v0.2.0",
+                "html_url": "https://github.com/EVERSE-ResearchSoftware/QualityPipelines/releases/tag/v0.2.0",
+                "url": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/releases/334794555",
+                "release_id": 334794555,
+                "date_created": "2026-06-05T07:41:09Z",
+                "date_published": "2026-06-05T07:41:33Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/releases/288736828",
+                "tag": "v0.1.7",
+                "name": "v0.1.7",
+                "author": {
+                    "name": "vuillaut",
+                    "type": "User"
+                },
+                "description": "v0.1.7 of resqui - a tool and framework for software quality pipelines by EVERSE",
+                "tarball_url": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/tarball/v0.1.7",
+                "zipball_url": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/zipball/v0.1.7",
+                "html_url": "https://github.com/EVERSE-ResearchSoftware/QualityPipelines/releases/tag/v0.1.7",
+                "url": "https://api.github.com/repos/EVERSE-ResearchSoftware/QualityPipelines/releases/288736828",
+                "release_id": 288736828,
+                "date_created": "2026-02-03T10:18:46Z",
+                "date_published": "2026-02-20T14:18:40Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "version": [
+        {
+            "result": {
+                "value": "0.1.7",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/CITATION.cff"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "title": "resqui",
+                "author": [
+                    {
+                        "type": "Agent",
+                        "name": "The EVERSE project"
+                    },
+                    {
+                        "type": "Agent",
+                        "name": "Tamas Gal",
+                        "family_name": "Gal",
+                        "given_name": "Tamas",
+                        "url": "https://orcid.org/0000-0001-7821-8673"
+                    },
+                    {
+                        "type": "Agent",
+                        "name": "Thomas Vuillaume",
+                        "family_name": "Vuillaume",
+                        "given_name": "Thomas",
+                        "url": "https://orcid.org/0000-0002-5686-2078"
+                    },
+                    {
+                        "type": "Agent",
+                        "name": "Kay Graf",
+                        "family_name": "Graf",
+                        "given_name": "Kay",
+                        "url": "https://orcid.org/0000-0002-1921-5568"
+                    }
+                ],
+                "url": "https://github.com/EVERSE-ResearchSoftware/QualityPipelines",
+                "type": "SoftwareApplication",
+                "format": "cff",
+                "value": "cff-version: 1.2.0\nmessage: If you use this software, please cite it as below.\ntype: software\ntitle: resqui\nauthors:\n- name: The EVERSE project\n- family-names: Gal\n  given-names: Tamas\n  orcid: https://orcid.org/0000-0001-7821-8673\n  affiliation: Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universit\u00c3\u00a4t\n    Erlangen-N\u00c3\u00bcrnberg\n- family-names: Vuillaume\n  given-names: Thomas\n  orcid: https://orcid.org/0000-0002-5686-2078\n  affiliation: LAPP, Universit\u00c3\u00a9 Savoie Mont-Blanc, CNRS\n- family-names: Graf\n  given-names: Kay\n  orcid: https://orcid.org/0000-0002-1921-5568\n  affiliation: Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universit\u00c3\u00a4t\n    Erlangen-N\u00c3\u00bcrnberg\nrepository-code: https://github.com/EVERSE-ResearchSoftware/QualityPipelines\nurl: https://github.com/EVERSE-ResearchSoftware/QualityPipelines\nabstract: A tool to check indicators related to research software quality.\nkeywords:\n- research-software\n- software-quality\n- quality-assessment\n- quality-indicators\n- continuous-integration\n- github-action\n- best-practices\n- fair-principles\n- reproducibility\n- software-sustainability\n- python\nlicense: MIT\nversion: 0.1.7\ndate-released: 2026-02-03\n",
+                "datePublished": "2078"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/CITATION.cff"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing to resqui\n\nThanks for helping improve resqui.\n\n## Scope of contributions\n\nContributions are most useful when they improve one of these areas:\n\n- CLI behavior in src/resqui/cli.py and supporting core modules\n- Indicator plugins in src/resqui/plugins/\n- Executors in src/resqui/executors/\n- Reference configurations in configurations/\n- GitHub Action behavior in action.yml\n- Tests in tests/\n- User-facing docs in README.md\n\n## Local setup\n\nUse Python 3.9+.\n\n```bash\npython3 -m venv venv\nsource venv/bin/activate\nmake install-dev\n```\n\n## Make your change\n\n1. Create a branch from main.\n2. Keep changes focused and small.\n3. If behavior changes, add or update tests in tests/.\n4. If CLI options, action inputs, config format, or output semantics change, update README.md.\n\n## Validate before opening a PR\n\nRun:\n\n```bash\nmake test\n```\n\nIf your change affects runtime behavior, also run:\n\n```bash\nresqui -c configurations/basic.json -t <your_github_token>\n```\n\nIf your change affects install or packaging, verify:\n\n```bash\nmake install-dev\npip install .\n```\n\nIf you changed formatting-sensitive files, you can run:\n\n```bash\nmake black\n```\n\n## Plugin and indicator contributions\n\nFor new indicators or plugins:\n\n- Add or update plugin code in src/resqui/plugins/\n- Ensure indicator names map to plugin methods\n- Return CheckResult values with clear evidence text\n- Add or update matching entries in configurations/ when needed\n- Add tests that cover success and failure paths\n\n## Pull requests\n\nOpen a PR targeting main and complete the checklist in .github/PULL_REQUEST_TEMPLATE.md.\n\nInclude:\n\n- A clear summary of what changed\n- Validation commands you ran\n- Any follow-up work that is out of scope for the PR\n\n## Issues\n\nUse the issue forms under .github/ISSUE_TEMPLATE/:\n\n- Bug report\n- Plugin or indicator request\n- Usage question\n\nThese forms help maintainers reproduce problems and review changes quickly.\n\n## Security and secrets\n\nDo not commit tokens, credentials, or private data.\n\nWhen sharing logs, remove sensitive values such as GitHub and DashVerse tokens.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/CONTRIBUTING.md"
+        }
+    ],
+    "copyright_holder": [
+        {
+            "result": {
+                "value": "EVERSE",
+                "type": "Agent",
+                "year": "2025"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/LICENSE"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml",
+                "type": "Url",
+                "format": "pyproject.toml"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        }
+    ],
+    "has_package_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        }
+    ],
+    "package_id": [
+        {
+            "result": {
+                "value": "resqui",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        }
+    ],
+    "author": [
+        {
+            "result": {
+                "name": "Tamas Gal",
+                "email": "tamas.gal@fau.de",
+                "type": "Agent",
+                "value": "Tamas Gal"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "setuptools_scm",
+                "name": "setuptools_scm",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "requests",
+                "name": "requests",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "setuptools>=64",
+                "name": "setuptools",
+                "version": ">=64",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "setuptools-scm>=8",
+                "name": "setuptools-scm",
+                "version": ">=8",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        }
+    ],
+    "runtime_platform": [
+        {
+            "result": {
+                "value": "Python>=3.9",
+                "name": "Python",
+                "version": ">=3.9",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/pyproject.toml"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/EVERSE-ResearchSoftware/QualityPipelines/tree/main/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "An overview on the quality pipelines is given below.\nThe complete documentation of the quality pipelines are available at the project's [Github Pages](https://everse.software/QualityPipelines/), please read through those pages if you encounter issues and questions.\n\n1) `resqui`  can be installed - preferably within a Python virtual environment - with the requirements of `Docker` and `Python 3.9+`\n\n- using pip:\n\n```\npip install resqui\n```\n\n- or from source:\n\n```\ngit clone https://github.com/EVERSE-ResearchSoftware/QualityPipelines.git\ncd QualityPipelines\npip install .\n```\nand can be executed with these options:\n\n```\n$ resqui -h\nUsage:\n    resqui [options]\n    resqui indicators\n\nOptions:\n    -u <repository_url>   URL of the repository to be analyzed (GitHub URLs, Zenodo DOIs and URLs accepted)\n    -c <config_file>      Path to the configuration file.\n    -o <output_file>      Path to the output file [default: resqui_summary.json].\n    -t <github_token>     GitHub API token.\n    -d <dashverse_token>  DashVerse API token.\n    -b <branch>           The Git branch to be checked.\n    -v                    Verbose output.\n    --version             Show the version of the script.\n    --help                Show this help message.\n ```\n\n\n2) The GitHub Action to include in CI/CDs pipeline is available in [this repository](https://github.com/EVERSE-ResearchSoftware/resqui-github-action).\n",
+                "type": "Text_excerpt",
+                "original_header": "Quality Pipelines",
+                "parent_header": [
+                    "EVERSE Software Quality Pipelines",
+                    "Documentation"
+                ]
+            },
+            "confidence": 1.0,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/README.md"
+        },
+        {
+            "result": {
+                "value": "EVERSE provides a set of services to assess and improve the quality of research software, visit the [EVERSE homepage](https://everse.software) for more information.\n\nA simplified workflow to improve the software quality is: \nFind the practices on `RSQKit` (1), get an overview on tools and services to measure and improve the quality on the `TechRadar` (2), run an assessment on your own or your groups software via resqui (3) and display the results on `DashVERSE` (4), assess and repeat from (1).\n\nMore information the services can be found at:\n\n1) Research Software Quality Kit - [RSQKit](https://everse.software/services/rsqkit/)\n2) Technology Radar - [TechRadar](https://everse.software/services/techradar/)\n3) Quality Pipelines - `resqui` which is this project\n4) Software Quality Dashboards - [DashVERSE](https://everse.software/services/dashverse/)\n",
+                "type": "Text_excerpt",
+                "original_header": "EVERSE Services",
+                "parent_header": [
+                    "EVERSE Software Quality Pipelines",
+                    "Documentation"
+                ]
+            },
+            "confidence": 1.0,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/README.md"
+        }
+    ],
+    "application_type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9451350310085503,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9139984236546972,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9011539652161097,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9149508874991056,
+            "technique": "supervised_classification"
+        },
+        {
+            "result": {
+                "type": "String",
+                "value": "Semantic web"
+            },
+            "confidence": 0.9172376664185502,
+            "technique": "supervised_classification"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.20553350"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "EVERSE Software Quality Pipelines"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/EVERSE-ResearchSoftware/QualityPipelines/main/README.md"
+        }
+    ]
+}

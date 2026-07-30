@@ -13,6 +13,8 @@ import mistune
 import os
 import json
 from urllib.parse import unquote, urlparse
+import ast
+
 
 
 # from cffconvert import Citation
@@ -49,10 +51,30 @@ class Metadata(object):
             return None
 
         repo_name = repo_url.rstrip("/").split("/")[-1]
+        repo_key = self.repository_output_key()
 
-        candidate = outputs_dir / "rsfc" / target_name / repo_name
+        target_dir = outputs_dir / "rsfc" / target_name
+        if not target_dir.exists():
+            return None
 
-        return candidate if candidate.exists() else None
+        candidates = []
+        if repo_key:
+            candidates.append(target_dir / repo_key)
+        candidates.append(target_dir / repo_name)
+
+        for candidate in candidates:
+            if candidate.exists():
+                return candidate
+
+        candidate_names = {candidate.name.casefold() for candidate in candidates}
+        try:
+            for path in target_dir.iterdir():
+                if path.is_dir() and path.name.casefold() in candidate_names:
+                    return path
+        except Exception:
+            return None
+
+        return None
     
     
     # return del report
@@ -88,7 +110,7 @@ class Metadata(object):
             file = rsfc_output_dir / "rsfc_assessment.json"
             if file.exists():
                 data = json.loads(file.read_text(encoding="utf-8"))
-            return data 
+                return data
         
         return None
             
@@ -112,6 +134,145 @@ class Metadata(object):
         if str(check.get("output", "")).lower() == "true"
     )
         return passed, total
+
+
+# RESQUI
+
+    def repository_output_key(self):
+        repo_url = self.repo_url()
+        if not repo_url:
+            return None
+
+        parsed = urlparse(repo_url.rstrip("/"))
+        parts = [part for part in parsed.path.split("/") if part]
+
+        if len(parts) < 2:
+            return None
+
+        owner, repo = parts[-2], parts[-1]
+        if repo.endswith(".git"):
+            repo = repo[:-4]
+
+        return f"{owner}_{repo}".replace(".", "-")
+
+    def resqui_output_path(self):
+        metadata_dir = Path(self.repo_metadata_dir).resolve()
+        target_name = metadata_dir.parent.name
+        outputs_dir = metadata_dir.parent.parent.parent
+        target_dir = outputs_dir / "resqui" / target_name
+        repo_key = self.repository_output_key()
+
+        if not repo_key or not target_dir.exists():
+            return None
+
+        candidate = target_dir / repo_key
+        if candidate.exists():
+            return candidate
+
+        repo_key_lower = repo_key.casefold()
+        try:
+            for path in target_dir.iterdir():
+                if path.is_dir() and path.name.casefold() == repo_key_lower:
+                    return path
+        except Exception:
+            return None
+
+        return None
+
+    def resqui_report_path(self):
+        resqui_dir = self.resqui_output_path()
+        if not resqui_dir:
+            return None
+
+        return resqui_dir / "resqui_report.md"
+
+    def resqui_report_markdown(self):
+        report_path = self.resqui_report_path()
+
+        if not report_path:
+            return None
+
+        try:
+            return report_path.read_text(encoding="utf-8")
+        except Exception:
+            return None
+
+    def resqui_summary_json(self):
+        resqui_dir = self.resqui_output_path()
+        if not resqui_dir:
+            return None
+
+        summary_path = resqui_dir / "resqui_summary.json"
+        if not summary_path.exists():
+            return None
+
+        try:
+            return json.loads(summary_path.read_text(encoding="utf-8"))
+        except Exception:
+            return None
+
+    def resqui_report_score(self):
+        summary = self.resqui_summary_json()
+        if not summary:
+            return None
+
+        checks = summary.get("checks", [])
+        if not checks:
+            return None
+
+        resqui_checks = []
+        for check in checks:
+            checking_software = check.get("checkingSoftware") or {}
+            tool_name = str(checking_software.get("name", "")).strip().lower()
+
+            if tool_name == "rsfc":
+                continue
+
+            resqui_checks.append(check)
+
+        if not resqui_checks:
+            return None
+
+        passed_outputs = {"true", "valid", "secure", "passed", "pass"}
+        passed = sum(
+            1
+            for check in resqui_checks
+            if str(check.get("output", "")).strip().lower() in passed_outputs
+        )
+
+        return passed, len(resqui_checks)
+
+    def resqui_report_html(self):
+        report_md = self.resqui_report_markdown()
+        score = self.resqui_report_score()
+
+        if not report_md or not score:
+            return ""
+
+        passed, total = score
+        report_html = mistune.html(report_md)
+
+        return f"""
+        <b>
+            Quality:
+        </b>
+            {passed}/{total} checks
+            <b><a href="https://github.com/EVERSE-ResearchSoftware/QualityPipelines"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration: underline; color: inherit;">
+                (by RESQUI)
+            </a>
+        </b>
+        <br>
+        <details class="quality-details">
+            <summary>Show RESQUI report</summary>
+
+            <div class="rsfc-report resqui-report">
+                {report_html}
+            </div>
+        </details>
+        """
     
 
 
@@ -182,7 +343,23 @@ class Metadata(object):
 
         return None
 
+    def sw_metadata_bot_failure_message(self, record):
+        reason_code = str(record.get("reason_code", ""))
+        error = str(record.get("error", ""))
 
+        if reason_code == "missing_pitfall_file":
+            return "Metadata quality report unavailable: pitfall file was not generated."
+
+        if "410 Client Error" in error:
+            return "Issue publication failed: GitHub Issues are unavailable for this repository."
+
+        if "403 Client Error" in error:
+            return "Issue publication failed: insufficient permissions to create GitHub issue."
+
+        if reason_code == "publish_exception":
+            return "Issue publication failed."
+
+        return None
 
     def sw_metadata_bot_report_html(self):
         data = self.sw_metadata_bot_latest_record()
@@ -191,22 +368,33 @@ class Metadata(object):
             return ""
 
         record = data["record"]
-
+        failure_message = self.sw_metadata_bot_failure_message(record)
         pitfalls_count = record.get("pitfalls_count", 0) or 0
         warnings_count = record.get("warnings_count", 0) or 0
 
         codemeta_status = record.get("codemeta_status")
         issue_url = record.get("issue_url") or record.get("previous_issue_url")
 
-        if codemeta_status == "missing":
-            label = "No CodeMeta file"
-        else:
-            label = f"{pitfalls_count} pitfalls / {warnings_count} warnings"
+        # Singular o plural según la cantidad
+        pitfall_label = "pitfall" if pitfalls_count == 1 else "pitfalls"
+        warning_label = "warning" if warnings_count == 1 else "warnings"
 
+        if failure_message:
+            quality_result = failure_message
+        elif codemeta_status == "missing":
+            quality_result = "No CodeMeta file"
+        else:
+            quality_result = (
+                f"{pitfalls_count} {pitfall_label}, "
+                f"{warnings_count} {warning_label}"
+            )
+            
         if issue_url:
             issue_link_html = f"""
             <div style="margin-top:4px; font-size:0.9em;">
-                <a href="{issue_url}" target="_blank" rel="noopener noreferrer"
+                <a href="{issue_url}"
+                target="_blank"
+                rel="noopener noreferrer"
                 style="text-decoration: underline;">
                     Open to see GitHub issue
                 </a>
@@ -221,15 +409,14 @@ class Metadata(object):
 
         return f"""
         <div style="margin-top:8px;">
-            <b>Metadata report:</b> {label}
-            <span style="margin-left:10px;">
-                --&gt; <a href="https://github.com/SoftwareUnderstanding/RsMetaCheck"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style="text-decoration: underline;">
-                    RSMetaCheck
-                </a>
-            </span>
+            <b>Metadata quality:</b>
+            {quality_result}
+            <a href="https://github.com/SoftwareUnderstanding/RsMetaCheck"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="font-weight:bold; text-decoration:underline; color:inherit;">
+                (by RSMetaCheck)
+            </a>
 
             {issue_link_html}
         </div>
@@ -347,11 +534,57 @@ class Metadata(object):
     # parseo de cff a bibtex
     def cff_to_bibtex(self, cff_text):
         from cffconvert import Citation
+        import re
+        import yaml
+        import unicodedata
 
         try:
+            # Convertir CFF a BibTeX mediante cffconvert
             citation = Citation(cffstr=cff_text)
-            return citation.as_bibtex()
-        except Exception:
+            bibtex = citation.as_bibtex()
+
+            # Leer los datos del CFF para construir la clave
+            parsed = yaml.safe_load(cff_text)
+
+            authors = parsed.get("authors", [])
+            first_author = authors[0] if authors else {}
+
+            surname = first_author.get("family-names", "reference").strip()
+
+            date_released = str(parsed.get("date-released", ""))
+            year = date_released[:4] if date_released else ""
+
+            title = parsed.get("title", "software")
+            title_words = re.findall(r"[A-Za-z0-9]+", title)
+            title_word = title_words[0] if title_words else "software"
+
+            # Ejemplo: Toledo + 2024 + RML -> toledo2024rml
+            raw_key = f"{surname}{year}{title_word}"
+
+            # Eliminar acentos, espacios y caracteres no válidos
+            citation_key = unicodedata.normalize("NFKD", raw_key)
+            citation_key = citation_key.encode("ascii", "ignore").decode("ascii")
+            citation_key = re.sub(
+                r"[^A-Za-z0-9:_-]",
+                "",
+                citation_key
+            ).lower()
+
+            if not citation_key:
+                citation_key = "softwareReference"
+
+            # Sustituir únicamente la clave genérica de cffconvert
+            bibtex = re.sub(
+                r"(@\w+\s*\{)YourReferenceHere(?=,)",
+                lambda match: f"{match.group(1)}{citation_key}",
+                bibtex,
+                count=1
+            )
+
+            return bibtex
+
+        except Exception as exc:
+            print(f"Could not convert CFF to BibTeX: {exc}")
             return None
 
 
@@ -362,34 +595,45 @@ class Metadata(object):
     def copy_button(self, text, label):
         import html
         import json
+
         if not text:
             return ""
-        safe_html  = html.escape(text)
+
+        safe_html = html.escape(text)
         safe_js = json.dumps(text)
+
         return f"""
             <div style="margin-bottom:10px;">
                 <b style="font-size:0.9em;">{label}</b>
             </div>
 
             <div style="position:relative;">
-                <button onclick='navigator.clipboard.writeText({safe_js})'
-                    style="position:absolute; top:5px; right:5px;">
+                <button
+                    onclick='navigator.clipboard.writeText({safe_js})'
+                    style="
+                        position:absolute;
+                        top:5px;
+                        right:5px;
+                        z-index:1;
+                    ">
                     Copy
                 </button>
 
                 <pre style="
                     background:#f7f7f7;
-                    padding:10px;
+                    padding:12px;
+                    padding-right:65px;
                     border-radius:6px;
                     font-size:0.85em;
+                    line-height:1.45;
                     overflow:auto;
                     max-height:250px;
-                    white-space:pre;
-                ">
-        {safe_html}
-                </pre>
+                    white-space:pre-wrap;
+                    overflow-wrap:anywhere;
+                    word-break:break-word;
+                ">{safe_html}</pre>
             </div>
-            """
+        """
 
     
     #parseador de bibtex para estructurar en html
@@ -400,10 +644,46 @@ class Metadata(object):
             bib_database = bibtexparser.loads(bibtex)
             entry = bib_database.entries[0] if bib_database.entries else {}
 
-            return entry  # 🔥 TODO
+            return entry 
 
         except Exception:
             return {}
+    def format_bibtex(self, bibtex):
+        import bibtexparser
+        from bibtexparser.bwriter import BibTexWriter
+
+        if not bibtex:
+            return ""
+
+        try:
+            bib_database = bibtexparser.loads(bibtex)
+
+            writer = BibTexWriter()
+
+            # Sangría de los campos
+            writer.indent = "    "
+
+            # Alinear los signos =
+            writer.align_values = True
+
+            # No reordenar las diferentes entradas
+            writer.order_entries_by = None
+
+            # Separación entre entradas si hubiera varias
+            writer.entry_separator = "\n\n"
+
+            formatted_bibtex = bibtexparser.dumps(
+                bib_database,
+                writer=writer
+            )
+
+            return formatted_bibtex.strip()
+
+        except Exception as exc:
+            print(f"Could not format BibTeX: {exc}")
+
+            # Si falla el parseo, mostrar el original
+            return str(bibtex).strip()
 
 
         
@@ -490,10 +770,16 @@ class Metadata(object):
         elif repo_type == 'ontology':
             # ontologies = safe_dic(safe_dic(self.md,'ontologies'),'excerpt')
             ontologies = safe_dic(self.md, 'ontologies')
+            onto_list = "No ontology URL available."
             if ontologies:
-                onto_list = '\n'.join(list(dict.fromkeys(
-                    [f'* <{safe_dic(safe_dic(x, "result"), "value")}>' for x in ontologies if
-                    'http' in safe_dic(safe_dic(x, "result"), "value")])))
+                ontology_urls = [
+                    f'* <{value}>'
+                    for x in ontologies
+                    if (value := safe_dic(safe_dic(x, "result"), "value"))
+                    and 'http' in value
+                ]
+                if ontology_urls:
+                    onto_list = '\n'.join(list(dict.fromkeys(ontology_urls)))
                 # onto_list = '\n'.join([ f'* <{safe_dic(x,"file_url")}>' for x in ontologies])
             return self.icon_wrapper(
                 icon_html=f'<img src="{self.base}repo_icons/ontology.png" {self.add_tooltip("left", "Ontology")} alt="repo-type" class="repo-type" style="height: 1.3rem;">',
@@ -767,13 +1053,28 @@ class Metadata(object):
 
             #  1º ver si hay bibtex y añadirlo al body
             if 'bibtex' in citations and citations['bibtex']:
-                
-                
-                
-                bib = safe_dic(citations, "bibtex")          
+
+                bib = safe_dic(citations, "bibtex")
+                bib_source = safe_dic(citations, "bibtex_source")
+
+                # Obtener el nombre del archivo del que procede el BibTeX
+                source_name = self.metadata_item_source_name({
+                    "source": bib_source
+                })
+
+                # Crear la etiqueta que se mostrará
+                if source_name and source_name.lower() == "readme.md":
+                    source_label = "Source README.md"
+                elif source_name:
+                    source_label = f"Source {source_name}"
+                else:
+                    source_label = "Source BibTeX"
+
+                formatted_bib = self.format_bibtex(bib)
                 parsed_bib = self.parse_bibtex(bib)
+
                 bib_clean = ""
-                bib_button = self.copy_button(bib, "BibTeX")
+                bib_button = self.copy_button(formatted_bib, "BibTeX")
                 
                 for key, value in parsed_bib.items():
                     
@@ -806,7 +1107,8 @@ class Metadata(object):
                 </div>
                 
                 <div style="margin-bottom:15px; max-height:350px; overflow:auto;">
-                    {self.source_anchor("Source by BibTeX", safe_dic(citations, "bibtex_source"), bold=True)}<br><br>
+                {self.source_anchor(source_label, bib_source, bold=True)}<br><br>
+                
                     <div style="font-size:0.9em;">
                         {bib_clean}
                     </div>
@@ -931,6 +1233,7 @@ class Metadata(object):
         
         if identifier:
             identifier = str(identifier)
+            
             doi_url = identifier
 
             # si no viene como URL → construirla
@@ -1062,17 +1365,17 @@ class Metadata(object):
                             padding:10px;
                             border-radius:6px;
                             font-size:0.9em;
-                            margin-bottom:12px;
+                            margin-bottom:6px;
                         ">
                             {html_md}
+                        </div>
 
-                            <div style="
-                                text-align:right;
-                                font-style:italic;
-                                margin-top:0.75rem;
-                            ">
-                                {source_link}
-                            </div>
+                        <div style="
+                            text-align:right;
+                            font-style:italic;
+                            margin-bottom:12px;
+                        ">
+                            {source_link}
                         </div>
                         """
 
@@ -1202,9 +1505,11 @@ class Metadata(object):
         # quality report
         rsfc_report_md = self.rsfc_report_markdown()
         rsfc_score = self.rsfc_report_score()
+        resqui_html = self.resqui_report_html()
+        resqui_score = self.resqui_report_score()
         sw_bot_html = self.sw_metadata_bot_report_html()
 
-        if (rsfc_report_md and rsfc_score) or sw_bot_html:
+        if (rsfc_report_md and rsfc_score) or resqui_html or sw_bot_html:
 
             body_parts = []
             tooltip_summary_parts = []
@@ -1219,28 +1524,33 @@ class Metadata(object):
                 report_html = mistune.html(rsfc_report_md)
 
                 body_parts.append(f"""
-                <b>FAIR report (by rsfc):</b> {score_text}
-                <span style="margin-left:10px;">
-                    --&gt; <a href="https://github.com/oeg-upm/rsfc" target="_blank" rel="noopener noreferrer">
-                        RSFC
+                <b>
+                    FAIR & health: 
+                </b>
+                    {score_text}
+                    <b><a href="https://github.com/oeg-upm/rsfc"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="text-decoration: underline; color: inherit;">
+                        (by RSFC)
                     </a>
-                </span><br><br>
+                </b>
+                <br>
+                <details class="quality-details">
+                    <summary>Show RSFC report</summary>
 
-                <details>
-                    <summary style="cursor:pointer;">Show RSFC report</summary>
-
-                    <div style="
-                        margin-top:8px;
-                        max-height:500px;
-                        overflow:auto;
-                        padding:8px;
-                        background:#f7f7f7;
-                        border-radius:6px;
-                    ">
+                    <div class="rsfc-report">
                         {report_html}
                     </div>
                 </details>
                 """)
+
+            if resqui_html:
+                if resqui_score:
+                    passed, total = resqui_score
+                    tooltip_summary_parts.append(f"RESQUI {passed}/{total}")
+
+                body_parts.append(resqui_html)
 
             if sw_bot_html:
                 sw_bot_data = self.sw_metadata_bot_latest_record()
@@ -1261,7 +1571,7 @@ class Metadata(object):
             body = "<hr>".join(body_parts)
 
             tooltip_summary = ", ".join(tooltip_summary_parts)
-            tooltip = f"Quality report ({tooltip_summary})" if tooltip_summary else "Quality report"
+            tooltip = f"Software Quality and Project Health ({tooltip_summary})" if tooltip_summary else "Software Quality and Project Health"
             
             html += self.icon_wrapper(
                 icon_html=f"""<img src="{self.base}repo_icons/quality.png" 
@@ -1269,7 +1579,7 @@ class Metadata(object):
                         {self.add_tooltip('bottom', tooltip)}>""",
 
                 modal_html=self.modal(
-                    title="Quality report",
+                    title="Software Quality and Project Health",
                     body=body,
                     markdown_translation=False
                 )
@@ -1319,7 +1629,7 @@ class Metadata(object):
                                 <h2 style="margin-bottom: 1rem;">{title}</h2>
                                 {extra_html}
                             </span>
-                            <div style="margin-bottom: 1rem; overflow: auto;">{body}</div>
+                            <div class="modal-body">{body}</div>
                             {footer_html}
                         </div>
                     </div>"""
@@ -1339,31 +1649,87 @@ class Metadata(object):
 
     # TODO
     def repo_type(self):
-        
-        ######################
-        #print (self.md.keys())
         if "type" in self.md.keys():
             return self.md["type"]
 
-        # web and ontology
-        ######################
+        langs = self.languages()
+        lang_set = set(langs or [])
+        title = str(self.title() or "").lower()
+        description = str(self.description() or "").lower()
+        repo_url = str(self.repo_url() or "").lower()
+        searchable_text = f"{title} {description}"
 
-        if (safe_dic(self.md, 'ontologies') is not None):
+        software_languages = {
+            "python", "java", "c", "c++", "c#", "go", "rust", "ruby", "php",
+            "r", "scala", "kotlin", "swift", "typescript",
+        }
+        ontology_formats = {
+            "turtle", "rdf", "owl", "sparql", "json-ld", "jsonld",
+            "n-triples", "ntriples",
+        }
+        web_languages = {"html", "css", "javascript", "scss", "sass", "less"}
+        ontology_name_terms = (
+            "ontolog", "ontologi", "vocab", "vocabulary", "semantic-model",
+            "semanticmodel",
+        )
+        ontology_description_terms = (
+            "ontolog", "vocabular", "semantic model", "knowledge model", "domain model"
+        )
+        ontology_publication_terms = (
+            "w3id.org", "vocab.linkeddata.es", "lov.linkeddata.es", "purl.org"
+        )
+        web_name_terms = ("github.io", "website", "homepage", "portal", "site")
+        web_description_terms = (
+            "website", "web site", "homepage", "portal", "landing page",
+            "static site", "documentation site", "aplicación web",
+            "aplicacion web", "sitio web", "página web", "pagina web",
+            "web oficial",
+        )
+        software_terms = (
+            "tool", "library", "api", "service", "framework", "generator",
+            "extractor", "converter", "parser", "pipeline", "platform",
+        )
+        software_metadata_keys = (
+            "installation", "usage", "requirements", "has_build_file", "inspect4py",
+        )
+
+        software_score = 0
+        if lang_set.intersection(software_languages):
+            software_score += 3
+        if "shell" in lang_set:
+            software_score += 1
+        if any(safe_dic(self.md, key) for key in software_metadata_keys):
+            software_score += 2
+        if any(term in searchable_text for term in software_terms):
+            software_score += 2
+
+        ontology_score = 0
+        if safe_dic(self.md, "ontologies"):
+            ontology_score += 3
+        if any(term in title or term in repo_url for term in ontology_name_terms):
+            ontology_score += 3
+        if any(term in description for term in ontology_description_terms):
+            ontology_score += 2
+        if any(term in repo_url for term in ontology_publication_terms):
+            ontology_score += 2
+        if lang_set.intersection(ontology_formats):
+            ontology_score += 1 if software_score else 2
+
+        if ontology_score >= 4 and software_score <= 1:
             return 'ontology'
 
-        langs = self.languages()
-        is_web = (langs and 'html' in langs)
+        web_score = 0
+        if lang_set and lang_set.issubset(web_languages) and lang_set.intersection({"html", "css", "javascript"}):
+            web_score += 3
+        if any(term in title or term in repo_url for term in web_name_terms):
+            web_score += 3
+        if any(term in description for term in web_description_terms):
+            web_score += 2
 
-        if langs:
-            for lang in langs:
-                if lang not in ['html', 'css', 'javascript']:
-                    is_web = False
-                # if lang not in ['html','css','javascript']:
-                # is_ontology = False
-        if is_web:
+        if web_score >= 4 and software_score <= 1 and ontology_score < 4:
             return 'web'
 
-        return None
+        return 'software'
 
     def metadata_item_value(self, item):
         result = safe_dic(item, 'result')
@@ -1500,7 +1866,39 @@ class Metadata(object):
                    </div>"""
 
     def identifier(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'identifier'), 0), 'result'), 'value')
+        value = safe_dic(
+            safe_dic(
+                safe_list(safe_dic(self.md, "identifier"), 0),
+                "result"
+            ),
+            "value"
+        )
+
+        if not value:
+            return None
+
+        # Lista real
+        if isinstance(value, list):
+            value = value[0] if value else None
+
+        # Cadena que representa una lista:
+        # "['https://doi.org/10.5281/zenodo.xxxxxxx']"
+        elif isinstance(value, str):
+            cleaned = value.strip()
+
+            if cleaned.startswith("[") and cleaned.endswith("]"):
+                try:
+                    parsed = ast.literal_eval(cleaned)
+
+                    if isinstance(parsed, list) and parsed:
+                        value = parsed[0]
+                except (ValueError, SyntaxError):
+                    pass
+
+        if not value:
+            return None
+
+        return str(value).strip()
 
     def status(self):
         return safe_dic(self.md, 'repository_status')
@@ -1648,25 +2046,138 @@ class Metadata(object):
     def title(self):
         return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'name'), 0), 'result'), 'value')
 
+    def _metadata_confidence(self, item):
+        result = safe_dic(item, 'result') or {}
+        raw_confidence = safe_dic(result, 'confidence')
+        if raw_confidence is None:
+            raw_confidence = safe_dic(item, 'confidence')
+
+        try:
+            return float(raw_confidence)
+        except (TypeError, ValueError):
+            return None
+
+    def _technique_matches(self, item, expected_technique):
+        technique = str(safe_dic(item, 'technique') or '').lower().replace('_', ' ')
+        return technique == expected_technique.lower().replace('_', ' ')
+
+    def _normalize_description_value(self, value):
+        if value is None:
+            return None
+
+        if isinstance(value, list):
+            for item in value:
+                normalized = self._normalize_description_value(item)
+                if normalized:
+                    return normalized
+            return None
+
+        if isinstance(value, dict):
+            for nested_key in ('value', 'text', 'name'):
+                normalized = self._normalize_description_value(safe_dic(value, nested_key))
+                if normalized:
+                    return normalized
+            return None
+
+        text = str(value).strip()
+        return text or None
+
+    def _metadata_values(self, field_name):
+        values = safe_dic(self.md, field_name) or []
+        return values if isinstance(values, list) else []
+
+    def first_metadata_value(self, field_name, preferred_technique=None):
+        values = self._metadata_values(field_name)
+
+        if preferred_technique:
+            for value in values:
+                if not self._technique_matches(value, preferred_technique):
+                    continue
+
+                result = safe_dic(value, 'result') or {}
+                normalized = self._normalize_description_value(
+                    safe_dic(result, 'value')
+                )
+                if normalized:
+                    return normalized
+
+        for value in values:
+            result = safe_dic(value, 'result') or {}
+            normalized = self._normalize_description_value(
+                safe_dic(result, 'value')
+            )
+            if normalized:
+                return normalized
+
+        return None
+
+    def homepage(self):
+        candidates = []
+
+        for index, item in enumerate(self._metadata_values('homepage')):
+            result = safe_dic(item, 'result') or {}
+            homepage = self._normalize_description_value(
+                safe_dic(result, 'value')
+            )
+            if not homepage or not self._is_valid_url(homepage):
+                continue
+
+            candidates.append((
+                index,
+                homepage,
+                self._metadata_confidence(item),
+                0 if self._technique_matches(item, 'GitHub API') else 1,
+            ))
+
+        if not candidates:
+            return None
+
+        return min(
+            candidates,
+            key=lambda candidate: (
+                candidate[3],
+                -(candidate[2] if candidate[2] is not None else -1.0),
+                candidate[0],
+            ),
+        )[1]
+
+    def application_domain(self):
+        return self.first_metadata_value('application_domain')
+
     # TODO find new
     def description(self):
 
         all_descriptions = safe_dic(self.md, 'description')
+        candidates = []
 
-        description = None
         if all_descriptions:
-            for d in all_descriptions:
-                if safe_dic(d, 'technique') == 'GitHub API':
-                    description = safe_dic(safe_dic(d, 'result'), 'value')
-                    break
+            for index, item in enumerate(all_descriptions):
+                result = safe_dic(item, 'result') or {}
+                description = self._normalize_description_value(
+                    safe_dic(result, 'value')
+                )
+                if not description:
+                    continue
 
-        if not description:
-            description = safe_dic(
-                safe_dic(safe_list(all_descriptions, 0), 'result'), 'value')
-            if not description:
-                description = 'No description available yet.'
+                candidates.append((
+                    index,
+                    description,
+                    self._metadata_confidence(item),
+                    0 if self._technique_matches(item, 'GitHub API') else 1,
+                ))
 
-        return description
+        if not candidates:
+            return 'No description available yet.'
+
+        return min(
+            candidates,
+            key=lambda candidate: (
+                candidate[3],
+                -(candidate[2] if candidate[2] is not None else -1.0),
+                len(candidate[1]),
+                candidate[0],
+            ),
+        )[1]
 
     def license(self):
         license = safe_dic(
@@ -1727,7 +2238,31 @@ class Metadata(object):
         return self.repo_url() + '/stargazers'
 
     def owner(self):
-        return safe_dic(safe_dic(safe_list(safe_dic(self.md, 'owner'), 0), 'result'), 'value')
+        owner = safe_dic(safe_dic(safe_list(safe_dic(self.md, 'owner'), 0), 'result'), 'value')
+        owner = self._clean_owner(owner)
+        if owner:
+            return owner
+
+        repo_url = self.repo_url()
+        if not repo_url:
+            return None
+
+        parsed_url = urlparse(repo_url.rstrip("/"))
+        path_parts = [part for part in parsed_url.path.split("/") if part]
+        if parsed_url.netloc.lower() != "github.com" or len(path_parts) < 2:
+            return None
+
+        return self._clean_owner(path_parts[-2])
+
+    def _clean_owner(self, owner):
+        if owner is None:
+            return None
+
+        owner = str(owner).strip()
+        if not owner or owner.lower() in {"none", "null", "undefined"}:
+            return None
+
+        return owner
 
     # IMPORTANT !!!!! ASSUMES only 1 CFF per repo
     # USE SOMEF as example it lists SOMEF CFF then WIDOCO then SOMEF then CAPTUM

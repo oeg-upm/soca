@@ -12,6 +12,8 @@ env_3.9/
 build/
 develop-eggs/
 dist/
+!src/linkeddata_portal/assets/dist/
+!src/linkeddata_portal/assets/dist/**
 downloads/
 eggs/
 .eggs/
