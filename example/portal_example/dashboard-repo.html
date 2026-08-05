@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User analytics dashboard</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      box-sizing: border-box;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .dashboard-frame {
+      width: 100vw;
+      height: calc(100vh - 50px);
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">← Back to Software Catalog</a>
+  </header>
+
+  <iframe
+    class="dashboard-frame"
+    src="http://host.docker.internal:8088/superset/dashboard//?standalone=2"
+    title="User analytics dashboard"
+    allowfullscreen>
+  </iframe>
+</body>
+</html>

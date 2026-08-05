@@ -1,0 +1,323 @@
+site:
+  title: LinkedData.es
+  description: Linked Data tools and initiatives developed by the OEG.
+  revision: July 2018
+
+navigation:
+  - label: LinkedData.es
+    url: index.html
+  - label: Tools
+    url: tools.html
+  - label: No longer maintained
+    url: nomaintained.html
+  - label: Awards
+    url: awards.html
+
+pages:
+  index:
+    output: index.html
+    title: Linked Data Applications
+    heading: LinkedData.es
+    lead: >
+      In this web, you will find the major initiatives, applications, websites and collaborations developed by the OEG. You will also find <a href="tools.html">tools</a>, <a href="awards.html">awards</a> and other <a href="nomaintained.html">iniatives no longer maintained</a>.
+    collection: initiatives
+
+  tools:
+    output: tools.html
+    title: Tools - Linked Data Applications
+    heading: Tools
+    lead: >
+      In this web, you will find the tools developed by the OEG.
+    collection: tools
+
+  no_longer_maintained:
+    output: nomaintained.html
+    title: No longer maintained - Linked Data Applications
+    heading: No longer maintained
+    lead: >
+      In this web, you will find the major initiatives, websites and
+      collaborations developed by the OEG but <b>no longer maintained</b>.
+    collection: no_longer_maintained
+
+  awards:
+    output: awards.html
+    title: Awards - Linked Data Applications
+    heading: Awards
+    lead: >
+      Here there is a list of awards obtained by OEG members in Linked Data related projects
+    collection: awards
+
+initiatives:
+  - id: datos-ign
+    name: datos.ign.es
+    category: Geographical domain
+    homepage: https://datos.ign.es
+    image: images/datosign.png
+    description: >
+      Initiative of the National Geographic Institute (IGN) for the generation
+      of semantic information of its resources in which the OEG has
+      participated.
+    description_html: >
+      <a href="https://datos.ign.es" target="_blank">datos.ign.es</a> is an initiative of the <a href="http://www.ign.es/" target="_blank">National Geographic Institute (IGN)</a> for the generation of semantic information of its resources in which the OEG has participated.
+
+  - id: datos-bne
+    name: datos.bne.es
+    category: Culture domain
+    homepage: http://datos.bne.es
+    image: images/bne.png
+    description: >
+      Initiative from the project "Linked data at the BNE", supported by the
+      Spanish National Library (BNE) in cooperation with the OEG. The BNE
+      publishes bibliographic and authority data in RDF following Linked Data
+      principles and under the CC0 open license.
+    description_html: >
+      <a href="http://datos.bne.es" target="_blank">datos.bne.es</a> initiative is part of the project "Linked data at the BNE", supported by the <a href="http://www.bne.es" target="_blank">Spanish National Library (BNE)</a> in cooperation with the OEG. With this initiative, the BNE takes the challenge of publishing bibliographic and authority data in RDF, following the Linked Data Principles and under the CC0 open license.
+
+  - id: esdbpedia
+    name: esDBpedia
+    category: Host of esDBpedia
+    homepage: http://es.dbpedia.org
+    image: images/esdbpedia.png
+    description: >
+      Spanish chapter of DBpedia hosted by OEG. It contains semantic
+      information extracted from Spanish Wikipedia. Its SPARQL endpoint exposes
+      around 170 million relevant triples.
+    description_html: >
+      <a href="http://es.dbpedia.org" target="_blank">esDBpedia</a> contains the semantic information extracted from the Wikipedia in Spanish. OEG hosts the Spanish Chapter of DBpedia. 40% of the Spanish Wikipedia pages are not available in the English version. This makes it a valuable source of local information. In the <a href="http://es.dbpedia.org/sparql" target="_blank">Spanish DBpedia SPARQL endpoint</a> the most relevant triples (~170 millions) are available.
+
+  - id: open-data-zaragoza
+    name: Open Data Zaragoza
+    category: Smart Cities and Open Data
+    homepage: http://www.zaragoza.es/ciudad/risp/
+    image: images/opendatazaragoza.png
+    description: >
+      Zaragoza City Hall initiative to promote reuse of the information
+      published on its website by citizens, companies and other institutions.
+      OEG supports development and vocabulary definitions.
+    description_html: >
+      <a href="http://www.zaragoza.es/ciudad/risp/" target="_blank">Open Data Zaragoza</a> is an initiative of Zaragoza City Hall to promote the reuse of the information published in its website by citizens, companies and other institutions. OEG is supporting development and vocabulary definitions thanks to its knowledge in Linked Data principles.
+
+  - id: vocab-linkeddata
+    name: vocab.linkeddata.es
+    category: Ontology services
+    homepage: http://vocab.linkeddata.es
+    image: images/vocab.png
+    description: >
+      Catalogue of vocabularies that the Ontology Engineering Group (OEG) is
+      developing and publishing on the Web.
+    description_html: >
+      <a href="http://vocab.linkeddata.es" target="_blank">vocab.linkeddata.es</a> shows the list of vocabularies that the Ontology Engineering Group (OEG) is developing and publishing on the Web.
+
+  - id: vocab-datosabiertos
+    name: vocab.linkeddata.es/datosabiertos
+    category: Smart Cities and Open Data
+    homepage: http://vocab.linkeddata.es/datosabiertos
+    image: images/vocabdatosabiertos.png
+    description: >
+      Catalogue of vocabularies created at OpenCityData for homogeneous
+      publication of open data from cities in Spain.
+    description_html: >
+      <a href="http://vocab.linkeddata.es/datosabiertos" target="_blank">vocab.linkeddata.es/datosabiertos</a> shows the list of vocabularies that are being created at <a href="https://github.com/opencitydata" target="_blank">https://github.com/opencitydata</a> for the homogeneous publication of open data from cities in Spain.
+
+  - id: smartcity-catalogues
+    name: SmartCity Catalogues
+    category: Smart Cities and Open Data
+    homepage: http://smartcity.linkeddata.es
+    image: images/smartcitycatalogue.png
+    description: >
+      Catalogue of ontologies and datasets about smart cities, energy and
+      related fields, developed within the Ready4SmartCities European Project.
+    description_html: >
+      <a href="http://smartcity.linkeddata.es" target="_blank">SmartCity catalogues</a> collect ontologies and datasets about smart cities, energy and related fields. This work is developed within <a href="http://www.ready4smartcities.eu/" target="_blank">Ready4SmartCities European Project</a> thatintends to increase awareness and interoperability for the adoption of ICT and semantic technologies in energy system to obtain a reduction of energy consumption and CO2 emission at smart cities communities level through innovative relying on RTD and innovation outcomes and ICT-based solutions
+
+  - id: terminesp
+    name: Terminesp Linked Data
+    category: Linguistic
+    homepage: http://linguistic.linkeddata.es/terminesp
+    image: images/terminesp.png
+    description: >
+      Initiative to transform lexical information from the Terminesp
+      terminological database into RDF following Linked Data best practices.
+    description_html: >
+      <a href="http://linguistic.linkeddata.es/terminesp" target="_blank">Terminesp Linked Data</a> is an initiative to transform into RDF, following Linked Data best practices, the lexical information from the lexical database Terminesp. Terminesp is a terminological database in Spanish created by <a href="http://www.aeter.org/" target="_blank">AETER</a> (Asociación Española de Terminología) by extracting the terminological data from the UNE documents produced by <a href="http://www.aenor.es/" target="_blank">AENOR</a> (Asociación Española de Normalización y Certificación). It contains the terms and definitions used in the UNE Spanish norms and amounts to more than thirty thousand terms with equivalences in other languages whenever they are available.
+
+  - id: apertium-rdf
+    name: Apertium RDF
+    category: Linguistic
+    homepage: http://linguistic.linkeddata.es/apertium
+    image: images/apertium.png
+    description: >
+      RDF version of the Apertium bilingual dictionaries, transformed into RDF
+      and published on the Web following Linked Data principles.
+    description_html: >
+      <a href="http://linguistic.linkeddata.es/apertium" target="_blank">Apertium RDF</a> contains the RDF (Resource Description Framework) version of the Apertium bilingual dictionaries, which have been transformed into RDF and published on the Web following the Linked Data principles. The core linguistic data has been modelled using the <a href="http://lemon-model.net/" target="_blank">lemon model</a> and the translations between terms have been modelled using the <a href="http://purl.org/net/translation" target="_blank">lemon translation module</a>.
+
+  - id: rdf-license
+    name: RDF License dataset
+    category: Ontology services
+    homepage: http://rdflicense.linkeddata.es/
+    image: images/rdflicense.png
+    description: >
+      RDF representation of different licenses for data, software and general
+      works.
+    description_html: >
+      <a href="http://rdflicense.linkeddata.es/" target="_blank">RDF License dataset</a> provides an RDF representation of different licenses for data, software or general works. Licenses served under http://purl.oclc.org/NET/rdflicense/ are understood by humans and machines alike.
+
+tools:
+  - id: oops
+    name: OOPS! - OntOlogy Pitfall Scanner!
+    category: Ontology services
+    homepage: http://oops.linkeddata.es
+    image: images/oops.png
+    description: >
+      Tool that detects common pitfalls in ontology development. Users enter a
+      URI or paste an OWL document, and OOPS! reports the pitfalls found.
+    description_html: >
+      <a href="http://oops.linkeddata.es" target="_blank">OOPS! (OntOlogy Pitfall Scanner!)</a> helps you to detect some of the most common pitfalls appearing when developing ontologies. To try it, enter a URI or paste an OWL document into the text field above. A list of pitfalls and the elements of your ontology where they appear will be displayed.
+
+  - id: ontoology
+    name: OnToology
+    category: Ontology services
+    homepage: http://ontoology.linkeddata.es/
+    image: images/ontoology.png
+    description: >
+      System to automate part of collaborative ontology development, producing
+      diagrams, documentation and validation from ontology repositories.
+    description_html: >
+      <a href="http://ontoology.linkeddata.es/" target="_blank">OnToology</a> is a system to automate part of the collaborative ontology development process. Given a repository with an owl file, OnToology will survey it and produce diagrams, a complete documentation and validation based on common pitfalls. OnToology can handle vocabularies OWL and RDFS in RDF+XML and Turtle serialization.
+
+  - id: loupe
+    name: Loupe - The Linked Data Explorer
+    category: Linked Data services
+    homepage: http://loupe.linkeddata.es/
+    image: images/loupe.png
+    description: >
+      Online tool for inspecting dataset structure, understanding data,
+      formulating queries and detecting quality issues.
+    description_html: >
+      <a href="http://loupe.linkeddata.es/" target="_blank">Loupe</a> is an online tool for inspecting the structure of datasets to understand the data, formulate effective queries, or detect quality issues. Starting from the high-level statistics, Loupe allows users to zoom into details down to the corresponding triples. Loupe includes 2+ billion triples from datasets including DBpedia (17 languages), Wikidata, Linked Brainz, Bio2RDF, etc.
+
+  - id: leire
+    name: Leire
+    category: Linguistic
+    homepage: http://lemonadetools.linkeddata.es/leire/
+    image: images/leire.png
+    description: >
+      Tool that reads lexicalizations and applies consistency checks for each
+      design pattern.
+    description_html: >
+      <a href="http://lemonadetools.linkeddata.es/leire/" target="_blank">Leire</a> reads created lexicalizations (created, for instance, by Lemon Assistant) and implements several consistency checks for each design pattern, such as checking for multiple plural forms for nouns.
+
+  - id: lemon-assistant
+    name: Lemon Assistant
+    category: Linguistic
+    homepage: http://lemonadetools.linkeddata.es/lemonAssistant/
+    image: images/lemonassistant.png
+    description: >
+      Tool to create Lemon Patterns and ontology lexicons for lexicalizing
+      ontologies.
+    description_html: >
+      <a href="http://lemonadetools.linkeddata.es/lemonAssistant/" target="_blank">Lemon Assistant</a> allows you to create <a href="https://github.com/jmccrae/lemon.patterns" target="_blank">Lemon Patterns</a>, the most typical patterns of the <a href="http://lemon-model.net/" target="_blank">Lemon model</a>. By using these patterns you create ontology 'lexicons', that is, lexicalizations of ontologies.
+
+no_longer_maintained:
+  - id: rtve-linkeddata
+    name: RTVE LinkedData
+    category: News and Media
+    homepage: http://rtve.linkeddata.es
+    image: images/rtve.png
+    description: >
+      Collaboration between RTVE and the OEG to develop a semantic searcher for
+      television programs and publish that information in a SPARQL endpoint.
+    description_html: >
+      <a href="http://rtve.linkeddata.es" target="_blank">RTVE LinkedData</a> is collaboration between RTVE and the OEG to developed a semantic searcher of television programs, as well as the publication of that information in a <a href="http://rtve.linkeddata.es/sparql" target="_blank">SPARQL endpoint</a>.
+
+  - id: el-viajero
+    name: El Viajero - El Pais
+    category: News and Media
+    homepage: http://webenemasuno.linkeddata.es
+    image: images/elviajero.png
+    description: >
+      Use case where Prisa Group contents were published in RDF according to
+      Linked Data principles and modelled with provenance information.
+    description_html: >
+      <a href="http://webenemasuno.linkeddata.es" target="_blank">El Viajero</a>. In this use case, the contents of the <a href="http://www.prisa.com/" target="_blank">Prisa Group</a> have been published in RDF (Resource Description Framework), according to the Linked Data principles, and modeling all the available provenance with the Open Provenance Model. Information published comes from  "Suplemento El País", "Guías Aguilar", "Canal Viajar" and "Prisa Digital". It also includes the recommendations of the users, their images and blogs. There's a visualizer available.
+
+  - id: aemet-linkeddata
+    name: AemetLinked Data(.es)
+    category: Meteorological
+    homepage: http://aemet.linkeddata.es
+    image: images/aemet.png
+    description: >
+      Open OEG initiative to enrich the Web of Data with Spanish geospatial
+      and meteorological data.
+    description_html: >
+      <a href="http://aemet.linkeddata.es" target="_blank">AemetLinked Data(.es)</a> was an open initiative of the Ontology Engineering Group (OEG) whose aim was to enrich the Web of Data with Spanish geospatial data. This initiative started off by publishing diverse information sources belonging to the <a href="http://www.aemet.es" target="_blank">Spanish Meteorological Agency.</a>
+
+  - id: bicycle-sharing-systems
+    name: Bicycle Sharing Systems
+    category: Internet of Things
+    homepage: http://transporte.linkeddata.es/
+    image: images/transporte.png
+    description: >
+      Case study about publishing up-to-date linked data for bicycle sharing
+      systems in different cities.
+    description_html: >
+      Inside the INNPRONTA project <a href="http://transporte.linkeddata.es" target="_blank">CIUDAD 2020</a> there is a study case related to bicycle sharing systems in different cities. Tthe goal of this case study is to publish up-to-date linked data about the availability of bikes and free slots in the stations of the different systems, and links to related resources like travel guides and points of interest, e.g. museums, restaurants.<a href="http://transporte.linkeddata.es/technology.html" target="_blank">Further information.</a>
+
+  - id: open-data-crtm
+    name: Open Data CRTM
+    category: Transport
+    homepage: http://datos.crtm.es/
+    image: images/crtm.jpg
+    description: >
+      CRTM initiative to promote reuse of transportation information, with OEG
+      support for SPARQL publication and vocabulary development.
+    description_html: >
+      Open Data <a href="http://datos.crtm.es/" target="_blank">CRTM</a> (Regional Consortium of Transportation for Madrid) is an initiative of CRTM to promote the reuse of the information published in its website by citizens, companies and other institutions. OEG is supporting the publication of that information in a <a href="http://crtm.linkeddata.es/sparql" target="_blank">SPARQL</a> endpoint as well as the development of a vocabulary for CRTM data.<a href="http://transporte.linkeddata.es/technology.html" target="_blank">Further information.</a>
+
+  - id: territorial-visualizer
+    name: Buscador-visualizador territorial de informacion
+    category: Smart Cities and Open Data
+    homepage: http://vps147.cesvima.upm.es/jacathon_2014/index.html
+    image: images/jacathon.png
+    description: >
+      Project developed for Jacathon Aragon Open Data to visualize territorial
+      resources from the Aragon catalogue.
+    description_html: >
+      This is a project developed in the <a href="http://opendata.aragon.es/portal/jacathon#premiosJacathon" target="_blank">Jacathon Aragon Open Data</a>, awarded with "Jacathon Aragón Open Data" prize. The aim of this visualizer is to represent of all resources from catalog of Aragón: "Comunidad Autónoma", "Provincia", "Comarca" and "Municipios", so the final user can view class inheritance, data of geo-spatial resources or browse other links to check, add or learn more information about resource. <a href="https://github.com/aragonopendata/DEVTA" target="_blank">Further information.</a>
+
+awards:
+  - year: 2010
+    text: Honorary mention at Open Government Data Track of Triplification Challenge at I-SEMANTICS 2010.
+    text_html: >
+      Honorary mention at Open Government Data Track of Triplification Challenge at I-SEMANTICS 2010 conference. September 2010.
+
+  - year: 2011
+    text: El Viajero. Triplification Challenge at I-Semantics 2011.
+    text_html: >
+      El Viajero. Triplification Challenge (I-Semantics 2011). Paper:  A provenance aware linked data application for Trip Management and Organization Garijo, D.; Corcho, O.; and Villazón-Terrazas, B. In Proceedings of the 7th International Conference on Semantic Systems, pages 224-226, Graz, 2011. ACM.
+
+  - year: 2013
+    text: Special mention in the Open Data contest of Junta de Castilla y Leon with Map4RDF iOS version.
+    text_html: >
+      Special mention at the participation in the contest Open Data of Junta de Castilla y León (Spain) with Map4RDF iOS version. Oscar Corcho. Daniel Garijo. Alejandro Fernandez Carrera. October 2013.
+
+  - year: 2014
+    text: Jacathon - Aragon Open Data Winner with Aragopedia 2.0.
+    text_html: >
+      Jacathon - Aragon Open Data Winner with Aragopedia 2.0. Alejandro Fernandez Carrera together other non OEG member. September 2014.
+
+  - year: 2015
+    text: Fujitsu Laboratories of Europe Innovation Award for Citizen Science and Games with a Purpose for LOD data curation.
+    text_html: >
+      Fujitsu Laboratories of Europe Innovation Award. “Citizen Science and Games with a Purpose for LOD data curation”. Daniel Vila, Alejandro Fernández Carrera, Oscar Corcho. 2015.
+
+  - year: 2017
+    text: Award in the Aporta Challenge, Public Administration and Open Data, with the qMe-Aporta initiative.
+    text_html: >
+      Award in the <a href="http://www.red.es/redes/es/actualidad/magazin-en-red/los-dos-premios-aporta-y-los-tres-del-desaf%C3%ADo-aporta-cierran-la-7%C2%AA-edici%C3%B3n" target="_blank">Aporta Challenge</a> (Public Administration and Open Data) 2017, with the qMe-Aporta initiative. Mariano Rico, Idafen Santana y Freddy Priyatna. <a href="https://www.youtube.com/watch?v=_THSO_8H7vs" target="_blan">Vídeo.</a>
+    links:
+      - label: Aporta Challenge announcement
+        url: http://www.red.es/redes/es/actualidad/magazin-en-red/los-dos-premios-aporta-y-los-tres-del-desaf%C3%ADo-aporta-cierran-la-7%C2%AA-edici%C3%B3n
+      - label: Video
+        url: https://www.youtube.com/watch?v=_THSO_8H7vs

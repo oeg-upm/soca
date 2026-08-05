@@ -117,3 +117,54 @@ def summary(input,output,upload):
     from soca.commands import create_summary
     create_summary.create_summary(input,output,upload)
 
+
+@cli.command("linkeddata-portal")
+@click.option("--config", "config_path", type=click.Path(path_type=Path, exists=True, dir_okay=False), default=None, help="Path to linkeddata.base.yml.")
+@click.option("--templates-dir", type=click.Path(path_type=Path, exists=True, file_okay=False), default=None, help="Directory containing Jinja templates.")
+@click.option("--assets-dir", type=click.Path(path_type=Path, exists=True, file_okay=False), default=None, help="Directory containing static assets.")
+@click.option("--output-dir", type=click.Path(path_type=Path, file_okay=False), default=None, help="Directory where generated HTML will be written.")
+@click.option("--metadata-dir", type=click.Path(path_type=Path, file_okay=False), default=None, help="Directory containing project SOCA metadata JSON files.")
+@click.option("--linkeddata-metadata-dir", type=click.Path(path_type=Path, file_okay=False), default=None, help="Directory where LinkedData portal metadata cache will be saved.")
+@click.option("--generated-config-output", type=click.Path(path_type=Path, dir_okay=False), default=None, help="Path where the resolved LinkedData YAML config will be written.")
+@click.option("--tools-file", type=click.Path(path_type=Path, exists=True, dir_okay=False), default=None, help="YAML file with a tools list of GitHub repository URLs.")
+def build_linkeddata_portal(
+    config_path,
+    templates_dir,
+    assets_dir,
+    output_dir,
+    metadata_dir,
+    linkeddata_metadata_dir,
+    generated_config_output,
+    tools_file,
+):
+    """Generate LinkedData.es HTML pages and copy static assets"""
+    from linkeddata_portal.builder import (
+        DEFAULT_ASSETS_DIR,
+        DEFAULT_CONFIG_PATH,
+        DEFAULT_GENERATED_CONFIG_PATH,
+        DEFAULT_METADATA_DIR,
+        DEFAULT_OUTPUT_DIR,
+        DEFAULT_TEMPLATES_DIR,
+        build,
+    )
+
+    generated_pages = build(
+        output_dir=output_dir or DEFAULT_OUTPUT_DIR,
+        config_path=config_path or DEFAULT_CONFIG_PATH,
+        templates_dir=templates_dir or DEFAULT_TEMPLATES_DIR,
+        assets_dir=assets_dir or DEFAULT_ASSETS_DIR,
+        metadata_dir=metadata_dir,
+        linkeddata_metadata_dir=linkeddata_metadata_dir or DEFAULT_METADATA_DIR,
+        generated_config_path=generated_config_output or DEFAULT_GENERATED_CONFIG_PATH,
+        tools_file=tools_file,
+    )
+
+    click.echo(
+        "Generated pages: "
+        + ", ".join(page.name for page in generated_pages)
+    )
+
+
+if __name__ == "__main__":
+    cli()
+

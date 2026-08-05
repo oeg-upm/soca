@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1>{{ page.heading }}</h1>
+  <p class="lead">{{ page.lead | safe }}</p>
+</div>
+
+{% for item in items %}
+  {% if loop.index0 is divisibleby 3 %}
+<div class="row">
+  {% endif %}
+  {% if item.category in ["Geographical domain", "News and Media"] %}
+    {% set label_class = "default" %}
+  {% elif item.category in ["Culture domain", "Meteorological"] %}
+    {% set label_class = "primary" %}
+  {% elif item.category in ["Host of esDBpedia", "Internet of Things", "Transport"] %}
+    {% set label_class = "success" %}
+  {% elif item.category == "Ontology services" %}
+    {% set label_class = "warning" %}
+  {% elif item.category == "Linguistic" %}
+    {% set label_class = "danger" %}
+  {% else %}
+    {% set label_class = "info" %}
+  {% endif %}
+  <div class="col-md-4">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title linkeddata-card-title">{{ item.name }}</h3>
+      </div>
+      <div class="panel-body" align="center">
+        <span class="label label-{{ label_class }}">{{ item.category }}</span>
+        {% if page.collection == "no_longer_maintained" %}
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/nolongersupported.png" alt="No longer maintained">
+        {% endif %}
+        <br>
+        <br>
+        <p style="text-align: justify">
+          {% if item.description_html %}
+          {{ item.description_html | safe }}
+          {% else %}
+          <a href="{{ item.homepage }}" target="_blank">{{ item.name }}</a>
+          {{ item.description }}
+          {% endif %}
+        </p>
+        {% if item.image %}
+        <a href="{{ item.homepage }}" target="_blank"><img src="{{ item.image }}" alt="{{ item.name }}"></a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% if loop.index is divisibleby 3 or loop.last %}
+</div>
+  {% endif %}
+{% endfor %}
+{% endblock %}

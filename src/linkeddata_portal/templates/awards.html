@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1>{{ page.heading }}</h1>
+  <p class="lead">{{ page.lead | safe }}</p>
+</div>
+
+<ul>
+  {% for award in items %}
+  <li style="text-align: justify">
+    {% if award.text_html %}
+    {{ award.text_html | safe }}
+    {% else %}
+    {{ award.text }}
+    {% if award.links %}
+      {% for link in award.links %}
+      <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% if not loop.last %} {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

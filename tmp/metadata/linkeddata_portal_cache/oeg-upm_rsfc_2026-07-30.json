@@ -1,0 +1,3259 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.11.2",
+        "somef_schema_version": "1.0.0",
+        "date": "2026-07-30 13:25:51"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/oeg-upm/rsfc",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "https://github.com/oeg-upm/rsfc",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "oeg-upm",
+                "type": "Organization"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2025-05-30T07:55:26Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "2025-07-01",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2026-07-24T07:07:21Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/mit",
+                "type": "License",
+                "name": "MIT License",
+                "url": "https://spdx.org/licenses/MIT",
+                "spdx_id": "MIT",
+                "identifier": "https://spdx.org/licenses/MIT"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "MIT",
+                "type": "File_dump",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://spdx.org/licenses/MIT"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "MIT License\n\nCopyright (c) 2025 Andr\u00c3\u00a9s Montero\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+                "type": "File_dump",
+                "name": "MIT License",
+                "spdx_id": "MIT",
+                "url": "https://spdx.org/licenses/MIT",
+                "identifier": "https://spdx.org/licenses/MIT"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/LICENSE"
+        },
+        {
+            "result": {
+                "value": "https://spdx.org/licenses/MIT",
+                "type": "License",
+                "identifier": "https://spdx.org/licenses/MIT",
+                "spdx_id": "MIT"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "MIT",
+                "spdx_id": "MIT",
+                "name": "MIT License",
+                "type": "License"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "Repository for development on the Research Software FAIRness Checks (RSFC) package",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Package that performs a series of checks based on a list of research software fairness indicators",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "EVERSE Research Software Fairness Checks",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "type": "Text_excerpt",
+                "value": "- **`use-rsfc.yml`**:  \n  A workflow file that triggers `run-rsfc.yml`. \n  It must be placed in each repository that you want to analyze, since the repository where `use-rsfc.yml` is hosted is the one that will be processed.  \n  No additional inputs are required because the repository context is automatically passed by the `call`. \n  This workflow can be triggered manually (`workflow_dispatch`) or automatically (e.g., on `push` events).\n  - **Secrets**:  \n  - `RSFC_TOKEN` is optional but recommended if you plan to run multiple analyses or expect heavy usage. It allows RSFC to access private repositories and avoid rate limits.  \n1. Copy `use-rsfc.yml` into `.github/workflows/` of the repository you want to analyze.\n2. Ensure that the required secrets are defined (see below).\n3. No inputs are needed \u2014 the workflow automatically uses the repository it resides in. \n",
+                "original_header": "Workflows"
+            },
+            "confidence": 0.9529753092453865,
+            "technique": "supervised_classification",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "rsfc",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "RSFC",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "oeg-upm/rsfc",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 4,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "forks_count": [
+        {
+            "result": {
+                "value": 5,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/oeg-upm/rsfc/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 146773
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jinja",
+                "name": "Jinja",
+                "type": "Programming_language",
+                "size": 4901
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 2606
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 591
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "name": "Python",
+                "value": "Python",
+                "type": "Programming_language"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/347946112",
+                "tag": "v0.1.7",
+                "name": "RSFC-0.1.7",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Bugfix for RSFC-16-1",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.1.7",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.1.7",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.1.7",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/347946112",
+                "release_id": 347946112,
+                "date_created": "2026-07-02T09:34:07Z",
+                "date_published": "2026-07-02T09:35:33Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/346116966",
+                "tag": "v0.1.6",
+                "name": "RSFC-0.1.6",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "Changes made:\r\n\r\n- Evidences are more informative now showing sources for all the findings (if not explicity said in the test description)\r\n- Added new test RSFC-22-1 for measuring the indicator software_is_containerized\r\n- Updated logic in RSFC-03-3 (versioning standard use), RSFC-17-3 (commits linked to issues), RSFC-17-2 (has commit history) and RSFC-14-2 (automated tests)\r\n- Commits are now checked within a 90 day window \r\n- Removed RSFC-17-1 (repo is enabled and has commits, re-evaluation pending)\r\n- Removed RSFC-06-4 (authors have roles stated) due to redundancy",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.1.6",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.1.6",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.1.6",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/346116966",
+                "release_id": 346116966,
+                "date_created": "2026-06-29T07:20:35Z",
+                "date_published": "2026-06-29T07:32:28Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/308323194",
+                "tag": "v0.1.5",
+                "name": "RSFC-0.1.5",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Implemented branch/tag targeting via -b and -v flags\r\n- Minor fix in assessment sintax when using --ftr flag\r\n- Updated somef to 0.10.1",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.1.5",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.1.5",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.1.5",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/308323194",
+                "release_id": 308323194,
+                "date_created": "2026-04-13T11:59:10Z",
+                "date_published": "2026-04-13T12:32:46Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/303042998",
+                "tag": "v0.1.4",
+                "name": "RSFC-0.1.4",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- RSFC now generates a report in the root directory of the repository or the directory in which the docker container is ran\r\n- RSFC badge now links to said report",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.1.4",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.1.4",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.1.4",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/303042998",
+                "release_id": 303042998,
+                "date_created": "2026-03-30T07:29:08Z",
+                "date_published": "2026-03-30T07:32:28Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/296300927",
+                "tag": "v0.1.3",
+                "name": "RSFC-0.1.3",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Reaching the rate limit for the Gitlab and Github APIs now raises a message instead of failing all the tests\r\n- A README badge for the score of the assessment will now be generated below the output markdown table in the terminal ",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.1.3",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.1.3",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.1.3",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/296300927",
+                "release_id": 296300927,
+                "date_created": "2026-03-12T15:32:29Z",
+                "date_published": "2026-03-12T17:17:37Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/285622107",
+                "tag": "v0.1.2",
+                "name": "RSFC-0.1.2",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Added github and gitlab token support\r\n- Fixed dockerfile since it sometimes gave problems when building the image",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.1.2",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.1.2",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.1.2",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/285622107",
+                "release_id": 285622107,
+                "date_created": "2026-02-11T15:17:18Z",
+                "date_published": "2026-02-12T10:30:40Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/280383212",
+                "tag": "v0.1.1",
+                "name": "RSFC-0.1.1",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Added new template for single test runs in FTR Ostrails format\r\n- Fixed issue with the parsing of some input URLs",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.1.1",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.1.1",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.1.1",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/280383212",
+                "release_id": 280383212,
+                "date_created": "2026-01-27T16:49:47Z",
+                "date_published": "2026-01-27T16:52:00Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/279857606",
+                "tag": "v0.1.0",
+                "name": "RSFC-0.1.0",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- RSFC now accepts git URLs that end with .git\r\n- RSFC now performs a somef configure -a to avoid wordnet problem",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.1.0",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.1.0",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.1.0",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/279857606",
+                "release_id": 279857606,
+                "date_created": "2026-01-23T14:56:38Z",
+                "date_published": "2026-01-26T09:04:01Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/278567829",
+                "tag": "v0.0.9",
+                "name": "RSFC-0.0.9",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Fixed minor issue with RSFC-17-1: No suggestions were assigned in case no commits or issues were found and that could lead to an error",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.0.9",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.0.9",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.0.9",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/278567829",
+                "release_id": 278567829,
+                "date_created": "2026-01-21T09:54:39Z",
+                "date_published": "2026-01-21T09:58:00Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/271036638",
+                "tag": "v0.0.8",
+                "name": "RSFC-0.0.8",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Support for w3ids as input\r\n- Added new indicator support_issue_tracking (evaluated by RSFC-20-1)",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.0.8",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.0.8",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.0.8",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/271036638",
+                "release_id": 271036638,
+                "date_created": "2025-12-17T10:39:39Z",
+                "date_published": "2025-12-17T10:41:09Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/270700493",
+                "tag": "v0.0.7",
+                "name": "RSFC-0.0.7",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Added RSFC-20-1 test, which checks the existence of an issue tracker in the repository\r\n- Minor fixes\r\n- RSFC docker goes back to needing to mount a volume to retrieve the results locally\r\n- Updated RSFC docker script to only run the container (building of image done separately)",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.0.7",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.0.7",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.0.7",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/270700493",
+                "release_id": 270700493,
+                "date_created": "2025-12-16T11:03:07Z",
+                "date_published": "2025-12-16T11:10:16Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/268650376",
+                "tag": "v0.0.6",
+                "name": "RSFC-0.0.6",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Added single test functionality: Now RSFC can run only the test specified via its identifier when executing the command\r\n- RSFC docker no longer needs to mount a volume to obtain the output from the container\r\n- Created a bash script to automate building, running and obtaining the output from RSFC docker\r\n- Minor fixes",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.0.6",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.0.6",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.0.6",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/268650376",
+                "release_id": 268650376,
+                "date_created": "2025-12-09T09:45:43Z",
+                "date_published": "2025-12-09T09:48:49Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/266229614",
+                "tag": "v0.0.5",
+                "name": "RSFC-0.0.5",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- Added suggestions to the RSFC file output\r\n- OSTrails format for the output is now available via a --ftr flag\r\n- Minor bug fixes",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.0.5",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.0.5",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.0.5",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/266229614",
+                "release_id": 266229614,
+                "date_created": "2025-11-30T20:17:57Z",
+                "date_published": "2025-11-30T20:21:29Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/260601330",
+                "tag": "v0.0.4",
+                "name": "RSFC-0.0.4",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- New table output shows a short description instead of the indicator identifiers\r\n- Improved commits linked to issues test\r\n- Minor bug fixes",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.0.4",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.0.4",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.0.4",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/260601330",
+                "release_id": 260601330,
+                "date_created": "2025-11-07T11:58:51Z",
+                "date_published": "2025-11-07T12:02:44Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/246075791",
+                "tag": "v0.0.3",
+                "name": "RSFC-0.0.3",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "Added Docker executability\r\nImproved the logic of some tests",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.0.3",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.0.3",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.0.3",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/246075791",
+                "release_id": 246075791,
+                "date_created": "2025-09-10T06:56:45Z",
+                "date_published": "2025-09-10T07:07:58Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/243858691",
+                "tag": "v0.0.2",
+                "name": "RSFC-0.0.2",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "- More tests added.  \r\n- Better code structure and data management.\r\n- New table console output.\r\n",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.0.2",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.0.2",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.0.2",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/243858691",
+                "release_id": 243858691,
+                "date_created": "2025-09-01T10:15:30Z",
+                "date_published": "2025-09-01T11:51:15Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/oeg-upm/rsfc/releases/235590901",
+                "tag": "v0.0.1",
+                "name": "RSFC-0.0.1",
+                "author": {
+                    "name": "andriumon",
+                    "type": "User"
+                },
+                "description": "First version of the RSFC package",
+                "tarball_url": "https://api.github.com/repos/oeg-upm/rsfc/tarball/v0.0.1",
+                "zipball_url": "https://api.github.com/repos/oeg-upm/rsfc/zipball/v0.0.1",
+                "html_url": "https://github.com/oeg-upm/rsfc/releases/tag/v0.0.1",
+                "url": "https://api.github.com/repos/oeg-upm/rsfc/releases/235590901",
+                "release_id": 235590901,
+                "date_created": "2025-07-28T10:20:47Z",
+                "date_published": "2025-07-28T10:22:13Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "version": [
+        {
+            "result": {
+                "value": "0.1.8",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "0.1.8",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "0.1.8",
+                "type": "Release",
+                "tag": "0.1.8"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "title": "RSFC: Research Software Fairness Checks",
+                "author": [
+                    {
+                        "type": "Agent",
+                        "name": "Daniel Garijo",
+                        "family_name": "Garijo",
+                        "given_name": "Daniel",
+                        "url": "https://orcid.org/0000-0003-0454-7145"
+                    },
+                    {
+                        "type": "Agent",
+                        "name": "Andr\u00c3\u00a9s Montero",
+                        "family_name": "Montero",
+                        "given_name": "Andr\u00c3\u00a9s"
+                    },
+                    {
+                        "type": "Agent",
+                        "name": "Juanje Mendoza",
+                        "family_name": "Mendoza",
+                        "given_name": "Juanje"
+                    },
+                    {
+                        "type": "Agent",
+                        "name": "Esteban Gonzalez",
+                        "family_name": "Gonzalez",
+                        "given_name": "Esteban",
+                        "url": "https://orcid.org/0000-0003-4112-6825"
+                    }
+                ],
+                "type": "SoftwareApplication",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "value": "10.5281/zenodo.16531481"
+                    }
+                ],
+                "format": "cff",
+                "value": "cff-version: 1.2.0\ntitle: 'RSFC: Research Software Fairness Checks'\nmessage: If you use this software, please cite it using the metadata from this file.\ntype: software\nidentifiers:\n- type: doi\n  value: 10.5281/zenodo.16531481\nauthors:\n- given-names: Daniel\n  family-names: Garijo\n  email: daniel.garijo@upm.es\n  orcid: https://orcid.org/0000-0003-0454-7145\n  affiliation: Researcher\n- given-names: Andr\u00c3\u00a9s\n  family-names: Montero\n  email: andres.montero.martin@upm.es\n- given-names: Juanje\n  family-names: Mendoza\n  email: juanjesus.mendoza@upm.es\n- given-names: Esteban\n  family-names: Gonzalez\n  email: egonzalez@fi.upm.es\n  affiliation: Researcher\n  orcid: https://orcid.org/0000-0003-4112-6825\nrepository-code: https://github.com/oeg-upm/rsfc\nkeywords:\n- quality\n- fair\n- indicators\n- fairness\nlicense: MIT\nversion: 0.1.8\n"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/CITATION.cff"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml",
+                "type": "Url",
+                "format": "pyproject.toml"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt",
+                "type": "Url",
+                "format": "requirements.txt"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        }
+    ],
+    "copyright_holder": [
+        {
+            "result": {
+                "value": "Andr\u00c3\u00a9s Montero",
+                "type": "Agent",
+                "year": "2025"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/LICENSE"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "value": "Computer Science",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        }
+    ],
+    "contributor": [
+        {
+            "result": {
+                "value": "Violaine Louvet",
+                "name": "Violaine Louvet",
+                "type": "Agent",
+                "given_name": "Violaine",
+                "last_name": "Louvet",
+                "email": "violaine.louvet@univ-grenoble-alpes.fr"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": [
+                    "quality",
+                    "indicators",
+                    "fair",
+                    "fairness"
+                ],
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        }
+    ],
+    "development_status": [
+        {
+            "result": {
+                "value": "wip",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "value": "https://doi.org/10.5281/zenodo.16531481",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.16531481"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ],
+    "author": [
+        {
+            "result": {
+                "value": "Daniel Garijo",
+                "type": "Agent",
+                "email": "daniel.garijo@upm.es"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Andr\u00e9s Montero",
+                "type": "Agent",
+                "email": "andres.montero.martin@upm.es"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Juanje Mendoza",
+                "type": "Agent",
+                "email": "juanjesus.mendoza@upm.es"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Esteban Gonzalez",
+                "type": "Agent",
+                "email": "egonzalez@fi.upm.es"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json"
+        },
+        {
+            "result": {
+                "name": "Andres Montero",
+                "email": "andres.montero.martin@upm.es",
+                "type": "Agent",
+                "value": "Andres Montero"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "name": "Daniel Garijo",
+                "email": "daniel.garijo@upm.es",
+                "type": "Agent",
+                "value": "Daniel Garijo"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "name": "Juanje Mendoza",
+                "email": "juanjesus.mendoza@upm.es",
+                "type": "Agent",
+                "value": "Juanje Mendoza"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "name": "Esteban Gonzalez",
+                "email": "egonzalez@fi.upm.es",
+                "type": "Agent",
+                "value": "Esteban Gonzalez"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        }
+    ],
+    "has_package_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        }
+    ],
+    "package_id": [
+        {
+            "result": {
+                "value": "rsfc",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        }
+    ],
+    "homepage": [
+        {
+            "result": {
+                "value": "https://github.com/oeg-upm/rsfc",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "https://github.com/oeg-upm/rsfc",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "python>=3.11,<3.13",
+                "name": "python",
+                "version": ">=3.11,<3.13",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "somef0.11.2",
+                "name": "somef",
+                "version": "0.11.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "regex2024.11.6",
+                "name": "regex",
+                "version": "2024.11.6",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "requests2.34.2",
+                "name": "requests",
+                "version": "2.34.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "anyascii0.3.2",
+                "name": "anyascii",
+                "version": "0.3.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "attrs25.3.0",
+                "name": "attrs",
+                "version": "25.3.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "beautifulsoup44.13.4",
+                "name": "beautifulsoup4",
+                "version": "4.13.4",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "bibtexparser1.4.3",
+                "name": "bibtexparser",
+                "version": "1.4.3",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "bs40.0.1",
+                "name": "bs4",
+                "version": "0.0.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "build1.2.2.post1",
+                "name": "build",
+                "version": "1.2.2.post1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "certifi2025.6.15",
+                "name": "certifi",
+                "version": "2025.6.15",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "chardet5.2.0",
+                "name": "chardet",
+                "version": "5.2.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "charset-normalizer3.4.2",
+                "name": "charset-normalizer",
+                "version": "3.4.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "click8.2.1",
+                "name": "click",
+                "version": "8.2.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "click-option-group0.5.7",
+                "name": "click-option-group",
+                "version": "0.5.7",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "contourpy1.3.2",
+                "name": "contourpy",
+                "version": "1.3.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "contractions0.1.73",
+                "name": "contractions",
+                "version": "0.1.73",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "cycler0.12.1",
+                "name": "cycler",
+                "version": "0.12.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "duckdb1.3.1",
+                "name": "duckdb",
+                "version": "1.3.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "elementpath4.8.0",
+                "name": "elementpath",
+                "version": "4.8.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "falcon3.1.3",
+                "name": "falcon",
+                "version": "3.1.3",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "fastjsonschema2.21.1",
+                "name": "fastjsonschema",
+                "version": "2.21.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "fonttools4.58.4",
+                "name": "fonttools",
+                "version": "4.58.4",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "idna3.10",
+                "name": "idna",
+                "version": "3.10",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "imbalanced-learn>=0.14.1,<0.15.0",
+                "name": "imbalanced-learn",
+                "version": ">=0.14.1,<0.15.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "inflect7.5.0",
+                "name": "inflect",
+                "version": "7.5.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "iniconfig2.1.0",
+                "name": "iniconfig",
+                "version": "2.1.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "jinja23.1.6",
+                "name": "jinja2",
+                "version": "3.1.6",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "joblib1.5.1",
+                "name": "joblib",
+                "version": "1.5.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "jsonpath-python1.0.6",
+                "name": "jsonpath-python",
+                "version": "1.0.6",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "jsonschema4.24.0",
+                "name": "jsonschema",
+                "version": "4.24.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "jsonschema-specifications2025.4.1",
+                "name": "jsonschema-specifications",
+                "version": "2025.4.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "jupyter-core5.8.1",
+                "name": "jupyter-core",
+                "version": "5.8.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "kiwisolver1.4.8",
+                "name": "kiwisolver",
+                "version": "1.4.8",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "lxml>=6.1.1,<7.0.0",
+                "name": "lxml",
+                "version": ">=6.1.1,<7.0.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "markdown3.8.1",
+                "name": "markdown",
+                "version": "3.8.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "markupsafe3.0.2",
+                "name": "markupsafe",
+                "version": "3.0.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "matplotlib3.11.0",
+                "name": "matplotlib",
+                "version": "3.11.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "more-itertools10.7.0",
+                "name": "more-itertools",
+                "version": "10.7.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "morph-kgc2.8.1",
+                "name": "morph-kgc",
+                "version": "2.8.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "nbformat5.10.4",
+                "name": "nbformat",
+                "version": "5.10.4",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "nltk3.9.1",
+                "name": "nltk",
+                "version": "3.9.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "numpy1.26.4",
+                "name": "numpy",
+                "version": "1.26.4",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "packaging25.0",
+                "name": "packaging",
+                "version": "25.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pandas2.3.0",
+                "name": "pandas",
+                "version": "2.3.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pillow11.2.1",
+                "name": "pillow",
+                "version": "11.2.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "platformdirs4.3.8",
+                "name": "platformdirs",
+                "version": "4.3.8",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pluggy1.6.0",
+                "name": "pluggy",
+                "version": "1.6.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pyahocorasick2.2.0",
+                "name": "pyahocorasick",
+                "version": "2.2.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pyoxigraph0.3.22",
+                "name": "pyoxigraph",
+                "version": "0.3.22",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pyparsing3.2.3",
+                "name": "pyparsing",
+                "version": "3.2.3",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pyproject-hooks1.2.0",
+                "name": "pyproject-hooks",
+                "version": "1.2.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pytest8.4.2",
+                "name": "pytest",
+                "version": "8.4.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "python-dateutil2.9.0.post0",
+                "name": "python-dateutil",
+                "version": "2.9.0.post0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pytz2025.2",
+                "name": "pytz",
+                "version": "2025.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pyyaml6.0.2",
+                "name": "pyyaml",
+                "version": "6.0.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "rdflib7.1.4",
+                "name": "rdflib",
+                "version": "7.1.4",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "rdflib-jsonld0.6.2",
+                "name": "rdflib-jsonld",
+                "version": "0.6.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "referencing0.36.2",
+                "name": "referencing",
+                "version": "0.36.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "rpds-py0.25.1",
+                "name": "rpds-py",
+                "version": "0.25.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "ruamel-yaml0.18.14",
+                "name": "ruamel-yaml",
+                "version": "0.18.14",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "ruamel-yaml-clib0.2.12",
+                "name": "ruamel-yaml-clib",
+                "version": "0.2.12",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "scikit-learn1.5.0",
+                "name": "scikit-learn",
+                "version": "1.5.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "scipy1.15.3",
+                "name": "scipy",
+                "version": "1.15.3",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "six1.17.0",
+                "name": "six",
+                "version": "1.17.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "soupsieve2.7",
+                "name": "soupsieve",
+                "version": "2.7",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "tabulate0.9.0",
+                "name": "tabulate",
+                "version": "0.9.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "textblob0.17.1",
+                "name": "textblob",
+                "version": "0.17.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "textsearch0.0.24",
+                "name": "textsearch",
+                "version": "0.0.24",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "threadpoolctl3.6.0",
+                "name": "threadpoolctl",
+                "version": "3.6.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "toml0.10.2",
+                "name": "toml",
+                "version": "0.10.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "tomli2.2.1",
+                "name": "tomli",
+                "version": "2.2.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "tqdm4.67.1",
+                "name": "tqdm",
+                "version": "4.67.1",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "traitlets5.14.3",
+                "name": "traitlets",
+                "version": "5.14.3",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "typeguard4.4.4",
+                "name": "typeguard",
+                "version": "4.4.4",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "typing-extensions4.14.0",
+                "name": "typing-extensions",
+                "version": "4.14.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "tzdata2025.2",
+                "name": "tzdata",
+                "version": "2025.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "urllib32.5.0",
+                "name": "urllib3",
+                "version": "2.5.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "validators0.22.0",
+                "name": "validators",
+                "version": "0.22.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "xgboost2.1.4",
+                "name": "xgboost",
+                "version": "2.1.4",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "pystache0.6.8",
+                "name": "pystache",
+                "version": "0.6.8",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "poetry-core",
+                "name": "poetry-core",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "alabaster==1.0.0",
+                "name": "alabaster",
+                "type": "SoftwareDependency",
+                "version": "==1.0.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "anyascii==0.3.2",
+                "name": "anyascii",
+                "type": "SoftwareDependency",
+                "version": "==0.3.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "attrs==25.3.0",
+                "name": "attrs",
+                "type": "SoftwareDependency",
+                "version": "==25.3.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "babel==2.17.0",
+                "name": "babel",
+                "type": "SoftwareDependency",
+                "version": "==2.17.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "beautifulsoup4==4.13.4",
+                "name": "beautifulsoup4",
+                "type": "SoftwareDependency",
+                "version": "==4.13.4"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "bibtexparser==1.4.3",
+                "name": "bibtexparser",
+                "type": "SoftwareDependency",
+                "version": "==1.4.3"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "bs4==0.0.1",
+                "name": "bs4",
+                "type": "SoftwareDependency",
+                "version": "==0.0.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "build==1.2.2.post1",
+                "name": "build",
+                "type": "SoftwareDependency",
+                "version": "==1.2.2.post1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "certifi==2025.6.15",
+                "name": "certifi",
+                "type": "SoftwareDependency",
+                "version": "==2025.6.15"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "chardet==5.2.0",
+                "name": "chardet",
+                "type": "SoftwareDependency",
+                "version": "==5.2.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "charset-normalizer==3.4.2",
+                "name": "charset-normalizer",
+                "type": "SoftwareDependency",
+                "version": "==3.4.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "click==8.2.1",
+                "name": "click",
+                "type": "SoftwareDependency",
+                "version": "==8.2.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "click-option-group==0.5.7",
+                "name": "click-option-group",
+                "type": "SoftwareDependency",
+                "version": "==0.5.7"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "contourpy==1.3.2",
+                "name": "contourpy",
+                "type": "SoftwareDependency",
+                "version": "==1.3.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "contractions==0.1.73",
+                "name": "contractions",
+                "type": "SoftwareDependency",
+                "version": "==0.1.73"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "cycler==0.12.1",
+                "name": "cycler",
+                "type": "SoftwareDependency",
+                "version": "==0.12.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "docker==7.1.0",
+                "name": "docker",
+                "type": "SoftwareDependency",
+                "version": "==7.1.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "docutils==0.21.2",
+                "name": "docutils",
+                "type": "SoftwareDependency",
+                "version": "==0.21.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "duckdb==1.3.1",
+                "name": "duckdb",
+                "type": "SoftwareDependency",
+                "version": "==1.3.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "elementpath==4.8.0",
+                "name": "elementpath",
+                "type": "SoftwareDependency",
+                "version": "==4.8.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "falcon==3.1.3",
+                "name": "falcon",
+                "type": "SoftwareDependency",
+                "version": "==3.1.3"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "fastjsonschema==2.21.1",
+                "name": "fastjsonschema",
+                "type": "SoftwareDependency",
+                "version": "==2.21.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "fonttools==4.58.4",
+                "name": "fonttools",
+                "type": "SoftwareDependency",
+                "version": "==4.58.4"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "idna==3.10",
+                "name": "idna",
+                "type": "SoftwareDependency",
+                "version": "==3.10"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "imagesize==1.4.1",
+                "name": "imagesize",
+                "type": "SoftwareDependency",
+                "version": "==1.4.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "imbalanced-learn>=0.14.1,<0.15.0",
+                "name": "imbalanced-learn",
+                "type": "SoftwareDependency",
+                "version": ">=0.14.1,<0.15.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "inflect==7.5.0",
+                "name": "inflect",
+                "type": "SoftwareDependency",
+                "version": "==7.5.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "iniconfig==2.1.0",
+                "name": "iniconfig",
+                "type": "SoftwareDependency",
+                "version": "==2.1.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "Jinja2==3.1.6",
+                "name": "Jinja2",
+                "type": "SoftwareDependency",
+                "version": "==3.1.6"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "joblib==1.5.1",
+                "name": "joblib",
+                "type": "SoftwareDependency",
+                "version": "==1.5.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "jsonpath-python==1.0.6",
+                "name": "jsonpath-python",
+                "type": "SoftwareDependency",
+                "version": "==1.0.6"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "jsonschema==4.24.0",
+                "name": "jsonschema",
+                "type": "SoftwareDependency",
+                "version": "==4.24.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "jsonschema-specifications==2025.4.1",
+                "name": "jsonschema-specifications",
+                "type": "SoftwareDependency",
+                "version": "==2025.4.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "jupyter_core==5.8.1",
+                "name": "jupyter_core",
+                "type": "SoftwareDependency",
+                "version": "==5.8.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "kiwisolver==1.4.8",
+                "name": "kiwisolver",
+                "type": "SoftwareDependency",
+                "version": "==1.4.8"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "lxml>=6.1.1,<7.0.0",
+                "name": "lxml",
+                "type": "SoftwareDependency",
+                "version": ">=6.1.1,<7.0.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "Markdown==3.8.1",
+                "name": "Markdown",
+                "type": "SoftwareDependency",
+                "version": "==3.8.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "MarkupSafe==3.0.2",
+                "name": "MarkupSafe",
+                "type": "SoftwareDependency",
+                "version": "==3.0.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "matplotlib==3.11.0",
+                "name": "matplotlib",
+                "type": "SoftwareDependency",
+                "version": "==3.11.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "more-itertools==10.7.0",
+                "name": "more-itertools",
+                "type": "SoftwareDependency",
+                "version": "==10.7.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "morph_kgc==2.8.1",
+                "name": "morph_kgc",
+                "type": "SoftwareDependency",
+                "version": "==2.8.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "nbformat==5.10.4",
+                "name": "nbformat",
+                "type": "SoftwareDependency",
+                "version": "==5.10.4"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "nltk==3.9.1",
+                "name": "nltk",
+                "type": "SoftwareDependency",
+                "version": "==3.9.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "numpy==1.26.4",
+                "name": "numpy",
+                "type": "SoftwareDependency",
+                "version": "==1.26.4"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "nvidia-nccl-cu12==2.27.3",
+                "name": "nvidia-nccl-cu12",
+                "type": "SoftwareDependency",
+                "version": "==2.27.3"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "packaging==25.0",
+                "name": "packaging",
+                "type": "SoftwareDependency",
+                "version": "==25.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pandas==2.3.0",
+                "name": "pandas",
+                "type": "SoftwareDependency",
+                "version": "==2.3.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pillow==11.2.1",
+                "name": "pillow",
+                "type": "SoftwareDependency",
+                "version": "==11.2.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "platformdirs==4.3.8",
+                "name": "platformdirs",
+                "type": "SoftwareDependency",
+                "version": "==4.3.8"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pluggy==1.6.0",
+                "name": "pluggy",
+                "type": "SoftwareDependency",
+                "version": "==1.6.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pyahocorasick==2.2.0",
+                "name": "pyahocorasick",
+                "type": "SoftwareDependency",
+                "version": "==2.2.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "Pygments==2.19.2",
+                "name": "Pygments",
+                "type": "SoftwareDependency",
+                "version": "==2.19.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pyoxigraph==0.3.22",
+                "name": "pyoxigraph",
+                "type": "SoftwareDependency",
+                "version": "==0.3.22"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pyparsing==3.2.3",
+                "name": "pyparsing",
+                "type": "SoftwareDependency",
+                "version": "==3.2.3"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pyproject_hooks==1.2.0",
+                "name": "pyproject_hooks",
+                "type": "SoftwareDependency",
+                "version": "==1.2.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pystache==0.6.8",
+                "name": "pystache",
+                "type": "SoftwareDependency",
+                "version": "==0.6.8"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pytest== 8.4.2",
+                "name": "pytest",
+                "type": "SoftwareDependency",
+                "version": "== 8.4.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "python-dateutil==2.9.0.post0",
+                "name": "python-dateutil",
+                "type": "SoftwareDependency",
+                "version": "==2.9.0.post0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "pytz==2025.2",
+                "name": "pytz",
+                "type": "SoftwareDependency",
+                "version": "==2025.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "PyYAML==6.0.2",
+                "name": "PyYAML",
+                "type": "SoftwareDependency",
+                "version": "==6.0.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "rdflib==7.1.4",
+                "name": "rdflib",
+                "type": "SoftwareDependency",
+                "version": "==7.1.4"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "rdflib-jsonld==0.6.2",
+                "name": "rdflib-jsonld",
+                "type": "SoftwareDependency",
+                "version": "==0.6.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "referencing==0.36.2",
+                "name": "referencing",
+                "type": "SoftwareDependency",
+                "version": "==0.36.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "regex==2024.11.6",
+                "name": "regex",
+                "type": "SoftwareDependency",
+                "version": "==2024.11.6"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "requests==2.34.2",
+                "name": "requests",
+                "type": "SoftwareDependency",
+                "version": "==2.34.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "roman-numerals-py==3.1.0",
+                "name": "roman-numerals-py",
+                "type": "SoftwareDependency",
+                "version": "==3.1.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "rpds-py==0.25.1",
+                "name": "rpds-py",
+                "type": "SoftwareDependency",
+                "version": "==0.25.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "ruamel.yaml==0.18.14",
+                "name": "ruamel.yaml",
+                "type": "SoftwareDependency",
+                "version": "==0.18.14"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "ruamel.yaml.clib==0.2.12",
+                "name": "ruamel.yaml.clib",
+                "type": "SoftwareDependency",
+                "version": "==0.2.12"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "scikit-learn==1.5.0",
+                "name": "scikit-learn",
+                "type": "SoftwareDependency",
+                "version": "==1.5.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "scipy==1.15.3",
+                "name": "scipy",
+                "type": "SoftwareDependency",
+                "version": "==1.15.3"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "six==1.17.0",
+                "name": "six",
+                "type": "SoftwareDependency",
+                "version": "==1.17.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "snowballstemmer==3.0.1",
+                "name": "snowballstemmer",
+                "type": "SoftwareDependency",
+                "version": "==3.0.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "somef==0.11.2",
+                "name": "somef",
+                "type": "SoftwareDependency",
+                "version": "==0.11.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "soupsieve==2.7",
+                "name": "soupsieve",
+                "type": "SoftwareDependency",
+                "version": "==2.7"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "tabulate==0.9.0",
+                "name": "tabulate",
+                "type": "SoftwareDependency",
+                "version": "==0.9.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "textblob==0.17.1",
+                "name": "textblob",
+                "type": "SoftwareDependency",
+                "version": "==0.17.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "textsearch==0.0.24",
+                "name": "textsearch",
+                "type": "SoftwareDependency",
+                "version": "==0.0.24"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "threadpoolctl==3.6.0",
+                "name": "threadpoolctl",
+                "type": "SoftwareDependency",
+                "version": "==3.6.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "toml==0.10.2",
+                "name": "toml",
+                "type": "SoftwareDependency",
+                "version": "==0.10.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "tomli==2.2.1",
+                "name": "tomli",
+                "type": "SoftwareDependency",
+                "version": "==2.2.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "tqdm==4.67.1",
+                "name": "tqdm",
+                "type": "SoftwareDependency",
+                "version": "==4.67.1"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "traitlets==5.14.3",
+                "name": "traitlets",
+                "type": "SoftwareDependency",
+                "version": "==5.14.3"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "typeguard==4.4.4",
+                "name": "typeguard",
+                "type": "SoftwareDependency",
+                "version": "==4.4.4"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "typing_extensions==4.14.0",
+                "name": "typing_extensions",
+                "type": "SoftwareDependency",
+                "version": "==4.14.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "tzdata==2025.2",
+                "name": "tzdata",
+                "type": "SoftwareDependency",
+                "version": "==2025.2"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "urllib3==2.5.0",
+                "name": "urllib3",
+                "type": "SoftwareDependency",
+                "version": "==2.5.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "validators==0.22.0",
+                "name": "validators",
+                "type": "SoftwareDependency",
+                "version": "==0.22.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "xgboost==2.1.4",
+                "name": "xgboost",
+                "type": "SoftwareDependency",
+                "version": "==2.1.4"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "Python 3.10.8 or higher\n\nDependencies are available in the requirements.txt or pyproject.toml file located in the root of the repository\n",
+                "type": "Text_excerpt",
+                "original_header": "Requirements",
+                "parent_header": [
+                    "Research Software FAIRness Checks (RSFC)"
+                ]
+            },
+            "confidence": 1.0,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ],
+    "runtime_platform": [
+        {
+            "result": {
+                "value": "Python>=3.11,<3.13",
+                "name": "Python",
+                "version": ">=3.11,<3.13",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "Python: 2.9.0.post0",
+                "version": "2.9.0.post0",
+                "name": "Python",
+                "type": "String",
+                "dependency_type": "runtime",
+                "dependency_resolver": "pip"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "Docker",
+                "type": "String",
+                "original_header": "Docker installation",
+                "parent_header": [
+                    "Research Software FAIRness Checks (RSFC)"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/run_rsfc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "application_type": [
+        {
+            "result": {
+                "value": "commandline-application",
+                "type": "String"
+            },
+            "confidence": 0.82,
+            "technique": "software_type_heuristics"
+        }
+    ],
+    "installation": [
+        {
+            "result": {
+                "value": "Just run in your terminal the following command:\n\n```\npip install rsfc\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install from PyPI",
+                "parent_header": [
+                    "Research Software FAIRness Checks (RSFC)"
+                ]
+            },
+            "confidence": 1.0,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        },
+        {
+            "result": {
+                "value": "To install the package, first clone the repository in your machine.\nThis project uses Poetry for dependency and environment management.\n\n```\ngit clone https://github.com/oeg-upm/rsfc.git\n```\n\nGo to the project's root directory\n\n```\ncd rsfc\n```\n\nInstall Poetry (if you haven\u2019t already)\n\n```\ncurl -sSL https://install.python-poetry.org | python3 -\n```\n\nMake sure Poetry is available in your PATH\n\n```\npoetry --version\n```\n\nCreate the virtual environment and install dependencies\n\n```\npoetry install\n```\n\nActivate the virtual environment (Optional)\n\n```\nsource $(poetry env info --path)/bin/activate\n```\n\nYour terminal prompt should now show something like:\n\n```\n(rsfc-py3.11) your-user@your-machine rsfc %\n```\n\nWith virtual environment activated you can tried like this:\n\n```\nrsfc --help\n```\n\nWithout poetry virtual environment activated you need to use the poetry run:\n\n```\npoetry run rsfc --help\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Install from Github with Poetry",
+                "parent_header": [
+                    "Research Software FAIRness Checks (RSFC)"
+                ]
+            },
+            "confidence": 0.8,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        },
+        {
+            "result": {
+                "value": "RSFC also offers a Dockerfile which you can build using the following commmand:\n\n```\ndocker build -t --no-cache -t rsfc-docker .\n```\n\nFor comodity, we provide a bash script that runs the container along with the necessary configurations. To execute it just run\n\n```\n./run_rsfc.sh --repo <repo_url> [--ftr] [--id <test_id>] [-t <token>]\n```\n\nThe parameters used for the script are the same as if you executed RSFC normally\n",
+                "type": "Text_excerpt",
+                "original_header": "Docker installation",
+                "parent_header": [
+                    "Research Software FAIRness Checks (RSFC)"
+                ]
+            },
+            "confidence": 1.0,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ],
+    "usage": [
+        {
+            "result": {
+                "value": "Before anything, RSFC uses SOMEF internally. If this is your first time working with somef, you should run the following command in the root directory of the project:\n\n```\nsomef configure -a\n```\n\nNow, you can use the package by running if you activated the poetry env\n\n```\nrsfc --repo <repo_url>\n```\n\nor like this without the poetry env\n\n```\npoetry run rsfc --repo <repo_url>\n```\n\nIf you want the output in OSTrails format, you can use the following flag\n\n```\nrsfc --repo <repo_url> --ftr\n```\n\nAnd additionally, if you want to run only one test, you can indicate the test identifier when running RSFC like this\n\n```\nrsfc --repo <repo_url> --id <test_id>\n```\n\nRSFC also offers the possibility of using a personal Github token to avoid a rate limit issue with the Github API\n\n```\nrsfc --repo <repo_url> -t <token>\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Usage",
+                "parent_header": [
+                    "RSFC GitHub Action"
+                ]
+            },
+            "confidence": 1.0,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        },
+        {
+            "result": {
+                "value": "Here is an overview of the available parameters supported by RSFC\n\n```\nUsage: rsfc [OPTIONS]\n\n  RSFC - EVERSE Research Software Fairness Checks\n\nOptions:\n  --repo TEXT        URL of the Github/Gitlab repository to be analyzed\n  --local DIRECTORY  Local path of the repository to be analyzed\n  -b TEXT            Name of the repo branch to analyze. By default\n                     main/master\n  -v TEXT            Tag of the release to analyze. By default latest release.\n  --ftr              Flag to indicate if JSON-LD in FTR format is desired\n  --id TEXT          Identifier of a specific test. Only that test will be ran\n  --metadata FILE    SOMEF metadata file in case you already have one\n  -t TEXT            Authorization Github token\n  --help             Show this message and exit.\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "Parameter overview",
+                "parent_header": [
+                    "Research Software FAIRness Checks (RSFC)",
+                    "Usage"
+                ]
+            },
+            "confidence": 1.0,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ],
+    "support": [
+        {
+            "result": {
+                "value": "The workflow also generates an artifact named **`rsfc_assessment.json`**.\n\nTo download it:\n1. Open the **Checks** tab of the Pull Request  \n2. Select the job **Run RSFC Analysis**  \n3. Download the artifact from the **Artifacts** section  \n\nExample:\n\n```yaml\nname: Run RSFC analysis\n\non:\n  workflow_dispatch: \n  pull_request: \n    types: [opened, synchronize, reopened]         \n\njobs:\n  run-rsfc-checks:\n    uses: oeg-upm/rsfc/.github/workflows/run-rsfc.yml@main\n    with:\n      repo_url: https://github.com/${{ github.repository }}\n      is_fork: ${{ github.event.pull_request.head.repo.full_name != github.repository }}\n      pr_sha: ${{ github.event.pull_request.head.sha }}\n    secrets:\n      RSFC_TOKEN: ${{ secrets.RSFC_TOKEN }}",
+                "type": "Text_excerpt",
+                "original_header": "Accessing the JSON report",
+                "parent_header": [
+                    "RSFC GitHub Action",
+                    "Viewing RSFC Results in a Pull Request"
+                ]
+            },
+            "confidence": 0.8,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "Research Software FAIRness Checks (RSFC)"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ],
+    "repository_status": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://www.repostatus.org/#active",
+                "description": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ],
+    "package_distribution": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://pypi.org/project/rsfc/"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md"
+        }
+    ]
+}

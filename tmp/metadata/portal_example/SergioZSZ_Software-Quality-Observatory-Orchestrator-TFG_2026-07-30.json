@@ -1,0 +1,1676 @@
+{
+    "somef_provenance": {
+        "somef_version": "0.11.2",
+        "somef_schema_version": "1.0.0",
+        "date": "2026-07-30 13:25:32"
+    },
+    "code_repository": [
+        {
+            "result": {
+                "value": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "owner": [
+        {
+            "result": {
+                "value": "SergioZSZ",
+                "type": "User"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "date_created": [
+        {
+            "result": {
+                "value": "2026-03-05T17:12:54Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "2026-03-07",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "date_updated": [
+        {
+            "result": {
+                "value": "2026-07-29T13:06:30Z",
+                "type": "Date"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "2026-07-12",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "license": [
+        {
+            "result": {
+                "value": "https://api.github.com/licenses/apache-2.0",
+                "type": "License",
+                "name": "Apache License 2.0",
+                "url": "https://spdx.org/licenses/Apache-2.0",
+                "spdx_id": "Apache-2.0",
+                "identifier": "https://spdx.org/licenses/Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Apache-2.0",
+                "type": "File_dump",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://spdx.org/licenses/Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [2026] [SergioZSZ]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.",
+                "type": "File_dump",
+                "name": "Apache License 2.0",
+                "spdx_id": "Apache-2.0",
+                "url": "https://spdx.org/licenses/Apache-2.0",
+                "identifier": "https://spdx.org/licenses/Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/LICENSE"
+        },
+        {
+            "result": {
+                "value": "https://spdx.org/licenses/Apache-2.0",
+                "type": "License",
+                "identifier": "https://spdx.org/licenses/Apache-2.0",
+                "spdx_id": "Apache-2.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Apache-2.0",
+                "spdx_id": "Apache-2.0",
+                "name": "Apache License 2.0",
+                "type": "License"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml"
+        }
+    ],
+    "name": [
+        {
+            "result": {
+                "value": "Software-Quality-Observatory-Orchestrator-TFG",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Software Quality Observatory Orchestrator",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "full_name": [
+        {
+            "result": {
+                "value": "SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "issue_tracker": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/issues",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "forks_url": [
+        {
+            "result": {
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/forks",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "stargazers_count": [
+        {
+            "result": {
+                "value": 1,
+                "type": "Number"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "download_url": [
+        {
+            "result": {
+                "value": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "programming_languages": [
+        {
+            "result": {
+                "value": "HTML",
+                "name": "HTML",
+                "type": "Programming_language",
+                "size": 944840
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Python",
+                "name": "Python",
+                "type": "Programming_language",
+                "size": 898849
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "PLpgSQL",
+                "name": "PLpgSQL",
+                "type": "Programming_language",
+                "size": 95265
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "JavaScript",
+                "name": "JavaScript",
+                "type": "Programming_language",
+                "size": 63480
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "HCL",
+                "name": "HCL",
+                "type": "Programming_language",
+                "size": 50956
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "CSS",
+                "name": "CSS",
+                "type": "Programming_language",
+                "size": 50899
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Just",
+                "name": "Just",
+                "type": "Programming_language",
+                "size": 16827
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Shell",
+                "name": "Shell",
+                "type": "Programming_language",
+                "size": 10205
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Dockerfile",
+                "name": "Dockerfile",
+                "type": "Programming_language",
+                "size": 7126
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Jinja",
+                "name": "Jinja",
+                "type": "Programming_language",
+                "size": 6748
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "PowerShell",
+                "name": "PowerShell",
+                "type": "Programming_language",
+                "size": 6127
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Smarty",
+                "name": "Smarty",
+                "type": "Programming_language",
+                "size": 6028
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "value": "Nix",
+                "name": "Nix",
+                "type": "Programming_language",
+                "size": 2180
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "name": "Python",
+                "value": "Python",
+                "type": "Programming_language",
+                "url": "https://www.python.org/"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "releases": [
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/362337906",
+                "tag": "0.13.1",
+                "name": "0.13.1",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "# General\r\n- Ahora los failed_repos de anteriores iteraciones del workflow se intentan procesan en la siguiente para soca, rsfc y resqui\r\n- Aumentados los MB de descarga de somef a 2000MB para soca y sw-metadata-bot\r\n- Actualizados scripts de creaci\u00f3n de im\u00e1genes docker y de instalaci\u00f3n de herramientas para DashVERSE\r\n- A\u00f1adida nueva variable entorno `RESQUI_CONF` para seleccionar la configuraci\u00f3n querida para los worker_resqui\r\n- Cambio de configuraci\u00f3n para generar el portal linkeddata usando un YAML propio con URLs de repositorios, ejemplo:\r\n```json\r\n{\r\n  \"project\": \"sergio-soca-incremental\",\r\n  \"organizations\": [\r\n    {\r\n      \"org\": \"SergioZSZ\",\r\n      \"type\": \"user\"\r\n    },\r\n    {\r\n      \"org\": \"FAIR2ADAPT\",\r\n      \"type\": \"org\"\r\n    }\r\n  ],\r\n  \"extra_repositories\": [\"https://github.com/oeg-upm/soca\", \"https://github.com/oeg-upm/rsfc\"],\r\n  \"launch_issue\": false,\r\n  \"linkeddata_tools\": \"/app/outputs/linkeddata_tools.yml\"\r\n}\r\n```\r\n- `linkeddata_tools` apunta al YAML propio que sustituye las herramientas del YAML base de LinkedData.\r\n- Las tools nuevas se declaran solo como URLs de GitHub en ese YAML; los campos de la card se rellenan desde metadatos SOCA/SOMEF. Ejemplo de YAML:\r\n```yaml\r\ntools:\r\n  - https://github.com/oeg-upm/OOPS\r\n  - https://github.com/oeg-upm/fair_ontologies\r\n```\r\n- Si no existen metadatos previos de SOCA para una URL, se intentan extraer como fallback.\r\n\r\n- Implementado sqoo_assessment, fusionando los assessments de rsfc y resqui para subir a DashVERSE un unico assessment por repo. De RSFC debido a que hay indicadores con m\u00e1s de un check, se decidi\u00f3 usar esta configuraci\u00f3n relaci\u00f3n indicador/checks: \r\n[conf](containers/dashverse_runner/rsfc_indicators.json)\r\n\r\n\r\n\r\n# SOCA\r\n- A\u00f1adida generaci\u00f3n del portal linkeddata a partir del YAML base + YAML propio de URLs de herramientas (`linkeddata_tools`)\r\n- Mejorada la de detecci\u00f3n de tipo de repositorio\r\n- Mejorada la obtenci\u00f3n der descripciones a partir de metadatos de los repositorios\r\n# RSFC\r\n- Actualizado a versi\u00f3n RSFC 0.1.8\r\n\r\n# RESQUI\r\n- Arreglados bugs de conexi\u00f3n timeout worker_resqui-rabbitmq\r\n- Mejorada la tolerancia a git clone en los worker_resqui\r\n\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.13.1",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.13.1",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.13.1",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/362337906",
+                "release_id": 362337906,
+                "date_created": "2026-07-29T13:04:49Z",
+                "date_published": "2026-07-30T10:09:59Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/353025284",
+                "tag": "0.13.0",
+                "name": "0.13.0",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "# General\r\n- Actualizado el workflow modular para procesar solo repositorios nuevos o modificados, retirar los eliminados y conservar el inventario completo\r\n- Integrado RESQUI en el pipeline modular y reforzada la persistencia de resultados de SOCA, RSFC y RESQUI ante fallos\r\n- A\u00f1adidos scripts de generaci\u00f3n de im\u00e1genes docker \r\nnecesarias para el software: `/scripts/build-docker-images.ps1` (powershell) y `/scripts/build-docker-images.sh` WSL/Linux\r\n- A\u00f1adida nueva variable entorno ``DASHVERSE_JWT`` para meter el token para el acceso a dashverse de n8n\r\n\r\n\r\n# SW-METADATA-BOT\r\n- arreglado problema de configuraci\u00f3n de github token en sw-metadata-bot\r\n- a\u00f1adida configuraci\u00f3n para elegir si lanzar issues o no\r\n- Actualizado bot a la versi\u00f3n 0.5.3 (dentro actualizado somef a 0.11.2 y rsmetacheck a 0.3.4)\r\n\r\n# NGINX\r\n- a\u00f1adido contenedor nginx de despliegue de los portales soca generados\r\n\r\n# SOCA\r\n- Mejorada visualizaci\u00f3n de metadatos de portal software generado por soca\r\n- Actualizado somef dentro de soca a 0.11.2\r\n- A\u00f1adido filtrado por software por defecto (que no se vean ni ontolog\u00edas ni webs)\r\n- A\u00f1adido bot\u00f3n `quality` en los cards, incluyendo el report de rsfc y pitfalls/warnings de sw-metadata-bot + link a la Issue generada por \u00e9l\r\n\r\n# RSFC\r\n- Actualizado RSFC a la versi\u00f3n 0.1.7.\r\n- Reutilizados los metadatos de SOCA y adaptada la integraci\u00f3n a SOMEF 0.11.2\r\n- Corregidas las comprobaciones de versiones y del gestor de issues\r\n\r\n# RESQUI\r\n- Actualizado al commit https://github.com/EVERSE-ResearchSoftware/QualityPipelines/commit/141eaf25c366bf3a59115846c483bf63da6c7e31\r\n\r\n# DashVERSE\r\n- Actualizado a DashVERSE 0.3.0\r\n- A\u00f1adida la publicaci\u00f3n de assessments de RSFC y RESQUI desde el workflow modular\r\n- Habilitada la visualizaci\u00f3n embebida de los dashboards de dashverse restringida al dominio autorizado (http://localhost:8030 en caso local, caso desplegable poner dominio desde donde se visualizar\u00e1)\r\n\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.13.0",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.13.0",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.13.0",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/353025284",
+                "release_id": 353025284,
+                "date_created": "2026-07-12T20:34:13Z",
+                "date_published": "2026-07-13T08:43:27Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/325087988",
+                "tag": "0.12.0",
+                "name": "0.12.0",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "# General\r\n\r\n\r\n\r\n# Soca\r\n- Mejorada visualizaci\u00f3n de metadatos de portal software generado por soca\r\n- Actualizado somef dentro de soca a 0.10.3\r\n- A\u00f1adido filtrado por software por defecto (que no se vean ni ontolog\u00edas ni webs)\r\n- A\u00f1adido bot\u00f3n `quality` en los cards, incluyendo el report de rsfc y pitfalls/warnings de sw-metadata-bot + link a la Issue generada por \u00e9l.\r\n\r\n\r\n# RSFC\r\n- Actualizado RSFC a su \u00faltima versi\u00f3n 0.1.5\r\n- En containers/rsfc_container/rsfc-0.1.5/pyproject.toml: relajado jsonschema de 4.24.0 a >=3,<5.\r\n\r\n# DashVERSE\r\n- Actualizado dashboard SQOO-ORG con chart TOP 5 softwares\r\n- Configurado Superset/DashVERSE para permitir dashboards embebidos mediante `EMBEDDED_SUPERSET` y uso del rol `Gamma` y `Public` para usuarios invitados\r\n- Publicados los dashboards y a\u00f1adidos los roles `Gamma` y `Public` en la configuraci\u00f3n de acceso para permitir visualizaci\u00f3n\r\n- Habilitada la visualizaci\u00f3n embebida del dashboard SQOO-ORG restringida al dominio autorizado http://localhost:8030\r\n\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.12.0",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.12.0",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.12.0",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/325087988",
+                "release_id": 325087988,
+                "date_created": "2026-05-19T14:50:34Z",
+                "date_published": "2026-05-19T14:51:21Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/314507374",
+                "tag": "0.11.0",
+                "name": "0.11.0",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "# General:\r\n- Creados scripts de instalaci\u00f3n de herramientas necesarias para la instalaci\u00f3n de DashVERSE seg\u00fan sistema operativo en el directorio `/scripts`.\r\n   - Windows: ``install-dev-tools.ps1``\r\n   - Linux: ``install-dev-tools.sh``\r\n\r\n- A\u00f1adido estudio sobre la eficiencia de paralelismo de workers en readthedocs (link de referencia en README.md)\r\n\r\n- Actualizada informaci\u00f3n de instalaci\u00f3n de herramientas para el lanzamiento de DashVERSE\r\n\r\n- Actualizada documentaci\u00f3n con las nuevas integraciones\r\n\r\n- Actualizada imagen de flujo a una m\u00e1s completa y visualmente correcta\r\n\r\n# sw-metadata-bot:\r\n- Codificada nueva integraci\u00f3n sw-metadata-bot al workflow para generaci\u00f3n de Issues sobre los metadatos de los repositorios\r\n\r\n# n8n:\r\n- Modificado workflow para la integraci\u00f3n de sw-metadata-bot en \u00e9l\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.11.0",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.11.0",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.11.0",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/314507374",
+                "release_id": 314507374,
+                "date_created": "2026-04-28T09:57:01Z",
+                "date_published": "2026-04-28T09:58:02Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/311454063",
+                "tag": "0.10.0",
+                "name": "0.10.0",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": " **Modificaciones soca:**\r\n   - en template.html de generacion de portal cambiado linea 19\r\n    \t\t<div data-toggle=\"tooltip\" data-placement=\"right\" title=\"SOCA Dashboard Analytics\"><a href=\"https://dashboards-software.oeg.fi.upm.es/d/FX3TNka4k/prototype?orgId=1&from=now-6M&to=now&var-organisation=oeg-upm&var-SOCA_Version=0.0.3&var-SOMEF_Version=0.9.3&kiosk\" target=\"_blank\"><img src=\"img/statIcon.svg\" class=\"grey-color-svg\" style=\"height: 2rem; margin-left: 1rem;\"></a></div>\r\n\r\n      el cambio se efect\u00faa en el nodo <a> cambiado a:\r\n           <a id=\"dashverse-link\" href=\"#\" target=\"_blank\">\r\n\r\n    para encontrar el id desde python y pondiendo href como valor provisional # para modificarlo en python\r\n\r\n   - a\u00f1adido en generacion de portal soca funcion add dashverse link, y a\u00f1adida en la generacion del script portal.py de soca\r\n\r\n   - Mejorada la visualizaci\u00f3n de metadatos del portal, pasando de mostrar datos en bruto a una representaci\u00f3n m\u00e1s estructurada y navegable:\r\n\r\n\r\n         - README: \r\n            - antes: Se visualizaba el rawgithub readme\r\n\r\n            - ahora: el enlace ahora apunta a la vista de GitHub (blob) en lugar del raw, permitiendo una mejor navegaci\u00f3n del repositorio.\r\n\r\n         - Docker: \r\n            - antes: link al rawgithub del archivo docker\r\n\r\n            - ahora: mejorada la detecci\u00f3n de archivos Dockerfile y docker-compose, y archivos de generaci\u00f3n de entornos (agrupados y con sem\u00e1ntica referente a donde se encuentran) y al clickar te lleva al archivo en github \r\n\r\n\r\n         - Citation: \r\n            - antes: se ense\u00f1aba directamente la citaci\u00f3n encontrada (bibtex, citation.cff o texto)\r\n\r\n            - ahora: reemplazada la visualizaci\u00f3n del contenido RAW del bibtex o citation.cff y lo visualiza estructuradamente (o texto) + generaci\u00f3n de bibtex en caso de citation.cff (aparece el source de cada parte)\r\n\r\n         - Requirements:\r\n            - antes: se ense\u00f1aba una mezcla entre requirements.txt, .tomls y el readme sin markdown\r\n            - ahora: archivos de requisitos tienen link para ir a verlos y el readme se ve con markdown (aparece el source de cada)\r\n\r\n         - Instalation: ahora se ve en markdown y aparece el source\r\n\r\n   - cambiado el nombre de soca/assets/img/statIcon.svg a statIcon-org.svg para diferenciarlo del siguiente emoticono\r\n\r\n   - a\u00f1adido a soca/assets/img una imagen statIcon-user.svg para tener un emoticono que lleve al dashboard de usuarios \r\n\r\n   - a\u00f1adida nueva linea en el template.html para a\u00f1adir emoticono statIcon-user.svg\r\nlinea 20:         \r\n      <div data-toggle=\"tooltip\" data-placement=\"right\" title=\"SOCA Dashboard Analytics (user)\"><a id=\"dashverse-user-link\" href=\"#\" target=\"_blank\"><img src=\"img/statIcon-user.svg\" class=\"grey-color-svg\" style=\"height: 2rem; margin-left: 1rem;\"></a></div>\r\n\r\n   - modificada funcion propia add_dashverse_link en soca/commands/portal.py para a\u00f1adir el link al dashboard de usuarios\r\n\r\n   - a\u00f1adido al servicio soca del docker compose estas variables entorno para coger las url del entorno:\r\n            - DASHBOARD_ORG_URL=${DASHBOARD_ORG_URL}\r\n            - DASHBOARD_REPO_URL=${DASHBOARD_REPO_URL}\r\n   \r\n\r\n**Modificaciones DashVERSE:**\r\n   - Actualizado DashVERSE a su versi\u00f3n 2.0\r\n\r\n\r\n**Modificaciones n8n:**\r\n   - Actualizado workflow:\r\n      1. Modificado workflow para compatibilidad con 2 modos de ejecuci\u00f3n del orquestador:\r\n         - `auto`:   Obtenci\u00f3n de indicadores y metadatos de una organizaci\u00f3n o usuario de GitHub concreto\r\n         - `manual`: Obtenci\u00f3n de indicadores y metadatos de repositorios espec\u00edficos de GitHub a partir de un documento `repos.txt` propio ubicado en `/containers/outputs`",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.10.0",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.10.0",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.10.0",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/311454063",
+                "release_id": 311454063,
+                "date_created": "2026-04-20T18:10:58Z",
+                "date_published": "2026-04-20T22:52:34Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/301959497",
+                "tag": "0.9.0",
+                "name": "0.9.0",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "## **SOCA_CONTAINER**\r\n\r\n- Eliminada cola `events`, conexi\u00f3n y declaraci\u00f3n asociada, as\u00ed como todo el sistema de publicaci\u00f3n de eventos de SOCA  \r\n- Eliminado file locker y archivos de status  \r\n- A\u00f1adida generaci\u00f3n de `failed_repo.json` en caso de error durante el procesamiento  \r\n- A\u00f1adido script `genportal.py` para la generaci\u00f3n del portal mediante `execute command` en n8n  \r\n- Sustituci\u00f3n de llamadas a APIs por ejecuci\u00f3n directa mediante `docker execute command` (se ejecuta el main del contenedor en lugar de endpoints)  \r\n\r\n---\r\n\r\n## **RSFC_CONTAINER**\r\n\r\n- Eliminada cola `events`, conexi\u00f3n y declaraci\u00f3n asociada, as\u00ed como todo el sistema de publicaci\u00f3n de eventos de RSFC  \r\n- Eliminada BBDD `rsfc_runner` (obsoleta, sustituida por logs en JSON generados por assessments o fallos por target)  \r\n- A\u00f1adida generaci\u00f3n de `failed_assessments.json` cuando un repositorio falla  \r\n- A\u00f1adido truncamiento de directorios del target para evitar indicadores obsoletos  \r\n- Aumentado n\u00famero m\u00e1ximo de reintentos del worker RSFC a **5** debido a problemas de red  \r\n- Incrementado a **7 retries** en escenarios de red inestable y cambio de estrategia de backoff de lineal a exponencial  \r\n- A\u00f1adida nueva cola de eventos `rsfc_events` para integraci\u00f3n con workflows externos  \r\n- A\u00f1adida nueva funci\u00f3n `publish_event(target: str)` para el env\u00edo de eventos a `rsfc_events` incluyendo el target y sus repositorios  \r\n- Sustituci\u00f3n de llamadas a APIs por ejecuci\u00f3n directa mediante `docker execute command`  \r\n\r\n---\r\n\r\n## **N8N**\r\n\r\n- Fusionados los workflows previos en un \u00fanico workflow `SQOO_workflow` estructurado en 3 fases:\r\n    1. Fetch de SOCA + publicaci\u00f3n de jobs y espera activa hasta la generaci\u00f3n de metadatos por repositorio  \r\n    2. Publicaci\u00f3n de jobs RSFC y espera activa hasta la generaci\u00f3n de assessments  \r\n    3. Env\u00edo de assessments a DashVERSE  \r\n\r\n---\r\n\r\n## **ACTUALIZACIONES Y MEJORAS GENERALES**\r\n\r\n- Actualizado **somef** a versi\u00f3n `0.10.0`:\r\n    - `soca/setup.cfg`\r\n    - `rsfc-main/pyproject.toml`\r\n\r\n- Cambios en `rsfc-main/pyproject.toml`:\r\n    - Python actualizado a `>= 3.11`  \r\n    - `scikit-learn` actualizado a `>= 1.5.0`  \r\n    - `pytest` actualizado a `>= 7.4.4`  \r\n    - `imbalanced-learn` actualizado a `>= 0.11.0`  \r\n\r\n- Generado nuevo `requirements.txt` en `rsfc-main` con las nuevas dependencias del entorno poetry\r\n\r\n- Modificado `github harvester` (l\u00ednea 211):\r\n    - Incrementado timeout a **60 segundos**  \r\n\r\n- Creaci\u00f3n de im\u00e1genes Docker optimizadas:\r\n    - `soca-heavy`\r\n    - `rsfc-heavy`  \r\n    \u2192 Mejora significativa en tiempos de ejecuci\u00f3n en `docker-compose`  \r\n\r\n- Modificado `.gitattributes`:\r\n    - Forzado uso de `LF` en archivos `.sh`  \r\n\r\n- Generado workflow espec\u00edfico de DashVERSE en n8n  \r\n\r\n---\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.9.0",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.9.0",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.9.0",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/301959497",
+                "release_id": 301959497,
+                "date_created": "2026-03-26T15:43:19Z",
+                "date_published": "2026-03-26T15:50:21Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/294734509",
+                "tag": "0.7.0",
+                "name": "0.7.0",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "\r\n\r\n- a\u00f1adidas 2 variables entorno para controlar si se quiere rate limit de workers\r\n    - ``RATE_LIMIT_SOCA_ENABLED`` y `RATE_LIMIT_SOCA_ENABLED` poner true/false dependiendo de si se quiere activar el limiter para los workers para peticiones a GitHubAPI(con 8 workers de soca no hace falta, de rsfc con 3 es necesario)\r\n\r\n- Arreglado bug de concurrencia de soca en `extract_metadata.py` que pod\u00eda generar error en la creaci\u00f3n de carpetas outputs de metadatos (existok=True)\r\n\r\nUPDATES:\r\nConseguido procesar oeg-upm en hora y media por primera vez sin rate limit problems\r\nSOCA:\r\nModificado fetch_repositories.py a tama\u00f1o de p\u00e1gina 100(haciendo la mitad de requests en el etch en organizaciones grandes)\r\nModificado github_harvester.py  funci\u00f3n `get_repo_default_branch(self)` para usar la sesi\u00f3n generada en el init. Es posible que limitase el githubRateLimit a 50 debido a que era una request sin uso del token\r\nGenerado variables entorno para activar rate limiter de workers soca(innecesario ya que solo realiza 1 request por repo) y rate limiters de workers rsfc (necesario debido a 7 request/repo minimas) \r\n\r\nRSFC:\r\nArreglado bug de no acceso a la variable \u2018output\u2019 en \u2018rsfc_test.py\u2019 a\u00f1adiendo \u2018output=false\u2019 al principio\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.7.0",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.7.0",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.7.0",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/294734509",
+                "release_id": 294734509,
+                "date_created": "2026-03-09T14:35:05Z",
+                "date_published": "2026-03-09T14:35:55Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/294491359",
+                "tag": "0.6.0",
+                "name": "0.6.0",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "# UPDATES:\r\n\r\n## SOCA:\r\n- Modificado \u201csetup.cfg\u201d de c\u00f3digo fuente de SOCA para instalar versi\u00f3n m\u00e1s reciente de SOMEF(9.13)\r\n\r\n- Modificado en soca \u2018extract_metadata.py\u2019 con una nueva funci\u00f3n que extrae repositorios de su url en vez de el archivo generado en el fetch\r\n\r\n- Modificado en soca \u2018__main__.py\u2019 con un nuevo cli para la extracci\u00f3n de un repositorio `extract-1-repo`\r\n\r\n## SOCA_CONTAINER:\r\n- Modificado soca_container para que la extracci\u00f3n de repositorios se haga a partir del cli `extract-1-repo`\r\n\r\n- Codificada publicaci\u00f3n de jobs para extracci\u00f3n as\u00edncrona de repositorios generados en el fetch con limitador de tokens para no sobrecargar GitHubApi\r\n\r\n- Adecuado `worker.py` de soca_container para la modificaci\u00f3n anterior e incorporado candado para archivos status.json evitando condiciones de carrera\r\n\r\n- Modificados los endpoints de soca_container:\r\n    - `/functions/run`: ejecuci\u00f3n del fetch de repositorios, generaci\u00f3n de ficheros status.json y publicaci\u00f3n de jobs para extracci\u00f3n de metadatos de los repositorios obtenidos en el fetch\r\n    -`/functions/status-metadata/{target}`: obtenci\u00f3n del contenido del fichero metadata_status.json`\r\n    -`/functions/status-portal/{target}`: obtenci\u00f3n del contenido del fichero portal_status.json\r\n \r\n## RSFC_CONTAINER:\r\n- Cambiado la instalaci\u00f3n de `rsfc` en rsfc_container a editable\r\n\r\n## RSFC:\r\n- Modificado constructor `somef_harvester.py` para que si existen  metadatos del repositorio dado no se extraigan por somef y se usen los existentes\r\n\r\n## N8N:\r\n- A\u00f1adido request a status de extracci\u00f3n de metadatos\r\n- A\u00f1adido request a status de generaci\u00f3n de portal  (en paralelo del resto del workflow) tras la extracci\u00f3n de metadatos\r\n\r\n\r\n\r\n\r\n",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.6.0",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.6.0",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.6.0",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/294491359",
+                "release_id": 294491359,
+                "date_created": "2026-03-09T00:31:17Z",
+                "date_published": "2026-03-09T00:46:15Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/294255342",
+                "tag": "0.5.0",
+                "name": "0.5.0",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "UPDATES:\r\n\r\nAutomatizado configuraci\u00f3n de SOCA y SOMEF durante el levantamiento de docker compose en el script \u2018initial_configs.sh\u2019\r\n\r\n\r\nModificado soca_container con las siguientes utilidades:\r\n- Codificado un canal de publicaci\u00f3n de jobs a RabbitMQ \r\n- Sustituido los endpoints actuales por uno solo \u2018/run\u2019 dedicado a:\r\n-  responder con los repositorios fetcheados a n8n \r\n- publicar el job target para procesamiento por worker_soca\r\n- Generar fichero status.json con el estado del procesamiento\r\n\t- A\u00f1adido endpoint \u2018/status/target\u2019 para comprobar el contenido \r\n\t  del fichero status.json\r\n\r\n\r\nCodificado worker_soca con las siguientes utilidades:\r\n- Extracci\u00f3n as\u00edncrona de metadatos de los repositorio del target\r\n- Generaci\u00f3n del portal software del target\r\n- Modificaci\u00f3n del status.json a completed/error + detalles\r\n",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.5.0",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.5.0",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.5.0",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/294255342",
+                "release_id": 294255342,
+                "date_created": "2026-03-07T14:45:46Z",
+                "date_published": "2026-03-07T14:47:05Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/293596162",
+                "tag": "0.4.2",
+                "name": "0.4.2",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "New DOI and updated Metadata",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.4.2",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.4.2",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.4.2",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/293596162",
+                "release_id": 293596162,
+                "date_created": "2026-03-05T17:21:07Z",
+                "date_published": "2026-03-05T17:21:44Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/293595525",
+                "tag": "0.4.1",
+                "name": "0.4.1",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.4.1",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.4.1",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.4.1",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/293595525",
+                "release_id": 293595525,
+                "date_created": "2026-03-05T17:13:36Z",
+                "date_published": "2026-03-05T17:17:49Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        },
+        {
+            "result": {
+                "type": "Release",
+                "value": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/293595092",
+                "tag": "0.4.0",
+                "name": "0.4.0",
+                "author": {
+                    "name": "SergioZSZ",
+                    "type": "User"
+                },
+                "description": "Added message broker RabbitMQ",
+                "tarball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tarball/0.4.0",
+                "zipball_url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/zipball/0.4.0",
+                "html_url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/tag/0.4.0",
+                "url": "https://api.github.com/repos/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/releases/293595092",
+                "release_id": 293595092,
+                "date_created": "2026-03-05T17:13:36Z",
+                "date_published": "2026-03-05T17:14:54Z",
+                "assets": []
+            },
+            "confidence": 1,
+            "technique": "GitHub_API"
+        }
+    ],
+    "version": [
+        {
+            "result": {
+                "value": "0.13.0",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/CITATION.cff"
+        },
+        {
+            "result": {
+                "value": "0.13.0",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "0.13.0",
+                "type": "Release",
+                "tag": "0.13.0"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml"
+        }
+    ],
+    "citation": [
+        {
+            "result": {
+                "title": "Software Quality Observatory Orchestrator",
+                "author": [
+                    {
+                        "type": "Agent",
+                        "name": "Sergio Zaballos Herrera",
+                        "family_name": "Zaballos Herrera",
+                        "given_name": "Sergio",
+                        "url": "https://orcid.org/0009-0000-3795-2767"
+                    }
+                ],
+                "url": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG",
+                "type": "SoftwareApplication",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "value": "10.5281/zenodo.18879858",
+                        "description": "Concept DOI for all archived versions of the software."
+                    }
+                ],
+                "format": "cff",
+                "value": "cff-version: 1.2.0\nmessage: If you use this software, please cite it using the metadata from this file.\ntitle: Software Quality Observatory Orchestrator\ntype: software\nauthors:\n- given-names: Sergio\n  family-names: Zaballos Herrera\n  affiliation: Escuela T\u00c3\u00a9cnica Superior de Ingenieros Inform\u00c3\u00a1ticos, Universidad\n    Polit\u00c3\u00a9cnica de Madrid (ETSIINF-UPM)\n  email: s.zaballosh@gmail.com\n  orcid: https://orcid.org/0009-0000-3795-2767\ncontact:\n- given-names: Sergio\n  family-names: Zaballos Herrera\n  affiliation: Escuela T\u00c3\u00a9cnica Superior de Ingenieros Inform\u00c3\u00a1ticos, Universidad\n    Polit\u00c3\u00a9cnica de Madrid (ETSIINF-UPM)\n  email: s.zaballosh@gmail.com\n  orcid: https://orcid.org/0009-0000-3795-2767\nabstract: A modular and containerized orchestrator for assessing research software\n  quality. It uses n8n and RabbitMQ to coordinate incremental metadata extraction\n  with SOCA and SOMEF, FAIR quality assessments with RSFC and RESQUI, metadata checks\n  with sw-metadata-bot and RsMetaCheck, publication to DashVERSE, and generation of\n  a software catalogue portal.\nkeywords:\n- research software\n- software quality assessment\n- FAIR software\n- software metadata\n- workflow orchestration\n- incremental workflows\n- n8n\n- Docker\n- DashVERSE\nlicense: Apache-2.0\nversion: 0.13.0\ndate-released: 2026-07-12\nidentifiers:\n- type: doi\n  value: 10.5281/zenodo.18879858\n  description: Concept DOI for all archived versions of the software.\nrepository-code: https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG\nurl: https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG\nreferences:\n- type: software\n  title: SOCA\n  repository-code: https://github.com/oeg-upm/soca\n- type: software\n  title: SOMEF\n  repository-code: https://github.com/KnowledgeCaptureAndDiscovery/somef\n- type: software\n  title: RSFC\n  repository-code: https://github.com/oeg-upm/rsfc\n- type: software\n  title: RESQUI (EVERSE Software Quality Pipelines)\n  repository-code: https://github.com/EVERSE-ResearchSoftware/QualityPipelines\n- type: software\n  title: DashVERSE\n  repository-code: https://github.com/EVERSE-ResearchSoftware/DashVERSE\n- type: software\n  title: sw-metadata-bot\n  repository-code: https://github.com/SoftwareUnderstanding/sw-metadata-bot\n- type: software\n  title: RsMetaCheck\n  repository-code: https://github.com/SoftwareUnderstanding/RsMetaCheck\n",
+                "datePublished": "2026"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/CITATION.cff"
+        }
+    ],
+    "readme_url": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/README.md",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/blob/main/README.md",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "application_domain": [
+        {
+            "result": {
+                "value": "Research software quality assessment",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "date_published": [
+        {
+            "result": {
+                "value": "2026-03-05",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "keywords": [
+        {
+            "result": {
+                "value": [
+                    "research software",
+                    "software quality assessment",
+                    "FAIR software",
+                    "software metadata",
+                    "workflow orchestration",
+                    "incremental workflows",
+                    "n8n",
+                    "Docker",
+                    "DashVERSE"
+                ],
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "development_status": [
+        {
+            "result": {
+                "value": "active",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        }
+    ],
+    "identifier": [
+        {
+            "result": {
+                "value": "https://doi.org/10.5281/zenodo.18879858",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://doi.org/10.5281/zenodo.18879858"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/README.md"
+        }
+    ],
+    "description": [
+        {
+            "result": {
+                "value": "A modular and containerized orchestrator for assessing research software quality. It uses n8n and RabbitMQ to coordinate incremental metadata extraction with SOCA and SOMEF, FAIR quality assessments with RSFC and RESQUI, metadata checks with sw-metadata-bot and RsMetaCheck, publication to DashVERSE, and generation of a software catalogue portal.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "A python package that given an organization/user name, it will create a software catalog for browsing all repositories or just a single repository in a minimalist card.",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        }
+    ],
+    "author": [
+        {
+            "result": {
+                "value": "Sergio Zaballos Herrera",
+                "type": "Agent",
+                "email": "s.zaballosh@gmail.com",
+                "affiliation": "Escuela T\u00e9cnica Superior de Ingenieros Inform\u00e1ticos"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "name": "SergioZSZ",
+                "email": "s.zaballosh@gmail.com",
+                "type": "Agent",
+                "value": "SergioZSZ"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml"
+        },
+        {
+            "result": {
+                "name": "Daniel Rodr\u00edguez Mariblanca, Miguel Arroyo M\u00e1rquez, Esteban Gonzalez, Daniel Garijo",
+                "email": "daniel.garijo@upm.es",
+                "type": "Agent",
+                "value": "Daniel Rodr\u00edguez Mariblanca, Miguel Arroyo M\u00e1rquez, Esteban Gonzalez, Daniel Garijo"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        }
+    ],
+    "requirements": [
+        {
+            "result": {
+                "value": "Docker with Docker Compose",
+                "type": "SoftwareDependency"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Python >=3.11,<3.13",
+                "type": "SoftwareDependency"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "poetry-core>=2.0.0,<3.0.0",
+                "name": "poetry-core",
+                "version": ">=2.0.0,<3.0.0",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "mkdocs",
+                "name": "mkdocs",
+                "type": "SoftwareDependency"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/docs/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "somef >= 0.11.2",
+                "name": "somef",
+                "version": ">= 0.11.2",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "requests",
+                "name": "requests",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "bs4",
+                "name": "bs4",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "htmlmin",
+                "name": "htmlmin",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "progressbar2",
+                "name": "progressbar2",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "mistune",
+                "name": "mistune",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "Pygments",
+                "name": "Pygments",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "html2image",
+                "name": "html2image",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "inspect4py",
+                "name": "inspect4py",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "Jinja2",
+                "name": "Jinja2",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "click",
+                "name": "click",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "PyYAML",
+                "name": "PyYAML",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "influxdb-client",
+                "name": "influxdb-client",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "configparser",
+                "name": "configparser",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "DateTime",
+                "name": "DateTime",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "pathlib",
+                "name": "pathlib",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "nltk",
+                "name": "nltk",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "configparser",
+                "name": "configparser",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "influxdb_client",
+                "name": "influxdb_client",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "validators",
+                "name": "validators",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "bibtexparser",
+                "name": "bibtexparser",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "pybtex",
+                "name": "pybtex",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "cffconvert",
+                "name": "cffconvert",
+                "version": "",
+                "type": "SoftwareDependency",
+                "dependency_type": "runtime",
+                "dependency_resolver": "python"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        }
+    ],
+    "runtime_platform": [
+        {
+            "result": {
+                "value": "Docker",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Python >=3.11,<3.13",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "n8n",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/codemeta.json"
+        },
+        {
+            "result": {
+                "value": "Python>=3.11, <3.13",
+                "name": "Python",
+                "version": ">=3.11, <3.13",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "Python>=3.11,<3.13",
+                "name": "Python",
+                "version": ">=3.11,<3.13",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "```bash\njust status\n```\n\nConsultar credenciales generadas:\n\n```bash\njust show-access\n```\n\nConsultar logs generales:\n\n```bash\njust logs\n```\n\nLogs concretos:\n\n```bash\njust logs-postgres\njust logs-postgrest\njust logs-superset\njust logs-backend\njust logs-frontend\n```\n",
+                "type": "Text_excerpt",
+                "original_header": "4. Comprobar servicios",
+                "parent_header": [
+                    "TFG \u2013 Orquestaci\u00f3n automatizada de evaluaci\u00f3n de software y generaci\u00f3n de cat\u00e1logo",
+                    "Instalaci\u00f3n/Despliegue DashVERSE 0.3.0"
+                ]
+            },
+            "confidence": 1.0,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Docker",
+                "type": "String",
+                "original_header": "10. Parada y arranque posterior",
+                "parent_header": [
+                    "TFG \u2013 Orquestaci\u00f3n automatizada de evaluaci\u00f3n de software y generaci\u00f3n de cat\u00e1logo",
+                    "Instalaci\u00f3n/Despliegue DashVERSE 0.3.0"
+                ]
+            },
+            "confidence": 1,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/README.md"
+        },
+        {
+            "result": {
+                "value": "Parar Minikube:\n\n```bash\nminikube stop\n```\n\nVolver a arrancar:\n\n```bash\nminikube start --driver=docker\n```\n\nComprobar el servicio de port-forward:\n\n```bash\njust port-forward-status\n```\n\nSi los port-forwards no est\u00e1n activos:\n\n```bash\njust forward_address=0.0.0.0 port-forward\n```\n\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "10. Parada y arranque posterior",
+                "parent_header": [
+                    "TFG \u2013 Orquestaci\u00f3n automatizada de evaluaci\u00f3n de software y generaci\u00f3n de cat\u00e1logo",
+                    "Instalaci\u00f3n/Despliegue DashVERSE 0.3.0"
+                ]
+            },
+            "confidence": 0.8,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/README.md"
+        },
+        {
+            "result": {
+                "value": "\n\n**Evaluaci\u00f3n de paralelismo de workers:** \nhttps://software-quality-observatory-orchestrator-tfg.readthedocs.io/es/latest/estudios/#estudio-sobre-el-paralelismo-de-workers\n\n**Estudio sobre RAM y espacio del dispositivo:**\n*In progress*\n\n\n",
+                "type": "Text_excerpt",
+                "original_header": "7. Estudios sobre el proyecto",
+                "parent_header": [
+                    "TFG \u2013 Orquestaci\u00f3n automatizada de evaluaci\u00f3n de software y generaci\u00f3n de cat\u00e1logo"
+                ]
+            },
+            "confidence": 0.8,
+            "technique": "header_analysis",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/README.md"
+        }
+    ],
+    "has_build_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml",
+                "type": "Url",
+                "format": "pyproject.toml"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/docs/requirements.txt",
+                "type": "Url",
+                "format": "requirements.txt"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/docs/requirements.txt"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/n8n_container/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/n8n_container/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/resqui_container/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/resqui_container/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/rsfc_container/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/rsfc_container/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/sw-metadata-bot_container/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/sw-metadata-bot_container/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/sw-metadata-bot-0.5.3/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/sw-metadata-bot-0.5.3/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/sw-metadata-bot-0.5.3/docker-compose.yml",
+                "type": "Url",
+                "format": "docker_compose"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/sw-metadata-bot-0.5.3/docker-compose.yml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/rsfc_container/rsfc-0.1.8/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/rsfc_container/rsfc-0.1.8/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg",
+                "type": "Url",
+                "format": "setup.cfg"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.py",
+                "type": "Url",
+                "format": "setup.py"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.py"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/DashVERSE/backend/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/DashVERSE/backend/Dockerfile"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/DashVERSE/frontend/Dockerfile",
+                "type": "Url",
+                "format": "dockerfile"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/DashVERSE/frontend/Dockerfile"
+        }
+    ],
+    "has_package_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        }
+    ],
+    "package_id": [
+        {
+            "result": {
+                "value": "sqoo",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/pyproject.toml"
+        },
+        {
+            "result": {
+                "value": "soca",
+                "type": "String"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        }
+    ],
+    "documentation": [
+        {
+            "result": {
+                "value": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tree/master/docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://github.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/tree/master/integrations/DashVERSE\\docs",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://software-quality-observatory-orchestrator-tfg.readthedocs.io/",
+                "format": "readthedocs"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/README.md"
+        }
+    ],
+    "has_script_file": [
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/scripts/backup_outputs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/scripts/build-docker-images.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/scripts/install-dev-tools.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/initial_configs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/sw-metadata-bot_container/initial_configs.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/sw-metadata-bot-0.5.3/ossr_analysis.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/sw-metadata-bot-0.5.3/update_version_package.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/rsfc_container/rsfc-0.1.8/run_rsfc.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/container_run.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        },
+        {
+            "result": {
+                "value": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/installer.sh",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "file_exploration"
+        }
+    ],
+    "code_of_conduct": [
+        {
+            "result": {
+                "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nWe as members, contributors, and leaders pledge to make participation in our\ncommunity a harassment-free experience for everyone, regardless of age, body\nsize, visible or invisible disability, ethnicity, sex characteristics, gender\nidentity and expression, level of experience, education, socio-economic status,\nnationality, personal appearance, race, religion, or sexual identity\nand orientation.\n\nWe pledge to act and interact in ways that contribute to an open, welcoming,\ndiverse, inclusive, and healthy community.\n\n## Our Standards\n\nExamples of behavior that contributes to a positive environment for our\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions, viewpoints, and experiences\n* Giving and gracefully accepting constructive feedback\n* Accepting responsibility and apologizing to those affected by our mistakes,\n  and learning from the experience\n* Focusing on what is best not just for us as individuals, but for the\n  overall community\n\nExamples of unacceptable behavior include:\n\n* The use of sexualized language or imagery, and sexual attention or\n  advances of any kind\n* Trolling, insulting or derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or email\n  address, without their explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Enforcement Responsibilities\n\nCommunity leaders are responsible for clarifying and enforcing our standards of\nacceptable behavior and will take appropriate and fair corrective action in\nresponse to any behavior that they deem inappropriate, threatening, offensive,\nor harmful.\n\nCommunity leaders have the right and responsibility to remove, edit, or reject\ncomments, commits, code, wiki edits, issues, and other contributions that are\nnot aligned to this Code of Conduct, and will communicate reasons for moderation\ndecisions when appropriate.\n\n## Scope\n\nThis Code of Conduct applies within all community spaces, and also applies when\nan individual is officially representing the community in public spaces.\nExamples of representing our community include using an official e-mail address,\nposting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported to the community leaders responsible for enforcement at\neverse-ccc@lists.certh.gr.\nAll complaints will be reviewed and investigated promptly and fairly.\n\nAll community leaders are obligated to respect the privacy and security of the\nreporter of any incident.\n\n## Enforcement Guidelines\n\nCommunity leaders will follow these Community Impact Guidelines in determining\nthe consequences for any action they deem in violation of this Code of Conduct:\n\n### 1. Correction\n\n**Community Impact**: Use of inappropriate language or other behavior deemed\nunprofessional or unwelcome in the community.\n\n**Consequence**: A private, written warning from community leaders, providing\nclarity around the nature of the violation and an explanation of why the\nbehavior was inappropriate. A public apology may be requested.\n\n### 2. Warning\n\n**Community Impact**: A violation through a single incident or series\nof actions.\n\n**Consequence**: A warning with consequences for continued behavior. No\ninteraction with the people involved, including unsolicited interaction with\nthose enforcing the Code of Conduct, for a specified period of time. This\nincludes avoiding interactions in community spaces as well as external channels\nlike social media. Violating these terms may lead to a temporary or\npermanent ban.\n\n### 3. Temporary Ban\n\n**Community Impact**: A serious violation of community standards, including\nsustained inappropriate behavior.\n\n**Consequence**: A temporary ban from any sort of interaction or public\ncommunication with the community for a specified period of time. No public or\nprivate interaction with the people involved, including unsolicited interaction\nwith those enforcing the Code of Conduct, is allowed during this period.\nViolating these terms may lead to a permanent ban.\n\n### 4. Permanent Ban\n\n**Community Impact**: Demonstrating a pattern of violation of community\nstandards, including sustained inappropriate behavior,  harassment of an\nindividual, or aggression toward or disparagement of classes of individuals.\n\n**Consequence**: A permanent ban from any sort of public interaction within\nthe community.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage],\nversion 2.0, available at\nhttps://www.contributor-covenant.org/version/2/0/code_of_conduct.html.\n\nCommunity Impact Guidelines were inspired by [Mozilla's code of conduct\nenforcement ladder](https://github.com/mozilla/diversity).\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see the FAQ at\nhttps://www.contributor-covenant.org/faq. Translations are available at\nhttps://www.contributor-covenant.org/translations.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/DashVERSE/CODE_OF_CONDUCT.md"
+        }
+    ],
+    "contributing_guidelines": [
+        {
+            "result": {
+                "value": "# Contributing to DashVERSE\n\nThanks for your interest in helping out. DashVERSE is the dashboard prototype for the [EVERSE project](https://everse.software/), and contributions of all sizes are welcome: bug reports, fixes, documentation tweaks, new dashboards, schema improvements.\n\n## Code of conduct\n\nThis project follows the [Contributor Covenant](CODE_OF_CONDUCT.md). By participating you agree to its terms.\n\n## Reporting bugs and asking questions\n\n- Search [open issues](https://github.com/EVERSE-ResearchSoftware/DashVERSE/issues) first to avoid duplicates.\n- A useful bug report includes: deployment target (local minikube, production), the command you ran, expected vs observed behaviour, and any relevant log snippets from `just logs`.\n- For questions about EVERSE indicators, dimensions, or the assessment schema, the upstream repos are the right place:\n  - <https://github.com/EVERSE-ResearchSoftware/indicators>\n  - <https://github.com/EVERSE-ResearchSoftware/schemas>\n  - <https://github.com/EVERSE-ResearchSoftware/QualityPipelines>\n\n## Suggesting features\n\nOpen an issue describing the use case before starting work. For larger changes (a new dashboard, a new auth flow, a schema change), it is worth discussing the approach first so the work fits the rest of the system.\n\n## Development setup\n\nSee [`docs/README.dev.md`](docs/README.dev.md) for the full setup. Short version:\n\n1. Install OpenTofu, kubectl, helm, minikube, ansible, and Docker or Podman. If you have Nix, `nix develop` provides everything.\n2. Start minikube: `minikube start --cpus='4' --memory='8g'`\n3. Deploy: `just deploy` (the `env` variable defaults to `local`; use `just env=production deploy` for a real target)\n4. Port-forward in a separate terminal: `just port-forward`\n5. Configure dashboards: `just setup-dashboards`\n6. Optional sample data: `just seed-data`\n\nTear down with `just destroy`, or `minikube delete` for a full reset.\n\n## Branches and commits\n\n- Branch from `main` with a short descriptive name like `fix-superset-init` or `add-trainer-charts`.\n- Keep commits small and focused on one logical change. Avoid mixing a refactor with feature work in the same commit.\n- Commit messages: lowercase, verb-first, no trailing period. For example:\n\n  ```\n  add trainer dashboard charts\n  ```\n\n- If a change touches more than five files, think about whether it should be split.\n\n## Pull requests\n\n1. Push your branch and open a PR against `main` describing what changed and why.\n2. Link related issues with `Closes #NN`.\n3. If your change affects dashboards, include a before/after screenshot or a list of affected charts.\n4. CI is still being set up; until it lands, please confirm at least that `just deploy` succeeds end-to-end on a clean minikube.\n5. Be patient with review. Maintainers triage on a best-effort basis.\n\n## Code style\n\nMatch the surrounding code. Some defaults:\n\n| Area                                         | Indent   | Notes                                                                                                                      |\n| -------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------- |\n| Python (backend, frontend, database)     | 4 spaces | Type hints on function signatures where they add value. Prefer `logging.getLogger(__name__)`.                              |\n| SQL (deployment/database/sql)                           | 4 spaces | Uppercase keywords (`CREATE TABLE`, `SELECT`), lowercase identifiers. Brief comment for non-trivial views or triggers.     |\n| Terraform (deployment/terraform/)                       | 2 spaces | HCL convention. One resource per file when it helps clarity. Use `locals {}` to reduce repetition.                         |\n| Ansible (deployment/ansible/)                           | 2 spaces | Descriptive task names. The Superset role splits charts and dashboards per RSQKit role under `tasks/everse_roles/<role>/`. |\n| Shell (scripts/)                             | 2 spaces | `#!/usr/bin/env bash` and `set -euo pipefail` at the top.                                                                  |\n\nKeep diffs free of unrelated whitespace changes. Run formatters before pushing if the language has one configured locally.\n\n## Testing\n\nThe test suite is sparse today. Where tests exist, run them with `pytest` from the relevant component directory. If you add a feature, a small unit test is appreciated even without a formal coverage target. End-to-end verification on minikube is the practical fallback for deployment changes.\n\n## Documentation\n\nUpdate the relevant doc when changing behaviour:\n\n- Deployment changes: `docs/README.dev.md`\n- Database schema: `docs/Database.md`\n- API examples: `docs/API_examples.md`\n- Superset and dashboards: `docs/Superset.md`, `docs/Kubernetes.md`\n\nThe repo-root `README.md` stays short on purpose; new content usually belongs under `docs/`.\n\n## License\n\nBy contributing you agree your contributions will be licensed under the same terms as the project (see [LICENSE](LICENSE)).\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/DashVERSE/CONTRIBUTING.md"
+        },
+        {
+            "result": {
+                "value": "# Contributing Guide\n\nDeveloper and maintainer steps to install, configure, and run sw-metadata-bot.\n\n## What the bot does\n\n- Run pitfalls detection using [RSMetaCheck package](https://github.com/SoftwareUnderstanding/RsMetaCheck)\n- Handle analysis for multiple repositories\n- Create repository centric output subfolders\n\n## Prerequisites\n\n- Python 3.10, 3.11, or 3.12\n- Git (``git`` executable available on ``PATH``)\n- GitHub or GitLab personal access token with permission to create issues\n- Optional: [`uv`](https://docs.astral.sh/uv) (recommended)\n\nGit is a system dependency used for repository commit lookup\n(``git ls-remote`` fallback) and is not installed through ``pyproject.toml``.\n\n## Install\n\n### Use the package CLI\n\nAfter cloning this project, set up the python environnment with uv:\n\n```bash\nuv sync\n```\n\nThis will create the virtual environnment, download the dependencies and build the package locally.\n\n### Use this package as dependency\n\nWith `uv` (recommended):\n\n```bash\nuv add sw-metadata-bot\n```\n\nOr with pip\nWith `pip`:\n\n```bash\npip install sw-metadata-bot\n```\n\nThe package metadata also exposes standard extras for release builds:\n\n```bash\npip install \"sw-metadata-bot[docs]\"\npip install \"sw-metadata-bot[test]\"\npip install \"sw-metadata-bot[dev]\"\n```\n\n## Configure authentication\n\nExport your tokens (only set what you need):\n\n```bash\nexport GITHUB_API_TOKEN=ghp_xxxxxxxxxxxx      # GitHub.com\nexport GITLAB_API_TOKEN=glpat_xxxxxxxxxxxx    # GitLab.com\n```\n\nConvenient one-liner to load a `.env` file:\n\n```bash\nset -a; source .env; set +a\n```\n\nExample `.env`:\n\n```bash\nGITHUB_API_TOKEN=ghp_xxxxxxxxxxxx\nGITLAB_API_TOKEN=glpat_xxxxxxxxxxxx\n```\n\n## Run complete pipeline\n\n### Create configuration file\n\nThe pipeline now uses a single configuration file as its source of truth for:\n\n- repository list `\"repositories\"`\n- custom issue message `\"custom_message\"`\n- inline opt-outs `\"opt_outs\"`\n- output root `\"root_dir\"`\n- run name `\"run_name\"`\n- default snapshot-tag format `\"snapshot_tag_format\"`\n\nExample config:\n\n```json\n{\n  \"repositories\": [\n    \"https://github.com/SoftwareUnderstanding/sw-metadata-bot\",\n    \"https://github.com/SoftwareUnderstanding/RsMetaCheck\"\n  ],\n  \"issues\": {\n    \"custom_message\": \"This is a issue created for testing purposes. Several metadata issues were identified and could be addressed.\",\n    \"opt_outs\": [\n    ]\n  },\n  \"outputs\": {\n    \"root_dir\": \"assets\",\n    \"run_name\": \"example_run\",\n    \"snapshot_tag_format\": \"%Y%m%d\"\n  }\n}\n```\n\n`opt-out` lists the repositories for which issues won't be submitted but the repository is still analysed and part of the result outputs.\n\n### Run analysis\n\nTo run the bot, start with analysis.\n\n```bash\nuv run sw-metadata-bot run-analysis \\\n  --config-file assets/ossr_list_url.json\n```\n\nYou can override the generated snapshot tag when needed.\n\n```bash\nuv run sw-metadata-bot run-analysis \\\n  --config-file <path_to_your_config.json> \\\n  --snapshot-tag <example_suffix>\n```\n\nOutput structure using the example config file provided:\n\n```text\nassets/\n\u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac example_run/\n  \u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac <snapshot_tag>/\n    \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac analysis_results.json\n    \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac config.json\n    \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac run_report.json\n    \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac github_com_softwareunderstanding_sw_metadata_bot/\n    \u00e2\u201d\u201a   \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac issue_report.md\n    \u00e2\u201d\u201a   \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac pitfall.jsonld\n    \u00e2\u201d\u201a   \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac report.json\n    \u00e2\u201d\u201a   \u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac somef_output.json\n    \u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac github_com_softwareunderstanding_rsmetacheck/\n      \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac issue_report.md\n      \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac pitfall.jsonld\n      \u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac report.json\n      \u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac somef_output.json\n```\n\n- `assets/`: output root selected by `\"root_dir\": \"assets\"` in the config.\n- `example_run/`: run namespace selected by `\"run_name\": \"example_run\"`; this keeps outputs from different campaigns separated.\n- `<snapshot_tag>/`: one analysis snapshot folder, usually generated from `\"snapshot_tag_format\": \"%Y%m%d\"` unless you override it with `--snapshot-tag`.\n- `analysis_results.json`: global analysis summary for the full run, including the repositories that were evaluated and metadata such as commit identifiers.\n- `config.json`: a copy of the effective configuration used for this snapshot, stored for reproducibility.\n- `run_report.json`: top-level decision report for the whole batch, with counters and one record per repository.\n- `github_com_softwareunderstanding_sw_metadata_bot/`: per-repository folder for `https://github.com/SoftwareUnderstanding/sw-metadata-bot`; repository URLs are sanitized to lowercase folder names.\n- `github_com_softwareunderstanding_rsmetacheck/`: per-repository folder for `https://github.com/SoftwareUnderstanding/RsMetaCheck`; it contains the same artifact set as the other repository folder.\n- `issue_report.md`: human-readable markdown report that can be reviewed before publication and reused as issue content.\n- `pitfall.jsonld`: raw RSMetacheck JSON-LD output for the repository, including detected checks and evidence.\n- `report.json`: machine-readable per-repository report summarizing findings, action/decision, identifiers, and links to generated artifacts.\n- `somef_output.json`: raw SOMEF metadata extraction output used as input for the analysis pipeline.\n\nThe exact repository folder names depend on the repository URLs in your config, but the files created inside each repository folder follow this same pattern.\n\n### Publish\n\nIf you want to submit the analysis to the actual repositories, you can publish from an existing analysis snapshot (no new analysis is generated):\n\n```bash\nuv run sw-metadata-bot publish \\\n  --analysis-root outputs/ossr/<snapshot_tag>\n```\n\nThis requires setting up environment variables `GITHUB_API_TOKEN` / `GITLAB_API_TOKEN` with working tokens.\nWe recommend creating a `.env` file.\nYou can use the `uv run sw-metadata-bot verify-tokens` command to test them after set up.\n\n## Troubleshooting\n\n- **Auth failed / 401**: Check `GITHUB_API_TOKEN` / `GITLAB_API_TOKEN` are exported and valid.\n- **403 / 404 on issue creation**: You need write/triage permissions on the repository. Test with repos you own first.\n- **Platform not supported**: Repo must be GitHub or GitLab (self-hosted GitLab is auto-detected).\n- **Review before posting**: Inspect snapshot reports after `run-analysis`, then run `publish` on the selected analysis root.\n- **Publish failed because of transient API issues**: Fix the cause (for example wait for rate-limit reset or refresh token), then rerun publish with retry mode:\n\n```bash\nuv run sw-metadata-bot publish \\\n  --analysis-root outputs/ossr/<snapshot_tag> \\\n  --retry-failed\n```\n\nAlready posted records remain skipped for idempotency; retry mode only re-attempts eligible failed records.\n\n## CI test policy\n\nThe CI intentionally separates deterministic unit tests from real GitLab integration tests:\n\n- Unit tests are always blocking and run on every PR/push.\n- GitLab integration tests are conditional and run only on `main`, scheduled runs, or manual dispatch.\n- Integration tests require `GITLAB_API_TOKEN` to be configured in GitHub repository secrets.\n\nThis keeps contributor PRs stable while still validating live GitLab API behavior regularly.\n\n### Run tests locally\n\nRun default (unit) suite:\n\n```bash\nuv run pytest -m \"not integration_gitlab\"\n```\n\nRun GitLab integration tests (requires token):\n\n```bash\nexport GITLAB_API_TOKEN=glpat_xxxxxxxxxxxx\nuv run pytest --run-integration-gitlab -m \"integration_gitlab\"\n```\n\n## CI test policy\n\nThe CI intentionally separates deterministic unit tests from real GitLab integration tests:\n\n- Unit tests are always blocking and run on every PR/push.\n- GitLab integration tests are conditional and run only on `main`, scheduled runs, or manual dispatch.\n- Integration tests require `GITLAB_API_TOKEN` to be configured in GitHub repository secrets.\n\nThis keeps contributor PRs stable while still validating live GitLab API behavior regularly.\n\n### Run tests locally\n\nRun default (unit) suite:\n\n```bash\nuv run pytest -m \"not integration_gitlab\"\n```\n\nRun GitLab integration tests (requires token):\n\n```bash\nexport GITLAB_API_TOKEN=glpat_xxxxxxxxxxxx\nuv run pytest --run-integration-gitlab -m \"integration_gitlab\"\n```\n\n## Supported platforms\n\n- GitHub.com\n- Gitlab.com\n\nSelf-hosted GitLab instances are supported when you provide a token for the target host (not been tested yet).\nRun the bot against your own organization or repositories where you have permission to open and manage issues.\n",
+                "type": "File_dump"
+            },
+            "confidence": 1,
+            "technique": "file_exploration",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/integrations/sw-metadata-bot-0.5.3/CONTRIBUTING.md"
+        }
+    ],
+    "homepage": [
+        {
+            "result": {
+                "value": "https://github.com/oeg-upm/soca",
+                "type": "Url"
+            },
+            "confidence": 1,
+            "technique": "code_parser",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/containers/soca_container/soca/setup.cfg"
+        }
+    ],
+    "full_title": [
+        {
+            "result": {
+                "type": "String",
+                "value": "TFG \u2013 Orquestaci\u00f3n automatizada de evaluaci\u00f3n de software y generaci\u00f3n de cat\u00e1logo"
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/README.md"
+        }
+    ],
+    "repository_status": [
+        {
+            "result": {
+                "type": "Url",
+                "value": "https://www.repostatus.org/#active",
+                "description": ""
+            },
+            "confidence": 1,
+            "technique": "regular_expression",
+            "source": "https://raw.githubusercontent.com/SergioZSZ/Software-Quality-Observatory-Orchestrator-TFG/master/README.md"
+        }
+    ]
+}

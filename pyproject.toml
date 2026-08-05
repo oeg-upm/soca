@@ -1,6 +1,54 @@
-[build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
+[tool.poetry]
+name = "soca"
+version = "0.0.4"
+description = "A python package that given an organization/user name, it will create a software catalog for browsing all repositories or just a single repository in a minimalist card."
+authors = [
+    "Daniel Rodriguez Mariblanca",
+    "Miguel Arroyo Marquez",
+    "Esteban Gonzalez",
+    "Daniel Garijo <daniel.garijo@upm.es>",
+    "Sergio Zaballos",
+
 ]
-build-backend = "setuptools.build_meta"
+readme = "README.md"
+homepage = "https://github.com/oeg-upm/soca"
+repository = "https://github.com/oeg-upm/soca"
+packages = [
+    { include = "soca", from = "src" },
+    { include = "linkeddata_portal", from = "src" },
+]
+include = [
+    "src/soca/assets/**/*",
+    "src/linkeddata_portal/assets/**/*",
+    "src/linkeddata_portal/templates/**/*",
+    "src/linkeddata_portal/linkeddata.base.yml",
+    "src/linkeddata_portal/linkeddata.old-base.yml",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+somef = ">=0.11.2"
+requests = "*"
+bs4 = "*"
+htmlmin = "*"
+progressbar2 = "*"
+mistune = "*"
+Pygments = "*"
+html2image = "*"
+inspect4py = "*"
+Jinja2 = "*"
+click = "*"
+PyYAML = "*"
+influxdb-client = "*"
+nltk = "*"
+validators = "*"
+bibtexparser = "*"
+pybtex = "*"
+cffconvert = "*"
+
+[tool.poetry.scripts]
+soca = "soca.__main__:cli"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

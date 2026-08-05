@@ -4,10 +4,20 @@ const loadCardsData = async () => {
     try {
         const portalVersion = window.SOCA_PORTAL_VERSION || 'dev';
         const res = await fetch(`cards_data.json?v=${encodeURIComponent(portalVersion)}`);
+
+        if (!res.ok) {
+            throw new Error(`Failed to load cards_data.json: ${res.status}`);
+        }
+
         cards = await res.json();
         search();
     } catch (error) {
         console.error(error);
+        myCards.innerHTML = `
+            <div class="portal-loading" role="alert">
+                <p>Could not load the software catalog.</p>
+            </div>
+        `;
     }
 }
 
