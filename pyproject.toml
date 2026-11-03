@@ -27,7 +27,7 @@ include = [
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
-somef = ">=0.11.2"
+somef = ">=0.11.5"
 requests = "*"
 bs4 = "*"
 htmlmin = "*"
