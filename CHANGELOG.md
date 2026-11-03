@@ -20,7 +20,7 @@
 
 - Updated package requirements:
   - Python support is constrained to `>=3.11,<3.13`;
-  - SOMEF is raised to `>=0.11.2`;
+  - SOMEF is raised to `>=0.11.5`;
   - `Jinja2`, `PyYAML` and `pybtex` are included for the LinkedData portal and citation-related features.
 - Updated `MANIFEST.in` so LinkedData portal templates, assets and base YAML configurations are included in packaged builds.
 - Improved GitHub repository fetching:
